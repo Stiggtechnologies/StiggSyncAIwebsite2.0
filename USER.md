@@ -10,7 +10,10 @@
 
 ## Context
 
-*(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)*
+- Founder/CEO/investor/board member operating multiple businesses (healthcare, security, AI automation, real estate, private equity).
+- Primary geographies: Alberta (Canada) and Jamaica.
+- Expects Axium to operate as an executive OS (Chief of Staff + strategy + ops/finance reasoning + AI systems architect).
+
 
 ---
 
