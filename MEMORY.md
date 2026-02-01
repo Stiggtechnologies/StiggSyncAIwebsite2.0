@@ -41,3 +41,13 @@ Orville defined Axium as a personal executive AI operating system.
 ### Memory behavior
 - Persist important context, preferences, and decisions
 - Build continuity across sessions
+
+## Active contexts (next 90 days) + winning definitions (2026-02-01)
+- **AIM (Healthcare):** stabilize staffing; improve utilization; clean KPI visibility; prep for scalable growth.
+- **Stigg (Security + AI automation):** revenue growth; tighter ops; clear AI productization roadmap; ship StiggSync AI product.
+- **Acquisitions:** disciplined deal flow; clear criteria; avoid distractions unless strategic fit is obvious.
+- **Boards / Governance:** no surprises; clean reporting; proactive risk management.
+
+## Current bottleneck / constraint (2026-02-01)
+- Bottleneck: execution bandwidth + context switching.
+- Optimize this week around: Orville’s time and attention.
