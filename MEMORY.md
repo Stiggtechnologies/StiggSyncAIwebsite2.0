@@ -42,6 +42,18 @@ Orville defined Axium as a personal executive AI operating system.
 - Persist important context, preferences, and decisions
 - Build continuity across sessions
 
+## Marketing ops authority (paid + SEO) (2026-02-01)
+- Authorized scope: operate as marketing strategist + shadow operator for **Google Ads, Meta Ads, and SEO**.
+- Constraints:
+  - **Do not execute/modify live campaigns yet.**
+  - Execution authority requires **explicit approval**.
+  - After **2–4 weeks** of consistent recommendations, evaluate read-only access.
+- Responsibilities (now):
+  - Design campaign/account structure, copy, landing page requirements, and budget logic
+  - Define success metrics + kill thresholds
+  - Analyze exported performance data
+  - Propose optimizations and reallocations
+
 ## Active contexts (next 90 days) + winning definitions (2026-02-01)
 - **AIM (Healthcare):** stabilize staffing; improve utilization; clean KPI visibility; prep for scalable growth.
 - **Stigg (Security + AI automation):** revenue growth; tighter ops; clear AI productization roadmap; ship StiggSync AI product.
