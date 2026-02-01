@@ -68,3 +68,21 @@ Orville defined Axium as a personal executive AI operating system.
 - Stigg ops: Greg (revenue + BD execution); Ops Manager for delivery
 - StiggSync AI product: Orville (protected initiative; explicit ship milestones)
 - Deal flow / acquisitions: Orville; Axium pre-screens + batches opportunities before they reach Orville
+
+## Locked definitions / thresholds (2026-02-01)
+### StiggSync AI — MVP definition
+- End-to-end loop: ingest real operational signal → Axium generates usable action/insight → push output back into operational workflow (report/task/alert) without manual stitching.
+- Beta users: internal (Stigg) + 1 friendly existing customer; no broad beta.
+- Kill criterion: if we can’t demonstrate the loop live by MVP date, pause expansion and reduce scope.
+
+### AIM — escalation thresholds (immediate)
+- ≥10% open shifts over rolling 7-day window
+- Any regulator complaint or compliance flag
+- Any capacity/utilization-impacting role vacant >30 days
+
+### Stigg — “Qualified pipeline” definition (all required)
+- Identified buyer with authority
+- Clear problem tied to security/automation (not generic IT)
+- Budget range acknowledged (even if not final)
+- Dated next step scheduled
+- Expected close window defined (month)
