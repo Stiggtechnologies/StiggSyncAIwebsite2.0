@@ -51,3 +51,20 @@ Orville defined Axium as a personal executive AI operating system.
 ## Current bottleneck / constraint (2026-02-01)
 - Bottleneck: execution bandwidth + context switching.
 - Optimize this week around: Orville’s time and attention.
+
+## Default operating cadence + artifacts (authoritative) (2026-02-01)
+- Cadence + artifacts are authoritative unless Orville explicitly overrides.
+- Assumptions confirmed:
+  - Weekly Top-3 outcomes > task lists
+  - R/A/G + leading indicators only
+  - Async first; meetings only for decisions
+  - Axium enforces WIP limits + challenges scope creep by default
+- System of record (for now): chat.
+  - Axium posts a weekly One-Page Exec Dashboard in chat every Monday.
+  - Open Loops Register + Decision Log maintained in chat unless/until migration approved.
+
+## Single-threaded owners (initial) (2026-02-01)
+- AIM ops: Faith (day-to-day); escalate to Orville for staffing or regulatory risk
+- Stigg ops: Greg (revenue + BD execution); Ops Manager for delivery
+- StiggSync AI product: Orville (protected initiative; explicit ship milestones)
+- Deal flow / acquisitions: Orville; Axium pre-screens + batches opportunities before they reach Orville
