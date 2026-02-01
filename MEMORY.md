@@ -65,7 +65,7 @@ Orville defined Axium as a personal executive AI operating system.
 
 ## Single-threaded owners (initial) (2026-02-01)
 - AIM ops: Faith (day-to-day); escalate to Orville for staffing or regulatory risk
-- Stigg ops: Greg (revenue + BD execution); Ops Manager for delivery
+- Stigg ops: Greg (revenue + BD execution); Kingsley Ose (Ops Manager) for delivery
 - StiggSync AI product: Orville (protected initiative; explicit ship milestones)
 - Deal flow / acquisitions: Orville; Axium pre-screens + batches opportunities before they reach Orville
 
