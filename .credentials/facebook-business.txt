@@ -1,0 +1,14 @@
+# Facebook Business Manager - AIM Campaign
+# Owner: Orville Davis
+# Date Added: 2026-02-11
+
+BUSINESS_MANAGER_ID=5251916228162089
+PAYMENT_ACCOUNT_ID=5251916228162089
+ADMIN_EMAIL=orvilledavis95@gmail.com
+
+# Access URL
+BUSINESS_MANAGER_URL=https://business.facebook.com/
+BILLING_URL=https://business.facebook.com/billing_hub/payment_settings/
+
+# Status: Business Manager exists, checking configuration
+# Date: 2026-02-11 02:52 MST

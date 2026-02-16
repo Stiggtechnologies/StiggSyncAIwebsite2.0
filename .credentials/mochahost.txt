@@ -1,0 +1,14 @@
+# MochaHost cPanel Credentials
+# Owner: Orville Davis
+# Date Added: 2026-02-11
+# Date Tested: 2026-02-11
+
+CPANEL_URL=https://s1363.use1.mysecurecloudhost.com:2083
+CPANEL_USERNAME=oadavis@hotmail.com
+CPANEL_PASSWORD=Jimgreen323874$
+
+# API Token (if available)
+API_TOKEN=HUDGDKZJ9HJB83MJBA7J3MCRPSBSGZE4
+
+# Usage: Access and manage MochaHost hosting account via cPanel
+# Tested: 2026-02-11 - Login successful with Jimgreen323874$

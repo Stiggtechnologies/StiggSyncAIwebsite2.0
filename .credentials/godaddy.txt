@@ -1,0 +1,24 @@
+# GoDaddy API Credentials
+# Owner: Orville Davis
+# Date Added: 2026-02-11
+
+API_KEY=dLDSFGTXapM9_HuC2cKvPjrfGi4zLU7J6L
+API_SECRET=BTLZdp5BNAwor6SaNi5Qxp
+
+# API Documentation: https://developer.godaddy.com/
+# Environment: Production
+# Usage: Domain management, DNS configuration, domain renewals, SSL management
+
+# API Endpoints
+API_BASE_URL=https://api.godaddy.com/v1
+
+# Capabilities:
+# - Domain management (list, purchase, renew, transfer)
+# - DNS record management (A, AAAA, CNAME, MX, TXT, SRV, etc.)
+# - Domain availability checking
+# - Domain privacy/forwarding settings
+# - SSL certificate management
+# - WHOIS information
+# - Email forwarding configuration
+
+# Date Added: 2026-02-11 02:20 MST

@@ -1,0 +1,11 @@
+# WordPress Login - Alberta Injury Management
+# Owner: Orville Davis
+# Date Added: 2026-02-11
+
+WORDPRESS_URL=https://albertainjurymanagement.ca/wp-admin/
+WORDPRESS_USERNAME=faith.grant@albertainjurymanagement.com
+WORDPRESS_PASSWORD=%99y5)#TRBMc1#i7g(7h(pnr
+
+# Purpose: Install Meta Pixel, manage website
+# Account: Faith Grant (admin access)
+# Date: 2026-02-11 03:14 MST

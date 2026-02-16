@@ -42,20 +42,43 @@ Orville defined Axium as a personal executive AI operating system.
 - Persist important context, preferences, and decisions
 - Build continuity across sessions
 
-## Marketing ops authority (paid + SEO) (2026-02-01)
-- Authorized scope: operate as marketing strategist + shadow operator for **Google Ads, Meta Ads, and SEO**.
-- Constraints:
-  - **Do not execute/modify live campaigns yet.**
-  - Execution authority requires **explicit approval**.
-  - After **2–4 weeks** of consistent recommendations, evaluate read-only access.
-- Responsibilities (now):
-  - Design campaign/account structure, copy, landing page requirements, and budget logic
-  - Define success metrics + kill thresholds
-  - Analyze exported performance data
-  - Propose optimizations and reallocations
+## Digital assets stewardship (AIM web + AI) (2026-02-01)
+- Orville requested Axium help deploy and maintain AIM’s digital assets: website (Vercel), Bolt project, Supabase, AI assistant, and future AIMOS integration.
+- Also included as a maintained asset: current WordPress site **albertainjurymanagement.ca** (Elementor-based) until domain cutover to Vercel.
+- Default: track issues, keep a lightweight maintenance checklist, and flag breakages/security risks proactively.
+- Constraints: no domain cutovers or destructive changes without explicit approval.
+
+## Growth engines authority (paid + SEO) (2026-02-08)
+- **FULL AUTHORITY** over all portfolio companies' growth engines granted by Orville.
+- Scope: Google Ads, Meta Ads, SEO, and all growth/marketing operations across entire portfolio.
+- Execution authority: ACTIVE (no longer read-only).
+- Responsibilities:
+  - Design, execute, and optimize campaign/account structures
+  - Manage budgets, copy, landing page requirements, and targeting logic
+  - Real-time campaign modifications and optimizations
+  - Define and enforce success metrics + kill thresholds
+  - Portfolio-wide growth strategy and resource allocation
+
+### Operating parameters (2026-02-08)
+- **Budget allocation**: ROI-based capital allocation; invest for best return while maintaining healthy growth with above-industry EBITDA
+- **Account access**: Google Ads admin via orvilledavis95@gmail.com; other channels (Meta, etc.) build from scratch
+- **Reporting**: growth performance integrated into weekly exec dashboard  
+- **Portfolio priority**: AIM primary focus
+- **Kill switch**: pause all campaigns and alert when ad spend >5% of total revenue across portfolio
+- **Autonomous execution**: take all growth actions within authority; flag manual dependencies only
+
+### Meta Ads Campaign - Ongoing Management (2026-02-16)
+**Target:** 15-20 new patients/day from Meta Ads platform
+**Budget Constraint:** <5% of AIM revenue (hard ceiling)
+**Status:** Campaigns active since Feb 12, 5 ad creatives built, ongoing A/B testing required
+**Creative Assets:** 5 images ready in `/aim-meta-ads-creative/` (not yet uploaded to Ads Manager)
+**Copy Compliance:** Remove "free assessment" language (violates clinic policy) - use "initial consultation" instead
+**Management Mode:** Continuous optimization, not one-off setup - weekly A/B tests, creative rotation, budget reallocation based on CPA
+**Current Metrics:** 2 leads @ $5.66 CPL (Feb 12 baseline)
+**Next Actions:** Upload creatives, fix copy, scale to $50-75/day while maintaining <$30 CPA
 
 ## Active contexts (next 90 days) + winning definitions (2026-02-01)
-- **AIM (Healthcare):** stabilize staffing; improve utilization; clean KPI visibility; prep for scalable growth.
+- **AIM (Healthcare):** **TARGET: 20 new patients/day (autonomous execution)**; stabilize staffing; improve utilization; clean KPI visibility; prep for scalable growth.
 - **Stigg (Security + AI automation):** revenue growth; tighter ops; clear AI productization roadmap; ship StiggSync AI product.
 - **Acquisitions:** disciplined deal flow; clear criteria; avoid distractions unless strategic fit is obvious.
 - **Boards / Governance:** no surprises; clean reporting; proactive risk management.
@@ -74,6 +97,14 @@ Orville defined Axium as a personal executive AI operating system.
 - System of record (for now): chat.
   - Axium posts a weekly One-Page Exec Dashboard in chat every Monday.
   - Open Loops Register + Decision Log maintained in chat unless/until migration approved.
+
+### Legal, safety, and compliance cadence (healthcare + regulated) (2026-02-02)
+- Default: treat legal/compliance as an operating system layer, not an afterthought.
+- Weekly (Ops): scan web + ads copy for regulated-claims drift (no guarantees, no “specialist” unless authorized, no inducements mixed with regulated services, truth/verifiable claims only).
+- Monthly (Governance): privacy/security posture check (forms, PHI handling, retention), incident review (any complaints, takedowns, policy warnings).
+- Pre-launch gate (Mandatory): compliance pass before any new landing page, promotion, paid campaign, or new service page goes live.
+- Evidence hygiene: any quantified claim (%, “proven,” timelines) must be either removed or backed by a cited source and presented non-misleadingly.
+- Change control: high-risk edits (offers, pricing promos, clinical claims) require explicit approval and a logged diff.
 
 ## Single-threaded owners (initial) (2026-02-01)
 - AIM ops: Faith (day-to-day); escalate to Orville for staffing or regulatory risk
