@@ -1,0 +1,164 @@
+{
+  "campaigns": [
+    {
+      "name": "AIM - Lead Generation - Feb 2026",
+      "objective": "LEAD_GENERATION",
+      "status": "PAUSED",
+      "special_ad_categories": [],
+      "spend_cap": 0,
+      "daily_budget": 1867,
+      "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+      "adsets": [
+        {
+          "name": "Physiotherapy - Edmonton North",
+          "optimization_goal": "LEAD_GENERATION",
+          "billing_event": "IMPRESSIONS",
+          "bid_amount": null,
+          "daily_budget": 750,
+          "targeting": {
+            "age_min": 25,
+            "age_max": 65,
+            "genders": [1, 2],
+            "geo_locations": {
+              "cities": [
+                {
+                  "key": "2431072",
+                  "radius": 10,
+                  "distance_unit": "kilometer"
+                }
+              ],
+              "location_types": ["home", "recent"]
+            },
+            "interests": [
+              {"id": "6003346716957", "name": "Health & wellness"},
+              {"id": "6003348604581", "name": "Physical fitness"},
+              {"id": "6003337666980", "name": "Injury prevention"}
+            ],
+            "publisher_platforms": ["facebook", "instagram"],
+            "facebook_positions": ["feed", "story", "video_feeds"],
+            "instagram_positions": ["stream", "story"]
+          },
+          "promoted_object": {
+            "page_id": "100064131314021"
+          },
+          "status": "ACTIVE",
+          "ads": [
+            {
+              "name": "Professional Treatment - V1",
+              "status": "ACTIVE",
+              "creative": {
+                "name": "Creative - Professional",
+                "object_story_spec": {
+                  "page_id": "100064131314021",
+                  "link_data": {
+                    "message": "Struggling with back pain, sports injury, or car accident recovery? Our Edmonton team specializes in injury assessment and treatment to get you back to doing what you love.\n\n✅ Direct WCB billing\n✅ No referral needed\n✅ Same-day appointments available\n\nBook your initial consultation: 780-250-8188",
+                    "link": "https://albertainjurymanagement.ca",
+                    "name": "Edmonton's Trusted Injury Recovery Clinic",
+                    "call_to_action": {
+                      "type": "BOOK_NOW"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "MVA Claims - Edmonton",
+          "optimization_goal": "LEAD_GENERATION",
+          "billing_event": "IMPRESSIONS",
+          "daily_budget": 625,
+          "targeting": {
+            "age_min": 25,
+            "age_max": 55,
+            "genders": [1, 2],
+            "geo_locations": {
+              "cities": [
+                {
+                  "key": "2431072",
+                  "radius": 15,
+                  "distance_unit": "kilometer"
+                }
+              ]
+            },
+            "interests": [
+              {"id": "6003346716957", "name": "Auto insurance"},
+              {"id": "6003348604581", "name": "Personal injury"}
+            ]
+          },
+          "promoted_object": {
+            "page_id": "100064131314021"
+          },
+          "status": "ACTIVE",
+          "ads": [
+            {
+              "name": "MVA Focus - V1",
+              "status": "ACTIVE",
+              "creative": {
+                "name": "Creative - MVA",
+                "object_story_spec": {
+                  "page_id": "100064131314021",
+                  "link_data": {
+                    "message": "Injured in a car accident? We specialize in motor vehicle injury recovery. We handle insurance paperwork so you can focus on healing.\n\nBook your consultation today: 780-250-8188",
+                    "link": "https://albertainjurymanagement.ca",
+                    "name": "Injured in a Car Accident?",
+                    "call_to_action": {
+                      "type": "CALL_NOW"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Work Injury - WCB",
+          "optimization_goal": "LEAD_GENERATION",
+          "billing_event": "IMPRESSIONS",
+          "daily_budget": 492,
+          "targeting": {
+            "age_min": 30,
+            "age_max": 60,
+            "genders": [1, 2],
+            "geo_locations": {
+              "cities": [
+                {
+                  "key": "2431072",
+                  "radius": 15,
+                  "distance_unit": "kilometer"
+                }
+              ]
+            },
+            "interests": [
+              {"id": "6003346716957", "name": "Workers compensation"}
+            ]
+          },
+          "promoted_object": {
+            "page_id": "100064131314021"
+          },
+          "status": "ACTIVE",
+          "ads": [
+            {
+              "name": "WCB Care - V1",
+              "status": "ACTIVE",
+              "creative": {
+                "name": "Creative - WCB",
+                "object_story_spec": {
+                  "page_id": "100064131314021",
+                  "link_data": {
+                    "message": "Work injury? We direct bill WCB. No out-of-pocket costs. Professional physiotherapy and rehabilitation.\n\nBook your consultation today: 780-250-8188",
+                    "link": "https://albertainjurymanagement.ca",
+                    "name": "Expert WCB Care",
+                    "call_to_action": {
+                      "type": "CALL_NOW"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
