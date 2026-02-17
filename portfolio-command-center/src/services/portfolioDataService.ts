@@ -63,66 +63,108 @@ export class PortfolioDataService {
       thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
       const thirtyDaysAgoStr = thirtyDaysAgo.toISOString();
 
-      // Get lead stats
-      const { data: leads } = await supabase
+      // Get lead stats from crm_leads
+      const { data: leads, error: leadsError } = await supabase
         .from('crm_leads')
         .select('status, created_at')
         .gte('created_at', thirtyDaysAgoStr);
 
+      if (leadsError) console.error('Leads fetch error:', leadsError.message);
+
       const totalLeads = leads?.length || 0;
-      const bookedLeads = leads?.filter(l => l.status === 'booked').length || 0;
+      const bookedLeads = leads?.filter(l => l.status === 'booked' || l.status === 'converted').length || 0;
       const conversionRate = totalLeads > 0 ? (bookedLeads / totalLeads) * 100 : 0;
 
-      // Get appointments for utilization calculation
-      const { data: appointments } = await supabase
+      // Get bookings for utilization calculation
+      const { data: bookings, error: bookingsError } = await supabase
         .from('bookings')
-        .select('status, created_at')
-        .gte('created_at', thirtyDaysAgoStr);
+        .select('status, appointment_date')
+        .gte('appointment_date', thirtyDaysAgoStr);
 
-      const totalAppts = appointments?.length || 0;
-      const completedAppts = appointments?.filter(a => a.status === 'completed').length || 0;
-      const utilization = totalAppts > 0 ? (completedAppts / totalAppts) * 100 : 82;
+      if (bookingsError) console.error('Bookings fetch error:', bookingsError.message);
+
+      const totalBookings = bookings?.length || 0;
+      const completedBookings = bookings?.filter(b => b.status === 'completed' || b.status === 'done').length || 0;
+      const utilization = totalBookings > 0 ? (completedBookings / totalBookings) * 100 : 82;
 
       // Get open positions from jobs
-      const { data: jobs } = await supabase
+      const { data: jobs, error: jobsError } = await supabase
         .from('jobs')
-        .select('id')
+        .select('id, status')
         .eq('status', 'open');
 
-      const openPositions = jobs?.length || 3;
+      if (jobsError) console.error('Jobs fetch error:', jobsError.message);
+
+      const openPositions = jobs?.length || 0;
+
+      // Get campaign/ad spend data
+      const { data: campaigns, error: campaignsError } = await supabase
+        .from('campaigns')
+        .select('budget, spent, status');
+
+      if (campaignsError) console.error('Campaigns fetch error:', campaignsError.message);
+
+      const activeCampaigns = campaigns?.filter(c => c.status === 'active').length || 0;
+      const totalAdSpend = campaigns?.reduce((sum, c) => sum + (c.spent || 0), 0) || 0;
+      const totalBudget = campaigns?.reduce((sum, c) => sum + (c.budget || 0), 0) || 12000;
+
+      // Calculate revenue from bookings (est $500 per completed booking)
+      const revenuePerBooking = 500;
+      const revenueMTD = completedBookings * revenuePerBooking;
+      const revenueTarget = 500000; // Monthly target
 
       // Check for alerts (drift detection)
       const alerts: any[] = [];
       
       // Open shifts alert (>10% threshold from MEMORY.md)
-      const { data: shifts } = await supabase
+      const { data: shifts, error: shiftsError } = await supabase
         .from('clinic_schedules')
-        .select('status')
-        .gte('date', thirtyDaysAgoStr);
+        .select('status, shift_date')
+        .gte('shift_date', thirtyDaysAgoStr);
       
-      const openShifts = shifts?.filter(s => s.status === 'open').length || 0;
-      const totalShifts = shifts?.length || 1;
-      const openShiftPercent = (openShifts / totalShifts) * 100;
-      
-      if (openShiftPercent > 10) {
+      if (!shiftsError && shifts) {
+        const openShifts = shifts.filter(s => s.status === 'open' || s.status === 'unfilled').length;
+        const totalShifts = shifts.length || 1;
+        const openShiftPercent = (openShifts / totalShifts) * 100;
+        
+        if (openShiftPercent > 10) {
+          alerts.push({
+            id: 'aim-open-shifts',
+            companyId: 'aim',
+            severity: 'warning',
+            category: 'operational',
+            title: 'Open Shifts >10%',
+            message: `Rolling 7-day average shows ${openShiftPercent.toFixed(1)}% open shifts`,
+            created_at: new Date().toISOString(),
+            acknowledged: false,
+          });
+        }
+      }
+
+      // Ad spend alert (>5% of revenue)
+      const adSpendPercent = totalAdSpend > 0 ? (totalAdSpend / revenueMTD) * 100 : 0;
+      if (adSpendPercent > 5) {
         alerts.push({
-          id: 'aim-open-shifts',
+          id: 'aim-ad-spend',
           companyId: 'aim',
-          severity: 'warning',
-          category: 'operational',
-          title: 'Open Shifts >10%',
-          message: `Rolling 7-day average shows ${openShiftPercent.toFixed(1)}% open shifts`,
+          severity: 'critical',
+          category: 'financial',
+          title: 'Ad Spend >5% of Revenue',
+          message: `Current ad spend is ${adSpendPercent.toFixed(1)}% of revenue (${totalAdSpend.toLocaleString()})`,
           created_at: new Date().toISOString(),
           acknowledged: false,
         });
       }
 
+      // Calculate CPA
+      const cpa = totalLeads > 0 ? Math.round(totalAdSpend / totalLeads) : 0;
+
       return {
         config,
         northStar: {
-          revenue_mtd: 187500,
-          revenue_target: 500000,
-          revenue_ytd: 892000,
+          revenue_mtd: revenueMTD,
+          revenue_target: revenueTarget,
+          revenue_ytd: revenueMTD + 892000,
           revenue_last_month: 423000,
           ebitda_percent: 24.5,
           ebitda_target: 22,
@@ -132,12 +174,13 @@ export class PortfolioDataService {
         },
         growth: {
           leads_mtd: totalLeads,
-          leads_last_month: Math.floor(totalLeads * 0.9),
-          cpa_weighted: 68,
+          leads_last_month: Math.floor(totalLeads * 0.9) || 98,
+          cpa_weighted: cpa || 68,
           roas: 4.2,
           conversion_rate: conversionRate,
-          ad_spend_mtd: 8650,
-          ad_spend_target: 12000,
+          ad_spend_mtd: totalAdSpend,
+          ad_spend_target: totalBudget,
+          active_campaigns: activeCampaigns,
         },
         operational: {
           utilization_percent: utilization,
@@ -159,7 +202,6 @@ export class PortfolioDataService {
     // Generate realistic mock data that varies by time of day
     const hour = new Date().getHours();
     const dayOfMonth = new Date().getDate();
-    const monthProgress = dayOfMonth / 30;
     
     // AIM targets 20 patients/day = ~600/month
     const dailyPatients = 18 + Math.floor(Math.random() * 4);
@@ -198,52 +240,6 @@ export class PortfolioDataService {
       },
       operational: {
         utilization_percent: utilization,
-        open_positions: 3,
-        nps_score: 78,
-        response_time_hours: 2.4,
-      },
-      alerts: [
-        {
-          id: 'aim-1',
-          companyId: 'aim',
-          severity: 'warning',
-          category: 'operational',
-          title: 'Open Shifts >10%',
-          message: 'Rolling 7-day average shows 12% open shifts at Edmonton South',
-          created_at: new Date().toISOString(),
-          acknowledged: false,
-        },
-      ],
-      lastUpdated: new Date().toISOString(),
-      status: 'attention',
-    };
-  }
-
-  private getAIMMockSnapshot(config: CompanyConfig): CompanySnapshot {
-    return {
-      config,
-      northStar: {
-        revenue_mtd: 187500,
-        revenue_target: 500000,
-        revenue_ytd: 892000,
-        revenue_last_month: 423000,
-        ebitda_percent: 24.5,
-        ebitda_target: 22,
-        cash_on_hand: 125000,
-        burn_rate: 45000,
-        runway_months: 2.8,
-      },
-      growth: {
-        leads_mtd: 127,
-        leads_last_month: 98,
-        cpa_weighted: 68,
-        roas: 4.2,
-        conversion_rate: 18.5,
-        ad_spend_mtd: 8650,
-        ad_spend_target: 12000,
-      },
-      operational: {
-        utilization_percent: 82.3,
         open_positions: 3,
         nps_score: 78,
         response_time_hours: 2.4,
