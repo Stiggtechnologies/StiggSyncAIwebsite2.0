@@ -51,9 +51,10 @@ export class PortfolioDataService {
   private async getAIMSnapshot(config: CompanyConfig): Promise<CompanySnapshot> {
     const supabase = getAIMSupabase();
     
-    // If Supabase is not configured, return mock data
+    // If Supabase is not configured, return enhanced mock data
     if (!supabase) {
-      return this.getAIMMockSnapshot(config);
+      console.log('AIM Supabase not connected - using mock data with realistic variation');
+      return this.getAIMEnhancedMockSnapshot(config);
     }
 
     try {
@@ -72,16 +73,11 @@ export class PortfolioDataService {
       const bookedLeads = leads?.filter(l => l.status === 'booked').length || 0;
       const conversionRate = totalLeads > 0 ? (bookedLeads / totalLeads) * 100 : 0;
 
-      // Get clinic data for utilization
-      const { data: _clinics } = await supabase
-        .from('clinics')
-        .select('id, name');
-
       // Get appointments for utilization calculation
       const { data: appointments } = await supabase
-        .from('patient_appointments')
-        .select('status, scheduled_at')
-        .gte('scheduled_at', thirtyDaysAgoStr);
+        .from('bookings')
+        .select('status, created_at')
+        .gte('created_at', thirtyDaysAgoStr);
 
       const totalAppts = appointments?.length || 0;
       const completedAppts = appointments?.filter(a => a.status === 'completed').length || 0;
@@ -155,8 +151,72 @@ export class PortfolioDataService {
       };
     } catch (error) {
       console.error('Error fetching AIM data:', error);
-      return this.getAIMMockSnapshot(config);
+      return this.getAIMEnhancedMockSnapshot(config);
     }
+  }
+
+  private getAIMEnhancedMockSnapshot(config: CompanyConfig): CompanySnapshot {
+    // Generate realistic mock data that varies by time of day
+    const hour = new Date().getHours();
+    const dayOfMonth = new Date().getDate();
+    const monthProgress = dayOfMonth / 30;
+    
+    // AIM targets 20 patients/day = ~600/month
+    const dailyPatients = 18 + Math.floor(Math.random() * 4);
+    const mtdPatients = Math.floor(dailyPatients * dayOfMonth);
+    const targetPatients = 600;
+    
+    // Revenue: ~$500 per patient
+    const revenueMTD = mtdPatients * 500;
+    const revenueTarget = targetPatients * 500;
+    
+    // Utilization varies by time
+    const baseUtilization = 78 + (hour > 9 && hour < 17 ? 8 : 0);
+    const utilization = Math.min(95, baseUtilization + Math.random() * 5);
+    
+    return {
+      config,
+      northStar: {
+        revenue_mtd: revenueMTD,
+        revenue_target: revenueTarget,
+        revenue_ytd: revenueMTD + 892000,
+        revenue_last_month: 423000,
+        ebitda_percent: 24.5,
+        ebitda_target: 22,
+        cash_on_hand: 125000,
+        burn_rate: 45000,
+        runway_months: 2.8,
+      },
+      growth: {
+        leads_mtd: Math.floor(mtdPatients * 1.2),
+        leads_last_month: 98,
+        cpa_weighted: 68,
+        roas: 4.2,
+        conversion_rate: 18.5,
+        ad_spend_mtd: Math.floor(revenueMTD * 0.05),
+        ad_spend_target: Math.floor(revenueTarget * 0.05),
+      },
+      operational: {
+        utilization_percent: utilization,
+        open_positions: 3,
+        nps_score: 78,
+        response_time_hours: 2.4,
+      },
+      alerts: [
+        {
+          id: 'aim-1',
+          companyId: 'aim',
+          severity: 'warning',
+          category: 'operational',
+          title: 'Open Shifts >10%',
+          message: 'Rolling 7-day average shows 12% open shifts at Edmonton South',
+          created_at: new Date().toISOString(),
+          acknowledged: false,
+        },
+      ],
+      lastUpdated: new Date().toISOString(),
+      status: 'attention',
+    };
   }
 
   private getAIMMockSnapshot(config: CompanyConfig): CompanySnapshot {
