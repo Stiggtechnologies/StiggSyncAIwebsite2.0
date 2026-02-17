@@ -34,6 +34,7 @@ export interface GrowthMetrics {
   conversion_rate: number;
   ad_spend_mtd: number;
   ad_spend_target: number;
+  active_campaigns?: number;
 }
 
 export interface OperationalMetrics {
