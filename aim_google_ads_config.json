@@ -1,0 +1,218 @@
+{
+  "campaign": {
+    "campaign_name": "AIM - Search - Lead Generation - Feb 2026",
+    "budget": 18.67,
+    "currency": "CAD",
+    "bidding_strategy": "TARGET_CPA",
+    "target_cpa": 25.0,
+    "locations": [
+      {
+        "id": "9051182"
+      }
+    ],
+    "location_radius": 15,
+    "languages": [
+      "1000"
+    ],
+    "networks": [
+      "SEARCH"
+    ],
+    "ad_schedule": {
+      "monday": [
+        [
+          8,
+          20
+        ]
+      ],
+      "tuesday": [
+        [
+          8,
+          20
+        ]
+      ],
+      "wednesday": [
+        [
+          8,
+          20
+        ]
+      ],
+      "thursday": [
+        [
+          8,
+          20
+        ]
+      ],
+      "friday": [
+        [
+          8,
+          18
+        ]
+      ],
+      "saturday": [
+        [
+          9,
+          16
+        ]
+      ],
+      "sunday": []
+    }
+  },
+  "ad_groups": [
+    {
+      "name": "Physiotherapy Edmonton",
+      "keywords": [
+        "physiotherapist edmonton",
+        "physiotherapy edmonton",
+        "physical therapy edmonton",
+        "sports injury physiotherapy",
+        "back pain physiotherapist",
+        "injury rehabilitation edmonton",
+        "best physiotherapist edmonton",
+        "physio near me",
+        "physiotherapy clinic edmonton"
+      ],
+      "cpc_bid": 3.5,
+      "ads": [
+        {
+          "headline_1": "Edmonton's Trusted Injury Clinic",
+          "headline_2": "Same-Day Appointments",
+          "headline_3": "Direct WCB Billing",
+          "description_1": "Expert physiotherapy for sports injuries, back pain & accidents. No referral needed. Book today: 780-250-8188",
+          "description_2": "Professional treatment to get you back to doing what you love. Initial consultation available.",
+          "path_1": "physiotherapy",
+          "path_2": "edmonton"
+        },
+        {
+          "headline_1": "Injury Recovery Experts",
+          "headline_2": "WCB Direct Billing",
+          "headline_3": "Motor Vehicle Accident Care",
+          "description_1": "Comprehensive injury assessment and treatment. We handle insurance paperwork so you focus on healing.",
+          "description_2": "Book your initial consultation today. Professional physiotherapy in Edmonton. Call 780-250-8188",
+          "path_1": "injury",
+          "path_2": "recovery"
+        }
+      ]
+    },
+    {
+      "name": "MVA Motor Vehicle Accident",
+      "keywords": [
+        "motor vehicle accident physiotherapy",
+        "car accident injury treatment edmonton",
+        "mva physiotherapy edmonton",
+        "whiplash treatment edmonton",
+        "car accident rehabilitation",
+        "mva claims physiotherapy",
+        "auto injury physiotherapist",
+        "accident injury clinic edmonton"
+      ],
+      "cpc_bid": 5.0,
+      "ads": [
+        {
+          "headline_1": "Car Accident Injury Treatment",
+          "headline_2": "We Handle Insurance Claims",
+          "headline_3": "Get Back To Your Life",
+          "description_1": "Injured in a car accident? Expert MVA physiotherapy in Edmonton. We bill insurance directly.",
+          "description_2": "Same-day appointments available. Comprehensive assessment & treatment plan. Call 780-250-8188",
+          "path_1": "mva",
+          "path_2": "claims"
+        }
+      ]
+    },
+    {
+      "name": "WCB Work Injury",
+      "keywords": [
+        "wcb physiotherapy edmonton",
+        "workers compensation physiotherapy",
+        "work injury physiotherapist",
+        "wcb approved clinic edmonton",
+        "workplace injury treatment",
+        "wcb direct billing physiotherapy",
+        "occupational injury rehab"
+      ],
+      "cpc_bid": 4.0,
+      "ads": [
+        {
+          "headline_1": "WCB Approved Physiotherapy",
+          "headline_2": "Direct Billing - No Cost",
+          "headline_3": "Work Injury Specialists",
+          "description_1": "Work injury? We direct bill WCB. No out-of-pocket costs. Get back to work faster.",
+          "description_2": "Professional rehabilitation for workplace injuries. Book your consultation: 780-250-8188",
+          "path_1": "wcb",
+          "path_2": "work-injury"
+        }
+      ]
+    }
+  ],
+  "tracking": {
+    "conversion_actions": [
+      {
+        "name": "Phone Call",
+        "type": "PHONE_CALL",
+        "value": 150.0
+      },
+      {
+        "name": "Lead Form Submit",
+        "type": "FORM_SUBMIT",
+        "value": 150.0
+      }
+    ],
+    "phone_number": "780-250-8188"
+  },
+  "extensions": {
+    "sitelinks": [
+      {
+        "text": "Book Appointment",
+        "url": "https://albertainjurymanagement.ca/book",
+        "description": "Schedule your consultation online"
+      },
+      {
+        "text": "Our Services",
+        "url": "https://albertainjurymanagement.ca/services",
+        "description": "View all physiotherapy services"
+      },
+      {
+        "text": "WCB Claims",
+        "url": "https://albertainjurymanagement.ca/wcb",
+        "description": "Workers compensation information"
+      },
+      {
+        "text": "MVA Treatment",
+        "url": "https://albertainjurymanagement.ca/mva",
+        "description": "Motor vehicle accident care"
+      }
+    ],
+    "callouts": [
+      "Same-Day Appointments",
+      "Direct WCB Billing",
+      "No Referral Needed",
+      "25+ Years Experience",
+      "Motor Vehicle Specialists",
+      "Work Injury Experts"
+    ],
+    "call_extension": {
+      "phone_number": "780-250-8188",
+      "country_code": "CA"
+    },
+    "location_extension": true,
+    "structured_snippets": [
+      {
+        "type": "Services",
+        "values": [
+          "Physiotherapy",
+          "Massage Therapy",
+          "Chiropractic",
+          "Acupuncture"
+        ]
+      },
+      {
+        "type": "Types",
+        "values": [
+          "Sports Injuries",
+          "Back Pain",
+          "MVA Recovery",
+          "Work Injuries"
+        ]
+      }
+    ]
+  }
+}
