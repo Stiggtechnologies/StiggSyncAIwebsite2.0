@@ -66,6 +66,7 @@ Orville defined Axium as a personal executive AI operating system.
 - Travel time buffer management
 - Meeting prep material compilation (from email context)
 - Email monitoring for new meeting invites (hourly)
+- **ACTION ITEMS tracking** - Flag RSVPs, forms, approvals, decisions needed
 
 **Operating Principles:**
 - Assume all meetings are important - no "optional" without explicit confirmation
@@ -73,6 +74,7 @@ Orville defined Axium as a personal executive AI operating system.
 - Flag external meetings requiring extra preparation
 - Track recurring meetings for efficiency optimization
 - Monitor for double-bookings and suggest resolutions
+- **Prioritize ACTION REQUIRED items** in all briefings
 
 **Automation Configured:**
 - ✅ Google Calendar OAuth - COMPLETE
@@ -80,6 +82,7 @@ Orville defined Axium as a personal executive AI operating system.
 - ✅ Hourly email monitoring for meetings - ACTIVE (Cron job: afd1a950)
 - ✅ Pre-meeting alerts - Will be added
 - ✅ Event creation/modification - Tested and working
+- ✅ Action items tracker - ACTIVE
 
 **Recurring Meetings Identified:**
 - CFWB Board of Directors - Monthly (Teams)
@@ -89,6 +92,13 @@ Orville defined Axium as a personal executive AI operating system.
 **Upcoming Deadlines:**
 - Board Training completion: March 31, 2026
 - Fundraising course: March 2-5, 2026
+
+**Current Action Items:**
+1. 🔴 Register for Fundraising Course (before March 2)
+2. 🔴 Complete CFWB Conflict of Interest forms (ASAP)
+3. 🟡 Complete Board Training modules (deadline: March 31)
+4. 🟡 Respond to Jennifer Warren - SyncAI questions
+5. Watch for March 13 WBRIN meeting invite
 
 ### AIM Domain Migration - Authority Preservation (2026-02-19)
 **Domain Analysis Complete:** albertainjurymanagement.ca has significant SEO authority that must be preserved.
