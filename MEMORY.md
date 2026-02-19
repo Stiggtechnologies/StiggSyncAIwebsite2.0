@@ -48,6 +48,38 @@ Orville defined Axium as a personal executive AI operating system.
 - Default: track issues, keep a lightweight maintenance checklist, and flag breakages/security risks proactively.
 - Constraints: no domain cutovers or destructive changes without explicit approval.
 
+### AIM Domain Migration - Authority Preservation (2026-02-19)
+**Domain Analysis Complete:** albertainjurymanagement.ca has significant SEO authority that must be preserved.
+
+**Authority Signals:**
+- Domain age: 4 years (Feb 2022) - established trust
+- Indexed pages: 30 pages including keyword-targeted URLs (/physiotherapy-edmonton/, /pain-management-treatment-edmonton/, etc.)
+- Professional SEO tooling: All in One SEO Pro, GA4 tracking (ID: G-RNHNF423CW)
+- Recently maintained: Last updated Feb 2026
+- Expires: Feb 2028 (2+ years remaining)
+- Registrar: Namespro Solutions Inc. (NOT in GoDaddy portfolio - requires separate monitoring)
+
+**Value Assessment:**
+- Cost to preserve: ~$15/year
+- Cost to lose and rebuild: $10,000-20,000 + 6-12 months
+- Verdict: HIGH VALUE - preserve indefinitely with 301 redirects
+
+**Migration Requirements:**
+1. Implement 301 redirects for all 30 pages before cutover
+2. Keep old domain active indefinitely (cheap insurance)
+3. Use Google Search Console "Change of Address" tool
+4. Monitor 404 errors for 30 days post-cutover
+5. Verify Namespro domain access and set renewal alerts
+
+**Pending Actions:**
+- [ ] Verify GA4 traffic data (access G-RNHNF423CW)
+- [ ] Check Google Search Console for keyword rankings
+- [ ] Create 301 redirect mapping for all pages
+- [ ] Configure WordPress Redirection plugin
+- [ ] Set domain expiration monitoring (Feb 2028)
+
+**Cutover Blocker:** aimphysiotherapy.ca SSL still provisioning - DO NOT cut over until HTTPS active
+
 ## Growth engines authority (paid + SEO) (2026-02-08)
 - **FULL AUTHORITY** over all portfolio companies' growth engines granted by Orville.
 - Scope: Google Ads, Meta Ads, SEO, and all growth/marketing operations across entire portfolio.
