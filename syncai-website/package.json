@@ -1,0 +1,12 @@
+{
+  "name": "syncai-website",
+  "version": "1.0.0",
+  "description": "SyncAI - Intelligent Operations Automation Website",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["syncai", "ai", "automation", "stigg"],
+  "author": "SyncAI by Stigg Technologies",
+  "license": "private"
+}
