@@ -9,17 +9,32 @@ const workforce = [
   {
     icon: Cpu,
     title: 'Core M&R Agents',
-    description: 'Risk scoring, failure prediction, work order generation, parts optimization, vendor coordination.',
+    agents: [
+      'Reliability Intelligence Agent',
+      'Predictive Failure Agent',
+      'Work Order Optimization Agent',
+      'Asset Health Scoring Agent',
+    ],
   },
   {
     icon: TrendingUp,
     title: 'Operational Excellence Agents',
-    description: 'Safety compliance monitoring, environmental impact tracking, efficiency pattern detection.',
+    agents: [
+      'Inventory Optimization Agent',
+      'Root Cause Intelligence Agent',
+      'Maintenance Strategy Agent',
+      'Continuous Improvement Agent',
+    ],
   },
   {
     icon: BarChart,
     title: 'Strategic Intelligence Agents',
-    description: 'Capital planning recommendations, workforce allocation, budget impact modeling, scenario analysis.',
+    agents: [
+      'Capital Planning Agent',
+      'Risk & Compliance Agent',
+      'Executive Reporting Agent',
+      'Lifecycle Optimization Agent',
+    ],
   },
 ];
 
@@ -28,14 +43,11 @@ export default function AIWorkforceSection() {
     <Section>
       <AnimatedSection>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">
-          Your <span className="text-[#3B82F6]">AI Workforce</span>
+          An AI Workforce Embedded in Your <span className="text-[#3B82F6]">Operations</span>
         </h2>
-        <p className="text-xl text-gray-400 text-center mb-20 max-w-3xl mx-auto">
-          Not chatbots. Not copilots. Autonomous agents operating your maintenance and reliability layer.
-        </p>
       </AnimatedSection>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
         {workforce.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -45,12 +57,25 @@ export default function AIWorkforceSection() {
                   <Icon className="text-[#3B82F6]" size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{item.description}</p>
+                <ul className="space-y-2">
+                  {item.agents.map((agent, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <div className="w-1.5 h-1.5 bg-[#3B82F6] rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-gray-400 text-sm">{agent}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </AnimatedCard>
           );
         })}
       </div>
+
+      <AnimatedSection delay={0.4}>
+        <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+          StiggSync does not replace your systems. It becomes the intelligence layer above them — continuously analyzing risk, prioritizing action, and escalating with governance.
+        </p>
+      </AnimatedSection>
     </Section>
   );
 }

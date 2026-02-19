@@ -9,9 +9,12 @@ export default function ShiftSection() {
   return (
     <Section className="bg-gradient-to-b from-transparent via-[#3B82F6]/5 to-transparent">
       <AnimatedSection>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-20 text-center">
-          The Fundamental <span className="text-[#3B82F6]">Shift</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">
+          From Maintenance Software to <span className="text-[#3B82F6]">Autonomous Industrial Intelligence</span>
         </h2>
+        <p className="text-xl text-gray-400 text-center mb-20 max-w-3xl mx-auto">
+          The fundamental shift in how operations are managed.
+        </p>
       </AnimatedSection>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

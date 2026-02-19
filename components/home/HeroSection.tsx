@@ -32,15 +32,24 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"
         >
           <GlowButton href="/strategic-pilot" variant="primary">
             Apply for Strategic Pilot
           </GlowButton>
           <GlowButton href="/architecture" variant="secondary">
-            Explore Architecture
+            Explore the Architecture
           </GlowButton>
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
+          className="text-sm text-gray-500"
+        >
+          Limited enterprise pilots available for 2026 deployment.
+        </motion.p>
       </div>
     </section>
   );

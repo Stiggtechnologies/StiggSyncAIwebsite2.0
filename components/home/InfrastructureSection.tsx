@@ -29,8 +29,11 @@ export default function InfrastructureSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">
           Built as <span className="text-[#3B82F6]">Infrastructure</span>. Not an App.
         </h2>
-        <p className="text-xl text-gray-400 text-center mb-20 max-w-3xl mx-auto">
-          StiggSync sits between your systems and your people. It doesn't replace your stack. It orchestrates it.
+        <p className="text-xl text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
+          StiggSync integrates with existing CMMS, ERP, sensors, work order history, inventory, and financial systems.
+        </p>
+        <p className="text-xl text-white text-center mb-20 max-w-3xl mx-auto font-semibold">
+          It does not rip and replace. It elevates.
         </p>
       </AnimatedSection>
 
@@ -61,8 +64,8 @@ export default function InfrastructureSection() {
 
       <AnimatedSection delay={0.8}>
         <div className="mt-20 text-center">
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            You don't rip and replace. You augment and accelerate.
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            Security-first. API-native. Enterprise-governed. Human-in-the-loop.
           </p>
         </div>
       </AnimatedSection>

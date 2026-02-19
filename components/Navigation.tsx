@@ -9,6 +9,8 @@ const navItems = [
   { label: 'Architecture', href: '/architecture' },
   { label: 'Industries', href: '/industries' },
   { label: 'Philosophy', href: '/philosophy' },
+  { label: 'Security', href: '/security' },
+  { label: 'Company', href: '/company' },
 ];
 
 export default function Navigation() {
@@ -44,7 +46,7 @@ export default function Navigation() {
               href="/strategic-pilot"
               className="px-6 py-2 bg-[#3B82F6] text-white text-sm font-medium rounded hover:bg-[#3B82F6]/90 transition-all hover:shadow-lg hover:shadow-[#3B82F6]/50"
             >
-              Apply for Pilot
+              Apply Now
             </Link>
           </div>
 
@@ -77,7 +79,7 @@ export default function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full px-6 py-2 bg-[#3B82F6] text-white text-sm font-medium rounded text-center"
             >
-              Apply for Pilot
+              Apply Now
             </Link>
           </div>
         </div>

@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 
 const impacts = [
-  'Critical asset risks identified and prioritized autonomously',
-  'Work order backlog reorganized by actual business impact',
-  'Technician time reallocated to highest-value interventions',
-  'Real-time visibility into operational risk exposure',
-  'Executive dashboards showing asset health in financial terms',
-  'Quantified ROI on every maintenance decision',
+  'Reduction in unplanned downtime',
+  'Intelligent work prioritization',
+  'Lower reactive overtime',
+  'Audit-ready compliance reporting',
+  'Real-time asset risk visibility',
+  'Executive operational intelligence',
 ];
 
 export default function ImpactSection() {

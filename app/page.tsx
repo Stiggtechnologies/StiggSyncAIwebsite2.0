@@ -3,7 +3,9 @@ import ProblemSection from '@/components/home/ProblemSection';
 import ShiftSection from '@/components/home/ShiftSection';
 import AIWorkforceSection from '@/components/home/AIWorkforceSection';
 import ImpactSection from '@/components/home/ImpactSection';
+import IndustriesSection from '@/components/home/IndustriesSection';
 import InfrastructureSection from '@/components/home/InfrastructureSection';
+import LeadMagnetSection from '@/components/home/LeadMagnetSection';
 import FinalCTASection from '@/components/home/FinalCTASection';
 
 export default function Home() {
@@ -14,7 +16,9 @@ export default function Home() {
       <ShiftSection />
       <AIWorkforceSection />
       <ImpactSection />
+      <IndustriesSection />
       <InfrastructureSection />
+      <LeadMagnetSection />
       <FinalCTASection />
     </>
   );

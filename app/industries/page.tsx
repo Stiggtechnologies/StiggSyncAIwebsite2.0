@@ -2,122 +2,91 @@
 
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import AnimatedCard from '@/components/ui/AnimatedCard';
 import { Factory, Zap, Droplet, Plane, Building2, Ship } from 'lucide-react';
 
 const industries = [
   {
     icon: Factory,
-    name: 'Manufacturing',
-    painPoints: [
-      'Unplanned downtime costing millions annually',
-      'Reactive maintenance culture',
-      'Poor visibility into production asset health',
+    name: 'Oil & Gas',
+    whatBreaks: [
+      'Offshore equipment failures causing multi-million dollar losses',
+      'Reactive maintenance culture with unpredictable shutdowns',
+      'Poor coordination across distributed field operations',
     ],
-    useCases: [
-      'Predictive failure detection on critical production lines',
-      'Autonomous work order prioritization by production impact',
-      'Real-time OEE optimization through intelligent maintenance scheduling',
-    ],
-    outcomes: [
-      '40% reduction in unplanned downtime',
-      '25% improvement in asset utilization',
-      'ROI-positive maintenance decisions',
-    ],
-  },
-  {
-    icon: Zap,
-    name: 'Energy & Utilities',
-    painPoints: [
-      'Grid reliability under increasing demand',
-      'Aging infrastructure with limited budgets',
-      'Complex regulatory compliance requirements',
-    ],
-    useCases: [
-      'Grid asset risk scoring and failure prediction',
-      'Optimized maintenance routing for field teams',
-      'Automated compliance reporting and documentation',
-    ],
-    outcomes: [
-      'Improved grid reliability metrics',
-      'Reduced emergency maintenance incidents',
-      'Streamlined regulatory compliance',
-    ],
-  },
-  {
-    icon: Droplet,
-    name: 'Water & Wastewater',
-    painPoints: [
-      'Critical infrastructure with deferred maintenance',
-      'Limited operational budgets and staffing',
-      'Environmental compliance pressure',
-    ],
-    useCases: [
-      'Pump station failure prediction and prioritization',
-      'Asset lifecycle optimization across distributed systems',
-      'Environmental incident prevention through predictive monitoring',
-    ],
-    outcomes: [
-      'Extended asset lifespans',
-      'Reduced regulatory violations',
-      'Optimized capital expenditure planning',
+    whatChanges: [
+      'Predictive equipment failure detection for critical assets',
+      'Autonomous risk-based prioritization of field work',
+      'Real-time operational visibility across distributed sites',
     ],
   },
   {
     icon: Plane,
-    name: 'Aviation & Aerospace',
-    painPoints: [
-      'Safety-critical maintenance with zero margin for error',
-      'Complex supply chain for specialized parts',
-      'Regulatory documentation overhead',
+    name: 'Mining',
+    whatBreaks: [
+      'Heavy equipment failures halting production',
+      'Massive asset portfolios with limited maintenance staff',
+      'Safety and environmental compliance pressure',
     ],
-    useCases: [
-      'Predictive maintenance for aircraft systems',
-      'Intelligent parts inventory and procurement',
-      'Automated maintenance record keeping',
-    ],
-    outcomes: [
-      'Improved fleet availability',
-      'Reduced AOG incidents',
-      'Streamlined regulatory audits',
+    whatChanges: [
+      'Equipment health scoring and failure prediction',
+      'Intelligent maintenance scheduling to minimize production impact',
+      'Automated compliance documentation and reporting',
     ],
   },
   {
     icon: Building2,
-    name: 'Commercial Real Estate',
-    painPoints: [
-      'Reactive facilities management',
-      'Poor tenant experience due to system failures',
-      'Rising operational costs',
+    name: 'Heavy Manufacturing',
+    whatBreaks: [
+      'Unplanned production line downtime costing millions',
+      'Work order backlogs growing faster than execution capacity',
+      'Disconnected systems creating information silos',
     ],
-    useCases: [
-      'HVAC optimization and predictive maintenance',
-      'Automated work order generation and routing',
-      'Energy consumption optimization',
+    whatChanges: [
+      'AI-driven work order prioritization by production impact',
+      'Predictive maintenance reducing emergency repairs',
+      'Unified operational intelligence across systems',
     ],
-    outcomes: [
-      'Improved tenant satisfaction scores',
-      'Reduced energy costs',
-      'Lower emergency maintenance expenses',
+  },
+  {
+    icon: Zap,
+    name: 'Utilities',
+    whatBreaks: [
+      'Aging grid infrastructure with increasing failure risk',
+      'Limited budgets and skilled workforce shortages',
+      'Regulatory compliance complexity',
+    ],
+    whatChanges: [
+      'Grid asset risk scoring and intelligent replacement planning',
+      'Optimized field team routing and resource allocation',
+      'Automated regulatory reporting and audit readiness',
+    ],
+  },
+  {
+    icon: Droplet,
+    name: 'Equipment Rental',
+    whatBreaks: [
+      'Equipment downtime impacting customer commitments',
+      'Poor visibility into asset health across rental fleet',
+      'Reactive maintenance increasing operating costs',
+    ],
+    whatChanges: [
+      'Fleet health monitoring and predictive maintenance',
+      'Automated maintenance scheduling between rentals',
+      'Improved asset utilization and customer satisfaction',
     ],
   },
   {
     icon: Ship,
-    name: 'Maritime & Shipping',
-    painPoints: [
-      'Vessel downtime impacting delivery schedules',
-      'Remote diagnostics challenges',
-      'Complex maintenance coordination across ports',
+    name: 'Multi-site Operators',
+    whatBreaks: [
+      'Inconsistent maintenance practices across locations',
+      'Limited visibility into enterprise-wide asset health',
+      'Difficulty standardizing operations at scale',
     ],
-    useCases: [
-      'Vessel system health monitoring and prediction',
-      'Port-based maintenance optimization',
-      'Parts procurement and logistics coordination',
-    ],
-    outcomes: [
-      'Reduced vessel downtime',
-      'Improved on-time delivery rates',
-      'Lower maintenance costs per voyage',
+    whatChanges: [
+      'Enterprise-wide operational intelligence and benchmarking',
+      'Standardized AI-driven maintenance workflows',
+      'Centralized governance with site-level autonomy',
     ],
   },
 ];
@@ -152,13 +121,13 @@ export default function IndustriesPage() {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-3 gap-8 p-8">
+                  <div className="grid md:grid-cols-2 gap-8 p-8">
                     <div>
-                      <h3 className="text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-4">
-                        Pain Points
+                      <h3 className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-4">
+                        What Breaks Today
                       </h3>
                       <ul className="space-y-3">
-                        {industry.painPoints.map((point, idx) => (
+                        {industry.whatBreaks.map((point, idx) => (
                           <li key={idx} className="flex items-start space-x-2">
                             <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 flex-shrink-0" />
                             <span className="text-gray-400 text-sm">{point}</span>
@@ -169,27 +138,13 @@ export default function IndustriesPage() {
 
                     <div>
                       <h3 className="text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-4">
-                        AI Use Cases
+                        What StiggSync Changes
                       </h3>
                       <ul className="space-y-3">
-                        {industry.useCases.map((useCase, idx) => (
+                        {industry.whatChanges.map((change, idx) => (
                           <li key={idx} className="flex items-start space-x-2">
                             <div className="w-1.5 h-1.5 bg-[#3B82F6] rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-gray-300 text-sm">{useCase}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-4">
-                        Operational Outcomes
-                      </h3>
-                      <ul className="space-y-3">
-                        {industry.outcomes.map((outcome, idx) => (
-                          <li key={idx} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-gray-300 text-sm font-medium">{outcome}</span>
+                            <span className="text-gray-300 text-sm font-medium">{change}</span>
                           </li>
                         ))}
                       </ul>
@@ -204,16 +159,16 @@ export default function IndustriesPage() {
         <AnimatedSection delay={0.4}>
           <div className="mt-32 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Don't See Your Industry?
+              Talk to Us About Your Environment
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               If you operate critical physical assets, StiggSync can adapt to your operational context.
             </p>
             <a
-              href="/strategic-pilot"
+              href="/contact"
               className="inline-block px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
             >
-              Discuss Your Use Case
+              Contact Us
             </a>
           </div>
         </AnimatedSection>

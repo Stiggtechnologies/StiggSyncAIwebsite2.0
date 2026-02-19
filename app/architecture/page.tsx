@@ -176,6 +176,23 @@ export default function ArchitecturePage() {
             </div>
           </div>
         </AnimatedSection>
+
+        <AnimatedSection delay={1.0}>
+          <div className="mt-20 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
+            <h2 className="text-3xl font-bold text-white mb-6">
+              Ready to Deploy?
+            </h2>
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+              See how StiggSync can transform your operations in 90 days.
+            </p>
+            <a
+              href="/strategic-pilot"
+              className="inline-block px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
+            >
+              Apply for Strategic Pilot
+            </a>
+          </div>
+        </AnimatedSection>
       </Section>
     </main>
   );

@@ -5,10 +5,12 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { motion } from 'framer-motion';
 
 const problems = [
-  'Planning cycles measured in weeks while asset failures happen in minutes',
-  'Technicians drowning in alerts with no context on priority or business impact',
-  'Work orders sitting unexecuted while critical risk escalates silently',
-  'Maintenance teams operating on instinct, not intelligence',
+  'Too many assets',
+  'Too many work orders',
+  'Aging infrastructure',
+  'Skilled labor shortages',
+  'Disconnected systems',
+  'Increasing downtime risk',
 ];
 
 export default function ProblemSection() {
