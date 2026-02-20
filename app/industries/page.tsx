@@ -18,6 +18,7 @@ const industries = [
       'Autonomous risk-based prioritization of field work',
       'Real-time operational visibility across distributed sites',
     ],
+    economicFrame: 'In high-margin production environments, even marginal downtime reduction can justify autonomous infrastructure deployment within months.',
   },
   {
     icon: Plane,
@@ -32,6 +33,7 @@ const industries = [
       'Intelligent maintenance scheduling to minimize production impact',
       'Automated compliance documentation and reporting',
     ],
+    economicFrame: 'With hourly downtime costs exceeding $100K on critical equipment, predictive maintenance pays for itself with a single avoided failure.',
   },
   {
     icon: Building2,
@@ -46,6 +48,7 @@ const industries = [
       'Predictive maintenance reducing emergency repairs',
       'Unified operational intelligence across systems',
     ],
+    economicFrame: 'Every percentage point of OEE improvement translates directly to throughput and margin. AI-driven prioritization compounds these gains.',
   },
   {
     icon: Zap,
@@ -60,6 +63,7 @@ const industries = [
       'Optimized field team routing and resource allocation',
       'Automated regulatory reporting and audit readiness',
     ],
+    economicFrame: 'Regulatory penalties and outage costs far exceed infrastructure investment. Proactive risk management is economically defensible.',
   },
   {
     icon: Droplet,
@@ -74,6 +78,7 @@ const industries = [
       'Automated maintenance scheduling between rentals',
       'Improved asset utilization and customer satisfaction',
     ],
+    economicFrame: 'Higher fleet utilization and reduced emergency repairs directly improve unit economics and customer retention.',
   },
   {
     icon: Ship,
@@ -88,6 +93,7 @@ const industries = [
       'Standardized AI-driven maintenance workflows',
       'Centralized governance with site-level autonomy',
     ],
+    economicFrame: 'Standardization at scale creates compounding efficiency gains that accelerate with each site brought online.',
   },
 ];
 
@@ -149,6 +155,12 @@ export default function IndustriesPage() {
                         ))}
                       </ul>
                     </div>
+                  </div>
+
+                  <div className="px-8 pb-8">
+                    <p className="text-sm text-gray-500 italic border-l-2 border-[#3B82F6]/30 pl-4">
+                      {industry.economicFrame}
+                    </p>
                   </div>
                 </div>
               </AnimatedSection>

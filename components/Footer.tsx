@@ -9,12 +9,17 @@ export default function Footer() {
             <div className="text-xl font-bold tracking-wide text-white mb-4">
               StiggSync<span className="text-[#3B82F6]">AI</span>
             </div>
-            <p className="text-gray-400 text-sm max-w-md leading-relaxed mb-2">
+            <p className="text-gray-400 text-sm max-w-md leading-relaxed mb-4">
               Industrial AI Infrastructure
             </p>
-            <p className="text-gray-500 text-sm max-w-md leading-relaxed">
-              Autonomous agents embedded inside asset-intensive operations.
-            </p>
+            <div className="space-y-1">
+              <a href="mailto:info@stiggsync.ai" className="block text-gray-500 text-sm hover:text-white transition-colors">
+                info@stiggsync.ai
+              </a>
+              <a href="mailto:security@stiggsync.ai" className="block text-gray-500 text-sm hover:text-white transition-colors">
+                security@stiggsync.ai
+              </a>
+            </div>
           </div>
 
           <div>
@@ -47,8 +52,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/company" className="text-gray-400 text-sm hover:text-white transition-colors">
-                  Company
+                <Link href="/philosophy" className="text-gray-400 text-sm hover:text-white transition-colors">
+                  Philosophy
                 </Link>
               </li>
               <li>
@@ -59,6 +64,11 @@ export default function Footer() {
               <li>
                 <Link href="/strategic-pilot" className="text-gray-400 text-sm hover:text-white transition-colors">
                   Strategic Pilot
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-gray-400 text-sm hover:text-white transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>

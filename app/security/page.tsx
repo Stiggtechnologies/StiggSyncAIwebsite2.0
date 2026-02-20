@@ -99,7 +99,7 @@ export default function SecurityPage() {
                 We understand the regulatory and security requirements of highly regulated environments including healthcare, defense, and critical infrastructure.
               </p>
               <p className="text-lg text-gray-400 text-center">
-                While we do not currently claim specific certifications, our architecture is designed with compliance-readiness for HIPAA, SOC 2, and industrial security standards.
+                Our architecture is designed to support compliance-readiness for frameworks including HIPAA, SOC 2, and industrial security standards. Formal certifications are part of our enterprise roadmap.
               </p>
             </div>
           </div>

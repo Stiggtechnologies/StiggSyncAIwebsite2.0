@@ -80,7 +80,7 @@ export default function PhilosophyPage() {
                   The tools we've relied on for decades — CMMS, spreadsheets, tribal knowledge — were designed for a different era. They help us track work. They don't help us operate.
                 </p>
                 <p>
-                  Generative AI has unlocked new possibilities, but chatbots and copilots won't solve industrial operations. We need autonomous systems that can reason about risk, coordinate across domains, and make decisions at machine speed.
+                  Advances in large-scale AI reasoning models have crossed the capability threshold required for real-time industrial risk analysis and coordination. But chatbots and copilots won't solve industrial operations. We need autonomous systems that can reason about risk, coordinate across domains, and make decisions at machine speed.
                 </p>
                 <p className="text-white font-semibold text-2xl">
                   StiggSync is that system.
