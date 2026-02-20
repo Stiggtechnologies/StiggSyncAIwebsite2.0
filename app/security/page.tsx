@@ -78,7 +78,7 @@ export default function SecurityPage() {
               <h2 className="text-3xl font-bold text-white mb-8 text-center">Governance Framework</h2>
               <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                 <p>
-                  StiggSync operates under a configurable governance model that ensures human oversight matches your risk tolerance and operational requirements.
+                  SyncAI operates under a configurable governance model that ensures human oversight matches your risk tolerance and operational requirements.
                 </p>
                 <p>
                   Define approval thresholds by asset criticality, work order value, or risk score. Route decisions to appropriate stakeholders automatically. Override any AI recommendation at any time.
@@ -111,7 +111,7 @@ export default function SecurityPage() {
               <h2 className="text-3xl font-bold text-white mb-6 text-center">Data Privacy</h2>
               <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                 <p>
-                  Your operational data remains under your control. StiggSync can be deployed in your cloud environment or on-premise to meet data residency and sovereignty requirements.
+                  Your operational data remains under your control. SyncAI can be deployed in your cloud environment or on-premise to meet data residency and sovereignty requirements.
                 </p>
                 <p>
                   We do not train AI models on customer data without explicit consent. Your competitive intelligence stays yours.
@@ -129,11 +129,11 @@ export default function SecurityPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:security@stiggsync.ai"
+                href="mailto:security@syncai.ca"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
               >
                 <Mail className="w-5 h-5" />
-                security@stiggsync.ai
+                security@syncai.ca
               </a>
               <a
                 href="/contact"

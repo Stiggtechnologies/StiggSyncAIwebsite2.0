@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
       try {
         await resend.emails.send({
-          from: process.env.RESEND_FROM_EMAIL || 'StiggSync AI <reports@stiggsync.ai>',
+          from: process.env.RESEND_FROM_EMAIL || 'SyncAI <reports@syncai.ca>',
           to: assessment.email,
           subject: `Your AI Readiness Assessment Report - ${assessment.company}`,
           html: reportHTML,

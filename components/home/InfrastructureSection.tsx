@@ -11,7 +11,7 @@ const layers = [
     color: 'from-[#3B82F6]/20 to-[#3B82F6]/10',
   },
   {
-    name: 'StiggSync AI Agent Layer',
+    name: 'SyncAI AI Agent Layer',
     description: 'Autonomous prioritization, continuous optimization, intelligent coordination',
     color: 'from-[#3B82F6]/40 to-[#3B82F6]/30',
   },
@@ -30,7 +30,7 @@ export default function InfrastructureSection() {
           Built as <span className="text-[#3B82F6]">Infrastructure</span>. Not an App.
         </h2>
         <p className="text-xl text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
-          StiggSync integrates with existing CMMS, ERP, sensors, work order history, inventory, and financial systems.
+          SyncAI integrates with existing CMMS, ERP, sensors, work order history, inventory, and financial systems.
         </p>
         <p className="text-xl text-white text-center mb-20 max-w-3xl mx-auto font-semibold">
           It does not rip and replace. It elevates.

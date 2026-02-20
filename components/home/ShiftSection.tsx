@@ -44,7 +44,7 @@ export default function ShiftSection() {
           whileHover={{ scale: 1.02 }}
           className="group border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] backdrop-blur-sm rounded-lg p-8 hover:border-[#3B82F6]/60 hover:shadow-lg hover:shadow-[#3B82F6]/20 transition-all duration-300"
         >
-          <div className="text-sm font-semibold text-[#3B82F6] mb-4 uppercase tracking-wider">StiggSync Stack</div>
+          <div className="text-sm font-semibold text-[#3B82F6] mb-4 uppercase tracking-wider">SyncAI Stack</div>
           <div className="space-y-4">
             {[
               'AI Agents',

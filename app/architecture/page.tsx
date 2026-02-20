@@ -140,7 +140,7 @@ export default function ArchitecturePage() {
                 </div>
 
                 <div className="bg-[#3B82F6]/10 border border-[#3B82F6]/50 rounded-lg p-8">
-                  <h3 className="text-2xl font-bold text-white mb-4">StiggSync AI Agent Orchestration</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">SyncAI Agent Orchestration</h3>
                   <div className="grid grid-cols-3 gap-4 mt-6">
                     <div className="bg-white/5 border border-white/20 rounded p-3">
                       <p className="text-white text-sm font-medium">Risk Agents</p>
@@ -183,7 +183,7 @@ export default function ArchitecturePage() {
               Ready to Deploy?
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              See how StiggSync can transform your operations in 90 days.
+              See how SyncAI can transform your operations in 90 days.
             </p>
             <a
               href="/strategic-pilot"

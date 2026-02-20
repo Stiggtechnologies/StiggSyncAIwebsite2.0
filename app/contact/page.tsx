@@ -43,7 +43,7 @@ export default function ContactPage() {
                 Get in <span className="text-[#3B82F6]">Touch</span>
               </h1>
               <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                Have questions about StiggSync? Want to discuss your operational challenges? We're here to help.
+                Have questions about SyncAI? Want to discuss your operational challenges? We're here to help.
               </p>
             </div>
           </AnimatedSection>

@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               <div className="space-y-8 text-gray-300">
                 <Section title="1. Introduction">
                   <p>
-                    StiggSync AI (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
+                    SyncAI (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information
                     when you visit our website or use our services.
                   </p>
@@ -126,8 +126,8 @@ export default function PrivacyPage() {
                   <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-6">
                     <div className="flex items-center gap-3 text-[#3B82F6]">
                       <Mail className="w-5 h-5" />
-                      <a href="mailto:privacy@stiggsync.ai" className="hover:underline">
-                        privacy@stiggsync.ai
+                      <a href="mailto:privacy@syncai.ca" className="hover:underline">
+                        privacy@syncai.ca
                       </a>
                     </div>
                   </div>

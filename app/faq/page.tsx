@@ -12,9 +12,9 @@ import {
 
 const faqs = [
   {
-    question: 'Is StiggSync a replacement for CMMS?',
+    question: 'Is SyncAI a replacement for CMMS?',
     answer:
-      'No. StiggSync is an AI infrastructure layer that integrates with and augments your existing CMMS (SAP, Maximo, Fiix, etc.). We enhance your current systems with autonomous prioritization, predictive capabilities, and operational intelligence — without requiring you to replace working infrastructure.',
+      'No. SyncAI is an AI infrastructure layer that integrates with and augments your existing CMMS (SAP, Maximo, Fiix, etc.). We enhance your current systems with autonomous prioritization, predictive capabilities, and operational intelligence — without requiring you to replace working infrastructure.',
   },
   {
     question: 'How long does integration take?',
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'Does AI make autonomous decisions without approval?',
     answer:
-      'No. StiggSync operates under a human-in-the-loop governance model. AI agents recommend and prioritize. Humans approve and execute. You configure approval thresholds by asset criticality, work order value, or risk score. Every action is traceable to a human decision-maker.',
+      'No. SyncAI operates under a human-in-the-loop governance model. AI agents recommend and prioritize. Humans approve and execute. You configure approval thresholds by asset criticality, work order value, or risk score. Every action is traceable to a human decision-maker.',
   },
   {
     question: 'How is data protected?',
@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'What size organization benefits most?',
     answer:
-      'StiggSync delivers the highest ROI for organizations managing 500+ critical assets with annual maintenance budgets exceeding $5M. Smaller operations can benefit, but the economic impact is most significant at scale where efficiency gains compound.',
+      'SyncAI delivers the highest ROI for organizations managing 500+ critical assets with annual maintenance budgets exceeding $5M. Smaller operations can benefit, but the economic impact is most significant at scale where efficiency gains compound.',
   },
   {
     question: 'How do you measure ROI?',
@@ -47,7 +47,7 @@ const faqs = [
       'At pilot conclusion, you receive a comprehensive impact analysis and expansion roadmap. If results meet success criteria, we transition to ongoing infrastructure deployment — scaling AI agents across additional asset classes, sites, or operational domains.',
   },
   {
-    question: 'Can StiggSync work with our existing sensors and IoT infrastructure?',
+    question: 'Can SyncAI work with our existing sensors and IoT infrastructure?',
     answer:
       'Yes. Our integration layer connects with common industrial IoT platforms, SCADA systems, and sensor networks. We work with the data you already collect rather than requiring new hardware. During discovery, we assess your data landscape and identify integration paths.',
   },
@@ -86,7 +86,7 @@ export default function FAQPage() {
             </h1>
 
             <p className="text-xl text-gray-400 leading-relaxed">
-              Answers to common questions about StiggSync, our technology, and how we work with enterprise operations.
+              Answers to common questions about SyncAI, our technology, and how we work with enterprise operations.
             </p>
           </motion.div>
         </div>

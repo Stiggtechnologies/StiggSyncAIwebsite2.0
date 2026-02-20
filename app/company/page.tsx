@@ -63,7 +63,7 @@ export default function CompanyPage() {
               Industrial operations have reached an inflection point. Asset complexity has outpaced human coordination capacity. Maintenance backlogs grow faster than teams can execute. Risk exposure is rising while budgets remain flat.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
-              StiggSync is building the infrastructure layer that enables autonomous industrial operations — AI agents that continuously analyze risk, prioritize work, and coordinate execution with human oversight.
+              SyncAI is building the infrastructure layer that enables autonomous industrial operations — AI agents that continuously analyze risk, prioritize work, and coordinate execution with human oversight.
             </p>
           </div>
         </AnimatedSection>
@@ -138,7 +138,7 @@ export default function CompanyPage() {
                 <div>
                   <h2 className="text-3xl font-bold text-white mb-4">Partner-Friendly</h2>
                   <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                    We work with operators, OEMs, EPCs, and system integrators. StiggSync is infrastructure — it enhances your existing relationships and systems.
+                    We work with operators, OEMs, EPCs, and system integrators. SyncAI is infrastructure — it enhances your existing relationships and systems.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a

@@ -8,28 +8,48 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'StiggSync AI - The Industrial AI Infrastructure Layer',
-  description: 'Autonomous AI agents embedded inside asset-intensive operations — operating, prioritizing, and optimizing in real time.',
-  keywords: 'industrial AI, autonomous agents, maintenance optimization, asset management, CMMS, predictive maintenance',
+  metadataBase: new URL('https://syncai.ca'),
+  title: 'SyncAI — Industrial AI Infrastructure',
+  description: 'Autonomous AI infrastructure for asset-intensive operations.',
+  keywords: 'industrial AI, autonomous agents, maintenance optimization, asset management, CMMS, predictive maintenance, SyncAI',
+  authors: [{ name: 'SyncAI' }],
+  creator: 'SyncAI',
+  publisher: 'SyncAI',
+  alternates: {
+    canonical: 'https://syncai.ca',
+  },
   openGraph: {
-    title: 'StiggSync AI - The Industrial AI Infrastructure Layer',
-    description: 'Autonomous AI agents embedded inside asset-intensive operations — operating, prioritizing, and optimizing in real time.',
+    title: 'SyncAI — Industrial AI Infrastructure',
+    description: 'Autonomous AI infrastructure for asset-intensive operations.',
+    url: 'https://syncai.ca',
+    siteName: 'SyncAI',
     type: 'website',
+    locale: 'en_CA',
     images: [
       {
-        url: 'https://bolt.new/static/og_default.png',
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SyncAI — Industrial AI Infrastructure',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'StiggSync AI - The Industrial AI Infrastructure Layer',
-    description: 'Autonomous AI agents embedded inside asset-intensive operations — operating, prioritizing, and optimizing in real time.',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    title: 'SyncAI — Industrial AI Infrastructure',
+    description: 'Autonomous AI infrastructure for asset-intensive operations.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

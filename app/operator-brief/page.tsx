@@ -8,7 +8,7 @@ import { CheckCircle2, FileText, Download, ChevronRight } from 'lucide-react';
 const tableOfContents = [
   'The Structural Problem',
   'The Shift: From Software to Infrastructure',
-  'The StiggSync Agent Model',
+  'The SyncAI Agent Model',
   'Governance & Human Oversight',
   'The 90-Day Deployment Framework',
   'Typical 90-Day Impact',
@@ -142,7 +142,7 @@ export default function OperatorBriefPage() {
                   <h2 className="text-3xl font-bold text-white mb-6">The Shift to Infrastructure</h2>
                   <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-8 space-y-4">
                     <p className="text-xl text-gray-300 leading-relaxed">
-                      StiggSync functions as <span className="text-[#3B82F6] font-semibold">an AI workforce embedded above existing systems</span>.
+                      SyncAI functions as <span className="text-[#3B82F6] font-semibold">an AI workforce embedded above existing systems</span>.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
                       It does not replace CMMS or ERP platforms. It orchestrates them intelligently with:

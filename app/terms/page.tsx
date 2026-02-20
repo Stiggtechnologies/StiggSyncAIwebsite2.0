@@ -28,14 +28,14 @@ export default function TermsPage() {
               <div className="space-y-8 text-gray-300">
                 <Section title="1. Acceptance of Terms">
                   <p>
-                    By accessing or using the StiggSync AI website and services, you agree to be bound by
+                    By accessing or using the SyncAI website and services, you agree to be bound by
                     these Terms of Service. If you do not agree to these terms, please do not use our services.
                   </p>
                 </Section>
 
                 <Section title="2. Description of Services">
                   <p>
-                    StiggSync AI provides an enterprise-grade AI infrastructure platform for industrial
+                    SyncAI provides an enterprise-grade AI infrastructure platform for industrial
                     maintenance optimization. Our services include:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 mt-4">
@@ -77,7 +77,7 @@ export default function TermsPage() {
                 <Section title="5. Intellectual Property">
                   <p>
                     All content on this website, including text, graphics, logos, software, and
-                    methodologies, is the property of StiggSync AI or its licensors and is protected
+                    methodologies, is the property of SyncAI or its licensors and is protected
                     by intellectual property laws.
                   </p>
                   <p className="mt-4">
@@ -98,7 +98,7 @@ export default function TermsPage() {
 
                 <Section title="7. Limitation of Liability">
                   <p>
-                    To the maximum extent permitted by law, StiggSync AI shall not be liable for any
+                    To the maximum extent permitted by law, SyncAI shall not be liable for any
                     indirect, incidental, special, consequential, or punitive damages, including but
                     not limited to:
                   </p>
@@ -117,7 +117,7 @@ export default function TermsPage() {
 
                 <Section title="8. Indemnification">
                   <p>
-                    You agree to indemnify and hold harmless StiggSync AI, its officers, directors,
+                    You agree to indemnify and hold harmless SyncAI, its officers, directors,
                     employees, and agents from any claims, damages, losses, or expenses arising from
                     your use of our services or violation of these terms.
                   </p>
@@ -154,8 +154,8 @@ export default function TermsPage() {
                   <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-6">
                     <div className="flex items-center gap-3 text-[#3B82F6]">
                       <Mail className="w-5 h-5" />
-                      <a href="mailto:legal@stiggsync.ai" className="hover:underline">
-                        legal@stiggsync.ai
+                      <a href="mailto:legal@syncai.ca" className="hover:underline">
+                        legal@syncai.ca
                       </a>
                     </div>
                   </div>

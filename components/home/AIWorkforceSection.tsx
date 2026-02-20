@@ -73,7 +73,7 @@ export default function AIWorkforceSection() {
 
       <AnimatedSection delay={0.4}>
         <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-          StiggSync does not replace your systems. It becomes the intelligence layer above them — continuously analyzing risk, prioritizing action, and escalating with governance.
+          SyncAI does not replace your systems. It becomes the intelligence layer above them — continuously analyzing risk, prioritizing action, and escalating with governance.
         </p>
       </AnimatedSection>
     </Section>

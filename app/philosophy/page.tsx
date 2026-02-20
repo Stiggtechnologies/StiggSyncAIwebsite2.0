@@ -18,7 +18,7 @@ const principles = [
   {
     title: 'Risk-First Decision Making',
     content:
-      'Every maintenance decision carries financial risk. StiggSync quantifies that risk in real time and ensures your teams work on what matters most to operational continuity and asset value.',
+      'Every maintenance decision carries financial risk. SyncAI quantifies that risk in real time and ensures your teams work on what matters most to operational continuity and asset value.',
   },
   {
     title: 'Human Expertise, Amplified',
@@ -28,7 +28,7 @@ const principles = [
   {
     title: 'Built for Mission-Critical Systems',
     content:
-      'Industrial operations have zero tolerance for failure. StiggSync is architected for reliability, transparency, and auditability from the ground up. Your operations depend on it.',
+      'Industrial operations have zero tolerance for failure. SyncAI is architected for reliability, transparency, and auditability from the ground up. Your operations depend on it.',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function PhilosophyPage() {
                   Advances in large-scale AI reasoning models have crossed the capability threshold required for real-time industrial risk analysis and coordination. But chatbots and copilots won't solve industrial operations. We need autonomous systems that can reason about risk, coordinate across domains, and make decisions at machine speed.
                 </p>
                 <p className="text-white font-semibold text-2xl">
-                  StiggSync is that system.
+                  SyncAI is that system.
                 </p>
               </div>
             </div>

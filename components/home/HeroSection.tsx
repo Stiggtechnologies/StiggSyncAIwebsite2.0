@@ -34,7 +34,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           className="text-base text-gray-400 mb-12 max-w-2xl mx-auto border border-white/10 rounded-lg px-6 py-3 bg-white/[0.02]"
         >
-          StiggSync is an enterprise AI platform deployed via structured 90-day pilots and scaled as ongoing infrastructure.
+          SyncAI is an enterprise AI platform deployed via structured 90-day pilots and scaled as ongoing infrastructure.
         </motion.p>
 
         <motion.div

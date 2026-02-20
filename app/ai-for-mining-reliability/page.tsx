@@ -159,7 +159,7 @@ export default function MiningReliabilityPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                How StiggSync AI Transforms Mining Reliability
+                How SyncAI Transforms Mining Reliability
               </h2>
               <p className="text-gray-400 mb-8 leading-relaxed">
                 Our autonomous AI agents integrate directly with your CMMS and equipment sensors

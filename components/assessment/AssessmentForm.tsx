@@ -384,7 +384,7 @@ export default function AssessmentForm() {
             />
           </FormField>
           <p className="text-xs text-gray-500 mt-4">
-            By submitting, you agree to receive your AI Readiness Report and occasional updates from StiggSync AI.
+            By submitting, you agree to receive your AI Readiness Report and occasional updates from SyncAI.
             We respect your privacy and will never share your information.
           </p>
         </StepContainer>

@@ -156,7 +156,7 @@ export default function IndustriesPage() {
 
                     <div>
                       <h3 className="text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-4">
-                        What StiggSync Changes
+                        What SyncAI Changes
                       </h3>
                       <ul className="space-y-3">
                         {industry.whatChanges.map((change, idx) => (
@@ -191,7 +191,7 @@ export default function IndustriesPage() {
                   Even modest improvements in unplanned downtime, reactive labor allocation, spare parts carrying cost, and compliance preparation time can justify autonomous maintenance deployment within a single fiscal cycle.
                 </p>
                 <p className="text-white font-medium">
-                  StiggSync is designed for environments where operational risk carries measurable financial consequences.
+                  SyncAI is designed for environments where operational risk carries measurable financial consequences.
                 </p>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function IndustriesPage() {
               Talk to Us About Your Environment
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              If you operate critical physical assets, StiggSync can adapt to your operational context.
+              If you operate critical physical assets, SyncAI can adapt to your operational context.
             </p>
             <a
               href="/contact"
