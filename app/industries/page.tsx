@@ -9,14 +9,16 @@ const industries = [
     icon: Factory,
     name: 'Oil & Gas',
     whatBreaks: [
-      'Offshore equipment failures causing multi-million dollar losses',
-      'Reactive maintenance culture with unpredictable shutdowns',
-      'Poor coordination across distributed field operations',
+      'Critical rotating equipment failures triggering $250K-$2M/hour production losses',
+      'PM programs detached from real-time asset condition',
+      'Work order prioritization driven by backlog, not risk exposure',
+      'Cross-site coordination lag between field ops and central maintenance',
     ],
     whatChanges: [
-      'Predictive equipment failure detection for critical assets',
-      'Autonomous risk-based prioritization of field work',
-      'Real-time operational visibility across distributed sites',
+      'Continuous risk scoring of critical rotating and static assets',
+      'Real-time reprioritization of work based on production impact',
+      'Cross-site operational intelligence layer',
+      'Predictive escalation before shutdown thresholds are reached',
     ],
     economicFrame: 'In high-margin production environments, even marginal downtime reduction can justify autonomous infrastructure deployment within months.',
   },
@@ -24,14 +26,16 @@ const industries = [
     icon: Plane,
     name: 'Mining',
     whatBreaks: [
-      'Heavy equipment failures halting production',
-      'Massive asset portfolios with limited maintenance staff',
-      'Safety and environmental compliance pressure',
+      'Haul truck and shovel downtime cascading into lost throughput',
+      'Reactive maintenance driven by failure, not degradation signals',
+      'Massive asset fleets with fragmented visibility',
+      'Compliance documentation prepared manually post-event',
     ],
     whatChanges: [
-      'Equipment health scoring and failure prediction',
-      'Intelligent maintenance scheduling to minimize production impact',
-      'Automated compliance documentation and reporting',
+      'Equipment health scoring aligned to throughput impact',
+      'Predictive maintenance windows synchronized with production cycles',
+      'Fleet-level risk benchmarking across sites',
+      'Continuous audit trail for environmental and safety compliance',
     ],
     economicFrame: 'With hourly downtime costs exceeding $100K on critical equipment, predictive maintenance pays for itself with a single avoided failure.',
   },
@@ -39,14 +43,16 @@ const industries = [
     icon: Building2,
     name: 'Heavy Manufacturing',
     whatBreaks: [
-      'Unplanned production line downtime costing millions',
-      'Work order backlogs growing faster than execution capacity',
-      'Disconnected systems creating information silos',
+      'OEE degradation from unplanned stoppages',
+      'Work order backlogs masking production-critical failures',
+      'Siloed MES, CMMS, and ERP systems',
+      'Maintenance strategy disconnected from production economics',
     ],
     whatChanges: [
-      'AI-driven work order prioritization by production impact',
-      'Predictive maintenance reducing emergency repairs',
-      'Unified operational intelligence across systems',
+      'AI-driven prioritization aligned to OEE impact',
+      'Autonomous coordination between maintenance and production',
+      'Real-time asset risk quantification',
+      'Unified operational intelligence layer',
     ],
     economicFrame: 'Every percentage point of OEE improvement translates directly to throughput and margin. AI-driven prioritization compounds these gains.',
   },
@@ -54,14 +60,16 @@ const industries = [
     icon: Zap,
     name: 'Utilities',
     whatBreaks: [
-      'Aging grid infrastructure with increasing failure risk',
-      'Limited budgets and skilled workforce shortages',
-      'Regulatory compliance complexity',
+      'Aging transmission and distribution assets increasing failure risk',
+      'Deferred capital budgets compounding reliability exposure',
+      'Manual compliance documentation for regulatory bodies',
+      'Limited predictive modeling across distributed grid infrastructure',
     ],
     whatChanges: [
-      'Grid asset risk scoring and intelligent replacement planning',
-      'Optimized field team routing and resource allocation',
-      'Automated regulatory reporting and audit readiness',
+      'Risk-based asset replacement modeling',
+      'Predictive grid reliability scoring (SAIDI/SAIFI impact)',
+      'Automated compliance documentation and traceability',
+      'Intelligent field dispatch prioritization',
     ],
     economicFrame: 'Regulatory penalties and outage costs far exceed infrastructure investment. Proactive risk management is economically defensible.',
   },
@@ -69,14 +77,16 @@ const industries = [
     icon: Droplet,
     name: 'Equipment Rental',
     whatBreaks: [
-      'Equipment downtime impacting customer commitments',
-      'Poor visibility into asset health across rental fleet',
-      'Reactive maintenance increasing operating costs',
+      'Hidden degradation reducing rental readiness',
+      'Maintenance cycles not aligned with utilization patterns',
+      'Reactive repairs reducing asset availability windows',
+      'Poor visibility into fleet-wide asset condition',
     ],
     whatChanges: [
-      'Fleet health monitoring and predictive maintenance',
-      'Automated maintenance scheduling between rentals',
-      'Improved asset utilization and customer satisfaction',
+      'Utilization-aware predictive maintenance scheduling',
+      'Automated service timing between rental cycles',
+      'Fleet-level health visibility dashboard',
+      'Increased asset turnover efficiency',
     ],
     economicFrame: 'Higher fleet utilization and reduced emergency repairs directly improve unit economics and customer retention.',
   },
@@ -84,14 +94,16 @@ const industries = [
     icon: Ship,
     name: 'Multi-site Operators',
     whatBreaks: [
-      'Inconsistent maintenance practices across locations',
-      'Limited visibility into enterprise-wide asset health',
-      'Difficulty standardizing operations at scale',
+      'Inconsistent maintenance standards across sites',
+      'No enterprise-wide asset risk benchmarking',
+      'Delayed executive visibility into operational risk',
+      'Manual reporting aggregation across locations',
     ],
     whatChanges: [
-      'Enterprise-wide operational intelligence and benchmarking',
-      'Standardized AI-driven maintenance workflows',
-      'Centralized governance with site-level autonomy',
+      'Enterprise-wide risk visibility and benchmarking',
+      'Standardized AI-driven prioritization logic',
+      'Cross-site performance benchmarking',
+      'Executive-level operational dashboards',
     ],
     economicFrame: 'Standardization at scale creates compounding efficiency gains that accelerate with each site brought online.',
   },
@@ -169,7 +181,25 @@ export default function IndustriesPage() {
         </div>
 
         <AnimatedSection delay={0.4}>
-          <div className="mt-32 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
+          <div className="mt-32 max-w-4xl mx-auto">
+            <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-12 mb-16">
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">
+                Economic Impact Across Industries
+              </h2>
+              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+                <p>
+                  Even modest improvements in unplanned downtime, reactive labor allocation, spare parts carrying cost, and compliance preparation time can justify autonomous maintenance deployment within a single fiscal cycle.
+                </p>
+                <p className="text-white font-medium">
+                  StiggSync is designed for environments where operational risk carries measurable financial consequences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.5}>
+          <div className="text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Talk to Us About Your Environment
             </h2>
