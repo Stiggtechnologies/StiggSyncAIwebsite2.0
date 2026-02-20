@@ -2,11 +2,11 @@
 
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { Factory, Zap, Droplet, Plane, Building2, Ship } from 'lucide-react';
+import { Fuel, Zap, Truck, HardHat, Building2, Network } from 'lucide-react';
 
 const industries = [
   {
-    icon: Factory,
+    icon: Fuel,
     name: 'Oil & Gas',
     whatBreaks: [
       'Critical rotating equipment failures triggering $250K-$2M/hour production losses',
@@ -23,7 +23,7 @@ const industries = [
     economicFrame: 'In high-margin production environments, even marginal downtime reduction can justify autonomous infrastructure deployment within months.',
   },
   {
-    icon: Plane,
+    icon: HardHat,
     name: 'Mining',
     whatBreaks: [
       'Haul truck and shovel downtime cascading into lost throughput',
@@ -74,7 +74,7 @@ const industries = [
     economicFrame: 'Regulatory penalties and outage costs far exceed infrastructure investment. Proactive risk management is economically defensible.',
   },
   {
-    icon: Droplet,
+    icon: Truck,
     name: 'Equipment Rental',
     whatBreaks: [
       'Hidden degradation reducing rental readiness',
@@ -91,7 +91,7 @@ const industries = [
     economicFrame: 'Higher fleet utilization and reduced emergency repairs directly improve unit economics and customer retention.',
   },
   {
-    icon: Ship,
+    icon: Network,
     name: 'Multi-site Operators',
     whatBreaks: [
       'Inconsistent maintenance standards across sites',
