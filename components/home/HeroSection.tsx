@@ -23,9 +23,18 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed"
         >
           Autonomous AI agents embedded inside asset-intensive operations — operating, prioritizing, and optimizing in real time.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+          className="text-base text-gray-500 mb-12 max-w-2xl mx-auto"
+        >
+          Enterprise-grade AI infrastructure platform deployed via structured 90-day pilots.
         </motion.p>
 
         <motion.div

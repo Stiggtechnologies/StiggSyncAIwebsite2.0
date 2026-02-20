@@ -3,7 +3,7 @@
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import AnimatedCard from '@/components/ui/AnimatedCard';
-import { Shield, Eye, Lock, FileCheck, Users, Database } from 'lucide-react';
+import { Shield, Eye, Lock, FileCheck, Users, Database, Mail } from 'lucide-react';
 
 const securityPrinciples = [
   {
@@ -123,16 +123,25 @@ export default function SecurityPage() {
 
         <AnimatedSection delay={0.9}>
           <div className="mt-20 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
-            <h2 className="text-3xl font-bold text-white mb-6">Request Security Overview</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Security Contact</h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              Get detailed documentation on our security architecture, compliance posture, and governance capabilities.
+              For security inquiries, vulnerability reports, or to request detailed documentation on our security architecture and compliance posture.
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
-            >
-              Contact Security Team
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="mailto:security@stiggsync.ai"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
+              >
+                <Mail className="w-5 h-5" />
+                security@stiggsync.ai
+              </a>
+              <a
+                href="/contact"
+                className="inline-block px-8 py-4 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
+              >
+                General Inquiries
+              </a>
+            </div>
           </div>
         </AnimatedSection>
       </Section>

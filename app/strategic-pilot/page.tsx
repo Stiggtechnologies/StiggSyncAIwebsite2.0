@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Clock, Users, FileCheck, Rocket } from 'lucide-react';
 
 const pilotPhases = [
   {
@@ -104,6 +104,50 @@ export default function StrategicPilotPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.3}>
+              <div className="mt-12 border border-white/10 bg-white/[0.02] rounded-lg p-8">
+                <h3 className="text-xl font-bold text-white mb-6">Next Steps After Application</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5 text-[#3B82F6]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Review Within 48 Hours</h4>
+                      <p className="text-sm text-gray-400">Our team reviews your application and operational context</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
+                      <Users className="w-5 h-5 text-[#3B82F6]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Executive Alignment Call</h4>
+                      <p className="text-sm text-gray-400">30-minute call to discuss goals, constraints, and success criteria</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
+                      <FileCheck className="w-5 h-5 text-[#3B82F6]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Data Discovery Session</h4>
+                      <p className="text-sm text-gray-400">Technical assessment of your systems and data architecture</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
+                      <Rocket className="w-5 h-5 text-[#3B82F6]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">Custom Pilot Proposal</h4>
+                      <p className="text-sm text-gray-400">Tailored engagement plan with timeline, scope, and investment</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </AnimatedSection>
           </div>

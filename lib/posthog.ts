@@ -39,4 +39,6 @@ export const ASSESSMENT_EVENTS = {
   COMPLETED: 'ai_assessment_completed',
   ROI_CALCULATED: 'roi_calculated',
   HIGH_PRIORITY_LEAD: 'high_priority_lead_generated',
+  STEP_ABANDONED: 'ai_assessment_step_abandoned',
+  STEP_COMPLETED: 'ai_assessment_step_completed',
 } as const;

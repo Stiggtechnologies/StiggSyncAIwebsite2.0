@@ -62,7 +62,20 @@ export default function AssessmentForm() {
   useEffect(() => {
     initPostHog();
     trackEvent(ASSESSMENT_EVENTS.STARTED);
-  }, []);
+
+    const handleBeforeUnload = () => {
+      if (!isComplete && currentStep > 0) {
+        trackEvent(ASSESSMENT_EVENTS.STEP_ABANDONED, {
+          step_number: currentStep,
+          step_name: STEPS[currentStep],
+          industry: data.industry || 'not_selected',
+        });
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [currentStep, isComplete, data.industry]);
 
   const updateData = <K extends keyof AssessmentData>(key: K, value: AssessmentData[K]) => {
     setData((prev) => ({ ...prev, [key]: value }));
@@ -93,6 +106,11 @@ export default function AssessmentForm() {
 
   const handleNext = async () => {
     if (currentStep < STEPS.length - 1) {
+      trackEvent(ASSESSMENT_EVENTS.STEP_COMPLETED, {
+        step_number: currentStep,
+        step_name: STEPS[currentStep],
+        industry: data.industry || 'not_selected',
+      });
       setCurrentStep((prev) => prev + 1);
     } else {
       await handleSubmit();

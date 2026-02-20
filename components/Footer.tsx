@@ -31,8 +31,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/philosophy" className="text-gray-400 text-sm hover:text-white transition-colors">
-                  Philosophy
+                <Link href="/ai-readiness" className="text-gray-400 text-sm hover:text-white transition-colors">
+                  AI Readiness
+                </Link>
+              </li>
+              <li>
+                <Link href="/insights" className="text-gray-400 text-sm hover:text-white transition-colors">
+                  Insights
                 </Link>
               </li>
             </ul>
@@ -71,10 +76,10 @@ export default function Footer() {
               &copy; 2026 StiggSync AI. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
-              <Link href="#" className="text-gray-500 text-sm hover:text-white transition-colors">
+              <Link href="/privacy" className="text-gray-500 text-sm hover:text-white transition-colors">
                 Privacy
               </Link>
-              <Link href="#" className="text-gray-500 text-sm hover:text-white transition-colors">
+              <Link href="/terms" className="text-gray-500 text-sm hover:text-white transition-colors">
                 Terms
               </Link>
               <Link href="/security" className="text-gray-500 text-sm hover:text-white transition-colors">
