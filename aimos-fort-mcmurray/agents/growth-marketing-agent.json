@@ -1,0 +1,365 @@
+{
+  "agent_id": "AGENT_GROWTH_FMM",
+  "agent_name": "Growth & Marketing Agent",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "status": "active",
+  
+  "purpose": "Monitor local SEO, optimize Google Ads, track lead conversion, manage reputation, drive patient acquisition",
+  
+  "seo_monitoring": {
+    "target_keywords": {
+      "pelvic_health": [
+        "pelvic floor physiotherapy fort mcmurray",
+        "pelvic health fort mcmurray",
+        "incontinence treatment fort mcmurray",
+        "postpartum physiotherapy fort mcmurray",
+        "women's health physio fort mcmurray"
+      ],
+      "concussion": [
+        "concussion treatment fort mcmurray",
+        "post-concussion therapy fort mcmurray",
+        "concussion rehab fort mcmurray",
+        "head injury physiotherapy fort mcmurray"
+      ],
+      "vestibular": [
+        "vertigo treatment fort mcmurray",
+        "dizziness therapy fort mcmurray",
+        "balance physiotherapy fort mcmurray",
+        "BPPV treatment fort mcmurray"
+      ],
+      "industrial": [
+        "workplace injury physiotherapy fort mcmurray",
+        "return to work physio fort mcmurray",
+        "WCB physiotherapy fort mcmurray",
+        "occupational therapy fort mcmurray"
+      ]
+    },
+    "ranking_targets": {
+      "top_3": ["priority_keywords"],
+      "top_5": ["secondary_keywords"],
+      "top_10": ["all_keywords"]
+    },
+    "tracking_frequency": "weekly",
+    "competitor_monitoring": {
+      "competitors": [
+        "local_physiotherapy_clinics",
+        "hospital_outpatient_services",
+        "chiropractors_offering_rehab"
+      ],
+      "track": ["rankings", "content", "reviews"]
+    }
+  },
+  
+  "google_ads_optimization": {
+    "budget": {
+      "monthly_budget": 1500.00,
+      "budget_allocation": {
+        "pelvic_health": 40.00,
+        "concussion": 25.00,
+        "industrial_athlete": 25.00,
+        "vestibular": 10.00
+      },
+      "max_cost_per_click": 8.00,
+      "target_cost_per_acquisition": 120.00
+    },
+    "campaign_structure": {
+      "pelvic_health_campaign": {
+        "ad_groups": [
+          "pelvic_floor_therapy",
+          "postpartum_recovery",
+          "incontinence_treatment",
+          "mens_pelvic_health"
+        ],
+        "geo_targeting": "fort_mcmurray_25km_radius",
+        "device_targeting": "all",
+        "scheduling": "business_hours_extended"
+      },
+      "concussion_campaign": {
+        "ad_groups": [
+          "concussion_treatment",
+          "post_concussion_syndrome",
+          "return_to_work_concussion"
+        ],
+        "urgency_messaging": true,
+        "remarketing_enabled": true
+      },
+      "industrial_athlete_campaign": {
+        "ad_groups": [
+          "workplace_injury",
+          "wcb_physiotherapy",
+          "return_to_work_assessment"
+        ],
+        "b2b_targeting": {
+          "employers": true,
+          "hr_decision_makers": true,
+          "safety_managers": true
+        }
+      }
+    },
+    "performance_monitoring": {
+      "metrics": [
+        "impressions",
+        "clicks",
+        "ctr",
+        "conversions",
+        "cost_per_conversion",
+        "roas"
+      ],
+      "optimization_frequency": "weekly",
+      "a_b_testing": {
+        "ad_copy": true,
+        "landing_pages": true,
+        "call_to_action": true
+      }
+    },
+    "automated_actions": {
+      "pause_low_performers": {
+        "threshold": "cpa_over_150_for_2_weeks",
+        "action": "pause_and_analyze"
+      },
+      "scale_high_performers": {
+        "threshold": "cpa_under_100_with_volume",
+        "action": "increase_budget_10_percent"
+      },
+      "bid_adjustments": {
+        "based_on": ["time_of_day", "device", "geo_performance"],
+        "auto_adjust": true
+      }
+    }
+  },
+  
+  "lead_conversion_tracking": {
+    "conversion_funnel": {
+      "stages": [
+        "ad_impression",
+        "website_visit",
+        "phone_call",
+        "form_submission",
+        "booking_made",
+        "appointment_attended"
+      ],
+      "drop_off_analysis": true,
+      "conversion_rate_targets": {
+        "website_visit_to_inquiry": 8.00,
+        "inquiry_to_booking": 70.00,
+        "booking_to_attendance": 88.00
+      }
+    },
+    "call_tracking": {
+      "unique_numbers_per_campaign": true,
+      "call_recording": true,
+      "call_quality_scoring": true,
+      "missed_call_alerts": true
+    },
+    "form_optimization": {
+      "a_b_testing": true,
+      "field_reduction": "minimize_friction",
+      "mobile_optimization": true,
+      "auto_response_enabled": true
+    }
+  },
+  
+  "reputation_management": {
+    "google_reviews": {
+      "target_rating": 4.8,
+      "target_volume": "50_reviews_first_year",
+      "review_request_automation": {
+        "trigger": "after_discharge_or_after_5_visits",
+        "method": "sms_and_email",
+        "timing": "2_days_post_visit"
+      },
+      "response_protocol": {
+        "positive_reviews": "thank_within_24_hours",
+        "negative_reviews": "respond_within_4_hours_offer_resolution",
+        "alert_on_negative": true
+      }
+    },
+    "online_presence": {
+      "google_my_business": {
+        "profile_optimization": true,
+        "post_frequency": "2_per_week",
+        "q_and_a_monitoring": "daily",
+        "photo_updates": "monthly"
+      },
+      "social_media": {
+        "platforms": ["facebook", "instagram"],
+        "content_calendar": true,
+        "engagement_monitoring": true
+      }
+    }
+  },
+  
+  "referral_tracking": {
+    "referral_sources": [
+      "physicians",
+      "employers",
+      "wcb",
+      "online_organic",
+      "online_paid",
+      "word_of_mouth",
+      "other_healthcare_providers"
+    ],
+    "source_attribution": "required_at_booking",
+    "high_value_sources": {
+      "physicians": {
+        "target_referral_doctors": 10,
+        "outreach_strategy": "quarterly_lunch_and_learns",
+        "reporting_back": "progress_summaries"
+      },
+      "employers": {
+        "target_contracts": 5,
+        "outreach_strategy": "safety_manager_meetings",
+        "value_proposition": "faster_rtw_lower_costs"
+      }
+    },
+    "referral_growth_tracking": "month_over_month"
+  },
+  
+  "content_marketing": {
+    "blog_strategy": {
+      "frequency": "1_per_week",
+      "topics": [
+        "pelvic_health_education",
+        "concussion_myths",
+        "industrial_athlete_stories",
+        "return_to_work_tips"
+      ],
+      "seo_optimized": true,
+      "internal_linking": true
+    },
+    "video_content": {
+      "exercise_demonstrations": true,
+      "patient_testimonials": true,
+      "clinician_education": true,
+      "platform": "youtube_and_website"
+    },
+    "email_marketing": {
+      "newsletter_frequency": "monthly",
+      "segmentation": ["specialty", "stage_of_care"],
+      "automation": ["welcome_series", "post_discharge_check_in"]
+    }
+  },
+  
+  "local_partnerships": {
+    "physician_network": {
+      "target": "family_doctors_and_specialists",
+      "outreach": "educational_sessions_and_case_discussions",
+      "goal": "10_referring_physicians_by_month_6"
+    },
+    "employer_partnerships": {
+      "target": "local_industrial_employers",
+      "services": ["injury_prevention_workshops", "on_site_assessments", "preferred_provider_agreements"],
+      "goal": "3_employer_contracts_by_month_9"
+    },
+    "community_presence": {
+      "events": ["health_fairs", "lunch_and_learns", "community_talks"],
+      "sponsorships": "local_sports_teams_and_events",
+      "networking": "chamber_of_commerce"
+    }
+  },
+  
+  "performance_metrics": [
+    "google_ranking_average",
+    "website_traffic",
+    "lead_volume",
+    "lead_to_booking_conversion_rate",
+    "cost_per_acquisition",
+    "return_on_ad_spend",
+    "google_review_rating",
+    "referral_source_distribution",
+    "patient_lifetime_value"
+  ],
+  
+  "kpis": {
+    "month_1-3": {
+      "new_patients_per_month": 25,
+      "google_review_rating": 4.5,
+      "top_10_keyword_rankings": 50
+    },
+    "month_4-6": {
+      "new_patients_per_month": 40,
+      "google_review_rating": 4.7,
+      "top_5_keyword_rankings": 60,
+      "employer_contracts": 1
+    },
+    "month_7-12": {
+      "new_patients_per_month": 60,
+      "google_review_rating": 4.8,
+      "top_3_keyword_rankings": 70,
+      "employer_contracts": 3
+    }
+  },
+  
+  "reporting": {
+    "weekly_marketing_report": {
+      "enabled": true,
+      "delivery_day": "monday",
+      "recipients": ["clinic_gm", "marketing_director"],
+      "includes": [
+        "ad_performance",
+        "lead_volume",
+        "conversion_rates",
+        "ranking_updates",
+        "review_summary"
+      ]
+    },
+    "monthly_growth_report": {
+      "enabled": true,
+      "delivery_day": "first_monday",
+      "recipients": ["clinic_gm", "coo", "cmo"],
+      "includes": [
+        "new_patient_acquisition",
+        "referral_source_breakdown",
+        "seo_progress",
+        "reputation_metrics",
+        "roi_analysis",
+        "strategic_recommendations"
+      ]
+    }
+  },
+  
+  "alerts": {
+    "keyword_ranking_drop": {
+      "threshold": "drop_out_of_top_10",
+      "recipients": ["marketing_director"],
+      "action": "seo_optimization_required"
+    },
+    "negative_review": {
+      "threshold": "3_stars_or_below",
+      "recipients": ["clinic_gm", "clinical_lead"],
+      "urgency": "immediate_response_required"
+    },
+    "conversion_rate_drop": {
+      "threshold": "below_50%_of_target_for_2_weeks",
+      "recipients": ["clinic_gm", "marketing_director"],
+      "action": "funnel_analysis_required"
+    },
+    "high_cpa": {
+      "threshold": "over_150_for_1_week",
+      "recipients": ["marketing_director"],
+      "action": "campaign_optimization_required"
+    }
+  },
+  
+  "integration_points": [
+    "google_analytics",
+    "google_ads",
+    "google_my_business",
+    "call_tracking_platform",
+    "crm_system",
+    "booking_system",
+    "email_marketing_platform"
+  ],
+  
+  "budget_management": {
+    "total_monthly_budget": 1500.00,
+    "allocation": {
+      "google_ads": 1200.00,
+      "content_creation": 200.00,
+      "tools_and_software": 100.00
+    },
+    "roi_target": "3:1_minimum",
+    "scale_rule": "increase_budget_when_sustained_roi_over_4:1"
+  }
+}

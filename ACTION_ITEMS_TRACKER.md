@@ -22,7 +22,14 @@
    - **Deadline**: ASAP (requested Feb 10-18)
    - **Source**: Multiple emails from CFWB Administrator
 
-3. **🟡 Check Board Training Progress**
+3. **🟡 SyncAI Email Account Monitoring**
+   - **What**: Monitor 5 email accounts once MochaHost creates them
+   - **Accounts**: info@, security@, privacy@, legal@, reports@syncai.ca
+   - **Status**: Pending domain availability in MochaHost cPanel
+   - **Action**: Add to HEARTBEAT.md for daily/weekly checks
+   - **Source**: SyncAI website deployment (Feb 19)
+
+4. **🟡 Check Board Training Progress**
    - **What**: Success Principles of Great Boards (9 modules)
    - **Deadline**: March 31, 2026
    - **Action**: Complete all modules before deadline
@@ -34,13 +41,13 @@
 
 ## 📋 MEDIUM PRIORITY (Next 2 Weeks)
 
-4. **Watch for WBRIN Meeting Invite**
+5. **Watch for WBRIN Meeting Invite**
    - **What**: Follow-up meeting with Jennifer Warren
    - **When**: Target March 13, 2026
    - **Action**: Accept calendar invite when received
    - **Source**: Email from Jennifer Warren (Feb 13)
 
-5. **Review Operating Plan and Budget**
+6. **Review Operating Plan and Budget**
    - **What**: CFWB annual documents
    - **Action**: Review and approve
    - **Source**: Email from CFWB Manager (Feb 10)

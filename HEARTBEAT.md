@@ -12,3 +12,4 @@
 - [ ] Organize memory/YYYY-MM-DD.md files
 - [ ] Check on project status (Git, CI/CD, etc.)
 - [ ] Update documentation as needed
+- [ ] **SyncAI Email Monitoring** - Automated 3x daily (info@, security@, privacy@, legal@, reports@syncai.ca)

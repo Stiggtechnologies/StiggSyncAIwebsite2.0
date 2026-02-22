@@ -1,0 +1,240 @@
+{
+  "agent_id": "AGENT_SCHEDULE_FMM",
+  "agent_name": "Schedule Optimization Agent",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "status": "active",
+  
+  "purpose": "Maximize room utilization, prioritize high-margin services, identify idle capacity, suggest operational improvements",
+  
+  "optimization_objectives": [
+    {
+      "name": "maximize_revenue_per_hour",
+      "weight": 0.40,
+      "target": "revenue_optimization"
+    },
+    {
+      "name": "maximize_room_utilization",
+      "weight": 0.30,
+      "target": "efficiency"
+    },
+    {
+      "name": "minimize_clinician_downtime",
+      "weight": 0.20,
+      "target": "productivity"
+    },
+    {
+      "name": "optimize_patient_experience",
+      "weight": 0.10,
+      "target": "satisfaction"
+    }
+  ],
+  
+  "utilization_targets": {
+    "room_utilization": {
+      "target_min": 60.0,
+      "target_max": 85.0,
+      "alert_below": 55.0,
+      "alert_above": 90.0
+    },
+    "clinician_utilization": {
+      "target_billable_hours_per_day": 6.5,
+      "max_consecutive_patients": 8,
+      "mandatory_break_minutes": 30
+    }
+  },
+  
+  "scheduling_rules": {
+    "pelvic_health": {
+      "preferred_days": ["monday", "wednesday", "friday"],
+      "preferred_times": ["09:00-12:00", "13:00-16:00"],
+      "specialist_required": true,
+      "back_to_back_max": 4,
+      "buffer_minutes": 15
+    },
+    "concussion": {
+      "preferred_times": ["09:00-11:00", "14:00-16:00"],
+      "avoid_late_afternoon": true,
+      "buffer_minutes": 10
+    },
+    "vestibular": {
+      "preferred_times": ["09:00-12:00"],
+      "avoid_after_lunch": true,
+      "reason": "patient_symptom_management"
+    },
+    "industrial_athlete": {
+      "flexible_scheduling": true,
+      "group_blocks_enabled": true,
+      "max_group_size": 4
+    }
+  },
+  
+  "service_prioritization": {
+    "tier_1_high_margin": {
+      "services": [
+        "SVC_PELVIC_001",
+        "SVC_CONC_001",
+        "SVC_IND_001",
+        "SVC_IND_003"
+      ],
+      "scheduling_priority": "highest",
+      "protected_time_blocks": true
+    },
+    "tier_2_medium_margin": {
+      "services": [
+        "SVC_PELVIC_002",
+        "SVC_CONC_002",
+        "SVC_VEST_001",
+        "SVC_IND_002"
+      ],
+      "scheduling_priority": "medium"
+    },
+    "tier_3_fill_capacity": {
+      "services": [
+        "SVC_VEST_002",
+        "SVC_VEST_003"
+      ],
+      "scheduling_priority": "low",
+      "use_for": "filling_gaps"
+    }
+  },
+  
+  "idle_capacity_detection": {
+    "detection_window_hours": 48,
+    "idle_threshold_minutes": 120,
+    "actions": [
+      {
+        "condition": "idle_block_detected",
+        "action": "suggest_marketing_campaign",
+        "target_services": ["high_margin_services"]
+      },
+      {
+        "condition": "recurring_idle_pattern",
+        "action": "suggest_schedule_adjustment",
+        "recommendation": "reduce_operating_hours_or_add_services"
+      },
+      {
+        "condition": "specific_room_underutilized",
+        "action": "suggest_cross_training_or_room_conversion"
+      }
+    ]
+  },
+  
+  "recommendations": {
+    "add_group_blocks": {
+      "trigger": "industrial_athlete_volume > 10_per_week",
+      "suggestion": "Add 2-hour group rehab blocks on Tuesdays and Thursdays",
+      "expected_impact": "30% increase in gym utilization"
+    },
+    "pelvic_specialist_days": {
+      "trigger": "pelvic_bookings_waitlist > 2_weeks",
+      "suggestion": "Increase pelvic specialist availability to 5 days/week",
+      "expected_impact": "Reduce wait times, capture more market share"
+    },
+    "evening_hours": {
+      "trigger": "daytime_utilization > 85% sustained",
+      "suggestion": "Add evening hours 17:00-20:00 on select days",
+      "expected_impact": "15-20% revenue increase"
+    }
+  },
+  
+  "dynamic_scheduling": {
+    "auto_adjust_enabled": false,
+    "suggest_adjustments": true,
+    "considerations": [
+      "historical_demand_patterns",
+      "seasonal_variations",
+      "local_employer_schedules",
+      "clinician_preferences",
+      "patient_feedback"
+    ]
+  },
+  
+  "conflict_resolution": {
+    "double_booking_prevention": true,
+    "clinician_overlap_alerts": true,
+    "room_conflict_detection": true,
+    "auto_suggest_alternatives": true
+  },
+  
+  "performance_metrics": [
+    "daily_utilization_rate",
+    "weekly_revenue_per_hour",
+    "idle_capacity_percentage",
+    "schedule_optimization_score",
+    "missed_opportunity_cost",
+    "clinician_satisfaction_score"
+  ],
+  
+  "reporting": {
+    "daily_utilization_report": {
+      "enabled": true,
+      "delivery_time": "08:00",
+      "recipients": ["clinic_gm"]
+    },
+    "weekly_optimization_report": {
+      "enabled": true,
+      "delivery_day": "monday",
+      "delivery_time": "09:00",
+      "recipients": ["clinic_gm", "coo"],
+      "includes": [
+        "utilization_summary",
+        "revenue_analysis",
+        "optimization_opportunities",
+        "recommended_actions"
+      ]
+    },
+    "monthly_strategic_report": {
+      "enabled": true,
+      "delivery_day": "first_monday",
+      "recipients": ["clinic_gm", "coo", "ceo"],
+      "includes": [
+        "trend_analysis",
+        "capacity_planning",
+        "expansion_triggers",
+        "roi_projections"
+      ]
+    }
+  },
+  
+  "alerts": {
+    "low_utilization": {
+      "threshold": 55.0,
+      "alert_level": "warning",
+      "notify": ["clinic_gm"],
+      "frequency": "daily"
+    },
+    "high_utilization": {
+      "threshold": 90.0,
+      "alert_level": "info",
+      "notify": ["clinic_gm", "coo"],
+      "message": "Capacity nearing saturation - consider expansion"
+    },
+    "idle_capacity_detected": {
+      "threshold_hours": 4,
+      "alert_level": "info",
+      "notify": ["clinic_gm"],
+      "include_recommendations": true
+    }
+  },
+  
+  "ai_learning": {
+    "learn_from_patterns": true,
+    "optimize_over_time": true,
+    "factors_considered": [
+      "no_show_rates_by_time",
+      "cancellation_patterns",
+      "patient_preference_data",
+      "seasonal_demand_curves",
+      "local_industry_schedules"
+    ]
+  },
+  
+  "integration_points": [
+    "booking_system",
+    "clinician_availability_calendar",
+    "room_management_system",
+    "financial_reporting_system",
+    "marketing_automation"
+  ]
+}

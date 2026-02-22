@@ -1,0 +1,208 @@
+{
+  "agent_id": "AGENT_INTAKE_FMM",
+  "agent_name": "Intake & Triage AI Agent",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "status": "active",
+  
+  "purpose": "Automatically triage incoming patients, route to appropriate specialty, flag red flags, and pre-fill intake forms",
+  
+  "capabilities": [
+    "symptom_analysis",
+    "specialty_routing",
+    "red_flag_detection",
+    "intake_form_automation",
+    "urgency_classification"
+  ],
+  
+  "human_in_loop": {
+    "enabled": true,
+    "review_level": "clinician",
+    "approval_required_for": [
+      "red_flag_cases",
+      "ambiguous_symptoms",
+      "specialty_conflict"
+    ]
+  },
+  
+  "triage_logic": {
+    "pelvic_health": {
+      "keywords": [
+        "pelvic pain",
+        "incontinence",
+        "postpartum",
+        "pregnancy",
+        "pelvic floor",
+        "bladder control",
+        "bowel control",
+        "sexual dysfunction",
+        "prolapse"
+      ],
+      "age_range": [18, 100],
+      "gender_specific": false,
+      "route_to_room": "AIM_FMM_001_R1",
+      "default_service": "SVC_PELVIC_001",
+      "priority": "high"
+    },
+    
+    "concussion": {
+      "keywords": [
+        "concussion",
+        "head injury",
+        "brain injury",
+        "post-concussion",
+        "headache after impact",
+        "confusion after fall",
+        "memory issues",
+        "sensitivity to light",
+        "nausea after head injury"
+      ],
+      "onset_window_days": 30,
+      "route_to_room": "AIM_FMM_001_R2",
+      "default_service": "SVC_CONC_001",
+      "priority": "urgent"
+    },
+    
+    "vestibular": {
+      "keywords": [
+        "dizziness",
+        "vertigo",
+        "balance problems",
+        "room spinning",
+        "lightheaded",
+        "unsteady",
+        "BPPV",
+        "benign positional vertigo"
+      ],
+      "route_to_room": "AIM_FMM_001_R2",
+      "default_service": "SVC_VEST_001",
+      "priority": "high"
+    },
+    
+    "industrial_athlete": {
+      "keywords": [
+        "work injury",
+        "workplace accident",
+        "return to work",
+        "WCB",
+        "occupational injury",
+        "job conditioning",
+        "functional capacity",
+        "work clearance"
+      ],
+      "insurance_types": ["WCB", "employer_direct"],
+      "route_to_room": "AIM_FMM_001_R4",
+      "default_service": "SVC_IND_001",
+      "priority": "high",
+      "requires_employer_info": true
+    }
+  },
+  
+  "red_flags": {
+    "immediate_medical_attention": [
+      "severe headache with vomiting",
+      "loss of consciousness",
+      "seizure",
+      "weakness in limbs",
+      "loss of bowel/bladder control (sudden onset)",
+      "chest pain",
+      "shortness of breath",
+      "signs of stroke",
+      "severe trauma"
+    ],
+    "urgent_physician_referral": [
+      "fever with back pain",
+      "unexplained weight loss",
+      "night pain",
+      "history of cancer",
+      "progressive neurological symptoms",
+      "cauda equina symptoms"
+    ],
+    "action": {
+      "immediate_medical_attention": "DO_NOT_BOOK - Advise to call 911 or go to ER immediately",
+      "urgent_physician_referral": "DO_NOT_BOOK - Advise to see physician within 24-48 hours, offer to refer"
+    }
+  },
+  
+  "intake_form_automation": {
+    "pre_fill_fields": [
+      "chief_complaint",
+      "symptom_onset_date",
+      "mechanism_of_injury",
+      "previous_treatments",
+      "current_medications",
+      "relevant_medical_history"
+    ],
+    "data_sources": [
+      "patient_conversation",
+      "web_intake_form",
+      "phone_screening",
+      "referral_documents"
+    ],
+    "confidence_threshold": 0.85,
+    "require_patient_verification": true
+  },
+  
+  "booking_recommendations": {
+    "assessment_first_visit": true,
+    "suggested_time_slots": {
+      "pelvic_health": ["morning", "early_afternoon"],
+      "concussion": ["mid_morning", "early_afternoon"],
+      "vestibular": ["morning"],
+      "industrial_athlete": ["any"]
+    },
+    "buffer_time": {
+      "assessment": 15,
+      "follow_up": 10
+    }
+  },
+  
+  "escalation_rules": {
+    "ambiguous_case": {
+      "action": "flag_for_clinical_review",
+      "notify": "clinic_lead",
+      "max_wait_time_hours": 4
+    },
+    "multiple_specialties": {
+      "action": "suggest_comprehensive_assessment",
+      "duration_minutes": 90,
+      "notify": "clinic_lead"
+    }
+  },
+  
+  "metrics_tracked": [
+    "total_inquiries_processed",
+    "triage_accuracy_rate",
+    "red_flags_detected",
+    "conversion_to_booking_rate",
+    "average_triage_time_seconds",
+    "specialty_routing_distribution"
+  ],
+  
+  "reporting": {
+    "daily_summary": true,
+    "weekly_performance": true,
+    "monthly_accuracy_audit": true,
+    "report_to": ["clinic_gm", "clinical_lead", "coo"]
+  },
+  
+  "compliance": {
+    "pipeda_compliant": true,
+    "data_retention_days": 730,
+    "pii_handling": "encrypted",
+    "audit_trail": "full"
+  },
+  
+  "integration_points": [
+    "booking_system",
+    "emr_system",
+    "patient_portal",
+    "notification_system"
+  ],
+  
+  "continuous_improvement": {
+    "learn_from_clinician_overrides": true,
+    "quarterly_model_retraining": true,
+    "feedback_loop_enabled": true
+  }
+}

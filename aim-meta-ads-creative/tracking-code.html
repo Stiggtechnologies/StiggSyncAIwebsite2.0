@@ -1,0 +1,187 @@
+<!-- AIM Meta Ads Tracking Code -->
+<!-- Install this in the <head> section of aimphysiotherapy.ca -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'YOUR_PIXEL_ID_HERE'); // Replace with actual Pixel ID
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Analytics 4 (if not already installed) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNHNF423CW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RNHNF423CW');
+</script>
+
+<!-- Event Tracking Scripts -->
+<script>
+// Track form submissions
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // Contact Form Tracking
+  const contactForm = document.querySelector('form[name="contact"], form#contact-form, form.contact-form');
+  
+  if (contactForm) {
+    // Track form start
+    contactForm.addEventListener('focus', function(e) {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        // Facebook Pixel
+        fbq('track', 'InitiateCheckout');
+        
+        // Google Analytics
+        gtag('event', 'form_start', {
+          form_name: 'contact_form',
+          form_destination: '/thank-you'
+        });
+      }
+    }, true);
+    
+    // Track form submission
+    contactForm.addEventListener('submit', function(e) {
+      // Facebook Pixel - Lead event
+      fbq('track', 'Lead', {
+        content_name: 'Contact Form',
+        content_category: 'Lead Generation',
+        value: 50.00,
+        currency: 'CAD'
+      });
+      
+      // Google Analytics - Lead event
+      gtag('event', 'generate_lead', {
+        currency: 'CAD',
+        value: 50.00,
+        lead_source: 'contact_form'
+      });
+    });
+  }
+  
+  // Phone Click Tracking
+  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+  
+  phoneLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      // Facebook Pixel
+      fbq('track', 'Contact', {
+        content_name: 'Phone Click',
+        content_category: 'Lead Generation'
+      });
+      
+      // Google Analytics
+      gtag('event', 'phone_call', {
+        call_source: 'website',
+        phone_number: this.getAttribute('href')
+      });
+    });
+  });
+  
+  // Booking Widget Tracking (if applicable)
+  const bookingButton = document.querySelector('.book-appointment, [data-booking], .schedule-btn');
+  
+  if (bookingButton) {
+    bookingButton.addEventListener('click', function() {
+      // Facebook Pixel
+      fbq('track', 'Schedule', {
+        content_name: 'Book Appointment',
+        value: 85.00,
+        currency: 'CAD'
+      });
+      
+      // Google Analytics
+      gtag('event', 'booking_initiated', {
+        value: 85.00,
+        currency: 'CAD'
+      });
+    });
+  }
+});
+</script>
+
+<!-- Enhanced Conversion Tracking for Thank You Page -->
+<!-- Place this on /thank-you or confirmation page only -->
+<script>
+// Only runs on thank-you page
+if (window.location.pathname.includes('thank-you') || 
+    window.location.pathname.includes('confirmation')) {
+  
+  // Facebook Pixel - Purchase/Booking Completed
+  fbq('track', 'Purchase', {
+    content_name: 'Booking Confirmed',
+    value: 85.00,
+    currency: 'CAD',
+    content_type: 'appointment'
+  });
+  
+  // Google Analytics - Conversion
+  gtag('event', 'conversion', {
+    'send_to': 'G-RNHNF423CW/conversion_id', // Replace with actual conversion ID
+    'value': 85.00,
+    'currency': 'CAD',
+    'transaction_id': ''
+  });
+}
+</script>
+
+<!-- UTM Parameter Capture -->
+<!-- Captures UTM parameters and stores them for form submission -->
+<script>
+(function() {
+  // Get URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmParams = {
+    utm_source: urlParams.get('utm_source'),
+    utm_medium: urlParams.get('utm_medium'),
+    utm_campaign: urlParams.get('utm_campaign'),
+    utm_content: urlParams.get('utm_content'),
+    utm_term: urlParams.get('utm_term')
+  };
+  
+  // Store in sessionStorage
+  if (utmParams.utm_source) {
+    sessionStorage.setItem('utmParams', JSON.stringify(utmParams));
+  }
+  
+  // Add to form submission
+  document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    
+    forms.forEach(function(form) {
+      form.addEventListener('submit', function() {
+        const storedParams = sessionStorage.getItem('utmParams');
+        
+        if (storedParams) {
+          const params = JSON.parse(storedParams);
+          
+          // Create hidden fields for each UTM parameter
+          Object.keys(params).forEach(function(key) {
+            if (params[key]) {
+              const input = document.createElement('input');
+              input.type = 'hidden';
+              input.name = key;
+              input.value = params[key];
+              form.appendChild(input);
+            }
+          });
+        }
+      });
+    });
+  });
+})();
+</script>

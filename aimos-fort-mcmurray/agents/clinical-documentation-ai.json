@@ -1,0 +1,258 @@
+{
+  "agent_id": "AGENT_CLINICAL_DOC_FMM",
+  "agent_name": "Clinical Documentation AI Agent",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "status": "active",
+  
+  "purpose": "Assist clinicians with SOAP note drafting, outcome measure tracking, MD summaries, and employer RTW reports",
+  
+  "capabilities": [
+    "soap_note_generation",
+    "outcome_measure_tracking",
+    "progress_summary_creation",
+    "rtw_report_generation",
+    "clinical_template_management"
+  ],
+  
+  "compliance": {
+    "hipaa_compliant": true,
+    "pipeda_compliant": true,
+    "alberta_health_standards": true,
+    "wcb_reporting_standards": true,
+    "clinician_approval_required": true,
+    "audit_trail": "full",
+    "data_encryption": "AES-256"
+  },
+  
+  "soap_note_assistance": {
+    "subjective": {
+      "auto_populate_from": [
+        "patient_verbal_report",
+        "intake_form",
+        "previous_notes"
+      ],
+      "prompts": [
+        "Chief complaint",
+        "Symptom behavior",
+        "Aggravating factors",
+        "Easing factors",
+        "24-hour pattern",
+        "Functional limitations",
+        "Patient goals"
+      ],
+      "natural_language_processing": true
+    },
+    "objective": {
+      "structured_data_capture": true,
+      "common_measures": [
+        "ROM measurements",
+        "Strength testing",
+        "Special tests",
+        "Palpation findings",
+        "Functional testing",
+        "Balance assessments",
+        "Cognitive screening"
+      ],
+      "auto_calculate": [
+        "pain_scales",
+        "outcome_scores",
+        "functional_indices"
+      ]
+    },
+    "assessment": {
+      "clinical_reasoning_support": true,
+      "differential_diagnosis_suggestions": true,
+      "prognosis_indicators": true,
+      "red_flag_reminders": true,
+      "treatment_plan_templates": true
+    },
+    "plan": {
+      "treatment_frequency_suggestions": true,
+      "home_program_templates": true,
+      "goal_setting_framework": true,
+      "discharge_planning": true,
+      "referral_recommendations": true
+    }
+  },
+  
+  "outcome_measures": {
+    "pelvic_health": [
+      "Pelvic Floor Distress Inventory (PFDI-20)",
+      "Pelvic Floor Impact Questionnaire (PFIQ-7)",
+      "Urogenital Distress Inventory (UDI-6)",
+      "Pain Scale (VAS)",
+      "Sexual Function Index"
+    ],
+    "concussion": [
+      "Sport Concussion Assessment Tool (SCAT5)",
+      "Post-Concussion Symptom Scale (PCSS)",
+      "Vestibular Ocular Motor Screening (VOMS)",
+      "Balance Error Scoring System (BESS)",
+      "Cognitive Assessment"
+    ],
+    "vestibular": [
+      "Dizziness Handicap Inventory (DHI)",
+      "Activities-Specific Balance Confidence Scale (ABC)",
+      "Dynamic Gait Index (DGI)",
+      "Timed Up and Go (TUG)",
+      "Functional Gait Assessment"
+    ],
+    "industrial_athlete": [
+      "Functional Capacity Evaluation",
+      "Physical Demands Analysis match",
+      "Work-related outcomes",
+      "Return-to-Work readiness",
+      "Job-specific testing"
+    ],
+    "auto_tracking": {
+      "baseline_capture": true,
+      "progress_monitoring": true,
+      "discharge_comparison": true,
+      "graphical_visualization": true,
+      "alert_on_plateau": true
+    }
+  },
+  
+  "md_progress_summaries": {
+    "auto_generation": true,
+    "frequency": "every_4_visits_or_monthly",
+    "template": {
+      "patient_info": "auto_populated",
+      "diagnosis": "from_assessment",
+      "treatment_summary": "aggregated_from_notes",
+      "progress": "outcome_measure_comparison",
+      "current_status": "latest_functional_level",
+      "plan": "continuing_care_or_discharge",
+      "recommendations": "clinical_judgment"
+    },
+    "delivery_method": "secure_fax_or_portal",
+    "approval_workflow": "clinician_review_required"
+  },
+  
+  "rtw_reports": {
+    "employer_reports": {
+      "frequency": "weekly_for_wcb_cases",
+      "template": {
+        "work_status": "current_restrictions",
+        "functional_capacity": "objective_measures",
+        "treatment_progress": "summary",
+        "expected_rtw_date": "clinical_estimate",
+        "current_restrictions": "specific_limitations",
+        "recommended_accommodations": "workplace_modifications"
+      },
+      "compliance": "wcb_alberta_standards",
+      "approval_required": true
+    },
+    "wcb_reporting": {
+      "auto_submission": false,
+      "form_prefill": true,
+      "progress_reports": "auto_generated",
+      "final_clearance_report": "template_provided",
+      "clinician_signature_required": true
+    }
+  },
+  
+  "template_management": {
+    "specialty_templates": {
+      "pelvic_health": [
+        "initial_assessment",
+        "follow_up",
+        "postpartum_visit",
+        "discharge_summary"
+      ],
+      "concussion": [
+        "acute_assessment",
+        "return_to_work_progression",
+        "return_to_sport_clearance",
+        "discharge_summary"
+      ],
+      "vestibular": [
+        "dizziness_assessment",
+        "bppv_treatment",
+        "balance_training",
+        "discharge_summary"
+      ],
+      "industrial_athlete": [
+        "initial_fce",
+        "work_conditioning_progress",
+        "final_clearance",
+        "employer_report"
+      ]
+    },
+    "customizable": true,
+    "clinician_specific_preferences": true,
+    "version_control": true
+  },
+  
+  "quality_assurance": {
+    "completeness_checks": true,
+    "billing_code_validation": true,
+    "clinical_consistency_alerts": true,
+    "missing_data_prompts": true,
+    "documentation_best_practices": true
+  },
+  
+  "time_savings": {
+    "target_reduction": "40-50%",
+    "average_time_per_note": {
+      "without_ai": "15-20_minutes",
+      "with_ai": "8-10_minutes"
+    },
+    "clinician_productivity_gain": "2-3_additional_patients_per_day"
+  },
+  
+  "performance_metrics": [
+    "notes_completed_per_day",
+    "average_documentation_time",
+    "clinician_satisfaction_score",
+    "documentation_completeness_rate",
+    "outcome_measure_completion_rate",
+    "report_turnaround_time"
+  ],
+  
+  "reporting": {
+    "weekly_summary": {
+      "enabled": true,
+      "recipients": ["clinical_lead"],
+      "metrics": [
+        "documentation_volume",
+        "time_savings",
+        "compliance_score"
+      ]
+    },
+    "monthly_quality_report": {
+      "enabled": true,
+      "recipients": ["clinical_lead", "cco"],
+      "includes": [
+        "documentation_quality_score",
+        "outcome_tracking_completeness",
+        "clinician_usage_rates",
+        "areas_for_improvement"
+      ]
+    }
+  },
+  
+  "clinician_feedback": {
+    "feedback_mechanism": "inline_thumbs_up_down",
+    "improvement_requests": true,
+    "template_suggestions": true,
+    "continuous_learning": true
+  },
+  
+  "integration_points": [
+    "emr_system",
+    "billing_system",
+    "outcome_tracking_database",
+    "secure_fax_gateway",
+    "patient_portal"
+  ],
+  
+  "ai_model": {
+    "type": "medical_nlp_specialized",
+    "training_data": "de_identified_clinical_notes",
+    "specialty_fine_tuning": true,
+    "continuous_improvement": true,
+    "confidence_threshold": 0.90
+  }
+}

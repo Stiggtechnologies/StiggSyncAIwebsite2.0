@@ -1,0 +1,463 @@
+{
+  "model_id": "FIN_MODEL_FMM_001",
+  "model_name": "Fort McMurray Financial Model & Projections",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "currency": "CAD",
+  
+  "assumptions": {
+    "operating_model": {
+      "phase_1": {
+        "days_per_week": 3,
+        "weeks_per_month": 4.33,
+        "months": "1-6"
+      },
+      "phase_2": {
+        "days_per_week": 5,
+        "weeks_per_month": 4.33,
+        "months": "7-12",
+        "trigger": "sustained_utilization_over_75%"
+      }
+    },
+    
+    "clinician_model": {
+      "phase_1": {
+        "fte": 0.6,
+        "clinical_hours_per_day": 7,
+        "billable_hours_target": 6.5,
+        "patients_per_day_target": 8,
+        "hourly_rate": 65.00
+      },
+      "phase_2": {
+        "fte": 1.0,
+        "clinical_hours_per_day": 8,
+        "billable_hours_target": 7.0,
+        "patients_per_day_target": 10
+      }
+    },
+    
+    "service_pricing": {
+      "pelvic_health_assessment": 165.00,
+      "pelvic_health_followup": 125.00,
+      "concussion_assessment": 165.00,
+      "concussion_followup": 125.00,
+      "vestibular_assessment": 165.00,
+      "vestibular_followup": 125.00,
+      "industrial_athlete_assessment": 185.00,
+      "industrial_athlete_treatment": 145.00,
+      "average_blended_rate": 135.00
+    },
+    
+    "volume_assumptions": {
+      "month_1-3": {
+        "new_patients_per_month": 25,
+        "total_visits_per_month": 60,
+        "visits_per_patient_average": 6
+      },
+      "month_4-6": {
+        "new_patients_per_month": 35,
+        "total_visits_per_month": 90
+      },
+      "month_7-9": {
+        "new_patients_per_month": 50,
+        "total_visits_per_month": 150,
+        "phase_2_expansion": true
+      },
+      "month_10-12": {
+        "new_patients_per_month": 60,
+        "total_visits_per_month": 180
+      }
+    },
+    
+    "growth_rates": {
+      "monthly_patient_growth": 8.0,
+      "visit_growth_rate": 10.0,
+      "price_increase_annual": 3.0
+    }
+  },
+  
+  "revenue_projections": {
+    "month_1": {
+      "new_patients": 20,
+      "total_visits": 50,
+      "avg_revenue_per_visit": 135.00,
+      "gross_revenue": 6750.00,
+      "collection_rate": 0.95,
+      "net_revenue": 6412.50
+    },
+    "month_2": {
+      "new_patients": 22,
+      "total_visits": 55,
+      "gross_revenue": 7425.00,
+      "net_revenue": 7053.75
+    },
+    "month_3": {
+      "new_patients": 25,
+      "total_visits": 65,
+      "gross_revenue": 8775.00,
+      "net_revenue": 8336.25
+    },
+    "month_4": {
+      "new_patients": 30,
+      "total_visits": 80,
+      "gross_revenue": 10800.00,
+      "net_revenue": 10260.00
+    },
+    "month_5": {
+      "new_patients": 35,
+      "total_visits": 95,
+      "gross_revenue": 12825.00,
+      "net_revenue": 12183.75
+    },
+    "month_6": {
+      "new_patients": 40,
+      "total_visits": 110,
+      "gross_revenue": 14850.00,
+      "net_revenue": 14107.50
+    },
+    "month_7": {
+      "new_patients": 45,
+      "total_visits": 130,
+      "gross_revenue": 17550.00,
+      "net_revenue": 16672.50,
+      "note": "Phase 2 expansion - 5 days/week"
+    },
+    "month_8": {
+      "new_patients": 50,
+      "total_visits": 150,
+      "gross_revenue": 20250.00,
+      "net_revenue": 19237.50
+    },
+    "month_9": {
+      "new_patients": 55,
+      "total_visits": 165,
+      "gross_revenue": 22275.00,
+      "net_revenue": 21161.25
+    },
+    "month_10": {
+      "new_patients": 58,
+      "total_visits": 175,
+      "gross_revenue": 23625.00,
+      "net_revenue": 22443.75
+    },
+    "month_11": {
+      "new_patients": 60,
+      "total_visits": 180,
+      "gross_revenue": 24300.00,
+      "net_revenue": 23085.00
+    },
+    "month_12": {
+      "new_patients": 62,
+      "total_visits": 185,
+      "gross_revenue": 24975.00,
+      "net_revenue": 23726.25
+    },
+    
+    "year_1_total": {
+      "total_new_patients": 502,
+      "total_visits": 1440,
+      "total_gross_revenue": 194400.00,
+      "total_net_revenue": 184680.00,
+      "avg_monthly_revenue": 15390.00
+    }
+  },
+  
+  "expenses": {
+    "fixed_costs_monthly": {
+      "rent": {
+        "amount": 3500.00,
+        "notes": "720 sq ft @ $4.86/sq ft"
+      },
+      "utilities": {
+        "amount": 400.00,
+        "notes": "electricity, water, internet"
+      },
+      "insurance": {
+        "amount": 300.00,
+        "notes": "liability and property"
+      },
+      "software_subscriptions": {
+        "amount": 250.00,
+        "notes": "EMR, booking, AI agents"
+      },
+      "admin_support": {
+        "amount": 800.00,
+        "notes": "part-time admin/reception"
+      },
+      "marketing": {
+        "amount": 1500.00,
+        "notes": "Google Ads, SEO, local marketing"
+      },
+      "equipment_lease": {
+        "amount": 200.00,
+        "notes": "treatment equipment"
+      },
+      "professional_fees": {
+        "amount": 150.00,
+        "notes": "accounting, legal"
+      },
+      "total_fixed_monthly": 7100.00
+    },
+    
+    "variable_costs_per_visit": {
+      "clinician_wage": {
+        "amount": 45.00,
+        "calculation": "65/hour * 0.75 hours avg per visit"
+      },
+      "supplies": {
+        "amount": 5.00,
+        "notes": "linens, cleaning, consumables"
+      },
+      "credit_card_fees": {
+        "amount": 3.50,
+        "calculation": "2.5% of avg visit revenue"
+      },
+      "total_variable_per_visit": 53.50
+    },
+    
+    "monthly_expense_projections": {
+      "month_1": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 2675.00,
+        "total_expenses": 9775.00
+      },
+      "month_2": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 2942.50,
+        "total_expenses": 10042.50
+      },
+      "month_3": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 3477.50,
+        "total_expenses": 10577.50
+      },
+      "month_4": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 4280.00,
+        "total_expenses": 11380.00
+      },
+      "month_5": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 5082.50,
+        "total_expenses": 12182.50
+      },
+      "month_6": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 5885.00,
+        "total_expenses": 12985.00
+      },
+      "month_7": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 6955.00,
+        "total_expenses": 14055.00,
+        "note": "Phase 2 expansion costs"
+      },
+      "month_8": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 8025.00,
+        "total_expenses": 15125.00
+      },
+      "month_9": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 8827.50,
+        "total_expenses": 15927.50
+      },
+      "month_10": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 9362.50,
+        "total_expenses": 16462.50
+      },
+      "month_11": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 9630.00,
+        "total_expenses": 16730.00
+      },
+      "month_12": {
+        "fixed_costs": 7100.00,
+        "variable_costs": 9897.50,
+        "total_expenses": 16997.50
+      },
+      
+      "year_1_total_expenses": 161240.00
+    }
+  },
+  
+  "profitability_analysis": {
+    "monthly_ebitda": {
+      "month_1": -3362.50,
+      "month_2": -2988.75,
+      "month_3": -2241.25,
+      "month_4": -1120.00,
+      "month_5": 1.25,
+      "month_6": 1122.50,
+      "month_7": 2617.50,
+      "month_8": 4112.50,
+      "month_9": 5233.75,
+      "month_10": 5981.25,
+      "month_11": 6355.00,
+      "month_12": 6728.75
+    },
+    
+    "cumulative_ebitda": {
+      "month_1": -3362.50,
+      "month_2": -6351.25,
+      "month_3": -8592.50,
+      "month_4": -9712.50,
+      "month_5": -9711.25,
+      "month_6": -8588.75,
+      "month_7": -5971.25,
+      "month_8": -1858.75,
+      "month_9": 3375.00,
+      "month_10": 9356.25,
+      "month_11": 15711.25,
+      "month_12": 22440.00
+    },
+    
+    "breakeven_analysis": {
+      "breakeven_month": 5,
+      "breakeven_visits_per_month": 87,
+      "breakeven_revenue_per_month": 11745.00,
+      "contribution_margin_per_visit": 81.50,
+      "contribution_margin_percentage": 60.37
+    },
+    
+    "year_1_summary": {
+      "total_revenue": 184680.00,
+      "total_expenses": 161240.00,
+      "total_ebitda": 23440.00,
+      "ebitda_margin": 12.69,
+      "payback_period_months": 9,
+      "roi_year_1": "positive"
+    }
+  },
+  
+  "expansion_triggers": {
+    "add_second_clinician": {
+      "condition": "monthly_revenue_over_60k_for_3_consecutive_months",
+      "expected_timing": "month_13-15",
+      "incremental_revenue_potential": "40k-50k_monthly",
+      "incremental_costs": "25k-30k_monthly",
+      "incremental_ebitda": "10k-20k_monthly"
+    },
+    
+    "expand_to_5_days": {
+      "condition": "utilization_over_75%_sustained",
+      "expected_timing": "month_7",
+      "already_modeled": true
+    },
+    
+    "add_evening_hours": {
+      "condition": "daytime_capacity_saturated",
+      "expected_timing": "month_10-12",
+      "incremental_revenue": "15k-20k_monthly",
+      "incremental_costs": "8k-10k_monthly"
+    },
+    
+    "expand_square_footage": {
+      "condition": "consistent_waitlist_and_all_rooms_at_85%+",
+      "expected_timing": "month_18-24",
+      "investment_required": "50k-75k",
+      "revenue_potential": "double_current"
+    }
+  },
+  
+  "sensitivity_analysis": {
+    "scenarios": {
+      "conservative": {
+        "patient_acquisition_rate": 0.80,
+        "avg_revenue_per_visit": 125.00,
+        "year_1_ebitda": 8500.00,
+        "breakeven_month": 7
+      },
+      "base_case": {
+        "patient_acquisition_rate": 1.00,
+        "avg_revenue_per_visit": 135.00,
+        "year_1_ebitda": 23440.00,
+        "breakeven_month": 5
+      },
+      "optimistic": {
+        "patient_acquisition_rate": 1.20,
+        "avg_revenue_per_visit": 145.00,
+        "year_1_ebitda": 42000.00,
+        "breakeven_month": 3
+      }
+    },
+    
+    "key_variables": {
+      "patient_volume": {
+        "impact": "high",
+        "sensitivity": "+10%_volume_=_+15k_annual_ebitda"
+      },
+      "average_revenue_per_visit": {
+        "impact": "high",
+        "sensitivity": "+$10_per_visit_=_+14k_annual_ebitda"
+      },
+      "clinician_wage": {
+        "impact": "medium",
+        "sensitivity": "+$5/hour_=_-7k_annual_ebitda"
+      },
+      "marketing_efficiency": {
+        "impact": "medium",
+        "sensitivity": "10%_reduction_in_CAC_=_+4k_annual_ebitda"
+      },
+      "no_show_rate": {
+        "impact": "medium",
+        "sensitivity": "5%_reduction_=_+6k_annual_revenue"
+      }
+    }
+  },
+  
+  "capital_requirements": {
+    "startup_investment": {
+      "leasehold_improvements": 15000.00,
+      "equipment_and_furniture": 12000.00,
+      "initial_inventory": 2000.00,
+      "deposits": 5000.00,
+      "pre_opening_marketing": 3000.00,
+      "working_capital": 10000.00,
+      "total_startup_capital": 47000.00
+    },
+    
+    "ongoing_capital": {
+      "equipment_replacement_annual": 2000.00,
+      "technology_upgrades_annual": 1500.00
+    }
+  },
+  
+  "return_on_investment": {
+    "year_1": {
+      "invested_capital": 47000.00,
+      "ebitda": 23440.00,
+      "roi_percentage": 49.87,
+      "payback_period_months": 9
+    },
+    "year_2_projection": {
+      "ebitda_estimate": 75000.00,
+      "cumulative_roi": 209.57
+    },
+    "year_3_projection": {
+      "ebitda_estimate": 110000.00,
+      "cumulative_roi": 443.62,
+      "note": "assumes_second_clinician_added"
+    }
+  },
+  
+  "alerts_and_monitoring": {
+    "revenue_below_target": {
+      "threshold": 0.85,
+      "action": "investigate_volume_or_pricing_issues"
+    },
+    "expenses_above_budget": {
+      "threshold": 1.10,
+      "action": "cost_reduction_analysis"
+    },
+    "breakeven_at_risk": {
+      "condition": "not_on_track_to_breakeven_by_month_6",
+      "action": "strategic_review_with_coo_and_cfo"
+    },
+    "expansion_ready": {
+      "condition": "revenue_over_60k_for_3_months",
+      "action": "prepare_expansion_business_case"
+    }
+  }
+}

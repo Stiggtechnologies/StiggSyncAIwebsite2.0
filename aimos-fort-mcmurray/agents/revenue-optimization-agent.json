@@ -1,0 +1,281 @@
+{
+  "agent_id": "AGENT_REVENUE_FMM",
+  "agent_name": "Revenue Optimization Agent",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "status": "active",
+  
+  "purpose": "Monitor revenue performance, identify optimization opportunities, suggest pricing adjustments, calculate breakeven alerts",
+  
+  "revenue_tracking": {
+    "granularity": ["per_clinician", "per_room", "per_service", "per_day", "per_month"],
+    "real_time_monitoring": true,
+    "historical_comparison": true,
+    "benchmark_against": "corporate_targets"
+  },
+  
+  "kpis_monitored": [
+    {
+      "metric": "revenue_per_clinician",
+      "target": 2500.00,
+      "unit": "daily",
+      "alert_below": 2000.00
+    },
+    {
+      "metric": "revenue_per_room",
+      "target": 400.00,
+      "unit": "daily",
+      "alert_below": 300.00
+    },
+    {
+      "metric": "revenue_per_visit",
+      "target": 135.00,
+      "unit": "average",
+      "alert_below": 110.00
+    },
+    {
+      "metric": "monthly_revenue",
+      "target": 60000.00,
+      "unit": "monthly",
+      "alert_below": 50000.00
+    },
+    {
+      "metric": "ebitda_margin",
+      "target": 25.00,
+      "unit": "percentage",
+      "alert_below": 15.00
+    }
+  ],
+  
+  "service_line_analysis": {
+    "profitability_tracking": {
+      "pelvic_health": {
+        "avg_revenue_per_visit": 145.00,
+        "margin_category": "high",
+        "strategic_priority": "grow",
+        "target_percentage_of_mix": 30.00
+      },
+      "concussion": {
+        "avg_revenue_per_visit": 135.00,
+        "margin_category": "high",
+        "strategic_priority": "grow",
+        "target_percentage_of_mix": 25.00
+      },
+      "vestibular": {
+        "avg_revenue_per_visit": 125.00,
+        "margin_category": "medium",
+        "strategic_priority": "maintain",
+        "target_percentage_of_mix": 20.00
+      },
+      "industrial_athlete": {
+        "avg_revenue_per_visit": 165.00,
+        "margin_category": "high",
+        "strategic_priority": "grow",
+        "target_percentage_of_mix": 25.00
+      }
+    },
+    "underperforming_services": {
+      "detection_threshold": "below_80%_of_target",
+      "action": "suggest_pricing_adjustment_or_discontinuation",
+      "review_frequency": "monthly"
+    }
+  },
+  
+  "pricing_optimization": {
+    "dynamic_pricing_enabled": false,
+    "competitive_analysis": true,
+    "market_rate_monitoring": {
+      "compare_to": [
+        "edmonton_market_average",
+        "specialty_clinic_rates",
+        "private_practice_rates"
+      ],
+      "update_frequency": "quarterly"
+    },
+    "pricing_recommendations": {
+      "underpriced_services": {
+        "detection": "below_market_by_15%",
+        "suggestion": "incremental_increase_5-10%",
+        "timing": "quarterly_review"
+      },
+      "premium_positioning": {
+        "services": ["pelvic_health", "industrial_athlete"],
+        "strategy": "value_based_pricing",
+        "justification": "specialty_expertise_and_outcomes"
+      }
+    }
+  },
+  
+  "breakeven_analysis": {
+    "fixed_costs_monthly": {
+      "rent": 3500.00,
+      "utilities": 400.00,
+      "insurance": 300.00,
+      "admin": 800.00,
+      "marketing": 1500.00,
+      "total_fixed": 6500.00
+    },
+    "variable_costs_per_visit": {
+      "clinician_wage_per_visit": 45.00,
+      "supplies": 5.00,
+      "total_variable": 50.00
+    },
+    "breakeven_calculation": {
+      "formula": "fixed_costs / (avg_revenue_per_visit - variable_cost_per_visit)",
+      "current_breakeven_visits": 77,
+      "current_breakeven_days": "26_at_3_days_per_week",
+      "alert_when": "not_on_track_to_breakeven"
+    },
+    "real_time_tracking": {
+      "days_to_breakeven": "calculated_daily",
+      "percentage_to_breakeven": "visual_indicator",
+      "projected_ebitda": "forecast_based_on_current_run_rate"
+    }
+  },
+  
+  "revenue_forecasting": {
+    "models": [
+      "linear_trend",
+      "seasonal_adjusted",
+      "capacity_based"
+    ],
+    "forecast_horizon": "3_6_12_months",
+    "assumptions": {
+      "utilization_growth_monthly": 5.00,
+      "price_increases_annual": 3.00,
+      "clinician_productivity_stable": true
+    },
+    "scenario_planning": {
+      "conservative": "current_growth_rate",
+      "base_case": "target_growth_rate",
+      "optimistic": "accelerated_growth"
+    }
+  },
+  
+  "opportunity_identification": {
+    "high_value_opportunities": [
+      {
+        "opportunity": "increase_pelvic_health_capacity",
+        "current_demand": "waitlist_2_weeks",
+        "revenue_impact": "$8,000-12,000_monthly",
+        "action": "add_specialist_days"
+      },
+      {
+        "opportunity": "employer_direct_contracts",
+        "current_status": "0_contracts",
+        "revenue_impact": "$15,000-25,000_monthly",
+        "action": "business_development_focus"
+      },
+      {
+        "opportunity": "group_programs",
+        "current_status": "not_offered",
+        "revenue_impact": "$5,000-8,000_monthly",
+        "action": "launch_industrial_athlete_groups"
+      }
+    ],
+    "low_hanging_fruit": [
+      {
+        "action": "reduce_no_show_rate",
+        "current_rate": 12.00,
+        "target_rate": 8.00,
+        "revenue_recovery": "$2,000-3,000_monthly"
+      },
+      {
+        "action": "optimize_booking_slots",
+        "current_issue": "gaps_between_appointments",
+        "revenue_recovery": "$1,500-2,500_monthly"
+      }
+    ]
+  },
+  
+  "alerts": {
+    "revenue_below_target": {
+      "threshold": 85.00,
+      "frequency": "daily",
+      "recipients": ["clinic_gm", "coo"],
+      "include_recommendations": true
+    },
+    "service_line_underperformance": {
+      "threshold": "below_80%_of_target_for_2_weeks",
+      "recipients": ["clinic_gm", "clinical_lead"],
+      "action_required": "investigate_and_correct"
+    },
+    "breakeven_risk": {
+      "condition": "not_on_track_to_breakeven_this_month",
+      "recipients": ["clinic_gm", "coo", "cfo"],
+      "severity": "high"
+    },
+    "expansion_trigger": {
+      "condition": "revenue_over_60k_for_3_consecutive_months",
+      "recipients": ["clinic_gm", "coo", "ceo"],
+      "message": "Location ready for expansion - add FTE or expand hours"
+    }
+  },
+  
+  "reporting": {
+    "daily_revenue_report": {
+      "enabled": true,
+      "delivery_time": "18:00",
+      "recipients": ["clinic_gm"],
+      "includes": [
+        "total_revenue",
+        "visits_completed",
+        "revenue_per_visit",
+        "comparison_to_target"
+      ]
+    },
+    "weekly_performance_report": {
+      "enabled": true,
+      "delivery_day": "monday",
+      "recipients": ["clinic_gm", "coo"],
+      "includes": [
+        "revenue_summary",
+        "service_mix_breakdown",
+        "profitability_analysis",
+        "optimization_recommendations"
+      ]
+    },
+    "monthly_strategic_report": {
+      "enabled": true,
+      "delivery_day": "first_monday",
+      "recipients": ["clinic_gm", "coo", "cfo", "ceo"],
+      "includes": [
+        "pl_statement",
+        "ebitda_analysis",
+        "breakeven_status",
+        "revenue_trends",
+        "growth_opportunities",
+        "expansion_readiness"
+      ]
+    }
+  },
+  
+  "benchmarking": {
+    "compare_to": [
+      "aim_edmonton_main",
+      "corporate_satellite_average",
+      "industry_standards"
+    ],
+    "metrics": [
+      "revenue_per_sq_ft",
+      "revenue_per_clinician",
+      "ebitda_margin",
+      "utilization_rate"
+    ],
+    "frequency": "monthly"
+  },
+  
+  "integration_points": [
+    "billing_system",
+    "booking_system",
+    "accounting_system",
+    "financial_reporting_dashboard",
+    "executive_dashboard"
+  ],
+  
+  "continuous_improvement": {
+    "learn_from_patterns": true,
+    "optimize_recommendations": true,
+    "quarterly_model_review": true
+  }
+}

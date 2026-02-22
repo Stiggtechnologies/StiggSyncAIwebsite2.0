@@ -1,0 +1,436 @@
+{
+  "workflows_version": "1.0",
+  "location_id": "AIM_FMM_001",
+  
+  "workflows": [
+    {
+      "workflow_id": "WF_NEW_PATIENT",
+      "workflow_name": "New Patient Journey",
+      "description": "Complete automation from inquiry to first visit",
+      "trigger": "patient_inquiry_received",
+      "status": "active",
+      
+      "steps": [
+        {
+          "step_id": 1,
+          "step_name": "Inquiry Received",
+          "action": "log_inquiry",
+          "data_capture": ["source", "contact_info", "chief_complaint", "insurance_type"],
+          "automated": true
+        },
+        {
+          "step_id": 2,
+          "step_name": "AI Triage",
+          "action": "invoke_intake_ai_agent",
+          "tasks": [
+            "analyze_symptoms",
+            "detect_red_flags",
+            "route_to_specialty",
+            "suggest_service_type"
+          ],
+          "automated": true,
+          "human_review_required": "only_if_red_flag_or_ambiguous"
+        },
+        {
+          "step_id": 3,
+          "step_name": "Booking Offered",
+          "action": "present_available_times",
+          "considerations": [
+            "specialty_match",
+            "room_availability",
+            "clinician_availability",
+            "patient_preference"
+          ],
+          "automated": true,
+          "channels": ["phone", "online_booking", "chat"]
+        },
+        {
+          "step_id": 4,
+          "step_name": "Pre-Intake Form Sent",
+          "action": "send_intake_forms",
+          "timing": "immediately_after_booking",
+          "delivery_method": "email_and_sms",
+          "content": [
+            "demographic_form",
+            "medical_history",
+            "consent_forms",
+            "insurance_information"
+          ],
+          "ai_prefill": true,
+          "automated": true
+        },
+        {
+          "step_id": 5,
+          "step_name": "Appointment Reminders",
+          "action": "send_reminders",
+          "schedule": [
+            {"timing": "7_days_before", "channel": "email"},
+            {"timing": "2_days_before", "channel": "sms"},
+            {"timing": "1_day_before", "channel": "sms_and_email"},
+            {"timing": "2_hours_before", "channel": "sms"}
+          ],
+          "automated": true
+        },
+        {
+          "step_id": 6,
+          "step_name": "Assessment Completed",
+          "action": "clinical_visit",
+          "documentation": "ai_assisted_soap_note",
+          "outcome_measures": "captured",
+          "automated": "partially"
+        },
+        {
+          "step_id": 7,
+          "step_name": "Care Plan Created",
+          "action": "generate_care_plan",
+          "components": [
+            "diagnosis",
+            "treatment_frequency",
+            "expected_duration",
+            "home_program",
+            "goals"
+          ],
+          "patient_copy": "auto_send",
+          "automated": true
+        },
+        {
+          "step_id": 8,
+          "step_name": "Follow-Up Bookings",
+          "action": "schedule_subsequent_visits",
+          "timing": "before_patient_leaves",
+          "reminders": "auto_enabled",
+          "automated": "semi"
+        },
+        {
+          "step_id": 9,
+          "step_name": "Ongoing Care",
+          "action": "progress_tracking",
+          "includes": [
+            "outcome_measure_updates",
+            "treatment_adjustments",
+            "md_updates",
+            "rtw_reporting"
+          ],
+          "automated": "partially"
+        },
+        {
+          "step_id": 10,
+          "step_name": "Discharge",
+          "action": "discharge_process",
+          "tasks": [
+            "final_assessment",
+            "discharge_summary",
+            "home_program_finalized",
+            "md_final_report",
+            "satisfaction_survey"
+          ],
+          "automated": "partially"
+        },
+        {
+          "step_id": 11,
+          "step_name": "Review Request",
+          "action": "request_google_review",
+          "timing": "2_days_post_discharge",
+          "channel": "sms_and_email",
+          "automated": true
+        }
+      ],
+      
+      "success_metrics": [
+        "inquiry_to_booking_rate",
+        "booking_to_attendance_rate",
+        "patient_satisfaction",
+        "discharge_success_rate"
+      ]
+    },
+    
+    {
+      "workflow_id": "WF_SPECIALTY_ROUTING",
+      "workflow_name": "Specialty-Specific Routing",
+      "description": "Automatic routing based on patient symptoms",
+      "trigger": "intake_ai_triage_complete",
+      "status": "active",
+      
+      "routing_rules": [
+        {
+          "specialty": "pelvic_health",
+          "conditions": [
+            "symptoms_match_pelvic_keywords",
+            "no_red_flags_present"
+          ],
+          "actions": [
+            "assign_to_room_1",
+            "assign_pelvic_specialist",
+            "default_service_pelvic_assessment",
+            "send_pelvic_specific_intake_forms",
+            "recommend_60_min_assessment"
+          ],
+          "automated": true
+        },
+        {
+          "specialty": "concussion",
+          "conditions": [
+            "head_injury_within_30_days",
+            "concussion_symptoms_present"
+          ],
+          "actions": [
+            "assign_to_room_2",
+            "prioritize_booking_urgency_high",
+            "default_service_concussion_assessment",
+            "send_scat5_pre_screening",
+            "recommend_60_min_assessment"
+          ],
+          "automated": true,
+          "alert_clinical_lead": true
+        },
+        {
+          "specialty": "vestibular",
+          "conditions": [
+            "dizziness_or_balance_symptoms",
+            "no_neurological_red_flags"
+          ],
+          "actions": [
+            "assign_to_room_2",
+            "default_service_vestibular_assessment",
+            "recommend_morning_appointment",
+            "send_dhi_questionnaire"
+          ],
+          "automated": true
+        },
+        {
+          "specialty": "industrial_athlete",
+          "conditions": [
+            "workplace_injury",
+            "wcb_or_employer_insurance"
+          ],
+          "actions": [
+            "assign_to_room_4_gym",
+            "default_service_rtw_assessment",
+            "request_employer_info",
+            "request_job_description",
+            "send_functional_capacity_forms",
+            "recommend_60_min_assessment"
+          ],
+          "automated": true,
+          "require_employer_authorization": true
+        }
+      ]
+    },
+    
+    {
+      "workflow_id": "WF_EMPLOYER",
+      "workflow_name": "Employer & WCB Workflow",
+      "description": "Specialized workflow for workplace injury cases",
+      "trigger": "wcb_or_employer_case_identified",
+      "status": "active",
+      
+      "steps": [
+        {
+          "step_id": 1,
+          "step_name": "Employer Referral Received",
+          "action": "capture_employer_details",
+          "required_info": [
+            "employer_name",
+            "employer_contact",
+            "wcb_claim_number",
+            "job_description",
+            "physical_demands_analysis"
+          ],
+          "automated": "data_capture"
+        },
+        {
+          "step_id": 2,
+          "step_name": "RTW Assessment",
+          "action": "functional_capacity_evaluation",
+          "duration": 60,
+          "room": "performance_gym",
+          "automated": "scheduling_only"
+        },
+        {
+          "step_id": 3,
+          "step_name": "Initial Report to Employer",
+          "action": "generate_initial_report",
+          "timing": "within_24_hours",
+          "includes": [
+            "assessment_findings",
+            "current_work_capacity",
+            "restrictions_and_limitations",
+            "treatment_plan",
+            "expected_rtw_timeline"
+          ],
+          "ai_assisted": true,
+          "clinician_approval_required": true,
+          "automated": "generation_and_delivery"
+        },
+        {
+          "step_id": 4,
+          "step_name": "Weekly Progress Reports",
+          "action": "auto_generate_weekly_updates",
+          "frequency": "weekly",
+          "delivery_method": "email_or_portal",
+          "includes": [
+            "treatment_progress",
+            "functional_improvements",
+            "current_restrictions",
+            "projected_rtw_date"
+          ],
+          "automated": true
+        },
+        {
+          "step_id": 5,
+          "step_name": "Work Conditioning Program",
+          "action": "job_specific_rehabilitation",
+          "duration": "4-8_weeks_typical",
+          "progress_tracking": "automated"
+        },
+        {
+          "step_id": 6,
+          "step_name": "Final Clearance",
+          "action": "generate_clearance_documentation",
+          "includes": [
+            "final_functional_capacity",
+            "work_clearance_status",
+            "any_permanent_restrictions",
+            "return_to_full_duties_date"
+          ],
+          "ai_assisted": true,
+          "clinician_signature_required": true,
+          "automated": "generation"
+        }
+      ],
+      
+      "reporting_schedule": {
+        "employer": "weekly",
+        "wcb": "as_required_by_case",
+        "physician": "monthly_or_as_needed"
+      },
+      
+      "success_metrics": [
+        "time_to_rtw",
+        "successful_rtw_percentage",
+        "employer_satisfaction",
+        "reclaim_rate"
+      ]
+    },
+    
+    {
+      "workflow_id": "WF_NO_SHOW_PREVENTION",
+      "workflow_name": "No-Show Prevention & Management",
+      "description": "Reduce no-shows through reminders and follow-up",
+      "trigger": "appointment_scheduled",
+      "status": "active",
+      
+      "prevention_steps": [
+        {
+          "action": "multi_channel_reminders",
+          "schedule": [
+            {"timing": "7_days", "channel": "email", "content": "appointment_confirmation"},
+            {"timing": "2_days", "channel": "sms", "content": "reminder_with_reschedule_link"},
+            {"timing": "1_day", "channel": "sms_and_email", "content": "final_reminder"},
+            {"timing": "2_hours", "channel": "sms", "content": "same_day_reminder"}
+          ],
+          "automated": true
+        },
+        {
+          "action": "easy_rescheduling",
+          "method": "one_click_link_in_sms",
+          "automated": true
+        },
+        {
+          "action": "identify_high_risk_patients",
+          "factors": [
+            "previous_no_show_history",
+            "first_time_patient",
+            "long_booking_window",
+            "evening_appointments"
+          ],
+          "intervention": "personal_phone_call_day_before",
+          "automated": "risk_identification_only"
+        }
+      ],
+      
+      "post_no_show": [
+        {
+          "action": "immediate_outreach",
+          "timing": "within_1_hour",
+          "method": "phone_call_and_sms",
+          "goal": "reschedule_immediately"
+        },
+        {
+          "action": "backfill_slot",
+          "method": "notify_waitlist",
+          "timing": "immediately",
+          "automated": true
+        },
+        {
+          "action": "no_show_fee_consideration",
+          "policy": "charge_after_3rd_no_show",
+          "automated": "tracking_only"
+        }
+      ]
+    },
+    
+    {
+      "workflow_id": "WF_WAITLIST_MANAGEMENT",
+      "workflow_name": "Waitlist & Capacity Management",
+      "description": "Maximize bookings through intelligent waitlist management",
+      "trigger": "patient_requests_unavailable_time_or_specialty",
+      "status": "active",
+      
+      "steps": [
+        {
+          "action": "add_to_waitlist",
+          "capture": [
+            "preferred_days",
+            "preferred_times",
+            "flexibility_level",
+            "urgency"
+          ],
+          "automated": true
+        },
+        {
+          "action": "monitor_openings",
+          "frequency": "real_time",
+          "sources": [
+            "cancellations",
+            "no_shows",
+            "schedule_additions"
+          ],
+          "automated": true
+        },
+        {
+          "action": "match_and_notify",
+          "matching_logic": [
+            "priority_by_urgency",
+            "match_specialty",
+            "match_time_preference",
+            "first_come_first_served_within_priority"
+          ],
+          "notification_method": "sms_and_email",
+          "response_window": "4_hours_to_claim_slot",
+          "automated": true
+        },
+        {
+          "action": "escalate_long_waits",
+          "threshold": "14_days_on_waitlist",
+          "action": "clinic_gm_review_to_add_capacity",
+          "automated": "alert_only"
+        }
+      ]
+    }
+  ],
+  
+  "automation_metrics": [
+    "workflow_completion_rate",
+    "automation_time_savings",
+    "manual_intervention_frequency",
+    "patient_experience_score",
+    "operational_efficiency_gain"
+  ],
+  
+  "continuous_improvement": {
+    "feedback_collection": true,
+    "bottleneck_identification": true,
+    "quarterly_optimization_review": true
+  }
+}

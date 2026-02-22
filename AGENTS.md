@@ -64,6 +64,23 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - **Always verify current state before execution** — check existing files/work to prevent duplication
 - When in doubt, ask.
 
+## 🔍 Check Before You Act
+
+**Before starting ANY task, verify what's already done:**
+
+1. **Git:** `git status`, `git log --oneline -5` (recent commits)
+2. **Deployments:** Check Vercel/Supabase/production status
+3. **Database:** Check migration status (`supabase migration list`)
+4. **Memory:** Read today's memory file + recent entries
+5. **Documentation:** Check README, deployment guides
+
+**Then report findings BEFORE acting:**
+- "I checked X, Y is already complete, only Z needs work"
+- Give Orville a chance to confirm or correct assumptions
+- Avoid duplicate work and wasted effort
+
+**Don't assume. Verify. Then act.**
+
 ## External vs Internal
 
 **Safe to do freely:**

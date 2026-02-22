@@ -1,0 +1,382 @@
+{
+  "dashboard_id": "DASHBOARD_FMM_001",
+  "dashboard_name": "Fort McMurray KPI Dashboard",
+  "location_id": "AIM_FMM_001",
+  "version": "1.0",
+  "real_time": true,
+  "refresh_interval_seconds": 300,
+  
+  "access_control": {
+    "clinic_gm": "full_access",
+    "clinical_lead": "clinical_metrics_only",
+    "coo": "full_access",
+    "ceo": "executive_summary",
+    "cfo": "financial_metrics_only"
+  },
+  
+  "dashboard_sections": [
+    {
+      "section_id": "clinical_kpis",
+      "section_name": "Clinical Performance",
+      "display_order": 1,
+      "widgets": [
+        {
+          "widget_id": "visits_per_day",
+          "widget_type": "metric_card",
+          "title": "Visits Per Day",
+          "data_source": "booking_system",
+          "calculation": "COUNT(visits) / operating_days",
+          "target": 15,
+          "current_value": "real_time",
+          "trend": "7_day_moving_average",
+          "alert_below": 12,
+          "display": {
+            "primary_value": "large_number",
+            "sparkline": true,
+            "comparison_to_target": "percentage"
+          }
+        },
+        {
+          "widget_id": "revenue_per_visit",
+          "widget_type": "metric_card",
+          "title": "Revenue Per Visit",
+          "data_source": "billing_system",
+          "calculation": "SUM(revenue) / COUNT(visits)",
+          "target": 135.00,
+          "format": "currency",
+          "alert_below": 115.00,
+          "display": {
+            "primary_value": "large_currency",
+            "sparkline": true,
+            "comparison_to_last_month": true
+          }
+        },
+        {
+          "widget_id": "pelvic_utilization",
+          "widget_type": "gauge",
+          "title": "Pelvic Health Utilization",
+          "data_source": "room_utilization",
+          "calculation": "utilization_percentage WHERE room_type = 'Pelvic Health'",
+          "target_min": 60.0,
+          "target_max": 85.0,
+          "display": {
+            "gauge_type": "semicircle",
+            "zones": [
+              {"min": 0, "max": 60, "color": "red", "label": "Under-utilized"},
+              {"min": 60, "max": 85, "color": "green", "label": "Optimal"},
+              {"min": 85, "max": 100, "color": "orange", "label": "Over-capacity"}
+            ]
+          }
+        },
+        {
+          "widget_id": "concussion_utilization",
+          "widget_type": "gauge",
+          "title": "Concussion/Vestibular Utilization",
+          "data_source": "room_utilization",
+          "calculation": "utilization_percentage WHERE room_type = 'Concussion/Vestibular'",
+          "target_min": 60.0,
+          "target_max": 85.0
+        },
+        {
+          "widget_id": "rtw_conversion_rate",
+          "widget_type": "metric_card",
+          "title": "RTW Conversion Rate",
+          "data_source": "clinical_outcomes",
+          "calculation": "COUNT(successful_rtw) / COUNT(rtw_assessments) * 100",
+          "target": 85.00,
+          "format": "percentage",
+          "display": {
+            "primary_value": "percentage",
+            "trend": "monthly",
+            "comparison_to_industry": true
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_id": "financial_kpis",
+      "section_name": "Financial Performance",
+      "display_order": 2,
+      "widgets": [
+        {
+          "widget_id": "monthly_revenue",
+          "widget_type": "metric_card",
+          "title": "Monthly Revenue",
+          "data_source": "financial_system",
+          "calculation": "SUM(net_revenue) WHERE period = current_month",
+          "target": 60000.00,
+          "format": "currency",
+          "alert_below": 50000.00,
+          "display": {
+            "primary_value": "large_currency",
+            "progress_bar": true,
+            "progress_to_target": true,
+            "mtd_trend": true
+          }
+        },
+        {
+          "widget_id": "ebitda_margin",
+          "widget_type": "metric_card",
+          "title": "EBITDA Margin",
+          "data_source": "financial_system",
+          "calculation": "(net_revenue - total_expenses) / net_revenue * 100",
+          "target": 25.00,
+          "format": "percentage",
+          "alert_below": 15.00,
+          "display": {
+            "primary_value": "percentage",
+            "trend": "quarterly",
+            "benchmark": "corporate_average"
+          }
+        },
+        {
+          "widget_id": "breakeven_status",
+          "widget_type": "progress_indicator",
+          "title": "Break-Even Progress",
+          "data_source": "financial_system",
+          "calculation": "current_month_ebitda >= 0",
+          "display": {
+            "type": "progress_circle",
+            "show_visits_to_breakeven": true,
+            "show_revenue_to_breakeven": true,
+            "color_coding": {
+              "on_track": "green",
+              "at_risk": "orange",
+              "behind": "red"
+            }
+          }
+        },
+        {
+          "widget_id": "revenue_per_sq_ft",
+          "widget_type": "metric_card",
+          "title": "Revenue Per Sq Ft",
+          "data_source": "financial_system",
+          "calculation": "monthly_revenue / total_sq_ft",
+          "format": "currency",
+          "display": {
+            "primary_value": "currency",
+            "comparison_to": "edmonton_main_location"
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_id": "operational_kpis",
+      "section_name": "Operational Efficiency",
+      "display_order": 3,
+      "widgets": [
+        {
+          "widget_id": "room_utilization_overview",
+          "widget_type": "bar_chart",
+          "title": "Room Utilization by Type",
+          "data_source": "room_utilization",
+          "calculation": "AVG(utilization_percentage) GROUP BY room_type",
+          "target_line": 70.0,
+          "display": {
+            "orientation": "horizontal",
+            "color_by_performance": true,
+            "show_capacity": true
+          }
+        },
+        {
+          "widget_id": "clinician_utilization",
+          "widget_type": "metric_card",
+          "title": "Clinician Utilization",
+          "data_source": "clinician_productivity",
+          "calculation": "AVG(utilization_rate)",
+          "target": 80.00,
+          "format": "percentage",
+          "alert_below": 70.00
+        },
+        {
+          "widget_id": "no_show_rate",
+          "widget_type": "metric_card",
+          "title": "No-Show Rate",
+          "data_source": "booking_system",
+          "calculation": "COUNT(no_shows) / COUNT(bookings) * 100",
+          "target": 8.00,
+          "format": "percentage",
+          "alert_above": 12.00,
+          "display": {
+            "primary_value": "percentage",
+            "trend": "daily",
+            "inverted_colors": true
+          }
+        },
+        {
+          "widget_id": "lead_conversion",
+          "widget_type": "funnel_chart",
+          "title": "Lead to Patient Conversion",
+          "data_source": "marketing_system",
+          "stages": [
+            {"name": "Inquiries", "data_field": "total_inquiries"},
+            {"name": "Bookings", "data_field": "bookings_made"},
+            {"name": "Attended", "data_field": "first_visit_attended"}
+          ],
+          "display": {
+            "show_conversion_rates": true,
+            "highlight_drop_offs": true
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_id": "growth_kpis",
+      "section_name": "Growth & Marketing",
+      "display_order": 4,
+      "widgets": [
+        {
+          "widget_id": "google_ranking_pelvic",
+          "widget_type": "metric_card",
+          "title": "Google Ranking - Pelvic Health",
+          "data_source": "seo_tracking",
+          "calculation": "AVG(ranking) WHERE category = 'pelvic_health'",
+          "target": 3,
+          "format": "number",
+          "display": {
+            "primary_value": "ranking_position",
+            "trend": "weekly",
+            "inverted_colors": true
+          }
+        },
+        {
+          "widget_id": "google_ranking_concussion",
+          "widget_type": "metric_card",
+          "title": "Google Ranking - Concussion",
+          "data_source": "seo_tracking",
+          "calculation": "AVG(ranking) WHERE category = 'concussion'",
+          "target": 3,
+          "format": "number"
+        },
+        {
+          "widget_id": "google_ranking_vestibular",
+          "widget_type": "metric_card",
+          "title": "Google Ranking - Vestibular",
+          "data_source": "seo_tracking",
+          "calculation": "AVG(ranking) WHERE category = 'vestibular'",
+          "target": 5,
+          "format": "number"
+        },
+        {
+          "widget_id": "employer_contracts",
+          "widget_type": "metric_card",
+          "title": "Employer Contracts Signed",
+          "data_source": "crm_system",
+          "calculation": "COUNT(active_employer_contracts)",
+          "target": 3,
+          "format": "number",
+          "display": {
+            "primary_value": "number",
+            "list_of_contracts": true
+          }
+        },
+        {
+          "widget_id": "physician_referrals",
+          "widget_type": "line_chart",
+          "title": "Physician Referrals Per Month",
+          "data_source": "referral_tracking",
+          "calculation": "COUNT(referrals) WHERE source = 'physician' GROUP BY month",
+          "target_line": 20,
+          "display": {
+            "time_range": "12_months",
+            "show_trend_line": true
+          }
+        }
+      ]
+    },
+    
+    {
+      "section_id": "service_mix",
+      "section_name": "Service Mix Analysis",
+      "display_order": 5,
+      "widgets": [
+        {
+          "widget_id": "revenue_by_specialty",
+          "widget_type": "pie_chart",
+          "title": "Revenue by Specialty",
+          "data_source": "service_mix_analytics",
+          "calculation": "SUM(revenue_generated) GROUP BY category",
+          "display": {
+            "show_percentages": true,
+            "show_values": true,
+            "color_by_specialty": true
+          }
+        },
+        {
+          "widget_id": "visits_by_specialty",
+          "widget_type": "donut_chart",
+          "title": "Visits by Specialty",
+          "data_source": "service_mix_analytics",
+          "calculation": "SUM(visits_delivered) GROUP BY category"
+        },
+        {
+          "widget_id": "service_performance_table",
+          "widget_type": "data_table",
+          "title": "Top Services by Revenue",
+          "data_source": "services",
+          "columns": [
+            {"field": "service_name", "title": "Service"},
+            {"field": "visits_ytd", "title": "Visits YTD"},
+            {"field": "revenue_ytd", "title": "Revenue YTD", "format": "currency"},
+            {"field": "avg_revenue_per_visit", "title": "Avg $/Visit", "format": "currency"},
+            {"field": "margin_category", "title": "Margin"}
+          ],
+          "sort_by": "revenue_ytd",
+          "limit": 10
+        }
+      ]
+    },
+    
+    {
+      "section_id": "alerts_overview",
+      "section_name": "Active Alerts",
+      "display_order": 6,
+      "widgets": [
+        {
+          "widget_id": "alert_feed",
+          "widget_type": "alert_list",
+          "title": "Active Alerts & Notifications",
+          "data_source": "location_alerts",
+          "filter": "acknowledged = false",
+          "sort_by": "severity DESC, created_at DESC",
+          "display": {
+            "severity_icons": true,
+            "acknowledge_button": true,
+            "limit": 10
+          }
+        }
+      ]
+    }
+  ],
+  
+  "export_options": {
+    "pdf_report": true,
+    "excel_export": true,
+    "scheduled_email": {
+      "daily_summary": {
+        "enabled": true,
+        "time": "08:00",
+        "recipients": ["clinic_gm"]
+      },
+      "weekly_report": {
+        "enabled": true,
+        "day": "monday",
+        "time": "09:00",
+        "recipients": ["clinic_gm", "coo"]
+      },
+      "monthly_report": {
+        "enabled": true,
+        "day": "first_monday",
+        "time": "09:00",
+        "recipients": ["clinic_gm", "coo", "cfo", "ceo"]
+      }
+    }
+  },
+  
+  "mobile_responsive": true,
+  "theme": "aimos_corporate",
+  "custom_branding": true
+}
