@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governance in Industrial AI: Who Controls the Robots? — SyncAI Insights</title>
+    <meta name="description" content="When AI agents make operational decisions autonomously, governance becomes the hard problem. A framework for control, accountability, and audit in autonomous systems.">
+    <meta name="keywords" content="AI governance, industrial AI, autonomous systems, AI accountability, AI audit trails">
+    <meta name="author" content="SyncAI">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Governance in Industrial AI: Who Controls the Robots?">
+    <meta property="og:description" content="When AI agents make decisions autonomously, governance becomes the hard problem. A framework for control and accountability.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://syncai.ca/insights/governance-in-industrial-ai">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/article.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Governance in Industrial AI: Who Controls the Robots?",
+        "description": "When AI agents make operational decisions autonomously, governance becomes the hard problem. A framework for control, accountability, and audit in autonomous systems.",
+        "author": {
+            "@type": "Organization",
+            "name": "SyncAI"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SyncAI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://syncai.ca/logo.png"
+            }
+        },
+        "datePublished": "2026-02-25",
+        "dateModified": "2026-02-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://syncai.ca/insights/governance-in-industrial-ai"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">◈ SyncAI</a>
+            <div class="nav-links">
+                <a href="../index.html#platform">Platform</a>
+                <a href="../index.html#use-cases">Use Cases</a>
+                <a href="/insights">Insights</a>
+                <a href="https://app.syncai.ca" style="color: var(--accent-cyan);">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <!-- Share Sidebar -->
+    <div class="share-sidebar">
+        <a href="#" class="share-button" data-share="twitter" aria-label="Share on Twitter">𝕏</a>
+        <a href="#" class="share-button" data-share="linkedin" aria-label="Share on LinkedIn">in</a>
+        <a href="#" class="share-button" data-share="copy" aria-label="Copy link">🔗</a>
+    </div>
+
+    <!-- Article Header -->
+    <article>
+        <header class="article-header">
+            <span class="article-category">Governance & Risk</span>
+            <h1>Governance in Industrial AI: Who Controls the Robots?</h1>
+            <div class="article-meta">
+                <span>12 min read</span>
+                <span>•</span>
+                <span>Feb 25, 2026</span>
+            </div>
+            <p class="article-summary">
+                When AI agents make operational decisions autonomously—rerouting production, triggering maintenance, adjusting schedules—governance becomes the hard problem. This is a framework for control, accountability, and audit in systems where humans are no longer in the loop for every decision.
+            </p>
+        </header>
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <h2>The Control Paradox</h2>
+            
+            <p>You deploy AI to <strong>reduce human decision-making load</strong>. But executives, regulators, and insurance carriers want <strong>accountability</strong>. Those goals are in tension.</p>
+
+            <p>The value of autonomous systems comes from <em>letting them act without constant human approval</em>. The risk comes from exactly the same place.</p>
+
+            <p>This isn't a technology problem. It's a governance design problem. And most organizations are getting it wrong.</p>
+
+            <div class="callout">
+                <div class="callout-title">The Question Every Board Asks</div>
+                <p>"If an AI agent makes a decision that causes a $2M failure, who's responsible—and how would we even know what happened?"</p>
+            </div>
+
+            <h2>The Three Pillars of AI Governance</h2>
+
+            <p>Industrial AI governance isn't about preventing AI from acting. It's about <strong>defining boundaries, logging decisions, and enabling human override</strong>—without killing the efficiency gains that justify AI in the first place.</p>
+
+            <h3>1. Authority Boundaries (What Can AI Decide?)</h3>
+            
+            <p>Not all decisions are equal. You need a <strong>decision matrix</strong> that defines AI authority by impact and reversibility:</p>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <th style="padding: 1rem; text-align: left; color: var(--accent-cyan);">Decision Type</th>
+                    <th style="padding: 1rem; text-align: left; color: var(--accent-cyan);">AI Authority</th>
+                    <th style="padding: 1rem; text-align: left; color: var(--accent-cyan);">Human Review</th>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 1rem;">Low-risk, reversible (schedule adjustment)</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Full autonomy</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Post-action audit</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 1rem;">Medium-risk (predictive maintenance trigger)</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Recommend + auto-execute if no objection in 4h</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Notification with override window</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 1rem;">High-risk, costly (equipment shutdown)</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Recommend only</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Required approval before action</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;">Critical safety (emergency stop)</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Full autonomy</td>
+                    <td style="padding: 1rem; color: var(--text-secondary);">Immediate alert + post-incident review</td>
+                </tr>
+            </table>
+
+            <p>The key insight: <strong>AI authority should vary by decision type</strong>, not be binary (all or nothing).</p>
+
+            <h3>2. Audit Trails (What Did AI Do, and Why?)</h3>
+            
+            <p>Every AI-driven action needs a <strong>decision log</strong> that captures:</p>
+            <ul>
+                <li><strong>What decision was made</strong> (e.g., "Triggered PM on Asset P-305")</li>
+                <li><strong>What data informed it</strong> (e.g., "Vibration exceeded 8mm/s for 72 hours")</li>
+                <li><strong>What rule or model triggered it</strong> (e.g., "Predictive model ID: PM-2947, confidence: 87%")</li>
+                <li><strong>Who could have overridden it</strong> (e.g., "Supervisor Jane Doe, no objection filed")</li>
+                <li><strong>What the outcome was</strong> (e.g., "Bearing replaced, asset returned to service")</li>
+            </ul>
+
+            <p>This isn't just for compliance. It's for <strong>learning</strong>. When AI makes a bad call, you need to know <em>why</em>—so you can fix the model, not just blame the system.</p>
+
+            <div class="callout">
+                <div class="callout-title">The Explainability Trap</div>
+                <p>You don't need AI to explain <em>how</em> it thinks (neural networks are black boxes). You need it to explain <em>what data</em> it used and <em>what threshold</em> it crossed. That's enough for operational governance.</p>
+            </div>
+
+            <h3>3. Human Override (How Do We Stop It?)</h3>
+            
+            <p>Autonomous doesn't mean unstoppable. You need <strong>manual override at multiple levels</strong>:</p>
+
+            <ul>
+                <li><strong>Real-time veto</strong> — Reject a specific recommendation before it executes</li>
+                <li><strong>Rule suppression</strong> — Disable a specific AI rule temporarily (e.g., "Don't trigger PMs during peak season")</li>
+                <li><strong>System pause</strong> — Halt all autonomous actions, revert to advisory-only mode</li>
+                <li><strong>Emergency kill switch</strong> — Full system shutdown if something goes catastrophically wrong</li>
+            </ul>
+
+            <p>These aren't theoretical. They're required. If your AI platform doesn't have them, <strong>you don't have governance—you have a liability</strong>.</p>
+
+            <h2>Role-Based Access Control (RBAC) for AI</h2>
+
+            <p>Governance isn't just about controlling AI. It's about controlling <strong>who can configure AI</strong>.</p>
+
+            <h3>Typical RBAC Model:</h3>
+            <ul>
+                <li><strong>Executive:</strong> View all AI decisions, audit trails, and performance metrics. Can pause system-wide.</li>
+                <li><strong>Operations Manager:</strong> Configure decision thresholds, suppress rules, override recommendations. Can't change core models.</li>
+                <li><strong>Maintenance Supervisor:</strong> Approve/reject individual recommendations. Can't change rules.</li>
+                <li><strong>Technician:</strong> View AI-generated work orders. Can't override or configure.</li>
+                <li><strong>AI Administrator:</strong> Full system access, including model retraining and rule creation. Requires dual approval for changes.</li>
+            </ul>
+
+            <p>The goal: <strong>separation of duties</strong>. No single person can both configure AI behavior <em>and</em> approve its actions without oversight.</p>
+
+            <h2>Compliance and Regulatory Readiness</h2>
+
+            <p>Different industries have different requirements. Here's what regulators typically want to see:</p>
+
+            <h3>ISO 55000 (Asset Management)</h3>
+            <ul>
+                <li>Documented decision-making process (AI rules = policy documentation)</li>
+                <li>Traceability from recommendation → action → outcome</li>
+                <li>Risk assessment for autonomous vs. advisory modes</li>
+            </ul>
+
+            <h3>SOC 2 (Security and Availability)</h3>
+            <ul>
+                <li>Access controls for who can modify AI behavior</li>
+                <li>Logging of all configuration changes</li>
+                <li>Incident response plan if AI causes downtime</li>
+            </ul>
+
+            <h3>OSHA/Safety Standards</h3>
+            <ul>
+                <li>Safety-critical decisions must remain human-approved or have redundant fail-safes</li>
+                <li>AI cannot override safety interlocks without human authorization</li>
+                <li>Post-incident analysis must include AI decision logs</li>
+            </ul>
+
+            <div class="callout">
+                <div class="callout-title">The Insurance Question</div>
+                <p>If your facility is insured, your carrier will eventually ask: "What happens if AI makes a decision that causes a loss?" Have documentation ready: authority matrix, audit logs, override procedures. No documentation = no coverage when things go wrong.</p>
+            </div>
+
+            <h2>When AI Governance Fails: Real Scenarios</h2>
+
+            <h3>Scenario 1: The Aggressive Model</h3>
+            <p><strong>Problem:</strong> AI triggers too many preventive maintenance actions, overwhelming the team and increasing costs.<br>
+            <strong>Root cause:</strong> Model was trained on worst-case failure data, became risk-averse.<br>
+            <strong>Governance failure:</strong> No threshold review process after model deployment.</p>
+
+            <h3>Scenario 2: The Override That Wasn't</h3>
+            <p><strong>Problem:</strong> Maintenance supervisor disagrees with AI recommendation but doesn't override it. Asset fails anyway.<br>
+            <strong>Root cause:</strong> Supervisor thought "AI knows better" and deferred judgment.<br>
+            <strong>Governance failure:</strong> No clear protocol for when humans <em>should</em> override AI.</p>
+
+            <h3>Scenario 3: The Invisible Decision</h3>
+            <p><strong>Problem:</strong> Equipment fails. Post-mortem shows AI had flagged it 2 weeks prior, but notification was buried in email.<br>
+            <strong>Root cause:</strong> Alert fatigue + poor UI for critical decisions.<br>
+            <strong>Governance failure:</strong> No escalation path for high-confidence, high-impact recommendations.</p>
+
+            <h2>Designing a Governance Framework</h2>
+
+            <p>If you're deploying industrial AI, here's a checklist:</p>
+
+            <ol>
+                <li><strong>Define authority boundaries</strong> — What can AI decide without approval? What requires human sign-off?</li>
+                <li><strong>Implement audit logging</strong> — Every decision, every data point, every outcome. Retain for 12+ months.</li>
+                <li><strong>Build override mechanisms</strong> — Real-time veto, rule suppression, system pause, kill switch.</li>
+                <li><strong>Establish RBAC</strong> — Who can configure AI? Who can approve decisions? Separation of duties.</li>
+                <li><strong>Create escalation protocols</strong> — High-confidence, high-impact recommendations go to leadership, not email inboxes.</li>
+                <li><strong>Run tabletop exercises</strong> — Simulate AI making a bad call. How fast can you stop it? Who gets notified?</li>
+                <li><strong>Document everything</strong> — Authority matrix, decision logs, configuration changes. For regulators, insurance, and post-incident reviews.</li>
+            </ol>
+
+            <h2>The Cultural Shift</h2>
+
+            <p>Technology is the easy part. The hard part is <strong>organizational trust</strong>.</p>
+
+            <p>When you deploy autonomous AI:</p>
+            <ul>
+                <li><strong>Operations teams fear being overruled</strong> by a black box they don't control.</li>
+                <li><strong>Executives fear liability</strong> for decisions they didn't make.</li>
+                <li><strong>Technicians fear being blamed</strong> when AI-generated work orders go wrong.</li>
+            </ul>
+
+            <p>Governance fixes this by making AI <strong>transparent, accountable, and overridable</strong>. It's not about control for its own sake—it's about building trust.</p>
+
+            <h2>The Future: Self-Auditing AI</h2>
+
+            <p>The next generation of industrial AI won't just log decisions—it will <strong>audit itself</strong>. Imagine:</p>
+
+            <ul>
+                <li>AI that detects when its own predictions are drifting (model decay)</li>
+                <li>AI that flags when it's being overridden frequently (sign of miscalibration)</li>
+                <li>AI that learns from human corrections and self-adjusts thresholds</li>
+            </ul>
+
+            <p>This isn't science fiction. It's already happening in financial trading systems and autonomous vehicles. Industrial AI will follow—but only if we build governance frameworks that <em>enable</em> AI to learn from its mistakes, rather than hide them.</p>
+
+            <h2>The Bottom Line</h2>
+
+            <p>Autonomous AI without governance is a liability. With governance, it's a competitive advantage.</p>
+
+            <p>The facilities winning in 2026 aren't the ones with the most advanced AI. They're the ones that can <strong>prove their AI is under control</strong>—to regulators, insurers, executives, and their own teams.</p>
+
+            <p>Build the governance framework <em>before</em> you scale AI. Not after the first incident.</p>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="article-cta">
+            <h3>AI Governance Framework Template</h3>
+            <p>Download our governance framework template (30 pages) with authority matrices, audit checklists, and RBAC models.</p>
+            <a href="#" class="cta-button" data-pdf-download>Download Framework</a>
+        </div>
+    </article>
+
+    <!-- PDF Download Modal -->
+    <div class="modal-overlay" id="pdf-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h3>Download Governance Framework</h3>
+            <p>Enter your email to download the complete AI governance template (PDF, 30 pages).</p>
+            <form id="pdf-email-form" class="email-form">
+                <input 
+                    type="email" 
+                    placeholder="your.email@company.com" 
+                    required 
+                    aria-label="Email address"
+                >
+                <button type="submit" data-pdf-url="/pdfs/ai-governance-framework-template.pdf">
+                    Download Framework
+                </button>
+                <p class="form-note">We respect your privacy. No spam, ever.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p style="color: var(--text-tertiary);">&copy; 2026 SyncAI. Intelligence for modern operations.</p>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="/insights">Insights</a>
+                <a href="mailto:info@syncai.ca">Contact</a>
+                <a href="/privacy">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/article.js"></script>
+</body>
+</html>
