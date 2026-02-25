@@ -231,6 +231,69 @@ Active Subscription → Help Available (floating)
 
 **Result:** Platform ready for first paying customers with ultra-premium feel throughout entire journey.
 
+## SyncAI Insights Section - Production Deployment (2026-02-25)
+
+**Status:** ✅ DEPLOYED TO PRODUCTION  
+**URL:** https://syncai.ca/insights  
+**Build Time:** 11 seconds  
+**Total Work:** 5h 22min (9:00 AM - 2:22 PM MST)
+
+### What Was Built
+
+**5 Pages Deployed:**
+1. `/insights` — Hub with 3 article cards + newsletter signup
+2. `/insights/why-cmms-alone-is-failing-2026` — CMMS limitations + SyncAI multi-agent architecture
+3. `/insights/economics-of-autonomous-maintenance` — ROI model ($14.4M annual, $115M enterprise value)
+4. `/insights/governance-in-industrial-ai` — Governance framework with RBAC + audit trails
+5. `/investors` — Industrial AI infrastructure narrative
+
+**Features:**
+- Gated PDF downloads (3 whitepapers, 385-422 KB each)
+- Supabase email capture (newsletter + PDF downloads)
+- Reading progress bars, share buttons (Twitter, LinkedIn)
+- SEO optimized (meta tags + schema.org Article markup)
+- Mobile responsive, dark premium industrial theme
+
+### Content Strategy: Hybrid Approach
+
+**Final content integrates:**
+- **Strategic framing:** Board-level problem analysis, CFO-level ROI modeling
+- **Platform specifics:** Multi-agent architecture (5 specialized agents), Supabase governance, read-only CMMS integration
+- **Deployment credibility:** Representative scenarios (clearly labeled as modeled) showing Western Canada oil & gas, manufacturing, mining examples
+- **Technical depth:** RBAC implementation (5 roles), phased deployment model (Advisory → Conditional → Scaled)
+
+**Positioning achieved:** Industrial AI Infrastructure Platform (not generic AI strategy company)
+
+### Architecture
+
+**Approach:** Option A — Static HTML + Supabase (ship fast, iterate later)  
+**Parked:** Option B — Next.js + MDX rebuild (4-6 hours, for when content scales beyond 10 articles)
+
+**Email Capture:**
+- Supabase `newsletter_signups` table with RLS policies
+- Graceful fallback to console.log if database not ready
+- Source tracking: "insights", "pdf:<article-name>"
+
+### Strategic Impact
+
+**Now demonstrates:**
+- Multi-agent architecture (5 specialized agents: failure pattern recognition, sensor correlation, work order anomaly detection, technician note parsing, cross-asset risk clustering)
+- Supabase-backed governance (7-year audit trails, RBAC with 5 roles)
+- Read-only integration model (non-disruptive CMMS/ERP/SCADA connections)
+- Phased deployment methodology (Advisory → Conditional → Scaled)
+- Representative operational scenarios (Western Canada: 1,200 assets, 47 high-risk flagged, 3 shutdowns prevented, $2.1M avoided costs)
+
+**Articles position SyncAI as:**
+- Not CMMS replacement → Intelligence layer augmentation
+- Not generic AI → Domain-specific multi-agent system
+- Not black box → Governed, auditable, role-based infrastructure
+
+### Next Steps
+
+**Immediate:** Run Supabase SQL migration to enable email storage  
+**Short-term:** Email confirmation flow, Google Analytics, LinkedIn promotion  
+**Long-term:** Case studies section, sales playbook, 90-day pilot template, Next.js migration when content scales
+
 ---
 
 ## Growth engines authority (paid + SEO) (2026-02-08)
