@@ -42,6 +42,70 @@ Orville defined Axium as a personal executive AI operating system.
 - Persist important context, preferences, and decisions
 - Build continuity across sessions
 
+## SyncAI Three-Layer Architecture Vision (2026-02-25)
+
+**Authority:** Orville (strategic directive)  
+**Commitment:** Axium has full charge of end-state achievement  
+**Documentation:** `SYNCAI_ARCHITECTURE_VISION.md`
+
+### The Three Layers
+
+**Layer 1 — Meta-Orchestrator (OpenClaw)**
+- Internal DevOps AI, never customer-facing
+- Content engine, deployment manager, monitoring brain
+- Calls SyncAI Control Plane API (one-way, never reverse)
+- Purpose: Internal velocity multiplier
+
+**Layer 2 — Control Plane (NEW BUILD - Next 90 Days)**
+- Tenant provisioning, agent configuration, deployment automation
+- **Core capability:** One-command enterprise deployment
+- Example: `syncai deploy --template oil-sands --assets 1200 --cmms maximo --sites 3`
+- Behind command: provision tenant, configure governance, integrate CMMS, train models, generate reports
+- Purpose: Scalability moat (infrastructure > consulting)
+
+**Layer 3 — Intelligence Plane (Existing SyncAI Core)**
+- Multi-agent predictive engine, risk modeling, governance framework
+- Customer-facing revenue engine
+- Executive dashboards, customer portal
+- Purpose: Value delivery
+
+### The Moat: Deployment Automation
+
+**Defensibility comes from:**
+1. Deployment automation (not multi-agent marketing)
+2. Governance baked into runtime (not compliance docs)
+3. Domain-specific training loops (asset behavior patterns)
+4. Operational risk memory accumulation (proprietary corpus)
+
+**Over time:** Proprietary failure pattern corpus becomes extremely difficult to replicate
+
+### Control Plane Roadmap (90 Days)
+
+1. **Phase 1 (Week 1-2):** Tenant provisioning engine
+2. **Phase 2 (Week 3-4):** Deployment templates (Oil & Gas, Mining, Manufacturing, Utilities)
+3. **Phase 3 (Week 5-6):** Integration setup wizard (CMMS/ERP/SCADA)
+4. **Phase 4 (Week 7-9):** Auto-initialization engine (baseline models, first reports)
+5. **Phase 5 (Week 10-12):** Deployment audit output (PDF reports, governance snapshots)
+
+**Success Metric:** End-to-end deployment in <3 hours (from command to operational)
+
+### What NOT to Do (Critical Constraints)
+
+- ❌ Do not embed OpenClaw runtime into SyncAI
+- ❌ Do not turn SyncAI into general automation
+- ❌ Do not expose shell-level flexibility to customers
+- ❌ Do not dilute vertical specialization (industrial depth > horizontal capability)
+
+### Long-Term Vision
+
+**SyncAI:** Operating system for asset-intensive enterprises  
+**OpenClaw:** Internal AI Chief of Staff  
+**Result:** AI-native company with self-deploying platform, governance-first architecture, low marginal deployment cost
+
+**This combination is rare.**
+
+---
+
 ## AIMOS Phase 1 - Production Deployment (2026-02-21)
 **Status:** ✅ DEPLOYED TO PRODUCTION  
 **URL:** https://aimos-ebon.vercel.app  
