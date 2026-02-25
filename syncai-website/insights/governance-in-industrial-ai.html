@@ -79,7 +79,7 @@
             <span class="article-category">Governance & Risk</span>
             <h1>Governance in Industrial AI: Human Oversight at Scale</h1>
             <div class="article-meta">
-                <span>10 min read</span>
+                <span>12 min read</span>
                 <span>•</span>
                 <span>Feb 25, 2026</span>
             </div>
@@ -195,6 +195,121 @@
                 <p>Governance must be <strong>architectural</strong> — not procedural. If governance depends on human discipline rather than system constraints, it will fail under operational pressure.</p>
             </div>
 
+            <h2>How SyncAI Implements Governance Architecture</h2>
+
+            <p>SyncAI's governance framework is not a policy document. It is an <strong>engineered system</strong> that enforces control at the infrastructure level.</p>
+
+            <h3>Supabase-Backed Audit Infrastructure</h3>
+            <p>Every AI-generated recommendation and action is logged in a <strong>tamper-evident audit database</strong>:</p>
+            <ul>
+                <li><strong>Decision provenance:</strong> Timestamps, data inputs, model version, confidence scores</li>
+                <li><strong>Human interactions:</strong> Approvals, rejections, overrides, and delay reasons</li>
+                <li><strong>Outcome tracking:</strong> Post-action results (Was the prediction accurate? What was the operational impact?)</li>
+                <li><strong>Retention:</strong> 7-year audit history for compliance and forensic analysis</li>
+            </ul>
+            <p><strong>Result:</strong> Full traceability from AI recommendation to operational outcome.</p>
+
+            <h3>Role-Based Access Control (RBAC)</h3>
+            <p>SyncAI implements fine-grained permissions:</p>
+            
+            <table style="width: 100%; margin: 2rem 0; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <th style="padding: 0.75rem; text-align: left; color: var(--accent-cyan);">Role</th>
+                    <th style="padding: 0.75rem; text-align: left; color: var(--accent-cyan);">Permissions</th>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Executive</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">View all AI decisions, audit trails, performance metrics. Can pause system-wide.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Operations Manager</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Configure decision thresholds, suppress rules, override recommendations. Cannot change core models.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Maintenance Supervisor</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Approve/reject individual recommendations. Cannot change rules.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Technician</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">View AI-generated work orders. Cannot override or configure.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem;">AI Administrator</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Full system access, model retraining, rule creation. Requires dual approval for changes.</td>
+                </tr>
+            </table>
+
+            <p><strong>Separation of duties:</strong> No single person can both configure AI behavior <em>and</em> approve its actions without oversight.</p>
+
+            <h3>Authority Threshold Matrix</h3>
+            <p>Organizations define <strong>decision boundaries</strong> based on financial impact and operational risk:</p>
+
+            <table style="width: 100%; margin: 2rem 0; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <th style="padding: 0.75rem; text-align: left; color: var(--accent-cyan);">Decision Type</th>
+                    <th style="padding: 0.75rem; text-align: left; color: var(--accent-cyan);">AI Authority</th>
+                    <th style="padding: 0.75rem; text-align: left; color: var(--accent-cyan);">Review Process</th>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Low-risk, reversible</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Full autonomy</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Post-action audit</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">Medium-risk (&lt;$10K impact)</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Auto-execute if no objection in 4 hours</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Notification + override window</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.75rem;">High-risk (&gt;$10K impact)</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Recommend only</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Required approval</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem;">Safety-critical</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Full autonomy (emergency stop)</td>
+                    <td style="padding: 0.75rem; color: var(--text-secondary);">Immediate alert + post-incident review</td>
+                </tr>
+            </table>
+
+            <p>These thresholds are <strong>configurable per deployment</strong>—not hardcoded.</p>
+
+            <h3>Escalation Logic</h3>
+            <p>When AI encounters ambiguous scenarios, SyncAI automatically escalates:</p>
+            <ul>
+                <li><strong>High-confidence, high-impact:</strong> Route to senior operations leadership</li>
+                <li><strong>Conflicting data:</strong> Flag for human review with data discrepancy summary</li>
+                <li><strong>Outside authority scope:</strong> Request threshold adjustment or manual intervention</li>
+            </ul>
+
+            <p><strong>No silent failures.</strong> If AI cannot act with confidence, it escalates—not guesses.</p>
+
+            <h2>Representative Governance Scenario</h2>
+
+            <p><em>The following illustrates governance architecture in practice. Specific configurations vary by deployment but the structural model is consistent.</em></p>
+
+            <div class="callout">
+                <div class="callout-title">Scenario: Mining Operation with 800 Assets</div>
+                
+                <p><strong>Governance Configuration:</strong></p>
+                <ul>
+                    <li>AI operates in <strong>Tier 2 (Conditional Execution)</strong> mode</li>
+                    <li>Work orders &lt;$5K auto-execute with 4-hour override window</li>
+                    <li>Work orders &gt;$5K require Operations Manager approval</li>
+                    <li>Safety-critical decisions (emergency stops) execute immediately with post-alert</li>
+                </ul>
+
+                <p><strong>30-Day Results:</strong></p>
+                <ul>
+                    <li><strong>142 AI-generated work orders:</strong> 118 auto-executed, 24 required approval</li>
+                    <li><strong>3 human overrides:</strong> All logged with reasoning ("Scheduled during planned outage instead")</li>
+                    <li><strong>1 escalation:</strong> AI detected conflicting sensor data, flagged for technician inspection</li>
+                    <li><strong>0 unauthorized actions:</strong> Full compliance with authority matrix</li>
+                </ul>
+
+                <p><strong>Audit Trail:</strong> 100% decision logging with full provenance for regulatory review.</p>
+            </div>
+
             <h2>Compliance Implications</h2>
 
             <p>Regulated industries require demonstrable governance:</p>
@@ -220,6 +335,8 @@
                 <li>Post-incident analysis procedures</li>
             </ul>
 
+            <p>SyncAI's architecture satisfies these requirements <strong>by design</strong>—not through post-deployment documentation.</p>
+
             <h2>Implementation Checklist</h2>
 
             <p>Organizations deploying industrial AI should implement:</p>
@@ -243,6 +360,8 @@
             <p>Industrial transformation depends on <strong>structured intelligence amplification</strong> — not unstructured automation.</p>
 
             <p>The organizations succeeding in 2026 are not the ones deploying the most advanced AI. They are the ones deploying AI with the most rigorous governance architecture.</p>
+
+            <p>SyncAI provides that architecture as an engineered system—not a compliance afterthought.</p>
         </div>
 
         <!-- CTA Section -->
