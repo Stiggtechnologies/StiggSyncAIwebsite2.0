@@ -10,6 +10,7 @@ const navItems = [
   { label: 'Industries', href: '/industries' },
   { label: 'Philosophy', href: '/philosophy' },
   { label: 'Security', href: '/security' },
+  { label: 'Insights', href: '/insights' },
   { label: 'Company', href: '/company' },
 ];
 
