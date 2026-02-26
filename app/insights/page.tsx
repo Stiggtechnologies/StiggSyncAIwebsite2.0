@@ -6,7 +6,7 @@ import { BookOpen, Clock, ArrowRight, TrendingUp, Shield, Cpu } from 'lucide-rea
 
 const articles = [
   {
-    slug: 'why-cmms-alone-is-failing',
+    slug: 'why-cmms-alone-is-failing-2026',
     title: 'Why CMMS Alone Is Failing in 2026',
     excerpt:
       'Modern maintenance demands have outpaced what traditional CMMS platforms can deliver. Here is why leading organizations are augmenting their systems with AI infrastructure.',
@@ -14,6 +14,7 @@ const articles = [
     readTime: '8 min read',
     icon: TrendingUp,
     featured: true,
+    available: true,
   },
   {
     slug: 'economics-of-autonomous-maintenance',
@@ -24,6 +25,7 @@ const articles = [
     readTime: '12 min read',
     icon: TrendingUp,
     featured: true,
+    available: true,
   },
   {
     slug: 'governance-in-industrial-ai',
@@ -34,6 +36,7 @@ const articles = [
     readTime: '10 min read',
     icon: Shield,
     featured: true,
+    available: true,
   },
 ];
 
@@ -81,31 +84,34 @@ export default function InsightsPage() {
                   transition={{ delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-gradient-to-b from-[#1E293B]/50 to-[#0F172A]/50 border border-[#334155] rounded-2xl p-8 hover:border-[#3B82F6]/50 transition-colors">
-                    <div className="flex items-start gap-6">
-                      <div className="w-14 h-14 rounded-xl bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3B82F6]/20 transition-colors">
-                        <Icon className="w-7 h-7 text-[#3B82F6]" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-3">
-                          <span className="px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-xs font-medium rounded-full">
-                            {article.category}
-                          </span>
-                          <span className="flex items-center gap-1 text-xs text-gray-500">
-                            <Clock className="w-3 h-3" />
-                            {article.readTime}
-                          </span>
+                  <Link href={`/insights/${article.slug}`}>
+                    <div className="bg-gradient-to-b from-[#1E293B]/50 to-[#0F172A]/50 border border-[#334155] rounded-2xl p-8 hover:border-[#3B82F6]/50 transition-colors cursor-pointer">
+                      <div className="flex items-start gap-6">
+                        <div className="w-14 h-14 rounded-xl bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3B82F6]/20 transition-colors">
+                          <Icon className="w-7 h-7 text-[#3B82F6]" />
                         </div>
-                        <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">
-                          {article.title}
-                        </h2>
-                        <p className="text-gray-400 leading-relaxed mb-4">{article.excerpt}</p>
-                        <div className="flex items-center gap-2 text-[#3B82F6] font-medium">
-                          <span>Coming Soon</span>
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3 mb-3">
+                            <span className="px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-xs font-medium rounded-full">
+                              {article.category}
+                            </span>
+                            <span className="flex items-center gap-1 text-xs text-gray-500">
+                              <Clock className="w-3 h-3" />
+                              {article.readTime}
+                            </span>
+                          </div>
+                          <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">
+                            {article.title}
+                          </h2>
+                          <p className="text-gray-400 leading-relaxed mb-4">{article.excerpt}</p>
+                          <div className="flex items-center gap-2 text-[#3B82F6] font-medium">
+                            <span>Read Article</span>
+                            <ArrowRight className="w-4 h-4" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </motion.article>
               );
             })}
