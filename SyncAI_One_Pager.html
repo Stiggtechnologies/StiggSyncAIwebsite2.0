@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncAI by Stigg — Industrial AI Infrastructure</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+        }
+        
+        .header {
+            border-bottom: 3px solid #00d4ff;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #00d4ff 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2a2a2a;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.4rem;
+            color: #333;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #f3e8ff 100%);
+            border-left: 4px solid #00d4ff;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #0066cc;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .agent-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+        
+        .agent-category {
+            background: #f8f9fa;
+            padding: 0.75rem;
+            border-radius: 4px;
+            border-left: 3px solid #00d4ff;
+        }
+        
+        .agent-category h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+        }
+        
+        .agent-category ul {
+            margin-left: 1rem;
+            font-size: 0.85rem;
+        }
+        
+        .agent-category li {
+            margin-bottom: 0.2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .stat-box {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            border-top: 3px solid #a855f7;
+        }
+        
+        .stat-number {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #a855f7;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+        
+        .checkmark {
+            color: #00d4ff;
+            font-weight: bold;
+            margin-right: 0.25rem;
+        }
+        
+        .contact-box {
+            background: #f8f9fa;
+            padding: 1.25rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .contact-box h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .contact-info {
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                padding: 0.5in;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">◈ SyncAI by Stigg</div>
+        <div class="tagline">Industrial AI Infrastructure for Alberta Operations</div>
+    </div>
+
+    <h2>What We Do</h2>
+    <p><strong>SyncAI</strong> is an industrial AI infrastructure platform that powers autonomous operations for asset-intensive industries. We deploy 15 specialized AI agents that integrate into existing industrial environments, augmenting maintenance, reliability, engineering, and executive decision-making systems.</p>
+    
+    <div class="highlight-box">
+        <strong>Think AWS IoT for industrial operations — purpose-built for Alberta.</strong>
+    </div>
+
+    <h2>Who We Serve</h2>
+    <div class="two-column">
+        <div>
+            <h3>Primary Focus: Alberta</h3>
+            <ul>
+                <li>Oil sands operators</li>
+                <li>Mining facilities (surface & underground)</li>
+                <li>Petrochemical plants</li>
+                <li>Midstream infrastructure</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Secondary Markets</h3>
+            <ul>
+                <li>Manufacturing (process & discrete)</li>
+                <li>Heavy equipment operators</li>
+                <li>Multi-site industrial portfolios</li>
+                <li>Healthcare infrastructure</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="no-break">The 15 AI Agent Platform</h2>
+    <div class="agent-grid no-break">
+        <div class="agent-category">
+            <h4>Maintenance & Reliability</h4>
+            <ul>
+                <li>Predictive Failure Detection</li>
+                <li>Root Cause Analysis</li>
+                <li>Reliability Engineering</li>
+                <li>Maintenance Planning</li>
+                <li>Shutdown Planning</li>
+            </ul>
+        </div>
+        <div class="agent-category">
+            <h4>Operational Excellence</h4>
+            <ul>
+                <li>Production Throughput</li>
+                <li>Energy Efficiency</li>
+                <li>Cost Optimization</li>
+                <li>Continuous Improvement</li>
+            </ul>
+        </div>
+        <div class="agent-category">
+            <h4>Strategic & Governance</h4>
+            <ul>
+                <li>Asset Criticality & Strategy</li>
+                <li>Capital Planning & Budget</li>
+                <li>Risk & Compliance</li>
+                <li>Executive Decision Support</li>
+            </ul>
+        </div>
+        <div class="agent-category">
+            <h4>Operations Support</h4>
+            <ul>
+                <li>Preventive Maintenance</li>
+                <li>Workforce & Logistics</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Measurable Impact</h2>
+    <div class="stats-grid">
+        <div class="stat-box">
+            <span class="stat-number">5–15%</span>
+            <span class="stat-label">Reduction in unplanned downtime</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">8–20%</span>
+            <span class="stat-label">Improvement in maintenance efficiency</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">20–30%</span>
+            <span class="stat-label">Faster decision cycles</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">2,000–5,000%</span>
+            <span class="stat-label">ROI from downtime reduction</span>
+        </div>
+    </div>
+
+    <h2 class="no-break">Infrastructure, Not Software</h2>
+    <p><strong>We augment existing infrastructure — we don't replace it.</strong></p>
+    
+    <div class="two-column no-break">
+        <div>
+            <h3>Deployment Models</h3>
+            <ul>
+                <li><span class="checkmark">✓</span> On-premise (air-gapped)</li>
+                <li><span class="checkmark">✓</span> Hybrid cloud (Azure-native)</li>
+                <li><span class="checkmark">✓</span> Enterprise data governance</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Integration Points</h3>
+            <ul>
+                <li>CMMS/EAM (Maximo, SAP)</li>
+                <li>SCADA, DCS, historians</li>
+                <li>ERP and financial systems</li>
+                <li>IoT sensors and inspections</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Why Alberta</h2>
+    <p>Built in Alberta to serve Alberta's asset-intensive industries first. Our objective is to establish Alberta as a global leader in industrial AI infrastructure.</p>
+    
+    <h3>Competitive Advantages</h3>
+    <ul>
+        <li>Purpose-built for O&G/Mining (not generic IoT platforms)</li>
+        <li>Alberta-based team with deep industry knowledge</li>
+        <li>Security-first architecture (on-premise deployment options)</li>
+        <li>Enterprise-scale economics ($500K–$2M contracts)</li>
+    </ul>
+
+    <h2>Current Stage</h2>
+    <div class="two-column">
+        <div>
+            <h3>Technical Readiness</h3>
+            <ul>
+                <li><span class="checkmark">✓</span> 15 AI agents validated</li>
+                <li><span class="checkmark">✓</span> Production-ready platform</li>
+                <li><span class="checkmark">✓</span> Enterprise deployment framework</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Commercial Stage</h3>
+            <ul>
+                <li>Seeking 2–3 design partners</li>
+                <li>Reduced pricing for early adopters</li>
+                <li>30–60 day POC (no cost)</li>
+                <li>Joint case study at launch</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Strategic Introductions Sought</h2>
+    <h3>Decision Makers</h3>
+    <ul>
+        <li>VP Operations / Directors of Maintenance (O&G operators)</li>
+        <li>Plant Managers (mining/petrochemical facilities)</li>
+        <li>CTOs / Innovation Leads (mid-size producers)</li>
+    </ul>
+    
+    <h3>Target Companies (Alberta)</h3>
+    <ul>
+        <li><strong>Tier 1:</strong> Suncor, Cenovus, CNRL, Imperial Oil, Teck, Nutrien</li>
+        <li><strong>Tier 2:</strong> Mid-size regional operators and service companies</li>
+    </ul>
+
+    <div class="contact-box">
+        <h3>Contact</h3>
+        <div class="contact-info">
+            <strong>Orville Davis</strong><br>
+            Founder & CEO<br>
+            📧 info@syncai.ca<br>
+            📱 780-215-2887<br>
+            🌐 <a href="https://syncai.ca">syncai.ca</a><br>
+            📍 Fort McMurray & Calgary, Alberta<br>
+            🏛️ Treaty 8 Territory
+        </div>
+    </div>
+
+    <h2>Next Steps</h2>
+    <p>Interested in learning more? We offer:</p>
+    <ul>
+        <li><strong>Technical Architecture Overview</strong> — 30-min briefing for CTOs/VP Ops</li>
+        <li><strong>Proof-of-Concept Proposal</strong> — 30–60 day pilot, no cost</li>
+        <li><strong>Design Partner Program</strong> — Co-development with reduced pricing</li>
+    </ul>
+
+    <div class="footer">
+        SyncAI by Stigg Technologies, Alberta<br>
+        Building industrial AI infrastructure to power the next generation of autonomous operations
+    </div>
+</body>
+</html>

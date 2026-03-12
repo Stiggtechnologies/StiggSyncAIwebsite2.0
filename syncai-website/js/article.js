@@ -60,13 +60,22 @@ const pdfModal = {
     async handleSubmit(form) {
         const email = form.querySelector('input[type="email"]').value;
         const articleTitle = document.querySelector('h1')?.textContent || 'Unknown';
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        // Disable button during submission
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
 
         try {
-            // Store email (placeholder - integrate with Supabase or your backend)
-            console.log('Email captured:', { email, article: articleTitle, timestamp: new Date() });
-            
-            // You can add Supabase integration here:
-            // await supabase.from('newsletter_signups').insert({ email, article: articleTitle })
+            // Store email in Supabase
+            if (window.supabaseHelpers) {
+                const result = await window.supabaseHelpers.storePDFDownload(email, articleTitle);
+                if (result.error) {
+                    console.warn('Supabase error (continuing anyway):', result.error);
+                }
+            } else {
+                console.log('Email captured (Supabase not loaded):', { email, article: articleTitle });
+            }
 
             // Trigger PDF download
             const pdfUrl = form.querySelector('button').dataset.pdfUrl;
@@ -82,6 +91,10 @@ const pdfModal = {
         } catch (error) {
             console.error('Error:', error);
             alert('Something went wrong. Please try again.');
+        } finally {
+            // Re-enable button
+            submitButton.disabled = false;
+            submitButton.textContent = 'Download';
         }
     }
 };
@@ -98,13 +111,22 @@ const newsletterForm = {
 
     async handleSubmit(form) {
         const email = form.querySelector('input[type="email"]').value;
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        // Disable button during submission
+        submitButton.disabled = true;
+        submitButton.textContent = 'Subscribing...';
 
         try {
-            // Store email (placeholder - integrate with Supabase or your backend)
-            console.log('Newsletter signup:', { email, timestamp: new Date() });
-            
-            // You can add Supabase integration here:
-            // await supabase.from('newsletter_signups').insert({ email, source: 'insights' })
+            // Store email in Supabase
+            if (window.supabaseHelpers) {
+                const result = await window.supabaseHelpers.storeNewsletterSignup(email, 'insights');
+                if (result.error) {
+                    console.warn('Supabase error (continuing anyway):', result.error);
+                }
+            } else {
+                console.log('Newsletter signup (Supabase not loaded):', { email, timestamp: new Date() });
+            }
 
             // Show success message
             alert('Thank you for subscribing! Check your inbox for confirmation.');
@@ -113,6 +135,10 @@ const newsletterForm = {
         } catch (error) {
             console.error('Error:', error);
             alert('Something went wrong. Please try again.');
+        } finally {
+            // Re-enable button
+            submitButton.disabled = false;
+            submitButton.textContent = 'Subscribe';
         }
     }
 };

@@ -34,3 +34,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OpenClaw / local
+.credentials-vault.env
+
+# Junk artifacts
+coverage*
+coverage_*
+ocr_tmp*/
+ocr_*json
+tmp-*/
+tmp_*/
+*.png
+
+# Private/local notes
+MEMORY.md
+TOOLS.md
+memory/

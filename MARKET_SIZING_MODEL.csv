@@ -1,0 +1,213 @@
+SyncAI Market Sizing Model - 5 Year Financial Projection
+
+=== TAM / SAM / SOM Analysis ===
+
+Market Layer,Geography,Value 2024,Value 2030,CAGR,Notes
+Total Addressable Market (TAM),Global,$12.5B,$45.0B,23.8%,Global predictive maintenance software market
+Serviceable Addressable Market (SAM),North America,$4.2B,$15.2B,23.9%,North America focus (33% of global)
+Serviceable Obtainable Market (SOM),Target Segments,$850M,$3.1B,24.0%,Mid-market F&B + T&L + Mfg in Canada + US
+
+=== Target Market Breakdown by ICP ===
+
+ICP,Total Companies (Canada),Growth Rate,Total Companies (Y5),Realistic Penetration,Target Customers (Y5),Notes
+Food & Beverage,2500,2.5%,2800,3-5%,84-140,Primary focus - highest ROI
+Transportation & Logistics,1200,3.0%,1390,3-5%,42-70,Secondary - strong fit
+Discrete Manufacturing,3500,1.5%,3770,2-4%,75-150,Tertiary - largest pool
+
+Total Addressable Companies,7200,,,201-360,
+
+=== Customer Acquisition Model - PRIMARY ICP (Food & Beverage) ===
+
+Year,New Customers,Cumulative Customers,Avg ACV,Gross New ARR,Churn Rate,Churned Customers,Churned ARR,Net New ARR,Total ARR,ARR Growth Rate
+Y1,15,15,$18000,$270000,10%,0,$0,$270000,$270000,
+Y2,35,50,$22000,$770000,12%,2,$36000,$734000,$1004000,272%
+Y3,65,115,$28000,$1820000,10%,5,$110000,$1710000,$2714000,170%
+Y4,145,260,$35000,$5075000,8%,9,$252000,$4823000,$7537000,178%
+Y5,250,510,$42000,$10500000,7%,18,$529200,$9970800,$17507800,132%
+
+=== Customer Acquisition Model - SECONDARY ICP (Transportation & Logistics) ===
+
+Year,New Customers,Cumulative Customers,Avg ACV,Gross New ARR,Churn Rate,Churned Customers,Churned ARR,Net New ARR,Total ARR
+Y1,0,0,$0,$0,0%,0,$0,$0,$0
+Y2,8,8,$30000,$240000,15%,0,$0,$240000,$240000
+Y3,22,30,$38000,$836000,12%,1,$30000,$806000,$1046000
+Y4,35,65,$45000,$1575000,10%,3,$114000,$1461000,$2507000
+Y5,45,110,$52000,$2340000,8%,5,$208000,$2132000,$4639000
+
+=== Customer Acquisition Model - TERTIARY ICP (Discrete Manufacturing) ===
+
+Year,New Customers,Cumulative Customers,Avg ACV,Gross New ARR,Churn Rate,Churned Customers,Churned ARR,Net New ARR,Total ARR
+Y1,0,0,$0,$0,0%,0,$0,$0,$0
+Y2,0,0,$0,$0,0%,0,$0,$0,$0
+Y3,15,15,$25000,$375000,12%,0,$0,$375000,$375000
+Y4,40,55,$32000,$1280000,10%,2,$50000,$1230000,$1605000
+Y5,55,110,$38000,$2090000,8%,4,$128000,$1962000,$3567000
+
+=== Consolidated ARR Projection ===
+
+Year,F&B ARR,T&L ARR,Mfg ARR,Total ARR,YoY Growth,Total Customers,Avg ACV (Blended)
+Y1,$270000,$0,$0,$270000,,$15,$18000
+Y2,$1004000,$240000,$0,$1244000,361%,58,$21448
+Y3,$2714000,$1046000,$375000,$4135000,232%,160,$25844
+Y4,$7537000,$2507000,$1605000,$11649000,182%,380,$30655
+Y5,$17507800,$4639000,$3567000,$25713800,121%,730,$35224
+
+=== Revenue Metrics by Pricing Tier ===
+
+Tier,Monthly Price,Annual Price,Target Customer Size,% of Customers,Typical Assets Monitored
+Starter,$299,$3588,Small (50-100 employees),10%,10-20 assets
+Professional,$799,$9588,Growing (100-250 employees),35%,20-40 assets
+Business,$2499,$29988,Mid-market (250-500 employees),45%,40-80 assets
+Enterprise,Custom,$60000+,Large (500+ employees),10%,80+ assets
+
+=== Customer Acquisition Cost (CAC) Analysis ===
+
+Cost Component,F&B (Primary),T&L (Secondary),Mfg (Tertiary),Notes
+Marketing cost per MQL,$120,$150,$140,Content marketing + paid ads
+MQL to SQL conversion,30%,25%,28%,Qualification rate
+SDR/BDR cost per SQL,$450,$550,$500,Outbound prospecting
+SQL to Opp conversion,40%,35%,38%,Discovery/demo quality
+AE cost per Opp,$2800,$3500,$3200,Sales cycles + demos
+Opp to Close conversion,35%,30%,32%,Win rate
+Demo/pilot costs,$1200,$1800,$1500,POC environment + CS time
+CS onboarding costs,$2100,$2800,$2300,First 90 days implementation
+
+Total CAC per customer,$12500,$17200,$14800,Fully-loaded
+CAC as % of Y1 ACV,69%,57%,59%,Payback period <12 months
+CAC Payback Period (months),8.3,6.9,7.1,Healthy SaaS metrics
+
+=== Lifetime Value (LTV) Analysis ===
+
+Metric,F&B,T&L,Mfg,Target Benchmark
+Avg Customer Lifespan,4.2 years,5.1 years,4.6 years,>3 years
+Annual Retention Rate,88%,90%,87%,>85%
+Expansion Rate (net),+15%,+18%,+12%,>10%
+Gross Margin,82%,82%,82%,>75%
+Avg Annual ACV (weighted),$28560,$39780,$32840,Growing over time
+Lifetime Value (LTV),$98323,$165966,$123695,
+LTV:CAC Ratio,7.9:1,9.6:1,8.4:1,Target >3:1 (Excellent >5:1)
+
+=== Sales Team Capacity Model ===
+
+Year,SDRs,AEs,AE Quota (Annual),Total Capacity,Actual Customers,Attainment %,Notes
+Y1,0,2 (founders),$135000,$270000,15,56%,Founder-led sales
+Y2,1,2,$500000,$1000000,43,102%,Hire first SDR mid-year
+Y3,2,4,$800000,$3200000,102,129%,Double sales team
+Y4,4,8,$1200000,$9600000,220,121%,Scale team + efficiency
+Y5,7,14,$1500000,$21000000,340,123%,Established sales machine
+
+=== Go-To-Market Investment Requirements ===
+
+Year,Total Customers,Sales Team Cost,Marketing Cost,CS Team Cost,R&D Cost,G&A Cost,Total OpEx,ARR,Burn Rate,Months of Runway (if $5M raised)
+Y1,15,$320000,$180000,$240000,$550000,$210000,$1500000,$270000,-$1230000,49 months (with $5M)
+Y2,58,$680000,$420000,$480000,$850000,$370000,$2800000,$1244000,-$1556000,Needs Series A ($8M+)
+Y3,160,$1450000,$950000,$1020000,$1350000,$630000,$5400000,$4135000,-$1265000,Approaching breakeven
+Y4,380,$2750000,$1680000,$1850000,$2100000,$1020000,$9400000,$11649000,+$2249000,Profitable
+Y5,730,$4800000,$2800000,$3200000,$3200000,$1700000,$15700000,$25713800,+$10013800,Highly profitable
+
+=== Market Penetration Analysis ===
+
+Year,Available Companies,Total Customers,Market Penetration %,Awareness %,Consideration %,Notes
+Y1,7200,15,0.21%,2.5%,5%,Early adopters only
+Y2,7290,58,0.80%,8%,12%,Building brand awareness
+Y3,7380,160,2.17%,18%,22%,Category establishing
+Y4,7475,380,5.08%,32%,35%,Market recognition
+Y5,7570,730,9.64%,48%,50%,Category leader position
+
+=== Key Performance Indicators (KPIs) - Targets ===
+
+Metric,Y1 Target,Y2 Target,Y3 Target,Y4 Target,Y5 Target,Industry Benchmark
+Monthly Recurring Revenue (MRR),$22500,$103667,$344583,$970750,$2142817,Growing
+MRR Growth Rate (MoM),N/A (new),25%,18%,14%,10%,10-20% = healthy
+Annual Recurring Revenue (ARR),$270000,$1244000,$4135000,$11649000,$25713800,Path to $150M by Y8
+ARR Growth Rate (YoY),N/A,361%,232%,182%,121%,>100% early stage
+Gross Revenue Retention (GRR),90%,88%,90%,92%,93%,>85% good, >90% excellent
+Net Revenue Retention (NRR),105%,108%,112%,115%,118%,>100% = expansion, >120% = best-in-class
+Customer Acquisition Cost (CAC),$12500,$13200,$13800,$14500,$15200,Growing with brand
+CAC Payback Period (months),8.3,7.4,6.8,5.9,5.2,<12 months = healthy
+Magic Number,N/A,1.2,1.4,1.6,1.8,>0.75 = efficient growth
+Rule of 40,N/A,N/A,220%,192%,131%,>40% = excellent (growth% + profit margin%)
+Burn Multiple,N/A,N/A,N/A,N/A,N/A,<1.5 = efficient ($ burned / net new ARR)
+
+=== Sensitivity Analysis - Downside Scenario (70% of base case) ===
+
+Year,Customers (70%),ARR (70%),Total OpEx (90%),Burn Rate,Notes
+Y1,11,$189000,$1350000,-$1161000,Takes longer to find PMF
+Y2,41,$870800,$2520000,-$1649200,Slower sales ramp
+Y3,112,$2894500,$4860000,-$1965500,Still burning but validating
+Y4,266,$8154300,$8460000,-$305700,Near breakeven
+Y5,511,$17999660,$14130000,+$3869660,Profitable but slower scale
+
+=== Sensitivity Analysis - Upside Scenario (130% of base case) ===
+
+Year,Customers (130%),ARR (130%),Total OpEx (110%),Burn Rate,Notes
+Y1,20,$351000,$1650000,-$1299000,Faster initial traction
+Y2,75,$1617200,$3080000,-$1462800,Strong product-market fit
+Y3,208,$5375500,$5940000,-$564500,Rapid scaling
+Y4,494,$15143700,$10340000,+$4803700,High growth + profitable
+Y5,949,$33427940,$17270000,+$16157940,Market leader trajectory
+
+=== Path to $150M ARR (Extended Projection) ===
+
+Year,ARR,YoY Growth,Cumulative Customers,Notes
+Y5,$25.7M,121%,730,End of initial model
+Y6,$48.5M,89%,1350,Add Enterprise tier + US expansion
+Y7,$84.2M,74%,2100,Multi-vertical maturity
+Y8,$136.4M,62%,3200,Approaching target
+Y9,$180.5M,32%,4100,Exceed $150M target
+Y10,$225.0M,25%,4900,Sustainable growth to $250M+
+
+=== Competitive Benchmarking - Valuation Multiples ===
+
+Company,ARR,Valuation,Revenue Multiple,Growth Rate,NRR,Notes
+Samsara (Public),$900M,$8.5B,9.4x,45%,122%,IoT fleet/operations
+Uptake (Private),$120M,$2.3B,19.2x,65%,115%,Industrial AI (2021 valuation)
+C3.ai (Public),$290M,$2.1B,7.2x,18%,105%,Enterprise AI (struggling)
+Augury (Private),$50M,$1.0B,20.0x,80%,118%,Predictive maintenance pure-play
+Benchmark Median,,$,12.2x,52%,115%,
+SyncAI Target Y5,$25.7M,$2.5B,97.3x,121%,118%,Requires exceptional metrics + story
+
+=== Valuation Path to $2.5B ===
+
+Round,Year,ARR,Valuation,Revenue Multiple,Dilution,Capital Raised,Use of Funds
+Seed,Y0,$0,$8M,N/A,20%,$1.5M,Product development + first customers
+Series A,Y1.5,$750K,$35M,47x,20%,$8M,Scale sales team + marketing
+Series B,Y3,$4.1M,$120M,29x,18%,$25M,Expand to secondary ICP + US entry
+Series C,Y4.5,$16M,$500M,31x,15%,$60M,Enterprise tier + M&A + international
+Series D,Y6,$48M,$1.2B,25x,12%,$100M,Scale to $100M+ ARR
+IPO / Exit,Y8,$136M,$2.5B+,18x,N/A,N/A,Public markets or strategic acquisition
+
+Valuation Notes:
+- $2.5B at Y5 with $25.7M ARR = 97x multiple (unrealistic for bootstrapped/early-stage)
+- More realistic: $2.5B at Y7-8 with $100M-$150M ARR = 17-25x multiple
+- Requires: >100% growth, >110% NRR, <15% churn, clear path to $500M+ ARR
+- Comparable to Augury ($1B at $50M ARR) but need stronger growth + scale proof
+
+=== Critical Assumptions & Risks ===
+
+Assumption,Confidence,Risk if Wrong,Mitigation
+Mid-market F&B has acute pain,High,No sales traction,Validate with 20+ interviews before scaling
+$299-$2499 pricing is acceptable,Medium-High,Price resistance or margin pressure,Test with pilots 50% discount acceptable
+45-75 day sales cycle achievable,Medium,Cash flow issues if longer,Founder-led sales + strong ROI proof
+85%+ annual retention,Medium,Churn kills LTV economics,Heavy CS investment + prove ROI early
+15 AI agents = differentiation,Medium,Commoditization,Continuous innovation + vertical depth
+Canadian market = lower CAC,Medium-High,Harder than expected,Strong brand building + government incentives
+Expansion to $40K+ ACV,Medium,Stuck at low ACV,Multi-facility + more assets + premium features
+US expansion successful Y3+,Medium,Geographic concentration risk,Build strong Canadian base first
+
+=== Board-Level Success Metrics ===
+
+Metric,Y1,Y2,Y3,Y4,Y5,Comments
+Customers,15,58,160,380,730,Path to 1000+ by Y6
+ARR,$270K,$1.24M,$4.14M,$11.6M,$25.7M,Path to $150M by Y8
+Gross Retention,90%,88%,90%,92%,93%,Must exceed 85%
+Net Retention,105%,108%,112%,115%,118%,Target >110% by Y3
+CAC Payback,8.3mo,7.4mo,6.8mo,5.9mo,5.2mo,Target <12 months
+LTV:CAC,7.9:1,8.2:1,8.8:1,9.2:1,9.6:1,Target >5:1 (world-class)
+Burn Rate,-$1.23M,-$1.56M,-$1.27M,+$2.25M,+$10.0M,Profitable by Y4
+Cash Balance (if $5M raised),$3.77M,$5.21M (Series A),N/A,N/A,N/A,Need Series A by end of Y2
+
+=== End of Market Sizing Model ===
+Model Version: 1.0
+Last Updated: February 23 2026
+Prepared for: SyncAI Strategic Planning

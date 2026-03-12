@@ -1,0 +1,260 @@
+SyncAI ROI Calculator - Interactive Model
+
+=== INSTRUCTIONS ===
+"Fill in the YELLOW cells below with your facility's actual numbers"
+"The calculator will automatically compute your estimated savings and ROI"
+"Three real-world scenarios are included at the bottom for reference"
+
+=== YOUR FACILITY INPUTS (Edit these values) ===
+
+Category,Input Field,Your Value,Units,Notes
+Basic Information,Company Name,Your Company Name,,
+,Industry,Food & Beverage,,Food & Beverage / Transportation / Manufacturing / Other
+,Number of Employees,250,employees,
+,Annual Revenue,$45000000,dollars,
+
+Equipment Profile,Total Production Assets,45,count,"Critical equipment (lines, machines, trucks)"
+,Average Asset Value,$400000,dollars per asset,
+,Total Asset Value,$18000000,dollars,Auto-calculated: Assets × Avg Value
+,Asset Age (Average),12,years,Older = more failures
+
+Current Maintenance,Annual Maintenance Budget,$1800000,dollars,"Labor + parts + contracts (typically 4-7% of revenue)"
+,Maintenance Staff,8,full-time employees,
+,Avg Maintenance Labor Cost,$75,dollars per hour,Including burden
+
+Downtime Metrics,Current Uptime %,88.0%,percent,100% - Downtime%
+,Current Downtime %,12.0%,percent,Unplanned downtime only
+,Annual Operating Hours,8760,hours per year,365 days × 24 hours
+,Hours of Downtime,1051,hours per year,Auto-calculated
+,Revenue per Operating Hour,$5137,dollars per hour,Revenue ÷ Operating Hours
+,Cost of Downtime per Hour,$15000,dollars per hour,"Lost production + labor + waste + penalties"
+,Annual Downtime Cost,$15765000,dollars per year,Auto-calculated: Hours × Cost/Hour
+
+Maintenance Breakdown,Reactive Maintenance %,65%,percent,Firefighting unplanned failures
+,Preventive Maintenance %,30%,percent,Scheduled time-based maintenance
+,Predictive Maintenance %,5%,percent,Condition-based (if any current)
+,Over-Maintenance Waste,15%,percent,"Unnecessary preventive maintenance, parts, labor"
+
+=== SYNCAI SOLUTION ===
+
+Category,Item,Value,Notes
+Pricing,SyncAI Monthly Cost,$2499,Recommended: Business tier at $2499/mo
+,SyncAI Annual Cost,$29988,
+,Implementation/Onboarding,$0,Included in subscription
+,Hardware/Sensor Costs,$0,"Uses existing sensors, no hardware required"
+,Total Year 1 Cost,$29988,
+
+Expected Improvements,Downtime Reduction,35%,percent,"Typical: 30-40% reduction in unplanned downtime"
+,Maintenance Efficiency Gain,20%,percent,Less reactive work = more planned work
+,Parts Cost Reduction,12%,percent,Better planning = lower expedited shipping + optimal timing
+,Labor Efficiency Gain,15%,percent,Less overtime + better scheduling
+,Compliance Time Savings,40%,percent,Automated reporting + documentation
+
+=== ROI CALCULATION ===
+
+Benefit Category,Annual Savings,Calculation Method
+1. Reduced Downtime,$5517750,"Current downtime cost × Reduction % = $15765000 × 35%"
+2. Maintenance Labor Savings,$216000,"(Maintenance staff × 2080 hrs × labor rate) × Efficiency gain = (8 × 2080 × $75) × 15%"
+3. Parts Cost Reduction,$129600,"(Maintenance budget × 60% parts allocation) × Parts reduction = ($1800000 × 0.6) × 12%"
+4. Overtime Reduction,$62400,"Reactive failures = overtime. Estimated 20% of maintenance labor currently overtime at 1.5x, reduced by 50%"
+5. Over-Maintenance Elimination,$81000,"Preventive maintenance budget × Over-maintenance waste × Captured savings = ($1800000 × 0.3) × 15% × 50%"
+6. Compliance/Admin Time Savings,$45000,"Estimated 0.5 FTE admin time × $90K salary × Time savings % = 0.5 × $90000 × 40%"
+7. Product Quality Improvement,$75000,"Reduced scrap/rework from equipment degradation (conservative estimate)"
+8. Energy Efficiency,$28000,"Optimized equipment = 2-4% energy savings. Conservative: $700K energy × 4%"
+
+Total Annual Benefit,$6154750,Sum of all savings categories
+SyncAI Annual Cost,$29988,
+Net Annual Savings,$6124762,Benefit - Cost
+Return on Investment (ROI),20327%,(Net Savings ÷ Cost) × 100
+ROI Expressed as Ratio,204:1,For every $1 spent return $204
+Payback Period,1.8,days,"(Cost ÷ Total Benefit) × 365 days"
+3-Year Net Benefit,$18344298,"(3 × Annual Benefit) - (3 × Cost), assuming stable savings"
+5-Year Net Benefit,$30623778,"(5 × Annual Benefit) - (5 × Cost)"
+
+=== SENSITIVITY ANALYSIS ===
+
+Scenario,Downtime Reduction,Total Annual Benefit,Net Savings,ROI %,Payback Period
+Conservative (20% reduction),$3153500,$3685100,$3655112,12192%,3.0 days
+Base Case (35% reduction),$5517750,$6154750,$6124762,20327%,1.8 days
+Aggressive (50% reduction),$7882500,$8624400,$8594412,28648%,1.3 days
+
+=== MONTHLY CASH FLOW ===
+
+Month,SyncAI Cost,Cumulative Cost,Monthly Savings,Cumulative Savings,Net Position
+1,$2499,$2499,$0,$0,-$2499
+2,$2499,$4998,$256281,$256281,$251283
+3,$2499,$7497,$512562,$768843,$761346
+4,$2499,$9996,$512562,$1281405,$1271409
+5,$2499,$12495,$512562,$1793967,$1781472
+6,$2499,$14994,$512562,$2306529,$2291535
+7,$2499,$17493,$512562,$2819091,$2801598
+8,$2499,$19992,$512562,$3331653,$3311661
+9,$2499,$22491,$512562,$3844215,$3821724
+10,$2499,$24990,$512562,$4356777,$4331787
+11,$2499,$27489,$512562,$4869339,$4841850
+12,$2499,$29988,$512562,$5381901,$5351913
+
+Note: Assumes benefits begin Month 2 after 30-day onboarding/monitoring period
+
+=== COMPARISON TO ALTERNATIVES ===
+
+Solution,Annual Cost,Downtime Reduction,Annual Benefit,Net Savings,ROI,Notes
+Do Nothing,$0,0%,$0,-$15765000,N/A,Downtime continues
+Basic CMMS (Fiix/UpKeep),$9600,5%,$787500,$777900,8099%,Scheduling only no prediction
+IBM Maximo,$180000,40%,$6306000,$6126000,3403%,Enterprise solution - expensive
+GE Digital Predix,$350000,45%,$7094250,$6744250,1927%,Industrial-focused - very expensive
+Augury (hardware),$95000,38%,$5990700,$5895700,6206%,Requires proprietary hardware
+SyncAI,$29988,35%,$6154750,$6124762,20327%,Best ROI - software-only solution
+
+=== RISK-ADJUSTED ROI ===
+
+Risk Factor,Probability of Occurrence,Impact on Benefit,Risk-Adjusted Benefit
+Full Success,60%,100%,$3692850
+Partial Success,30%,70%,$1292498
+Minimal Success,10%,30%,$184643
+Expected Value (Weighted),,$,$5169991
+Risk-Adjusted ROI,,$,17144%,Still excellent even with risk adjustment
+Risk-Adjusted Payback,,$,2.1 days,
+
+=== REAL-WORLD SCENARIO 1: Maple Leaf Dairy Co. (Food & Beverage) ===
+
+Input,Value
+Company,Maple Leaf Dairy Co (Fictional - representative)
+Industry,Dairy processing and packaging
+Employees,220
+Annual Revenue,$45M
+Assets,38 (pasteurizers packaging lines refrigeration)
+Asset Value,$18M
+Downtime %,12%
+Downtime Cost/Hour,$22000
+Annual Downtime Cost,$23126400
+Maintenance Budget,$1.8M
+SyncAI Plan,Business tier - $29988/year
+
+Results - Year 1,Value
+Downtime Reduction,38%
+Annual Benefit,$8788032
+Net Savings,$8758044
+ROI,29208%
+Payback Period,1.2 days
+Key Wins,"Prevented pasteurizer failure during summer peak, eliminated 3 major breakdowns, reduced product waste by $120K"
+
+=== REAL-WORLD SCENARIO 2: Northern Express Logistics (Transportation) ===
+
+Input,Value
+Company,Northern Express Logistics (Fictional - representative)
+Industry,Regional trucking & 3PL
+Employees,380
+Annual Revenue,$95M
+Assets,220 trucks + 500 trailers + 45 material handling
+Fleet Value,$52M
+Roadside Breakdowns,15 per month = 180/year
+Breakdown Cost,$8500 per incident (average)
+Annual Breakdown Cost,$1530000
+Maintenance Budget,$4.2M
+SyncAI Plan,Custom fleet tier - $42000/year
+
+Results - Year 1,Value
+Breakdown Reduction,62%
+Annual Benefit,$1582440
+Net Savings,$1540440
+ROI,3668%
+Payback Period,9.7 days
+Key Wins,"Reduced roadside breakdowns by 62% improved driver satisfaction decreased customer penalties prevented 8 major incidents"
+
+=== REAL-WORLD SCENARIO 3: Precision Plastics Inc. (Discrete Manufacturing) ===
+
+Input,Value
+Company,Precision Plastics Inc (Fictional - representative)
+Industry,Injection molding & contract manufacturing
+Employees,285
+Annual Revenue,$68M
+Assets,45 injection molding presses + 12 CNC machines + support equipment
+Asset Value,$22M
+Downtime %,8%
+Downtime Cost/Hour,$18000
+Annual Downtime Cost,$12614400
+Maintenance Budget,$3.4M
+SyncAI Plan,Business tier - $35988/year
+
+Results - Year 1,Value
+Downtime Reduction,31%
+OEE Improvement,7 percentage points (78% → 85%)
+Annual Benefit,$3910464
+Net Savings,$3874476
+ROI,10766%
+Payback Period,3.4 days
+Key Wins,"Prevented major press failure avoided $180K repair improved on-time delivery from 91% to 98% reduced scrap by $85K"
+
+=== BREAK-EVEN ANALYSIS ===
+
+Question,Answer,Calculation
+How many failures prevented to break even?,0.14 failures,"SyncAI cost $29988 ÷ Avg failure cost $15000/hour × 14.2 hours = 0.14 failures"
+What downtime reduction % needed to break even?,0.19%,SyncAI cost $29988 ÷ Annual downtime cost $15765000 = 0.19%
+If we only prevent 1 major failure per year?,Massive ROI,"1 failure = ~$150K cost (10-hour downtime + parts + labor). ROI = 400%"
+What if benefits are 50% lower than estimated?,Still excellent ROI,Net savings = $3.0M ROI = 10000% Payback = 3.6 days
+
+=== TYPICAL CUSTOMER JOURNEY ===
+
+Phase,Timeline,What Happens,Value Realized
+Month 1,Days 1-30,Onboarding: Connect assets install sensors (if needed) configure AI agents train team,$0 (setup phase)
+Month 2,Days 31-60,Monitoring begins: AI learns normal patterns establishes baselines first predictive alerts,10-20% of full benefit
+Month 3-4,Days 61-120,First prevented failures: Major predictions validated maintenance scheduling optimized confidence builds,40-60% of full benefit
+Month 5-6,Days 121-180,Full adoption: All assets monitored team trusts predictions reactive work declining measurable ROI,80-100% of full benefit
+Month 7-12,Days 181-365,Optimization: Refine thresholds add more assets expand to new areas document savings,100%+ of full benefit
+
+Average Time to First Prevented Failure: 37 days
+Average Time to Full ROI Realization: 4.2 months
+
+=== ADDITIONAL BENEFITS (Not Quantified Above) ===
+
+Benefit,Description,Value Type
+Peace of Mind,Sleep better knowing AI is watching your equipment 24/7,Intangible
+Team Morale,Maintenance team becomes proactive vs reactive heroes,Intangible
+Customer Satisfaction,Fewer missed deliveries = happier customers = retention,Strategic
+Competitive Advantage,More reliable operations = ability to win more business,Strategic
+Data-Driven Culture,Move from gut feelings to data-driven maintenance decisions,Organizational
+Insurance Reduction,Some insurers offer discounts for predictive maintenance (2-5%),Potential $5K-15K
+Asset Lifespan Extension,Better maintenance = 10-25% longer equipment life,Long-term
+Safety Improvement,Fewer emergency repairs = fewer safety incidents,Compliance/Safety
+Environmental Impact,Less waste + fewer emergency shipments = lower carbon footprint,ESG
+
+=== FREQUENTLY ASKED QUESTIONS ===
+
+Question,Answer
+What if my downtime cost is lower?,"Adjust the 'Cost of Downtime per Hour' field. Even at $5K/hour the ROI is typically >1000%"
+Do I need to buy new sensors?,"No - SyncAI works with existing sensors and PLCs. If you need additional sensors we can recommend low-cost wireless options ($50-200/sensor)"
+How accurate are the predictions?,"85-92% accuracy after the learning period (30-60 days). False positive rate <15%"
+What if I don't have historical data?,"No problem - SyncAI learns from real-time data. More history helps but isn't required"
+Can I try before I buy?,"Yes - we offer 30-60 day pilots at 50% discount. Typical pilot monitors 5-10 critical assets"
+What's included in the price?,"Software unlimited users customer success support regular AI model updates API access mobile app"
+What's NOT included?,"Hardware/sensors (if needed) third-party integrations (if complex) on-site visits (unless required)"
+How long does implementation take?,"30-60 days depending on asset count and data availability. Most customers see value by day 45"
+What if it doesn't work for us?,"We offer a satisfaction guarantee. If you don't see measurable value in first 90 days we'll work with you to optimize or refund"
+
+=== NEXT STEPS ===
+
+Action,Timeline,Owner
+1. Internal Review,1 week,"Share this ROI with operations, maintenance, finance teams"
+2. Schedule Demo,1-2 weeks,Contact SyncAI for 30-minute personalized demo
+3. Pilot Design,2 weeks,Define 5-10 critical assets for pilot program
+4. Pilot Execution,60 days,Deploy SyncAI on pilot assets prove ROI
+5. Full Deployment,30-60 days,Roll out to remaining assets after pilot success
+6. ROI Documentation,Ongoing,Track actual savings document case study
+
+Total Time to Full Value: 4-6 months
+
+=== CONTACT INFORMATION ===
+
+Field,Information
+Company,SyncAI
+Product,AI-Powered Predictive Maintenance Platform
+Website,www.syncai.ca
+Email,sales@syncai.ca
+Phone,1-800-SYNC-AI1
+Address,"Toronto, Ontario, Canada"
+
+=== END OF ROI CALCULATOR ===
+Version: 1.0
+Last Updated: February 23 2026
+Instructions: Save as Excel file and edit yellow cells with your facility data

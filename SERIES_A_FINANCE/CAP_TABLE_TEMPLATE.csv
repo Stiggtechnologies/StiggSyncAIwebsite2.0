@@ -1,0 +1,6 @@
+Holder,Security,Shares/Units,Price,Invested,Ownership %,Notes
+Founders,Common,8000000,,, ,Split into Founder A/B as needed
+Employee Option Pool (unallocated),Options,1500000,,, ,Post-money target; adjust
+Seed Investors,Preferred (Seed),2000000,0.50,1000000,,Example
+SAFE/Notes,SAFE (convert),,,1500000,,Include cap/discount
+Total,,11500000,,,,

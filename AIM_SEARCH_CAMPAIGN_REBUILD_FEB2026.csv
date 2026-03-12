@@ -1,0 +1,75 @@
+Action,Campaign,Ad Group,Keyword,Criterion Type,Status,Max CPC,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Path 1,Path 2,Final URL
+# NOTE: This is a simplified bulk template (keywords + RSAs + negatives) matching prior file format.
+# Campaign name
+# AIM - Search - Physio Leads - Feb 2026
+
+# ----------------------------
+# CAMPAIGN NEGATIVE KEYWORDS
+# ----------------------------
+Add,AIM - Search - Physio Leads - Feb 2026,,"jobs",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"career",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"salary",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"course",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"school",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"university",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"college",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"free",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"pdf",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"youtube",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"exercises",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"home exercise",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"how to",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"what is",Negative (phrase),Enabled,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,,"definition",Negative (phrase),Enabled,,,,,,,,
+
+# ----------------------------
+# AD GROUP 1: Physio Edmonton (High intent, general)
+# ----------------------------
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,[physiotherapy edmonton],Exact match,Enabled,4.50,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,[physiotherapist edmonton],Exact match,Enabled,4.50,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,"physiotherapy clinic edmonton",Phrase match,Enabled,4.00,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,"physio clinic near me",Phrase match,Enabled,4.25,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,[sports physiotherapy edmonton],Exact match,Enabled,4.75,,,,,,,,
+
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,,,,,Edmonton Physiotherapy Clinic,Same-Week Appointments,Direct Billing Options,"Pain slowing you down? Get assessed and treated by experienced physiotherapists in Edmonton. Book today.","Evidence-based physio for back/neck pain, sports injuries & more. Call or book online.",physio,edmonton,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,,,,,Physio Near You in Edmonton,Get Relief—Fast,Book Assessment Online,"Stop guessing and start healing. Personalized treatment plans to reduce pain and restore movement.","Convenient Edmonton clinic. Clear plan from day one. Evening availability may be offered—book now.",physio,near-me,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Physio Edmonton,,,,,Injury Assessment Today,Hands-On Treatment,Local Edmonton Team,"Injured or in pain? Get a thorough assessment and a plan you can follow—starting today.","Trusted physiotherapy care. Book online or call to schedule your first visit.",injury,assessment,https://aimphysiotherapy.ca/
+
+# ----------------------------
+# AD GROUP 2: Back & Neck Pain
+# ----------------------------
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,[back pain physiotherapy],Exact match,Enabled,5.50,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,"back pain physio edmonton",Phrase match,Enabled,5.75,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,[sciatica physiotherapy],Exact match,Enabled,5.75,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,"neck pain physiotherapy",Phrase match,Enabled,5.25,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,"pinched nerve physiotherapy",Phrase match,Enabled,5.25,,,,,,,,
+
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,,,,,Back Pain Relief in Edmonton,See a Physio This Week,Get Moving Again,"Back pain, sciatica or stiffness? Get a targeted assessment and treatment plan to ease pain fast.","We focus on root causes—not temporary fixes. Book your physiotherapy appointment today.",back-pain,edmonton,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,,,,,Sciatica Treatment (Physio),Reduce Nerve Pain,Book Assessment Today,"Radiating leg pain or numbness? Physiotherapy can help reduce nerve irritation and improve mobility.","Clear steps from day one: hands-on care + guided exercises you can actually do.",sciatica,relief,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Back & Neck Pain,,,,,Neck Pain & Headaches?,Treat the Cause,Local Edmonton Clinic,"Neck pain, headaches, desk-related tension—get assessed and treated with evidence-based physiotherapy.","Feel better sooner with a plan built for your schedule. Book online or call.",neck-pain,headaches,https://aimphysiotherapy.ca/
+
+# ----------------------------
+# AD GROUP 3: Sports Injury
+# ----------------------------
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,[sports injury physiotherapy],Exact match,Enabled,5.25,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,"sports physio edmonton",Phrase match,Enabled,5.50,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,[running injury physiotherapy],Exact match,Enabled,5.00,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,"knee pain physiotherapy",Phrase match,Enabled,5.25,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,"shoulder pain physiotherapy",Phrase match,Enabled,5.25,,,,,,,,
+
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,,,,,Sports Physio in Edmonton,Return to Sport Faster,Book Today,"Sprain, strain, knee or shoulder pain? Get a sports-focused assessment and a return-to-play plan.","Hands-on treatment + progressive rehab. Stop losing training time—book now.",sports,physio,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,,,,,Knee or Shoulder Pain?,Targeted Rehab Plan,Same-Week Visits,"Pain with lifting, running, or stairs? Physiotherapy can reduce pain and rebuild strength safely.","Get answers and a plan you can follow. Edmonton clinic—book your assessment.",knee,shoulder,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Sports Injury,,,,,Running Injury Treatment,Fix the Root Cause,Edmonton Physio,"Shin splints, Achilles pain, runner’s knee—get assessed and treated with a plan built for runners.","Movement analysis + progressive strengthening. Book online today.",running,injury,https://aimphysiotherapy.ca/
+
+# ----------------------------
+# AD GROUP 4: Car Accident (MVA)
+# ----------------------------
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),[car accident physiotherapy],Exact match,Enabled,6.00,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),[mva physiotherapy edmonton],Exact match,Enabled,6.25,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),"whiplash physiotherapy",Phrase match,Enabled,5.75,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),"car accident physio",Phrase match,Enabled,5.75,,,,,,,,
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),"post accident physiotherapy",Phrase match,Enabled,5.50,,,,,,,,
+
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),,,,,Car Accident Physio Edmonton,Start Rehab Immediately,We Help With Paperwork,"Whiplash, headaches, back pain after a crash? Start physiotherapy quickly to prevent chronic issues.","We can help coordinate documentation and your rehab plan. Book an assessment today.",car-accident,mva,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),,,,,Whiplash Treatment (Physio),Reduce Pain & Stiffness,Book Today,"Neck pain and stiffness after an accident? Get assessed and treated with evidence-based physiotherapy.","Clear step-by-step rehab plan. Edmonton clinic. Call or book online.",whiplash,relief,https://aimphysiotherapy.ca/
+Add,AIM - Search - Physio Leads - Feb 2026,Car Accident (MVA),,,,,Injured in a Car Accident?,Don’t Wait to Get Help,Local Edmonton Clinic,"The longer you wait, the harder it can be. Start your recovery with a proper assessment.","We focus on function, sleep and pain reduction—so you can get back to normal life.",injury,recovery,https://aimphysiotherapy.ca/

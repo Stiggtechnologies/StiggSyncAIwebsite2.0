@@ -1,0 +1,10 @@
+Category,Y1 Budget,Y2 Budget,Notes
+Revenue,270000,1244000,From base model
+COGS,21600,99520,8% of revenue
+Sales & Marketing,500000,1100000,Headcount + programs
+R&D,550000,850000,Engineering + product
+Customer Success,240000,480000,CSMs + tooling
+G&A,210000,370000,Finance/legal/admin
+Total OpEx,1500000,2800000,
+EBITDA,-1251600,-1655520,"Excludes non-cash; planning"
+Avg Monthly Burn,104300,137960,"= -EBITDA/12 (rough)"

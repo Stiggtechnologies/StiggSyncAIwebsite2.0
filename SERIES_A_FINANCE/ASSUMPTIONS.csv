@@ -1,0 +1,24 @@
+Section,Assumption,Value,Units,Notes
+Company,Model start year,Y1,year,Y1 = next 12 months
+Company,Currency,USD,ISO,Change if CAD reporting
+Funding,Series A raise amount,8000000,USD,"Base case from market model: $8M"
+Funding,Pre-money valuation,35000000,USD,"Illustrative; adjust in cap table"
+Funding,Close timing (months into Y2),6,months,Series A at ~Y1.5
+Pricing,Blended ACV Y1,18000,USD,"From MARKET_SIZING_MODEL: F&B Y1"
+Pricing,Blended ACV Y5,35224,USD,"From consolidated table"
+Revenue,Revenue recognition,Monthly,method,ARR / 12
+Revenue,Professional services revenue,0,USD,Assume included onboarding
+Churn,Logo churn (annual) Y1,0.10,rate,From F&B model
+Churn,Logo churn (annual) Y5,0.07,rate,
+Expansion,NRR Y3,1.12,ratio,Target by Y3+
+Margins,Gross margin target,0.82,rate,From market model
+COGS,Hosting & infra as % of revenue,0.06,rate,Typical early-stage SaaS
+COGS,Support tooling as % of revenue,0.02,rate,
+Sales,CAC (blended) Y2+,14000,USD,"Base-case blended; refine"
+Sales,Sales cycle,60,days,Mid-market
+Sales,Collections,Annual prepay %,0.40,rate,Working capital lever
+Payroll,Payroll tax & benefits load,0.18,rate,On top of base salary
+G&A,Other G&A (non-payroll) Y1,150000,USD,Legal/accounting/office
+R&D,Cloud R&D tools included in hosting,Yes,flag,
+Working Capital,AR days on non-prepay,45,days,If monthly/quarterly
+Working Capital,AP days,30,days,

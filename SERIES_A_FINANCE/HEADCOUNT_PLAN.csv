@@ -1,0 +1,18 @@
+Function,Role,Start Year,Count Y1,Count Y2,Count Y3,Count Y4,Count Y5,Fully Loaded Annual Cost (each),Notes
+Sales,Founders (AE),Y1,2,2,2,2,2,160000,"Founders selling; cost here as salary+benefits placeholder"
+Sales,SDR,Y2,0,1,2,4,7,120000,"From sales capacity table"
+Sales,AE,Y2,0,2,4,8,14,200000,"Base+OTE fully loaded"
+Marketing,Growth marketer,Y2,0,1,2,3,4,150000,
+Marketing,Content/Demand Gen,Y3,0,0,1,2,3,130000,
+Customer Success,CSM,Y1,1,2,4,7,12,140000,"CS investment early"
+Customer Success,Solutions Engineer,Y2,0,1,2,3,4,170000,
+R&D,ML/AI Engineer,Y1,3,4,6,8,10,210000,
+R&D,Full-stack Engineer,Y1,2,3,4,6,8,190000,
+R&D,Data Engineer,Y2,0,1,2,3,4,200000,
+R&D,Product Manager,Y2,0,1,2,2,3,190000,
+G&A,Finance/Operations,Y2,0,1,1,2,2,160000,
+G&A,People/Talent,Y3,0,0,1,1,2,150000,
+G&A,Admin/EA,Y3,0,0,1,1,1,100000,
+Leadership,VP Sales,Y3,0,0,1,1,1,260000,
+Leadership,VP CS,Y4,0,0,0,1,1,240000,
+Leadership,VP Marketing,Y4,0,0,0,1,1,240000,

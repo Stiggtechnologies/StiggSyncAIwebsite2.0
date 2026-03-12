@@ -1,0 +1,11 @@
+Metric,Y1,Y2,Y3,Y4,Y5,Notes
+Customers (EoY),15,58,160,380,730,From consolidated model
+ARR,270000,1244000,4135000,11649000,25713800,
+ARPA (ARR/customer),18000,21448,25844,30655,35224,
+Gross Margin %,0.82,0.82,0.82,0.82,0.82,Target
+CAC (blended),12500,14000,14500,15200,16000,"Placeholder; refine by channel"
+LTV:CAC,7.9,8.2,8.8,9.2,9.6,From market model targets
+Churn %,0.10,0.12,0.10,0.08,0.07,
+NRR,1.05,1.08,1.12,1.15,1.18,
+Magic Number,N/A,1.2,1.4,1.6,1.8,
+Payback (months),8.3,7.4,6.8,5.9,5.2,
