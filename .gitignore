@@ -51,3 +51,8 @@ tmp_*/
 MEMORY.md
 TOOLS.md
 memory/
+
+# Local project clones (keep separate repos)
+StiggSyncAIwebsite2.0/
+SyncAICommandOS/
+syncai-control-plane/
