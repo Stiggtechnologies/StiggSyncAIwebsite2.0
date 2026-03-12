@@ -1,6 +1,6 @@
 #!/bin/bash
 # Monitor ALL SyncAI email accounts for important messages
-# Accounts: info@, security@, privacy@, legal@, reports@syncai.ca
+# Accounts: info@, security@, privacy@, legal@, reports@, oadavis@syncai.ca
 
 set -euo pipefail
 
@@ -10,7 +10,7 @@ STATE_FILE="$WORKSPACE/memory/syncai-email-state.json"
 
 # Initialize state file if it doesn't exist
 if [ ! -f "$STATE_FILE" ]; then
-    echo '{"info": {"last_check": 0, "last_id": 0}, "security": {"last_check": 0, "last_id": 0}, "privacy": {"last_check": 0, "last_id": 0}, "legal": {"last_check": 0, "last_id": 0}, "reports": {"last_check": 0, "last_id": 0}}' > "$STATE_FILE"
+    echo '{"info": {"last_check": 0, "last_id": 0}, "security": {"last_check": 0, "last_id": 0}, "privacy": {"last_check": 0, "last_id": 0}, "legal": {"last_check": 0, "last_id": 0}, "reports": {"last_check": 0, "last_id": 0}, "oadavis": {"last_check": 0, "last_id": 0}}' > "$STATE_FILE"
 fi
 
 # Function to check an account
@@ -58,5 +58,6 @@ check_account "syncai-security" "security@syncai.ca"
 check_account "syncai-privacy" "privacy@syncai.ca"
 check_account "syncai-legal" "legal@syncai.ca"
 check_account "syncai-reports" "reports@syncai.ca"
+check_account "syncai-oadavis" "oadavis@syncai.ca"
 
-echo "$(date '+%Y-%m-%d %H:%M:%S') - Monitor check complete (all 5 accounts)" >> "$LOG_FILE"
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Monitor check complete (all 6 accounts)" >> "$LOG_FILE"

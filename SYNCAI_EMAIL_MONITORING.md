@@ -3,12 +3,13 @@
 ## Overview
 Automated monitoring for ALL SyncAI business email accounts.
 
-## Monitored Accounts (All 5)
+## Monitored Accounts (All 6)
 - **info@syncai.ca**
 - **security@syncai.ca** (priority)
 - **privacy@syncai.ca**
 - **legal@syncai.ca** (priority)
 - **reports@syncai.ca**
+- **oadavis@syncai.ca**
 
 ## Configuration
 
@@ -24,6 +25,7 @@ Location: `~/.config/himalaya/config.toml`
 - Account: `syncai-privacy`
 - Account: `syncai-legal`
 - Account: `syncai-reports`
+- Account: `syncai-oadavis`
 
 ## Monitoring Schedule
 
@@ -41,7 +43,7 @@ Location: `~/.config/himalaya/config.toml`
 
 ### Monitor Script
 **Location:** `/Users/orvilledavis/.openclaw/workspace/scripts/monitor-syncai-emails.sh`
-**Function:** Check all 5 accounts, log activity, alert on unread messages
+**Function:** Check all 6 accounts, log activity, alert on unread messages
 **Logs:** `/Users/orvilledavis/.openclaw/workspace/memory/email-monitor-syncai.log`
 **State:** `/Users/orvilledavis/.openclaw/workspace/memory/syncai-email-state.json`
 
@@ -91,6 +93,7 @@ All accounts contain cPanel configuration emails (automated setup messages):
 - privacy@syncai.ca: 3 unread messages
 - legal@syncai.ca: 3 unread messages
 - reports@syncai.ca: 3 unread messages
+- oadavis@syncai.ca: (newly added — unread count TBD)
 
 ## Security Notes
 
