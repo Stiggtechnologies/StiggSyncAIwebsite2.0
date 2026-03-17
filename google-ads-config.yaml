@@ -1,0 +1,17 @@
+# Google Ads API config
+# Fill in the values below
+
+# From Google Cloud Console (OAuth client)
+client_id: "YOUR_CLIENT_ID_HERE"
+client_secret: "YOUR_CLIENT_SECRET_HERE"
+
+# From Google Ads API Center
+# https://ads.google.com/aw/apicenter?ocid=6741184707
+developer_token: "YOUR_DEVELOPER_TOKEN_HERE"
+
+# Google Ads account/customer ID (no dashes)
+# Full Circle Corporate Health Consulting Ltd
+login_customer_id: "6741184707"
+
+# Will be filled by get-refresh-token.js
+refresh_token: ""
