@@ -4,10 +4,13 @@ import { createClient } from '@supabase/supabase-js';
 import { generateReportHTML } from '@/lib/pdf-report';
 import { AssessmentData, ScoreResult, ROIResult } from '@/lib/assessment-types';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+// Lazy-initialise so build-time static analysis doesn't throw when env vars are absent
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +22,7 @@ export async function POST(request: NextRequest) {
       leadPriority: string;
     };
 
+    const supabase = getSupabase();
     const { error: dbError } = await supabase.from('ai_readiness_submissions').insert({
       name: assessment.name,
       title: assessment.title,
