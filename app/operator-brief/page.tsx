@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { CheckCircle2, FileText, Download, ChevronRight } from 'lucide-react';
+import { trackOperatorBriefDownload } from '@/components/Analytics';
 
 const tableOfContents = [
   'The Structural Problem',
@@ -44,6 +45,7 @@ export default function OperatorBriefPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await new Promise((resolve) => setTimeout(resolve, 1000));
+    trackOperatorBriefDownload();
     setIsSubmitted(true);
   };
 

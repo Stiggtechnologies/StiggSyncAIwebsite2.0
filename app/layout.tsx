@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimatedBackground from '@/components/AnimatedBackground';
+import Analytics from '@/components/Analytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -61,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-[#0B0F14] text-white antialiased`}>
+        <Analytics />
         <AnimatedBackground />
         <Navigation />
         <div className="relative z-10">

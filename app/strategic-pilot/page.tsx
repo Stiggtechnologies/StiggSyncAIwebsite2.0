@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Section from '@/components/ui/Section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { CheckCircle2, Clock, Users, FileCheck, Rocket } from 'lucide-react';
+import { trackPilotApplication } from '@/components/Analytics';
 
 const pilotPhases = [
   {
@@ -40,6 +41,9 @@ export default function StrategicPilotPage() {
     setIsSubmitting(true);
 
     await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    // Fire Google Ads + LinkedIn conversion
+    trackPilotApplication();
 
     setIsSubmitted(true);
     setIsSubmitting(false);
