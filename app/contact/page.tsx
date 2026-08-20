@@ -1,177 +1,161 @@
 'use client';
 
 import { useState } from 'react';
-import Section from '@/components/ui/Section';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import { Mail, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
+
+type ContactForm = {
+  name: string;
+  email: string;
+  company: string;
+  message: string;
+};
+
+const initialForm: ContactForm = {
+  name: '',
+  email: '',
+  company: '',
+  message: '',
+};
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState<ContactForm>(initialForm);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData((current) => ({ ...current, [name]: value }));
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const payload = await response.json().catch(() => null);
+      if (!response.ok || !payload?.success) {
+        throw new Error(payload?.error || 'We could not send your message.');
+      }
+
+      setIsSubmitted(true);
+    } catch (submissionError) {
+      setError(
+        submissionError instanceof Error
+          ? submissionError.message
+          : 'We could not send your message. Please try again.',
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <main className="pt-16">
-      <Section>
-        <div className="max-w-4xl mx-auto">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#3B82F6]/10 rounded-lg mb-6">
-                <Mail className="text-[#3B82F6]" size={32} />
-              </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-                Get in <span className="text-[#3B82F6]">Touch</span>
-              </h1>
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                Have questions about SyncAI? Want to discuss your operational challenges? We're here to help.
-              </p>
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Contact</p>
+            <h1 className="mt-5 text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+              Talk to the people building SyncAI.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
+              Use this form for product, partnership, security, or enterprise deployment questions. For a defined operating use case, the strategic-pilot intake gives us more technical context.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
+              <Link
+                href="/strategic-pilot"
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
+              >
+                Strategic pilot intake
+              </Link>
+              <a
+                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                className="inline-flex min-h-12 items-center justify-center rounded-md px-2 py-3 text-sm font-semibold text-cyan-300 hover:text-cyan-200"
+              >
+                Try Reliability Engineer →
+              </a>
             </div>
-          </AnimatedSection>
+          </div>
 
-          <AnimatedSection delay={0.2}>
-            <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-8 md:p-12">
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <CheckCircle2 className="text-[#3B82F6] mx-auto mb-4" size={64} />
-                  <h2 className="text-3xl font-bold text-white mb-4">Message Received</h2>
-                  <p className="text-xl text-gray-400 mb-2">
-                    Thank you for reaching out, {formData.name}.
-                  </p>
-                  <p className="text-gray-400">
-                    Our team will respond to {formData.email} within 24 hours.
-                  </p>
+          <div className="rounded-xl border border-white/10 bg-[#0B151F] p-6 sm:p-8">
+            {isSubmitted ? (
+              <div className="py-10">
+                <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
+                  ✓
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="John Smith"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                        Email *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="john@company.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                      Company *
-                    </label>
+                <h2 className="text-2xl font-semibold text-white">Message sent</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-400">
+                  Your message was delivered to the SyncAI team using the email address you provided for reply.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <Field label="Name">
+                    <input className={inputClass} name="name" value={formData.name} onChange={handleChange} required />
+                  </Field>
+                  <Field label="Work email">
                     <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      required
-                      value={formData.company}
+                      className={inputClass}
+                      type="email"
+                      name="email"
+                      value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                      placeholder="Acme Industries"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={6}
                       required
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors resize-none"
-                      placeholder="Tell us about your operational challenges or ask us a question..."
                     />
+                  </Field>
+                </div>
+                <Field label="Company">
+                  <input className={inputClass} name="company" value={formData.company} onChange={handleChange} required />
+                </Field>
+                <Field label="Message">
+                  <textarea
+                    className={`${inputClass} min-h-40 resize-y`}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                </Field>
+
+                {error ? (
+                  <div role="alert" className="rounded-md border border-red-300/20 bg-red-300/10 px-4 py-3 text-sm text-red-200">
+                    {error}
                   </div>
+                ) : null}
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg shadow-[#3B82F6]/30 hover:shadow-[#3B82F6]/50"
-                  >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </button>
-                </form>
-              )}
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.4}>
-            <div className="mt-16 grid md:grid-cols-2 gap-8">
-              <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-8 text-center">
-                <h3 className="text-xl font-bold text-white mb-4">Strategic Pilots</h3>
-                <p className="text-gray-400 mb-6">
-                  Ready to deploy autonomous AI in your operations?
-                </p>
-                <a
-                  href="/strategic-pilot"
-                  className="inline-block px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  Apply Now
-                </a>
-              </div>
-
-              <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-8 text-center">
-                <h3 className="text-xl font-bold text-white mb-4">Operator Brief</h3>
-                <p className="text-gray-400 mb-6">
-                  Download our executive guide to autonomous maintenance.
-                </p>
-                <a
-                  href="/operator-brief"
-                  className="inline-block px-6 py-3 bg-white/5 text-white border border-white/20 rounded-lg font-semibold hover:bg-white/10 transition-colors"
-                >
-                  Get the Brief
-                </a>
-              </div>
-            </div>
-          </AnimatedSection>
+                  {isSubmitting ? 'Sending…' : 'Send message'}
+                </button>
+              </form>
+            )}
+          </div>
         </div>
-      </Section>
+      </section>
     </main>
+  );
+}
+
+const inputClass =
+  'w-full rounded-md border border-white/10 bg-[#081018] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-700 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <label className="block">
+      <span className="mb-2 block text-sm font-medium text-slate-300">{label}</span>
+      {children}
+    </label>
   );
 }

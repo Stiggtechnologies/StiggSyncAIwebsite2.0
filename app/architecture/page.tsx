@@ -1,199 +1,169 @@
-'use client';
+import Link from 'next/link';
 
-import Section from '@/components/ui/Section';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import AnimatedCard from '@/components/ui/AnimatedCard';
-import { motion } from 'framer-motion';
-import { Network, Database, Shield, FileCheck, Lock, Activity } from 'lucide-react';
+const layers = [
+  {
+    number: '01',
+    title: 'Systems of record',
+    body: 'CMMS/EAM, ERP, historians, inspection systems, approved documents, work history, asset configuration, and other operating sources remain the authoritative systems around the platform.',
+    details: ['Structured and unstructured evidence', 'Asset and work context', 'Approved knowledge sources'],
+  },
+  {
+    number: '02',
+    title: 'Evidence and context layer',
+    body: 'SyncAI normalizes the context needed for a decision while keeping source provenance and the distinction between observed evidence, assumptions, and missing information visible.',
+    details: ['Source-aware retrieval', 'Asset context', 'Evidence provenance'],
+  },
+  {
+    number: '03',
+    title: 'Industrial intelligence',
+    body: 'Domain workflows combine deterministic analysis with AI reasoning to investigate, compare options, and build a reviewable technical recommendation.',
+    details: ['Reliability analysis', 'Decision-case workflows', 'Domain-specific reasoning'],
+  },
+  {
+    number: '04',
+    title: 'Governance and authority',
+    body: 'Recommendations move through role-aware review, escalation, and approval paths before controlled action. Human accountability stays explicit.',
+    details: ['Approval gates', 'Role-based access', 'Decision traceability'],
+  },
+  {
+    number: '05',
+    title: 'Verification',
+    body: 'The operating loop closes by measuring the agreed outcome, preserving the decision record, and making the result available for subsequent work.',
+    details: ['Outcome evidence', 'KPI verification', 'Closed-loop learning'],
+  },
+];
 
-const architectureBlocks = [
+const securityControls = [
   {
-    icon: Network,
-    title: 'AI Agent Orchestration Layer',
-    description: 'Multi-agent system coordinating risk assessment, priority management, and autonomous decision-making across operational domains.',
-    features: [
-      'Real-time agent communication protocol',
-      'Context-aware task delegation',
-      'Continuous learning from operational outcomes',
-      'Human-in-the-loop override mechanisms',
-    ],
+    title: 'Access control',
+    body: 'Multi-tenant boundaries and role-aware access are implemented in the application and data layer. Customer configuration determines who can see and act on operational information.',
   },
   {
-    icon: Database,
-    title: 'Data Integration Layer',
-    description: 'Unified data ingestion from CMMS, ERP, IoT sensors, and operational systems without replacement.',
-    features: [
-      'API-first connectivity to existing systems',
-      'Real-time data synchronization',
-      'Semantic normalization across data sources',
-      'Historical trend analysis and pattern detection',
-    ],
+    title: 'Auditability',
+    body: 'Decision records, evidence references, approvals, and workflow state are designed to remain reviewable instead of disappearing into an opaque chat transcript.',
   },
   {
-    icon: Activity,
-    title: 'Human Oversight & Governance',
-    description: 'Transparent decision logs, configurable approval workflows, and executive visibility into AI operations.',
-    features: [
-      'Full audit trail of AI recommendations',
-      'Configurable escalation thresholds',
-      'Role-based access and approval gates',
-      'Explainable AI decision reports',
-    ],
+    title: 'Data handling',
+    body: 'SyncAI is designed to work from the customer-approved information boundary. Deployment and integration requirements are defined during security and data discovery.',
   },
   {
-    icon: FileCheck,
-    title: 'ISO 55000 Alignment',
-    description: 'Built-in compliance with international asset management standards and best practices.',
-    features: [
-      'Asset lifecycle tracking',
-      'Risk-based maintenance strategies',
-      'Performance metrics aligned to ISO standards',
-      'Audit-ready documentation',
-    ],
-  },
-  {
-    icon: Shield,
-    title: 'Security Model',
-    description: 'Enterprise-grade security with SOC 2 Type II compliance, end-to-end encryption, and zero-trust architecture.',
-    features: [
-      'Data encryption at rest and in transit',
-      'SSO integration with enterprise identity providers',
-      'Granular permission management',
-      'Regular third-party security audits',
-    ],
-  },
-  {
-    icon: Lock,
-    title: 'Privacy & Data Sovereignty',
-    description: 'Your data stays in your control. Deploy on-premise or in your cloud environment.',
-    features: [
-      'Flexible deployment options',
-      'Regional data residency compliance',
-      'No training on customer data without consent',
-      'Complete data portability',
-    ],
+    title: 'Certification claims',
+    body: 'Third-party certifications are represented publicly only when formally achieved and current. Architecture discussions distinguish implemented controls from certification status.',
   },
 ];
 
 export default function ArchitecturePage() {
   return (
-    <main className="pt-16">
-      <Section>
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Technical <span className="text-[#3B82F6]">Architecture</span>
-            </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Enterprise-grade infrastructure designed for mission-critical industrial operations.
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-32">
-          {architectureBlocks.map((block, index) => {
-            const Icon = block.icon;
-            return (
-              <AnimatedCard key={index} delay={index * 0.1}>
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-[#3B82F6]/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#3B82F6]/20 transition-colors">
-                    <Icon className="text-[#3B82F6]" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">{block.title}</h3>
-                  </div>
-                </div>
-                <p className="text-gray-400 mb-6 leading-relaxed">{block.description}</p>
-                <ul className="space-y-3">
-                  {block.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start space-x-3">
-                      <div className="w-1.5 h-1.5 bg-[#3B82F6] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-300 text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </AnimatedCard>
-            );
-          })}
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Architecture</p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            An industrial intelligence layer built around evidence, authority, and verification.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+            SyncAI is designed to sit across the existing operating information estate, help teams build technically defensible decisions, and preserve the governance required to act on them.
+          </p>
         </div>
+      </section>
 
-        <AnimatedSection>
-          <div className="border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              System Block Diagram
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="mb-12 max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">System model</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              Five layers from source evidence to verified outcome.
             </h2>
-            <div className="max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="space-y-6"
-              >
-                <div className="bg-white/5 border border-white/20 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Executive Layer</h3>
-                  <p className="text-gray-400 text-sm">Risk dashboards, capital planning, strategic insights</p>
-                </div>
+          </div>
 
-                <div className="flex justify-center">
-                  <div className="w-0.5 h-12 bg-gradient-to-b from-[#3B82F6] to-transparent" />
-                </div>
-
-                <div className="bg-[#3B82F6]/10 border border-[#3B82F6]/50 rounded-lg p-8">
-                  <h3 className="text-2xl font-bold text-white mb-4">SyncAI Agent Orchestration</h3>
-                  <div className="grid grid-cols-3 gap-4 mt-6">
-                    <div className="bg-white/5 border border-white/20 rounded p-3">
-                      <p className="text-white text-sm font-medium">Risk Agents</p>
-                    </div>
-                    <div className="bg-white/5 border border-white/20 rounded p-3">
-                      <p className="text-white text-sm font-medium">Planning Agents</p>
-                    </div>
-                    <div className="bg-white/5 border border-white/20 rounded p-3">
-                      <p className="text-white text-sm font-medium">Execution Agents</p>
-                    </div>
+          <div className="divide-y divide-white/10 border-y border-white/10">
+            {layers.map((layer) => (
+              <article key={layer.number} className="grid gap-5 py-8 lg:grid-cols-[90px_280px_1fr]">
+                <span className="font-mono text-sm text-slate-600">{layer.number}</span>
+                <h3 className="text-xl font-semibold text-white">{layer.title}</h3>
+                <div>
+                  <p className="max-w-3xl text-sm leading-7 text-slate-400">{layer.body}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {layer.details.map((detail) => (
+                      <span key={detail} className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-500">
+                        {detail}
+                      </span>
+                    ))}
                   </div>
                 </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="flex justify-center">
-                  <div className="w-0.5 h-12 bg-gradient-to-b from-[#3B82F6] to-transparent" />
-                </div>
-
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-white/5 border border-white/20 rounded-lg p-4">
-                    <h4 className="text-white font-semibold mb-2">CMMS</h4>
-                    <p className="text-gray-400 text-xs">Work orders, assets</p>
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Human authority</p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+                The model is not the final approver.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-slate-400">
+                Industrial decisions can change safety exposure, production risk, maintenance spend, and asset life. SyncAI therefore treats recommendations and authority as separate layers.
+              </p>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-9">
+              <div className="grid gap-4 sm:grid-cols-4">
+                {['Recommendation', 'Technical review', 'Authorized decision', 'Controlled action'].map((item, index) => (
+                  <div key={item} className="rounded-lg border border-white/10 p-4">
+                    <p className="font-mono text-xs text-slate-600">0{index + 1}</p>
+                    <p className="mt-5 text-sm font-semibold text-slate-200">{item}</p>
                   </div>
-                  <div className="bg-white/5 border border-white/20 rounded-lg p-4">
-                    <h4 className="text-white font-semibold mb-2">ERP</h4>
-                    <p className="text-gray-400 text-xs">Parts, financials</p>
-                  </div>
-                  <div className="bg-white/5 border border-white/20 rounded-lg p-4">
-                    <h4 className="text-white font-semibold mb-2">IoT/Sensors</h4>
-                    <p className="text-gray-400 text-xs">Real-time data</p>
-                  </div>
-                </div>
-              </motion.div>
+                ))}
+              </div>
+              <p className="mt-6 text-sm leading-6 text-slate-500">
+                Exact approval paths are configured for the customer’s operating model, roles, risk boundaries, and systems of record.
+              </p>
             </div>
           </div>
-        </AnimatedSection>
+        </div>
+      </section>
 
-        <AnimatedSection delay={1.0}>
-          <div className="mt-20 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Ready to Deploy?
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Security posture</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              Describe the controls that exist. Do not overstate the ones still being validated.
             </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              See how SyncAI can transform your operations in 90 days.
-            </p>
-            <a
-              href="/strategic-pilot"
-              className="inline-block px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
-            >
-              Apply for Strategic Pilot
-            </a>
           </div>
-        </AnimatedSection>
-      </Section>
+
+          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
+            {securityControls.map((control) => (
+              <article key={control.title} className="bg-[#0A131C] p-7 sm:p-8">
+                <h3 className="text-lg font-semibold text-white">{control.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">{control.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <h2 className="text-3xl font-semibold tracking-[-0.03em] text-white">Map SyncAI to your operating environment.</h2>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
+                A pilot starts by defining systems of record, evidence boundaries, decision authority, security requirements, and the KPI that will verify value.
+              </p>
+            </div>
+            <Link
+              href="/strategic-pilot"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
+            >
+              Discuss a Strategic Pilot
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

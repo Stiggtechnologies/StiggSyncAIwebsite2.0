@@ -1,308 +1,320 @@
 'use client';
 
 import { useState } from 'react';
-import Section from '@/components/ui/Section';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import { CheckCircle2, Clock, Users, FileCheck, Rocket } from 'lucide-react';
-import { trackPilotApplication } from '@/components/Analytics';
+import Link from 'next/link';
 
-const pilotPhases = [
+const phases = [
   {
-    phase: 'Discovery',
-    duration: 'Week 1-2',
-    activities: 'Data integration, system mapping, stakeholder interviews',
+    label: '01',
+    title: 'Define the decision',
+    body: 'Select a real reliability or maintenance problem with an accountable owner, known systems of record, and a clear operating consequence.',
   },
   {
-    phase: 'Deployment',
-    duration: 'Week 3-6',
-    activities: 'AI agent configuration, workflow integration, team training',
+    label: '02',
+    title: 'Set the evidence boundary',
+    body: 'Agree what SyncAI may use: approved documents, asset data, work history, condition evidence, and the minimum sanitized export needed for the first proof.',
   },
   {
-    phase: 'Optimization',
-    duration: 'Week 7-12',
-    activities: 'Performance tuning, expanded use cases, ROI validation',
+    label: '03',
+    title: 'Run the governed proof',
+    body: 'Evaluate the technical output, evidence traceability, approval path, and workflow fit before expanding scope or increasing automation.',
+  },
+  {
+    label: '04',
+    title: 'Verify value',
+    body: 'Measure the agreed baseline and outcome. Scale only when the evidence supports the business case and operating controls.',
   },
 ];
 
+type FormState = {
+  name: string;
+  title: string;
+  company: string;
+  industry: string;
+  email: string;
+  assetScope: string;
+  systemOfRecord: string;
+  primaryPain: string;
+  message: string;
+};
+
+const initialState: FormState = {
+  name: '',
+  title: '',
+  company: '',
+  industry: '',
+  email: '',
+  assetScope: '',
+  systemOfRecord: '',
+  primaryPain: '',
+  message: '',
+};
+
 export default function StrategicPilotPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    title: '',
-    company: '',
-    industry: '',
-    email: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState<FormState>(initialState);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // Fire Google Ads + LinkedIn conversion
-    trackPilotApplication();
-
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => {
+    const { name, value } = event.target;
+    setFormData((current) => ({ ...current, [name]: value }));
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/pilot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const payload = await response.json().catch(() => null);
+
+      if (!response.ok || !payload?.success) {
+        throw new Error(payload?.error || 'We could not submit your request.');
+      }
+
+      setIsSubmitted(true);
+    } catch (submissionError) {
+      setError(
+        submissionError instanceof Error
+          ? submissionError.message
+          : 'We could not submit your request. Please try again.',
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <main className="pt-16">
-      <Section>
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Strategic <span className="text-[#3B82F6]">Pilot Program</span>
-            </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              A 90-day engagement to deploy autonomous AI agents in your operations and validate measurable impact.
-            </p>
-          </div>
-        </AnimatedSection>
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Strategic pilot</p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            Start with one consequential operating decision. Prove the system before you scale it.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+            A SyncAI pilot is a governed deployment around a defined reliability or maintenance problem—not an open-ended AI experiment. We establish the evidence boundary, human authority, and value-verification method at the start.
+          </p>
+        </div>
+      </section>
 
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto mb-20">
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
-            <AnimatedSection>
-              <h2 className="text-3xl font-bold text-white mb-8">The 90-Day Framework</h2>
-              <div className="space-y-6">
-                {pilotPhases.map((phase, index) => (
-                  <div
-                    key={index}
-                    className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-6"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-bold text-white">{phase.phase}</h3>
-                      <span className="text-sm text-[#3B82F6] font-semibold">{phase.duration}</span>
-                    </div>
-                    <p className="text-gray-400">{phase.activities}</p>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="mt-12 border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-8">
-                <h3 className="text-xl font-bold text-white mb-4">What You Get</h3>
-                <ul className="space-y-3">
-                  {[
-                    'Dedicated AI agent deployment team',
-                    'Integration with existing CMMS/ERP systems',
-                    'Custom workflow configuration',
-                    'Team training and change management support',
-                    'Executive reporting and ROI analysis',
-                    'Post-pilot expansion roadmap',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <CheckCircle2 className="flex-shrink-0 text-[#3B82F6] mt-0.5" size={20} />
-                      <span className="text-gray-300">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.3}>
-              <div className="mt-12 border border-white/10 bg-white/[0.02] rounded-lg p-8">
-                <h3 className="text-xl font-bold text-white mb-6">Next Steps After Application</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-[#3B82F6]" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white">Review Within 48 Hours</h4>
-                      <p className="text-sm text-gray-400">Our team reviews your application and operational context</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
-                      <Users className="w-5 h-5 text-[#3B82F6]" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white">Executive Alignment Call</h4>
-                      <p className="text-sm text-gray-400">30-minute call to discuss goals, constraints, and success criteria</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
-                      <FileCheck className="w-5 h-5 text-[#3B82F6]" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white">Data Discovery Session</h4>
-                      <p className="text-sm text-gray-400">Technical assessment of your systems and data architecture</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0">
-                      <Rocket className="w-5 h-5 text-[#3B82F6]" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white">Custom Pilot Proposal</h4>
-                      <p className="text-sm text-gray-400">Tailored engagement plan with timeline, scope, and investment</p>
-                    </div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How the pilot works</p>
+            <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
+              {phases.map((phase) => (
+                <div key={phase.label} className="grid gap-3 py-6 sm:grid-cols-[48px_1fr]">
+                  <span className="font-mono text-xs text-slate-600">{phase.label}</span>
+                  <div>
+                    <h2 className="text-lg font-semibold text-white">{phase.title}</h2>
+                    <p className="mt-2 text-sm leading-6 text-slate-400">{phase.body}</p>
                   </div>
                 </div>
-              </div>
-            </AnimatedSection>
+              ))}
+            </div>
+
+            <div className="mt-8 rounded-lg border border-white/10 bg-[#0B151F] p-6">
+              <p className="text-sm font-semibold text-white">What a good first use case looks like</p>
+              <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-400">
+                <li>• The decision matters enough that experienced people already spend time on it.</li>
+                <li>• There is usable history, documentation, or operating evidence—even if it is fragmented.</li>
+                <li>• A technical owner can review the reasoning and approve the action boundary.</li>
+                <li>• There is a baseline or outcome that can be measured after intervention.</li>
+              </ul>
+            </div>
+
+            <div className="mt-6 text-sm text-slate-500">
+              Want to see the product first?{' '}
+              <a
+                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                className="font-semibold text-cyan-300 hover:text-cyan-200"
+              >
+                Open the Reliability Engineer workspace →
+              </a>
+            </div>
           </div>
 
           <div>
-            <AnimatedSection delay={0.1}>
-              <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-8 sticky top-24">
-                <h2 className="text-2xl font-bold text-white mb-6">Apply for Pilot</h2>
-
-                {isSubmitted ? (
-                  <div className="text-center py-12">
-                    <CheckCircle2 className="text-[#3B82F6] mx-auto mb-4" size={48} />
-                    <h3 className="text-2xl font-bold text-white mb-2">Application Received</h3>
-                    <p className="text-gray-400">
-                      Thank you for your interest. Our team will review your application and be in touch within 48 hours.
+            <div className="rounded-xl border border-white/10 bg-[#0B151F] p-6 sm:p-8">
+              {isSubmitted ? (
+                <div className="py-10">
+                  <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
+                    ✓
+                  </div>
+                  <h2 className="text-2xl font-semibold text-white">Request received</h2>
+                  <p className="mt-3 max-w-lg text-sm leading-6 text-slate-400">
+                    Your request has been recorded in SyncAI’s pilot-intake workflow. A member of the team can now review the operating context you submitted and follow up using the email provided.
+                  </p>
+                  <Link href="/" className="mt-8 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200">
+                    Return to SyncAI →
+                  </Link>
+                </div>
+              ) : (
+                <>
+                  <div className="mb-7">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Pilot intake</p>
+                    <h2 className="mt-2 text-2xl font-semibold text-white">Describe the first decision to solve.</h2>
+                    <p className="mt-2 text-sm leading-6 text-slate-500">
+                      Required fields are used to create a reviewable pilot request. Do not include confidential data or credentials.
                     </p>
                   </div>
-                ) : (
+
                   <form onSubmit={handleSubmit} className="space-y-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="John Smith"
-                      />
+                    <div className="grid gap-5 sm:grid-cols-2">
+                      <Field label="Name" required>
+                        <input
+                          className={inputClass}
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                          autoComplete="name"
+                        />
+                      </Field>
+                      <Field label="Role / title">
+                        <input
+                          className={inputClass}
+                          name="title"
+                          value={formData.title}
+                          onChange={handleChange}
+                          autoComplete="organization-title"
+                        />
+                      </Field>
                     </div>
 
-                    <div>
-                      <label htmlFor="title" className="block text-sm font-medium text-gray-300 mb-2">
-                        Title *
-                      </label>
-                      <input
-                        type="text"
-                        id="title"
-                        name="title"
-                        required
-                        value={formData.title}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="VP of Operations"
-                      />
+                    <div className="grid gap-5 sm:grid-cols-2">
+                      <Field label="Company" required>
+                        <input
+                          className={inputClass}
+                          name="company"
+                          value={formData.company}
+                          onChange={handleChange}
+                          required
+                          autoComplete="organization"
+                        />
+                      </Field>
+                      <Field label="Work email" required>
+                        <input
+                          className={inputClass}
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                          autoComplete="email"
+                        />
+                      </Field>
                     </div>
 
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                        Company *
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        required
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="Acme Industries"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="industry" className="block text-sm font-medium text-gray-300 mb-2">
-                        Industry *
-                      </label>
-                      <select
-                        id="industry"
-                        name="industry"
-                        required
-                        value={formData.industry}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                      >
-                        <option value="" className="bg-[#0B0F14]">
-                          Select an industry
-                        </option>
-                        <option value="manufacturing" className="bg-[#0B0F14]">
-                          Manufacturing
-                        </option>
-                        <option value="energy" className="bg-[#0B0F14]">
-                          Energy & Utilities
-                        </option>
-                        <option value="water" className="bg-[#0B0F14]">
-                          Water & Wastewater
-                        </option>
-                        <option value="aviation" className="bg-[#0B0F14]">
-                          Aviation & Aerospace
-                        </option>
-                        <option value="real-estate" className="bg-[#0B0F14]">
-                          Commercial Real Estate
-                        </option>
-                        <option value="maritime" className="bg-[#0B0F14]">
-                          Maritime & Shipping
-                        </option>
-                        <option value="other" className="bg-[#0B0F14]">
-                          Other
-                        </option>
+                    <Field label="Industry">
+                      <select className={inputClass} name="industry" value={formData.industry} onChange={handleChange}>
+                        <option value="">Select</option>
+                        <option value="mining">Mining & heavy equipment</option>
+                        <option value="energy">Energy & utilities</option>
+                        <option value="oil-gas">Oil & gas</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="transportation">Transportation & fleets</option>
+                        <option value="infrastructure">Infrastructure & facilities</option>
+                        <option value="other">Other</option>
                       </select>
-                    </div>
+                    </Field>
 
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                        Email *
-                      </label>
+                    <Field label="Asset or system scope" required hint="Example: haul-truck fleet, primary crusher circuit, packaging line">
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
+                        className={inputClass}
+                        name="assetScope"
+                        value={formData.assetScope}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors"
-                        placeholder="john@acme.com"
+                        required
                       />
-                    </div>
+                    </Field>
 
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                        Tell us about your operational challenges
-                      </label>
+                    <Field label="System of record" hint="CMMS / EAM / historian / document system">
+                      <input
+                        className={inputClass}
+                        name="systemOfRecord"
+                        value={formData.systemOfRecord}
+                        onChange={handleChange}
+                        placeholder="e.g. SAP PM, Maximo, PI"
+                      />
+                    </Field>
+
+                    <Field label="Primary reliability or maintenance problem" required>
                       <textarea
-                        id="message"
+                        className={`${inputClass} min-h-28 resize-y`}
+                        name="primaryPain"
+                        value={formData.primaryPain}
+                        onChange={handleChange}
+                        required
+                        placeholder="What decision or recurring problem should the first proof address?"
+                      />
+                    </Field>
+
+                    <Field label="Additional context" hint="Optional. Do not include passwords, secrets, or sensitive exports.">
+                      <textarea
+                        className={`${inputClass} min-h-24 resize-y`}
                         name="message"
-                        rows={4}
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#3B82F6] focus:ring-1 focus:ring-[#3B82F6] transition-colors resize-none"
-                        placeholder="Describe your current maintenance challenges, team size, and what you hope to achieve..."
                       />
-                    </div>
+                    </Field>
+
+                    {error ? (
+                      <div role="alert" className="rounded-md border border-red-300/20 bg-red-300/10 px-4 py-3 text-sm text-red-200">
+                        {error}
+                      </div>
+                    ) : null}
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg shadow-[#3B82F6]/30 hover:shadow-[#3B82F6]/50"
+                      className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60"
                     >
-                      {isSubmitting ? 'Submitting...' : 'Submit Application'}
+                      {isSubmitting ? 'Submitting…' : 'Submit pilot request'}
                     </button>
                   </form>
-                )}
-              </div>
-            </AnimatedSection>
+                </>
+              )}
+            </div>
           </div>
         </div>
-      </Section>
+      </section>
     </main>
+  );
+}
+
+const inputClass =
+  'w-full rounded-md border border-white/10 bg-[#081018] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-700 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
+
+function Field({
+  label,
+  hint,
+  required,
+  children,
+}: {
+  label: string;
+  hint?: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <label className="block">
+      <span className="mb-2 block text-sm font-medium text-slate-300">
+        {label}
+        {required ? <span className="ml-1 text-cyan-300">*</span> : null}
+      </span>
+      {children}
+      {hint ? <span className="mt-1.5 block text-xs leading-5 text-slate-600">{hint}</span> : null}
+    </label>
   );
 }
