@@ -51,7 +51,7 @@ export default function GovernancePage() {
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Effective governance is not about slowing AI down. It's about making every decision auditable, reversible, and aligned with organizational risk tolerance.
+              Effective governance is not about slowing AI down. It is about making every decision auditable, reversible, and aligned with organizational risk tolerance.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Governance Challenge</h2>
