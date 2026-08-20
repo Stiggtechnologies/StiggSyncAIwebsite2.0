@@ -1,151 +1,96 @@
-'use client';
+import type { Metadata } from 'next';
 
-import { motion } from 'framer-motion';
-import { Shield, Mail } from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'How SyncAI handles website, inquiry, assessment, and analytics data.',
+  alternates: { canonical: 'https://syncai.ca/privacy' },
+};
+
+const sections = [
+  {
+    title: 'Information you provide',
+    body: [
+      'When you contact SyncAI, request a Reliability Intelligence Assessment, or apply for a Strategic Pilot, we may collect your name, work email, company, role, operating scope, and the business context you choose to provide.',
+      'Public website forms are not intended for confidential maintenance records, credentials, production data, personal health information, or other sensitive operational datasets. Data-transfer requirements for an assessment or deployment are agreed separately.',
+    ],
+  },
+  {
+    title: 'How we use information',
+    body: [
+      'We use submitted information to respond to inquiries, qualify assessment and pilot requests, deliver requested services, maintain business records, improve the website and product experience, and protect the security and integrity of our services.',
+      'We do not sell personal information to advertisers.',
+    ],
+  },
+  {
+    title: 'Service providers',
+    body: [
+      'SyncAI uses service providers for website hosting, database and application infrastructure, email delivery, and related operational functions. Those providers process information only as needed to provide the relevant service to SyncAI.',
+      'Optional analytics or advertising measurement providers are activated only after website analytics consent is granted. The exact providers enabled may vary by environment and campaign configuration.',
+    ],
+  },
+  {
+    title: 'Cookies and analytics',
+    body: [
+      'Necessary website functions operate without optional analytics consent. If you choose “Allow analytics,” SyncAI may load configured Google Analytics, Google Ads, and LinkedIn measurement tags. If you choose “Necessary only,” those optional third-party measurement tags are not loaded.',
+      'Your analytics choice is stored in your browser. You can reset it by clearing site data for syncai.ca and revisiting the website.',
+    ],
+  },
+  {
+    title: 'Data retention',
+    body: [
+      'We retain personal information only for as long as reasonably necessary for the purpose for which it was collected, to maintain appropriate business records, resolve disputes, meet contractual obligations, and comply with applicable legal requirements.',
+      'Retention periods may differ between a simple website inquiry, an assessment engagement, and an enterprise deployment.',
+    ],
+  },
+  {
+    title: 'Security',
+    body: [
+      'SyncAI uses technical and organizational safeguards appropriate to the information and environment involved. Public website forms are deliberately separated from governed customer data-transfer workflows.',
+      'Security controls, hosting configurations, certifications, data residency, and deployment representations for a customer engagement are described against the actual environment and agreed scope. SyncAI does not represent a third-party certification as achieved unless it is formally current.',
+    ],
+  },
+  {
+    title: 'Your choices and requests',
+    body: [
+      'You may ask us to access, correct, or delete personal information we hold about you, subject to applicable contractual, legal, security, and record-keeping requirements. You may also opt out of marketing communications at any time.',
+    ],
+  },
+];
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
-      <section className="relative pt-32 pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 via-transparent to-transparent" />
+    <main className="min-h-screen bg-[#081018] pt-16 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Privacy</p>
+          <h1 className="mt-4 text-5xl font-semibold tracking-[-0.04em] text-white">Privacy Policy</h1>
+          <p className="mt-5 text-sm text-slate-500">Last updated: August 2026</p>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">
+            This policy explains how SyncAI handles information submitted through the public website and how optional website analytics are controlled.
+          </p>
+        </div>
+      </section>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-6">
-              <Shield className="w-4 h-4 text-[#3B82F6]" />
-              <span className="text-sm text-[#3B82F6] font-medium">Legal</span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Privacy Policy</h1>
-            <p className="text-gray-400 mb-4">Last updated: February 2026</p>
-
-            <div className="prose prose-invert max-w-none">
-              <div className="space-y-8 text-gray-300">
-                <Section title="1. Introduction">
-                  <p>
-                    SyncAI (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
-                    This Privacy Policy explains how we collect, use, disclose, and safeguard your information
-                    when you visit our website or use our services.
-                  </p>
-                </Section>
-
-                <Section title="2. Information We Collect">
-                  <p className="mb-4">We collect information that you provide directly to us, including:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Contact information (name, email, job title, company)</li>
-                    <li>Assessment data submitted through our AI Readiness Assessment tool</li>
-                    <li>Communications you send to us</li>
-                    <li>Business information relevant to service delivery</li>
-                  </ul>
-                  <p className="mt-4">We automatically collect certain information when you visit our website:</p>
-                  <ul className="list-disc pl-6 space-y-2 mt-2">
-                    <li>Device and browser information</li>
-                    <li>IP address and approximate location</li>
-                    <li>Pages visited and time spent</li>
-                    <li>Referral source</li>
-                  </ul>
-                </Section>
-
-                <Section title="3. How We Use Your Information">
-                  <p className="mb-4">We use the information we collect to:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Provide, maintain, and improve our services</li>
-                    <li>Generate your AI Readiness Assessment report</li>
-                    <li>Respond to your inquiries and requests</li>
-                    <li>Send relevant communications about our services</li>
-                    <li>Analyze usage patterns to improve user experience</li>
-                    <li>Comply with legal obligations</li>
-                  </ul>
-                </Section>
-
-                <Section title="4. Data Storage and Security">
-                  <p>
-                    Your data is stored securely using industry-standard encryption and security measures.
-                    We use Supabase for data storage, which provides enterprise-grade security including:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 mt-4">
-                    <li>AES-256 encryption at rest</li>
-                    <li>TLS 1.3 encryption in transit</li>
-                    <li>SOC 2 Type II compliance</li>
-                    <li>Regular security audits</li>
-                  </ul>
-                </Section>
-
-                <Section title="5. Data Retention">
-                  <p>
-                    We retain your personal information for as long as necessary to fulfill the purposes
-                    for which it was collected, including to satisfy legal, accounting, or reporting requirements.
-                    Assessment data is retained for 3 years unless you request earlier deletion.
-                  </p>
-                </Section>
-
-                <Section title="6. Data Sharing">
-                  <p className="mb-4">We do not sell your personal information. We may share your information with:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Service providers who assist in our operations (hosting, analytics, email delivery)</li>
-                    <li>Professional advisors (lawyers, accountants) as needed</li>
-                    <li>Law enforcement when required by law</li>
-                  </ul>
-                </Section>
-
-                <Section title="7. Your Rights">
-                  <p className="mb-4">You have the right to:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Access the personal information we hold about you</li>
-                    <li>Request correction of inaccurate information</li>
-                    <li>Request deletion of your information</li>
-                    <li>Opt out of marketing communications</li>
-                    <li>Request a copy of your data in portable format</li>
-                  </ul>
-                </Section>
-
-                <Section title="8. Cookies and Analytics">
-                  <p>
-                    We use cookies and similar technologies to analyze website traffic and improve user experience.
-                    We use PostHog for analytics, which collects anonymized usage data. You can opt out of
-                    analytics tracking by enabling Do Not Track in your browser.
-                  </p>
-                </Section>
-
-                <Section title="9. Changes to This Policy">
-                  <p>
-                    We may update this Privacy Policy from time to time. We will notify you of any material
-                    changes by posting the new policy on this page and updating the &quot;Last updated&quot; date.
-                  </p>
-                </Section>
-
-                <Section title="10. Contact Us">
-                  <p className="mb-4">
-                    For questions about this Privacy Policy or to exercise your data rights, contact us at:
-                  </p>
-                  <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-6">
-                    <div className="flex items-center gap-3 text-[#3B82F6]">
-                      <Mail className="w-5 h-5" />
-                      <a href="mailto:privacy@syncai.ca" className="hover:underline">
-                        privacy@syncai.ca
-                      </a>
-                    </div>
-                  </div>
-                </Section>
+      <section>
+        <div className="mx-auto max-w-4xl divide-y divide-white/10 px-6 py-12 lg:px-8">
+          {sections.map((section) => (
+            <div key={section.title} className="py-8 first:pt-0">
+              <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
+              <div className="mt-4 space-y-4 text-sm leading-7 text-slate-400">
+                {section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
             </div>
-          </motion.div>
+          ))}
+
+          <div className="py-8">
+            <h2 className="text-2xl font-semibold text-white">Contact</h2>
+            <p className="mt-4 text-sm leading-7 text-slate-400">
+              Privacy questions or requests can be sent to{' '}
+              <a href="mailto:privacy@syncai.ca" className="font-medium text-cyan-300 hover:text-cyan-200">privacy@syncai.ca</a>.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-  );
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="pb-6 border-b border-[#1E293B] last:border-0">
-      <h2 className="text-xl font-semibold text-white mb-4">{title}</h2>
-      {children}
-    </div>
   );
 }

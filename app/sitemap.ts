@@ -2,37 +2,27 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://syncai.ca';
-  const lastModified = new Date();
 
   const routes = [
-    '',
-    '/reliability-assessment',
-    '/strategic-pilot',
-    '/architecture',
-    '/industries',
-    '/security',
-    '/insights',
-    '/company',
-    '/privacy',
-    '/terms',
-    '/philosophy',
-    '/faq',
-    '/contact',
-    '/operator-brief',
-    '/ai-for-mining-reliability',
+    { path: '', priority: 1, changeFrequency: 'weekly' as const },
+    { path: '/reliability-assessment', priority: 0.95, changeFrequency: 'weekly' as const },
+    { path: '/strategic-pilot', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/architecture', priority: 0.85, changeFrequency: 'monthly' as const },
+    { path: '/industries', priority: 0.85, changeFrequency: 'monthly' as const },
+    { path: '/security', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/ai-for-mining-reliability', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/insights', priority: 0.75, changeFrequency: 'weekly' as const },
+    { path: '/company', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/faq', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/philosophy', priority: 0.65, changeFrequency: 'monthly' as const },
+    { path: '/privacy', priority: 0.4, changeFrequency: 'yearly' as const },
+    { path: '/terms', priority: 0.4, changeFrequency: 'yearly' as const },
   ];
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified,
-    changeFrequency: route === '' || route === '/reliability-assessment' ? 'weekly' : 'monthly',
-    priority:
-      route === ''
-        ? 1
-        : route === '/reliability-assessment'
-          ? 0.95
-          : route === '/strategic-pilot'
-            ? 0.9
-            : 0.8,
+  return routes.map(({ path, priority, changeFrequency }) => ({
+    url: `${baseUrl}${path}`,
+    priority,
+    changeFrequency,
   }));
 }
