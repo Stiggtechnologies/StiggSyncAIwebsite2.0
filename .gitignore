@@ -28,6 +28,10 @@ yarn-error.log*
 .env
 .env*.local
 
+# secrets and credentials
+.credentials/
+.credentials-vault.env
+
 # vercel
 .vercel
 
@@ -35,16 +39,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# OpenClaw / local
-.credentials-vault.env
-
 # Junk artifacts
 coverage*
 coverage_*
 ocr_tmp*/
 ocr_*json
 tmp-*/
-tmp_*/
+tmp_/
 *.png
 
 # Private/local notes

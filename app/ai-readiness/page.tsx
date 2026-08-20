@@ -1,92 +1,29 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { Brain, ChartBar, FileText, Shield } from 'lucide-react';
 import AssessmentForm from '@/components/assessment/AssessmentForm';
 
 export default function AIReadinessPage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
-      <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 via-transparent to-transparent" />
+    <main className="min-h-screen bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Planning tool</p>
+          <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            Industrial AI readiness assessment
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-400">
+            Structure the operating context for an AI deployment: asset complexity, downtime exposure, governance pressure, current systems, and organizational readiness.
+          </p>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-6">
-              <Brain className="w-4 h-4 text-[#3B82F6]" />
-              <span className="text-sm text-[#3B82F6] font-medium">Enterprise Assessment</span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              AI Readiness Assessment
-            </h1>
-
-            <p className="text-xl text-gray-400 leading-relaxed">
-              Evaluate your organization&apos;s readiness for AI-driven maintenance optimization.
-              Get a personalized score, ROI estimate, and strategic recommendations.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-16"
-          >
-            <FeatureCard
-              icon={<Brain className="w-5 h-5" />}
-              title="AI Score"
-              description="0-100 readiness rating"
-            />
-            <FeatureCard
-              icon={<ChartBar className="w-5 h-5" />}
-              title="ROI Estimate"
-              description="Annual savings potential"
-            />
-            <FeatureCard
-              icon={<FileText className="w-5 h-5" />}
-              title="PDF Report"
-              description="Executive summary"
-            />
-            <FeatureCard
-              icon={<Shield className="w-5 h-5" />}
-              title="Private"
-              description="Data stays secure"
-            />
-          </motion.div>
+          <div className="mt-8 rounded-lg border border-amber-300/20 bg-amber-300/[0.05] p-5 text-sm leading-6 text-amber-100/80">
+            The financial range in this tool is an <strong>illustrative scenario model</strong>, not a forecast, customer outcome, or SyncAI performance claim. It applies explicit sensitivity factors to the cost inputs you provide so you can see which value pools may justify deeper validation.
+          </div>
         </div>
       </section>
 
       <section className="pb-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <AssessmentForm />
         </div>
       </section>
     </main>
-  );
-}
-
-function FeatureCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <div className="bg-[#1E293B]/30 border border-[#334155] rounded-xl p-4 text-center">
-      <div className="w-10 h-10 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-3 text-[#3B82F6]">
-        {icon}
-      </div>
-      <h3 className="font-semibold text-white text-sm mb-1">{title}</h3>
-      <p className="text-xs text-gray-500">{description}</p>
-    </div>
   );
 }
