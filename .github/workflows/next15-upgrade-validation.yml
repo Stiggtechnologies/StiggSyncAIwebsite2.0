@@ -24,21 +24,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
 
-      - name: Upgrade React 19 peer dependencies
-        run: >-
-          npm install --save
-          cmdk@latest
-          embla-carousel-react@latest
-          input-otp@latest
-          next-themes@latest
-          react-day-picker@latest
-          react-resizable-panels@latest
-          recharts@latest
-          sonner@latest
-          vaul@latest
+      - name: Refresh lockfile for declared dependency set
+        run: npm install --package-lock-only
 
       - name: Install dependencies from refreshed lockfile
         run: npm ci
@@ -52,15 +42,15 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Commit compatible dependency set and lockfile
+      - name: Commit refreshed lockfile
         if: success() && github.event_name == 'push'
         run: |
-          if git diff --quiet -- package.json package-lock.json; then
-            echo "Dependency files are already current"
+          if git diff --quiet -- package-lock.json; then
+            echo "package-lock.json is already current"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- package.json package-lock.json
-          git commit -m "chore: refresh dependencies for React 19"
+          git add -- package-lock.json
+          git commit -m "chore: refresh lockfile for Next 15"
           git push
