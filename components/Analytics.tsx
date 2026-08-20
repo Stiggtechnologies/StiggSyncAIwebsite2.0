@@ -1,135 +1,190 @@
 'use client';
 
+import Link from 'next/link';
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
-// ── Config ──────────────────────────────────────────────────
-// NOTE: Create a separate GA4 property for syncai.ca in Google Analytics
-// then replace G-SYNCAI_REPLACE with the real Measurement ID
-const GA4_ID = 'G-SYNCAI_REPLACE';
-const ADS_ID = 'AW-16713550918';      // Same Google Ads account as AIM (or create separate)
-// LinkedIn: get from Campaign Manager → Account Assets → Insight Tag
-const LINKEDIN_PARTNER_ID = 'LINKEDIN_REPLACE';
+const CONSENT_KEY = 'syncai_analytics_consent_v1';
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID?.trim() || '';
+const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || '';
+const LINKEDIN_PARTNER_ID = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID?.trim() || '';
 
-export const CONVERSIONS = {
-  PILOT_APPLICATION: `${ADS_ID}/pilot_application`,
-  OPERATOR_BRIEF:    `${ADS_ID}/operator_brief_download`,
-  CONTACT_SUBMIT:    `${ADS_ID}/contact_submit`,
-  AI_READINESS:      `${ADS_ID}/ai_readiness_visit`,
+const CONVERSIONS = {
+  PILOT_APPLICATION: process.env.NEXT_PUBLIC_GOOGLE_ADS_PILOT_CONVERSION?.trim() || '',
+  CONTACT_SUBMIT: process.env.NEXT_PUBLIC_GOOGLE_ADS_CONTACT_CONVERSION?.trim() || '',
+  RELIABILITY_ASSESSMENT:
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_RIA_CONVERSION?.trim() || '',
 } as const;
-// ────────────────────────────────────────────────────────────
+
+type ConsentState = 'unknown' | 'granted' | 'denied';
 
 declare global {
   interface Window {
-    gtag: (...args: unknown[]) => void;
-    dataLayer: unknown[];
-    lintrk: (action: string, data?: Record<string, unknown>) => void;
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+    lintrk?: (action: string, data?: Record<string, unknown>) => void;
   }
 }
 
-// ── Conversion helpers ───────────────────────────────────────
+function analyticsConsentGranted() {
+  if (typeof window === 'undefined') return false;
+  return window.localStorage.getItem(CONSENT_KEY) === 'granted';
+}
+
+function trackGoogleConversion(sendTo: string, eventName: string) {
+  if (!analyticsConsentGranted() || !window.gtag) return;
+
+  if (sendTo) {
+    window.gtag('event', 'conversion', { send_to: sendTo });
+  }
+
+  window.gtag('event', eventName, {
+    event_category: 'high_value_lead',
+  });
+}
 
 export function trackPilotApplication() {
   if (typeof window === 'undefined') return;
-  window.gtag?.('event', 'conversion', {
-    send_to: CONVERSIONS.PILOT_APPLICATION,
-    value: 5000,
-    currency: 'CAD',
-  });
-  window.gtag?.('event', 'pilot_application_submit', {
-    event_category: 'high_value_lead',
-  });
-  // LinkedIn conversion event
-  window.lintrk?.('track', { conversion_id: 'pilot_application' });
-}
-
-export function trackOperatorBriefDownload() {
-  if (typeof window === 'undefined') return;
-  window.gtag?.('event', 'conversion', {
-    send_to: CONVERSIONS.OPERATOR_BRIEF,
-    value: 500,
-    currency: 'CAD',
-  });
-  window.gtag?.('event', 'operator_brief_download', {
-    event_category: 'lead_magnet',
-  });
-  window.lintrk?.('track', { conversion_id: 'content_download' });
+  trackGoogleConversion(CONVERSIONS.PILOT_APPLICATION, 'pilot_application_submit');
+  if (analyticsConsentGranted()) {
+    window.lintrk?.('track', { conversion_id: 'pilot_application' });
+  }
 }
 
 export function trackContactSubmit() {
   if (typeof window === 'undefined') return;
-  window.gtag?.('event', 'conversion', {
-    send_to: CONVERSIONS.CONTACT_SUBMIT,
-    value: 1000,
-    currency: 'CAD',
-  });
-  window.lintrk?.('track', { conversion_id: 'contact_form' });
+  trackGoogleConversion(CONVERSIONS.CONTACT_SUBMIT, 'contact_submit');
+  if (analyticsConsentGranted()) {
+    window.lintrk?.('track', { conversion_id: 'contact_form' });
+  }
 }
 
-// ── Route tracker ────────────────────────────────────────────
-function PageViewTracker() {
+export function trackReliabilityAssessmentInquiry() {
+  if (typeof window === 'undefined') return;
+  trackGoogleConversion(
+    CONVERSIONS.RELIABILITY_ASSESSMENT,
+    'reliability_assessment_inquiry',
+  );
+  if (analyticsConsentGranted()) {
+    window.lintrk?.('track', { conversion_id: 'reliability_assessment' });
+  }
+}
+
+function PageViewTracker({ enabled }: { enabled: boolean }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.gtag) return;
-    const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
-    window.gtag('config', GA4_ID, { page_path: url });
-    window.gtag('config', ADS_ID, { page_path: url });
-  }, [pathname, searchParams]);
+    if (!enabled || typeof window === 'undefined' || !window.gtag) return;
+
+    const query = searchParams?.toString();
+    const pagePath = pathname + (query ? `?${query}` : '');
+
+    if (GA4_ID) {
+      window.gtag('config', GA4_ID, { page_path: pagePath });
+    }
+
+    if (ADS_ID) {
+      window.gtag('config', ADS_ID, { page_path: pagePath });
+    }
+  }, [enabled, pathname, searchParams]);
 
   return null;
 }
 
-// ── Main component ───────────────────────────────────────────
 export default function Analytics() {
+  const [consent, setConsent] = useState<ConsentState>('unknown');
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem(CONSENT_KEY);
+    setConsent(stored === 'granted' ? 'granted' : stored === 'denied' ? 'denied' : 'unknown');
+  }, []);
+
+  const googleLoaderId = useMemo(() => GA4_ID || ADS_ID, []);
+  const enabled = consent === 'granted';
+
+  const choose = (next: Exclude<ConsentState, 'unknown'>) => {
+    window.localStorage.setItem(CONSENT_KEY, next);
+    setConsent(next);
+  };
+
   return (
     <>
-      {/* Google Analytics + Ads */}
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="syncai-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA4_ID}', { send_page_view: false });
-          gtag('config', '${ADS_ID}');
-        `}
-      </Script>
+      {enabled && googleLoaderId && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${googleLoaderId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="syncai-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+              gtag('js', new Date());
+              ${GA4_ID ? `gtag('config', '${GA4_ID}', { send_page_view: false });` : ''}
+              ${ADS_ID ? `gtag('config', '${ADS_ID}');` : ''}
+            `}
+          </Script>
+        </>
+      )}
 
-      {/* LinkedIn Insight Tag */}
-      <Script id="linkedin-insight" strategy="afterInteractive">
-        {`
-          _linkedin_partner_id = "${LINKEDIN_PARTNER_ID}";
-          window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-          window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-          (function(l) {
-            if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-            window.lintrk.q=[]}
-            var s = document.getElementsByTagName("script")[0];
-            var b = document.createElement("script");
-            b.type = "text/javascript"; b.async = true;
-            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-            s.parentNode.insertBefore(b, s);
-          })(window.lintrk);
-        `}
-      </Script>
-      <noscript>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          height="1"
-          width="1"
-          style={{ display: 'none' }}
-          alt=""
-          src={`https://px.ads.linkedin.com/collect/?pid=${LINKEDIN_PARTNER_ID}&fmt=gif`}
-        />
-      </noscript>
+      {enabled && LINKEDIN_PARTNER_ID && (
+        <Script id="linkedin-insight" strategy="afterInteractive">
+          {`
+            window._linkedin_partner_id = "${LINKEDIN_PARTNER_ID}";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(window._linkedin_partner_id);
+            (function(l) {
+              if (!l) {
+                window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+                window.lintrk.q=[];
+              }
+              var s = document.getElementsByTagName("script")[0];
+              var b = document.createElement("script");
+              b.type = "text/javascript";
+              b.async = true;
+              b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+              s.parentNode.insertBefore(b, s);
+            })(window.lintrk);
+          `}
+        </Script>
+      )}
 
-      <PageViewTracker />
+      <PageViewTracker enabled={enabled} />
+
+      {consent === 'unknown' && (
+        <div className="fixed bottom-4 left-4 right-4 z-[100] mx-auto max-w-3xl rounded-xl border border-white/15 bg-[#0B151F] p-5 shadow-2xl shadow-black/40 sm:p-6">
+          <div className="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-center">
+            <div>
+              <p className="text-sm font-semibold text-white">Analytics choice</p>
+              <p className="mt-2 text-sm leading-6 text-slate-400">
+                SyncAI uses optional analytics and advertising measurement only after you allow it. Necessary site functions work without these trackers.{' '}
+                <Link href="/privacy" className="font-medium text-cyan-300 hover:text-cyan-200">
+                  Privacy details
+                </Link>
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 sm:min-w-40">
+              <button
+                type="button"
+                onClick={() => choose('granted')}
+                className="rounded-md bg-cyan-300 px-4 py-2.5 text-sm font-bold text-slate-950 hover:bg-cyan-200"
+              >
+                Allow analytics
+              </button>
+              <button
+                type="button"
+                onClick={() => choose('denied')}
+                className="rounded-md border border-white/15 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/[0.05]"
+              >
+                Necessary only
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
