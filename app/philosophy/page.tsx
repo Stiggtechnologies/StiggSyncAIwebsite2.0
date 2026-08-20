@@ -77,10 +77,10 @@ export default function PhilosophyPage() {
                   Industrial operations have reached an inflection point. Asset complexity has outpaced human coordination capacity. Maintenance backlogs grow faster than teams can execute. Risk exposure is rising while budgets remain flat.
                 </p>
                 <p>
-                  The tools we've relied on for decades — CMMS, spreadsheets, tribal knowledge — were designed for a different era. They help us track work. They don't help us operate.
+                  The tools we have relied on for decades — CMMS, spreadsheets, tribal knowledge — were designed for a different era. They help us track work. They do not help us operate.
                 </p>
                 <p>
-                  Advances in large-scale AI reasoning models have crossed the capability threshold required for real-time industrial risk analysis and coordination. But chatbots and copilots won't solve industrial operations. We need autonomous systems that can reason about risk, coordinate across domains, and make decisions at machine speed.
+                  Advances in large-scale AI reasoning models have crossed the capability threshold required for real-time industrial risk analysis and coordination. But chatbots and copilots will not solve industrial operations. We need autonomous systems that can reason about risk, coordinate across domains, and make decisions at machine speed.
                 </p>
                 <p className="text-white font-semibold text-2xl">
                   SyncAI is that system.

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 
 const CONSENT_KEY = 'syncai_analytics_consent_v1';
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID?.trim() || '';
@@ -152,7 +152,9 @@ export default function Analytics() {
         </Script>
       )}
 
-      <PageViewTracker enabled={enabled} />
+      <Suspense fallback={null}>
+        <PageViewTracker enabled={enabled} />
+      </Suspense>
 
       {consent === 'unknown' && (
         <div className="fixed bottom-4 left-4 right-4 z-[100] mx-auto max-w-3xl rounded-xl border border-white/15 bg-[#0B151F] p-5 shadow-2xl shadow-black/40 sm:p-6">
