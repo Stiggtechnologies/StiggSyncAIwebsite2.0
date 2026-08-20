@@ -1,20 +1,47 @@
 import Link from 'next/link';
 
+const entryPaths = [
+  {
+    label: 'TRY',
+    title: 'Reliability Engineer',
+    body: 'Bring a real technical question and experience SyncAI’s evidence-led reasoning before committing to a project.',
+    cta: 'Open the live workspace',
+    href: 'https://app.syncai.ca/demo/copilot#syncai-chat',
+    external: true,
+  },
+  {
+    label: 'ASSESS',
+    title: 'Reliability Intelligence Assessment',
+    body: 'A US$35K fixed-scope, 6–8 week assessment that establishes a decision-grade baseline from the maintenance records you already have.',
+    cta: 'Explore the assessment',
+    href: '/reliability-assessment',
+    external: false,
+  },
+  {
+    label: 'DEPLOY',
+    title: 'Strategic Pilot',
+    body: 'Operationalize a bounded high-value workflow with explicit evidence, approval boundaries, and outcome verification.',
+    cta: 'Discuss a Strategic Pilot',
+    href: '/strategic-pilot',
+    external: false,
+  },
+];
+
 const decisionPath = [
   {
     step: '01',
     title: 'Ground the question',
-    body: 'Start with approved procedures, asset configuration, work history, condition evidence, and the operating context that actually governs the decision.',
+    body: 'Start with approved procedures, asset configuration, work history, condition evidence, and the operating context that governs the decision.',
   },
   {
     step: '02',
     title: 'Separate fact from hypothesis',
-    body: 'SyncAI keeps observed evidence, assumptions, competing explanations, and missing information distinct instead of blending them into a confident answer.',
+    body: 'Keep observed evidence, assumptions, competing explanations, and missing information distinct instead of blending them into a confident answer.',
   },
   {
     step: '03',
     title: 'Build the decision case',
-    body: 'The Reliability Engineer structures the technical reasoning, identifies what is blocked, and recommends the lowest-regret next action.',
+    body: 'Structure the technical reasoning, identify what is blocked, and recommend the lowest-regret next action.',
   },
   {
     step: '04',
@@ -24,7 +51,7 @@ const decisionPath = [
   {
     step: '05',
     title: 'Verify the outcome',
-    body: 'Close the loop with the evidence and KPIs that prove whether the intervention worked—and feed that learning back into the operating system.',
+    body: 'Close the loop with the evidence and KPIs that prove whether the intervention worked, then carry that learning forward.',
   },
 ];
 
@@ -44,11 +71,11 @@ const enterprisePrinciples = [
   },
   {
     title: 'Human authority is part of the architecture',
-    body: 'Industrial recommendations can affect safety, production, cost, and asset life. SyncAI treats approval, escalation, and accountability as product primitives—not afterthoughts.',
+    body: 'Industrial recommendations can affect safety, production, cost, and asset life. Approval, escalation, and accountability are product primitives—not afterthoughts.',
   },
   {
     title: 'Evidence before automation',
-    body: 'The platform is designed to expose missing or conflicting evidence, preserve assumptions, and keep the basis of a recommendation visible to the people accountable for the decision.',
+    body: 'The platform exposes missing or conflicting evidence, preserves assumptions, and keeps the basis of a recommendation visible to the people accountable for the decision.',
   },
 ];
 
@@ -85,10 +112,10 @@ export default function Home() {
                 Try Reliability Engineer
               </a>
               <Link
-                href="/strategic-pilot"
+                href="/reliability-assessment"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.05]"
               >
-                Discuss a Strategic Pilot
+                Reliability Assessment
               </Link>
             </div>
 
@@ -163,6 +190,36 @@ export default function Home() {
       </section>
 
       <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Three ways to start</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
+              Experience it, establish the baseline, then operationalize what the evidence supports.
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
+            {entryPaths.map((path) => (
+              <article key={path.label} className="bg-[#0A131C] p-7 sm:p-8">
+                <p className="font-mono text-xs font-semibold tracking-[0.16em] text-cyan-300">{path.label}</p>
+                <h3 className="mt-5 text-2xl font-semibold text-white">{path.title}</h3>
+                <p className="mt-4 min-h-24 text-sm leading-7 text-slate-400">{path.body}</p>
+                {path.external ? (
+                  <a href={path.href} className="mt-5 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200">
+                    {path.cta} →
+                  </a>
+                ) : (
+                  <Link href={path.href} className="mt-5 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200">
+                    {path.cta} →
+                  </Link>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The operating model</p>
@@ -186,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-white/10">
+      <section className="border-b border-white/10 bg-[#0A131C]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-2 lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The wedge</p>
@@ -215,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Enterprise design principles</p>
@@ -226,7 +283,7 @@ export default function Home() {
 
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
             {enterprisePrinciples.map((item) => (
-              <article key={item.title} className="bg-[#0A131C] p-7 sm:p-8">
+              <article key={item.title} className="bg-[#081018] p-7 sm:p-8">
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-400">{item.body}</p>
               </article>
@@ -246,7 +303,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-white/10">
+      <section className="border-b border-white/10 bg-[#0A131C]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
@@ -260,7 +317,7 @@ export default function Home() {
             </div>
             <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2">
               {industries.map((industry) => (
-                <div key={industry} className="bg-[#081018] px-6 py-7 text-sm font-semibold text-slate-200">
+                <div key={industry} className="bg-[#0A131C] px-6 py-7 text-sm font-semibold text-slate-200">
                   {industry}
                 </div>
               ))}
@@ -273,26 +330,26 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Start with a real operating question</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Choose the right starting point</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
-                Bring us one reliability problem where the decision matters.
+                Test the intelligence, establish the reliability truth, or move a qualified workflow into production.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-                We’ll define the evidence boundary, the human approval gates, and how value will be verified before scaling the deployment.
+                SyncAI is designed to reduce the commitment required for the first useful step while keeping evidence, authority, and verification intact.
               </p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <a
-                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+            <div className="flex flex-col gap-3">
+              <Link
+                href="/reliability-assessment"
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
               >
-                Try Reliability Engineer
-              </a>
+                Reliability Assessment
+              </Link>
               <Link
                 href="/strategic-pilot"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
               >
-                Discuss a Pilot
+                Strategic Pilot
               </Link>
             </div>
           </div>
