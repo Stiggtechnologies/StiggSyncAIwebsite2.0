@@ -95,7 +95,7 @@ export default function InvestorsPage() {
                 Downtime economics have shifted from operational inconvenience to balance-sheet risk.
               </p>
               <p className="text-xl font-semibold text-white">
-                Industrial AI is not "software adoption." It is capital strategy.
+                Industrial AI is not “software adoption.” It is capital strategy.
               </p>
             </section>
 
