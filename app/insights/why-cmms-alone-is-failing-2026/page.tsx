@@ -83,7 +83,7 @@ export default function WhyCMMSIsFailingPage() {
 
             <p className="font-semibold">Modern industrial systems no longer operate this way.</p>
 
-            <h3 className="text-2xl font-bold text-white mt-8 mb-4">Today's operations involve:</h3>
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">Today’s operations involve:</h3>
 
             <ul className="list-disc pl-6 space-y-2">
               <li>Interconnected asset networks</li>
@@ -98,7 +98,7 @@ export default function WhyCMMSIsFailingPage() {
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
               <p className="text-lg italic text-gray-300">
-                "The full whitepaper includes detailed analysis of downtime economics, governance requirements, and migration strategies for enterprise deployments."
+                “The full whitepaper includes detailed analysis of downtime economics, governance requirements, and migration strategies for enterprise deployments.”
               </p>
             </div>
           </div>
