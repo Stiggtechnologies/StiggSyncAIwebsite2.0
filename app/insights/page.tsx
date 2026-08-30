@@ -20,7 +20,7 @@ const articles = [
     slug: 'economics-of-autonomous-maintenance',
     title: 'The Economics of Autonomous Maintenance',
     excerpt:
-      'A deep dive into the ROI drivers behind AI-powered maintenance, from downtime reduction to labor optimization and inventory efficiency.',
+      'How maintenance economics should be framed when evidence, approval, and verification come before any claim of savings.',
     category: 'ROI & Business Case',
     readTime: '12 min read',
     icon: TrendingUp,
@@ -63,8 +63,8 @@ export default function InsightsPage() {
             </h1>
 
             <p className="text-xl text-gray-400 leading-relaxed">
-              Deep analysis on autonomous maintenance, AI governance, and the future of
-              industrial operations.
+              Analysis on reliability evidence, industrial AI governance, and why
+              maintenance systems still leave the decision unproven.
             </p>
           </motion.div>
         </div>

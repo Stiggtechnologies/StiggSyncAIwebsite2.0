@@ -1,362 +1,203 @@
-'use client';
+import type { Metadata } from 'next';
+import Link from 'next/link';
 
-import Section from '@/components/ui/Section';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import {
-  Fuel, Zap, Truck, HardHat, Building2, Network,
-  FlaskConical, ScrollText, Pill, Plane, GitBranch, Train, Server,
-} from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'Industries',
+  description:
+    'SyncAI’s beachhead is mining, energy, and oil and gas. Governed industrial intelligence: recommend, evidence, named human approval, work, and verify. Other industries are later, not live templates.',
+  alternates: { canonical: 'https://syncai.ca/industries' },
+  openGraph: {
+    title: 'Industries | SyncAI',
+    description:
+      'Mining, energy, and oil and gas first. Other asset-intensive industries later — not as live tenant templates.',
+    url: 'https://syncai.ca/industries',
+    siteName: 'SyncAI',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SyncAI Industries' }],
+  },
+};
 
-const industries = [
+const operatingLoop = [
+  { step: '01', title: 'Recommend', body: 'Structure a technical recommendation from approved knowledge, asset context, work history, and operating evidence.' },
+  { step: '02', title: 'Evidence', body: 'Keep observed facts, assumptions, competing explanations, and missing information distinct and reviewable.' },
+  { step: '03', title: 'Named human approval', body: 'A named person accepts, rejects, escalates, or returns the recommendation. Direct plant execute is disabled.' },
+  { step: '04', title: 'Work', body: 'Authorized work proceeds through the customer’s existing systems of record and operating authority — not through an unsupervised agent.' },
+  { step: '05', title: 'Verify', body: 'Close the loop with the evidence and KPIs that show whether the intervention worked.' },
+];
+
+const beachhead = [
   {
-    icon: Fuel,
-    name: 'Oil & Gas',
-    slug: 'oil-and-gas',
-    whatBreaks: [
-      'Critical rotating equipment failures triggering $250K-$2M/hour production losses',
-      'PM programs detached from real-time asset condition',
-      'Work order prioritization driven by backlog, not risk exposure',
-      'Cross-site coordination lag between field ops and central maintenance',
+    name: 'Mining & heavy equipment',
+    problem:
+      'Haul, load, and plant assets generate work history, condition evidence, and production pressure that rarely sit in one decision-ready place. Teams still have to investigate failures, rank work, and defend the next action.',
+    fit: [
+      'Failure investigation against work history and condition evidence',
+      'Risk-based work prioritization recommendations',
+      'Maintenance strategy review with explicit evidence grades',
+      'Decision records that stay reviewable after the shift ends',
     ],
-    whatChanges: [
-      'Continuous risk scoring of critical rotating and static assets',
-      'Real-time reprioritization of work based on production impact',
-      'Cross-site operational intelligence layer',
-      'Predictive escalation before shutdown thresholds are reached',
-    ],
-    economicFrame: 'In high-margin production environments, even marginal downtime reduction can justify autonomous infrastructure deployment within months.',
   },
   {
-    icon: HardHat,
-    name: 'Mining & Metals',
-    slug: 'mining-and-metals',
-    whatBreaks: [
-      'Haul truck and shovel downtime cascading into lost throughput',
-      'Reactive maintenance driven by failure, not degradation signals',
-      'Massive asset fleets with fragmented visibility',
-      'Compliance documentation prepared manually post-event',
+    name: 'Energy & utilities',
+    problem:
+      'Aging generation, transmission, and plant assets raise reliability questions that outpace calendar PM and manual reporting. The need is a defensible recommendation, not an unsupervised dispatch.',
+    fit: [
+      'Evidence-led reliability analysis on a bounded asset domain',
+      'Prioritization support that names what the records prove — and what they do not',
+      'Approval boundaries before any change to protection, outage, or work strategy',
+      'Outcome verification against the KPI the operator already uses',
     ],
-    whatChanges: [
-      'Equipment health scoring aligned to throughput impact',
-      'Predictive maintenance windows synchronized with production cycles',
-      'Fleet-level risk benchmarking across sites',
-      'Continuous audit trail for environmental and safety compliance',
-    ],
-    economicFrame: 'With hourly downtime costs exceeding $100K on critical equipment, predictive maintenance pays for itself with a single avoided failure.',
   },
   {
-    icon: Zap,
-    name: 'Power Generation & Utilities',
-    slug: 'power-generation-and-utilities',
-    whatBreaks: [
-      'Aging transmission and distribution assets increasing failure risk',
-      'Deferred capital budgets compounding reliability exposure',
-      'Manual compliance documentation for regulatory bodies',
-      'Limited predictive modeling across distributed grid infrastructure',
+    name: 'Oil & gas',
+    problem:
+      'Critical rotating and static equipment, fragmented work history, and backlog-driven prioritization make it hard to convert technical evidence into an accountable next action.',
+    fit: [
+      'Governed recommendations for investigation and work priority',
+      'Separation of established facts from unproven failure modes',
+      'Named human authority before work is released',
+      'Traceability from evidence to the decision that was actually taken',
     ],
-    whatChanges: [
-      'Risk-based asset replacement modeling',
-      'Predictive grid reliability scoring (SAIDI/SAIFI impact)',
-      'Automated compliance documentation and traceability',
-      'Intelligent field dispatch prioritization',
-    ],
-    economicFrame: 'Regulatory penalties and outage costs far exceed infrastructure investment. Proactive risk management is economically defensible.',
   },
-  {
-    icon: Building2,
-    name: 'Heavy Manufacturing',
-    slug: 'heavy-manufacturing',
-    whatBreaks: [
-      'OEE degradation from unplanned stoppages',
-      'Work order backlogs masking production-critical failures',
-      'Siloed MES, CMMS, and ERP systems',
-      'Maintenance strategy disconnected from production economics',
-    ],
-    whatChanges: [
-      'AI-driven prioritization aligned to OEE impact',
-      'Autonomous coordination between maintenance and production',
-      'Real-time asset risk quantification',
-      'Unified operational intelligence layer',
-    ],
-    economicFrame: 'Every percentage point of OEE improvement translates directly to throughput and margin. AI-driven prioritization compounds these gains.',
-  },
-  {
-    icon: FlaskConical,
-    name: 'Chemicals & Petrochemicals',
-    slug: 'chemicals-and-petrochemicals',
-    whatBreaks: [
-      'Catastrophic failure risk on pressure vessels, fired heaters, and rotating equipment',
-      'Mechanical integrity programs lagging real corrosion and fatigue progression',
-      'Process Safety Management (PSM) documentation prepared reactively',
-      'Turnaround scope decisions made without risk-quantified data',
-    ],
-    whatChanges: [
-      'Continuous corrosion-rate and damage-mechanism modeling on static assets',
-      'Risk-based inspection (API 580/581) driven by live condition data',
-      'Automated PSM and MOC documentation aligned to OSHA 1910.119',
-      'Turnaround scope optimization weighted by quantified risk reduction',
-    ],
-    economicFrame: 'A single uncontrolled release or LOPC event can exceed $100M in liability, environmental cost, and reputational damage. Mechanical integrity is balance-sheet-defensible spend.',
-  },
-  {
-    icon: ScrollText,
-    name: 'Pulp, Paper & Packaging',
-    slug: 'pulp-paper-and-packaging',
-    whatBreaks: [
-      'Recovery boiler and paper machine downtime cascading across the line',
-      'Aging continuous-process assets with deferred replacement capital',
-      'Roll, felt, and screen-life forecasting based on calendar, not condition',
-      'Energy-intensity penalties from unmonitored efficiency drift',
-    ],
-    whatChanges: [
-      'Condition-based replacement forecasting for rolls, felts, and screens',
-      'Real-time recovery boiler integrity monitoring',
-      'Continuous energy efficiency scoring tied to ISO 50001',
-      'Integrated DCS, CMMS, and reliability data layer',
-    ],
-    economicFrame: 'In continuous-process environments, a single avoided unplanned outage typically funds a year of autonomous infrastructure.',
-  },
-  {
-    icon: Pill,
-    name: 'Pharmaceuticals & Life Sciences',
-    slug: 'pharmaceuticals',
-    whatBreaks: [
-      'GMP-critical equipment qualification and re-validation overhead',
-      'Calibration and PM compliance gaps risking FDA 21 CFR Part 11 exposure',
-      'Sterile/cleanroom asset deviations not detected until batch QC review',
-      'Validated systems requiring manual audit trail reconstruction',
-    ],
-    whatChanges: [
-      'Continuous qualification and calibration drift monitoring',
-      'Automated GxP audit trails (immutable, signed, regulator-ready)',
-      'Predictive deviation detection on cleanroom HVAC and utilities',
-      'Risk-based revalidation scope driven by live condition data',
-    ],
-    economicFrame: 'A single GMP deviation can suspend a production line and cost more than a year of autonomous monitoring. Compliance is the buying signal.',
-  },
-  {
-    icon: Plane,
-    name: 'Aerospace & Defense Manufacturing + MRO',
-    slug: 'aerospace-and-defense',
-    whatBreaks: [
-      'High-CAPEX assets (autoclaves, CNC, test stands) with idiosyncratic failure modes',
-      'AS9100 and ITAR documentation prepared manually per audit cycle',
-      'MRO turn times constrained by parts and tooling visibility',
-      'Configuration-controlled work orders requiring full chain-of-custody',
-    ],
-    whatChanges: [
-      'Predictive scheduling for high-value tooling and test equipment',
-      'AS9100 / ITAR-compliant audit trails generated continuously',
-      'Cross-program tooling utilization optimization',
-      'Configuration-aware work order routing',
-    ],
-    economicFrame: 'A single grounded airframe can cost $500K/day in revenue and lease obligations. Asset availability is contractually monetized.',
-  },
-  {
-    icon: GitBranch,
-    name: 'Pipelines & Midstream',
-    slug: 'pipelines-and-midstream',
-    whatBreaks: [
-      'Integrity management programs lagging real wall-loss and crack progression',
-      'PHMSA / DOT documentation prepared reactively post-incident',
-      'In-line inspection (ILI) data fragmented across vendors and runs',
-      'Pump station and compressor reliability decoupled from throughput economics',
-    ],
-    whatChanges: [
-      'Continuous threat-and-consequence modeling per ASME B31.8S',
-      'Unified ILI history with predictive corrosion-rate modeling',
-      'Automated PHMSA / NEB regulatory submittals',
-      'Throughput-weighted compressor and pump reliability scoring',
-    ],
-    economicFrame: 'A single integrity event can exceed $1B in cleanup, regulatory, and litigation cost. Continuous monitoring is the only economically defensible posture.',
-  },
-  {
-    icon: Train,
-    name: 'Rail, Marine & Aviation Infrastructure',
-    slug: 'rail-marine-and-aviation',
-    whatBreaks: [
-      'Locomotive, vessel, and airframe availability constrained by manual inspection cycles',
-      'Crew, fuel, and slot-time costs amplified by unplanned downtime',
-      'Component overhaul intervals based on usage hours, not actual condition',
-      'Cross-fleet reliability data trapped in OEM telemetry silos',
-    ],
-    whatChanges: [
-      'Cross-fleet reliability benchmarking and predictive overhaul scheduling',
-      'Unified telemetry layer across OEMs and operators',
-      'Condition-based component lifing replacing fixed-interval overhauls',
-      'Network-level disruption forecasting for crew and slot optimization',
-    ],
-    economicFrame: 'A single grounded aircraft, derailed train, or stranded vessel can cost $100K-$1M/day. Network-effect reliability gains compound across the fleet.',
-  },
-  {
-    icon: Truck,
-    name: 'Equipment Rental',
-    slug: 'equipment-rental',
-    whatBreaks: [
-      'Hidden degradation reducing rental readiness',
-      'Maintenance cycles not aligned with utilization patterns',
-      'Reactive repairs reducing asset availability windows',
-      'Poor visibility into fleet-wide asset condition',
-    ],
-    whatChanges: [
-      'Utilization-aware predictive maintenance scheduling',
-      'Automated service timing between rental cycles',
-      'Fleet-level health visibility dashboard',
-      'Increased asset turnover efficiency',
-    ],
-    economicFrame: 'Higher fleet utilization and reduced emergency repairs directly improve unit economics and customer retention.',
-  },
-  {
-    icon: Network,
-    name: 'Multi-site Operators',
-    slug: 'multi-site-operators',
-    whatBreaks: [
-      'Inconsistent maintenance standards across sites',
-      'No enterprise-wide asset risk benchmarking',
-      'Delayed executive visibility into operational risk',
-      'Manual reporting aggregation across locations',
-    ],
-    whatChanges: [
-      'Enterprise-wide risk visibility and benchmarking',
-      'Standardized AI-driven prioritization logic',
-      'Cross-site performance benchmarking',
-      'Executive-level operational dashboards',
-    ],
-    economicFrame: 'Standardization at scale creates compounding efficiency gains that accelerate with each site brought online.',
-  },
-  {
-    icon: Server,
-    name: 'Data Centers & Critical Digital Infrastructure',
-    slug: 'data-centers',
-    whatBreaks: [
-      'Thermal events from rising rack densities (50-100 kW GPU racks vs 5-10 kW traditional)',
-      'Cooling and UPS failures cascading into customer SLA breaches',
-      'PM cycles built for legacy densities, not AI/ML workload patterns',
-      'Siloed BMS, DCIM, and CMMS preventing single-pane-of-glass risk visibility',
-    ],
-    whatChanges: [
-      'Real-time thermal-risk scoring across cooling and power assets',
-      'Predictive maintenance windows aligned to workload patterns (training runs vs steady-state)',
-      'Unified BMS + DCIM + CMMS intelligence layer',
-      'SLA-impact-weighted work prioritization across critical infrastructure',
-    ],
-    economicFrame: 'At hyperscale, a single hour of unplanned downtime can exceed $1M in customer credits and reputational cost. Predictive cooling and power maintenance pays for itself with a single avoided thermal event.',
-  },
+];
+
+const laterIndustries = [
+  'Manufacturing',
+  'Transportation & fleets',
+  'Infrastructure & facilities',
 ];
 
 export default function IndustriesPage() {
   return (
-    <main className="pt-16">
-      <Section>
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Built for <span className="text-[#3B82F6]">Asset-Intensive</span> Industries
-            </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Every industry has unique operational challenges. Our AI agents adapt to your specific context, constraints, and priorities.
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Where it fits</p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            Mining, energy, and oil and gas first.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+            SyncAI is governed industrial intelligence: recommend → evidence → named human approval → work → verify. The beachhead is reliability and maintenance work in mining, energy, and oil and gas — not a catalog of live industry templates.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The operating model</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              The same governed path in every beachhead operation.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              SyncAI does not autonomously coordinate the plant. It does not file regulatory submittals. It does not provision a vertical tenant in 60 seconds. Recommendations stay reviewable, and a named human remains the approver.
             </p>
           </div>
-        </AnimatedSection>
 
-        <div className="space-y-16">
-          {industries.map((industry, index) => {
-            const Icon = industry.icon;
-            return (
-              <AnimatedSection key={index} delay={index * 0.05}>
-                <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg overflow-hidden">
-                  <div className="bg-gradient-to-r from-[#3B82F6]/10 to-transparent p-8 border-b border-white/10">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-14 h-14 bg-[#3B82F6]/20 rounded-lg flex items-center justify-center">
-                        <Icon className="text-[#3B82F6]" size={28} />
-                      </div>
-                      <h2 className="text-3xl font-bold text-white">{industry.name}</h2>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-8 p-8">
-                    <div>
-                      <h3 className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-4">
-                        What Breaks Today
-                      </h3>
-                      <ul className="space-y-3">
-                        {industry.whatBreaks.map((point, idx) => (
-                          <li key={idx} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-gray-400 text-sm">{point}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-4">
-                        What SyncAI Changes
-                      </h3>
-                      <ul className="space-y-3">
-                        {industry.whatChanges.map((change, idx) => (
-                          <li key={idx} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-[#3B82F6] rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-gray-300 text-sm font-medium">{change}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="px-8 pb-8">
-                    <p className="text-sm text-gray-500 italic border-l-2 border-[#3B82F6]/30 pl-4 mb-6">
-                      {industry.economicFrame}
-                    </p>
-                    <a
-                      href={`https://app.syncai.ca/signup?industry=${industry.slug}`}
-                      className="inline-flex items-center px-5 py-2.5 bg-[#3B82F6] text-white rounded-lg font-medium text-sm hover:bg-[#3B82F6]/90 transition-colors shadow-md shadow-[#3B82F6]/20"
-                    >
-                      Deploy {industry.name} template →
-                    </a>
-                    <span className="text-xs text-gray-500 ml-3">60-second tenant provisioning</span>
-                  </div>
-                </div>
-              </AnimatedSection>
-            );
-          })}
-        </div>
-
-        <AnimatedSection delay={0.4}>
-          <div className="mt-32 max-w-4xl mx-auto">
-            <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-12 mb-16">
-              <h2 className="text-3xl font-bold text-white mb-8 text-center">
-                Economic Impact Across Industries
-              </h2>
-              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-                <p>
-                  Even modest improvements in unplanned downtime, reactive labor allocation, spare parts carrying cost, and compliance preparation time can justify autonomous maintenance deployment within a single fiscal cycle.
-                </p>
-                <p className="text-white font-medium">
-                  SyncAI is designed for environments where operational risk carries measurable financial consequences.
-                </p>
+          <div className="mt-12 divide-y divide-white/10 border-y border-white/10">
+            {operatingLoop.map((item) => (
+              <div key={item.step} className="grid gap-4 py-7 md:grid-cols-[90px_260px_1fr] md:items-start">
+                <span className="font-mono text-sm text-slate-600">{item.step}</span>
+                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+                <p className="max-w-3xl text-sm leading-6 text-slate-400">{item.body}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Beachhead</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
+              Three operating environments we will take first.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions — with approval still explicit.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
+            {beachhead.map((industry) => (
+              <article key={industry.name} className="bg-[#081018] p-7 sm:p-8">
+                <h3 className="text-xl font-semibold text-white">{industry.name}</h3>
+                <p className="mt-4 text-sm leading-7 text-slate-400">{industry.problem}</p>
+                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Where SyncAI fits</p>
+                <ul className="mt-3 space-y-2">
+                  {industry.fit.map((item) => (
+                    <li key={item} className="text-sm leading-6 text-slate-300">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Later, not live</p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+                Other asset-intensive industries can wait.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-slate-400">
+                These environments share the same class of reliability problem. They are not live industry templates, and this page does not offer a deploy button for them.
+              </p>
+            </div>
+            <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-1">
+              {laterIndustries.map((industry) => (
+                <div key={industry} className="bg-[#0A131C] px-6 py-7 text-sm font-semibold text-slate-200">
+                  {industry}
+                </div>
+              ))}
             </div>
           </div>
-        </AnimatedSection>
+          <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-500">
+            SyncAI is not production-certified. There are no live production CMMS, historian, or ERP connectors on this path. There are no named customer savings on this page. Assessment and pilot work starts from customer-provided records and a bounded operating question.
+          </p>
+        </div>
+      </section>
 
-        <AnimatedSection delay={0.5}>
-          <div className="text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Talk to Us About Your Environment
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              If you operate critical physical assets, SyncAI can adapt to your operational context.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
-            >
-              Contact Us
-            </a>
+      <section>
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How to start</p>
+              <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
+                Reliability Engineer, then a $35K / 6–8 week assessment, then a bounded Strategic Pilot.
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
+                Try the workspace on a real technical question. If the records support it, establish a decision-grade baseline. Operationalize only a bounded workflow with explicit evidence, approval, and verification.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
+              >
+                Try Reliability Engineer
+              </a>
+              <Link
+                href="/reliability-assessment"
+                className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
+              >
+                Reliability Assessment
+              </Link>
+              <Link
+                href="/strategic-pilot"
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
+              >
+                Strategic Pilot
+              </Link>
+            </div>
           </div>
-        </AnimatedSection>
-      </Section>
+        </div>
+      </section>
     </main>
   );
 }

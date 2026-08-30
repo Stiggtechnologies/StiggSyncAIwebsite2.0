@@ -47,7 +47,7 @@ export default function GovernancePage() {
 
           <div className="text-gray-300 space-y-6">
             <p className="text-lg">
-              The deployment of autonomous AI agents in industrial environments raises a fundamental question: How do you maintain operational accountability when decision-making velocity exceeds human review capacity?
+              Putting industrial AI into a reliability workflow raises a more basic question: how do you keep operational accountability when a model can draft a recommendation faster than a human can review it?
             </p>
 
             <p className="text-xl font-semibold text-white">

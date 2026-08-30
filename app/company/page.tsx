@@ -9,17 +9,17 @@ const milestones = [
   {
     year: '2024',
     title: 'Foundation',
-    description: 'Research & development of autonomous agent architecture',
+    description: 'Research and development of governed industrial intelligence',
   },
   {
     year: '2025',
-    title: 'First Deployments',
-    description: 'Strategic pilots with asset-intensive operators',
+    title: 'Platform development',
+    description: 'Reliability Engineer, evidence-led decision records, and named human approval as product primitives',
   },
   {
     year: '2026',
-    title: 'Enterprise Expansion',
-    description: 'Multi-site deployments and industry vertical scaling',
+    title: 'Commercial motion',
+    description: 'Reliability Assessment and bounded Strategic Pilot for mining, energy, and oil and gas',
   },
 ];
 
@@ -37,7 +37,7 @@ const whyNow = [
   {
     icon: Target,
     title: 'AI Maturity',
-    description: 'Generative AI has reached the capability threshold for autonomous industrial reasoning, risk analysis, and decision-making at scale.',
+    description: 'Generative AI can now support evidence-led industrial reasoning at useful speed — provided recommendations stay reviewable and a named human remains the approver.',
   },
 ];
 
@@ -48,10 +48,10 @@ export default function CompanyPage() {
         <AnimatedSection>
           <div className="text-center mb-20">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Industrial AI <span className="text-[#3B82F6]">Infrastructure</span>
+              Governed Industrial <span className="text-[#3B82F6]">Intelligence</span>
             </h1>
             <p className="text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Building the autonomous intelligence layer for asset-intensive operations.
+              Better industrial decisions, grounded in the evidence your operation already has.
             </p>
           </div>
         </AnimatedSection>
@@ -63,7 +63,7 @@ export default function CompanyPage() {
               Industrial operations have reached an inflection point. Asset complexity has outpaced human coordination capacity. Maintenance backlogs grow faster than teams can execute. Risk exposure is rising while budgets remain flat.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
-              SyncAI is building the infrastructure layer that enables autonomous industrial operations — AI agents that continuously analyze risk, prioritize work, and coordinate execution with human oversight.
+              SyncAI is building governed industrial intelligence — recommend, evidence, named human approval, work, and verify. Direct plant execute is disabled. The beachhead is reliability work in mining, energy, and oil and gas.
             </p>
           </div>
         </AnimatedSection>
@@ -121,7 +121,7 @@ export default function CompanyPage() {
                   Our team brings deep expertise from industrial operations, enterprise AI, and mission-critical systems.
                 </p>
                 <p className="text-lg text-gray-400">
-                  Backed by advisors from asset-intensive industries, reliability engineering, and autonomous systems research.
+                  Backed by advisors from asset-intensive industries and reliability engineering.
                 </p>
               </div>
             </div>
