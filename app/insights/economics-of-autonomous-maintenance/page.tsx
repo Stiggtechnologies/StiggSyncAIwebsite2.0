@@ -51,7 +51,7 @@ export default function EconomicsPage() {
             </p>
 
             <p>
-              Autonomous maintenance infrastructure shifts economic value across four primary vectors: downtime reduction, labor optimization, inventory efficiency, and capital deployment.
+              Maintenance economics still turn on four vectors — downtime, labor, inventory, and capital — but those numbers are only useful when the evidence can support them and a named human still approves the work.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Cost Structure Problem</h2>
@@ -65,7 +65,7 @@ export default function EconomicsPage() {
             </p>
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
-              <h3 className="text-xl font-bold text-white mb-4">ROI Drivers</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Common industry discussion ranges — not SyncAI customer results</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-[#3B82F6] font-bold">↓</span>

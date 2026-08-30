@@ -1,150 +1,194 @@
-'use client';
+import type { Metadata } from 'next';
+import Link from 'next/link';
 
-import Section from '@/components/ui/Section';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import AnimatedCard from '@/components/ui/AnimatedCard';
-import { Shield, Eye, Lock, FileCheck, Users, Database, Mail } from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'Security',
+  description:
+    'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Third-party certifications are claimed only when current. Enterprise SSO is a later product step.',
+  alternates: { canonical: 'https://syncai.ca/security' },
+  openGraph: {
+    title: 'Security | SyncAI',
+    description:
+      'Encryption, RLS, audit logs, and human approval as a product primitive. Certifications are represented only when formally achieved and current.',
+    url: 'https://syncai.ca/security',
+    siteName: 'SyncAI',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SyncAI Security' }],
+  },
+};
 
-const securityPrinciples = [
+const implementedControls = [
   {
-    icon: Users,
-    title: 'Human-in-the-Loop Model',
-    description: 'AI agents recommend and prioritize. Humans approve and execute. Configurable approval thresholds ensure appropriate oversight for every decision.',
+    title: 'Human approval is a primitive',
+    body: 'SyncAI recommends. A named human accepts, rejects, escalates, or returns the recommendation. Direct plant execute is disabled. Approval, escalation, and accountability are product architecture — not a policy overlay.',
   },
   {
-    icon: FileCheck,
-    title: 'Audit Logs & Traceability',
-    description: 'Every AI recommendation, human decision, and system action is logged with full context. Complete auditability for compliance and continuous improvement.',
+    title: 'Audit log and decision traceability',
+    body: 'Recommendations, evidence references, approval actions, and workflow state are designed to remain reviewable. The basis of a decision should not disappear into an opaque chat transcript.',
   },
   {
-    icon: Lock,
-    title: 'Role-Based Access Controls',
-    description: 'Granular permissions by role, site, and asset group. Integration with enterprise SSO and identity providers. Principle of least privilege enforced.',
+    title: 'Encryption',
+    body: 'Operational information is encrypted in transit and at rest in the hosted environment. Customer-specific encryption and residency requirements are described against the actual engagement, not as a generic guarantee.',
   },
   {
-    icon: Database,
-    title: 'Data Segregation',
-    description: 'Multi-tenant architecture with complete data isolation. Optional on-premise or private cloud deployment for maximum control.',
+    title: 'Row-level security',
+    body: 'Multi-tenant isolation is enforced with row-level security (RLS) in the data layer, alongside application role boundaries. Customer configuration determines who can see and act on operational information.',
   },
   {
-    icon: Eye,
-    title: 'Transparent AI Operations',
-    description: 'Explainable AI with clear reasoning chains. No black boxes. Every recommendation includes supporting evidence and risk analysis.',
+    title: 'Role-aware access',
+    body: 'Access is scoped by role and the information boundary agreed for the workspace. Least privilege is the design intent. Enterprise SSO is a later product step, not a current capability.',
   },
   {
-    icon: Shield,
-    title: 'Enterprise-Grade Infrastructure',
-    description: 'Built on hardened cloud infrastructure with encryption at rest and in transit. Regular security assessments and penetration testing.',
+    title: 'Evidence before automation',
+    body: 'The platform keeps observed evidence, assumptions, and missing information distinct. People accountable for the decision can see why a recommendation was made.',
+  },
+];
+
+const notClaimed = [
+  {
+    title: 'Enterprise SSO',
+    body: 'Identity-provider SSO is a later product step. It is not a shipping capability on this site.',
+  },
+  {
+    title: 'Packaged on-prem',
+    body: 'There is no packaged on-premise product to order from this page. Deployment and data-handling requirements are defined during security and data discovery.',
+  },
+  {
+    title: 'Third-party certifications',
+    body: 'SOC 2, HIPAA, and similar attestations are represented publicly only when formally achieved and current. Architecture discussions distinguish implemented controls from certification status.',
   },
 ];
 
 export default function SecurityPage() {
   return (
-    <main className="pt-16">
-      <Section>
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Security & <span className="text-[#3B82F6]">Governance</span>
-            </h1>
-            <p className="text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Enterprise-grade security with human oversight at every level.
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-32">
-          {securityPrinciples.map((principle, index) => {
-            const Icon = principle.icon;
-            return (
-              <AnimatedCard key={index} delay={index * 0.1}>
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-[#3B82F6]/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#3B82F6]/20 transition-colors">
-                    <Icon className="text-[#3B82F6]" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">{principle.title}</h3>
-                  </div>
-                </div>
-                <p className="text-gray-400 leading-relaxed">{principle.description}</p>
-              </AnimatedCard>
-            );
-          })}
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Security & governance</p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            Describe the controls that exist. Keep human approval in the architecture.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+            SyncAI is governed industrial intelligence. Security and deployment capabilities are described by implemented controls and validated configuration — not by a certification badge or a packaged on-prem SKU.
+          </p>
         </div>
+      </section>
 
-        <AnimatedSection delay={0.6}>
-          <div className="max-w-4xl mx-auto mb-32">
-            <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-12">
-              <h2 className="text-3xl font-bold text-white mb-8 text-center">Governance Framework</h2>
-              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-                <p>
-                  SyncAI operates under a configurable governance model that ensures human oversight matches your risk tolerance and operational requirements.
-                </p>
-                <p>
-                  Define approval thresholds by asset criticality, work order value, or risk score. Route decisions to appropriate stakeholders automatically. Override any AI recommendation at any time.
-                </p>
-                <p>
-                  All system actions are traceable to a human decision-maker. AI agents augment your team — they do not replace accountability.
-                </p>
-              </div>
-            </div>
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Implemented controls</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              Encryption, isolation, auditability, and named authority.
+            </h2>
           </div>
-        </AnimatedSection>
 
-        <AnimatedSection delay={0.7}>
-          <div className="max-w-4xl mx-auto mb-32">
-            <div className="border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
-              <h2 className="text-3xl font-bold text-white mb-6 text-center">Sensitive Industries</h2>
-              <p className="text-xl text-gray-300 leading-relaxed text-center mb-8">
-                We understand the regulatory and security requirements of highly regulated environments including healthcare, defense, and critical infrastructure.
+          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
+            {implementedControls.map((control) => (
+              <article key={control.title} className="bg-[#0A131C] p-7 sm:p-8">
+                <h3 className="text-lg font-semibold text-white">{control.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">{control.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Human authority</p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+                The model is not the final approver.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-slate-400">
+                Industrial recommendations can affect safety, production, cost, and asset life. SyncAI therefore treats recommendation and authority as separate layers. A named human remains accountable.
               </p>
-              <p className="text-lg text-gray-400 text-center">
-                Our architecture is designed to support compliance-readiness for frameworks including HIPAA, SOC 2, and industrial security standards. Formal certifications are part of our enterprise roadmap.
+            </div>
+            <div className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-9">
+              <div className="grid gap-4 sm:grid-cols-4">
+                {['Recommendation', 'Evidence review', 'Named approval', 'Controlled work'].map((item, index) => (
+                  <div key={item} className="rounded-lg border border-white/10 p-4">
+                    <p className="font-mono text-xs text-slate-600">0{index + 1}</p>
+                    <p className="mt-5 text-sm font-semibold text-slate-200">{item}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-sm leading-6 text-slate-500">
+                Exact approval paths are configured for the customer’s operating model, roles, and risk boundaries. Direct plant execute stays off.
               </p>
             </div>
           </div>
-        </AnimatedSection>
+        </div>
+      </section>
 
-        <AnimatedSection delay={0.8}>
-          <div className="max-w-4xl mx-auto">
-            <div className="border border-white/10 bg-white/[0.02] backdrop-blur-sm rounded-lg p-12">
-              <h2 className="text-3xl font-bold text-white mb-6 text-center">Data Privacy</h2>
-              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-                <p>
-                  Your operational data remains under your control. SyncAI can be deployed in your cloud environment or on-premise to meet data residency and sovereignty requirements.
-                </p>
-                <p>
-                  We do not train AI models on customer data without explicit consent. Your competitive intelligence stays yours.
-                </p>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay={0.9}>
-          <div className="mt-20 text-center border border-[#3B82F6]/30 bg-[#3B82F6]/[0.05] rounded-lg p-12">
-            <h2 className="text-3xl font-bold text-white mb-6">Security Contact</h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              For security inquiries, vulnerability reports, or to request detailed documentation on our security architecture and compliance posture.
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">What we do not claim</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              Later product steps are not current capabilities.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              SyncAI does not represent third-party certifications as complete unless they have been formally achieved and are current.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          </div>
+
+          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
+            {notClaimed.map((item) => (
+              <article key={item.title} className="bg-[#0A131C] p-7 sm:p-8">
+                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Data handling</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
+              Work from the customer-approved information boundary.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              SyncAI is designed to use the records and systems the customer authorizes. Assessment work starts from customer-provided exports. Integration requirements for a later deployment are defined during security and data discovery — not assumed as live production connectors today.
+            </p>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              We do not train foundation models on customer operational data without explicit consent. Competitive and operating information stays the customer’s.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <h2 className="text-3xl font-semibold tracking-[-0.03em] text-white">Security contact</h2>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
+                For vulnerability reports, architecture questions, or customer-specific control discussions against an agreed scope.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
               <a
                 href="mailto:security@syncai.ca"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
+                className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
               >
-                <Mail className="w-5 h-5" />
                 security@syncai.ca
               </a>
-              <a
+              <Link
                 href="/contact"
-                className="inline-block px-8 py-4 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
               >
-                General Inquiries
-              </a>
+                General inquiries
+              </Link>
             </div>
           </div>
-        </AnimatedSection>
-      </Section>
+        </div>
+      </section>
     </main>
   );
 }
