@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -22,8 +23,15 @@ export default function Navigation() {
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0B0F14]/90 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold tracking-wide text-white">
-            Sync<span className="text-cyan-300">AI</span>
+          <Link href="/" className="inline-flex items-center" aria-label="SyncAI home">
+            <Image
+              src="/brand/syncai-wordmark.png"
+              alt="SyncAI"
+              width={303}
+              height={144}
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
 
           <div className="hidden items-center gap-6 lg:flex">

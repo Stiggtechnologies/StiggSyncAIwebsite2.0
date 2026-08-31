@@ -47,6 +47,7 @@ ocr_*json
 tmp-*/
 tmp_/
 *.png
+!public/brand/*.png
 
 # Private/local notes
 MEMORY.md
