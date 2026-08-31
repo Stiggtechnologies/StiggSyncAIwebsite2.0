@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import BrandWordmark from '@/components/BrandWordmark';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 export default function Footer() {
   return (
@@ -6,11 +8,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="text-xl font-bold tracking-wide text-white">
-              Sync<span className="text-cyan-300">AI</span>
-            </Link>
+            <BrandWordmark />
             <p className="mt-3 text-xs text-slate-600">SyncAI is a product of Stigg.</p>
-            <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
+            <p className="mt-4 max-w-md text-sm leading-[1.7] text-slate-400">
               Governed industrial intelligence for reliability, maintenance, and asset-intensive operations.
             </p>
             <div className="mt-5 space-y-1 text-sm">
@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white">Start</h3>
             <ul className="mt-4 space-y-3">
-              <li><a href="https://app.syncai.ca/demo/copilot#syncai-chat" className="text-sm text-slate-400 hover:text-white">Reliability Engineer</a></li>
+              <li><a href={APP_SETUP_URL} className="text-sm text-slate-400 hover:text-white">Reliability Engineer</a></li>
               <li><Link href="/reliability-assessment" className="text-sm text-slate-400 hover:text-white">Reliability Assessment</Link></li>
               <li><Link href="/strategic-pilot" className="text-sm text-slate-400 hover:text-white">Strategic Pilot</Link></li>
               <li><Link href="/contact" className="text-sm text-slate-400 hover:text-white">Contact</Link></li>

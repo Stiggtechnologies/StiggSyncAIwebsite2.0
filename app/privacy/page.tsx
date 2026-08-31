@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Privacy</p>
           <h1 className="mt-4 text-5xl font-semibold tracking-[-0.04em] text-white">Privacy Policy</h1>
           <p className="mt-5 text-sm text-slate-500">Last updated: August 2026</p>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-300">
             This policy explains how SyncAI handles information submitted through the public website and how optional website analytics are controlled.
           </p>
         </div>

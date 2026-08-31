@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = {
   title: 'Industries',
@@ -76,7 +77,7 @@ export default function IndustriesPage() {
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             Mining, energy, and oil and gas first.
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             SyncAI is governed industrial intelligence: recommend → evidence → named human approval → work → verify. The beachhead is reliability and maintenance work in mining, energy, and oil and gas — not a catalog of live industry templates.
           </p>
         </div>
@@ -177,7 +178,7 @@ export default function IndustriesPage() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                href={APP_SETUP_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
               >
                 Try Reliability Engineer

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ReliabilityAssessmentInquiryForm from '@/components/assessment/ReliabilityAssessmentInquiryForm';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = {
   title: 'Reliability Intelligence Assessment',
@@ -46,10 +47,10 @@ export default function ReliabilityAssessmentPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-28">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Reliability Intelligence Assessment</p>
-            <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">Know what your maintenance data actually proves.</h1>
-            <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">A fixed-scope, 6–8 week assessment that turns the maintenance records you already have into a defensible reliability baseline, evidence-graded findings, prioritized opportunities, and a 90-day action plan—without installing software or giving SyncAI access to your production systems.</p>
+            <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.15] tracking-[-0.045em] text-white sm:text-5xl">Know what your maintenance data actually proves.</h1>
+            <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-300">A fixed-scope, 6–8 week assessment that turns the maintenance records you already have into a defensible reliability baseline, evidence-graded findings, prioritized opportunities, and a 90-day action plan—without installing software or giving SyncAI access to your production systems.</p>
             <div className="mt-9 flex flex-wrap gap-3 text-sm">{['US$35,000 fixed fee','6–8 weeks','One bounded operating domain'].map((item) => <span key={item} className="rounded-full border border-white/15 px-4 py-2 text-slate-200">{item}</span>)}</div>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#assessment-call" className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200">Request a 30-minute assessment call</a><a href="https://app.syncai.ca/demo/copilot#syncai-chat" className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Try Reliability Engineer</a></div>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#assessment-call" className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200">Request a 30-minute assessment call</a><a href={APP_SETUP_URL} className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Try Reliability Engineer</a></div>
           </div>
           <div className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Standard assessment scope</p>

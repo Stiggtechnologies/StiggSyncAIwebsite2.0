@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 const entryPaths = [
   {
@@ -6,7 +7,7 @@ const entryPaths = [
     title: 'Reliability Engineer',
     body: 'Bring a real technical question and experience SyncAI’s evidence-led reasoning before committing to a project.',
     cta: 'Open the live workspace',
-    href: 'https://app.syncai.ca/demo/copilot#syncai-chat',
+    href: APP_SETUP_URL,
     external: true,
   },
   {
@@ -90,23 +91,23 @@ const industries = [
 
 export default function Home() {
   return (
-    <main className="bg-[#081018] text-slate-100">
+    <main className="bg-[#081018] pt-20 text-slate-100">
       <section className="border-b border-white/10">
-        <div className="mx-auto grid min-h-[760px] max-w-7xl items-center gap-16 px-6 py-28 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:gap-16 sm:py-24 lg:min-h-[760px] lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-28">
           <div>
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
               Governed industrial intelligence
             </p>
-            <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-4xl text-4xl font-semibold leading-[1.15] tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
               Better industrial decisions, grounded in the evidence your operation already has.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+            <p className="mt-8 max-w-2xl text-lg leading-[1.7] text-slate-300 sm:text-xl">
               SyncAI connects approved knowledge, asset context, work history, and operating evidence so reliability and maintenance teams can investigate failures, prioritize work, and move recommendations through controlled human approval.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                href={APP_SETUP_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
               >
                 Try Reliability Engineer
@@ -226,7 +227,7 @@ export default function Home() {
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
               One governed path from operational evidence to controlled action.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-400">
+            <p className="mt-5 text-lg leading-[1.7] text-slate-400">
               SyncAI is designed around the way high-consequence industrial decisions should be made: show the basis, expose uncertainty, keep authority clear, and verify the outcome.
             </p>
           </div>
@@ -250,11 +251,11 @@ export default function Home() {
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
               Start with a Reliability Engineer that can work like an experienced technical partner.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-400">
+            <p className="mt-6 text-lg leading-[1.7] text-slate-400">
               Reliability is where engineering knowledge, maintenance history, asset risk, work execution, and operating context collide. It is the proving ground for SyncAI’s broader industrial intelligence layer.
             </p>
             <a
-              href="https://app.syncai.ca/demo/copilot#syncai-chat"
+              href={APP_SETUP_URL}
               className="mt-8 inline-flex items-center text-sm font-semibold text-cyan-300 hover:text-cyan-200"
             >
               Open the live workspace →
