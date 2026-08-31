@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import BrandWordmark from '@/components/BrandWordmark';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 export default function Footer() {
@@ -8,15 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex items-center" aria-label="SyncAI home">
-              <Image
-                src="/brand/syncai-wordmark.png"
-                alt="SyncAI"
-                width={303}
-                height={144}
-                className="h-10 w-auto"
-              />
-            </Link>
+            <BrandWordmark />
             <p className="mt-3 text-xs text-slate-600">SyncAI is a product of Stigg.</p>
             <p className="mt-4 max-w-md text-sm leading-[1.7] text-slate-400">
               Governed industrial intelligence for reliability, maintenance, and asset-intensive operations.
