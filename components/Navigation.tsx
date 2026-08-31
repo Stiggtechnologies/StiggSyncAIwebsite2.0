@@ -29,7 +29,7 @@ export default function Navigation() {
               alt="SyncAI"
               width={303}
               height={144}
-              className="h-9 w-auto"
+              className="h-10 w-auto"
               priority
             />
           </Link>
