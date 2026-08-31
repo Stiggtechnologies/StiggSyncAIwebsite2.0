@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 type ContactForm = {
   name: string;
@@ -66,7 +67,7 @@ export default function ContactPage() {
             <h1 className="mt-5 text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
               Talk to the people building SyncAI.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-xl text-lg leading-[1.7] text-slate-400">
               Use this form for product, partnership, security, or enterprise deployment questions. For a defined operating use case, the strategic-pilot intake gives us more technical context.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
@@ -77,7 +78,7 @@ export default function ContactPage() {
                 Strategic pilot intake
               </Link>
               <a
-                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                href={APP_SETUP_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md px-2 py-3 text-sm font-semibold text-cyan-300 hover:text-cyan-200"
               >
                 Try Reliability Engineer →

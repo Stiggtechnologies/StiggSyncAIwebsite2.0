@@ -68,7 +68,7 @@ export default function SecurityPage() {
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             Describe the controls that exist. Keep human approval in the architecture.
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             SyncAI is governed industrial intelligence. Security and deployment capabilities are described by implemented controls and validated configuration — not by a certification badge or a packaged on-prem SKU.
           </p>
         </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { APP_SETUP_URL } from '@/lib/site-links';
 
 const phases = [
   {
@@ -101,7 +102,7 @@ export default function StrategicPilotPage() {
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             Start with one consequential operating decision. Prove the system before you scale it.
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             A SyncAI pilot is a governed deployment around a defined reliability or maintenance problem—not an open-ended AI experiment. We establish the evidence boundary, human authority, and value-verification method at the start.
           </p>
         </div>
@@ -136,7 +137,7 @@ export default function StrategicPilotPage() {
             <div className="mt-6 text-sm text-slate-500">
               Want to see the product first?{' '}
               <a
-                href="https://app.syncai.ca/demo/copilot#syncai-chat"
+                href={APP_SETUP_URL}
                 className="font-semibold text-cyan-300 hover:text-cyan-200"
               >
                 Open the Reliability Engineer workspace →

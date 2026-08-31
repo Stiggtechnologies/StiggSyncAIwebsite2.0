@@ -61,7 +61,7 @@ export default function ArchitecturePage() {
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             An industrial intelligence layer built around evidence, authority, and verification.
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             SyncAI is designed to sit across the existing operating information estate, help teams build technically defensible decisions, and preserve the governance required to act on them.
           </p>
         </div>
