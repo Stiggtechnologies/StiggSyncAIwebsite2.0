@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { RIA_LEDE } from '@/lib/ria-copy';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 const entryPaths = [
@@ -13,7 +14,7 @@ const entryPaths = [
   {
     label: 'ASSESS',
     title: 'Reliability Intelligence Assessment',
-    body: 'A US$35K fixed-scope, 6–8 week assessment that establishes a decision-grade baseline from the maintenance records you already have.',
+    body: RIA_LEDE,
     cta: 'Explore the assessment',
     href: '/reliability-assessment',
     external: false,

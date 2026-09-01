@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RIA_LEDE } from '@/lib/ria-copy';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = {
@@ -170,10 +171,10 @@ export default function IndustriesPage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How to start</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
-                Reliability Engineer, then a $35K / 6–8 week assessment, then a bounded Strategic Pilot.
+                One bounded entry product.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-                Try the workspace on a real technical question. If the records support it, establish a decision-grade baseline. Operationalize only a bounded workflow with explicit evidence, approval, and verification.
+                {RIA_LEDE}
               </p>
             </div>
             <div className="flex flex-col gap-3">
