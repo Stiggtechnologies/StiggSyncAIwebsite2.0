@@ -96,25 +96,3 @@ export const softwareApplicationSchema = {
     'Governed industrial intelligence for mining, energy, and oil and gas reliability. SyncAI recommends from approved evidence; a named human decides. Direct plant execute is disabled.',
   provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
 };
-
-type SitemapEntry = {
-  path: string;
-  priority: number;
-  changeFrequency: 'weekly' | 'monthly' | 'yearly';
-};
-
-/** Public, indexable marketing routes. Redirect-only and noindex routes stay out. */
-export const indexableRoutes: SitemapEntry[] = [
-  { path: '/', priority: 1, changeFrequency: 'weekly' },
-  { path: '/reliability-assessment', priority: 0.95, changeFrequency: 'weekly' },
-  { path: '/strategic-pilot', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/architecture', priority: 0.85, changeFrequency: 'monthly' },
-  { path: '/industries', priority: 0.85, changeFrequency: 'monthly' },
-  { path: '/security', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/ai-for-mining-reliability', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/insights', priority: 0.75, changeFrequency: 'weekly' },
-  { path: '/company', priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/contact', priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/privacy', priority: 0.4, changeFrequency: 'yearly' },
-  { path: '/terms', priority: 0.4, changeFrequency: 'yearly' },
-];
