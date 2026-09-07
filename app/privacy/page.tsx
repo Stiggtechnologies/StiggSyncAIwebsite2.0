@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Privacy Policy',
   description: 'How SyncAI handles website, inquiry, assessment, and analytics data.',
-  alternates: { canonical: 'https://syncai.ca/privacy' },
-};
+  path: '/privacy',
+});
 
 const sections = [
   {

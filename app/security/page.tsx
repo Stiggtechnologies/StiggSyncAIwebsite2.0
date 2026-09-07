@@ -1,21 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Security',
   description:
     'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Third-party certifications are claimed only when current. Enterprise SSO is a later product step.',
-  alternates: { canonical: 'https://syncai.ca/security' },
-  openGraph: {
-    title: 'Security | SyncAI',
-    description:
-      'Encryption, RLS, audit logs, and human approval as a product primitive. Certifications are represented only when formally achieved and current.',
-    url: 'https://syncai.ca/security',
-    siteName: 'SyncAI',
-    type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SyncAI Security' }],
-  },
-};
+  path: '/security',
+});
 
 const implementedControls = [
   {
