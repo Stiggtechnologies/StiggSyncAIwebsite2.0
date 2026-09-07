@@ -64,19 +64,27 @@ export default function FracasIsNotADecisionSystemPage() {
             <p>
               FRACAS is a closed-loop reliability practice: report the failure, analyze it, take
               corrective action, and keep enough record that the organization can see whether the
-              action prevented recurrence. The U.S. Department of Defense formalized the approach
-              in MIL-STD-2155 (1985). That standard was later converted to MIL-HDBK-2155,{' '}
-              <em>Failure Reporting, Analysis and Corrective Action Taken</em> (1995), which remains
-              the public handbook most often cited for the method.
+              action prevented recurrence. DoD reliability program practice treated FRACAS as a
+              requirement of MIL-STD-785. Uniform criteria were then written in MIL-STD-2155
+              (1985) and later issued as MIL-HDBK-2155,{' '}
+              <em>Failure Reporting, Analysis and Corrective Action Taken</em>. The public ASSIST
+              listing for the handbook is{' '}
+              <a
+                href="https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=207200"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                ident_number 207200
+              </a>
+              .
             </p>
 
             <p>
               The handbook is explicit about purpose. FRACAS exists to give management visibility
               and control for reliability and maintainability improvement by using failure and
               maintenance data to generate and implement effective corrective actions — and to
-              reduce or simplify the maintenance task. Defense Acquisition University practice
-              describes the same loop as a disciplined process for capturing issues, selecting and
-              analyzing them, implementing corrective action, and tracking the result over time.
+              reduce or simplify the maintenance task.
             </p>
 
             <p>The intended sequence is not mysterious:</p>
@@ -117,12 +125,13 @@ export default function FracasIsNotADecisionSystemPage() {
             </p>
 
             <p>
-              Oil and gas reliability data practice, notably ISO 14224, treats taxonomy as a
-              collection and exchange problem: how to describe equipment, failures, and
-              maintenance so the record can be compared. Mining reliability faces a similar coding
-              problem without a single public taxonomy of that weight. The useful lesson is not
-              “adopt a petroleum standard.” It is that a better code list still only improves the
-              report. It does not authorize the next action.
+              SAE reliability-program practice makes the same point without being mining-specific.
+              SAE GEIA-STD-0009, the Reliability Program Standard, includes closed-loop feedback
+              for corrective actions and field reliability monitoring. Its companion handbook, SAE
+              TAHB0009A, describes that feedback method. Those documents are standards and
+              practice context — not a SyncAI certification, and not a requirement to run a
+              defense-style FRACAS office at a mine. They describe the industrial rule: a report
+              that never returns as a checked action is not a closed loop.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -310,11 +319,10 @@ export default function FracasIsNotADecisionSystemPage() {
             </p>
 
             <p>
-              The public sources behind the FRACAS description are the DoD handbook lineage
-              (MIL-STD-2155; MIL-HDBK-2155) and the closed-loop corrective-action sequence those
-              documents define. ISO 14224 is cited only as a well-known reliability-data taxonomy
-              in petroleum and related industries, not as a mining mandate and not as a decision
-              standard.
+              The public sources behind the FRACAS description are MIL-HDBK-2155 (historically
+              implementing the MIL-STD-785 FRACAS requirement; earlier uniform criteria in
+              MIL-STD-2155) and SAE closed-loop feedback practice in GEIA-STD-0009 and TAHB0009A.
+              They are cited as reliability-program context, not as SyncAI certifications.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
