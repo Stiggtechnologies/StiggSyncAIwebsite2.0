@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /aws
+Disallow: /microsoft
+Disallow: /salesforce
+Disallow: /investors
 
+Host: https://syncai.ca
 Sitemap: https://syncai.ca/sitemap.xml

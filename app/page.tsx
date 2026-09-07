@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
 import { APP_SETUP_URL } from '@/lib/site-links';
+
+export const metadata: Metadata = pageMetadata({
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESCRIPTION,
+  path: '/',
+});
 
 const entryPaths = [
   {
@@ -103,7 +111,11 @@ export default function Home() {
               Better industrial decisions, grounded in the evidence your operation already has.
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-[1.7] text-slate-300 sm:text-xl">
-              SyncAI connects approved knowledge, asset context, work history, and operating evidence so reliability and maintenance teams can investigate failures, prioritize work, and move recommendations through controlled human approval.
+              SyncAI connects approved knowledge, asset context, work history, and operating evidence so reliability and maintenance teams can investigate failures, prioritize work, and move recommendations through controlled human approval.{' '}
+              <Link href="/company" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                What Sync is — and is not
+              </Link>
+              .
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -300,7 +312,18 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-5 max-w-3xl text-xs leading-5 text-slate-600">
-            Security and deployment capabilities are described by implemented controls and validated configuration. SyncAI does not represent third-party certifications as complete unless they have been formally achieved and are current.
+            Security and deployment capabilities are described by implemented controls and validated configuration. SyncAI does not represent third-party certifications as complete unless they have been formally achieved and are current.{' '}
+            <Link href="/security" className="font-semibold text-slate-400 hover:text-white">
+              Security
+            </Link>
+            {' · '}
+            <Link href="/architecture" className="font-semibold text-slate-400 hover:text-white">
+              Architecture
+            </Link>
+            {' · '}
+            <Link href="/insights" className="font-semibold text-slate-400 hover:text-white">
+              Insights
+            </Link>
           </p>
         </div>
       </section>
@@ -314,15 +337,29 @@ export default function Home() {
                 Built for asset-intensive organizations.
               </h2>
               <p className="mt-5 text-base leading-7 text-slate-400">
-                The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions at operating speed.
+                The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions at operating speed.{' '}
+                <Link href="/industries" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                  See the industry beachhead
+                </Link>
+                .
               </p>
             </div>
             <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2">
-              {industries.map((industry) => (
-                <div key={industry} className="bg-[#0A131C] px-6 py-7 text-sm font-semibold text-slate-200">
-                  {industry}
-                </div>
-              ))}
+              {industries.map((industry) => {
+                const href =
+                  industry === 'Mining & heavy equipment'
+                    ? '/ai-for-mining-reliability'
+                    : '/industries';
+                return (
+                  <Link
+                    key={industry}
+                    href={href}
+                    className="bg-[#0A131C] px-6 py-7 text-sm font-semibold text-slate-200 hover:bg-[#0B151F]"
+                  >
+                    {industry}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>

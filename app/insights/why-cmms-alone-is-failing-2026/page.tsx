@@ -33,7 +33,7 @@ export default function WhyCMMSIsFailingPage() {
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Download Full Analysis</h3>
             <p className="text-gray-400 mb-6">
-              Get the complete whitepaper with detailed case studies, ROI frameworks, and implementation roadmaps.
+              Longer-form notes on CMMS limits, downtime economics, and why a governed layer sits above the system of record. This PDF is analysis, not a customer case study.
             </p>
             <a
               href="/pdfs/why-cmms-alone-is-failing-2026.pdf"

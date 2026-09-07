@@ -1,23 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
+import { pageMetadata } from '@/lib/seo';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Industries',
   description:
     'SyncAI’s beachhead is mining, energy, and oil and gas. Governed industrial intelligence: recommend, evidence, named human approval, work, and verify. Other industries are later, not live templates.',
-  alternates: { canonical: 'https://syncai.ca/industries' },
-  openGraph: {
-    title: 'Industries | SyncAI',
-    description:
-      'Mining, energy, and oil and gas first. Other asset-intensive industries later — not as live tenant templates.',
-    url: 'https://syncai.ca/industries',
-    siteName: 'SyncAI',
-    type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SyncAI Industries' }],
-  },
-};
+  path: '/industries',
+});
 
 const operatingLoop = [
   { step: '01', title: 'Recommend', body: 'Structure a technical recommendation from approved knowledge, asset context, work history, and operating evidence.' },

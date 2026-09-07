@@ -2,20 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ReliabilityAssessmentInquiryForm from '@/components/assessment/ReliabilityAssessmentInquiryForm';
 import { RIA_LEDE } from '@/lib/ria-copy';
+import { pageMetadata } from '@/lib/seo';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Reliability Intelligence Assessment',
   description: RIA_LEDE,
-  alternates: { canonical: 'https://syncai.ca/reliability-assessment' },
-  openGraph: {
-    title: 'Reliability Intelligence Assessment | SyncAI',
-    description: RIA_LEDE,
-    url: 'https://syncai.ca/reliability-assessment', siteName: 'SyncAI', type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SyncAI Reliability Intelligence Assessment' }],
-  },
-  twitter: { card: 'summary_large_image', title: 'Reliability Intelligence Assessment | SyncAI', description: RIA_LEDE, images: ['/og-image.png'] },
-};
+  path: '/reliability-assessment',
+});
 
 const deliverables = ['Executive Reliability Brief','Criticality Register','Failure Taxonomy & Mapping','Evidence Integrity Matrix','Reliability Performance Baseline','Bad-Actor / Repeat-Failure Analysis','Reliability Opportunity Register','Executive Decision Register','90-Day Action Plan','Final Executive Workshop'];
 const evidenceLevels = [

@@ -1,149 +1,69 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BookOpen, Clock, ArrowRight, TrendingUp, Shield, Cpu } from 'lucide-react';
-
-const articles = [
-  {
-    slug: 'why-cmms-alone-is-failing-2026',
-    title: 'Why CMMS Alone Is Failing in 2026',
-    excerpt:
-      'Modern maintenance demands have outpaced what traditional CMMS platforms can deliver. Here is why leading organizations are augmenting their systems with AI infrastructure.',
-    category: 'Industry Analysis',
-    readTime: '8 min read',
-    icon: TrendingUp,
-    featured: true,
-    available: true,
-  },
-  {
-    slug: 'economics-of-autonomous-maintenance',
-    title: 'The Economics of Autonomous Maintenance',
-    excerpt:
-      'How maintenance economics should be framed when evidence, approval, and verification come before any claim of savings.',
-    category: 'ROI & Business Case',
-    readTime: '12 min read',
-    icon: TrendingUp,
-    featured: true,
-    available: true,
-  },
-  {
-    slug: 'governance-in-industrial-ai',
-    title: 'Governance in Industrial AI: Human Oversight at Scale',
-    excerpt:
-      'How leading enterprises are implementing AI governance frameworks that balance automation efficiency with human accountability.',
-    category: 'Security & Governance',
-    readTime: '10 min read',
-    icon: Shield,
-    featured: true,
-    available: true,
-  },
-];
+import { insightArticles } from '@/lib/insights';
 
 export default function InsightsPage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
-      <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 via-transparent to-transparent" />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-6">
-              <BookOpen className="w-4 h-4 text-[#3B82F6]" />
-              <span className="text-sm text-[#3B82F6] font-medium">Insights</span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Industrial AI Insights
-            </h1>
-
-            <p className="text-xl text-gray-400 leading-relaxed">
-              Analysis on reliability evidence, industrial AI governance, and why
-              maintenance systems still leave the decision unproven.
-            </p>
-          </motion.div>
+    <main className="bg-[#081018] pt-20 text-slate-100">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Insights</p>
+          <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
+            Industrial AI insights
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
+            Analysis on reliability evidence, industrial AI governance, and why maintenance systems
+            still leave the decision unproven.
+          </p>
         </div>
       </section>
 
-      <section className="pb-24">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-8 max-w-4xl mx-auto">
-            {articles.map((article, index) => {
-              const Icon = article.icon;
-              return (
-                <motion.article
-                  key={article.slug}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group"
-                >
-                  <Link href={`/insights/${article.slug}`}>
-                    <div className="bg-gradient-to-b from-[#1E293B]/50 to-[#0F172A]/50 border border-[#334155] rounded-2xl p-8 hover:border-[#3B82F6]/50 transition-colors cursor-pointer">
-                      <div className="flex items-start gap-6">
-                        <div className="w-14 h-14 rounded-xl bg-[#3B82F6]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3B82F6]/20 transition-colors">
-                          <Icon className="w-7 h-7 text-[#3B82F6]" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-3">
-                            <span className="px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-xs font-medium rounded-full">
-                              {article.category}
-                            </span>
-                            <span className="flex items-center gap-1 text-xs text-gray-500">
-                              <Clock className="w-3 h-3" />
-                              {article.readTime}
-                            </span>
-                          </div>
-                          <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">
-                            {article.title}
-                          </h2>
-                          <p className="text-gray-400 leading-relaxed mb-4">{article.excerpt}</p>
-                          <div className="flex items-center gap-2 text-[#3B82F6] font-medium">
-                            <span>Read Article</span>
-                            <ArrowRight className="w-4 h-4" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <section className="border-b border-white/10 bg-[#0A131C]">
+        <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
+          <div className="divide-y divide-white/10 border-y border-white/10">
+            {insightArticles.map((article) => (
+              <article key={article.slug} className="py-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                  {article.category}
+                  <span className="ml-3 font-normal tracking-normal text-slate-500">{article.readTime}</span>
+                </p>
+                <h2 className="mt-4 text-2xl font-semibold text-white">
+                  <Link href={`/insights/${article.slug}`} className="hover:text-cyan-200">
+                    {article.title}
                   </Link>
-                </motion.article>
-              );
-            })}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto mt-16"
-          >
-            <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 text-center">
-              <Cpu className="w-10 h-10 text-[#3B82F6] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Get Personalized Analysis
-              </h3>
-              <p className="text-gray-400 mb-6 max-w-xl mx-auto">
-                Take our AI Readiness Assessment to receive a custom report analyzing your
-                organization&apos;s specific opportunities and challenges.
-              </p>
-              <Link href="/ai-readiness">
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#3B82F6] text-white rounded-lg font-semibold shadow-lg shadow-[#3B82F6]/30 hover:bg-[#3B82F6]/90 transition-colors"
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-slate-400">{article.excerpt}</p>
+                <Link
+                  href={`/insights/${article.slug}`}
+                  className="mt-5 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200"
                 >
-                  Start Assessment
-                  <ArrowRight className="w-4 h-4" />
-                </motion.button>
-              </Link>
+                  Read article →
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Start with evidence</p>
+              <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white">
+                A bounded assessment, not a generic AI report.
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
+                If the records cannot support the conclusion, the assessment says so. That is the
+                product.
+              </p>
             </div>
-          </motion.div>
+            <Link
+              href="/reliability-assessment"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
+            >
+              Reliability Assessment
+            </Link>
+          </div>
         </div>
       </section>
     </main>
