@@ -10,6 +10,17 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'fracas-is-not-a-decision-system',
+    title: 'FRACAS Is Not a Decision System',
+    description:
+      'Closing the loop from failure code to approved action — why codes alone do not change reliability outcomes. FRACAS reports and analyzes; it does not authorize the next action.',
+    excerpt:
+      'Closing the loop from failure code to approved action — why codes alone do not change reliability outcomes.',
+    category: 'Reliability Engineering',
+    readTime: '10 min read',
+    published: '2026-09-07',
+  },
+  {
     slug: 'why-cmms-alone-is-failing-2026',
     title: 'Why CMMS Alone Is Failing in 2026',
     description:
