@@ -45,11 +45,13 @@ export function pageMetadata({
       siteName: SITE_NAME,
       type,
       locale: 'en_CA',
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: DEFAULT_TITLE }],
     },
     twitter: {
       card: 'summary_large_image',
       title: socialTitle,
       description,
+      images: ['/opengraph-image'],
     },
   };
 }

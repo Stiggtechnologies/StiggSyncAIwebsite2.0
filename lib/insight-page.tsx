@@ -12,12 +12,16 @@ export function insightMetadata(slug: string): Metadata {
     });
   }
 
-  return pageMetadata({
-    title: article.title,
-    description: article.description,
-    path: `/insights/${article.slug}`,
-    type: 'article',
-  });
+  return {
+    ...pageMetadata({
+      title: article.title,
+      description: article.description,
+      path: `/insights/${article.slug}`,
+      ogTitle: `${article.title} | ${SITE_NAME}`,
+      type: 'article',
+    }),
+    title: { absolute: `${article.title} | ${SITE_NAME}` },
+  };
 }
 
 export function InsightJsonLd({ slug }: { slug: string }) {
