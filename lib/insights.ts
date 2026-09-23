@@ -10,6 +10,17 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'evidence-lineage-is-not-optional',
+    title: 'Evidence Lineage Is Not Optional',
+    description:
+      'A recommendation you cannot reconstruct is not an industrial decision. ISO 14224, SAE JA1011, and API RP 580 already require the evidence trail.',
+    excerpt:
+      'A haul-fleet planner ranks a truck for deferral. A superintendent gets a pump family tagged “bad actor.” A reliability engineer is handed PM intervals the model wants to stretch. The dashboard is confident. The record behind it is not.',
+    category: 'Reliability Engineering',
+    readTime: '8 min read',
+    published: '2026-09-23',
+  },
+  {
     slug: 'fracas-is-not-a-decision-system',
     title: 'FRACAS Is Not a Decision System',
     description:
