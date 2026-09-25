@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'verification-is-not-optional',
+    title: 'Verification Is Not Optional',
+    description:
+      'After a named human authorizes an action, the Decision Case is not closed until verification is recorded. Learning requires a verified outcome, not a hoped-for one. Field Manual v0 states the order.',
+    excerpt:
+      'Authorization records who decided. It does not record whether the action did what it was supposed to do. The signed-in Decision Case stays open until that check is on the case.',
+    category: 'Decision Case',
+    readTime: '7 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'recommend-is-not-authorize',
     title: 'Recommend Is Not Authorize',
     description:
