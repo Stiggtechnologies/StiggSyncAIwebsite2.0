@@ -101,8 +101,9 @@ export default function FlexibilityIsNotOptionalityPage() {
               not margin. Margin is not profit. Profit is not value. Value is not outcome. Outcome
               is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
-              Liquidity is not flexibility. Flexibility is not optionality. Each word can be true in
-              its own place. None of the earlier words fills the last one. A closed work order, cash
+              Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
+              strategy. Each word can be true in its own place. None of the earlier words fills the
+              last one. A closed work order, cash
               collected, a unit remainder, a profit figure, a measured outcome, an attributed
               change, a recognized sale, an annualized contract, a spendable balance, a duration at
               the current net burn, obligation continuity through the next decision horizon, assets
@@ -118,8 +119,11 @@ export default function FlexibilityIsNotOptionalityPage() {
               capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan)
               that could be exercised in some future state — theoretical choice inventory, not proof
               those choices are executable inside the named decision window (lead times, skills,
-              covenants, plant continuity, and cash may still block exercise). A flexibility note is
-              not that optionality claim.
+              covenants, plant continuity, and cash may still block exercise). Strategy is a named
+              choice among alternatives with allocated resources, a named decision window,
+              accountable owner, and success criteria the firm is actually committing to execute — a
+              committed path, not a menu of unused rights. A flexibility note is not that optionality
+              claim. An optionality note is not that strategy claim.
             </p>
 
             <p>
@@ -1171,6 +1175,27 @@ export default function FlexibilityIsNotOptionalityPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The flexibility note does not record the optionality.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/optionality-is-not-strategy"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Optionality Is Not Strategy
+              </Link>
+              , on why optionality is still not strategy. Optionality is whether unused rights,
+              capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan)
+              that could be exercised in some future state — theoretical choice inventory, not proof
+              those choices are executable inside a named decision window (lead times, skills,
+              covenants, plant continuity, and cash may still block exercise). Strategy is a named
+              choice among alternatives with allocated resources, a named decision window,
+              accountable owner, and success criteria the firm is actually committing to execute — a
+              committed path, not a menu of unused rights. A firm with optionality can still lack
+              strategy when that inventory is not a named choice the firm is committing to execute. A
+              firm with a strategy can still lack optionality. A strategy note alone proves neither.
+              A choice that exists on paper is not a green. A committed path is not a green.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
