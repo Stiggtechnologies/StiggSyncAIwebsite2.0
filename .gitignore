@@ -42,6 +42,9 @@ next-env.d.ts
 # Junk artifacts
 coverage*
 coverage_*
+# Decision Case essay; the coverage* rule above would otherwise drop this slug.
+!app/insights/coverage-is-not-control/
+!app/insights/coverage-is-not-control/**
 ocr_tmp*/
 ocr_*json
 tmp-*/

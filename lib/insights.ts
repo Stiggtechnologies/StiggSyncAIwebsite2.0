@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'coverage-is-not-control',
+    title: 'Coverage Is Not Control',
+    description:
+      'Plant coverage is not control authority over work, isolation, or change. Sync may show coverage and recommend. A named human decides. Authorized execution systems write the work order or the isolation. A Decision Case that records a coverage gap does not put Sync in control of the plant.',
+    excerpt:
+      'Sensors, CMMS rows, dashboards, and patrol routes are coverage. They are not control authority over work, isolation, or change. A Decision Case that records a coverage gap does not put Sync in control of the plant.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'action-is-not-execution',
     title: 'Action Is Not Execution',
     description:
@@ -138,6 +150,22 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'coverage-is-not-control': {
+    relatedSlug: 'action-is-not-execution',
+    relatedNote: 'A recorded intent still does not execute the work.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The case stays open until the check is recorded.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A coverage recommendation is a proposal. A named person decides.',
+      },
+    ],
+  },
   'action-is-not-execution': {
     relatedSlug: 'recommend-is-not-authorize',
     relatedNote: 'A named decision still does not execute the work.',

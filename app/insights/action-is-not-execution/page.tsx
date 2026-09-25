@@ -344,6 +344,14 @@ export default function ActionIsNotExecutionPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/coverage-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Coverage Is Not Control
+              </Link>
+              , on why plant coverage is not control authority over work, isolation, or change.
               Companion reading:{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
