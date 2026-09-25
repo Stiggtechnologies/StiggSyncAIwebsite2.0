@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'question-is-not-decision',
+    title: 'Question Is Not Decision',
+    description:
+      'A Decision Case opens on a reliability or maintenance question a named person can decide. The question is recorded before evidence or recommendation. Recording or refining a question is not the decision. Sync may hold the question and gather approved evidence. A named human accepts, rejects, escalates, or returns.',
+    excerpt:
+      'An open question, a clarified question, or a rephrased question is still a question. Sync may hold it and gather approved evidence. It is not authorization, execution, or plant control.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'coverage-is-not-control',
     title: 'Coverage Is Not Control',
     description:
@@ -150,6 +162,26 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'question-is-not-decision': {
+    relatedSlug: 'coverage-is-not-control',
+    relatedNote: 'A watched set is still not control of the plant.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'action-is-not-execution',
+        note: 'Work intent on the case is still not execution.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A drafted proposal is not the named decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The case stays open until the check is recorded.',
+      },
+    ],
+  },
   'coverage-is-not-control': {
     relatedSlug: 'action-is-not-execution',
     relatedNote: 'A recorded intent still does not execute the work.',

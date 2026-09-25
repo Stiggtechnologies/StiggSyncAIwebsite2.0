@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('coverage-is-not-control');
+const article = getInsightArticle('question-is-not-decision');
 
-export default function CoverageIsNotControlPage() {
+export default function QuestionIsNotDecisionPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,9 @@ export default function CoverageIsNotControlPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Coverage Is Not Control</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Question Is Not Decision
+            </h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -40,29 +42,29 @@ export default function CoverageIsNotControlPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              Plant coverage is what is watched: sensors, CMMS rows, dashboards, patrol routes.
-              Control authority is permission to order work, isolate equipment, or change the plant.
-              A Decision Case that records a coverage gap does not give Sync that permission.
+              A Decision Case opens on a reliability or maintenance question a named person can
+              decide. That question is written down before evidence and before a recommendation.
+              Writing it down does not decide the case.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              Coverage is not control. Sensors, CMMS rows, dashboards, patrol routes, and the claim
-              “we monitor everything” describe what is watched. They are not control authority over
-              work, isolation, or change. Sync may show coverage and recommend. A named human
-              decides. Authorized execution systems write the work order or the isolation. A
-              Decision Case that records a coverage gap or a recommended coverage action must not be
-              read as Sync controlling the plant.
+              A Decision Case opens on a reliability or maintenance question a named person can
+              decide. The question is recorded before evidence or recommendation. Recording or
+              refining a question is not the decision. Sync may hold the question and gather
+              approved evidence; a named human accepts, rejects, escalates, or returns. An open
+              question, a clarified question, or a rephrased question must not be read as
+              authorization, execution, or plant control.
             </p>
 
             <p>
-              Reliability work collapses the two because a full picture looks like authority. The
-              sensor is online. The CMMS has a row. The dashboard shows the asset. A patrol route
-              reaches the area. Someone says the plant is monitored. Later a gap appears — a missing
-              point, a stale row, a route that stops short — and the recommendation says add
-              coverage. The meeting treats the system that showed the gap as if it now controls the
-              work. It does not. Coverage was a view. Control authority was never transferred.
+              Reliability work collapses the first words because a clear question sounds like
+              progress. Someone names the asset, the failure, or the deferral. The meeting tightens
+              the sentence. The case now holds a better line. Later that line is cited as if the
+              work were approved, the job were released, or the plant were under direction. It was
+              not. The record stored a question. No named person had accepted, rejected, escalated,
+              or returned a recommendation.
             </p>
 
             <p>
@@ -79,35 +81,66 @@ export default function CoverageIsNotControlPage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why a coverage record cannot be read as control of the plant. The
-              manual is the public contents.
+              . This essay is why the Question step cannot be read as the human decision. The
+              manual is the public contents. The{' '}
+              <Link
+                href={fieldManualPath('question')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Question
+              </Link>{' '}
+              chapter and the{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter are the two steps this essay keeps apart.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Coverage is the watched set
+              The case opens on a question
             </h2>
 
             <p>
-              Plant coverage is the set of things the organization can point at. A sensor on the
-              asset. A row in the CMMS. A tile on a dashboard. A patrol route a person walks. “We
-              monitor everything” is a claim about that set. It says the view is broad. It does not
-              name who may order work, who may isolate equipment, or who may change the plant.
+              The opening record is a reliability or maintenance question a named person can
+              decide. It can be a failure that needs a cause. It can be a job someone wants to
+              defer. It can be a condition someone wants watched until the next outage. The{' '}
+              <Link
+                href={fieldManualPath('question')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Question
+              </Link>{' '}
+              chapter publishes that opening. It is step 01 on the spine.
             </p>
 
             <p>
-              A coverage gap is the same kind of record. A point is missing. A row is stale. A route
-              does not reach the asset. The dashboard does not show the condition someone expected
-              to see. Recording the gap names what is not watched. It does not create authority to
-              close it.
+              The question is recorded before evidence or recommendation. Evidence is not attached
+              yet. No proposed next action has been drafted. Nobody has been asked to approve. The
+              case has a subject a person could decide. It does not have the decision.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              A watched asset is not an authorized job. An unwatched asset is not a work order.
+              A question that never leaves this step remains a question.
             </p>
 
             <p>
-              On the Decision Case, coverage belongs with evidence: observed fact, assumption, and
-              what is still missing. The{' '}
+              Sharper wording does not advance it. Noting a missing fact does not advance it. The
+              signed-in case can store the sentence so the loop has a start. Storage is not
+              acceptance.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Recording or refining a question is not the decision
+            </h2>
+
+            <p>
+              Sync may hold the question. Holding it means the signed-in case keeps the sentence
+              where the loop starts, so a later reader can see what was asked. Sync may gather
+              approved evidence onto that same case: observed fact, assumption, and what is still
+              missing. The{' '}
               <Link
                 href={fieldManualPath('evidence')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -116,39 +149,35 @@ export default function CoverageIsNotControlPage() {
               </Link>{' '}
               chapter publishes that step. Stage-1 evidence is the record held on the case. A live
               connector that pulls historian or control-system tags sits outside this edition.
-              Simulated or seeded telemetry and assets are practice records. They are not customer
-              plant coverage, and they are not control authority.
-            </p>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Control authority is permission to act on the plant
-            </h2>
-
-            <p>
-              Control authority over work, isolation, or change sits with the people and the systems
-              that already hold it. A work order is written in the system the site already uses to
-              authorize maintenance — the customer’s CMMS or EAM, or the equivalent system of
-              record. Isolation is the site’s existing practice for taking equipment out of service,
-              under the people who already hold operating authority. A change to the plant follows
-              the same authority.
+              Gathering that record does not accept a proposal. There may not be a proposal yet.
             </p>
 
             <p>
-              A screen that displays sensors does not hold those authorities. A CMMS row does not
-              hold them by existing. A patrol route does not hold them by being drawn. Neither does
-              a Decision Case that stores any of those records.
+              Refining is the same kind of work. The question is narrowed to one asset. “Look at
+              the pump” becomes “can this seal wait until the next outage.” The words are clearer.
+              Authority has not moved. An open question, a clarified question, and a rephrased
+              question are still questions.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Sync may show coverage and recommend. A named human decides. Authorized execution
-              systems write the work order or the isolation.
+              Recording or refining a question is not the decision.
             </p>
 
             <p>
-              Showing coverage puts the watched set, or the gap in it, where a person can read it.
-              Recommending states a proposed next action, the evidence it uses, and the uncertainty
-              it leaves in view. Drafting that proposal leaves authority where it already sits.
-              Recommend is not authorize. That split is the subject of{' '}
+              A later reader should be able to tell those three from a decision. If the case shows
+              only the question, nothing has been accepted, rejected, escalated, or returned. If
+              evidence has been added, the case shows a basis. It still does not show who decided.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The decision is a named human act
+            </h2>
+
+            <p>
+              The human decision comes after a recommendation exists to decide. A recommendation
+              states a proposed next action, the evidence it uses, and the uncertainty it leaves in
+              view. Drafting that proposal leaves authority where it already sits. That split is
+              the subject of{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -159,15 +188,26 @@ export default function CoverageIsNotControlPage() {
             </p>
 
             <p>
-              A named person accepts, rejects, escalates, or returns the proposal. That act is the
-              human decision. It records who decided. It still does not write a work order, isolate
-              equipment, or change the plant. Authority to accept a coverage recommendation is not
-              authority for software to control the plant. Read the two steps as separate chapters:{' '}
+              A named human accepts, rejects, escalates, or returns. That act is the decision. The{' '}
               <Link
-                href={fieldManualPath('recommendation')}
+                href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Recommendation
+                Human decision
+              </Link>{' '}
+              chapter publishes it. The case keeps the person beside the proposal: who decided, and
+              which recommendation they decided. Until a named person has made that act, the case
+              holds a question and, at most, a proposal. The person who can accept the operational
+              consequence is still the one who decides.
+            </p>
+
+            <p>
+              Read the two steps as separate chapters:{' '}
+              <Link
+                href={fieldManualPath('question')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Question
               </Link>{' '}
               and{' '}
               <Link
@@ -176,113 +216,65 @@ export default function CoverageIsNotControlPage() {
               >
                 Human decision
               </Link>
-              .
+              . The first is recorded before evidence or recommendation. The second is the named
+              act on a recommendation. A well-phrased question is not a substitute for that act.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A recorded coverage action is not plant control
+              An open question is not authorization, execution, or control
             </h2>
 
-            <p>
-              If the named person approves work to add a sensor, correct a CMMS row, extend a patrol
-              route, or isolate equipment, the Decision Case may store that intent. The write still
-              belongs to authorized execution systems and to the people who already operate them.
-              Sync does not perform it.
+            <p className="text-xl font-semibold text-white">
+              An open question, a clarified question, or a rephrased question must not be read as
+              authorization, execution, or plant control.
             </p>
 
             <p>
+              Authorization is the named human decision on a recommendation. The question sits
+              before that decision. Clarifying the wording does not grant permission to do the
+              work. Rephrasing it does not either.
+            </p>
+
+            <p>
+              The same question does not execute the work.{' '}
               <Link
                 href="/insights/action-is-not-execution"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Action Is Not Execution
               </Link>{' '}
-              states that boundary for the ACTION disposition. Recording work intent on the case
-              does not write a work order, isolate equipment, or dispatch work. ACTION remains
-              locked until authorized execution systems write the work order or isolate the
-              equipment. A coverage recommendation does not unlock that disposition. A dashboard
-              that shows the gap is not a work order. A patrol route is not an isolation.
+              states the later boundary. An ACTION disposition records work intent after a human
+              decision. It does not write a work order, isolate equipment, or change the plant. A
+              question is earlier than that disposition. It cannot be read as execution. ACTION
+              stays locked until authorized execution systems write the work order or isolate the
+              equipment. A question does not unlock it.
             </p>
 
             <p>
-              The{' '}
+              It also does not control the plant.{' '}
               <Link
-                href={fieldManualPath('action')}
+                href="/insights/coverage-is-not-control"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Action
+                Coverage Is Not Control
               </Link>{' '}
-              chapter publishes the step. Direct plant execute stays off. The product does not
-              dispatch unsupervised work to equipment. Work that follows the decision moves through
-              the customer’s systems of record and the people who already hold operating authority.
-            </p>
-
-            <p className="text-xl font-semibold text-white">
-              A Decision Case that records coverage gaps or recommended coverage actions must not
-              imply that Sync controls the plant.
+              states why sensors, CMMS rows, dashboards, patrol routes, and a recorded coverage gap
+              are not control authority over work, isolation, or change. A question about coverage
+              is still a question. Sync may hold the question and gather approved evidence. Sync
+              may recommend. A named human decides. Authorized execution systems write the work
+              order or the isolation. None of that follows from the question alone.
             </p>
 
             <p>
-              The case stores the gap, or the proposed coverage action, beside the question and the
-              evidence. That storage is a record. It is not control. Sync may have shown what was
-              watched and may have recommended what to do next. A named human decided whether that
-              recommendation stood. The plant changes only when authorized execution systems write
-              the work order or the isolation.
-            </p>
-
-            <p>
-              The case does not absorb the historian, the CMMS, the permit, or the plant by
-              recording a gap. This edition does not describe a live copy of an execution-system
-              write returning into the case. When an authorized execution system does write the work
-              order or record the isolation, that write is still their record.
-            </p>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A coverage record is not a verified outcome
-            </h2>
-
-            <p>
-              Showing that a sensor exists, that a row exists, or that a route exists does not
-              record whether a later action did what it was supposed to do.{' '}
               <Link
                 href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Verification Is Not Optional
               </Link>{' '}
-              states the next gate. After a named human authorizes an action, the loop is not closed
-              until verification is recorded. A coverage gap that was never turned into executed
-              work has nothing executed to check. A work order that was written and never checked is
-              still an open case.
-            </p>
-
-            <p>
-              <Link
-                href="/insights/learning-requires-a-verified-outcome"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Learning Requires a Verified Outcome
-              </Link>{' '}
-              states what a later case is allowed to inherit. Learning keeps the closed case. It
-              does not keep a hoped-for outcome, a recommendation that was never authorized, or an
-              action that was never verified. A coverage display is a further record that does not
-              count. A later question that cites “we monitor everything” as if the plant were under
-              control is citing a view. Unless verification holds an observed outcome, there is
-              nothing verified to pass forward.
-            </p>
-
-            <p>
-              Evidence still has to be reconstructable.{' '}
-              <Link
-                href="/insights/evidence-lineage-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Evidence Lineage Is Not Optional
-              </Link>{' '}
-              asks whether a later reviewer can rebuild the proposal. The same reviewer should be
-              able to tell coverage from control authority, and a recommended coverage action from
-              the work order or the isolation that would carry it out. A lesson that merges them is
-              a story about control the case does not hold.
+              states the gate after an authorized action. The case is not closed until the check is
+              recorded. A question that was never decided has nothing authorized to check. Citing
+              the question as if the outcome were known treats an opening record as a closed case.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -301,9 +293,9 @@ export default function CoverageIsNotControlPage() {
               >
                 {fieldManual.title}
               </Link>{' '}
-              directly. Coverage shown on the case sits with evidence. A recommended coverage action,
-              once a person decides, sits with the action step. Neither step is control of the
-              plant. Later editions can deepen a chapter. The spine stays in this order.
+              directly. Question is step 01. Human decision is step 04. The question is recorded
+              before evidence or recommendation. The decision is the named act that comes after a
+              recommendation. Later editions can deepen a chapter. The spine stays in this order.
             </p>
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
@@ -340,8 +332,8 @@ export default function CoverageIsNotControlPage() {
             <p>
               This is an essay about the Decision Case order, not a customer case study. It names
               no plant, states no savings figure, and claims no prevented failure. It states no OEM
-              limit and no operating threshold. It does not claim that Sync monitors a customer
-              plant, and it does not claim that showing coverage controls one.
+              limit and no operating threshold. It does not claim that recording a question
+              authorizes work, executes work, or controls a plant.
             </p>
 
             <p>
@@ -361,15 +353,14 @@ export default function CoverageIsNotControlPage() {
             </p>
 
             <p>
-              The series continues with{' '}
+              Companion reading:{' '}
               <Link
-                href="/insights/question-is-not-decision"
+                href="/insights/coverage-is-not-control"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Question Is Not Decision
-              </Link>
-              , on why recording a reliability or maintenance question is not the human decision.
-              Companion reading:{' '}
+                Coverage Is Not Control
+              </Link>{' '}
+              on why plant coverage is not control authority over work, isolation, or change,{' '}
               <Link
                 href="/insights/action-is-not-execution"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -406,22 +397,22 @@ export default function CoverageIsNotControlPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The{' '}
               <Link
-                href={fieldManualPath('evidence')}
+                href={fieldManualPath('question')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Evidence
+                Question
               </Link>{' '}
-              chapter is where a coverage record belongs. It is not a grant of control.
+              chapter is where the case opens. It is not the decision.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
                 Field Manual {fieldManual.version} states the order and the boundaries, including
-                what evidence may show and what action may record. The Reliability Engineer
-                workspace is where a signed-in Decision Case is completed. A Reliability Assessment
-                is the bounded review when the question is whether the records can support a
-                conclusion.
+                the question a named person can decide and the human act that decides it. The
+                Reliability Engineer workspace is where a signed-in Decision Case is completed. A
+                Reliability Assessment is the bounded review when the question is whether the
+                records can support a conclusion.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -445,7 +436,7 @@ export default function CoverageIsNotControlPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="coverage-is-not-control" />
+          <InsightNextSteps slug="question-is-not-decision" />
         </motion.article>
       </div>
     </main>
