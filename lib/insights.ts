@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'calibration-is-not-validation',
+    title: 'Calibration Is Not Validation',
+    description:
+      'Calibration is not validation. Calibration tunes a model, a twin, a sensor, or a forecast so historical residuals look small. Validation confirms the representation is fit for the decision under the honesty and verification boundary. A well-calibrated simulation, RUL curve, or digital twin can still be wrong for the plant decision at hand. Validation still requires observed outcomes, named coverage and assumptions, and refusal when evidence is insufficient. Treating calibration as validation is another path to false clearance. A calibration can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the calibration. Sync may surface a calibration beside approved evidence when coverage and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat calibration clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Simulation Is Not Proof, Forecast Is Not Fact, Model Is Not Reality, Verification Is Not Optional, and Learning Requires a Verified Outcome.',
+    excerpt:
+      'Calibration tunes a model, twin, sensor, or forecast so historical residuals look small. Validation confirms the representation is fit for the decision. A well-calibrated simulation, RUL curve, or digital twin can still be wrong for the plant decision at hand. Treating calibration as validation is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'simulation-is-not-proof',
     title: 'Simulation Is Not Proof',
     description:
@@ -414,12 +426,112 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'calibration-is-not-validation': {
+    relatedSlug: 'simulation-is-not-proof',
+    relatedNote: 'A simulation of possible futures is not proof the plant will behave that way. A calibration that makes historical residuals look small is not validation that the representation is fit for the decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast tuned so historical residuals look small is not a fact about the plant, and it is not validation.',
+      },
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model tuned so historical residuals look small is still not the plant, and the fit is not validation.',
+      },
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram of a close overlay is not the operating reality. The fit is not validation.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A small historical residual is not the check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not calibration clearance.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A residual used as a stand-in is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unnamed tuning choice is not a recorded fact about the plant.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A small residual is not a recorded check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope is not truth. An RUL curve fitted to that slope is not validation.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation to investigate is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of residuals is not a decision and not validation.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A calibration does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A small residual does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A calibration fit to a handful of cases is not the fleet.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A fit built to retell a story is not evidence.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Tuning chatter until residuals look small does not make it an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A sensor brought close to a symptom has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit a calibrated model sits inside is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A residual shrunk across co-moving tags is not a recorded causal check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert the calibration ranked is still not a decision.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet calibration is not clearance. Silence on refusal is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A residual without a reconstructable trail is not observed validation.',
+      },
+    ],
+  },
   'simulation-is-not-proof': {
     relatedSlug: 'forecast-is-not-fact',
     relatedNote: 'A forecast of the plant is not a fact about the plant. A simulation of possible futures is not proof the plant will behave that way.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A small historical residual is not validation. A well-calibrated run is still not proof the plant will behave that way.',
+      },
       {
         slug: 'model-is-not-reality',
         note: 'A model of the plant is not the plant. A run of that model is not proof the plant will behave that way.',
@@ -513,6 +625,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'calibration-is-not-validation',
+        note: 'A forecast tuned so historical residuals look small is not a fact about the plant, and it is not validation.',
+      },
+      {
         slug: 'simulation-is-not-proof',
         note: 'A digital-twin run, Monte Carlo fan, what-if scenario, or failure simulation is not proof the plant will behave that way.',
       },
@@ -605,6 +721,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'calibration-is-not-validation',
+        note: 'A model tuned so historical residuals look small is still not the plant, and the fit is not validation.',
+      },
+      {
         slug: 'simulation-is-not-proof',
         note: 'A run of the model through possible futures is not proof. The model is still not the plant.',
       },
@@ -696,6 +816,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A twin tuned until the diagram looks close is still not the operating reality, and the fit is not validation.',
+      },
       {
         slug: 'simulation-is-not-proof',
         note: 'A diagram of a simulated future is not the operating reality, and the run is not proof.',
@@ -1185,6 +1309,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'calibration-is-not-validation',
+        note: 'A residual that looks small is a stand-in. It is not the verified outcome, and it is not validation.',
+      },
+      {
         slug: 'simulation-is-not-proof',
         note: 'A simulation used as a stand-in is not the verified outcome.',
       },
@@ -1272,6 +1400,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A slope fitted until residuals look small is not a recorded check, and it is not validation.',
+      },
       {
         slug: 'simulation-is-not-proof',
         note: 'A fan of projected slopes is not proof. An observed outcome is still the check.',
@@ -1433,6 +1565,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'calibration-is-not-validation',
+        note: 'Being sure the residuals are small enough is not a recorded check, and it is not validation.',
+      },
+      {
         slug: 'simulation-is-not-proof',
         note: 'Being sure the simulation is right is not a recorded check.',
       },
@@ -1492,6 +1628,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A tuned residual is not a recorded fact about the plant, and it is not validation that the representation is fit for the decision.',
+      },
       {
         slug: 'simulation-is-not-proof',
         note: 'An uncalibrated simulation is not a recorded fact about the plant.',
