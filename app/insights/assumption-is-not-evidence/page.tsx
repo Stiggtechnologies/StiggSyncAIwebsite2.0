@@ -193,8 +193,17 @@ export default function AssumptionIsNotEvidencePage() {
               </Link>{' '}
               already requires that trail: which asset configuration, which failure and maintenance
               records, and which human judgment produced the recommendation. An output without the
-              trail is an assumption wearing a number. The dashboard can be confident. Confidence
-              is not the lineage. Stage-1 evidence is the record held on the case. A live connector
+              trail is an assumption wearing a number. The dashboard can be confident.{' '}
+              <Link
+                href="/insights/confidence-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Confidence Is Not Evidence
+              </Link>{' '}
+              is that sentence at full length: a strong gut feel, a high model score, years of
+              tribal &quot;we&apos;ve always known,&quot; or a manager&apos;s certainty is still
+              not a recorded check or a verified outcome. Confidence is not the lineage. Stage-1
+              evidence is the record held on the case. A live connector
               that pulls historian or control-system tags sits outside this edition. A score that
               arrived without those records is not a tag, and it is not observed fact.
             </p>
@@ -620,7 +629,16 @@ export default function AssumptionIsNotEvidencePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/confidence-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Confidence Is Not Evidence
+              </Link>
+              , on why a strong gut feel, a high model score, years of tribal &quot;we&apos;ve
+              always known,&quot; or a manager&apos;s certainty is still not a recorded check or a
+              verified outcome. Companion reading:{' '}
               <Link
                 href="/insights/unknown-is-not-clear"
                 className="text-[#3B82F6] hover:text-white transition-colors"
