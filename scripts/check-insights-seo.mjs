@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const closureIndex = slugs.indexOf('accountability-is-not-closure');
 const accountabilityIndex = slugs.indexOf('authorization-is-not-accountability');
 const proofIndex = slugs.indexOf('proof-is-not-authorization');
 const assuredIndex = slugs.indexOf('assured-is-not-proven');
@@ -31,7 +32,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    accountabilityIndex >= 0 &&
+    closureIndex >= 0 &&
+    accountabilityIndex > closureIndex &&
     proofIndex > accountabilityIndex &&
     assuredIndex > proofIndex &&
     verifiedIndex > assuredIndex &&
@@ -43,7 +45,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3206,6 +3208,110 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/authorization-is-not-accountability')) {
     fail(`${page} must link authorization-is-not-accountability`);
+  }
+}
+
+if (
+  !accountabilityPage.includes('The series continues with') ||
+  !accountabilityPage.includes('/insights/accountability-is-not-closure')
+) {
+  fail('authorization-is-not-accountability must point the series forward to accountability-is-not-closure');
+}
+
+for (const [slug, label] of [
+  ['authorization-is-not-accountability', 'authorization-is-not-accountability'],
+  ['proof-is-not-authorization', 'proof-is-not-authorization'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+  ['verified-is-not-assured', 'verified-is-not-assured'],
+]) {
+  if (!stepBlock(slug).includes("'accountability-is-not-closure'")) {
+    fail(`${label} related reading must cite accountability-is-not-closure`);
+  }
+}
+
+const closureBlock = stepBlock('accountability-is-not-closure');
+for (const required of [
+  'authorization-is-not-accountability',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'verified-is-not-assured',
+]) {
+  if (!closureBlock.includes(`'${required}'`)) {
+    fail(`accountability-is-not-closure related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(closureBlock)) {
+  fail('accountability-is-not-closure related reading must include the Strategic Pilot');
+}
+if (closureBlock.includes("next: 'strategic-pilot'")) {
+  fail('accountability-is-not-closure next step is the Field Manual');
+}
+
+const closurePage = read('app/insights/accountability-is-not-closure/page.tsx');
+for (const required of [
+  '/insights/authorization-is-not-accountability',
+  '/insights/proof-is-not-authorization',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verification-is-not-optional',
+  '/insights/verified-is-not-assured',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'who remains responsible',
+  'verified outcome',
+  'measured result',
+  'named intent',
+  'operating loop',
+  'accountable owner',
+  'Surfacing is still a read',
+  'after the plant move',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the accountable owner',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'accountable closure',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says accountable is not a customer plant release',
+  'A named human decides',
+  'A named human remains accountable',
+  'leaves the operating loop open',
+]) {
+  if (!closurePage.includes(required)) {
+    fail(`accountability-is-not-closure page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/authorization-is-not-accountability/page.tsx',
+  'app/insights/proof-is-not-authorization/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+]) {
+  if (!read(page).includes('/insights/accountability-is-not-closure')) {
+    fail(`${page} must link accountability-is-not-closure`);
   }
 }
 
