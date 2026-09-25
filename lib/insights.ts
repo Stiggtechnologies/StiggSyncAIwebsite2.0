@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'status-is-not-clearance',
+    title: 'Status Is Not Clearance',
+    description:
+      'Status is not clearance. A status field, a status tile, a status badge, or an all systems status OK string is a label on stored or computed values under the thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance is a named human decision against observed outcomes, named coverage and assumptions, and refusal when evidence is not enough. Treating a status label as clearance is another path to false clearance under the honesty and verification boundary. A status label can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the label. Sync may surface a status beside approved evidence when the threshold, coverage, and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat status clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Green Is Not Go, Silence Is Not Clearance, Alert Is Not Decision, Dashboard Is Not Control, Telemetry Is Not Truth, Coverage Is Not Control, Verification Is Not Optional, and Human Decision Is Not Optional.',
+    excerpt:
+      'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values under thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance is a named human decision.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'green-is-not-go',
     title: 'Green Is Not Go',
     description:
@@ -474,12 +486,64 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'status-is-not-clearance': {
+    relatedSlug: 'green-is-not-go',
+    relatedNote: 'A green tile is a color on a value under a threshold. A status field, status tile, status badge, or all systems status OK string is the label on that comparison. Neither is clearance.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'No reply and an empty inbox are not clearance. An affirmative status label is not a stronger form of quiet.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'A rule crossing is not a decision. A status of OK on the inside of the same rule is not clearance.',
+      },
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'A dashboard reads a value. A status tile on that read is a label, not a write and not clearance.',
+      },
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A feed can compute an all systems status OK string and still be the wrong sensor, a stale sample, or a proxy.',
+      },
+      {
+        slug: 'coverage-is-not-control',
+        note: 'An all systems status OK string covers the watched set. Coverage is not clearance to run or leave equipment in service.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A later status of OK does not close the Decision Case.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'Clearance still requires a named person to accept, reject, escalate, or return. The status label does not record that act.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal that cites a status field is still a proposal.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'Work intent on the case is not a start. A status badge does not unlock ACTION.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the closed case, not status clearance.',
+      },
+    ],
+  },
   'green-is-not-go': {
     relatedSlug: 'dashboard-is-not-control',
     relatedNote: 'A dashboard reads a value and draws it. A green tile on that read is a value under a threshold someone chose. It is not permission to run, clear, start, or leave equipment in service.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case.',
+      },
       {
         slug: 'alert-is-not-decision',
         note: 'A red tile is not a decision. A green status inside the same rule is not permission to go.',
@@ -532,6 +596,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status tile on the dashboard is a label on a read. It is not clearance and not a write.',
+      },
       {
         slug: 'green-is-not-go',
         note: 'A green tile on the dashboard is a value under a threshold someone chose. It is not permission to run, clear, start, or leave equipment in service.',
@@ -588,6 +656,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status computed from a feed is a label on those readings. It is not clearance and not truth for the decision.',
+      },
       {
         slug: 'green-is-not-go',
         note: 'A green-looking feed is a value under a threshold. It is not permission to run, clear, start, or leave equipment in service.',
@@ -2145,6 +2217,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'status-is-not-clearance',
+        note: 'An all systems status OK string is an affirmative label, not silence. The label is still not clearance.',
+      },
+      {
         slug: 'assumption-is-not-evidence',
         note: 'A belief or a model line is not a recorded fact.',
       },
@@ -2237,6 +2313,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'status-is-not-clearance',
+        note: 'A status label does not record who decided. Clearance still requires a named human decision.',
+      },
+      {
         slug: 'green-is-not-go',
         note: 'A green tile does not record who decided. Go still requires a named human decision.',
       },
@@ -2288,6 +2368,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status that says OK is the inside of a rule. The label is not clearance to run, release, or close the case.',
+      },
       {
         slug: 'green-is-not-go',
         note: 'A green status is the other side of an alert. The color is not the decision to run, clear, start, or leave equipment in service.',
@@ -2361,6 +2445,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'status-is-not-clearance',
+        note: 'An all systems status OK string covers the watched set. It is not clearance to run or leave equipment in service.',
+      },
+      {
         slug: 'green-is-not-go',
         note: 'A watched set that paints every tile green is still the watched set. Green is not permission to run or leave equipment in service.',
       },
@@ -2404,6 +2492,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status that returns to OK is not the observed outcome that closes the case.',
+      },
       {
         slug: 'green-is-not-go',
         note: 'A green tile is not the observed outcome that closes the case.',

@@ -2231,6 +2231,7 @@ if (!verificationBlock.includes("'green-is-not-go'")) {
 
 const greenBlock = stepBlock('green-is-not-go');
 for (const required of [
+  'status-is-not-clearance',
   'dashboard-is-not-control',
   'alert-is-not-decision',
   'telemetry-is-not-truth',
@@ -2306,6 +2307,107 @@ for (const required of [
 ]) {
   if (!greenPage.includes(required)) {
     fail(`green-is-not-go page must include ${required}`);
+  }
+}
+if (
+  !greenPage.includes('The series continues with') ||
+  !greenPage.includes('/insights/status-is-not-clearance')
+) {
+  fail('green-is-not-go must point the series forward to status-is-not-clearance');
+}
+
+for (const [slug, label] of [
+  ['silence-is-not-clearance', 'silence-is-not-clearance'],
+  ['alert-is-not-decision', 'alert-is-not-decision'],
+  ['dashboard-is-not-control', 'dashboard-is-not-control'],
+  ['telemetry-is-not-truth', 'telemetry-is-not-truth'],
+  ['coverage-is-not-control', 'coverage-is-not-control'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+  ['human-decision-is-not-optional', 'human-decision-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'status-is-not-clearance'")) {
+    fail(`${label} related reading must cite status-is-not-clearance`);
+  }
+}
+
+const statusBlock = stepBlock('status-is-not-clearance');
+for (const required of [
+  'green-is-not-go',
+  'silence-is-not-clearance',
+  'alert-is-not-decision',
+  'dashboard-is-not-control',
+  'telemetry-is-not-truth',
+  'coverage-is-not-control',
+  'verification-is-not-optional',
+  'human-decision-is-not-optional',
+  'recommend-is-not-authorize',
+  'action-is-not-execution',
+  'learning-requires-a-verified-outcome',
+]) {
+  if (!statusBlock.includes(`'${required}'`)) {
+    fail(`status-is-not-clearance related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(statusBlock)) {
+  fail('status-is-not-clearance related reading must include the Strategic Pilot');
+}
+if (statusBlock.includes("next: 'strategic-pilot'")) {
+  fail('status-is-not-clearance next step is the Field Manual');
+}
+
+const statusPage = read('app/insights/status-is-not-clearance/page.tsx');
+for (const required of [
+  '/insights/green-is-not-go',
+  '/insights/silence-is-not-clearance',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-control',
+  '/insights/telemetry-is-not-truth',
+  '/insights/coverage-is-not-control',
+  '/insights/verification-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/recommend-is-not-authorize',
+  '/insights/action-is-not-execution',
+  '/insights/learning-requires-a-verified-outcome',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  'status field',
+  'status tile',
+  'status badge',
+  'all systems status OK',
+  'label on stored or computed values',
+  'thresholds someone chose',
+  'not clearance to run',
+  'start work',
+  'leave equipment in service',
+  'close a Decision Case',
+  'named human decision',
+  'observed outcomes',
+  'named coverage and assumptions',
+  'refusal when evidence is not enough',
+  'evidence is not enough',
+  'false clearance',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the label',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'status clearance',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice status that says OK is not a customer plant release',
+]) {
+  if (!statusPage.includes(required)) {
+    fail(`status-is-not-clearance page must include ${required}`);
   }
 }
 
