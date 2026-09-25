@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'telemetry-is-not-truth',
+    title: 'Telemetry Is Not Truth',
+    description:
+      'Telemetry is not truth. Telemetry is a stream of observations: tags, sensors, historians, SCADA, and CMMS counters. Truth for a plant decision is whether those readings, under their actual sensing, sampling, calibration, and context limits, justify the action or clearance at hand. A dense, high-frequency, green-looking telemetry feed can still be wrong for the decision — wrong sensor, wrong unit, stale sample, aliased signal, or a proxy that does not track the failure mode. Treating telemetry as truth is another path to false clearance under the honesty and verification boundary. A feed can inform a recommendation to investigate. It is not the plant decision, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the feed. Sync may surface telemetry beside approved evidence when sensing, sampling, calibration, and context limits are named. Sync refuses false precision. Sync refuses when the readings do not justify the action. Sync must not auto-close, auto-authorize, or treat telemetry clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Accuracy Is Not Precision, Calibration Is Not Validation, Simulation Is Not Proof, Forecast Is Not Fact, Model Is Not Reality, Proxy Is Not Outcome, Verification Is Not Optional, and Learning Requires a Verified Outcome.',
+    excerpt:
+      'Telemetry is a stream of observations: tags, sensors, historians, SCADA, and CMMS counters. Truth is whether those readings, under sensing, sampling, calibration, and context limits, justify the action. A dense, green-looking feed can still be the wrong sensor, the wrong unit, a stale sample, an aliased signal, or a proxy. Treating telemetry as truth is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'accuracy-is-not-precision',
     title: 'Accuracy Is Not Precision',
     description:
@@ -438,12 +450,120 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'telemetry-is-not-truth': {
+    relatedSlug: 'accuracy-is-not-precision',
+    relatedNote: 'Precision is repeatability, not accuracy relative to the plant decision. A telemetry feed, however dense or precise, is not truth for that decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A calibration that makes historical residuals look small is not validation. A stream of tags is not truth for the decision, and a small residual on that feed is still not validation.',
+      },
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A simulation of possible futures is not proof. A feed of tags is not truth for the decision.',
+      },
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast is not a fact about the plant. A historian trace is not truth for the decision.',
+      },
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model is not the plant. A stream of observations is not truth for the decision.',
+      },
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram is not the operating reality. A SCADA picture of tags is not truth for the decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A green feed is not the check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not telemetry clearance.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A proxy that does not track the failure mode is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unnamed sensing limit is not a recorded fact about the plant.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A dense green feed is not a recorded check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope of tags is not truth. The tags themselves are not truth for the decision.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation to investigate is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of tags is not a decision and not truth.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A feed does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A green feed does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A high-frequency sample of the wrong window is not the population the decision needs.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A story about a tag is not evidence. The tag is not truth by itself.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter on a tag is not an actionable signal, and it is not truth.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A sensor that shows a symptom has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit a tag sits inside is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Co-moving tags are not a recorded causal check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert a tag raised is still not a decision.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet feed is not clearance. Silence on limits is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A feed without a reconstructable trail is not observed truth for the decision.',
+      },
+    ],
+  },
   'accuracy-is-not-precision': {
     relatedSlug: 'calibration-is-not-validation',
     relatedNote: 'A calibration that makes historical residuals look small is not validation. A precise residual is repeatability, not accuracy relative to the plant decision.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A stream of tags, sensors, historians, SCADA, or CMMS counters is not truth for the decision. Stable decimals on that feed are still not accuracy.',
+      },
       {
         slug: 'simulation-is-not-proof',
         note: 'A precise run of possible futures is not proof the plant will behave that way, and precision is not accuracy.',
@@ -545,6 +665,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'telemetry-is-not-truth',
+        note: 'A stream of tags, sensors, historians, SCADA, or CMMS counters is not truth for the decision. A small residual on that feed is still not validation.',
+      },
+      {
         slug: 'accuracy-is-not-precision',
         note: 'A precise residual is repeatability. It is not accuracy relative to the plant decision and the observed outcome.',
       },
@@ -644,6 +768,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A dense feed is not truth for the decision. A well-sampled run is still not proof the plant will behave that way.',
+      },
       {
         slug: 'accuracy-is-not-precision',
         note: 'A precise run is repeatability. It is not accuracy, and it is not proof the plant will behave that way.',
@@ -745,6 +873,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'telemetry-is-not-truth',
+        note: 'A historian trace treated as the future is not a fact about the plant, and it is not truth for the decision.',
+      },
+      {
         slug: 'accuracy-is-not-precision',
         note: 'A precise forecast is repeatability. Stable decimals are not accuracy, and they are not a fact about the plant.',
       },
@@ -845,6 +977,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'telemetry-is-not-truth',
+        note: 'A stream of tags is not the plant, and treating the feed as truth does not make the model the plant.',
+      },
+      {
         slug: 'accuracy-is-not-precision',
         note: 'A precise model output is repeatability. Fine resolution is not accuracy, and the model is still not the plant.',
       },
@@ -944,6 +1080,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A SCADA picture of tags is still not the operating reality, and the feed is not truth for the decision.',
+      },
       {
         slug: 'accuracy-is-not-precision',
         note: 'A precise diagram is still not the operating reality, and fine resolution is not accuracy.',
@@ -1441,6 +1581,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'telemetry-is-not-truth',
+        note: 'A tag used as a stand-in is not the verified outcome, and a green feed is not truth.',
+      },
+      {
         slug: 'accuracy-is-not-precision',
         note: 'A precise stand-in is still not the verified outcome, and precision is not accuracy.',
       },
@@ -1536,6 +1680,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A slope of tags is not a recorded check, and the feed under that slope is not truth.',
+      },
       {
         slug: 'accuracy-is-not-precision',
         note: 'A precise slope is not a recorded check, and stable decimals are not accuracy.',
@@ -1705,6 +1853,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'telemetry-is-not-truth',
+        note: 'Being sure the feed is dense enough is not a recorded check, and it is not truth.',
+      },
+      {
         slug: 'accuracy-is-not-precision',
         note: 'A precise score is not a recorded check, and precision is not accuracy.',
       },
@@ -1772,6 +1924,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'An unnamed sensing or sampling limit is not a recorded fact about the plant, and the feed is not truth for the decision.',
+      },
       {
         slug: 'accuracy-is-not-precision',
         note: 'A precise assumption is not a recorded fact, and precision is not accuracy relative to the plant decision.',

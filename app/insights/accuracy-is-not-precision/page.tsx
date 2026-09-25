@@ -1009,7 +1009,15 @@ export default function AccuracyIsNotPrecisionPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/telemetry-is-not-truth"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Telemetry Is Not Truth
+              </Link>
+              , on why a stream of tags, sensors, historians, SCADA, and CMMS counters is not
+              truth for the plant decision. Companion reading:{' '}
               <Link
                 href="/insights/calibration-is-not-validation"
                 className="text-[#3B82F6] hover:text-white transition-colors"
