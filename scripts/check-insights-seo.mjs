@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const optionalityIndex = slugs.indexOf('flexibility-is-not-optionality');
 const flexibilityIndex = slugs.indexOf('liquidity-is-not-flexibility');
 const liquidityIndex = slugs.indexOf('solvency-is-not-liquidity');
 const solvencyIndex = slugs.indexOf('survival-is-not-solvency');
@@ -46,7 +47,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    flexibilityIndex >= 0 &&
+    optionalityIndex >= 0 &&
+    flexibilityIndex > optionalityIndex &&
     liquidityIndex > flexibilityIndex &&
     solvencyIndex > liquidityIndex &&
     survivalIndex > solvencyIndex &&
@@ -73,7 +75,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -5534,6 +5536,230 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/liquidity-is-not-flexibility')) {
     fail(`${page} must link liquidity-is-not-flexibility`);
+  }
+}
+
+for (const [slug, label] of [
+  ['liquidity-is-not-flexibility', 'liquidity-is-not-flexibility'],
+  ['solvency-is-not-liquidity', 'solvency-is-not-liquidity'],
+  ['survival-is-not-solvency', 'survival-is-not-solvency'],
+  ['runway-is-not-survival', 'runway-is-not-survival'],
+  ['cash-is-not-runway', 'cash-is-not-runway'],
+  ['arr-is-not-cash', 'arr-is-not-cash'],
+  ['revenue-is-not-arr', 'revenue-is-not-arr'],
+  ['impact-is-not-revenue', 'impact-is-not-revenue'],
+  ['outcome-is-not-impact', 'outcome-is-not-impact'],
+  ['value-is-not-outcome', 'value-is-not-outcome'],
+  ['profit-is-not-value', 'profit-is-not-value'],
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'flexibility-is-not-optionality'")) {
+    fail(`${label} related reading must cite flexibility-is-not-optionality`);
+  }
+}
+
+const optionalityBlock = stepBlock('flexibility-is-not-optionality');
+for (const required of [
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'proxy-is-not-outcome',
+  'margin-is-not-profit',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'verified-is-not-assured',
+  'recommend-is-not-authorize',
+  'green-is-not-go',
+  'correlation-is-not-causation',
+]) {
+  if (!optionalityBlock.includes(`'${required}'`)) {
+    fail(`flexibility-is-not-optionality related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(optionalityBlock)) {
+  fail('flexibility-is-not-optionality related reading must include the Strategic Pilot');
+}
+if (optionalityBlock.includes("next: 'strategic-pilot'")) {
+  fail('flexibility-is-not-optionality next step is the Field Manual');
+}
+
+const optionalityPage = read('app/insights/flexibility-is-not-optionality/page.tsx');
+for (const required of [
+  '/insights/liquidity-is-not-flexibility',
+  '/insights/solvency-is-not-liquidity',
+  '/insights/survival-is-not-solvency',
+  '/insights/runway-is-not-survival',
+  '/insights/cash-is-not-runway',
+  '/insights/arr-is-not-cash',
+  '/insights/revenue-is-not-arr',
+  '/insights/impact-is-not-revenue',
+  '/insights/outcome-is-not-impact',
+  '/insights/value-is-not-outcome',
+  '/insights/profit-is-not-value',
+  '/insights/proxy-is-not-outcome',
+  '/insights/margin-is-not-profit',
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/accountability-is-not-closure',
+  '/insights/authorization-is-not-accountability',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verified-is-not-assured',
+  '/insights/recommend-is-not-authorize',
+  '/insights/green-is-not-go',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/correlation-is-not-causation',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'Flexibility is not optionality',
+  'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window',
+  'without breaking obligations, covenants, or continuity',
+  'the ability to choose and change course, not merely to pay what is already due',
+  'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state',
+  'theoretical choice inventory, not proof those choices are executable inside the named decision window',
+  'lead times, skills, covenants, plant continuity, and cash may still block exercise',
+  'A flexible firm can still lack optionality',
+  'A firm with optionality on paper can still lack flexibility',
+  'An optionality note alone proves neither',
+  'A choice that exists on paper is not a green',
+  'Liquidity is not flexibility',
+  'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term',
+  'payroll, vendors, debt service windows',
+  'without forced asset sales or covenant breaches',
+  'named decision window',
+  'Solvency is not liquidity',
+  'Solvency is whether assets and claims structure can cover liabilities',
+  'structural horizon',
+  'balance-sheet and claim quality',
+  'Survival is not solvency',
+  'whether the business can keep meeting obligations',
+  'payroll, vendors, debt service, plant continuity',
+  'next decision horizon',
+  'Runway is not survival',
+  'how long operations can continue at the current net burn before cash is exhausted',
+  'cash divided by burn rate',
+  'Cash is not runway',
+  'money received (collected) that can be spent now',
+  'ARR is not cash',
+  'Revenue is not ARR',
+  'Impact is not revenue',
+  'Outcome is not impact',
+  'Value is not outcome',
+  'Profit is not value',
+  'Margin is not profit',
+  'Cash is not margin',
+  'Closure is not cash',
+  'annualized value of recurring contracted subscription revenue that renews',
+  'contribution margin',
+  'Surfacing is still a read',
+  'Sync may surface a flexibility note or an optionality note',
+  'after the plant move',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'flexibility as optionality',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'states no price',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not book revenue',
+  'Sync does not recognize revenue',
+  'Sync does not measure ARR',
+  'Sync does not measure ARR for the customer',
+  'Sync does not measure cash',
+  'Sync does not measure cash for the customer',
+  'Sync does not measure runway',
+  'Sync does not measure runway for the customer',
+  'Sync does not measure survival',
+  'Sync does not measure survival for the customer',
+  'Sync does not measure solvency',
+  'Sync does not measure solvency for the customer',
+  'Sync does not measure liquidity',
+  'Sync does not measure liquidity for the customer',
+  'Sync does not measure flexibility',
+  'Sync does not measure flexibility for the customer',
+  'Sync does not measure optionality',
+  'Sync does not measure optionality for the customer',
+  'Sync does not collect cash',
+  'Sync does not attribute a change in cash, risk, or capacity',
+  'Recommend is not authorize',
+  'APP_SETUP_URL',
+  '/reliability-assessment',
+  '/strategic-pilot',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says flexibility is optionality',
+  'A named human decides',
+  'A named human remains accountable',
+  'different refusal',
+  'does not invent a customer',
+  'does not collapse optionality into flexibility',
+]) {
+  if (!optionalityPage.includes(required)) {
+    fail(`flexibility-is-not-optionality page must include ${required}`);
+  }
+}
+
+if (
+  !flexibilityPage.includes('The series continues with') ||
+  !flexibilityPage.includes('/insights/flexibility-is-not-optionality')
+) {
+  fail('liquidity-is-not-flexibility must point the series forward to flexibility-is-not-optionality');
+}
+
+for (const page of [
+  'app/insights/liquidity-is-not-flexibility/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/authorization-is-not-accountability/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+]) {
+  if (!read(page).includes('/insights/flexibility-is-not-optionality')) {
+    fail(`${page} must link flexibility-is-not-optionality`);
   }
 }
 
