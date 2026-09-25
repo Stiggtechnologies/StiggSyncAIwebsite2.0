@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'cash-is-not-margin',
+    title: 'Cash Is Not Margin',
+    description:
+      'Cash is not margin. Cash collected is money received. Invoices paid means the customer settled the bill. Contribution margin is what remains of revenue after the cost to serve. Profitable ARR is recurring revenue that still covers that cost to serve. Cash in the bank is not margin after the cost to serve. Neither profitability record is produced by the receipt. Treating cash collected or invoices paid as contribution margin or profitable ARR ships a commercial receipt into a cost-to-serve claim under the honesty and verification boundary. A paid invoice can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not the labor, not the parts, not the return visit, and not a Decision Case that has already earned margin. Evidence from the plant beats the receipt. Sync may surface cash collected or an invoice marked paid beside Evidence, Verification, Proof, Authorization, Accountability, and Closure. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat invoices paid as contribution margin, or as Learning credit. Sync does not collect cash. Sync does not recognize revenue. Sync does not compute contribution margin. Sync does not declare profitable ARR. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Cash collected is money received. Invoices paid means the customer settled the bill. Neither is contribution margin, and neither is profitable ARR. Cash in the bank is not margin after the cost to serve.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'closure-is-not-cash',
     title: 'Closure Is Not Cash',
     description:
@@ -594,12 +606,44 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'closure-is-not-cash': {
-    relatedSlug: 'accountability-is-not-closure',
-    relatedNote: 'Accountability names who remains responsible after the plant move. Closure is the verified outcome recorded against that ownership. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
+  'cash-is-not-margin': {
+    relatedSlug: 'closure-is-not-cash',
+    relatedNote: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Cash collected and invoices paid are still not contribution margin or profitable ARR.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A named owner is not closure of the operating loop. Cash collected is not contribution margin after the cost to serve.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A paid invoice on that order is not margin after the cost to serve.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Cash in the bank is not margin after the cost to serve.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit invoices paid as contribution margin or cash collected as profitable ARR.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not compute contribution margin.',
+      },
+    ],
+  },
+  'closure-is-not-cash': {
+    relatedSlug: 'cash-is-not-margin',
+    relatedNote: 'Cash collected and invoices paid are not contribution margin or profitable ARR. Cash in the bank is money received. Margin is what remains after the cost to serve.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Accountability names who remains responsible after the plant move. Closure is the verified outcome recorded against that ownership. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
+      },
       {
         slug: 'complete-is-not-verified',
         note: 'A completed work order is a completion label. It is not the verified outcome, and it is not cash collected.',
@@ -624,6 +668,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin or profitable ARR. Cash in the bank is not margin after the cost to serve.',
+      },
       {
         slug: 'authorization-is-not-accountability',
         note: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
@@ -817,6 +865,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'cash-is-not-margin',
+        note: 'A completed work order is not verification. Cash collected and invoices paid are not contribution margin after the cost to serve.',
+      },
+      {
         slug: 'closure-is-not-cash',
         note: 'A completed work order is not verification. Closing the work order is not cash collected or revenue recognized.',
       },
@@ -864,6 +916,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'A clearance stamp is not completion. Cash in the bank is not margin after the cost to serve.',
+      },
       {
         slug: 'closure-is-not-cash',
         note: 'A clearance stamp is not completion. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
@@ -3084,6 +3140,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'cash-is-not-margin',
+        note: 'Learning inherits the verified outcome. Invoices paid are not contribution margin, and cash collected is not profitable ARR.',
+      },
+      {
         slug: 'closure-is-not-cash',
         note: 'Learning inherits the verified outcome. A closed work order is not cash collected, and it is not revenue recognized.',
       },
@@ -3110,6 +3170,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Recording the check is the measured result. The check does not compute contribution margin and does not declare profitable ARR.',
+      },
       {
         slug: 'closure-is-not-cash',
         note: 'Recording the check is the measured result. The check does not collect cash and does not recognize revenue.',
