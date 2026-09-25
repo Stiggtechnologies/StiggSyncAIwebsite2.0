@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'authorization-is-not-accountability',
+    title: 'Authorization Is Not Accountability',
+    description:
+      'Authorization is not accountability. A named human decision that accepts consequence and routes intent to authorized execution systems is authorization. That act answers who may start. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs. Authorization is still not accountability for outcomes after execution. Treating the authorized state as accountability ships a start decision into ownership of results nobody has kept, under the honesty and verification boundary. An authorized state can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that already owns the outcome. Evidence from the plant beats the authorized state. Sync may surface an authorized state beside Evidence, Verification, and Proof. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat authorized accountability as Learning credit. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Companion to Proof Is Not Authorization, Assured Is Not Proven, Verified Is Not Assured, Green Is Not Go, Action Is Not Execution, Human Decision Is Not Optional, Honesty Boundary Is Not Optional, and Verification Is Not Optional.',
+    excerpt:
+      'A named human decision that accepts consequence and routes intent to authorized execution systems answers who may start. It is not accountability for outcomes after the work runs. Accountability is the continuing named ownership of results, exceptions, and learning after execution.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'proof-is-not-authorization',
     title: 'Proof Is Not Authorization',
     description:
@@ -558,12 +570,52 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'proof-is-not-authorization': {
-    relatedSlug: 'assured-is-not-proven',
-    relatedNote: 'A closed evidentiary chain answers whether a specific claim held under named conditions. Authorization is a separate named human decision that accepts consequence and routes intent to authorized execution systems.',
+  'authorization-is-not-accountability': {
+    relatedSlug: 'proof-is-not-authorization',
+    relatedNote: 'A closed chain answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'Assurance is standing confidence. Proof is a closed chain. Authorization is who may start. None of the three is accountability for the outcome after the work runs.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Accountability is continuing named ownership after execution, not that past check.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An authorized state beside that tile is not accountability for the result.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'ACTION records intent. Authorized execution systems write the work. Accountability remains with a named human after the plant move.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A named person accepts the consequence. That act authorizes the start. It does not, by itself, own the result, the exception, and the learning.',
+      },
+      {
+        slug: 'honesty-boundary-is-not-optional',
+        note: 'Calling an authorized state accountability crosses the honesty boundary. Surfacing the state is still a read.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive. Recording the check is not the continuing ownership of the outcome.',
+      },
+    ],
+  },
+  'proof-is-not-authorization': {
+    relatedSlug: 'authorization-is-not-accountability',
+    relatedNote: 'Authorization answers who may start. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs. The named decision is not that ownership.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'A closed evidentiary chain answers whether a specific claim held under named conditions. Authorization is a separate named human decision. Neither is accountability for the outcome.',
+      },
       {
         slug: 'verified-is-not-assured',
         note: 'A verified record closes a claim about the past. Assurance is standing confidence. Proof is the closed chain. None of the three is authorization to execute.',
@@ -596,6 +648,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the work runs.',
+      },
       {
         slug: 'verified-is-not-assured',
         note: 'A verified record closes a claim about the past. Assurance is standing confidence that the asset stays known-good. Neither is proof of a specific claim under named conditions.',
@@ -632,6 +688,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'A verified record closes a claim about the past. An authorized state is not accountability for the outcome after the work runs.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain answers whether a specific claim held. It is not authorization to execute plant work, write a work order, or clear equipment to run.',
@@ -872,6 +932,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'A green tile is not go. An authorized state is not accountability for the result after the plant move.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A green tile is not go. A closed chain beside that tile is not authorization to clear equipment to run.',
@@ -2681,6 +2745,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authorization-is-not-accountability',
+        note: 'A named person accepts the consequence and may start the work. That act is not continuing ownership of the outcome after execution.',
+      },
+      {
         slug: 'proof-is-not-authorization',
         note: 'A named person accepts the consequence. Proof of a claim does not record that act and does not authorize execution.',
       },
@@ -2728,6 +2796,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Calling authorization accountability crosses the honesty boundary. Authorization answers who may start.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'Calling a closed chain authorization crosses the honesty boundary. Proof answers whether the claim held.',
@@ -2881,6 +2953,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authorization-is-not-accountability',
+        note: 'ACTION records intent. Authorization routes that intent. Neither owns the result, the exception, or the learning after execution.',
+      },
+      {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain is not the write. Proof does not unlock ACTION and does not execute plant work.',
       },
@@ -2930,6 +3006,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Recording the check does not make authorization into accountability for the outcome after the work runs.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'Recording the check does not authorize plant work. Proof is not authorization.',

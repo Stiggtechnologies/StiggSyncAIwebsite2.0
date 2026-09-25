@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const accountabilityIndex = slugs.indexOf('authorization-is-not-accountability');
 const proofIndex = slugs.indexOf('proof-is-not-authorization');
 const assuredIndex = slugs.indexOf('assured-is-not-proven');
 const verifiedIndex = slugs.indexOf('verified-is-not-assured');
@@ -30,7 +31,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    proofIndex >= 0 &&
+    accountabilityIndex >= 0 &&
+    proofIndex > accountabilityIndex &&
     assuredIndex > proofIndex &&
     verifiedIndex > assuredIndex &&
     completeIndex > verifiedIndex &&
@@ -41,7 +43,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3088,6 +3090,122 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/proof-is-not-authorization')) {
     fail(`${page} must link proof-is-not-authorization`);
+  }
+}
+
+if (
+  !proofPage.includes('The series continues with') ||
+  !proofPage.includes('/insights/authorization-is-not-accountability')
+) {
+  fail('proof-is-not-authorization must point the series forward to authorization-is-not-accountability');
+}
+
+for (const [slug, label] of [
+  ['proof-is-not-authorization', 'proof-is-not-authorization'],
+  ['assured-is-not-proven', 'assured-is-not-proven'],
+  ['verified-is-not-assured', 'verified-is-not-assured'],
+  ['green-is-not-go', 'green-is-not-go'],
+  ['action-is-not-execution', 'action-is-not-execution'],
+  ['human-decision-is-not-optional', 'human-decision-is-not-optional'],
+  ['honesty-boundary-is-not-optional', 'honesty-boundary-is-not-optional'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'authorization-is-not-accountability'")) {
+    fail(`${label} related reading must cite authorization-is-not-accountability`);
+  }
+}
+
+const accountabilityBlock = stepBlock('authorization-is-not-accountability');
+for (const required of [
+  'proof-is-not-authorization',
+  'assured-is-not-proven',
+  'verified-is-not-assured',
+  'green-is-not-go',
+  'action-is-not-execution',
+  'human-decision-is-not-optional',
+  'honesty-boundary-is-not-optional',
+  'verification-is-not-optional',
+]) {
+  if (!accountabilityBlock.includes(`'${required}'`)) {
+    fail(`authorization-is-not-accountability related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(accountabilityBlock)) {
+  fail('authorization-is-not-accountability related reading must include the Strategic Pilot');
+}
+if (accountabilityBlock.includes("next: 'strategic-pilot'")) {
+  fail('authorization-is-not-accountability next step is the Field Manual');
+}
+
+const accountabilityPage = read('app/insights/authorization-is-not-accountability/page.tsx');
+for (const required of [
+  '/insights/proof-is-not-authorization',
+  '/insights/assured-is-not-proven',
+  '/insights/verified-is-not-assured',
+  '/insights/green-is-not-go',
+  '/insights/action-is-not-execution',
+  '/insights/human-decision-is-not-optional',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/verification-is-not-optional',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'who may start',
+  'continuing named ownership',
+  'results, exceptions, and learning',
+  'after the work runs',
+  'authorized state',
+  'Surfacing is still a read',
+  'after the plant move',
+  'accepts consequence',
+  'authorized execution systems',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the authorized state',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'authorized accountability',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says authorized is not a customer plant release',
+  'A named human decides',
+  'A named human remains accountable',
+]) {
+  if (!accountabilityPage.includes(required)) {
+    fail(`authorization-is-not-accountability page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/proof-is-not-authorization/page.tsx',
+  'app/insights/assured-is-not-proven/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+  'app/insights/green-is-not-go/page.tsx',
+  'app/insights/action-is-not-execution/page.tsx',
+  'app/insights/human-decision-is-not-optional/page.tsx',
+  'app/insights/honesty-boundary-is-not-optional/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+]) {
+  if (!read(page).includes('/insights/authorization-is-not-accountability')) {
+    fail(`${page} must link authorization-is-not-accountability`);
   }
 }
 

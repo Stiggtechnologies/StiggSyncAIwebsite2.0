@@ -538,6 +538,20 @@ export default function ProofIsNotAuthorizationPage() {
               the work.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/authorization-is-not-accountability"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Authorization Is Not Accountability
+              </Link>
+              , on why a named human decision that accepts consequence and routes intent to
+              authorized execution systems is still not accountability for outcomes after the work
+              runs. Authorization answers who may start. Accountability is the continuing named
+              ownership of results, exceptions, and learning after execution.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
