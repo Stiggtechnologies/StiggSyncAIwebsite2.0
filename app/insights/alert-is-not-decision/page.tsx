@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('dashboard-is-not-decision');
+const article = getInsightArticle('alert-is-not-decision');
 
-export default function DashboardIsNotDecisionPage() {
+export default function AlertIsNotDecisionPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,9 +31,7 @@ export default function DashboardIsNotDecisionPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Dashboard Is Not Decision
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Alert Is Not Decision</h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -42,31 +40,33 @@ export default function DashboardIsNotDecisionPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              A dashboard can surface plant or maintenance state. KPI tiles, trend charts, health
-              scores, and red, amber, and green status are that display. Seeing them does not open
-              a Decision Case, and it does not decide one.
+              An alert can surface that something crossed a rule. A threshold breach, an anomaly
+              flag, a red tile, a pager page, and a silenced notification are that signal. Seeing
+              one, acknowledging one, or silencing one does not open a Decision Case, and it does
+              not decide one.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              A dashboard — KPI tiles, trend charts, health scores, and red, amber, and green
-              status — can surface plant or maintenance state. Seeing a dashboard is not a Decision
-              Case and not a decision. Sync may show coverage, recommendations, and status. A named
-              human still opens a Decision Case on a question, cites approved evidence, and
-              accepts, rejects, escalates, or returns. A green dashboard, an improved trend, or a
-              cleared alert tile must not be read as authorization, verification of outcome,
-              work-order execution, or plant control.
+              An alert — a threshold breach, an anomaly flag, a red tile, a pager page, or a
+              silenced notification — can surface that something crossed a rule. Seeing,
+              acknowledging, or silencing an alert is not a Decision Case and not a decision. Sync
+              may emit alerts, coverage gaps, and recommendations. A named human still opens a
+              Decision Case on a question, cites approved evidence, and accepts, rejects,
+              escalates, or returns. Clearing an alert queue, muting a channel, or auto-closing a
+              ticket must not be read as authorization, verification of outcome, work-order
+              execution, or plant control.
             </p>
 
             <p>
-              Reliability work collapses the display because a settled color looks like a settled
-              case. The health score moves. The trend line changes direction. An alert tile clears.
-              The meeting treats the screen as if a question had been decided, work had been
-              authorized, an outcome had been checked, or the plant were under direction. It was
-              not. The screen showed state. No named person had opened a Decision Case on a
-              question, cited approved evidence, and accepted, rejected, escalated, or returned a
-              recommendation.
+              Reliability work collapses the signal because a quiet queue looks like a closed case.
+              Someone acknowledges the page. Someone mutes the channel. A ticket closes itself when
+              the tile returns inside the rule. The meeting treats those acts as if a question had
+              been decided, work had been authorized, an outcome had been checked, or the plant
+              were under direction. They were not. The alert showed that something crossed a rule.
+              No named person had opened a Decision Case on a question, cited approved evidence,
+              and accepted, rejected, escalated, or returned a recommendation.
             </p>
 
             <p>
@@ -83,8 +83,8 @@ export default function DashboardIsNotDecisionPage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why a dashboard cannot be read as the human decision or as
-              verification. The manual is the public contents. The{' '}
+              . This essay is why an alert cannot be read as the human decision or as verification.
+              The manual is the public contents. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -98,45 +98,51 @@ export default function DashboardIsNotDecisionPage() {
               >
                 Verification
               </Link>{' '}
-              chapter are the two steps this essay keeps apart from the display.
+              chapter are the two steps this essay keeps apart from the signal.
             </p>
 
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">A dashboard surfaces state</h2>
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              An alert surfaces a rule crossing
+            </h2>
 
             <p>
-              A dashboard is a display of plant or maintenance state. A KPI tile shows a number. A
-              trend chart shows how that number moved. A health score summarizes readings into one
-              figure. Red, amber, and green status assigns a color to a condition. Those objects
-              can make a condition visible to a person in the room. They do not open a case, and
-              they do not name who may decide it.
+              An alert is a signal that something crossed a rule. A threshold breach says a reading
+              passed a limit someone already set. An anomaly flag says a calculation marked a point
+              as outside the pattern it was written to watch. A red tile paints that condition on a
+              display. A pager page carries the same condition to a person who is not looking at
+              the screen. A silenced notification is still that signal: the rule fired, and the
+              notice was suppressed. Each form can make a rule crossing visible. None of them opens
+              a case, and none of them names who may decide it.
             </p>
 
             <p>
               <Link
-                href="/insights/coverage-is-not-control"
+                href="/insights/dashboard-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Coverage Is Not Control
+                Dashboard Is Not Decision
               </Link>{' '}
-              already places a dashboard with the watched set: sensors, CMMS rows, patrol routes,
-              and the tiles on a screen. Coverage is what is watched. Control authority is
-              permission to order work, isolate equipment, or change the plant. This essay is the
-              next boundary. A display of state is not the Decision Case that would decide what to
-              do about that state.
+              already places the display on the other side of the decision. KPI tiles, trend
+              charts, health scores, and red, amber, and green status can surface plant or
+              maintenance state. Seeing that display is not a Decision Case. This essay is the next
+              boundary. The alert is the signal that a rule fired, including when the signal is a
+              red tile on that dashboard, a page sent from it, or a notification someone has
+              already silenced. The signal is not the case that would decide what to do about it.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              A watched number is not a question on a case. A green tile is not a named decision.
+              A rule crossing is not a question on a case. Acknowledging the signal is not a named
+              decision.
             </p>
 
             <p>
-              The number can be current. The color can match a rule someone wrote. The chart can be
-              readable. None of that records a reliability or maintenance question, the evidence
-              cited for it, or a human act on a recommendation.
+              The rule can be current. The flag can match the calculation. The page can reach the
+              person on shift. None of that records a reliability or maintenance question, the
+              evidence cited for it, or a human act on a recommendation.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Seeing a dashboard is not a Decision Case
+              Seeing, acknowledging, or silencing is not a Decision Case
             </h2>
 
             <p>
@@ -148,27 +154,29 @@ export default function DashboardIsNotDecisionPage() {
               >
                 Question Is Not Decision
               </Link>{' '}
-              states that opening. A dashboard does not write the question. A person does, on the
+              states that opening. An alert does not write the question. A person does, on the
               signed-in case.
             </p>
 
             <p>
-              Seeing the dashboard is not that opening. The screen can be up while no case exists.
-              The screen can change while an existing case stays where it was. The display and the
-              case are different records. One shows state. The other holds a question a named
-              person can decide.
+              Seeing the alert is not that opening. Acknowledging it is not that opening. Silencing
+              the notification is not that opening. The signal can fire while no case exists. The
+              queue can clear while an existing case stays where it was. The alert and the case are
+              different records. One shows that a rule was crossed. The other holds a question a
+              named person can decide.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Seeing a dashboard is not a Decision Case and not a decision.
+              Seeing, acknowledging, or silencing an alert is not a Decision Case and not a
+              decision.
             </p>
 
             <p>
-              Sync may show coverage, recommendations, and status. Showing them puts a view where a
-              person can read it. The view can include what is watched, a proposed next action, and
-              a status beside that proposal. The view is still not the case. A named human still
-              opens a Decision Case on a question. Until that opening is recorded, Sync has shown a
-              display. It has not started the loop.
+              Sync may emit alerts, coverage gaps, and recommendations. Emitting them puts a
+              signal, a gap in what is watched, and a proposed next action where a person can read
+              them. The three can sit on the same screen. They are still not the case. A named
+              human still opens a Decision Case on a question. Until that opening is recorded, Sync
+              has emitted a signal, a gap, or a proposal. It has not started the loop.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -185,14 +193,15 @@ export default function DashboardIsNotDecisionPage() {
               >
                 Recommend Is Not Authorize
               </Link>{' '}
-              states that split. A status shown next to the draft does not close it.
+              states that split. An alert shown next to the draft does not close it. A coverage gap
+              shown next to the draft does not close it either.
             </p>
 
             <p>
               A named human still opens the case on a question, cites approved evidence, and
               accepts, rejects, escalates, or returns. Citing approved evidence means the decision
               points at the record already on the case: observed fact, assumption, and what is
-              still missing. A health score is not that citation. A trend chart is not that
+              still missing. A threshold breach is not that citation. An anomaly flag is not that
               citation. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
@@ -200,21 +209,21 @@ export default function DashboardIsNotDecisionPage() {
               >
                 Human decision
               </Link>{' '}
-              chapter publishes the act. The case keeps the person beside the proposal they
-              decided. The person who can accept the operational consequence is still the one who
-              decides.
+              chapter publishes the act. The case keeps the named person beside the proposal. Until
+              the act is on the case, what remains is a proposal. The person who can accept the
+              operational consequence is still the one who decides.
             </p>
 
             <p>
-              Until that act is on the case, the display can change and the decision is still
-              absent. A tile that turns green does not accept a recommendation. A tile that turns
-              red does not reject one. Amber does not escalate. A cleared alert does not return
-              the proposal to the person who drafted it. Those are colors and states. The four acts
-              are a named person on the case.
+              Until that act is on the case, the queue can change and the decision is still absent.
+              Acknowledging an alert does not accept a recommendation. Silencing a notification does
+              not reject one. Muting a channel does not escalate. Auto-closing a ticket does not
+              return the proposal to the person who drafted it. Those are signal-handling acts. The
+              four decisions are a named person on the case.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A green tile is not verification
+              A cleared queue is not verification
             </h2>
 
             <p>
@@ -239,45 +248,46 @@ export default function DashboardIsNotDecisionPage() {
             </p>
 
             <p className="text-xl font-semibold text-white">
-              A green dashboard, an improved trend, or a cleared alert tile must not be read as
-              verification of outcome.
+              Clearing an alert queue, muting a channel, or auto-closing a ticket must not be read
+              as verification of outcome.
             </p>
 
             <p>
-              A tile can turn green because a sensor recovered, a threshold moved, a calculation
-              refreshed, or someone cleared the display. A trend can improve for the same kinds of
-              reasons. None of those events records who authorized an action, or whether the
-              authorized action did what it was supposed to do. A dashboard that was never tied to
-              an authorized action has nothing authorized to check. Citing the color as if the
-              outcome were known treats a display as a closed case.
+              A queue can clear because a reading fell back inside the rule, because someone edited
+              the rule, because the channel was muted, or because a ticket timer closed the item.
+              A silenced notification can stay silent for the same kinds of reasons. None of those
+              events records who authorized an action, or whether the authorized action did what it
+              was supposed to do. An alert that was never tied to an authorized action has nothing
+              authorized to check. Citing a cleared queue as if the outcome were known treats a
+              signal state as a closed case.
             </p>
 
             <p>
               Stage-1 verification is the check written on the case. This edition does not treat a
-              live pull of historian or control-system tags as that check. A dashboard fed by those
-              tags, or by simulated or seeded practice records, is still a display. It is not the
+              live pull of historian or control-system tags as that check. An alert fed by those
+              tags, or by simulated or seeded practice records, is still a signal. It is not the
               verification step. Learning that follows verification inherits the closed case. It
-              does not inherit a tile that changed color.
+              does not inherit a queue that went quiet.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A cleared display is not authorization, execution, or control
+              Clearing, muting, or auto-closing is not authorization, execution, or control
             </h2>
 
             <p>
-              A green dashboard, an improved trend, or a cleared alert tile must not be read as
-              authorization, work-order execution, or plant control.
+              Clearing an alert queue, muting a channel, or auto-closing a ticket must not be read
+              as authorization, work-order execution, or plant control.
             </p>
 
             <p>
-              Authorization is the named human decision on a recommendation. The dashboard sits
-              outside that act. Color does not grant permission to do the work. An improved trend
-              does not either. The recommendation can still be rejected, escalated, or returned
-              after the screen looks calm.
+              Authorization is the named human decision on a recommendation. The alert sits outside
+              that act. Acknowledging a page does not grant permission to do the work. Muting the
+              channel does not either. The recommendation can still be rejected, escalated, or
+              returned after the queue looks empty.
             </p>
 
             <p>
-              The same display does not execute the work.{' '}
+              The same signal does not execute the work.{' '}
               <Link
                 href="/insights/action-is-not-execution"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -287,16 +297,17 @@ export default function DashboardIsNotDecisionPage() {
               states the later boundary. An ACTION disposition records work intent after a human
               decision. It does not write a work order, isolate equipment, or change the plant.
               ACTION stays locked until authorized execution systems write the work order or
-              isolate the equipment. A cleared alert tile does not unlock it. A dashboard is not a
-              work order.
+              isolate the equipment. A cleared alert queue does not unlock it. An auto-closed
+              ticket is not a work order.
             </p>
 
             <p>
-              It also does not control the plant. Sync may show coverage, recommendations, and
-              status. A named human decides. Authorized execution systems write the work order or
-              the isolation. None of that follows from a status color. A Decision Case that stores
-              a reading from a dashboard stores a record of state. That storage is not permission
-              for Sync to order work, isolate equipment, or change the plant.
+              It also does not control the plant. Sync may emit alerts, coverage gaps, and
+              recommendations. A named human decides. Authorized execution systems write the work
+              order or the isolation. None of that follows from a rule crossing, from silencing the
+              notice, or from a ticket that closed itself. A Decision Case that stores an alert
+              stores a record of a signal. That storage is not permission for Sync to order work,
+              isolate equipment, or change the plant.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -315,8 +326,8 @@ export default function DashboardIsNotDecisionPage() {
               >
                 {fieldManual.title}
               </Link>{' '}
-              directly. Human decision is step 04. Verification is step 06. A dashboard is neither
-              step. The display can sit beside the case. It does not replace the named act, and it
+              directly. Human decision is step 04. Verification is step 06. An alert is neither
+              step. The signal can sit beside the case. It does not replace the named act, and it
               does not replace the check. Later editions can deepen a chapter. The spine stays in
               this order.
             </p>
@@ -355,7 +366,7 @@ export default function DashboardIsNotDecisionPage() {
             <p>
               This is an essay about the Decision Case order, not a customer case study. It names
               no plant, states no savings figure, and claims no prevented failure. It states no OEM
-              limit and no operating threshold. It does not claim that a dashboard authorizes work,
+              limit and no operating threshold. It does not claim that an alert authorizes work,
               verifies an outcome, executes a work order, or controls a plant.
             </p>
 
@@ -376,15 +387,15 @@ export default function DashboardIsNotDecisionPage() {
             </p>
 
             <p>
-              The series continues with{' '}
+              Companion reading:{' '}
               <Link
-                href="/insights/alert-is-not-decision"
+                href="/insights/dashboard-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Alert Is Not Decision
-              </Link>
-              , on why seeing, acknowledging, or silencing an alert is not a Decision Case and not a
-              decision. Companion reading:{' '}
+                Dashboard Is Not Decision
+              </Link>{' '}
+              on why a dashboard of plant or maintenance state is not a Decision Case and not a
+              decision,{' '}
               <Link
                 href="/insights/question-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -393,26 +404,26 @@ export default function DashboardIsNotDecisionPage() {
               </Link>{' '}
               on why recording a reliability or maintenance question is not the human decision,{' '}
               <Link
-                href="/insights/coverage-is-not-control"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Coverage Is Not Control
-              </Link>{' '}
-              on why a dashboard in the watched set is not control authority,{' '}
-              <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Recommend Is Not Authorize
               </Link>{' '}
-              on why a drafted proposal is not permission, and{' '}
+              on why a drafted proposal is not permission,{' '}
               <Link
                 href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Verification Is Not Optional
               </Link>{' '}
-              on why the case stays open until the check is recorded. A{' '}
+              on why the case stays open until the check is recorded, and{' '}
+              <Link
+                href="/insights/action-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Action Is Not Execution
+              </Link>{' '}
+              on why a recorded ACTION disposition is not plant execution. A{' '}
               <Link
                 href="/reliability-assessment"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -440,7 +451,7 @@ export default function DashboardIsNotDecisionPage() {
               >
                 Verification
               </Link>{' '}
-              chapter is the check. A dashboard is neither.
+              chapter is the check. An alert is neither.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
@@ -474,7 +485,7 @@ export default function DashboardIsNotDecisionPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="dashboard-is-not-decision" />
+          <InsightNextSteps slug="alert-is-not-decision" />
         </motion.article>
       </div>
     </main>
