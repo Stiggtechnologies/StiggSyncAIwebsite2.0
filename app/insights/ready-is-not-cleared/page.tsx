@@ -435,6 +435,14 @@ export default function ReadyIsNotClearedPage() {
             <p>
               Companion reading:{' '}
               <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              on why a completed checklist, a completed work order, a completed case, a 100% complete
+              string, or a complete badge is a completion label and not verification,{' '}
+              <Link
                 href="/insights/cleared-is-not-complete"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

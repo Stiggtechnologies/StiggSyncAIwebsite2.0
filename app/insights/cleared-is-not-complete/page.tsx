@@ -447,7 +447,18 @@ export default function ClearedIsNotCompletePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>
+              , on why a completed checklist, a completed work order, a completed case, a 100%
+              complete string, or a complete badge is a completion label under the criteria someone
+              chose, and why that label is not verification that the outcome happened, the measured
+              result matches the Decision Case, learning closed with achieved, not_achieved, or
+              inconclusive, or that the case can honestly close. Companion reading:{' '}
               <Link
                 href="/insights/status-is-not-clearance"
                 className="text-[#3B82F6] hover:text-white transition-colors"
