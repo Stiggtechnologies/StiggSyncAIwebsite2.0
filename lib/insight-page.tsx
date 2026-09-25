@@ -21,6 +21,7 @@ export function insightMetadata(slug: string): Metadata {
       type: 'article',
     }),
     title: { absolute: `${article.title} | ${SITE_NAME}` },
+    ...(article.author ? { authors: [{ name: article.author }] } : {}),
   };
 }
 
@@ -35,7 +36,9 @@ export function InsightJsonLd({ slug }: { slug: string }) {
     description: article.description,
     datePublished: article.published,
     dateModified: article.published,
-    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    author: article.author
+      ? { '@type': 'Person', name: article.author }
+      : { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     mainEntityOfPage: absoluteUrl(`/insights/${article.slug}`),
   };

@@ -6,9 +6,22 @@ export type InsightArticle = {
   category: string;
   readTime: string;
   published: string;
+  author?: string;
 };
 
 export const insightArticles: InsightArticle[] = [
+  {
+    slug: 'recommend-is-not-authorize',
+    title: 'Recommend Is Not Authorize',
+    description:
+      'Recommend is not authorize. On the signed-in Decision Case, evidence is required before a recommendation is treated as a decision. Field Manual v0 states the order.',
+    excerpt:
+      'A drafted next action is a proposal. The signed-in Decision Case keeps the human decision separate, and evidence is required before that proposal is treated as a decision.',
+    category: 'Decision Case',
+    readTime: '7 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
   {
     slug: 'evidence-lineage-is-not-optional',
     title: 'Evidence Lineage Is Not Optional',

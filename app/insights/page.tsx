@@ -35,6 +35,13 @@ export default function InsightsPage() {
                     {article.title}
                   </Link>
                 </h2>
+                {article.author ? (
+                  <p className="mt-3 text-sm text-slate-400">
+                    <span className="font-semibold text-slate-200">{article.author}</span>
+                    <span className="mx-2 text-slate-600">·</span>
+                    Author
+                  </p>
+                ) : null}
                 <p className="mt-3 text-sm leading-7 text-slate-400">{article.excerpt}</p>
                 <Link
                   href={`/insights/${article.slug}`}
