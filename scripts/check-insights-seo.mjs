@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const profitIndex = slugs.indexOf('margin-is-not-profit');
 const marginIndex = slugs.indexOf('cash-is-not-margin');
 const cashIndex = slugs.indexOf('closure-is-not-cash');
 const closureIndex = slugs.indexOf('accountability-is-not-closure');
@@ -34,7 +35,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    marginIndex >= 0 &&
+    profitIndex >= 0 &&
+    marginIndex > profitIndex &&
     cashIndex > marginIndex &&
     closureIndex > cashIndex &&
     accountabilityIndex > closureIndex &&
@@ -49,7 +51,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3521,6 +3523,114 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/cash-is-not-margin')) {
     fail(`${page} must link cash-is-not-margin`);
+  }
+}
+
+if (
+  !marginPage.includes('The series continues with') ||
+  !marginPage.includes('/insights/margin-is-not-profit')
+) {
+  fail('cash-is-not-margin must point the series forward to margin-is-not-profit');
+}
+
+for (const [slug, label] of [
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'margin-is-not-profit'")) {
+    fail(`${label} related reading must cite margin-is-not-profit`);
+  }
+}
+
+const profitBlock = stepBlock('margin-is-not-profit');
+for (const required of [
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+]) {
+  if (!profitBlock.includes(`'${required}'`)) {
+    fail(`margin-is-not-profit related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(profitBlock)) {
+  fail('margin-is-not-profit related reading must include the Strategic Pilot');
+}
+if (profitBlock.includes("next: 'strategic-pilot'")) {
+  fail('margin-is-not-profit next step is the Field Manual');
+}
+
+const profitPage = read('app/insights/margin-is-not-profit/page.tsx');
+for (const required of [
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/accountability-is-not-closure',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verification-is-not-optional',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'contribution margin',
+  'unit economics',
+  'bottom-line profit',
+  'profitable ARR',
+  'cost to serve',
+  'gross margin',
+  'durable profitable revenue',
+  'portfolio northstar',
+  'Surfacing is still a read',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the margin',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'contribution margin as bottom-line profit',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not compute contribution margin',
+  'Sync does not compute bottom-line profit',
+  'Sync does not declare profitable ARR',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says margin is not a customer plant release',
+  'A named human decides',
+  'A named human remains accountable',
+]) {
+  if (!profitPage.includes(required)) {
+    fail(`margin-is-not-profit page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/cash-is-not-margin/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+]) {
+  if (!read(page).includes('/insights/margin-is-not-profit')) {
+    fail(`${page} must link margin-is-not-profit`);
   }
 }
 

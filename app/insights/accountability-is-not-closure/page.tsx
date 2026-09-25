@@ -596,6 +596,17 @@ export default function AccountabilityIsNotClosurePage() {
               collected and invoices paid are not contribution margin or profitable ARR.
             </p>
 
+            <p>
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              states the split after the unit remainder. A named owner is not closure. Contribution
+              margin and unit economics are not bottom-line profit or durable profitable revenue.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

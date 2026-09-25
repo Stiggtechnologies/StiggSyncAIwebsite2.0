@@ -398,6 +398,18 @@ export default function VerificationIsNotOptionalPage() {
               collected and invoices paid are not that cost-to-serve record.
             </p>
 
+            <p>
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              states the split after the unit remainder. Recording achieved, not_achieved, or
+              inconclusive does not compute bottom-line profit and does not declare profitable ARR.
+              Contribution margin and unit economics are not that profit record.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
