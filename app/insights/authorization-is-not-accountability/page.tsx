@@ -632,6 +632,17 @@ export default function AuthorizationIsNotAccountabilityPage() {
               An ARR figure is not cash collected.
             </p>
 
+            <p>
+              <Link
+                href="/insights/cash-is-not-runway"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Runway
+              </Link>{' '}
+              states the split after the cash balance. Authorization answers who may start. A cash
+              balance is not runway.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
