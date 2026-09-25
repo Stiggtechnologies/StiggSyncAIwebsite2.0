@@ -8,6 +8,8 @@ export type SitemapEntry = {
   path: string;
   changefreq: 'weekly' | 'monthly' | 'yearly';
   priority: number;
+  /** Catalog publish date (YYYY-MM-DD) when the URL comes from Insights or the Field Manual. */
+  lastmod?: string;
 };
 
 /** Never index these: leftover chrome, stale copy, or redirect-only. */
@@ -148,6 +150,22 @@ function metaFor(path: string): Pick<SitemapEntry, 'changefreq' | 'priority'> {
   return { changefreq: 'monthly', priority: 0.6 };
 }
 
+/** Publish dates already stored on the catalogs. No dates are invented for other routes. */
+function lastmodFor(path: string): string | undefined {
+  if (path.startsWith('/insights/')) {
+    const slug = path.slice('/insights/'.length);
+    return insightArticles.find((article) => article.slug === slug)?.published;
+  }
+  if (path === fieldManualPath() || path.startsWith(`${fieldManualPath()}/`)) {
+    return fieldManual.published;
+  }
+  return undefined;
+}
+
+function entryFor(path: string): SitemapEntry {
+  return { path, ...metaFor(path), lastmod: lastmodFor(path) };
+}
+
 function catalogPaths(): string[] {
   const paths = insightArticles.map((article) => `/insights/${article.slug}`);
   paths.push(fieldManualPath());
@@ -182,7 +200,7 @@ export function collectSitemapPaths(): string[] {
 }
 
 export function getSitemapEntries(): SitemapEntry[] {
-  return collectSitemapPaths().map((path) => ({ path, ...metaFor(path) }));
+  return collectSitemapPaths().map((path) => entryFor(path));
 }
 
 export function locFor(path: string) {
@@ -193,13 +211,12 @@ export function renderSitemapXml(entries = getSitemapEntries()): string {
   const urls = entries
     .map((entry) => {
       const loc = locFor(entry.path);
-      return [
-        '  <url>',
-        `    <loc>${loc}</loc>`,
-        `    <changefreq>${entry.changefreq}</changefreq>`,
-        `    <priority>${entry.priority}</priority>`,
-        '  </url>',
-      ].join('\n');
+      const lines = ['  <url>', `    <loc>${loc}</loc>`];
+      if (entry.lastmod) lines.push(`    <lastmod>${entry.lastmod}</lastmod>`);
+      lines.push(`    <changefreq>${entry.changefreq}</changefreq>`);
+      lines.push(`    <priority>${entry.priority}</priority>`);
+      lines.push('  </url>');
+      return lines.join('\n');
     })
     .join('\n');
 
@@ -210,12 +227,9 @@ export function getSitemapXml(): string {
   try {
     return renderSitemapXml();
   } catch {
-    const fallback: SitemapEntry[] = REQUIRED_SITEMAP_PATHS.map((path) => ({
-      path,
-      ...metaFor(path),
-    }));
+    const fallback: SitemapEntry[] = REQUIRED_SITEMAP_PATHS.map((path) => entryFor(path));
     for (const path of catalogPaths()) {
-      fallback.push({ path, ...metaFor(path) });
+      fallback.push(entryFor(path));
     }
     return renderSitemapXml(fallback);
   }
