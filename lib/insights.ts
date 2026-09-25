@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'liquidity-is-not-flexibility',
+    title: 'Liquidity Is Not Flexibility',
+    description:
+      'Liquidity is not flexibility. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. A liquid firm can still lack flexibility when the cash and near-cash that meet those windows are already committed, so a reallocation inside the named decision window would break obligations, covenants, or continuity. An inflexible firm can still be liquid when the windows are met and the firm still cannot change course. A firm that can reallocate inside the named decision window can still fail a liquidity window — none of which a liquidity note alone proves. Treating liquidity as flexibility records the ability to pay what is already due as a claim about choosing and changing course that nobody has shown, under the honesty and verification boundary. A liquidity note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown flexibility. Evidence from the plant beats the liquidity note when the note is being used as flexibility. Sync may surface a liquidity note or a flexibility note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat liquidity as flexibility as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not measure liquidity. Sync does not measure liquidity for the customer. Sync does not measure flexibility. Sync does not measure flexibility for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A liquid firm can still lack flexibility when meeting the near-term windows leaves no room to reallocate without breaking obligations, covenants, or continuity. An inflexible firm can still meet those windows. A firm that can change course can still fail a liquidity window. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Solvency Is Not Liquidity, Survival Is Not Solvency, Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. A liquid firm can still lack flexibility. An inflexible firm can still be liquid. A liquidity note alone proves neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'solvency-is-not-liquidity',
     title: 'Solvency Is Not Liquidity',
     description:
@@ -738,12 +750,116 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'solvency-is-not-liquidity': {
-    relatedSlug: 'survival-is-not-solvency',
-    relatedNote: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity. That structural claim is still not liquidity.',
+  'liquidity-is-not-flexibility': {
+    relatedSlug: 'solvency-is-not-liquidity',
+    relatedNote: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. That near-term window is still not flexibility.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'runway-is-not-survival',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, and liquidity is not flexibility. A spendable balance is still not the ability to reallocate inside a named decision window.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Liquidity is still not flexibility.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and liquidity is not flexibility.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A liquidity note is not flexibility.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Liquidity is not flexibility, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Liquidity is still not flexibility. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A liquidity note is not flexibility either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not flexibility.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A liquidity note after the start is not flexibility.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not flexibility.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that the firm can change course. A liquidity note is not flexibility.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show flexibility.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a liquidity note as flexibility.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Liquidity is cash and near-cash against the near-term windows, not standing assurance and not flexibility.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a liquidity note is still a proposal. Recommend is not authorize, and the proposal is not flexibility.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A flexibility note beside that tile is not a liquidity note, and a liquidity note is not flexibility.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A flexibility note that moved with a liquidity note is not a cause. Coincidence is not proof paying what is already due is room to change course.',
+      },
+    ],
+  },
+  'solvency-is-not-liquidity': {
+    relatedSlug: 'liquidity-is-not-flexibility',
+    relatedNote: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. Paying what is already due is still not flexibility.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity. That structural claim is still not liquidity, and liquidity is still not flexibility.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, and solvency is not liquidity.',
@@ -841,6 +957,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. Meeting obligations through the next decision horizon is still not solvency, and cash and near-cash meeting the near-term windows are still not room to reallocate inside a named decision window.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. That near-term continuity is still not solvency, and solvency is still not liquidity.',
       },
@@ -936,6 +1056,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. A duration at the current net burn is still not survival, and meeting the near-term windows is still not the ability to change course.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. A duration at the current net burn is still not survival, and assets and claims covering liabilities are still not the near-term cash window.',
@@ -1033,6 +1157,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. Cash that can be spent now is still not runway, and paying what is already due is still not flexibility.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. Cash that can be spent now is still not runway, and assets and claims covering liabilities are still not the near-term cash window.',
       },
@@ -1128,6 +1256,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. An annualized contract is still not cash, and cash and near-cash meeting the near-term windows are still not room to reallocate.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. An annualized contract is still not cash, and balance-sheet and claim quality is still not cash and near-cash meeting the near-term windows.',
@@ -1225,6 +1357,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. A recognized sale is still not ARR, and the liquidity window is still not a named decision window for changing course.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. A recognized sale is still not ARR, and the structural claim is still not the liquidity window.',
       },
@@ -1320,6 +1456,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. An impact claim is still not revenue, and a liquidity note is still not whether the firm can reallocate inside a named decision window.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. An impact claim is still not revenue, and a solvency note is still not whether cash and near-cash meet the near-term windows.',
@@ -1417,6 +1557,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. A measured outcome is still not impact, and a liquidity note is still not flexibility.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. A measured outcome is still not impact, and a solvency note is still not the liquidity window.',
       },
@@ -1513,6 +1657,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. A reported outcome is still not the value, and paying what is already due is still not the ability to change course.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Solvency is not liquidity. A reported outcome is still not the value, and a solvency note is still not whether the near-term windows are met.',
       },
@@ -1580,6 +1728,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'A profit figure is not the value. Liquidity is still not flexibility.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'A profit figure is not the value. Solvency is still not liquidity.',
@@ -1697,6 +1849,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Cash collected is not contribution margin. Liquidity is still not flexibility. Flexibility is whether the firm can reallocate inside a named decision window without breaking obligations, covenants, or continuity.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Cash collected is not contribution margin. Solvency is still not liquidity. Liquidity is whether cash and near-cash can meet the near-term windows without forced asset sales or covenant breaches.',
       },
@@ -1792,6 +1948,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'A named owner is not closure. Liquidity is not flexibility.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'A named owner is not closure. Solvency is not liquidity.',
@@ -2041,6 +2201,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not flexibility.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not liquidity.',
       },
@@ -2136,6 +2300,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'A clearance stamp is not proof the work is finished. Liquidity is not flexibility.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'A clearance stamp is not proof the work is finished. Solvency is not liquidity.',
@@ -4404,6 +4572,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Learning inherits the verified outcome. It does not inherit a liquidity note as flexibility.',
+      },
+      {
         slug: 'solvency-is-not-liquidity',
         note: 'Learning inherits the verified outcome. It does not inherit a solvency note as liquidity.',
       },
@@ -4478,6 +4650,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show flexibility.',
+      },
       {
         slug: 'solvency-is-not-liquidity',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show liquidity.',
