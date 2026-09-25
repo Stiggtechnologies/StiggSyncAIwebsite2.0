@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'accountability-is-not-closure',
+    title: 'Accountability Is Not Closure',
+    description:
+      'Accountability is not closure. A named human who owns consequences after authorized execution is accountability. That duty answers who remains responsible for results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership: a measured result, not named intent. Accountability is still not loop closure. Treating the named owner as closure ships ownership into a finished loop nobody has measured, under the honesty and verification boundary. An accountable owner can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that is already closed. Evidence from the plant beats the accountable owner. Sync may surface an accountable owner beside Evidence, Verification, Proof, and Authorization. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat accountable closure as Learning credit. A named accountable human without a verified outcome leaves the operating loop open. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Companion to Authorization Is Not Accountability, Proof Is Not Authorization, Learning Requires a Verified Outcome, Verification Is Not Optional, and Verified Is Not Assured.',
+    excerpt:
+      'A named human who owns consequences after authorized execution answers who remains responsible for results, exceptions, and learning after the plant move. That ownership is not loop closure. Closure is the verified outcome recorded against that ownership — a measured result, not named intent.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'authorization-is-not-accountability',
     title: 'Authorization Is Not Accountability',
     description:
@@ -570,12 +582,40 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'authorization-is-not-accountability': {
-    relatedSlug: 'proof-is-not-authorization',
-    relatedNote: 'A closed chain answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs.',
+  'accountability-is-not-closure': {
+    relatedSlug: 'authorization-is-not-accountability',
+    relatedNote: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'A closed chain answers whether a claim held. It is not authorization, not accountability, and not closure of the operating loop.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. A named accountable owner without that measured result leaves the loop open.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Naming an owner does not record that check.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Closure of the operating loop is that measured result recorded against named ownership, not standing assurance.',
+      },
+    ],
+  },
+  'authorization-is-not-accountability': {
+    relatedSlug: 'accountability-is-not-closure',
+    relatedNote: 'Accountability names who remains responsible after the plant move. Closure is the verified outcome recorded against that ownership. A named owner is not loop closure.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'A closed chain answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs.',
+      },
       {
         slug: 'assured-is-not-proven',
         note: 'Assurance is standing confidence. Proof is a closed chain. Authorization is who may start. None of the three is accountability for the outcome after the work runs.',
@@ -612,6 +652,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A closed chain is not authorization, and a named accountable owner is not closure. Closure is the verified outcome recorded against that ownership.',
+      },
       {
         slug: 'assured-is-not-proven',
         note: 'A closed evidentiary chain answers whether a specific claim held under named conditions. Authorization is a separate named human decision. Neither is accountability for the outcome.',
@@ -688,6 +732,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A verified record closes a claim about the past. Closure of the operating loop is that measured result recorded against named ownership, not the name alone.',
+      },
       {
         slug: 'authorization-is-not-accountability',
         note: 'A verified record closes a claim about the past. An authorized state is not accountability for the outcome after the work runs.',
@@ -2988,6 +3036,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'accountability-is-not-closure',
+        note: 'Learning inherits the verified outcome. A named accountable owner without that measured result is not closure.',
+      },
+      {
         slug: 'verified-is-not-assured',
         note: 'Learning inherits achieved, not_achieved, or inconclusive. A verified stamp is not a standing assurance.',
       },
@@ -3006,6 +3058,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Recording the check is the measured result. Naming an accountable owner does not close the operating loop without that record.',
+      },
       {
         slug: 'authorization-is-not-accountability',
         note: 'Recording the check does not make authorization into accountability for the outcome after the work runs.',
