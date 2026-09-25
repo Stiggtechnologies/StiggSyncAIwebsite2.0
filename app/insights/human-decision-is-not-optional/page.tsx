@@ -416,7 +416,15 @@ export default function HumanDecisionIsNotOptionalPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/unknown-is-not-clear"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Unknown Is Not Clear
+              </Link>
+              , on why missing evidence is recorded as unknown, not as clear or ready, and why the
+              operator must not treat unknown as go. Companion reading:{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"

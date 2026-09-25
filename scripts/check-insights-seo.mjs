@@ -312,6 +312,47 @@ for (const required of [
     fail(`human-decision-is-not-optional page must include ${required}`);
   }
 }
+if (
+  !humanPage.includes('The series continues with') ||
+  !humanPage.includes('/insights/unknown-is-not-clear')
+) {
+  fail('human-decision-is-not-optional must point the series forward to unknown-is-not-clear');
+}
+
+const unknownBlock = stepBlock('unknown-is-not-clear');
+for (const required of [
+  'human-decision-is-not-optional',
+  'verification-is-not-optional',
+  'recommend-is-not-authorize',
+  'honesty-boundary-is-not-optional',
+  'dashboard-is-not-decision',
+]) {
+  if (!unknownBlock.includes(`'${required}'`)) {
+    fail(`unknown-is-not-clear related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(unknownBlock)) {
+  fail('unknown-is-not-clear related reading must include the Strategic Pilot');
+}
+
+const unknownPage = read('app/insights/unknown-is-not-clear/page.tsx');
+for (const required of [
+  '/insights/human-decision-is-not-optional',
+  '/insights/verification-is-not-optional',
+  '/insights/recommend-is-not-authorize',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  '/insights/question-is-not-decision',
+  "fieldManualPath('evidence')",
+  'blank is not zero',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+]) {
+  if (!unknownPage.includes(required)) {
+    fail(`unknown-is-not-clear page must include ${required}`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);

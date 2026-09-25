@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'unknown-is-not-clear',
+    title: 'Unknown Is Not Clear',
+    description:
+      'In the Decision Case and in Recovery, missing evidence is recorded as unknown, not as clear or ready. Bad or not-ready evidence is blocked. A green dashboard, an empty field, or silence is not clearance. The operator must not treat unknown as go. A blank economic assumption is not zero.',
+    excerpt:
+      'Missing evidence stays unknown. Bad or not-ready evidence is blocked. A green dashboard, an empty field, or silence is not clearance, and the operator must not treat unknown as go.',
+    category: 'Decision Case',
+    readTime: '7 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'human-decision-is-not-optional',
     title: 'Human Decision Is Not Optional',
     description:
@@ -210,6 +222,30 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'unknown-is-not-clear': {
+    relatedSlug: 'human-decision-is-not-optional',
+    relatedNote: 'A named act still leaves missing evidence unknown.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check still needs a record. Unknown is not that check.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal is not clearance of missing evidence.',
+      },
+      {
+        slug: 'honesty-boundary-is-not-optional',
+        note: 'Stating the limit does not record missing evidence as clear.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A green display is not clearance, and it is not the decision.',
+      },
+    ],
+  },
   'human-decision-is-not-optional': {
     relatedSlug: 'honesty-boundary-is-not-optional',
     relatedNote: 'Naming the limit does not record who decided.',
