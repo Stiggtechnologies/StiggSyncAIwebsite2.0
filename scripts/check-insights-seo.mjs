@@ -129,6 +129,7 @@ if (!/includePilot:\s*true/.test(actionBlock)) {
 
 const coverageBlock = stepBlock('coverage-is-not-control');
 for (const required of [
+  'dashboard-is-not-control',
   'action-is-not-execution',
   'verification-is-not-optional',
   'recommend-is-not-authorize',
@@ -166,6 +167,7 @@ if (
 
 const dashboardBlock = stepBlock('dashboard-is-not-decision');
 for (const required of [
+  'dashboard-is-not-control',
   'question-is-not-decision',
   'coverage-is-not-control',
   'recommend-is-not-authorize',
@@ -1767,6 +1769,7 @@ if (
 
 const calibrationBlock = stepBlock('calibration-is-not-validation');
 for (const required of [
+  'dashboard-is-not-control',
   'telemetry-is-not-truth',
   'accuracy-is-not-precision',
   'simulation-is-not-proof',
@@ -1889,6 +1892,7 @@ if (
 
 const accuracyBlock = stepBlock('accuracy-is-not-precision');
 for (const required of [
+  'dashboard-is-not-control',
   'telemetry-is-not-truth',
   'calibration-is-not-validation',
   'simulation-is-not-proof',
@@ -2010,6 +2014,7 @@ if (
 
 const telemetryBlock = stepBlock('telemetry-is-not-truth');
 for (const required of [
+  'dashboard-is-not-control',
   'accuracy-is-not-precision',
   'calibration-is-not-validation',
   'simulation-is-not-proof',
@@ -2129,6 +2134,83 @@ for (const required of [
     fail(`telemetry-is-not-truth page must include ${required}`);
   }
 }
+if (
+  !telemetryPage.includes('The series continues with') ||
+  !telemetryPage.includes('/insights/dashboard-is-not-control')
+) {
+  fail('telemetry-is-not-truth must point the series forward to dashboard-is-not-control');
+}
+
+const dashboardControlBlock = stepBlock('dashboard-is-not-control');
+for (const required of [
+  'telemetry-is-not-truth',
+  'accuracy-is-not-precision',
+  'calibration-is-not-validation',
+  'dashboard-is-not-decision',
+  'coverage-is-not-control',
+  'action-is-not-execution',
+  'recommend-is-not-authorize',
+  'verification-is-not-optional',
+  'silence-is-not-clearance',
+  'blank-is-not-zero',
+  'map-is-not-terrain',
+  'learning-requires-a-verified-outcome',
+]) {
+  if (!dashboardControlBlock.includes(`'${required}'`)) {
+    fail(`dashboard-is-not-control related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(dashboardControlBlock)) {
+  fail('dashboard-is-not-control related reading must include the Strategic Pilot');
+}
+if (dashboardControlBlock.includes("next: 'strategic-pilot'")) {
+  fail('dashboard-is-not-control next step is the Field Manual');
+}
+
+const dashboardControlPage = read('app/insights/dashboard-is-not-control/page.tsx');
+for (const required of [
+  '/insights/telemetry-is-not-truth',
+  '/insights/accuracy-is-not-precision',
+  '/insights/calibration-is-not-validation',
+  '/insights/dashboard-is-not-decision',
+  '/insights/coverage-is-not-control',
+  '/insights/action-is-not-execution',
+  '/insights/recommend-is-not-authorize',
+  '/insights/verification-is-not-optional',
+  '/insights/silence-is-not-clearance',
+  '/insights/blank-is-not-zero',
+  '/insights/map-is-not-terrain',
+  '/insights/learning-requires-a-verified-outcome',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  'historian tag',
+  'setpoint',
+  'work order',
+  'isolate',
+  'Refreshing',
+  'filtering',
+  'read path',
+  'None of them is a setpoint',
+  'A value rendered on the screen is not a command',
+  'named human',
+  'Authorized execution systems',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice dashboard is not a command',
+]) {
+  if (!dashboardControlPage.includes(required)) {
+    fail(`dashboard-is-not-control page must include ${required}`);
+  }
+}
+
 function readingSlugs(name) {
   const block = section(name);
   const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);

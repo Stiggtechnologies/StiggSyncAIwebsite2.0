@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'dashboard-is-not-control',
+    title: 'Dashboard Is Not Control',
+    description:
+      'Dashboard is not control. A dashboard reads a stored or streamed value — a historian tag, a CMMS count, a health score, an alarm state — and renders it as a tile, a trend, or a color. Refreshing, filtering, or drilling into that display repeats the read. It does not write a setpoint, start or stop equipment, isolate a circuit, or create a work order. Control is that write, sent by a named actor through a system that already accepts the command. A live tile can update because the process moved, a sensor failed, or another person commanded the asset. The color does not name the actor and does not perform the write. Sync may surface a dashboard beside a Decision Case. Surfacing is still a read. Sync does not gain control authority because the tiles are on the case. A named human decides. Authorized execution systems write the work order or the isolation. Direct plant execute stays off. Companion to Telemetry Is Not Truth, Accuracy Is Not Precision, Calibration Is Not Validation, Dashboard Is Not Decision, Coverage Is Not Control, Action Is Not Execution, Recommend Is Not Authorize, and Silence Is Not Clearance.',
+    excerpt:
+      'A dashboard reads a value and renders a tile, a trend, or a color. Refreshing or filtering that display does not write a setpoint, start or stop equipment, isolate a circuit, or create a work order. Control is a write through a system that accepts the command.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'telemetry-is-not-truth',
     title: 'Telemetry Is Not Truth',
     description:
@@ -450,12 +462,68 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'dashboard-is-not-control': {
+    relatedSlug: 'telemetry-is-not-truth',
+    relatedNote: 'A telemetry feed is a stream of observations, not truth for the decision. Rendering that feed as a tile, a trend, or a color is still a read. It does not write a setpoint, an isolation, or a work order.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'Precision is repeatability, not accuracy relative to the plant decision. A precise tile is still a read, not a write.',
+      },
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A calibration drawn on a screen is still a read. A small residual does not write a setpoint, an isolation, or a work order.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'Seeing the display is not a Decision Case and not a named decision. The same display is not the write.',
+      },
+      {
+        slug: 'coverage-is-not-control',
+        note: 'The watched set is not permission to order work. The tile that shows the set is a read, not a write.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'Work intent on the case is not the write. A refreshed tile does not unlock ACTION.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal that cites a dashboard is still a proposal.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is the observed outcome of the write, not a later color.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet dashboard is not clearance and not a command holding the asset.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'An empty cell means the read returned no value. It is not a commanded zero.',
+      },
+      {
+        slug: 'map-is-not-terrain',
+        note: 'The drawing is a copy of a value. It is not the asset and not a command.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the closed case, not a color change.',
+      },
+    ],
+  },
   'telemetry-is-not-truth': {
     relatedSlug: 'accuracy-is-not-precision',
     relatedNote: 'Precision is repeatability, not accuracy relative to the plant decision. A telemetry feed, however dense or precise, is not truth for that decision.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'A dashboard that renders the feed is still a read. Refreshing the tile does not write a setpoint, an isolation, or a work order.',
+      },
       {
         slug: 'calibration-is-not-validation',
         note: 'A calibration that makes historical residuals look small is not validation. A stream of tags is not truth for the decision, and a small residual on that feed is still not validation.',
@@ -561,6 +629,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'dashboard-is-not-control',
+        note: 'A precise tile is still a read. Stable decimals do not write a setpoint, an isolation, or a work order.',
+      },
+      {
         slug: 'telemetry-is-not-truth',
         note: 'A stream of tags, sensors, historians, SCADA, or CMMS counters is not truth for the decision. Stable decimals on that feed are still not accuracy.',
       },
@@ -664,6 +736,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'A dashboard that displays a calibration is a read. It does not write a setpoint, an isolation, or a work order.',
+      },
       {
         slug: 'telemetry-is-not-truth',
         note: 'A stream of tags, sensors, historians, SCADA, or CMMS counters is not truth for the decision. A small residual on that feed is still not validation.',
@@ -2153,6 +2229,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'dashboard-is-not-control',
+        note: 'A display of state is not a decision. The same display is not a write that controls the plant.',
+      },
+      {
         slug: 'coverage-is-not-control',
         note: 'A dashboard is part of what is watched. It is not control of the plant.',
       },
@@ -2192,6 +2272,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'The watched set is not control authority. The screen that shows that set is a read, not a write.',
+      },
       {
         slug: 'verification-is-not-optional',
         note: 'The case stays open until the check is recorded.',

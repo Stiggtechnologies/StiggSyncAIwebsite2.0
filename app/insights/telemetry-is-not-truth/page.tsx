@@ -1035,6 +1035,15 @@ export default function TelemetryIsNotTruthPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/dashboard-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Dashboard Is Not Control
+              </Link>
+              , on why a dashboard reads stored or streamed values and renders them as tiles,
+              trends, and colors, and why that read is not a write that changes the plant.
               Companion reading:{' '}
               <Link
                 href="/insights/accuracy-is-not-precision"
