@@ -694,6 +694,18 @@ export default function AccountabilityIsNotClosurePage() {
               obligations through the next decision horizon is a separate record.
             </p>
 
+            <p>
+              <Link
+                href="/insights/survival-is-not-solvency"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Survival Is Not Solvency
+              </Link>{' '}
+              states the split after survival. A named owner is not solvency. Meeting obligations
+              through the next decision horizon is not whether assets and claims can cover
+              liabilities over a structural horizon.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
