@@ -7,9 +7,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('verification-is-not-optional');
+const article = getInsightArticle('learning-requires-a-verified-outcome');
 
-export default function VerificationIsNotOptionalPage() {
+export default function LearningRequiresAVerifiedOutcomePage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,7 @@ export default function VerificationIsNotOptionalPage() {
               {article?.category ?? 'Decision Case'}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Verification Is Not Optional
+              Learning Requires a Verified Outcome
             </h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
@@ -41,27 +41,28 @@ export default function VerificationIsNotOptionalPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              A named person can accept the recommendation. The work can be recorded as authorized.
-              The loop is still open. Until verification is on the case, the outcome is a hope, and
-              learning has nothing verified to keep.
+              Verification can sit on the case and still be misread. A later question does not
+              inherit the intention. It inherits what was checked. Learning is that inheritance,
+              and it requires a verified outcome.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              After a named human authorizes an action, the loop is not closed until verification
-              is recorded. Learning requires a verified outcome, not a hoped-for one.
+              After verification is recorded, Learning is what closes the loop for the next case.
+              It is not a hoped-for outcome. It is not a recommendation that was never authorized.
+              It is not an action that was never verified.
             </p>
 
             <p>
-              Reliability work is full of actions that were approved and never checked. The interval
-              was stretched. The assembly was replaced. The route was added. The meeting moved on.
-              Months later the same failure returns, and the record shows a decision without a
-              result. The organization remembers what it intended. It cannot show what happened.
+              Reliability organizations reuse conclusions. The interval was stretched and the unit
+              ran. The assembly was replaced and the failure stayed quiet. Those sentences travel
+              into the next meeting as if they were evidence. Often they are memories of an
+              intention. The check was never written down, so the next case starts from a story.
             </p>
 
             <p>
-              Sync keeps that check on the signed-in Decision Case. A signed-in user completes the
+              Sync keeps Learning on the signed-in Decision Case. A signed-in user completes the
               case in a fixed order: Question, Evidence, Recommendation, Human decision, Action,
               Verification, and Learning. {fieldManual.author} states that order in{' '}
               <Link
@@ -74,145 +75,18 @@ export default function VerificationIsNotOptionalPage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why verification cannot be skipped once a person has authorized the
-              work. The manual is the public contents.
+              . This essay is why the last step waits on a verified outcome, and why what it keeps
+              is for the next case. The manual is the public contents.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Authorization closes the argument. It does not close the case.
-            </h2>
-
-            <p>
-              Recommend is not authorize. A recommendation is an argument. Authorization is an act
-              by a person who can be named. That distinction is the subject of{' '}
-              <Link
-                href="/insights/recommend-is-not-authorize"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Recommend Is Not Authorize
-              </Link>
-              . It is necessary, and it is not the end of the loop.
-            </p>
-
-            <p>
-              The human decision records who accepted, rejected, escalated, or returned the
-              proposal. Action records the work that decision authorized and keeps that statement
-              on the case, beside the question and the evidence. Those two steps answer who
-              permitted the work and what was approved to happen next.
-            </p>
-
-            <p className="text-xl font-semibold text-white">
-              They do not answer whether the action did what it was supposed to do.
-            </p>
-
-            <p>
-              A signed approval can be complete and still leave the outcome unknown. The case that
-              stops at action has a named person and an intended change. It does not have a result.
-              Treating the signature as closure is how a hoped-for outcome gets filed as if it had
-              been observed.
-            </p>
-
-            <p>
-              Read those steps as separate chapters:{' '}
-              <Link
-                href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Human decision
-              </Link>{' '}
-              and{' '}
-              <Link
-                href={fieldManualPath('action')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Action
-              </Link>
-              . Work that follows the decision moves through the customer’s systems of record and
-              the people who already hold operating authority. Recording the action is not plant
-              execute.
-            </p>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Verification is the recorded check
-            </h2>
-
-            <p>
-              Verification records whether the authorized action did what it was supposed to do,
-              and which evidence would show that. The check sits on the same record as the
-              question, the recommendation, and the human decision. A later reader should be able
-              to see the intended effect, the evidence that was supposed to show it, and what was
-              actually observed.
-            </p>
-
-            <p>A useful verification entry keeps three things distinct:</p>
-
-            <ul className="list-disc pl-6 space-y-2">
-              <li>What the authorized action was supposed to change</li>
-              <li>Which evidence would show that change, and what is still missing</li>
-              <li>What was observed after the action — including a result that did not match</li>
-            </ul>
-
-            <p>
-              The third item is the one organizations skip. A plan states the first. A procedure
-              sometimes states the second. Only the recorded observation turns the case from an
-              intention into an outcome. If the observation contradicts the intention, the case
-              still closes honestly. A failed check is a result. An unchecked hope is not.
-            </p>
-
-            <p>
-              The{' '}
-              <Link
-                href={fieldManualPath('verification')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Verification
-              </Link>{' '}
-              chapter states that gate. Stage-1 verification is the recorded check held on the
-              case. A live pull of control-system tags is not the proof this edition describes.
-              Telemetry and asset context shown in the workspace may be simulated or seeded. Treat
-              that material as a practice record. It is not a plant historian, and it is not a
-              customer result.
-            </p>
-
-            <p>
-              The same discipline applies to the evidence the recommendation was built on.{' '}
-              <Link
-                href="/insights/evidence-lineage-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Evidence Lineage Is Not Optional
-              </Link>{' '}
-              asks whether a later reviewer can reconstruct the proposal. Verification extends that
-              trail past the proposal: which check was named, who recorded it, and what it showed.
-              A recommendation you cannot reconstruct is not an industrial decision. An authorized
-              action you never checked is not a closed one.
-            </p>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Learning waits on the check
+              The loop closes for the next question
             </h2>
 
             <p>
               Learning keeps the closed case — question, evidence, recommendation, human decision,
               action, and verification — so a later question can see what was believed, what was
-              authorized, and what was checked. The signed-in loop ends on that record.
-            </p>
-
-            <p className="text-xl font-semibold text-white">
-              Learning requires a verified outcome, not a hoped-for one.
-            </p>
-
-            <p>
-              If verification is missing, a later question inherits a story. The story says the
-              action was approved, so it must have worked. The next recommendation then cites that
-              story as evidence. The gap compounds: an unchecked action becomes the basis for the
-              next proposal, and the case looks more certain each time it is reused.
-            </p>
-
-            <p>
-              A verified outcome can be narrow. It can say the check was inconclusive, that the
-              expected signal was not available, or that the action did not produce the intended
-              effect. Those are learnable records. A blank verification field is not. The{' '}
+              authorized, and what was checked. The{' '}
               <Link
                 href={fieldManualPath('learning')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -220,6 +94,133 @@ export default function VerificationIsNotOptionalPage() {
                 Learning
               </Link>{' '}
               chapter publishes that rule. It does not publish a result from a customer site.
+            </p>
+
+            <p>
+              The step is last in the spine because it is the handoff. Verification answers
+              whether this action did what it was supposed to do. Learning answers what a later
+              question is allowed to carry forward from that answer.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              A case that stops at verification has a check. A case that records learning has a
+              check a later reader can find beside the question that produced it.
+            </p>
+
+            <p>
+              The difference is reuse. Without the closed record, the next recommendation has to
+              reconstruct the story from memory, or invent one. The organization then treats a
+              recollection as the basis for the following decision. Each reuse makes the story
+              sound more certain, and the original check — if it existed — stays off the page.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Three records do not count as learning
+            </h2>
+
+            <p className="text-xl font-semibold text-white">
+              Recommend is not authorize. Verification is not optional. Learning requires a
+              verified outcome.
+            </p>
+
+            <p>
+              A hoped-for outcome is the first substitute. Authorization records who decided. It
+              does not record whether the action did what it was supposed to do. If verification
+              is missing, the outcome is still a hope, and Learning has nothing verified to keep.
+              That gate is the subject of{' '}
+              <Link
+                href="/insights/verification-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification Is Not Optional
+              </Link>
+              .
+            </p>
+
+            <p>
+              A recommendation that was never authorized is the second. A recommendation is an
+              argument. A named person accepts, rejects, escalates, or returns it. Until that act
+              is on the case, the proposal is not a decision, and a later question cannot treat it
+              as one.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              states that split. Citing an unauthorized draft as what the organization learned
+              promotes a suggestion into a result.
+            </p>
+
+            <p>
+              An action that was never verified is the third. Action records the work the human
+              decision authorized and keeps that statement on the case, beside the question and
+              the evidence. It states what was approved to happen next. It does not state what was
+              observed afterward. Work that follows the decision moves through the customer’s
+              systems of record and the people who already hold operating authority. Recording the
+              action is not plant execute, and an authorized action you never checked is not a
+              closed case.
+            </p>
+
+            <p>
+              Evidence still has to be reconstructable.{' '}
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>{' '}
+              asks whether a later reviewer can rebuild the proposal. Learning extends that demand
+              past the proposal: the later reviewer should be able to rebuild the closed case,
+              including the check. A lesson you cannot reconstruct is a slogan.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What the next case is allowed to inherit
+            </h2>
+
+            <p>
+              A useful learning record keeps the closed case readable. A later reader should be
+              able to see the case as it was finished, not as someone later prefers to remember it.
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2">
+              <li>The question the case opened on</li>
+              <li>The evidence, including what was still missing</li>
+              <li>The recommendation, and whether a named person authorized it</li>
+              <li>The action that decision approved</li>
+              <li>
+                The verification: what was supposed to change, which evidence would show it, and
+                what was observed
+              </li>
+            </ul>
+
+            <p>
+              A verified outcome can be narrow. It can say the check was inconclusive, that the
+              expected signal was not available, or that the action did not produce the intended
+              effect. Those are learnable records. A blank verification field is not. A confident
+              retelling that skips the field is not either.
+            </p>
+
+            <p>
+              Read the gate in the{' '}
+              <Link
+                href={fieldManualPath('learning')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning
+              </Link>{' '}
+              chapter, after{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>
+              . Stage-1 learning is the closed case held on the record. Simulated or seeded
+              telemetry and asset context may appear in the workspace. Treat that material as a
+              practice record. It is not a plant historian, and completing the loop on it does not
+              turn it into a live plant result.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -238,9 +239,8 @@ export default function VerificationIsNotOptionalPage() {
               >
                 {fieldManual.title}
               </Link>{' '}
-              directly. Verification is step 06. It sits after the human decision and the action,
-              and before learning. Later editions can deepen a chapter. The spine stays in this
-              order.
+              directly. Learning is step 07. It sits after verification. Later editions can deepen
+              a chapter. The spine stays in this order.
             </p>
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
@@ -295,14 +295,14 @@ export default function VerificationIsNotOptionalPage() {
             </p>
 
             <p>
-              The next essay in this order is{' '}
+              Companion reading:{' '}
               <Link
-                href="/insights/learning-requires-a-verified-outcome"
+                href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Learning Requires a Verified Outcome
-              </Link>
-              . Companion reading:{' '}
+                Verification Is Not Optional
+              </Link>{' '}
+              on why the case stays open until the check is recorded,{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -316,16 +316,23 @@ export default function VerificationIsNotOptionalPage() {
               >
                 Evidence Lineage Is Not Optional
               </Link>{' '}
-              on why the record behind a recommendation has to be reconstructable.
+              on why the record behind a recommendation has to be reconstructable. The{' '}
+              <Link
+                href={fieldManualPath('learning')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning
+              </Link>{' '}
+              chapter is the public statement of the step this essay describes.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
                 Field Manual {fieldManual.version} states the order and the boundaries, including
-                the verification step. The Reliability Engineer workspace is where a signed-in
-                Decision Case is completed. A Reliability Assessment is the bounded review when the
-                question is whether the records can support a conclusion.
+                the learning step. The Reliability Engineer workspace is where a signed-in Decision
+                Case is completed. A Reliability Assessment is the bounded review when the question
+                is whether the records can support a conclusion.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link

@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'learning-requires-a-verified-outcome',
+    title: 'Learning Requires a Verified Outcome',
+    description:
+      'After verification is recorded, Learning closes the loop for the next case. A hoped-for outcome, an unauthorized recommendation, and an unchecked action are not that record. Field Manual v0 states the order.',
+    excerpt:
+      'Verification records the check. Learning is what a later question is allowed to inherit: the closed case, not a hope, a draft that was never authorized, or an action that was never checked.',
+    category: 'Decision Case',
+    readTime: '7 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'verification-is-not-optional',
     title: 'Verification Is Not Optional',
     description:
