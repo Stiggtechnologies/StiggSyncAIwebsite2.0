@@ -744,7 +744,15 @@ export default function NoiseIsNotSignalPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/sample-is-not-population"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Sample Is Not Population
+              </Link>
+              , on why a handful of observed cases or plants is not the fleet and not
+              population-level proof. Companion reading:{' '}
               <Link
                 href="/insights/symptom-is-not-cause"
                 className="text-[#3B82F6] hover:text-white transition-colors"
