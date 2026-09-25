@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'silence-is-not-clearance',
+    title: 'Silence Is Not Clearance',
+    description:
+      'Silence, no reply, no alert, and an empty inbox are not authorization and not clearance. A missing operator response is not approved. A quiet dashboard is not controlled. On the Decision Case, the named human decision and the recorded verification are the record. Companion to Unknown Is Not Clear and Blank Is Not Zero.',
+    excerpt:
+      'No reply is not approval. An empty inbox is not clearance. A quiet dashboard is not control. The Decision Case stays a proposal until a named person records the decision, and it stays open until verification is on the case.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'blank-is-not-zero',
     title: 'Blank Is Not Zero',
     description:
@@ -234,12 +246,40 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'silence-is-not-clearance': {
+    relatedSlug: 'unknown-is-not-clear',
+    relatedNote: 'Missing evidence stays unknown. Silence does not clear it.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'blank-is-not-zero',
+        note: 'An empty field is not a measured zero, and silence does not fill it.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal is not authorization. No reply does not authorize it.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A missing operator response is not the named decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'A quiet case is not the check that closes it.',
+      },
+    ],
+  },
   'blank-is-not-zero': {
     relatedSlug: 'unknown-is-not-clear',
     relatedNote: 'Missing evidence is unknown. A blank is not a measured zero.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Silence does not turn a blank into a measured zero.',
+      },
       {
         slug: 'verification-is-not-optional',
         note: 'A blank verification field is not a verified outcome of none.',
@@ -264,6 +304,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'No reply, no alert, and an empty inbox are not clearance.',
+      },
       {
         slug: 'verification-is-not-optional',
         note: 'The check still needs a record. Unknown is not that check.',

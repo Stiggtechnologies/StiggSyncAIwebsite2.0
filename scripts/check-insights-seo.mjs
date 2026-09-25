@@ -322,6 +322,7 @@ if (
 const unknownBlock = stepBlock('unknown-is-not-clear');
 for (const required of [
   'human-decision-is-not-optional',
+  'silence-is-not-clearance',
   'verification-is-not-optional',
   'recommend-is-not-authorize',
   'honesty-boundary-is-not-optional',
@@ -338,6 +339,7 @@ if (!/includePilot:\s*true/.test(unknownBlock)) {
 const unknownPage = read('app/insights/unknown-is-not-clear/page.tsx');
 for (const required of [
   '/insights/human-decision-is-not-optional',
+  '/insights/silence-is-not-clearance',
   '/insights/verification-is-not-optional',
   '/insights/recommend-is-not-authorize',
   '/insights/honesty-boundary-is-not-optional',
@@ -363,6 +365,7 @@ if (
 const blankBlock = stepBlock('blank-is-not-zero');
 for (const required of [
   'unknown-is-not-clear',
+  'silence-is-not-clearance',
   'verification-is-not-optional',
   'human-decision-is-not-optional',
   'honesty-boundary-is-not-optional',
@@ -379,6 +382,7 @@ if (!/includePilot:\s*true/.test(blankBlock)) {
 const blankPage = read('app/insights/blank-is-not-zero/page.tsx');
 for (const required of [
   '/insights/unknown-is-not-clear',
+  '/insights/silence-is-not-clearance',
   '/insights/verification-is-not-optional',
   '/insights/human-decision-is-not-optional',
   '/insights/honesty-boundary-is-not-optional',
@@ -392,6 +396,57 @@ for (const required of [
 ]) {
   if (!blankPage.includes(required)) {
     fail(`blank-is-not-zero page must include ${required}`);
+  }
+}
+if (
+  !blankPage.includes('The series continues with') ||
+  !blankPage.includes('/insights/silence-is-not-clearance')
+) {
+  fail('blank-is-not-zero must point the series forward to silence-is-not-clearance');
+}
+
+const silenceBlock = stepBlock('silence-is-not-clearance');
+for (const required of [
+  'unknown-is-not-clear',
+  'blank-is-not-zero',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'verification-is-not-optional',
+]) {
+  if (!silenceBlock.includes(`'${required}'`)) {
+    fail(`silence-is-not-clearance related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(silenceBlock)) {
+  fail('silence-is-not-clearance related reading must include the Strategic Pilot');
+}
+if (silenceBlock.includes("next: 'strategic-pilot'")) {
+  fail('silence-is-not-clearance next step is the Field Manual');
+}
+
+const silencePage = read('app/insights/silence-is-not-clearance/page.tsx');
+for (const required of [
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  '/insights/verification-is-not-optional',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('honesty-boundaries')",
+  'not authorization',
+  'not clearance',
+  'missing operator response',
+  'quiet dashboard',
+  'empty inbox',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!silencePage.includes(required)) {
+    fail(`silence-is-not-clearance page must include ${required}`);
   }
 }
 
