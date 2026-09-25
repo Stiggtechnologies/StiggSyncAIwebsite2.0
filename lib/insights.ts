@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'arr-is-not-cash',
+    title: 'ARR Is Not Cash',
+    description:
+      'ARR is not cash. ARR is the annualized value of recurring contracted subscription revenue that renews. Cash is money received (collected). Contracted annualized recurring revenue can sit on the books while cash is uncollected. Cash can arrive from non-recurring work without growing ARR. One-time project sales, professional services, hardware, and non-recurring fees can bring cash without growing ARR. Treating ARR as cash records an annualized contract as a receipt nobody has collected, under the honesty and verification boundary. An ARR figure can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already collected cash. Evidence from the plant beats the ARR figure when the figure is being used as cash. Sync may surface an ARR figure or a cash-collected figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat ARR as cash as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. Contracted annualized recurring revenue on the books while cash is uncollected leaves the cash uncollected. Cash from non-recurring work leaves ARR unchanged. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is money received. Contracted annualized recurring revenue can sit on the books while cash is uncollected, and cash can arrive from non-recurring work without growing ARR.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'revenue-is-not-arr',
     title: 'Revenue Is Not ARR',
     description:
@@ -678,12 +690,96 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'revenue-is-not-arr': {
-    relatedSlug: 'impact-is-not-revenue',
-    relatedNote: 'Business impact is not revenue. Revenue is recognized sales. Recognized revenue in a period is still not ARR.',
+  'arr-is-not-cash': {
+    relatedSlug: 'revenue-is-not-arr',
+    relatedNote: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is the annualized value of recurring contracted subscription revenue that renews. That annualized contract is still not cash.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, and ARR is not cash.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, and ARR is not cash.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. ARR is still not cash.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and ARR is not cash.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. An ARR figure is not cash.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. ARR is not cash, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Cash in the bank is money received, and ARR is not that receipt.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. An ARR figure is not that receipt either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not cash collected.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. An ARR figure after the start is not cash collected.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not cash collected.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the cash was collected. ARR on the books is not money received.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not collect cash.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit ARR as cash.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. ARR is recurring contracted subscription revenue, not standing assurance and not cash collected.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites an ARR figure is still a proposal. Recommend is not authorize, and the proposal is not cash collected.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A cash figure beside that tile is not ARR, and an ARR figure is not money received.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Cash that moved with an ARR figure is not a cause. Coincidence is not proof the receipt grew ARR.',
+      },
+    ],
+  },
+  'revenue-is-not-arr': {
+    relatedSlug: 'arr-is-not-cash',
+    relatedNote: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is money received. Contracted annualized recurring revenue can sit on the books while cash is uncollected, and cash can arrive from non-recurring work without growing ARR.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. Revenue is recognized sales. Recognized revenue in a period is still not ARR, and ARR is still not cash.',
+      },
       {
         slug: 'outcome-is-not-impact',
         note: 'A measured outcome is not business impact. The impact is not recognized sales, and recognized sales are not ARR.',
@@ -761,6 +857,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. An impact claim is still not revenue, and recognized revenue is still not ARR.',
+      },
+      {
         slug: 'outcome-is-not-impact',
         note: 'A measured outcome is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity. That attribution is still not revenue, and recognized revenue is still not ARR.',
       },
@@ -836,6 +936,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is not cash. A measured outcome is still not impact, recognized revenue is still not ARR, and the annualized contract is still not money received.',
+      },
       {
         slug: 'revenue-is-not-arr',
         note: 'Recognized revenue is sales booked in a period. It is not ARR. A measured outcome is still not impact, and the recognized sale is still not the annualized contract.',
@@ -913,6 +1017,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is not cash. A reported outcome is still not the value, and the annualized contract is still not money received.',
+      },
+      {
         slug: 'revenue-is-not-arr',
         note: 'Recognized revenue is not ARR. A reported outcome is still not the value, and the period booking is still not the annualized contract.',
       },
@@ -960,6 +1068,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'arr-is-not-cash',
+        note: 'A profit figure is not the value. ARR is still not cash.',
+      },
       {
         slug: 'revenue-is-not-arr',
         note: 'A profit figure is not the value. Recognized revenue is still not ARR.',
@@ -1057,6 +1169,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'arr-is-not-cash',
+        note: 'Cash collected is not contribution margin. ARR is not cash. Money received is not the annualized recurring contract.',
+      },
+      {
         slug: 'revenue-is-not-arr',
         note: 'Cash collected is not contribution margin. A recognized sale is not ARR.',
       },
@@ -1132,6 +1248,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'arr-is-not-cash',
+        note: 'A named owner is not closure. ARR is not cash.',
+      },
       {
         slug: 'revenue-is-not-arr',
         note: 'A named owner is not closure. Recognized revenue is not ARR.',
@@ -1361,6 +1481,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'arr-is-not-cash',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not cash collected.',
+      },
+      {
         slug: 'revenue-is-not-arr',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not ARR.',
       },
@@ -1436,6 +1560,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'arr-is-not-cash',
+        note: 'A clearance stamp is not proof the work is finished. ARR is not cash.',
+      },
       {
         slug: 'revenue-is-not-arr',
         note: 'A clearance stamp is not proof the work is finished. Recognized revenue is not ARR.',
@@ -3684,6 +3812,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'arr-is-not-cash',
+        note: 'Learning inherits the verified outcome. It does not inherit ARR as cash.',
+      },
+      {
         slug: 'revenue-is-not-arr',
         note: 'Learning inherits the verified outcome. It does not inherit recognized revenue as ARR.',
       },
@@ -3738,6 +3870,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'arr-is-not-cash',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not collect cash.',
+      },
       {
         slug: 'revenue-is-not-arr',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not measure ARR.',

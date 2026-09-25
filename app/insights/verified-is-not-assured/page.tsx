@@ -699,6 +699,17 @@ export default function VerifiedIsNotAssuredPage() {
               past. That booking is not ARR.
             </p>
 
+            <p>
+              <Link
+                href="/insights/arr-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                ARR Is Not Cash
+              </Link>{' '}
+              states the split after the annualized contract. A verified record closes a claim about
+              the past. That contract is not cash collected.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
