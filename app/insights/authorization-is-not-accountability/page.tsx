@@ -720,6 +720,17 @@ export default function AuthorizationIsNotAccountabilityPage() {
               is not execution.
             </p>
 
+            <p>
+              <Link
+                href="/insights/execution-is-not-results"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Execution Is Not Results
+              </Link>{' '}
+              states the split after execution. Authorization answers who may start. An execution
+              note is not results.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

@@ -735,6 +735,17 @@ export default function ClearedIsNotCompletePage() {
               A firm with a strategy can still lack execution.
             </p>
 
+            <p>
+              <Link
+                href="/insights/execution-is-not-results"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Execution Is Not Results
+              </Link>{' '}
+              states the split after execution. A clearance stamp is not proof results were shown.
+              A firm with execution can still lack results.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
