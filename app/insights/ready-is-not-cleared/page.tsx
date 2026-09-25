@@ -435,6 +435,13 @@ export default function ReadyIsNotClearedPage() {
             <p>
               Companion reading:{' '}
               <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              on why a cleared flag is not proof the work is finished,{' '}
+              <Link
                 href="/insights/green-is-not-go"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

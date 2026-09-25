@@ -2519,6 +2519,106 @@ for (const required of [
   }
 }
 
+if (
+  !statusPage.includes('The series continues with') ||
+  !statusPage.includes('/insights/cleared-is-not-complete')
+) {
+  fail('status-is-not-clearance must point the series forward to cleared-is-not-complete');
+}
+
+for (const [slug, label] of [
+  ['status-is-not-clearance', 'status-is-not-clearance'],
+  ['green-is-not-go', 'green-is-not-go'],
+  ['silence-is-not-clearance', 'silence-is-not-clearance'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['action-is-not-execution', 'action-is-not-execution'],
+  ['coverage-is-not-control', 'coverage-is-not-control'],
+]) {
+  if (!stepBlock(slug).includes("'cleared-is-not-complete'")) {
+    fail(`${label} related reading must cite cleared-is-not-complete`);
+  }
+}
+
+const clearedBlock = stepBlock('cleared-is-not-complete');
+for (const required of [
+  'status-is-not-clearance',
+  'green-is-not-go',
+  'silence-is-not-clearance',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'action-is-not-execution',
+  'coverage-is-not-control',
+]) {
+  if (!clearedBlock.includes(`'${required}'`)) {
+    fail(`cleared-is-not-complete related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(clearedBlock)) {
+  fail('cleared-is-not-complete related reading must include the Strategic Pilot');
+}
+if (clearedBlock.includes("next: 'strategic-pilot'")) {
+  fail('cleared-is-not-complete next step is the Field Manual');
+}
+
+const clearedPage = read('app/insights/cleared-is-not-complete/page.tsx');
+for (const required of [
+  '/insights/status-is-not-clearance',
+  '/insights/green-is-not-go',
+  '/insights/silence-is-not-clearance',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/action-is-not-execution',
+  '/insights/coverage-is-not-control',
+  '/insights/human-decision-is-not-optional',
+  '/insights/recommend-is-not-authorize',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  'cleared flag',
+  'cleared checklist',
+  'cleared-to-proceed badge',
+  'cleared for start',
+  'cleared for service',
+  'case cleared',
+  'clearance decision',
+  'label someone attached',
+  'not proof the work is finished',
+  'the outcome is verified',
+  'the value is realized',
+  'honestly close',
+  'observed outcomes',
+  'named verification',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'false closure',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the stamp',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'cleared completion',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice flag that says cleared is not a customer plant release',
+]) {
+  if (!clearedPage.includes(required)) {
+    fail(`cleared-is-not-complete page must include ${required}`);
+  }
+}
+
 function readingSlugs(name) {
   const block = section(name);
   const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);
