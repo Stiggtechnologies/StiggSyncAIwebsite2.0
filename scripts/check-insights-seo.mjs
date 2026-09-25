@@ -13,7 +13,12 @@ function fail(message) {
 }
 
 const insightsSrc = read('lib/insights.ts');
-const slugs = [...insightsSrc.matchAll(/slug:\s*'([a-z0-9-]+)'/g)].map((match) => match[1]);
+const articlesStart = insightsSrc.indexOf('export const insightArticles');
+const articlesEnd = insightsSrc.indexOf('\nexport ', articlesStart + 1);
+if (articlesStart < 0 || articlesEnd < 0) fail('lib/insights.ts is missing the insightArticles catalog');
+const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\s*'([a-z0-9-]+)'/g)].map(
+  (match) => match[1],
+);
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
 
 const insightPage = read('lib/insight-page.tsx');
@@ -59,6 +64,75 @@ for (const slug of slugs) {
   const call = `insightMetadata('${slug}')`;
   if (!layout.includes('export const metadata') || !layout.includes(call)) {
     fail(`${layoutPath} must export metadata from ${call}`);
+  }
+  const page = read(pagePath);
+  if (!page.includes(`<InsightNextSteps slug="${slug}" />`)) {
+    fail(`${pagePath} must render <InsightNextSteps slug="${slug}" />`);
+  }
+}
+
+function section(name) {
+  const marker = `export const ${name}`;
+  const start = insightsSrc.indexOf(marker);
+  if (start < 0) fail(`lib/insights.ts is missing ${marker}`);
+  const nextExport = insightsSrc.indexOf('\nexport ', start + marker.length);
+  return insightsSrc.slice(start, nextExport === -1 ? undefined : nextExport);
+}
+
+const stepsSection = section('insightNextSteps');
+const stepKeys = [...stepsSection.matchAll(/^\s+'([a-z0-9-]+)': \{$/gm)].map((match) => match[1]);
+for (const slug of slugs) {
+  if (!stepKeys.includes(slug)) fail(`insightNextSteps is missing catalog slug ${slug}`);
+}
+if (stepKeys.length !== slugs.length) {
+  fail(`insightNextSteps has ${stepKeys.length} entries; catalog has ${slugs.length}`);
+}
+
+const stepBodies = [...stepsSection.matchAll(/relatedSlug: '([a-z0-9-]+)',\n\s+relatedNote: '([^']+)',\n\s+next: '(field-manual|strategic-pilot)',/g)];
+if (stepBodies.length !== slugs.length) fail('insightNextSteps entries must set relatedSlug, relatedNote, and next');
+for (const [, relatedSlug, relatedNote] of stepBodies) {
+  if (!slugs.includes(relatedSlug)) fail(`Related essay slug is not in the catalog: ${relatedSlug}`);
+  if (!relatedNote.trim()) fail('Related reading notes must be non-empty');
+}
+
+function readingSlugs(name) {
+  const block = section(name);
+  const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);
+  if (found.length < 2 || found.length > 3) {
+    fail(`${name} must list 2–3 Insights essays (found ${found.length})`);
+  }
+  for (const slug of found) {
+    if (!slugs.includes(slug)) fail(`${name} cites unknown Insights slug ${slug}`);
+  }
+  return found;
+}
+
+readingSlugs('riaFurtherReading');
+readingSlugs('strategicPilotFurtherReading');
+
+const readingComponent = read('components/insights/InsightReading.tsx');
+for (const needle of ['/reliability-assessment', "href: '/strategic-pilot'", 'fieldManualPath()']) {
+  if (!readingComponent.includes(needle)) fail(`Insight reading strip is missing ${needle}`);
+}
+
+const riaPage = read('app/reliability-assessment/page.tsx');
+if (!riaPage.includes('<FurtherReading items={riaFurtherReading} />')) {
+  fail('Reliability Assessment page must render FurtherReading from riaFurtherReading');
+}
+const pilotPage = read('app/strategic-pilot/page.tsx');
+if (!pilotPage.includes('<FurtherReading items={strategicPilotFurtherReading} />')) {
+  fail('Strategic Pilot page must render FurtherReading from strategicPilotFurtherReading');
+}
+
+for (const intentPage of [
+  'app/industries/page.tsx',
+  'app/ai-for-mining-reliability/page.tsx',
+  'app/architecture/page.tsx',
+  'app/security/page.tsx',
+  'app/company/page.tsx',
+]) {
+  if (!read(intentPage).includes('href="/insights/')) {
+    fail(`${intentPage} must link to an Insights essay`);
   }
 }
 

@@ -84,7 +84,11 @@ export default function IndustriesPage() {
               The same governed path in every beachhead operation.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              SyncAI does not autonomously coordinate the plant. It does not file regulatory submittals. It does not provision a vertical tenant in 60 seconds. Recommendations stay reviewable, and a named human remains the approver.
+              SyncAI does not autonomously coordinate the plant. It does not file regulatory submittals. It does not provision a vertical tenant in 60 seconds. Recommendations stay reviewable, and a{' '}
+              <Link href="/insights/recommend-is-not-authorize" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                named human remains the approver
+              </Link>
+              .
             </p>
           </div>
 
@@ -108,7 +112,11 @@ export default function IndustriesPage() {
               Three operating environments we will take first.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions — with approval still explicit.
+              The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions — with approval still explicit. A closed failure report is still short of that approval:{' '}
+              <Link href="/insights/fracas-is-not-a-decision-system" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                FRACAS Is Not a Decision System
+              </Link>
+              .
             </p>
           </div>
 

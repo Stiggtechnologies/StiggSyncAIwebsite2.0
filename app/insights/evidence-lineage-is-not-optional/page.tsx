@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 export default function EvidenceLineageIsNotOptionalPage() {
@@ -348,6 +349,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
               </div>
             </div>
           </div>
+          <InsightNextSteps slug="evidence-lineage-is-not-optional" />
         </motion.article>
       </div>
     </main>

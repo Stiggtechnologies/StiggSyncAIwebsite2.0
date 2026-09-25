@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { FurtherReading } from '@/components/insights/InsightReading';
+import { strategicPilotFurtherReading } from '@/lib/insights';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 const phases = [
@@ -132,6 +134,10 @@ export default function StrategicPilotPage() {
                 <li>• A technical owner can review the reasoning and approve the action boundary.</li>
                 <li>• There is a baseline or outcome that can be measured after intervention.</li>
               </ul>
+            </div>
+
+            <div className="mt-8">
+              <FurtherReading items={strategicPilotFurtherReading} />
             </div>
 
             <div className="mt-6 text-sm text-slate-500">

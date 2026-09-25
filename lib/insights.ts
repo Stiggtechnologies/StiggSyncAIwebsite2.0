@@ -106,3 +106,129 @@ export const insightArticles: InsightArticle[] = [
 export function getInsightArticle(slug: string) {
   return insightArticles.find((article) => article.slug === slug);
 }
+
+export type InsightNextDestination = 'field-manual' | 'strategic-pilot';
+
+export type InsightNextStep = {
+  relatedSlug: string;
+  relatedNote: string;
+  next: InsightNextDestination;
+};
+
+/**
+ * One companion essay, plus the commercial or doctrinal next step.
+ * Field Manual when the essay is about the Decision Case order.
+ * Strategic Pilot when the essay already points at a governed proof of one decision.
+ */
+export const insightNextSteps: Record<string, InsightNextStep> = {
+  'learning-requires-a-verified-outcome': {
+    relatedSlug: 'verification-is-not-optional',
+    relatedNote: 'The check a later case is allowed to inherit.',
+    next: 'field-manual',
+  },
+  'verification-is-not-optional': {
+    relatedSlug: 'learning-requires-a-verified-outcome',
+    relatedNote: 'What a closed case is allowed to pass forward.',
+    next: 'field-manual',
+  },
+  'recommend-is-not-authorize': {
+    relatedSlug: 'evidence-lineage-is-not-optional',
+    relatedNote: 'A proposal still needs a record you can reconstruct.',
+    next: 'field-manual',
+  },
+  'evidence-lineage-is-not-optional': {
+    relatedSlug: 'recommend-is-not-authorize',
+    relatedNote: 'The record is the basis. Authorization stays with a named person.',
+    next: 'strategic-pilot',
+  },
+  'fracas-is-not-a-decision-system': {
+    relatedSlug: 'evidence-lineage-is-not-optional',
+    relatedNote: 'A failure code still needs a reconstructable record.',
+    next: 'field-manual',
+  },
+  'why-cmms-alone-is-failing-2026': {
+    relatedSlug: 'fracas-is-not-a-decision-system',
+    relatedNote: 'The system of record still leaves the decision unproven.',
+    next: 'strategic-pilot',
+  },
+  'economics-of-autonomous-maintenance': {
+    relatedSlug: 'learning-requires-a-verified-outcome',
+    relatedNote: 'A savings figure still needs a verified outcome.',
+    next: 'field-manual',
+  },
+  'governance-in-industrial-ai': {
+    relatedSlug: 'recommend-is-not-authorize',
+    relatedNote: 'Oversight is the named human decision.',
+    next: 'field-manual',
+  },
+};
+
+export type FurtherReadingItem = {
+  slug: string;
+  note: string;
+};
+
+/** Evidence grade, named approval, and the check before a conclusion is treated as closed. */
+export const riaFurtherReading: readonly FurtherReadingItem[] = [
+  {
+    slug: 'evidence-lineage-is-not-optional',
+    note: 'A recommendation you cannot reconstruct is not an industrial decision.',
+  },
+  {
+    slug: 'recommend-is-not-authorize',
+    note: 'A drafted next action is a proposal. A named person decides.',
+  },
+  {
+    slug: 'verification-is-not-optional',
+    note: 'Authorization records who decided. The case stays open until the check is recorded.',
+  },
+];
+
+/** Named approval, the outcome check, and what a later case is allowed to inherit. */
+export const strategicPilotFurtherReading: readonly FurtherReadingItem[] = [
+  {
+    slug: 'recommend-is-not-authorize',
+    note: 'A drafted next action is a proposal. A named person decides.',
+  },
+  {
+    slug: 'verification-is-not-optional',
+    note: 'Authorization records who decided. The case stays open until the check is recorded.',
+  },
+  {
+    slug: 'learning-requires-a-verified-outcome',
+    note: 'A later case inherits the closed record, not a hoped-for outcome.',
+  },
+];
+
+export function assertInsightLinkGraph(): void {
+  const slugs = new Set(insightArticles.map((article) => article.slug));
+
+  for (const article of insightArticles) {
+    const step = insightNextSteps[article.slug];
+    if (!step) {
+      throw new Error(`Missing insight next step for ${article.slug}`);
+    }
+    if (step.relatedSlug === article.slug || !slugs.has(step.relatedSlug)) {
+      throw new Error(`Bad related essay for ${article.slug}`);
+    }
+    if (!step.relatedNote.trim()) {
+      throw new Error(`Missing related note for ${article.slug}`);
+    }
+    if (step.next !== 'field-manual' && step.next !== 'strategic-pilot') {
+      throw new Error(`Bad next step for ${article.slug}`);
+    }
+  }
+
+  for (const list of [riaFurtherReading, strategicPilotFurtherReading]) {
+    if (list.length < 2 || list.length > 3) {
+      throw new Error('Further reading must list two or three Insights essays');
+    }
+    for (const item of list) {
+      if (!slugs.has(item.slug) || !item.note.trim()) {
+        throw new Error(`Bad further reading item ${item.slug}`);
+      }
+    }
+  }
+}
+
+assertInsightLinkGraph();

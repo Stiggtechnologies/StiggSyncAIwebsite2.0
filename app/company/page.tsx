@@ -50,7 +50,15 @@ const notThis = [
   },
   {
     title: 'Not a CMMS replacement',
-    body: 'CMMS, EAM, ERP, historian, and inspection systems remain systems of record. SyncAI is designed to sit across that estate, not rip and replace it.',
+    body: (
+      <>
+        CMMS, EAM, ERP, historian, and inspection systems remain systems of record. SyncAI is designed to sit across that estate, not rip and replace it. The longer argument is{' '}
+        <Link href="/insights/why-cmms-alone-is-failing-2026" className="font-semibold text-cyan-300 hover:text-cyan-200">
+          Why CMMS Alone Is Failing in 2026
+        </Link>
+        .
+      </>
+    ),
   },
   {
     title: 'Not self-serve onboarding as a product',
@@ -112,7 +120,10 @@ export default function CompanyPage() {
               A human remains the approver.
             </p>
             <p className="font-semibold text-slate-200">
-              Recommend is not authorize. Plant execute is not a marketed capability.
+              <Link href="/insights/recommend-is-not-authorize" className="text-cyan-300 hover:text-cyan-200">
+                Recommend is not authorize
+              </Link>
+              . Plant execute is not a marketed capability.
             </p>
           </div>
         </div>
