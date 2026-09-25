@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'threshold-is-not-diagnosis',
+    title: 'Threshold Is Not Diagnosis',
+    description:
+      'Threshold is not diagnosis. Crossing a numeric threshold, limit, alarm band, or set-point is not a diagnosis and not a Decision Case. A threshold breach can inform a recommendation. It does not name the failure mode, authorize action, verify outcome, or replace a named human decision. Sync may surface threshold breaches. A named human still decides. Companion to Alert Is Not Decision, Correlation Is Not Causation, Proxy Is Not Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Crossing a numeric threshold, limit, alarm band, or set-point is not a diagnosis and not a Decision Case. A breach can inform a recommendation. It does not name the failure mode, authorize action, verify outcome, or replace a named human decision.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'proxy-is-not-outcome',
     title: 'Proxy Is Not Outcome',
     description:
@@ -306,12 +318,72 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'threshold-is-not-diagnosis': {
+    relatedSlug: 'proxy-is-not-outcome',
+    relatedNote: 'A stand-in is not the outcome. A threshold breach is not the diagnosis.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert can report a breach. Seeing it is still not a decision.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Tags that cross together are not a named failure mode.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A return inside the band is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope that later crosses a line is still not a recorded check.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the breach names the mode is not a recorded check.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A red band is a display. It is not the Decision Case.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a hoped-for return inside the band.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: '“It crossed, so we know what failed” is not a recorded fact.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A breach does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A breach does not record it as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A quiet band is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A line without a reconstructable trail is not a diagnosis.',
+      },
+    ],
+  },
   'proxy-is-not-outcome': {
     relatedSlug: 'trend-is-not-truth',
     relatedNote: 'A slope is not the truth. A proxy move is not the verified outcome.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A line that was crossed is not a diagnosis and not the Decision Case.',
+      },
       {
         slug: 'correlation-is-not-causation',
         note: 'Co-movement is not causation. A proxy that moved with the work is not the check.',
@@ -365,6 +437,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A line that was crossed is not a diagnosis and not a recorded check.',
+      },
+      {
         slug: 'proxy-is-not-outcome',
         note: 'A stand-in measure is not the verified operational outcome.',
       },
@@ -412,6 +488,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'Tags that cross a band together still do not name the failure mode.',
+      },
       {
         slug: 'proxy-is-not-outcome',
         note: 'A KPI, a score, or a closed count is not the verified outcome.',

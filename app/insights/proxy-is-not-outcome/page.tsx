@@ -626,7 +626,15 @@ export default function ProxyIsNotOutcomePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/threshold-is-not-diagnosis"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Threshold Is Not Diagnosis
+              </Link>
+              , on why crossing a numeric threshold, limit, alarm band, or set-point is not a
+              diagnosis and not a Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/trend-is-not-truth"
                 className="text-[#3B82F6] hover:text-white transition-colors"

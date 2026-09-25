@@ -575,6 +575,7 @@ for (const required of [
   'confidence-is-not-evidence',
   'trend-is-not-truth',
   'proxy-is-not-outcome',
+  'threshold-is-not-diagnosis',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -639,6 +640,7 @@ const trendBlock = stepBlock('trend-is-not-truth');
 for (const required of [
   'correlation-is-not-causation',
   'proxy-is-not-outcome',
+  'threshold-is-not-diagnosis',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
   'dashboard-is-not-decision',
@@ -708,6 +710,7 @@ if (
 const proxyBlock = stepBlock('proxy-is-not-outcome');
 for (const required of [
   'trend-is-not-truth',
+  'threshold-is-not-diagnosis',
   'correlation-is-not-causation',
   'confidence-is-not-evidence',
   'dashboard-is-not-decision',
@@ -772,6 +775,83 @@ for (const required of [
 ]) {
   if (!proxyPage.includes(required)) {
     fail(`proxy-is-not-outcome page must include ${required}`);
+  }
+}
+if (
+  !proxyPage.includes('The series continues with') ||
+  !proxyPage.includes('/insights/threshold-is-not-diagnosis')
+) {
+  fail('proxy-is-not-outcome must point the series forward to threshold-is-not-diagnosis');
+}
+
+const thresholdBlock = stepBlock('threshold-is-not-diagnosis');
+for (const required of [
+  'proxy-is-not-outcome',
+  'alert-is-not-decision',
+  'correlation-is-not-causation',
+  'verification-is-not-optional',
+  'trend-is-not-truth',
+  'confidence-is-not-evidence',
+  'dashboard-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'assumption-is-not-evidence',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!thresholdBlock.includes(`'${required}'`)) {
+    fail(`threshold-is-not-diagnosis related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(thresholdBlock)) {
+  fail('threshold-is-not-diagnosis related reading must include the Strategic Pilot');
+}
+if (thresholdBlock.includes("next: 'strategic-pilot'")) {
+  fail('threshold-is-not-diagnosis next step is the Field Manual');
+}
+
+const thresholdPage = read('app/insights/threshold-is-not-diagnosis/page.tsx');
+for (const required of [
+  '/insights/proxy-is-not-outcome',
+  '/insights/alert-is-not-decision',
+  '/insights/correlation-is-not-causation',
+  '/insights/verification-is-not-optional',
+  '/insights/trend-is-not-truth',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/dashboard-is-not-decision',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'numeric threshold',
+  'alarm band',
+  'set-point',
+  'not a diagnosis',
+  'not a Decision Case',
+  'failure mode',
+  'authorize action',
+  'verify outcome',
+  'named human decision',
+  'inform a recommendation',
+  'Sync may surface threshold breaches',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!thresholdPage.includes(required)) {
+    fail(`threshold-is-not-diagnosis page must include ${required}`);
   }
 }
 
