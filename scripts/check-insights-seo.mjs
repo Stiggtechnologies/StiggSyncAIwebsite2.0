@@ -576,6 +576,7 @@ for (const required of [
   'trend-is-not-truth',
   'proxy-is-not-outcome',
   'threshold-is-not-diagnosis',
+  'symptom-is-not-cause',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -641,6 +642,7 @@ for (const required of [
   'correlation-is-not-causation',
   'proxy-is-not-outcome',
   'threshold-is-not-diagnosis',
+  'symptom-is-not-cause',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
   'dashboard-is-not-decision',
@@ -711,6 +713,7 @@ const proxyBlock = stepBlock('proxy-is-not-outcome');
 for (const required of [
   'trend-is-not-truth',
   'threshold-is-not-diagnosis',
+  'symptom-is-not-cause',
   'correlation-is-not-causation',
   'confidence-is-not-evidence',
   'dashboard-is-not-decision',
@@ -787,6 +790,7 @@ if (
 const thresholdBlock = stepBlock('threshold-is-not-diagnosis');
 for (const required of [
   'proxy-is-not-outcome',
+  'symptom-is-not-cause',
   'alert-is-not-decision',
   'correlation-is-not-causation',
   'verification-is-not-optional',
@@ -852,6 +856,100 @@ for (const required of [
 ]) {
   if (!thresholdPage.includes(required)) {
     fail(`threshold-is-not-diagnosis page must include ${required}`);
+  }
+}
+if (
+  !thresholdPage.includes('The series continues with') ||
+  !thresholdPage.includes('/insights/symptom-is-not-cause')
+) {
+  fail('threshold-is-not-diagnosis must point the series forward to symptom-is-not-cause');
+}
+
+const symptomBlock = stepBlock('symptom-is-not-cause');
+for (const required of [
+  'threshold-is-not-diagnosis',
+  'alert-is-not-decision',
+  'correlation-is-not-causation',
+  'proxy-is-not-outcome',
+  'verification-is-not-optional',
+  'trend-is-not-truth',
+  'confidence-is-not-evidence',
+  'dashboard-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'assumption-is-not-evidence',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!symptomBlock.includes(`'${required}'`)) {
+    fail(`symptom-is-not-cause related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(symptomBlock)) {
+  fail('symptom-is-not-cause related reading must include the Strategic Pilot');
+}
+if (symptomBlock.includes("next: 'strategic-pilot'")) {
+  fail('symptom-is-not-cause next step is the Field Manual');
+}
+
+const symptomPage = read('app/insights/symptom-is-not-cause/page.tsx');
+for (const required of [
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/alert-is-not-decision',
+  '/insights/correlation-is-not-causation',
+  '/insights/proxy-is-not-outcome',
+  '/insights/verification-is-not-optional',
+  '/insights/trend-is-not-truth',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/dashboard-is-not-decision',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'vibration spike',
+  'hot bearing',
+  'pressure drop',
+  'operator report',
+  'CMMS complaint code',
+  'red tile',
+  'not a diagnosis',
+  'not a Decision Case',
+  'failure mode',
+  'prove root cause',
+  'authorize corrective work',
+  'verify outcome',
+  'named human decision',
+  'inform a recommendation',
+  'Sync may surface symptoms',
+  'correlate them with approved evidence',
+  'false certainty',
+  'misroutes work orders',
+  'wrong lesson',
+  'candidate cause',
+  'cited evidence',
+  'auto-close',
+  'auto-authorize',
+  'symptom clearance',
+  'verified operational outcome',
+  'A named human records the decision',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!symptomPage.includes(required)) {
+    fail(`symptom-is-not-cause page must include ${required}`);
   }
 }
 
