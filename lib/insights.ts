@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'green-is-not-go',
+    title: 'Green Is Not Go',
+    description:
+      'Green is not go. A green tile, a green status, a green health score, or an all-green dashboard is a display of a stored or computed value under the thresholds someone chose. It is not permission to run, clear, start, or leave equipment in service. Go and clearance still require a named human decision against observed outcomes, named coverage and assumptions, and refusal when evidence is insufficient. Treating green as go is another path to false clearance under the honesty and verification boundary. A green display can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the color. Sync may surface a green status beside approved evidence when the threshold, coverage, and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat green clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Dashboard Is Not Control, Alert Is Not Decision, Telemetry Is Not Truth, Accuracy Is Not Precision, Calibration Is Not Validation, Coverage Is Not Control, Verification Is Not Optional, and Human Decision Is Not Optional.',
+    excerpt:
+      'A green tile, green status, green health score, or all-green dashboard is a stored or computed value under the thresholds someone chose. It is not permission to run, clear, start, or leave equipment in service. Treating green as go is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'dashboard-is-not-control',
     title: 'Dashboard Is Not Control',
     description:
@@ -462,12 +474,68 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'green-is-not-go': {
+    relatedSlug: 'dashboard-is-not-control',
+    relatedNote: 'A dashboard reads a value and draws it. A green tile on that read is a value under a threshold someone chose. It is not permission to run, clear, start, or leave equipment in service.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'alert-is-not-decision',
+        note: 'A red tile is not a decision. A green status inside the same rule is not permission to go.',
+      },
+      {
+        slug: 'telemetry-is-not-truth',
+        note: 'A green-looking feed can still be the wrong sensor, a stale sample, or a proxy. The color is not truth for the decision.',
+      },
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise health score painted green is repeatability, not accuracy, and not permission to run.',
+      },
+      {
+        slug: 'calibration-is-not-validation',
+        note: 'A calibration that moves a score into the band is not validation. The green tile is not go.',
+      },
+      {
+        slug: 'coverage-is-not-control',
+        note: 'An all-green board is green for the watched set. Coverage is not permission to run or leave equipment in service.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A later green tile is not the check.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'Go still requires a named person to accept, reject, escalate, or return. The color does not record that act.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet board is not clearance. A green board is not a stronger form of quiet.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal that cites a green tile is still a proposal.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'Work intent on the case is not a start. A green tile does not unlock ACTION.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the closed case, not green clearance.',
+      },
+    ],
+  },
   'dashboard-is-not-control': {
     relatedSlug: 'telemetry-is-not-truth',
     relatedNote: 'A telemetry feed is a stream of observations, not truth for the decision. Rendering that feed as a tile, a trend, or a color is still a read. It does not write a setpoint, an isolation, or a work order.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile on the dashboard is a value under a threshold someone chose. It is not permission to run, clear, start, or leave equipment in service.',
+      },
       {
         slug: 'accuracy-is-not-precision',
         note: 'Precision is repeatability, not accuracy relative to the plant decision. A precise tile is still a read, not a write.',
@@ -520,6 +588,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'green-is-not-go',
+        note: 'A green-looking feed is a value under a threshold. It is not permission to run, clear, start, or leave equipment in service.',
+      },
       {
         slug: 'dashboard-is-not-control',
         note: 'A dashboard that renders the feed is still a read. Refreshing the tile does not write a setpoint, an isolation, or a work order.',
@@ -629,6 +701,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'green-is-not-go',
+        note: 'A precise score painted green is still a display under a threshold. It is not permission to run or leave equipment in service.',
+      },
+      {
         slug: 'dashboard-is-not-control',
         note: 'A precise tile is still a read. Stable decimals do not write a setpoint, an isolation, or a work order.',
       },
@@ -736,6 +812,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'green-is-not-go',
+        note: 'A calibrated score inside a band can paint the tile green. That color is not validation and not permission to run.',
+      },
       {
         slug: 'dashboard-is-not-control',
         note: 'A dashboard that displays a calibration is a read. It does not write a setpoint, an isolation, or a work order.',
@@ -2157,6 +2237,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'green-is-not-go',
+        note: 'A green tile does not record who decided. Go still requires a named human decision.',
+      },
+      {
         slug: 'recommend-is-not-authorize',
         note: 'A drafted proposal is not the recorded decision.',
       },
@@ -2204,6 +2288,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'green-is-not-go',
+        note: 'A green status is the other side of an alert. The color is not the decision to run, clear, start, or leave equipment in service.',
+      },
       {
         slug: 'question-is-not-decision',
         note: 'Opening a question is still not the decision.',
@@ -2273,6 +2361,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'green-is-not-go',
+        note: 'A watched set that paints every tile green is still the watched set. Green is not permission to run or leave equipment in service.',
+      },
+      {
         slug: 'dashboard-is-not-control',
         note: 'The watched set is not control authority. The screen that shows that set is a read, not a write.',
       },
@@ -2311,6 +2403,12 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedSlug: 'learning-requires-a-verified-outcome',
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
+    also: [
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not the observed outcome that closes the case.',
+      },
+    ],
   },
   'recommend-is-not-authorize': {
     relatedSlug: 'evidence-lineage-is-not-optional',

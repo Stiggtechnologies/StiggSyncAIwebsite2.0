@@ -442,7 +442,17 @@ export default function DashboardIsNotControlPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              , on why a green tile, a green status, a green health score, or an all-green
+              dashboard is a display of a stored or computed value under the thresholds someone
+              chose, and why that color is not permission to run, clear, start, or leave
+              equipment in service. Companion reading:{' '}
               <Link
                 href="/insights/telemetry-is-not-truth"
                 className="text-[#3B82F6] hover:text-white transition-colors"
