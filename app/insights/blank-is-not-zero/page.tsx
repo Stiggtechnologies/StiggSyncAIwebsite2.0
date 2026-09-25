@@ -96,7 +96,15 @@ export default function BlankIsNotZeroPage() {
                 Evidence
               </Link>{' '}
               chapter keeps a visible split between observed fact, assumption, and what is still
-              missing. A blank field is what is still missing. It is not an observed fact of none.
+              missing.{' '}
+              <Link
+                href="/insights/assumption-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assumption Is Not Evidence
+              </Link>{' '}
+              keeps a belief or a model line from being stored as that observed fact. A blank field
+              is what is still missing. It is not an observed fact of none.
               A proposal that treats the blank as zero has no basis for that term, and a proposal
               with no basis is not ready for a human decision.
             </p>

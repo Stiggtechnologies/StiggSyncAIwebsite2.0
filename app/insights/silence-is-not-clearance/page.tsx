@@ -337,8 +337,16 @@ export default function SilenceIsNotClearancePage() {
                 Evidence
               </Link>{' '}
               chapter keeps the split visible: observed fact, assumption, and what is still
-              missing. A proposal with no basis is not ready for a human decision. Silence does not
-              give it a basis.
+              missing.{' '}
+              <Link
+                href="/insights/assumption-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assumption Is Not Evidence
+              </Link>{' '}
+              is that split at full length: a belief, a habit, a prior shift&apos;s story, or an
+              unverified model output is not a recorded fact. A proposal with no basis is not ready
+              for a human decision. Silence does not give it a basis.
             </p>
 
             <p>
@@ -599,7 +607,15 @@ export default function SilenceIsNotClearancePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/assumption-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assumption Is Not Evidence
+              </Link>
+              , on why a belief, a habit, a prior shift&apos;s story, or an unverified model output
+              is not a recorded fact. Companion reading:{' '}
               <Link
                 href="/insights/unknown-is-not-clear"
                 className="text-[#3B82F6] hover:text-white transition-colors"
