@@ -691,6 +691,17 @@ export default function ClearedIsNotCompletePage() {
               solvent firm can still fail a liquidity window.
             </p>
 
+            <p>
+              <Link
+                href="/insights/liquidity-is-not-flexibility"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Liquidity Is Not Flexibility
+              </Link>{' '}
+              states the split after liquidity. A clearance stamp is not proof flexibility was
+              shown. A liquid firm can still lack flexibility.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

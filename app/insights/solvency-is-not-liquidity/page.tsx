@@ -91,7 +91,8 @@ export default function SolvencyIsNotLiquidityPage() {
               The stack is the same kind of refusal this series keeps. Closure is not cash. Cash is
               not margin. Margin is not profit. Profit is not value. Value is not outcome. Outcome is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
-              Each word can be true in its own place. None of the earlier words fills the last one.
+              Liquidity is not flexibility. Each word can be true in its own place. None of the
+              earlier words fills the last one.
               A closed work order, cash collected, a unit remainder, a profit figure, a measured
               outcome, an attributed change, a recognized sale, an annualized contract, a spendable
               balance, a duration at the current net burn, obligation continuity through the next
@@ -100,8 +101,8 @@ export default function SolvencyIsNotLiquidityPage() {
               a period booking, a recurring contract, a balance, a calculated duration, a near-term
               continuity claim, and a structural claim. Solvency is whether assets and claims
               structure can cover liabilities and pay debts as they come due over a structural
-              horizon. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. A solvency note is
-              not that liquidity claim.
+              horizon. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. A solvency note is
+              not that liquidity claim. A liquidity note is not that flexibility claim.
             </p>
 
             <p>
@@ -1048,6 +1049,26 @@ export default function SolvencyIsNotLiquidityPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The solvency note does not record the liquidity.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/liquidity-is-not-flexibility"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Liquidity Is Not Flexibility
+              </Link>
+              , on why liquidity is still not flexibility. Liquidity is whether cash and near-cash
+              can meet obligations as they come due in the near term (payroll, vendors, debt service
+              windows) without forced asset sales or covenant breaches. Flexibility is whether the
+              firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities
+              inside a named decision window without breaking obligations, covenants, or continuity
+              — the ability to choose and change course, not merely to pay what is already due. A
+              liquid firm can still lack flexibility when the means that meet those windows cannot
+              be reallocated without breaking obligations, covenants, or continuity. An inflexible
+              firm can still be liquid. A firm that can change course inside a named decision window
+              can still fail a liquidity window. A liquidity note alone proves neither.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
