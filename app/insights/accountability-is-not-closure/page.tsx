@@ -574,15 +574,48 @@ export default function AccountabilityIsNotClosurePage() {
             <p>
               The series continues with{' '}
               <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>
+              , on why closing a work order, a ticket, or a shift is still not cash collected or
+              revenue recognized. Closure of the operating loop is the verified outcome recorded
+              against named ownership. Cash collected is money received. Revenue recognized is the
+              earning event on the books.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              states the split after the commercial record. A named owner is not closure. Cash
+              collected and invoices paid are not contribution margin or profitable ARR.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              states the split after the unit remainder. A named owner is not closure. Contribution
+              margin and unit economics are not bottom-line profit or durable profitable revenue.
+            </p>
+
+            <p>
+              <Link
                 href="/insights/profit-is-not-value"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Profit Is Not Value
-              </Link>
-              , on why a profit figure under named cost rules is still not the verified operational
-              outcome. Profit answers whether the recorded remainder met the rules someone chose.
-              Value is the measured result the Decision Case was opened to change. Closure is not
-              cash. Cash is not margin. Margin is not profit. Profit is not value.
+              </Link>{' '}
+              states the split after the accounting result. A profit figure under named cost rules
+              is not the verified operational outcome the Decision Case was opened to change.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">

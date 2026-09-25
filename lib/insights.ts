@@ -14,9 +14,45 @@ export const insightArticles: InsightArticle[] = [
     slug: 'profit-is-not-value',
     title: 'Profit Is Not Value',
     description:
-      'Profit is not value. A profit figure is an accounting result for a named period under the cost rules, allocations, and cost base someone chose. That figure answers whether the recorded remainder met those rules. Value is the verified operational outcome the Decision Case was opened to change: restored capacity, a constraint released, a loss avoided, stored as achieved, not_achieved, or inconclusive, with measured notes. Profit is still not that outcome. Treating the profit figure as value ships an accounting result into a finished claim about plant value nobody has measured, under the honesty and verification boundary. A profit figure can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that is already closed. Evidence from the plant beats the profit figure. Sync may surface a profit figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit. A black maintenance result without a verified outcome leaves the value unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Companion to Accountability Is Not Closure, Authorization Is Not Accountability, Verification Is Not Optional, Learning Requires a Verified Outcome, and Verified Is Not Assured.',
+      'Profit is not value. A profit figure is an accounting result for a named period under the cost rules, allocations, and cost base someone chose. That figure answers whether the recorded remainder met those rules. Value is the verified operational outcome the Decision Case was opened to change: restored capacity, a constraint released, a loss avoided, stored as achieved, not_achieved, or inconclusive, with measured notes. Profit is still not that outcome. Treating the profit figure as value ships an accounting result into a finished claim about plant value nobody has measured, under the honesty and verification boundary. A profit figure can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that is already closed. Evidence from the plant beats the profit figure. Sync may surface a profit figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit. A black maintenance result without a verified outcome leaves the value unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
     excerpt:
       'A profit figure is an accounting result under the cost rules someone chose. It is not the verified operational outcome the Decision Case was opened to change. Value is that measured result — achieved, not_achieved, or inconclusive — not the profit on the shutdown.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
+    slug: 'margin-is-not-profit',
+    title: 'Margin Is Not Profit',
+    description:
+      'Margin is not profit. Contribution margin is what remains of revenue after the cost to serve. Unit economics is that remainder on a unit of work or a unit of recurring revenue. Gross margin after the cost to serve is the same family of claim. Bottom-line profit is what remains after the costs the unit remainder does not carry. Durable profitable revenue is recurring revenue that remains profitable after those costs and still compounds toward the portfolio northstar. Profitable ARR, in this essay, names that later claim. Covering the cost to serve is not bottom-line profit, and it is not durable profitable revenue. Treating contribution margin, unit economics, or gross margin after the cost to serve as bottom-line profit or profitable ARR ships a unit remainder into a profit claim under the honesty and verification boundary. A margin note can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not overhead, not financing, not period cost, and not a Decision Case that has already earned profit. Evidence from the plant beats the margin. Sync may surface a contribution margin or a unit-economics note beside Evidence, Verification, Proof, Authorization, Accountability, and Closure. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat contribution margin as bottom-line profit, or as Learning credit. Sync does not compute contribution margin. Sync does not compute bottom-line profit. Sync does not declare profitable ARR. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Contribution margin and unit economics are what remain after the cost to serve. Neither is bottom-line profit, and neither is durable profitable revenue. Gross margin after the cost to serve is not profitable ARR that compounds toward the portfolio northstar.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
+    slug: 'cash-is-not-margin',
+    title: 'Cash Is Not Margin',
+    description:
+      'Cash is not margin. Cash collected is money received. Invoices paid means the customer settled the bill. Contribution margin is what remains of revenue after the cost to serve. Profitable ARR is recurring revenue that still covers that cost to serve. Cash in the bank is not margin after the cost to serve. Neither profitability record is produced by the receipt. Treating cash collected or invoices paid as contribution margin or profitable ARR ships a commercial receipt into a cost-to-serve claim under the honesty and verification boundary. A paid invoice can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not the labor, not the parts, not the return visit, and not a Decision Case that has already earned margin. Evidence from the plant beats the receipt. Sync may surface cash collected or an invoice marked paid beside Evidence, Verification, Proof, Authorization, Accountability, and Closure. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat invoices paid as contribution margin, or as Learning credit. Sync does not collect cash. Sync does not recognize revenue. Sync does not compute contribution margin. Sync does not declare profitable ARR. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Cash collected is money received. Invoices paid means the customer settled the bill. Neither is contribution margin, and neither is profitable ARR. Cash in the bank is not margin after the cost to serve.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
+    slug: 'closure-is-not-cash',
+    title: 'Closure Is Not Cash',
+    description:
+      'Closure is not cash. Closing a work order, a ticket, or a shift is an operational close. Closure of the operating loop is the verified outcome recorded against named ownership: achieved, not_achieved, or inconclusive, with measured notes. Cash collected is money received. Revenue recognized is the earning event recorded on the books. Neither commercial record is produced by the close. Treating the closed work order, the closed ticket, or the closed shift as cash collected or revenue recognized ships an operational stamp into the books under the honesty and verification boundary. A closed record can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not an invoice, not a cash receipt, and not a Decision Case that has already collected cash. Evidence from the plant beats the closed record. Sync may surface a closed work order, a closed ticket, or a closed shift beside Evidence, Verification, Proof, Authorization, and Accountability. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat a closed work order as cash collected, or as Learning credit. Sync does not collect cash. Sync does not recognize revenue. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Closing a work order, a ticket, or a shift records an operational close. Closure of the operating loop is the verified outcome recorded against named ownership. Neither is cash collected, and neither is revenue recognized.',
     category: 'Decision Case',
     readTime: '8 min read',
     published: '2026-09-25',
@@ -595,14 +631,34 @@ export type InsightNextStep = {
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
   'profit-is-not-value': {
-    relatedSlug: 'accountability-is-not-closure',
-    relatedNote: 'Closure is the verified outcome recorded against named ownership. Profit is an accounting result under named cost rules. Value is that verified operational outcome, not the profit figure.',
+    relatedSlug: 'margin-is-not-profit',
+    relatedNote: 'Contribution margin and unit economics are not bottom-line profit. A profit figure under named cost rules is still not the verified operational outcome the Decision Case was opened to change.',
     next: 'field-manual',
     includePilot: true,
     also: [
       {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. A profit figure is not the verified operational outcome.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A profit figure is not the value of the operating decision.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. Profit is an accounting result under named cost rules. Value is that verified operational outcome, not the profit figure.',
+      },
+      {
         slug: 'authorization-is-not-accountability',
         note: 'Authorization answers who may start. A profit figure does not own the outcome after the work runs, and it is not the value of that outcome.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A profit figure on that order is not the verified operational outcome.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. A profit figure is not that value.',
       },
       {
         slug: 'verification-is-not-optional',
@@ -618,12 +674,120 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
     ],
   },
-  'accountability-is-not-closure': {
+  'margin-is-not-profit': {
     relatedSlug: 'profit-is-not-value',
-    relatedNote: 'Profit is an accounting result under named cost rules. Value is the verified operational outcome. A profit figure is not that outcome.',
+    relatedNote: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. Bottom-line profit is not that outcome.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Contribution margin after the cost to serve is still not bottom-line profit or durable profitable revenue.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A unit remainder after the cost to serve is not bottom-line profit.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A named owner is not closure of the operating loop. Contribution margin is not bottom-line profit or durable profitable revenue.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A contribution margin on that order is not bottom-line profit.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Gross margin after the cost to serve is not durable profitable revenue.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit contribution margin as bottom-line profit or as profitable ARR.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not compute bottom-line profit.',
+      },
+    ],
+  },
+  'cash-is-not-margin': {
+    relatedSlug: 'margin-is-not-profit',
+    relatedNote: 'Contribution margin and unit economics are not bottom-line profit or durable profitable revenue. Gross margin after the cost to serve is not profitable ARR that compounds toward the portfolio northstar.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Cash collected and invoices paid are still not contribution margin or profitable ARR.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A named owner is not closure of the operating loop. Cash collected is not contribution margin after the cost to serve.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A paid invoice on that order is not margin after the cost to serve.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Cash in the bank is not margin after the cost to serve.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit invoices paid as contribution margin or cash collected as profitable ARR.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not compute contribution margin.',
+      },
+    ],
+  },
+  'closure-is-not-cash': {
+    relatedSlug: 'cash-is-not-margin',
+    relatedNote: 'Cash collected and invoices paid are not contribution margin or profitable ARR. Cash in the bank is money received. Margin is what remains after the cost to serve.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Accountability names who remains responsible after the plant move. Closure is the verified outcome recorded against that ownership. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. It is not the verified outcome, and it is not cash collected.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Value realized is still not cash collected or revenue recognized.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit cash collected or revenue recognized.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not collect cash.',
+      },
+    ],
+  },
+  'accountability-is-not-closure': {
+    relatedSlug: 'closure-is-not-cash',
+    relatedNote: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Closure of the operating loop is the verified outcome. Cash is a commercial record.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome. A named owner is not that outcome.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin and unit economics are not bottom-line profit or durable profitable revenue. A named owner is not that profit.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin or profitable ARR. Cash in the bank is not margin after the cost to serve.',
+      },
       {
         slug: 'authorization-is-not-accountability',
         note: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
@@ -825,6 +989,22 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'profit-is-not-value',
+        note: 'A completed work order is not verification. A profit figure on that order is not the verified operational outcome.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'A completed work order is not verification. Contribution margin on that order is not bottom-line profit.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'A completed work order is not verification. Cash collected and invoices paid are not contribution margin after the cost to serve.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'A completed work order is not verification. Closing the work order is not cash collected or revenue recognized.',
+      },
+      {
         slug: 'assured-is-not-proven',
         note: 'A verified record is not assurance. Assurance is still not proof of a specific claim under named conditions.',
       },
@@ -868,6 +1048,22 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A clearance stamp is not proof the value is realized. A profit figure is not that verified operational outcome.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'A clearance stamp is not completion. Gross margin after the cost to serve is not durable profitable revenue.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'A clearance stamp is not completion. Cash in the bank is not margin after the cost to serve.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'A clearance stamp is not completion. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status field is a label, not clearance. A cleared flag can be a clearance decision or a label on one. Neither stamp is proof the work is finished.',
@@ -3088,6 +3284,18 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
         note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
       },
       {
+        slug: 'margin-is-not-profit',
+        note: 'Learning inherits the verified outcome. Contribution margin is not bottom-line profit, and unit economics are not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Learning inherits the verified outcome. Invoices paid are not contribution margin, and cash collected is not profitable ARR.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Learning inherits the verified outcome. A closed work order is not cash collected, and it is not revenue recognized.',
+      },
+      {
         slug: 'accountability-is-not-closure',
         note: 'Learning inherits the verified outcome. A named accountable owner without that measured result is not closure.',
       },
@@ -3113,6 +3321,18 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       {
         slug: 'profit-is-not-value',
         note: 'Recording the check is the measured result. A profit figure does not record the value of the operating decision.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Recording the check is the measured result. The check does not compute bottom-line profit and does not declare durable profitable revenue.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Recording the check is the measured result. The check does not compute contribution margin and does not declare profitable ARR.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Recording the check is the measured result. The check does not collect cash and does not recognize revenue.',
       },
       {
         slug: 'accountability-is-not-closure',

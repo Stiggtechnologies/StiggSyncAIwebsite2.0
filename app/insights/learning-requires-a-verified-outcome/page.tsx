@@ -355,6 +355,42 @@ export default function LearningRequiresAVerifiedOutcomePage() {
 
             <p>
               <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              states the split after the measured result. Learning inherits achieved, not_achieved,
+              or inconclusive. A closed work order, ticket, or shift is not cash collected or
+              revenue recognized.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              states the split after the commercial record. Learning inherits achieved,
+              not_achieved, or inconclusive. Invoices paid are not contribution margin, and cash
+              collected is not profitable ARR.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              states the split after the unit remainder. Learning inherits achieved, not_achieved,
+              or inconclusive. Contribution margin is not bottom-line profit, and unit economics are
+              not durable profitable revenue.
+            </p>
+
+            <p>
+              <Link
                 href="/insights/profit-is-not-value"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

@@ -59,7 +59,7 @@ export default function ProfitIsNotValuePage() {
               may surface a profit figure beside Evidence, Verification, and the closed outcome.
               Surfacing is still a read. A black maintenance result without a verified outcome
               leaves the value unrecorded. Direct plant execute stays off. CMMS write-back is not a
-              live product path.
+              live product path. Billing write-back is not a live product path.
             </p>
 
             <p>
@@ -135,19 +135,33 @@ export default function ProfitIsNotValuePage() {
 
             <p>
               <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              sits one step earlier. Contribution margin and unit economics are what remain of
+              revenue after the cost to serve. Bottom-line profit is what remains after the costs
+              that remainder does not carry. This essay starts after that split has been kept. The
+              unit remainder can be named, and the accounting result can still be a different
+              claim. A profit figure can be recorded. The value of the decision can still be
+              unrecorded.
+            </p>
+
+            <p>
+              <Link
                 href="/insights/accountability-is-not-closure"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Accountability Is Not Closure
               </Link>{' '}
-              sits one step earlier. Accountability is the continuing named ownership of results,
-              exceptions, and learning after the plant move. Closure is the verified outcome
-              recorded against that ownership: a measured result, not named intent. This essay
-              starts after that split has been kept. The operating loop can be closed with a
-              measured result, and the accounting result can still be a different claim. A profit
-              figure can be recorded. The value of the decision can still be unrecorded. A named
-              accountable human without a verified outcome leaves the operating loop open. A profit
-              figure does not close it, and it does not convert the close into value.
+              sits further back in the operating loop. Accountability is the continuing named
+              ownership of results, exceptions, and learning after the plant move. Closure is the
+              verified outcome recorded against that ownership: a measured result, not named intent.
+              The operating loop can be closed with a measured result, and the accounting result
+              can still be a different claim. A named accountable human without a verified outcome
+              leaves the operating loop open. A profit figure does not close it, and it does not
+              convert the close into value.
             </p>
 
             <p>
@@ -175,10 +189,23 @@ export default function ProfitIsNotValuePage() {
             </p>
 
             <p>
-              Cash discipline is the same refusal, one step earlier in the accounting stack.
-              Closure is not cash. A verified outcome is a measured result. Cash is an amount
-              collected, committed, or left unspent. Cash is not margin. Margin on the job is the
-              remainder after direct cost. Margin is not profit. Profit applies the period, the
+              Cash discipline is the same refusal, one step earlier in the accounting stack.{' '}
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              keeps the operational close off the receipt. Closure is not cash. A verified outcome
+              is a measured result. Cash is an amount collected, committed, or left unspent.{' '}
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              keeps the receipt off the unit remainder. Cash is not margin. Margin on the job is
+              the remainder after direct cost. Margin is not profit. Profit applies the period, the
               allocations, and the cost base. A shutdown can leave cash in the account, show a
               margin on the direct work, and still print a period result that the cost rules call
               profit — or the reverse. None of those three records is the value of the operating
@@ -491,6 +518,26 @@ export default function ProfitIsNotValuePage() {
               starting equipment, releasing a hold, or controlling the plant. Simulated or seeded telemetry
               and assets are practice records. They are not live plant results.
               Self-guided onboarding is not claimed as a live product path.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              keeps a completion label off the check. A completed work order is not verification
+              that the outcome happened. A profit figure beside that label is not the verified
+              operational outcome.{' '}
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off a finished claim. A cleared flag is not proof the value
+              is realized. The profit figure does not realize it.
             </p>
 
             <p>

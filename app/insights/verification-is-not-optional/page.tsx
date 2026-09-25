@@ -376,6 +376,42 @@ export default function VerificationIsNotOptionalPage() {
 
             <p>
               <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              states the split after the check. Recording achieved, not_achieved, or inconclusive
+              does not collect cash and does not recognize revenue. A closed work order, ticket, or
+              shift is not that commercial record.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              states the split after the receipt. Recording achieved, not_achieved, or inconclusive
+              does not compute contribution margin and does not declare profitable ARR. Cash
+              collected and invoices paid are not that cost-to-serve record.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>{' '}
+              states the split after the unit remainder. Recording achieved, not_achieved, or
+              inconclusive does not compute bottom-line profit and does not declare profitable ARR.
+              Contribution margin and unit economics are not that profit record.
+            </p>
+
+            <p>
+              <Link
                 href="/insights/profit-is-not-value"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
