@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit && node scripts/check-insights-seo.mjs",
+    "check:insights-seo": "node scripts/check-insights-seo.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

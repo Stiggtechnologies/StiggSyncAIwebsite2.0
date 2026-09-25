@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { insightArticles } from '@/lib/insights';
-import { SITE_NAME, SITE_URL, absoluteUrl, pageMetadata } from '@/lib/seo';
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, absoluteUrl, pageMetadata } from '@/lib/seo';
 
 export function insightMetadata(slug: string): Metadata {
   const article = insightArticles.find((item) => item.slug === slug);
@@ -12,15 +12,31 @@ export function insightMetadata(slug: string): Metadata {
     });
   }
 
+  const socialTitle = `${article.title} | ${SITE_NAME}`;
+  const path = `/insights/${article.slug}`;
+
   return {
     ...pageMetadata({
       title: article.title,
       description: article.description,
-      path: `/insights/${article.slug}`,
-      ogTitle: `${article.title} | ${SITE_NAME}`,
+      path,
+      ogTitle: socialTitle,
       type: 'article',
     }),
-    title: { absolute: `${article.title} | ${SITE_NAME}` },
+    title: { absolute: socialTitle },
+    openGraph: {
+      title: socialTitle,
+      description: article.description,
+      url: absoluteUrl(path),
+      siteName: SITE_NAME,
+      type: 'article',
+      locale: 'en_CA',
+      images: [DEFAULT_OG_IMAGE],
+      publishedTime: article.published,
+      modifiedTime: article.published,
+      section: article.category,
+      ...(article.author ? { authors: [article.author] } : {}),
+    },
     ...(article.author ? { authors: [{ name: article.author }] } : {}),
   };
 }
