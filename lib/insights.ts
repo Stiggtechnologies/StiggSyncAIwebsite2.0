@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'accuracy-is-not-precision',
+    title: 'Accuracy Is Not Precision',
+    description:
+      'Accuracy is not precision. Precision is repeatability: tight residuals, fine resolution, and stable decimals. Accuracy is truth relative to the plant decision and observed outcomes. A precise RUL, vibration feature, digital-twin residual, or forecast can still be wrong for the decision at hand. Treating precision as accuracy is another path to false clearance under the honesty and verification boundary. A precise reading can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the precise reading. Sync may surface a precise reading beside approved evidence when the limit of that precision is named. Sync refuses false precision. Sync refuses to store precision as accuracy. Sync must not auto-close, auto-authorize, or treat precision clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Calibration Is Not Validation, Simulation Is Not Proof, Forecast Is Not Fact, Model Is Not Reality, Verification Is Not Optional, and Learning Requires a Verified Outcome.',
+    excerpt:
+      'Precision is repeatability: tight residuals, fine resolution, and stable decimals. Accuracy is truth relative to the plant decision and observed outcomes. A precise RUL, vibration feature, digital-twin residual, or forecast can still be wrong for the decision at hand. Treating precision as accuracy is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'calibration-is-not-validation',
     title: 'Calibration Is Not Validation',
     description:
@@ -426,12 +438,116 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'accuracy-is-not-precision': {
+    relatedSlug: 'calibration-is-not-validation',
+    relatedNote: 'A calibration that makes historical residuals look small is not validation. A precise residual is repeatability, not accuracy relative to the plant decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A precise run of possible futures is not proof the plant will behave that way, and precision is not accuracy.',
+      },
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast with stable decimals is not a fact about the plant, and it is not accuracy.',
+      },
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model output at fine resolution is still not the plant, and precision is not accuracy.',
+      },
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A precise diagram is not the operating reality. Fine resolution is not accuracy.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. Stable decimals are not the check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not precision clearance.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A precise stand-in is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A precise assumption is not a recorded fact about the plant.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A number that repeats is not a recorded check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope is not truth. A precise RUL drawn from that slope is not accuracy.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation to investigate is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of stable decimals is not a decision and not accuracy.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A precise reading does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. Stable decimals do not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A precise number on a handful of cases is not the fleet.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A precise retelling of a story is not evidence.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'A precise feature of chatter is still not an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A precise vibration feature has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit printed at fine resolution is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Precise co-movement is not a recorded causal check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert a precise reading ranked is still not a decision.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet precise reading is not clearance. Silence on the limit is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A precise number without a reconstructable trail is not observed accuracy.',
+      },
+    ],
+  },
   'calibration-is-not-validation': {
     relatedSlug: 'simulation-is-not-proof',
     relatedNote: 'A simulation of possible futures is not proof the plant will behave that way. A calibration that makes historical residuals look small is not validation that the representation is fit for the decision.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise residual is repeatability. It is not accuracy relative to the plant decision and the observed outcome.',
+      },
       {
         slug: 'forecast-is-not-fact',
         note: 'A forecast tuned so historical residuals look small is not a fact about the plant, and it is not validation.',
@@ -529,6 +645,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise run is repeatability. It is not accuracy, and it is not proof the plant will behave that way.',
+      },
+      {
         slug: 'calibration-is-not-validation',
         note: 'A small historical residual is not validation. A well-calibrated run is still not proof the plant will behave that way.',
       },
@@ -624,6 +744,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise forecast is repeatability. Stable decimals are not accuracy, and they are not a fact about the plant.',
+      },
       {
         slug: 'calibration-is-not-validation',
         note: 'A forecast tuned so historical residuals look small is not a fact about the plant, and it is not validation.',
@@ -721,6 +845,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise model output is repeatability. Fine resolution is not accuracy, and the model is still not the plant.',
+      },
+      {
         slug: 'calibration-is-not-validation',
         note: 'A model tuned so historical residuals look small is still not the plant, and the fit is not validation.',
       },
@@ -816,6 +944,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise diagram is still not the operating reality, and fine resolution is not accuracy.',
+      },
       {
         slug: 'calibration-is-not-validation',
         note: 'A twin tuned until the diagram looks close is still not the operating reality, and the fit is not validation.',
@@ -1309,6 +1441,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise stand-in is still not the verified outcome, and precision is not accuracy.',
+      },
+      {
         slug: 'calibration-is-not-validation',
         note: 'A residual that looks small is a stand-in. It is not the verified outcome, and it is not validation.',
       },
@@ -1400,6 +1536,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise slope is not a recorded check, and stable decimals are not accuracy.',
+      },
       {
         slug: 'calibration-is-not-validation',
         note: 'A slope fitted until residuals look small is not a recorded check, and it is not validation.',
@@ -1565,6 +1705,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise score is not a recorded check, and precision is not accuracy.',
+      },
+      {
         slug: 'calibration-is-not-validation',
         note: 'Being sure the residuals are small enough is not a recorded check, and it is not validation.',
       },
@@ -1628,6 +1772,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accuracy-is-not-precision',
+        note: 'A precise assumption is not a recorded fact, and precision is not accuracy relative to the plant decision.',
+      },
       {
         slug: 'calibration-is-not-validation',
         note: 'A tuned residual is not a recorded fact about the plant, and it is not validation that the representation is fit for the decision.',

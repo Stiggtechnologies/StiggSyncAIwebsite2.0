@@ -970,6 +970,15 @@ export default function CalibrationIsNotValidationPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/accuracy-is-not-precision"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accuracy Is Not Precision
+              </Link>
+              , on why repeatability — tight residuals, fine resolution, and stable decimals — is
+              not truth relative to the plant decision and observed outcomes.
               Companion reading:{' '}
               <Link
                 href="/insights/simulation-is-not-proof"
