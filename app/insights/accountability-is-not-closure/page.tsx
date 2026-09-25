@@ -571,6 +571,20 @@ export default function AccountabilityIsNotClosurePage() {
               the measured result. The accountable owner does not close the loop.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>
+              , on why closing a work order, a ticket, or a shift is still not cash collected or
+              revenue recognized. Closure of the operating loop is the verified outcome recorded
+              against named ownership. Cash collected is money received. Revenue recognized is the
+              earning event on the books.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

@@ -374,6 +374,18 @@ export default function VerificationIsNotOptionalPage() {
               ownership.
             </p>
 
+            <p>
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              states the split after the check. Recording achieved, not_achieved, or inconclusive
+              does not collect cash and does not recognize revenue. A closed work order, ticket, or
+              shift is not that commercial record.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

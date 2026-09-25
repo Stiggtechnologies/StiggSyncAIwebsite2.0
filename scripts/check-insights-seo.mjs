@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const cashIndex = slugs.indexOf('closure-is-not-cash');
 const closureIndex = slugs.indexOf('accountability-is-not-closure');
 const accountabilityIndex = slugs.indexOf('authorization-is-not-accountability');
 const proofIndex = slugs.indexOf('proof-is-not-authorization');
@@ -32,7 +33,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    closureIndex >= 0 &&
+    cashIndex >= 0 &&
+    closureIndex > cashIndex &&
     accountabilityIndex > closureIndex &&
     proofIndex > accountabilityIndex &&
     assuredIndex > proofIndex &&
@@ -45,7 +47,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3312,6 +3314,106 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/accountability-is-not-closure')) {
     fail(`${page} must link accountability-is-not-closure`);
+  }
+}
+
+if (
+  !closurePage.includes('The series continues with') ||
+  !closurePage.includes('/insights/closure-is-not-cash')
+) {
+  fail('accountability-is-not-closure must point the series forward to closure-is-not-cash');
+}
+
+for (const [slug, label] of [
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'closure-is-not-cash'")) {
+    fail(`${label} related reading must cite closure-is-not-cash`);
+  }
+}
+
+const cashBlock = stepBlock('closure-is-not-cash');
+for (const required of [
+  'accountability-is-not-closure',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+]) {
+  if (!cashBlock.includes(`'${required}'`)) {
+    fail(`closure-is-not-cash related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(cashBlock)) {
+  fail('closure-is-not-cash related reading must include the Strategic Pilot');
+}
+if (cashBlock.includes("next: 'strategic-pilot'")) {
+  fail('closure-is-not-cash next step is the Field Manual');
+}
+
+const cashPage = read('app/insights/closure-is-not-cash/page.tsx');
+for (const required of [
+  '/insights/accountability-is-not-closure',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verification-is-not-optional',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'work order',
+  'ticket',
+  'shift',
+  'cash collected',
+  'revenue recognized',
+  'verified outcome',
+  'operating loop',
+  'Surfacing is still a read',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the closed record',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'closed work order as cash collected',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not collect cash',
+  'Sync does not recognize revenue',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says closed is not a customer plant release',
+  'A named human decides',
+  'A named human remains accountable',
+]) {
+  if (!cashPage.includes(required)) {
+    fail(`closure-is-not-cash page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+]) {
+  if (!read(page).includes('/insights/closure-is-not-cash')) {
+    fail(`${page} must link closure-is-not-cash`);
   }
 }
 
