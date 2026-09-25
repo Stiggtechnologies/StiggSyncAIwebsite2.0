@@ -237,6 +237,42 @@ for (const required of [
     fail(`alert-is-not-decision page must include ${required}`);
   }
 }
+if (
+  !alertPage.includes('The series continues with') ||
+  !alertPage.includes('/insights/honesty-boundary-is-not-optional')
+) {
+  fail('alert-is-not-decision must point the series forward to honesty-boundary-is-not-optional');
+}
+
+const honestyBlock = stepBlock('honesty-boundary-is-not-optional');
+for (const required of [
+  'alert-is-not-decision',
+  'dashboard-is-not-decision',
+  'recommend-is-not-authorize',
+  'action-is-not-execution',
+  'verification-is-not-optional',
+]) {
+  if (!honestyBlock.includes(`'${required}'`)) {
+    fail(`honesty-boundary-is-not-optional related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(honestyBlock)) {
+  fail('honesty-boundary-is-not-optional related reading must include the Strategic Pilot');
+}
+
+const honestyPage = read('app/insights/honesty-boundary-is-not-optional/page.tsx');
+for (const required of [
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  '/insights/recommend-is-not-authorize',
+  '/insights/action-is-not-execution',
+  '/insights/verification-is-not-optional',
+  "fieldManualPath('honesty-boundaries')",
+]) {
+  if (!honestyPage.includes(required)) {
+    fail(`honesty-boundary-is-not-optional page must include ${required}`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);

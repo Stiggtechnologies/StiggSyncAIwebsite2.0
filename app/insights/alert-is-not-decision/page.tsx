@@ -387,6 +387,15 @@ export default function AlertIsNotDecisionPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/honesty-boundary-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty Boundary Is Not Optional
+              </Link>
+              , on why Sync states what is simulated, seeded, or out of scope, and why a Decision
+              Case that pretends plant authority Sync does not hold is not a Decision Case.
               Companion reading:{' '}
               <Link
                 href="/insights/dashboard-is-not-decision"
