@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'alert-is-not-decision',
+    title: 'Alert Is Not Decision',
+    description:
+      'An alert — a threshold breach, an anomaly flag, a red tile, a pager page, or a silenced notification — can surface that something crossed a rule. Seeing, acknowledging, or silencing an alert is not a Decision Case and not a decision. Sync may emit alerts, coverage gaps, and recommendations. A named human still opens a Decision Case on a question, cites approved evidence, and accepts, rejects, escalates, or returns.',
+    excerpt:
+      'Clearing an alert queue, muting a channel, or auto-closing a ticket must not be read as authorization, verification of outcome, work-order execution, or plant control.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'dashboard-is-not-decision',
     title: 'Dashboard Is Not Decision',
     description:
@@ -174,6 +186,30 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'alert-is-not-decision': {
+    relatedSlug: 'dashboard-is-not-decision',
+    relatedNote: 'A status display is still not the decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'question-is-not-decision',
+        note: 'Opening a question is still not the decision.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'An alert beside a proposal is not a named decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'A silenced notification is not the check that closes the case.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'Clearing a queue does not write the work order.',
+      },
+    ],
+  },
   'dashboard-is-not-decision': {
     relatedSlug: 'question-is-not-decision',
     relatedNote: 'Opening a question is still not the decision.',

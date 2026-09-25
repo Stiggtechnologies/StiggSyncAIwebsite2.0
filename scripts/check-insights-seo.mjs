@@ -200,6 +200,43 @@ for (const required of [
     fail(`dashboard-is-not-decision page must include ${required}`);
   }
 }
+if (
+  !dashboardPage.includes('The series continues with') ||
+  !dashboardPage.includes('/insights/alert-is-not-decision')
+) {
+  fail('dashboard-is-not-decision must point the series forward to alert-is-not-decision');
+}
+
+const alertBlock = stepBlock('alert-is-not-decision');
+for (const required of [
+  'dashboard-is-not-decision',
+  'question-is-not-decision',
+  'recommend-is-not-authorize',
+  'verification-is-not-optional',
+  'action-is-not-execution',
+]) {
+  if (!alertBlock.includes(`'${required}'`)) {
+    fail(`alert-is-not-decision related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(alertBlock)) {
+  fail('alert-is-not-decision related reading must include the Strategic Pilot');
+}
+
+const alertPage = read('app/insights/alert-is-not-decision/page.tsx');
+for (const required of [
+  '/insights/dashboard-is-not-decision',
+  '/insights/question-is-not-decision',
+  '/insights/recommend-is-not-authorize',
+  '/insights/verification-is-not-optional',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('verification')",
+]) {
+  if (!alertPage.includes(required)) {
+    fail(`alert-is-not-decision page must include ${required}`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);
