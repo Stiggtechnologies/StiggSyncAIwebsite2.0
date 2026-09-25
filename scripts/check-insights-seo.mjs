@@ -273,6 +273,45 @@ for (const required of [
     fail(`honesty-boundary-is-not-optional page must include ${required}`);
   }
 }
+if (
+  !honestyPage.includes('The series continues with') ||
+  !honestyPage.includes('/insights/human-decision-is-not-optional')
+) {
+  fail('honesty-boundary-is-not-optional must point the series forward to human-decision-is-not-optional');
+}
+
+const humanBlock = stepBlock('human-decision-is-not-optional');
+for (const required of [
+  'honesty-boundary-is-not-optional',
+  'recommend-is-not-authorize',
+  'question-is-not-decision',
+  'action-is-not-execution',
+  'verification-is-not-optional',
+]) {
+  if (!humanBlock.includes(`'${required}'`)) {
+    fail(`human-decision-is-not-optional related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(humanBlock)) {
+  fail('human-decision-is-not-optional related reading must include the Strategic Pilot');
+}
+
+const humanPage = read('app/insights/human-decision-is-not-optional/page.tsx');
+for (const required of [
+  '/insights/recommend-is-not-authorize',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/action-is-not-execution',
+  '/insights/verification-is-not-optional',
+  '/insights/question-is-not-decision',
+  "fieldManualPath('human-decision')",
+  'still a proposal',
+  'auto-accept',
+  'Self-guided onboarding is not claimed as a live product path',
+]) {
+  if (!humanPage.includes(required)) {
+    fail(`human-decision-is-not-optional page must include ${required}`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);

@@ -402,7 +402,16 @@ export default function HonestyBoundaryIsNotOptionalPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>
+              , on why the recorded human decision is mandatory: a named person accepts, rejects,
+              escalates, or returns the recommendation, and until that act is recorded the case is
+              still a proposal. Companion reading:{' '}
               <Link
                 href="/insights/alert-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"

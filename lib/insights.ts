@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'human-decision-is-not-optional',
+    title: 'Human Decision Is Not Optional',
+    description:
+      'A named person accepts, rejects, escalates, or returns the recommendation. That act is the decision. Until it is recorded, the case is still a proposal, and authority stays with the person who can accept the operational consequence. The signed-in Decision Case keeps who decided visible beside the recommendation. The recorded act is mandatory: not optional, not implied by a green dashboard, and not auto-accepted by the system.',
+    excerpt:
+      'A named person accepts, rejects, escalates, or returns the recommendation. Until that act is recorded, the case is still a proposal. The signed-in Decision Case keeps who decided visible beside the recommendation.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'honesty-boundary-is-not-optional',
     title: 'Honesty Boundary Is Not Optional',
     description:
@@ -198,6 +210,30 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'human-decision-is-not-optional': {
+    relatedSlug: 'honesty-boundary-is-not-optional',
+    relatedNote: 'Naming the limit does not record who decided.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A drafted proposal is not the recorded decision.',
+      },
+      {
+        slug: 'question-is-not-decision',
+        note: 'A recorded question is still not the named act.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'The recorded decision is still not plant execution.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The case stays open until the check is recorded.',
+      },
+    ],
+  },
   'honesty-boundary-is-not-optional': {
     relatedSlug: 'alert-is-not-decision',
     relatedNote: 'A rule crossing is still not the decision.',
