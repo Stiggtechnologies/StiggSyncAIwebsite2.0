@@ -127,6 +127,20 @@ if (!/includePilot:\s*true/.test(actionBlock)) {
   fail('action-is-not-execution related reading must include the Strategic Pilot');
 }
 
+const coverageBlock = stepBlock('coverage-is-not-control');
+for (const required of [
+  'action-is-not-execution',
+  'verification-is-not-optional',
+  'recommend-is-not-authorize',
+]) {
+  if (!coverageBlock.includes(`'${required}'`)) {
+    fail(`coverage-is-not-control related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(coverageBlock)) {
+  fail('coverage-is-not-control related reading must include the Strategic Pilot');
+}
+
 function readingSlugs(name) {
   const block = section(name);
   const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);
