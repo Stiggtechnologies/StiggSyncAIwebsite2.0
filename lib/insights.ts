@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'revenue-is-not-arr',
+    title: 'Revenue Is Not ARR',
+    description:
+      'Revenue is not ARR. Recognized revenue is sales booked in a period: the earning event recorded on the books for that period. ARR is the annualized value of recurring contracted subscription revenue that renews. One-time project sales, professional services, hardware, and non-recurring fees can grow recognized revenue without growing ARR. ARR can hold while period revenue dips. Treating recognized revenue as ARR ships a period booking into a recurring contracted claim nobody has annualized, under the honesty and verification boundary. A revenue figure can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already measured ARR. Evidence from the plant beats the revenue figure when the figure is being used as ARR. Sync may surface a recognized-revenue figure or an ARR figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat revenue as ARR as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A period of recognized sales without a recurring contracted subscription leaves ARR unrecorded. An ARR figure that holds while period revenue dips leaves the dip as a period record, not a change in ARR. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Recognized revenue is sales booked in a period. It is not ARR. ARR is the annualized value of recurring contracted subscription revenue that renews. One-time project sales, professional services, hardware, and non-recurring fees can grow revenue without growing ARR, and ARR can hold while period revenue dips.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'impact-is-not-revenue',
     title: 'Impact Is Not Revenue',
     description:
@@ -666,12 +678,92 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'impact-is-not-revenue': {
-    relatedSlug: 'outcome-is-not-impact',
-    relatedNote: 'A measured outcome is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity. That attribution is still not revenue.',
+  'revenue-is-not-arr': {
+    relatedSlug: 'impact-is-not-revenue',
+    relatedNote: 'Business impact is not revenue. Revenue is recognized sales. Recognized revenue in a period is still not ARR.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, and recognized sales are not ARR.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Recognized revenue is still not ARR.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and recognized revenue is not ARR.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A revenue figure is not ARR.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Recognized revenue is not ARR, and ARR is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Cash in the bank is not recognized sales, and recognized sales are not ARR.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. A period booking is not ARR.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not ARR.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A recognized sale after the start is not ARR.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not ARR.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the contract renews. A one-time sale is not ARR.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not measure ARR.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit recognized revenue as ARR.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. ARR is recurring contracted subscription revenue, not standing assurance and not the period booking alone.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a revenue figure is still a proposal. Recommend is not authorize, and the proposal is not ARR.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An ARR figure beside that tile is not the period booking, and the period booking is not ARR.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A booking that moved with an ARR figure is not a cause. Coincidence is not proof the period sale renews.',
+      },
+    ],
+  },
+  'impact-is-not-revenue': {
+    relatedSlug: 'revenue-is-not-arr',
+    relatedNote: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is the annualized value of recurring contracted subscription revenue that renews. One-time project sales, professional services, hardware, and non-recurring fees can grow revenue without growing ARR, and ARR can hold while period revenue dips.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity. That attribution is still not revenue, and recognized revenue is still not ARR.',
+      },
       {
         slug: 'value-is-not-outcome',
         note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. The measured outcome is not impact, and the impact is not revenue.',
@@ -745,6 +837,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. A measured outcome is still not impact, and the recognized sale is still not the annualized contract.',
+      },
+      {
         slug: 'value-is-not-outcome',
         note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. A measured outcome is still not business impact.',
       },
@@ -817,6 +913,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is not ARR. A reported outcome is still not the value, and the period booking is still not the annualized contract.',
+      },
+      {
         slug: 'impact-is-not-revenue',
         note: 'Business impact is not revenue. A reported outcome is still not the value, and the impact is still not recognized sales.',
       },
@@ -860,6 +960,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'A profit figure is not the value. Recognized revenue is still not ARR.',
+      },
       {
         slug: 'impact-is-not-revenue',
         note: 'A profit figure is not the value. An impact claim is still not recognized sales.',
@@ -953,6 +1057,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'revenue-is-not-arr',
+        note: 'Cash collected is not contribution margin. A recognized sale is not ARR.',
+      },
+      {
         slug: 'impact-is-not-revenue',
         note: 'Cash collected is not contribution margin. A recognized sale is not attribution, and an impact claim is not revenue.',
       },
@@ -1024,6 +1132,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'A named owner is not closure. Recognized revenue is not ARR.',
+      },
       {
         slug: 'impact-is-not-revenue',
         note: 'A named owner is not closure. An impact claim is not recognized sales.',
@@ -1249,6 +1361,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'revenue-is-not-arr',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not ARR.',
+      },
+      {
         slug: 'impact-is-not-revenue',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not revenue.',
       },
@@ -1320,6 +1436,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'A clearance stamp is not proof the work is finished. Recognized revenue is not ARR.',
+      },
       {
         slug: 'impact-is-not-revenue',
         note: 'A clearance stamp is not proof the work is finished. An impact claim is not recognized sales.',
@@ -3564,6 +3684,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'revenue-is-not-arr',
+        note: 'Learning inherits the verified outcome. It does not inherit recognized revenue as ARR.',
+      },
+      {
         slug: 'impact-is-not-revenue',
         note: 'Learning inherits the verified outcome. It does not inherit an impact claim as revenue.',
       },
@@ -3614,6 +3738,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not measure ARR.',
+      },
       {
         slug: 'impact-is-not-revenue',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not book revenue.',

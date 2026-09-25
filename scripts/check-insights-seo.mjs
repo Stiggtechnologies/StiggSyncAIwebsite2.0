@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const arrIndex = slugs.indexOf('revenue-is-not-arr');
 const revenueIndex = slugs.indexOf('impact-is-not-revenue');
 const impactIndex = slugs.indexOf('outcome-is-not-impact');
 const outcomeIndex = slugs.indexOf('value-is-not-outcome');
@@ -39,7 +40,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    revenueIndex >= 0 &&
+    arrIndex >= 0 &&
+    revenueIndex > arrIndex &&
     impactIndex > revenueIndex &&
     outcomeIndex > impactIndex &&
     valueIndex > outcomeIndex &&
@@ -59,7 +61,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -4193,6 +4195,169 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/impact-is-not-revenue')) {
     fail(`${page} must link impact-is-not-revenue`);
+  }
+}
+
+if (
+  !revenuePage.includes('The series continues with') ||
+  !revenuePage.includes('/insights/revenue-is-not-arr')
+) {
+  fail('impact-is-not-revenue must point the series forward to revenue-is-not-arr');
+}
+
+for (const [slug, label] of [
+  ['impact-is-not-revenue', 'impact-is-not-revenue'],
+  ['outcome-is-not-impact', 'outcome-is-not-impact'],
+  ['value-is-not-outcome', 'value-is-not-outcome'],
+  ['profit-is-not-value', 'profit-is-not-value'],
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'revenue-is-not-arr'")) {
+    fail(`${label} related reading must cite revenue-is-not-arr`);
+  }
+}
+
+const arrBlock = stepBlock('revenue-is-not-arr');
+for (const required of [
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'proxy-is-not-outcome',
+  'margin-is-not-profit',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'verified-is-not-assured',
+  'recommend-is-not-authorize',
+  'green-is-not-go',
+  'correlation-is-not-causation',
+]) {
+  if (!arrBlock.includes(`'${required}'`)) {
+    fail(`revenue-is-not-arr related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(arrBlock)) {
+  fail('revenue-is-not-arr related reading must include the Strategic Pilot');
+}
+if (arrBlock.includes("next: 'strategic-pilot'")) {
+  fail('revenue-is-not-arr next step is the Field Manual');
+}
+
+const arrPage = read('app/insights/revenue-is-not-arr/page.tsx');
+for (const required of [
+  '/insights/impact-is-not-revenue',
+  '/insights/outcome-is-not-impact',
+  '/insights/value-is-not-outcome',
+  '/insights/profit-is-not-value',
+  '/insights/proxy-is-not-outcome',
+  '/insights/margin-is-not-profit',
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/accountability-is-not-closure',
+  '/insights/authorization-is-not-accountability',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verified-is-not-assured',
+  '/insights/recommend-is-not-authorize',
+  '/insights/green-is-not-go',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/correlation-is-not-causation',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'recognized revenue',
+  'recognized sales',
+  'annualized',
+  'recurring contracted subscription revenue',
+  'one-time',
+  'professional services',
+  'hardware',
+  'non-recurring',
+  'period revenue',
+  'Impact is not revenue',
+  'Revenue is not ARR',
+  'Outcome is not impact',
+  'Value is not outcome',
+  'Profit is not value',
+  'Margin is not profit',
+  'Cash is not margin',
+  'Closure is not cash',
+  'Surfacing is still a read',
+  'after the plant move',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'revenue as ARR',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'states no price',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not book revenue',
+  'Sync does not recognize revenue',
+  'Sync does not measure ARR',
+  'Sync does not measure ARR for the customer',
+  'Sync does not attribute a change in cash, risk, or capacity',
+  'Recommend is not authorize',
+  'APP_SETUP_URL',
+  '/reliability-assessment',
+  '/strategic-pilot',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says recognized revenue is ARR',
+  'A named human decides',
+  'A named human remains accountable',
+  'leaves ARR unrecorded',
+  'ARR can hold',
+]) {
+  if (!arrPage.includes(required)) {
+    fail(`revenue-is-not-arr page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/impact-is-not-revenue/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/authorization-is-not-accountability/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+]) {
+  if (!read(page).includes('/insights/revenue-is-not-arr')) {
+    fail(`${page} must link revenue-is-not-arr`);
   }
 }
 
