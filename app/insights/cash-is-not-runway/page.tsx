@@ -860,6 +860,26 @@ export default function CashIsNotRunwayPage() {
               the measured result. The cash figure does not record the runway.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/runway-is-not-survival"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Runway Is Not Survival
+              </Link>
+              , on why runway is still not survival. Runway is how long operations can continue at
+              the current net burn before cash is exhausted: cash divided by burn rate, with
+              explicit assumptions. Survival is whether the business can keep meeting obligations
+              (payroll, vendors, debt service, plant continuity) through the next decision horizon —
+              not just whether a runway number is positive. A long runway can still miss survival if
+              burn assumptions are wrong, receivables never convert, a single customer concentration
+              collapses, or critical capacity (people, permits, plant) fails before cash does. A
+              short runway can still survive a decision horizon if cash inflows are contracted, burn
+              is cuttable on a named date, or a financing path is already closed — none of which the
+              runway formula itself proves.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
