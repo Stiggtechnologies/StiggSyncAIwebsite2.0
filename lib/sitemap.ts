@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { insightArticles } from '@/lib/insights';
+import { fieldManual, fieldManualPath } from '@/lib/manuals';
 import { SITE_URL } from '@/lib/seo';
 
 export type SitemapEntry = {
@@ -31,6 +32,7 @@ export const REQUIRED_SITEMAP_PATHS = [
   '/security',
   '/ai-for-mining-reliability',
   '/insights',
+  '/manuals',
   '/company',
   '/contact',
   '/privacy',
@@ -46,6 +48,8 @@ const ROUTE_META: Record<string, Pick<SitemapEntry, 'changefreq' | 'priority'>> 
   '/security': { changefreq: 'monthly', priority: 0.8 },
   '/ai-for-mining-reliability': { changefreq: 'monthly', priority: 0.8 },
   '/insights': { changefreq: 'weekly', priority: 0.75 },
+  '/manuals': { changefreq: 'weekly', priority: 0.72 },
+  '/manuals/field-manual': { changefreq: 'monthly', priority: 0.7 },
   '/company': { changefreq: 'monthly', priority: 0.7 },
   '/contact': { changefreq: 'monthly', priority: 0.7 },
   '/privacy': { changefreq: 'yearly', priority: 0.4 },
@@ -140,7 +144,17 @@ function isIndexable(routePath: string) {
 function metaFor(path: string): Pick<SitemapEntry, 'changefreq' | 'priority'> {
   if (ROUTE_META[path]) return ROUTE_META[path];
   if (path.startsWith('/insights/')) return { changefreq: 'monthly', priority: 0.65 };
+  if (path.startsWith('/manuals/')) return { changefreq: 'monthly', priority: 0.65 };
   return { changefreq: 'monthly', priority: 0.6 };
+}
+
+function catalogPaths(): string[] {
+  const paths = insightArticles.map((article) => `/insights/${article.slug}`);
+  paths.push(fieldManualPath());
+  for (const chapter of fieldManual.chapters) {
+    paths.push(fieldManualPath(chapter.slug));
+  }
+  return paths;
 }
 
 export function collectSitemapPaths(): string[] {
@@ -154,8 +168,8 @@ export function collectSitemapPaths(): string[] {
     // Runtime bundles may not include app/. Required + catalog still ship.
   }
 
-  for (const article of insightArticles) {
-    paths.add(`/insights/${article.slug}`);
+  for (const path of catalogPaths()) {
+    paths.add(path);
   }
 
   const sorted = Array.from(paths).filter((path) => !SITEMAP_EXCLUDE.has(path));
@@ -200,8 +214,8 @@ export function getSitemapXml(): string {
       path,
       ...metaFor(path),
     }));
-    for (const article of insightArticles) {
-      fallback.push({ path: `/insights/${article.slug}`, ...metaFor(`/insights/${article.slug}`) });
+    for (const path of catalogPaths()) {
+      fallback.push({ path, ...metaFor(path) });
     }
     return renderSitemapXml(fallback);
   }

@@ -12,7 +12,11 @@ export default function InsightsPage() {
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             Analysis on reliability evidence, industrial AI governance, and why maintenance systems
-            still leave the decision unproven.
+            still leave the decision unproven. The Decision Case itself is stated in the{' '}
+            <Link href="/manuals/field-manual" className="font-semibold text-cyan-300 hover:text-cyan-200">
+              Field Manual
+            </Link>
+            .
           </p>
         </div>
       </section>
