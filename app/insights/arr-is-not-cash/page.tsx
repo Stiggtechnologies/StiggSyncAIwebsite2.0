@@ -810,6 +810,22 @@ export default function ArrIsNotCashPage() {
               the measured result. The ARR figure does not record the cash.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/cash-is-not-runway"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Runway
+              </Link>
+              , on why cash is still not runway. Cash is money received (collected) that can be
+              spent now. Runway is how long operations can continue at the current net burn before
+              cash is exhausted: cash divided by burn rate, with explicit assumptions. A cash
+              balance can look healthy while runway is short if burn is high or collections are
+              lumpy, and runway can look long while cash is trapped in receivables or restricted
+              accounts.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

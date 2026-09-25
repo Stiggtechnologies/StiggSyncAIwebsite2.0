@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const runwayIndex = slugs.indexOf('cash-is-not-runway');
 const collectedIndex = slugs.indexOf('arr-is-not-cash');
 const arrIndex = slugs.indexOf('revenue-is-not-arr');
 const revenueIndex = slugs.indexOf('impact-is-not-revenue');
@@ -41,7 +42,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    collectedIndex >= 0 &&
+    runwayIndex >= 0 &&
+    collectedIndex > runwayIndex &&
     arrIndex > collectedIndex &&
     revenueIndex > arrIndex &&
     impactIndex > revenueIndex &&
@@ -63,7 +65,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -4530,6 +4532,184 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/arr-is-not-cash')) {
     fail(`${page} must link arr-is-not-cash`);
+  }
+}
+
+if (
+  !collectedPage.includes('The series continues with') ||
+  !collectedPage.includes('/insights/cash-is-not-runway')
+) {
+  fail('arr-is-not-cash must point the series forward to cash-is-not-runway');
+}
+
+for (const [slug, label] of [
+  ['arr-is-not-cash', 'arr-is-not-cash'],
+  ['revenue-is-not-arr', 'revenue-is-not-arr'],
+  ['impact-is-not-revenue', 'impact-is-not-revenue'],
+  ['outcome-is-not-impact', 'outcome-is-not-impact'],
+  ['value-is-not-outcome', 'value-is-not-outcome'],
+  ['profit-is-not-value', 'profit-is-not-value'],
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'cash-is-not-runway'")) {
+    fail(`${label} related reading must cite cash-is-not-runway`);
+  }
+}
+
+const runwayBlock = stepBlock('cash-is-not-runway');
+for (const required of [
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'proxy-is-not-outcome',
+  'margin-is-not-profit',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'verified-is-not-assured',
+  'recommend-is-not-authorize',
+  'green-is-not-go',
+  'correlation-is-not-causation',
+]) {
+  if (!runwayBlock.includes(`'${required}'`)) {
+    fail(`cash-is-not-runway related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(runwayBlock)) {
+  fail('cash-is-not-runway related reading must include the Strategic Pilot');
+}
+if (runwayBlock.includes("next: 'strategic-pilot'")) {
+  fail('cash-is-not-runway next step is the Field Manual');
+}
+
+const runwayPage = read('app/insights/cash-is-not-runway/page.tsx');
+for (const required of [
+  '/insights/arr-is-not-cash',
+  '/insights/revenue-is-not-arr',
+  '/insights/impact-is-not-revenue',
+  '/insights/outcome-is-not-impact',
+  '/insights/value-is-not-outcome',
+  '/insights/profit-is-not-value',
+  '/insights/proxy-is-not-outcome',
+  '/insights/margin-is-not-profit',
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/accountability-is-not-closure',
+  '/insights/authorization-is-not-accountability',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verified-is-not-assured',
+  '/insights/recommend-is-not-authorize',
+  '/insights/green-is-not-go',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/correlation-is-not-causation',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'money received (collected) that can be spent now',
+  'Cash is not runway',
+  'how long operations can continue at the current net burn before cash is exhausted',
+  'cash divided by burn rate',
+  'explicit assumptions',
+  'cash balance can look healthy while runway is short',
+  'burn is high',
+  'collections are lumpy',
+  'Runway can look long while cash is trapped',
+  'receivables',
+  'restricted accounts',
+  'ARR is not cash',
+  'Revenue is not ARR',
+  'Impact is not revenue',
+  'Outcome is not impact',
+  'Value is not outcome',
+  'Profit is not value',
+  'Margin is not profit',
+  'Cash is not margin',
+  'Closure is not cash',
+  'annualized value of recurring contracted subscription revenue that renews',
+  'contribution margin',
+  'Surfacing is still a read',
+  'after the plant move',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'cash as runway',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'states no price',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not book revenue',
+  'Sync does not recognize revenue',
+  'Sync does not measure ARR',
+  'Sync does not measure ARR for the customer',
+  'Sync does not measure cash',
+  'Sync does not measure cash for the customer',
+  'Sync does not measure runway',
+  'Sync does not measure runway for the customer',
+  'Sync does not collect cash',
+  'Sync does not attribute a change in cash, risk, or capacity',
+  'Recommend is not authorize',
+  'APP_SETUP_URL',
+  '/reliability-assessment',
+  '/strategic-pilot',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says cash is runway',
+  'A named human decides',
+  'A named human remains accountable',
+  'different refusal',
+]) {
+  if (!runwayPage.includes(required)) {
+    fail(`cash-is-not-runway page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/arr-is-not-cash/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/authorization-is-not-accountability/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+]) {
+  if (!read(page).includes('/insights/cash-is-not-runway')) {
+    fail(`${page} must link cash-is-not-runway`);
   }
 }
 
