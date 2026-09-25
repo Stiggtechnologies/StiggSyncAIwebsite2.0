@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'map-is-not-terrain',
+    title: 'Map Is Not Terrain',
+    description:
+      'Map is not terrain. A diagram, a CMMS schema, a dashboard, a digital twin, or a process map is a compressed representation — not the operating reality. Operators who treat the map as the terrain miss degradation, local exceptions, and unverified outcomes. A map can inform a recommendation to investigate. It is not evidence from the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the model. Blank is not zero. Unknown is not clear. Recommend is not authorize. Sync may surface a map beside approved evidence. A named human still decides. Companion to Anecdote Is Not Evidence, Dashboard Is Not Decision, Proxy Is Not Outcome, Blank Is Not Zero, Unknown Is Not Clear, and Recommend Is Not Authorize.',
+    excerpt:
+      'A diagram, CMMS schema, dashboard, digital twin, or process map is a compressed representation, not the operating reality. Evidence from the plant beats the model. Blank is not zero. Unknown is not clear. Recommend is not authorize.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'anecdote-is-not-evidence',
     title: 'Anecdote Is Not Evidence',
     description:
@@ -366,12 +378,92 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'map-is-not-terrain': {
+    relatedSlug: 'anecdote-is-not-evidence',
+    relatedNote: 'A story about the plant is not evidence. A diagram of the plant is not the operating reality.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A dashboard is a compressed display. It is not a decision and not the operating reality.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A green tile on a digital twin is a stand-in. It is not the verified outcome.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank in the CMMS schema is not a measured zero. The map does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A nominal twin does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A process map of a handful of plants is not the fleet.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter on the dashboard is still not an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A symptom drawn on a diagram is not the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit printed on a process map is not a diagnosis.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unverified model of the plant is not a recorded fact.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the twin matches the asset is not a recorded check.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Arrows on a diagram are not a recorded causal check.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A settled map is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope on the twin is not a recorded check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert drawn on the dashboard is still not a decision.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a model state.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet dashboard is not clearance. A nominal map is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A diagram without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'anecdote-is-not-evidence': {
     relatedSlug: 'sample-is-not-population',
     relatedNote: 'A handful of cases is not the fleet. A story about that handful is not evidence.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram, schema, dashboard, digital twin, or process map is not the operating reality.',
+      },
       {
         slug: 'noise-is-not-signal',
         note: 'Chatter on the dashboard is not an actionable signal. A story about that chatter is not evidence.',
@@ -445,6 +537,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram of the fleet is not the fleet. A compressed representation is not the population.',
+      },
+      {
         slug: 'anecdote-is-not-evidence',
         note: 'A story about the handful is not evidence and not the fleet.',
       },
@@ -516,6 +612,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A dashboard of chatter is a map. The chatter is still not an actionable signal.',
+      },
       {
         slug: 'anecdote-is-not-evidence',
         note: 'A story about the chatter is not evidence and not an actionable signal.',
@@ -589,6 +689,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram of the symptom is not the cause and not the operating reality.',
+      },
+      {
         slug: 'anecdote-is-not-evidence',
         note: 'A story about the symptom is not evidence and not the cause.',
       },
@@ -660,6 +764,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A limit drawn on a process map is not a diagnosis of the asset.',
+      },
       {
         slug: 'anecdote-is-not-evidence',
         note: 'A story about the breach is not evidence and not a diagnosis.',
@@ -733,6 +841,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'map-is-not-terrain',
+        note: 'A green tile on a digital twin is a stand-in. It is not the verified outcome.',
+      },
+      {
         slug: 'anecdote-is-not-evidence',
         note: 'A retelling of the proxy move is not evidence and not the outcome.',
       },
@@ -805,6 +917,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'map-is-not-terrain',
+        note: 'A slope on a dashboard is a compressed line. It is not a recorded check.',
+      },
+      {
         slug: 'anecdote-is-not-evidence',
         note: 'A memory of how the line always fails is not a recorded check.',
       },
@@ -872,6 +988,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'Co-moving tags on a diagram are not a recorded causal check.',
+      },
       {
         slug: 'anecdote-is-not-evidence',
         note: 'A hallway claim about co-movement is not a recorded causal check.',
@@ -941,6 +1061,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'map-is-not-terrain',
+        note: 'Being sure the model matches the plant is not a recorded check.',
+      },
+      {
         slug: 'anecdote-is-not-evidence',
         note: 'A confident retelling is not a recorded check.',
       },
@@ -984,6 +1108,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'An unverified model of the plant is not a recorded fact.',
+      },
       {
         slug: 'anecdote-is-not-evidence',
         note: 'A prior shift story is not a recorded fact.',

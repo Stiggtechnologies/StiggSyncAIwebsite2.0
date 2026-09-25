@@ -466,6 +466,7 @@ const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'confidence-is-not-evidence',
   'correlation-is-not-causation',
   'blank-is-not-zero',
@@ -518,6 +519,7 @@ const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'correlation-is-not-causation',
   'trend-is-not-truth',
   'proxy-is-not-outcome',
@@ -581,6 +583,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
@@ -650,6 +653,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
@@ -722,6 +726,7 @@ for (const required of [
   'trend-is-not-truth',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
@@ -804,6 +809,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'alert-is-not-decision',
   'correlation-is-not-causation',
@@ -884,6 +890,7 @@ for (const required of [
   'threshold-is-not-diagnosis',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'alert-is-not-decision',
   'correlation-is-not-causation',
@@ -979,6 +986,7 @@ if (
 const noiseBlock = stepBlock('noise-is-not-signal');
 for (const required of [
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'sample-is-not-population',
   'symptom-is-not-cause',
   'threshold-is-not-diagnosis',
@@ -1078,6 +1086,7 @@ if (
 const sampleBlock = stepBlock('sample-is-not-population');
 for (const required of [
   'anecdote-is-not-evidence',
+  'map-is-not-terrain',
   'noise-is-not-signal',
   'symptom-is-not-cause',
   'threshold-is-not-diagnosis',
@@ -1174,6 +1183,7 @@ if (
 
 const anecdoteBlock = stepBlock('anecdote-is-not-evidence');
 for (const required of [
+  'map-is-not-terrain',
   'sample-is-not-population',
   'noise-is-not-signal',
   'symptom-is-not-cause',
@@ -1258,6 +1268,110 @@ for (const required of [
 ]) {
   if (!anecdotePage.includes(required)) {
     fail(`anecdote-is-not-evidence page must include ${required}`);
+  }
+}
+if (
+  !anecdotePage.includes('The series continues with') ||
+  !anecdotePage.includes('/insights/map-is-not-terrain')
+) {
+  fail('anecdote-is-not-evidence must point the series forward to map-is-not-terrain');
+}
+
+const mapBlock = stepBlock('map-is-not-terrain');
+for (const required of [
+  'anecdote-is-not-evidence',
+  'dashboard-is-not-decision',
+  'proxy-is-not-outcome',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'sample-is-not-population',
+  'noise-is-not-signal',
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'assumption-is-not-evidence',
+  'confidence-is-not-evidence',
+  'correlation-is-not-causation',
+  'verification-is-not-optional',
+  'trend-is-not-truth',
+  'alert-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!mapBlock.includes(`'${required}'`)) {
+    fail(`map-is-not-terrain related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(mapBlock)) {
+  fail('map-is-not-terrain related reading must include the Strategic Pilot');
+}
+if (mapBlock.includes("next: 'strategic-pilot'")) {
+  fail('map-is-not-terrain next step is the Field Manual');
+}
+
+const mapPage = read('app/insights/map-is-not-terrain/page.tsx');
+for (const required of [
+  '/insights/anecdote-is-not-evidence',
+  '/insights/dashboard-is-not-decision',
+  '/insights/proxy-is-not-outcome',
+  '/insights/blank-is-not-zero',
+  '/insights/unknown-is-not-clear',
+  '/insights/recommend-is-not-authorize',
+  '/insights/sample-is-not-population',
+  '/insights/noise-is-not-signal',
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/assumption-is-not-evidence',
+  '/insights/confidence-is-not-evidence',
+  '/insights/correlation-is-not-causation',
+  '/insights/trend-is-not-truth',
+  '/insights/verification-is-not-optional',
+  '/insights/alert-is-not-decision',
+  '/insights/silence-is-not-clearance',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/human-decision-is-not-optional',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'diagram',
+  'CMMS schema',
+  'dashboard',
+  'digital twin',
+  'process map',
+  'compressed representation',
+  'operating reality',
+  'degradation',
+  'local exceptions',
+  'unverified outcomes',
+  'Evidence from the plant beats the model',
+  'not a diagnosis',
+  'not root cause',
+  'not authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'blank is not zero',
+  'unknown is not clear',
+  'recommend is not authorize',
+  'false certainty',
+  'approved evidence',
+  'honesty boundary',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'Sync may surface a map',
+  'Verification stays open',
+  'named human',
+  'Sync recommends',
+  'named human decides',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!mapPage.includes(required)) {
+    fail(`map-is-not-terrain page must include ${required}`);
   }
 }
 
