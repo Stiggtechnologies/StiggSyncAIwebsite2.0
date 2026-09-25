@@ -937,7 +937,16 @@ export default function ForecastIsNotFactPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/simulation-is-not-proof"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Simulation Is Not Proof
+              </Link>
+              , on why a digital-twin run, a Monte Carlo fan, a what-if scenario, or a failure
+              simulation is a controlled representation of possible futures and not proof the
+              plant will behave that way. Companion reading:{' '}
               <Link
                 href="/insights/model-is-not-reality"
                 className="text-[#3B82F6] hover:text-white transition-colors"

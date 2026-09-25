@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'simulation-is-not-proof',
+    title: 'Simulation Is Not Proof',
+    description:
+      'Simulation is not proof. A digital-twin run, a Monte Carlo fan, a what-if scenario, or a failure simulation is a controlled representation of possible futures — not proof that an asset, a plan, or an intervention will behave that way in the plant. Proof still requires observed outcomes under the honesty and verification boundary. Sync refuses when coverage, assumptions, or calibration are insufficient. Treating the simulation as proof is how operators get false clearance. A simulation can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the simulation. Sync may surface a simulation beside approved evidence when coverage, assumptions, and calibration are named. Sync refuses false precision. Sync must not auto-close, auto-authorize, or treat simulation clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Forecast Is Not Fact, Model Is Not Reality, Map Is Not Terrain, Verification Is Not Optional, and Learning Requires a Verified Outcome.',
+    excerpt:
+      'A digital-twin run, Monte Carlo fan, what-if scenario, or failure simulation is a controlled representation of possible futures. It is not proof that an asset, plan, or intervention will behave that way in the plant. Proof still requires observed outcomes. Sync refuses when coverage, assumptions, or calibration are insufficient.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'forecast-is-not-fact',
     title: 'Forecast Is Not Fact',
     description:
@@ -402,12 +414,108 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'simulation-is-not-proof': {
+    relatedSlug: 'forecast-is-not-fact',
+    relatedNote: 'A forecast of the plant is not a fact about the plant. A simulation of possible futures is not proof the plant will behave that way.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model of the plant is not the plant. A run of that model is not proof the plant will behave that way.',
+      },
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram of a simulated future is not the operating reality.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A settled simulation is not the check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not simulation clearance.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A simulation used as a stand-in is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unverified run is not a recorded fact about the plant.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A tight fan is not a recorded check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope is not truth. A fan of futures is not proof.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation to investigate is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of runs is not a decision and not proof.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A simulation does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A favorable run does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A simulation fit to a handful of cases is not the fleet.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A failure simulation of a story is not evidence.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Simulating chatter does not make it an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A run that names a symptom as the future cause has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit a simulation says will be crossed is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A Monte Carlo fan of co-moving tags is not a recorded causal check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert the simulation ranked is still not a decision.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet simulation is not clearance. Silence on refusal conditions is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A run without a reconstructable trail is not observed proof.',
+      },
+    ],
+  },
   'forecast-is-not-fact': {
     relatedSlug: 'model-is-not-reality',
     relatedNote: 'A model of the plant is not the plant. A forecast of the plant is not a fact about the plant.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A digital-twin run, Monte Carlo fan, what-if scenario, or failure simulation is not proof the plant will behave that way.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'A diagram of a future is not the operating reality. A forecast is not a fact about the plant.',
@@ -497,6 +605,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'simulation-is-not-proof',
+        note: 'A run of the model through possible futures is not proof. The model is still not the plant.',
+      },
+      {
         slug: 'forecast-is-not-fact',
         note: 'A forecast, projection, RUL estimate, demand plan, Monte Carlo percentile, or LLM-generated outlook is not a fact about the plant.',
       },
@@ -584,6 +696,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A diagram of a simulated future is not the operating reality, and the run is not proof.',
+      },
       {
         slug: 'forecast-is-not-fact',
         note: 'A forecast of the terrain is not a fact about the plant.',
@@ -1069,6 +1185,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'simulation-is-not-proof',
+        note: 'A simulation used as a stand-in is not the verified outcome.',
+      },
+      {
         slug: 'forecast-is-not-fact',
         note: 'A forecast used as a stand-in is not the verified outcome.',
       },
@@ -1152,6 +1272,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A fan of projected slopes is not proof. An observed outcome is still the check.',
+      },
       {
         slug: 'forecast-is-not-fact',
         note: 'A projected slope is not a fact. An RUL estimate is not a recorded check.',
@@ -1309,6 +1433,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'simulation-is-not-proof',
+        note: 'Being sure the simulation is right is not a recorded check.',
+      },
+      {
         slug: 'forecast-is-not-fact',
         note: 'Being sure the outlook is right is not a recorded check.',
       },
@@ -1364,6 +1492,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'An uncalibrated simulation is not a recorded fact about the plant.',
+      },
       {
         slug: 'forecast-is-not-fact',
         note: 'An unverified forecast is not a recorded fact about the plant.',
