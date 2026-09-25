@@ -466,6 +466,7 @@ const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'confidence-is-not-evidence',
   'correlation-is-not-causation',
@@ -519,6 +520,7 @@ const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'correlation-is-not-causation',
   'trend-is-not-truth',
@@ -583,6 +585,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'assumption-is-not-evidence',
@@ -653,6 +656,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'confidence-is-not-evidence',
@@ -726,6 +730,7 @@ for (const required of [
   'trend-is-not-truth',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'threshold-is-not-diagnosis',
@@ -809,6 +814,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'alert-is-not-decision',
@@ -890,6 +896,7 @@ for (const required of [
   'threshold-is-not-diagnosis',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'alert-is-not-decision',
@@ -986,6 +993,7 @@ if (
 const noiseBlock = stepBlock('noise-is-not-signal');
 for (const required of [
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'symptom-is-not-cause',
@@ -1086,6 +1094,7 @@ if (
 const sampleBlock = stepBlock('sample-is-not-population');
 for (const required of [
   'anecdote-is-not-evidence',
+  'model-is-not-reality',
   'map-is-not-terrain',
   'noise-is-not-signal',
   'symptom-is-not-cause',
@@ -1183,6 +1192,7 @@ if (
 
 const anecdoteBlock = stepBlock('anecdote-is-not-evidence');
 for (const required of [
+  'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
   'noise-is-not-signal',
@@ -1279,6 +1289,7 @@ if (
 
 const mapBlock = stepBlock('map-is-not-terrain');
 for (const required of [
+  'model-is-not-reality',
   'anecdote-is-not-evidence',
   'dashboard-is-not-decision',
   'proxy-is-not-outcome',
@@ -1372,6 +1383,114 @@ for (const required of [
 ]) {
   if (!mapPage.includes(required)) {
     fail(`map-is-not-terrain page must include ${required}`);
+  }
+}
+if (
+  !mapPage.includes('The series continues with') ||
+  !mapPage.includes('/insights/model-is-not-reality')
+) {
+  fail('map-is-not-terrain must point the series forward to model-is-not-reality');
+}
+
+const modelBlock = stepBlock('model-is-not-reality');
+for (const required of [
+  'map-is-not-terrain',
+  'proxy-is-not-outcome',
+  'assumption-is-not-evidence',
+  'confidence-is-not-evidence',
+  'recommend-is-not-authorize',
+  'dashboard-is-not-decision',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'sample-is-not-population',
+  'anecdote-is-not-evidence',
+  'noise-is-not-signal',
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'correlation-is-not-causation',
+  'trend-is-not-truth',
+  'verification-is-not-optional',
+  'alert-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!modelBlock.includes(`'${required}'`)) {
+    fail(`model-is-not-reality related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(modelBlock)) {
+  fail('model-is-not-reality related reading must include the Strategic Pilot');
+}
+if (modelBlock.includes("next: 'strategic-pilot'")) {
+  fail('model-is-not-reality next step is the Field Manual');
+}
+
+const modelPage = read('app/insights/model-is-not-reality/page.tsx');
+for (const required of [
+  '/insights/map-is-not-terrain',
+  '/insights/proxy-is-not-outcome',
+  '/insights/assumption-is-not-evidence',
+  '/insights/confidence-is-not-evidence',
+  '/insights/recommend-is-not-authorize',
+  '/insights/dashboard-is-not-decision',
+  '/insights/blank-is-not-zero',
+  '/insights/unknown-is-not-clear',
+  '/insights/sample-is-not-population',
+  '/insights/anecdote-is-not-evidence',
+  '/insights/noise-is-not-signal',
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/correlation-is-not-causation',
+  '/insights/trend-is-not-truth',
+  '/insights/verification-is-not-optional',
+  '/insights/alert-is-not-decision',
+  '/insights/silence-is-not-clearance',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/human-decision-is-not-optional',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'digital twin',
+  'KPI model',
+  'risk matrix',
+  'RUL curve',
+  'Monte Carlo',
+  'LLM summary',
+  'compressed representation',
+  'assumptions',
+  'coverage gaps',
+  'refusal conditions',
+  'false clearance',
+  'false precision',
+  'Evidence from the plant beats the model',
+  'not a diagnosis',
+  'not root cause',
+  'not authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'false certainty',
+  'approved evidence',
+  'honesty boundary',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'Sync may surface a model',
+  'Sync refuses false precision',
+  'Verification stays open',
+  'named human',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!modelPage.includes(required)) {
+    fail(`model-is-not-reality page must include ${required}`);
   }
 }
 

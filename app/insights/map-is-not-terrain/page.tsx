@@ -894,7 +894,16 @@ export default function MapIsNotTerrainPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/model-is-not-reality"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Model Is Not Reality
+              </Link>
+              , on why a digital twin, a KPI model, a risk matrix, an RUL curve, a Monte Carlo
+              run, or an LLM summary is a compressed representation and not the plant. Companion
+              reading:{' '}
               <Link
                 href="/insights/anecdote-is-not-evidence"
                 className="text-[#3B82F6] hover:text-white transition-colors"

@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'model-is-not-reality',
+    title: 'Model Is Not Reality',
+    description:
+      'Model is not reality. A digital twin, a KPI model, a risk matrix, an RUL curve, a Monte Carlo run, or an LLM summary is a compressed representation — useful for decisions only when its assumptions, coverage gaps, and refusal conditions are explicit. Treating the model as the plant is how operators get false clearance. A model can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the model. Sync may surface a model beside approved evidence when the limits are named. Sync refuses false precision. A named human still decides. Companion to Map Is Not Terrain, Proxy Is Not Outcome, Assumption Is Not Evidence, Confidence Is Not Evidence, and Recommend Is Not Authorize.',
+    excerpt:
+      'A digital twin, KPI model, risk matrix, RUL curve, Monte Carlo, or LLM summary is a compressed representation. It is useful only when assumptions, coverage gaps, and refusal conditions are explicit. Treating the model as the plant is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'map-is-not-terrain',
     title: 'Map Is Not Terrain',
     description:
@@ -378,12 +390,100 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'model-is-not-reality': {
+    relatedSlug: 'map-is-not-terrain',
+    relatedNote: 'A diagram of the plant is not the operating reality. A model of the plant is not the plant.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI model score is a stand-in. It is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unverified model output is not a recorded fact.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A high model score is not a recorded check.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A drafted next step from a model is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of model scores is not a decision and not the plant.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A model default does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A nominal model does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A model fit to a handful of cases is not the fleet.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'An LLM summary of a story is not evidence.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter fitted by a model is still not an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A model that names a symptom as the cause has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit inside a model is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A Monte Carlo of co-moving tags is not a recorded causal check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'An RUL curve is a projected slope. It is not a recorded check.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A settled model is not the check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert the model ranked is still not a decision.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a model state.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet model is not clearance. Silence on refusal conditions is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A model output without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'map-is-not-terrain': {
     relatedSlug: 'anecdote-is-not-evidence',
     relatedNote: 'A story about the plant is not evidence. A diagram of the plant is not the operating reality.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A digital twin, KPI model, risk matrix, RUL curve, Monte Carlo, or LLM summary is not the plant.',
+      },
       {
         slug: 'dashboard-is-not-decision',
         note: 'A dashboard is a compressed display. It is not a decision and not the operating reality.',
@@ -461,6 +561,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'model-is-not-reality',
+        note: 'A model that retells the plant is not the plant. A story is still not evidence.',
+      },
+      {
         slug: 'map-is-not-terrain',
         note: 'A diagram, schema, dashboard, digital twin, or process map is not the operating reality.',
       },
@@ -536,6 +640,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model fit to a handful of cases is not the fleet.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'A diagram of the fleet is not the fleet. A compressed representation is not the population.',
@@ -613,6 +721,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'model-is-not-reality',
+        note: 'Chatter fitted by a model is still not an actionable signal.',
+      },
+      {
         slug: 'map-is-not-terrain',
         note: 'A dashboard of chatter is a map. The chatter is still not an actionable signal.',
       },
@@ -688,6 +800,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A model that names a symptom as the cause has not recorded the cause.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'A diagram of the symptom is not the cause and not the operating reality.',
@@ -765,6 +881,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'model-is-not-reality',
+        note: 'A limit inside a model is not a diagnosis of the asset.',
+      },
+      {
         slug: 'map-is-not-terrain',
         note: 'A limit drawn on a process map is not a diagnosis of the asset.',
       },
@@ -840,6 +960,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A KPI model score is a stand-in. It is not the verified outcome.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'A green tile on a digital twin is a stand-in. It is not the verified outcome.',
@@ -917,6 +1041,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'model-is-not-reality',
+        note: 'An RUL curve is a projected slope. It is not a recorded check.',
+      },
+      {
         slug: 'map-is-not-terrain',
         note: 'A slope on a dashboard is a compressed line. It is not a recorded check.',
       },
@@ -988,6 +1116,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'A Monte Carlo of co-moving tags is not a recorded causal check.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'Co-moving tags on a diagram are not a recorded causal check.',
@@ -1061,6 +1193,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'model-is-not-reality',
+        note: 'Being sure the model is right is not a recorded check.',
+      },
+      {
         slug: 'map-is-not-terrain',
         note: 'Being sure the model matches the plant is not a recorded check.',
       },
@@ -1108,6 +1244,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'model-is-not-reality',
+        note: 'An unverified model output is not a recorded fact. The model is not the plant.',
+      },
       {
         slug: 'map-is-not-terrain',
         note: 'An unverified model of the plant is not a recorded fact.',
