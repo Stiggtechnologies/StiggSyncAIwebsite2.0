@@ -397,6 +397,18 @@ export default function ActionIsNotExecutionPage() {
               chapter is the public statement of the step this essay describes.
             </p>
 
+            <p>
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              states the split after a claim is proven. A closed chain does not unlock ACTION and
+              does not execute plant work. Authorization is a named human decision that routes
+              intent to authorized execution systems.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
