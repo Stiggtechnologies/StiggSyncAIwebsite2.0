@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'forecast-is-not-fact',
+    title: 'Forecast Is Not Fact',
+    description:
+      'Forecast is not fact. A forecast, a projection, an RUL estimate, a demand plan, a Monte Carlo percentile, or an LLM-generated outlook is a forward-looking compression — useful for planning only when assumptions, uncertainty bands, and refusal conditions are explicit. Treating the forecast as a fact about the plant is how operators get false clearance. A forecast can inform a recommendation to investigate or prepare. It is not the plant state, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the forecast. Sync may surface a forecast beside approved evidence when assumptions and uncertainty are named. Sync refuses false precision. Sync must not auto-close, auto-authorize, or treat forecast clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Model Is Not Reality, Map Is Not Terrain, Proxy Is Not Outcome, Assumption Is Not Evidence, Confidence Is Not Evidence, Trend Is Not Truth, and Recommend Is Not Authorize.',
+    excerpt:
+      'A forecast, projection, RUL estimate, demand plan, Monte Carlo percentile, or LLM-generated outlook is a forward-looking compression. It is useful for planning only when assumptions, uncertainty bands, and refusal conditions are explicit. Treating the forecast as a fact about the plant is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'model-is-not-reality',
     title: 'Model Is Not Reality',
     description:
@@ -390,12 +402,104 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'forecast-is-not-fact': {
+    relatedSlug: 'model-is-not-reality',
+    relatedNote: 'A model of the plant is not the plant. A forecast of the plant is not a fact about the plant.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'map-is-not-terrain',
+        note: 'A diagram of a future is not the operating reality. A forecast is not a fact about the plant.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A forecast used as a stand-in is not the verified outcome.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An unverified outlook is not a recorded fact about the plant.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A tight uncertainty band is not a recorded check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope is not truth. A projection of that slope is not a fact.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation to investigate or prepare is still a proposal.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display of outlooks is not a decision and not the plant state.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A forecast does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing plant evidence stays unknown. A favorable outlook does not record it as clear.',
+      },
+      {
+        slug: 'sample-is-not-population',
+        note: 'A forecast fit to a handful of cases is not the fleet.',
+      },
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'An LLM-generated outlook of a story is not evidence.',
+      },
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Projecting chatter does not make it an actionable signal.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A forecast that names a symptom as the future cause has not recorded the cause.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A limit a projection says will be crossed is not a diagnosis.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A Monte Carlo percentile of co-moving tags is not a recorded causal check.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A settled forecast is not the check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert the forecast ranked is still not a decision.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not forecast clearance.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet forecast is not clearance. Silence on refusal conditions is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'An outlook without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'model-is-not-reality': {
     relatedSlug: 'map-is-not-terrain',
     relatedNote: 'A diagram of the plant is not the operating reality. A model of the plant is not the plant.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast, projection, RUL estimate, demand plan, Monte Carlo percentile, or LLM-generated outlook is not a fact about the plant.',
+      },
       {
         slug: 'proxy-is-not-outcome',
         note: 'A KPI model score is a stand-in. It is not the verified outcome.',
@@ -480,6 +584,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast of the terrain is not a fact about the plant.',
+      },
       {
         slug: 'model-is-not-reality',
         note: 'A digital twin, KPI model, risk matrix, RUL curve, Monte Carlo, or LLM summary is not the plant.',
@@ -961,6 +1069,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'forecast-is-not-fact',
+        note: 'A forecast used as a stand-in is not the verified outcome.',
+      },
+      {
         slug: 'model-is-not-reality',
         note: 'A KPI model score is a stand-in. It is not the verified outcome.',
       },
@@ -1040,6 +1152,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'A projected slope is not a fact. An RUL estimate is not a recorded check.',
+      },
       {
         slug: 'model-is-not-reality',
         note: 'An RUL curve is a projected slope. It is not a recorded check.',
@@ -1193,6 +1309,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'forecast-is-not-fact',
+        note: 'Being sure the outlook is right is not a recorded check.',
+      },
+      {
         slug: 'model-is-not-reality',
         note: 'Being sure the model is right is not a recorded check.',
       },
@@ -1244,6 +1364,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'forecast-is-not-fact',
+        note: 'An unverified forecast is not a recorded fact about the plant.',
+      },
       {
         slug: 'model-is-not-reality',
         note: 'An unverified model output is not a recorded fact. The model is not the plant.',

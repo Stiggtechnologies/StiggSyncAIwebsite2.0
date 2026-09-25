@@ -466,6 +466,7 @@ const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
   'anecdote-is-not-evidence',
+  'forecast-is-not-fact',
   'model-is-not-reality',
   'map-is-not-terrain',
   'confidence-is-not-evidence',
@@ -520,6 +521,7 @@ const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
   'anecdote-is-not-evidence',
+  'forecast-is-not-fact',
   'model-is-not-reality',
   'map-is-not-terrain',
   'correlation-is-not-causation',
@@ -656,6 +658,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'forecast-is-not-fact',
   'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
@@ -730,6 +733,7 @@ for (const required of [
   'trend-is-not-truth',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'forecast-is-not-fact',
   'model-is-not-reality',
   'map-is-not-terrain',
   'sample-is-not-population',
@@ -1289,6 +1293,7 @@ if (
 
 const mapBlock = stepBlock('map-is-not-terrain');
 for (const required of [
+  'forecast-is-not-fact',
   'model-is-not-reality',
   'anecdote-is-not-evidence',
   'dashboard-is-not-decision',
@@ -1394,6 +1399,7 @@ if (
 
 const modelBlock = stepBlock('model-is-not-reality');
 for (const required of [
+  'forecast-is-not-fact',
   'map-is-not-terrain',
   'proxy-is-not-outcome',
   'assumption-is-not-evidence',
@@ -1491,6 +1497,119 @@ for (const required of [
 ]) {
   if (!modelPage.includes(required)) {
     fail(`model-is-not-reality page must include ${required}`);
+  }
+}
+if (
+  !modelPage.includes('The series continues with') ||
+  !modelPage.includes('/insights/forecast-is-not-fact')
+) {
+  fail('model-is-not-reality must point the series forward to forecast-is-not-fact');
+}
+
+const forecastBlock = stepBlock('forecast-is-not-fact');
+for (const required of [
+  'model-is-not-reality',
+  'map-is-not-terrain',
+  'proxy-is-not-outcome',
+  'assumption-is-not-evidence',
+  'confidence-is-not-evidence',
+  'trend-is-not-truth',
+  'recommend-is-not-authorize',
+  'dashboard-is-not-decision',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'sample-is-not-population',
+  'anecdote-is-not-evidence',
+  'noise-is-not-signal',
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'correlation-is-not-causation',
+  'verification-is-not-optional',
+  'alert-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!forecastBlock.includes(`'${required}'`)) {
+    fail(`forecast-is-not-fact related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(forecastBlock)) {
+  fail('forecast-is-not-fact related reading must include the Strategic Pilot');
+}
+if (forecastBlock.includes("next: 'strategic-pilot'")) {
+  fail('forecast-is-not-fact next step is the Field Manual');
+}
+
+const forecastPage = read('app/insights/forecast-is-not-fact/page.tsx');
+for (const required of [
+  '/insights/model-is-not-reality',
+  '/insights/map-is-not-terrain',
+  '/insights/proxy-is-not-outcome',
+  '/insights/assumption-is-not-evidence',
+  '/insights/confidence-is-not-evidence',
+  '/insights/trend-is-not-truth',
+  '/insights/recommend-is-not-authorize',
+  '/insights/dashboard-is-not-decision',
+  '/insights/blank-is-not-zero',
+  '/insights/unknown-is-not-clear',
+  '/insights/sample-is-not-population',
+  '/insights/anecdote-is-not-evidence',
+  '/insights/noise-is-not-signal',
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/correlation-is-not-causation',
+  '/insights/verification-is-not-optional',
+  '/insights/alert-is-not-decision',
+  '/insights/silence-is-not-clearance',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/human-decision-is-not-optional',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'forecast',
+  'projection',
+  'RUL estimate',
+  'demand plan',
+  'Monte Carlo percentile',
+  'LLM-generated outlook',
+  'forward-looking compression',
+  'assumptions',
+  'uncertainty bands',
+  'refusal conditions',
+  'false clearance',
+  'false precision',
+  'Evidence from the plant beats the forecast',
+  'not the plant state',
+  'not a diagnosis',
+  'not root cause',
+  'not authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'investigate or prepare',
+  'false certainty',
+  'approved evidence',
+  'honesty boundary',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'forecast clearance',
+  'Sync may surface a forecast',
+  'Sync refuses false precision',
+  'Verification stays open',
+  'named human',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!forecastPage.includes(required)) {
+    fail(`forecast-is-not-fact page must include ${required}`);
   }
 }
 
