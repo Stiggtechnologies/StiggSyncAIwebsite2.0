@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'value-is-not-outcome',
+    title: 'Value Is Not Outcome',
+    description:
+      'Value is not outcome. Profit is an accounting result under named cost rules. Value is the verified operational outcome a Decision Case was opened to change. A reported outcome, including a favorable KPI move, is not that value unless it is the verified change the Decision Case named and authorized. A measured result that is not the named change is an outcome. It is not the value. Treating the reported outcome as value ships a KPI, or a different measured result, into a finished claim about the change nobody authorized, under the honesty and verification boundary. A reported outcome can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that has already earned the value. Evidence from the plant beats the reported outcome. Sync may surface a reported outcome or a KPI beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat a reported outcome as value, or as Learning credit. A favorable KPI without the verified change leaves the value unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Profit Is Not Value, Margin Is Not Profit, Accountability Is Not Closure, Proxy Is Not Outcome, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'A reported outcome, including a favorable KPI move, is not value unless it is the verified change the Decision Case named and authorized. Profit is an accounting result. Value is the verified operational outcome the case was opened to change.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'profit-is-not-value',
     title: 'Profit Is Not Value',
     description:
@@ -630,12 +642,52 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'profit-is-not-value': {
-    relatedSlug: 'margin-is-not-profit',
-    relatedNote: 'Contribution margin and unit economics are not bottom-line profit. A profit figure under named cost rules is still not the verified operational outcome the Decision Case was opened to change.',
+  'value-is-not-outcome': {
+    relatedSlug: 'profit-is-not-value',
+    relatedNote: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. A reported outcome is not that value unless it is the verified change the Decision Case named and authorized.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin and unit economics are not bottom-line profit. Profit under named cost rules is still not value. A reported outcome is not value unless it is the verified change the Decision Case named and authorized.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A named owner is not closure of the operating loop. A reported outcome beside that owner is not the verified change the case named and authorized.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. A favorable KPI beside the receipt is not the value.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A closed record with a favorable KPI is not the verified change.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI or stand-in is not the verified operational outcome. A reported outcome that is not the authorized change is not the value.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits achieved, not_achieved, or inconclusive, for the change the case named. It does not inherit a favorable KPI as the value.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records named observation against named criteria. A reported outcome does not record that check.',
+      },
+    ],
+  },
+  'profit-is-not-value': {
+    relatedSlug: 'value-is-not-outcome',
+    relatedNote: 'A reported outcome, including a favorable KPI move, is not value unless it is the verified change the Decision Case named and authorized. A profit figure under named cost rules is still not that value.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin and unit economics are not bottom-line profit. A profit figure under named cost rules is still not the verified operational outcome the Decision Case was opened to change.',
+      },
       {
         slug: 'cash-is-not-margin',
         note: 'Cash collected and invoices paid are not contribution margin. A profit figure is not the verified operational outcome.',
@@ -717,6 +769,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'value-is-not-outcome',
+        note: 'Cash collected is not contribution margin. A favorable KPI beside the receipt is not the verified change the case named and authorized.',
+      },
+      {
         slug: 'closure-is-not-cash',
         note: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Cash collected and invoices paid are still not contribution margin or profitable ARR.',
       },
@@ -776,6 +832,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A named owner is not closure. A reported outcome beside that owner is not the verified change the case named and authorized.',
+      },
       {
         slug: 'profit-is-not-value',
         note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome. A named owner is not that outcome.',
@@ -989,6 +1049,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'value-is-not-outcome',
+        note: 'A completed work order is not verification. A favorable KPI on that order is not the verified change the case named and authorized.',
+      },
+      {
         slug: 'profit-is-not-value',
         note: 'A completed work order is not verification. A profit figure on that order is not the verified operational outcome.',
       },
@@ -1048,6 +1112,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A clearance stamp is not proof the value is realized. A reported outcome is not the verified change the case named and authorized.',
+      },
       {
         slug: 'profit-is-not-value',
         note: 'A clearance stamp is not proof the value is realized. A profit figure is not that verified operational outcome.',
@@ -3280,6 +3348,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'value-is-not-outcome',
+        note: 'Learning inherits the verified change the case named. A favorable KPI is not that value.',
+      },
+      {
         slug: 'profit-is-not-value',
         note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
       },
@@ -3318,6 +3390,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'value-is-not-outcome',
+        note: 'Recording the check is named observation against named criteria. A reported outcome does not declare the value.',
+      },
       {
         slug: 'profit-is-not-value',
         note: 'Recording the check is the measured result. A profit figure does not record the value of the operating decision.',

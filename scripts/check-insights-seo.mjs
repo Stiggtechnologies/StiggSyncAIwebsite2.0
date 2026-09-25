@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const outcomeIndex = slugs.indexOf('value-is-not-outcome');
 const valueIndex = slugs.indexOf('profit-is-not-value');
 const profitIndex = slugs.indexOf('margin-is-not-profit');
 const marginIndex = slugs.indexOf('cash-is-not-margin');
@@ -36,7 +37,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    valueIndex >= 0 &&
+    outcomeIndex >= 0 &&
+    valueIndex > outcomeIndex &&
     profitIndex > valueIndex &&
     marginIndex > profitIndex &&
     cashIndex > marginIndex &&
@@ -53,7 +55,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3660,6 +3662,7 @@ for (const [slug, label] of [
 
 const valueBlock = stepBlock('profit-is-not-value');
 for (const required of [
+  'value-is-not-outcome',
   'margin-is-not-profit',
   'cash-is-not-margin',
   'closure-is-not-cash',
@@ -3763,6 +3766,125 @@ for (const page of [
   }
 }
 
+if (
+  !valuePage.includes('The series continues with') ||
+  !valuePage.includes('/insights/value-is-not-outcome')
+) {
+  fail('profit-is-not-value must point the series forward to value-is-not-outcome');
+}
+
+for (const [slug, label] of [
+  ['profit-is-not-value', 'profit-is-not-value'],
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'value-is-not-outcome'")) {
+    fail(`${label} related reading must cite value-is-not-outcome`);
+  }
+}
+
+const outcomeBlock = stepBlock('value-is-not-outcome');
+for (const required of [
+  'profit-is-not-value',
+  'margin-is-not-profit',
+  'accountability-is-not-closure',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'proxy-is-not-outcome',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+]) {
+  if (!outcomeBlock.includes(`'${required}'`)) {
+    fail(`value-is-not-outcome related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(outcomeBlock)) {
+  fail('value-is-not-outcome related reading must include the Strategic Pilot');
+}
+if (outcomeBlock.includes("next: 'strategic-pilot'")) {
+  fail('value-is-not-outcome next step is the Field Manual');
+}
+
+const outcomePage = read('app/insights/value-is-not-outcome/page.tsx');
+for (const required of [
+  '/insights/profit-is-not-value',
+  '/insights/margin-is-not-profit',
+  '/insights/accountability-is-not-closure',
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/proxy-is-not-outcome',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verification-is-not-optional',
+  '/reliability-assessment',
+  '/strategic-pilot',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'reported outcome',
+  'favorable KPI',
+  'verified change',
+  'named and authorized',
+  'accounting result',
+  'cost rules',
+  'verified operational outcome',
+  'Surfacing is still a read',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the reported outcome',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'reported outcome as value',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says a favorable KPI is not a customer plant release',
+  'A named human decides',
+  'A named human remains accountable',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'leaves the value unrecorded',
+  'Margin is not profit',
+  'Profit is not value',
+  'Value is not outcome',
+]) {
+  if (!outcomePage.includes(required)) {
+    fail(`value-is-not-outcome page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/profit-is-not-value/page.tsx',
+  'app/insights/cash-is-not-margin/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+]) {
+  if (!read(page).includes('/insights/value-is-not-outcome')) {
+    fail(`${page} must link value-is-not-outcome`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);
