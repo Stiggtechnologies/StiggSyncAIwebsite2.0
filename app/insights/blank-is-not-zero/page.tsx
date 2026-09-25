@@ -206,8 +206,16 @@ export default function BlankIsNotZeroPage() {
                 Unknown Is Not Clear
               </Link>{' '}
               already refuses the quiet version of this move. A green dashboard, an empty field, or
-              silence is not clearance. This essay is what happens when the empty field is then
-              filled with zero so the quiet looks like a result.{' '}
+              silence is not clearance.{' '}
+              <Link
+                href="/insights/silence-is-not-clearance"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Silence Is Not Clearance
+              </Link>{' '}
+              is that quiet at full length: no reply, no alert, and an empty inbox are not
+              authorization. This essay is what happens when the empty field is then filled with
+              zero so the quiet looks like a result.{' '}
               <Link
                 href="/insights/dashboard-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -479,7 +487,15 @@ export default function BlankIsNotZeroPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/silence-is-not-clearance"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Silence Is Not Clearance
+              </Link>
+              , on why silence, no reply, no alert, and an empty inbox are not authorization and
+              not clearance. Companion reading:{' '}
               <Link
                 href="/insights/unknown-is-not-clear"
                 className="text-[#3B82F6] hover:text-white transition-colors"

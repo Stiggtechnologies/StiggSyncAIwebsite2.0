@@ -190,6 +190,15 @@ export default function UnknownIsNotClearPage() {
               Silence is not clearance either. No alert, no comment, and no change on the tile do
               not record the evidence as present.{' '}
               <Link
+                href="/insights/silence-is-not-clearance"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Silence Is Not Clearance
+              </Link>{' '}
+              is that sentence at full length: silence, no reply, no alert, and an empty inbox are
+              not authorization and not clearance. A missing operator response is not approved. A
+              quiet dashboard is not controlled.{' '}
+              <Link
                 href="/insights/alert-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
@@ -384,8 +393,14 @@ export default function UnknownIsNotClearPage() {
               >
                 Blank Is Not Zero
               </Link>
-              , on why an empty field, a missing reading, or an unset value is not a measured zero.
-              Companion reading:{' '}
+              , on why an empty field, a missing reading, or an unset value is not a measured zero.{' '}
+              <Link
+                href="/insights/silence-is-not-clearance"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Silence Is Not Clearance
+              </Link>{' '}
+              states why no reply and an empty inbox are not authorization. Companion reading:{' '}
               <Link
                 href="/insights/human-decision-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
