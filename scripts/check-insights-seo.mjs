@@ -141,6 +141,29 @@ if (!/includePilot:\s*true/.test(coverageBlock)) {
   fail('coverage-is-not-control related reading must include the Strategic Pilot');
 }
 
+const questionBlock = stepBlock('question-is-not-decision');
+for (const required of [
+  'coverage-is-not-control',
+  'action-is-not-execution',
+  'recommend-is-not-authorize',
+  'verification-is-not-optional',
+]) {
+  if (!questionBlock.includes(`'${required}'`)) {
+    fail(`question-is-not-decision related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(questionBlock)) {
+  fail('question-is-not-decision related reading must include the Strategic Pilot');
+}
+
+const coveragePage = read('app/insights/coverage-is-not-control/page.tsx');
+if (
+  !coveragePage.includes('The series continues with') ||
+  !coveragePage.includes('/insights/question-is-not-decision')
+) {
+  fail('coverage-is-not-control must point the series forward to question-is-not-decision');
+}
+
 function readingSlugs(name) {
   const block = section(name);
   const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);
