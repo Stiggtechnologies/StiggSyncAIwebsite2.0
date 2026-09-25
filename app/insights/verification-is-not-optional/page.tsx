@@ -305,6 +305,14 @@ export default function VerificationIsNotOptionalPage() {
               </Link>
               . Companion reading:{' '}
               <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              on why a verified check is a claim about the past and not a standing claim of
+              continuing fitness,{' '}
+              <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

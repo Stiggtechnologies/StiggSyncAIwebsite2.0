@@ -305,6 +305,14 @@ export default function LearningRequiresAVerifiedOutcomePage() {
               </Link>
               , on why a recorded ACTION disposition is not plant execution. Companion reading:{' '}
               <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              on why the verified outcome learning inherits is not assurance that the asset stays
+              known-good,{' '}
+              <Link
                 href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

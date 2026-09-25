@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const verifiedIndex = slugs.indexOf('verified-is-not-assured');
 const completeIndex = slugs.indexOf('complete-is-not-verified');
 const clearedIndex = slugs.indexOf('cleared-is-not-complete');
 const readyIndex = slugs.indexOf('ready-is-not-cleared');
@@ -27,7 +28,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    completeIndex >= 0 &&
+    verifiedIndex >= 0 &&
+    completeIndex > verifiedIndex &&
     clearedIndex > completeIndex &&
     readyIndex > clearedIndex &&
     statusIndex > readyIndex &&
@@ -35,7 +37,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -2660,6 +2662,7 @@ for (const [slug, label] of [
 
 const completeBlock = stepBlock('complete-is-not-verified');
 for (const required of [
+  'verified-is-not-assured',
   'cleared-is-not-complete',
   'ready-is-not-cleared',
   'status-is-not-clearance',
@@ -2734,6 +2737,117 @@ for (const required of [
 ]) {
   if (!completePage.includes(required)) {
     fail(`complete-is-not-verified page must include ${required}`);
+  }
+}
+
+if (
+  !completePage.includes('The series continues with') ||
+  !completePage.includes('/insights/verified-is-not-assured')
+) {
+  fail('complete-is-not-verified must point the series forward to verified-is-not-assured');
+}
+
+for (const [slug, label] of [
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['green-is-not-go', 'green-is-not-go'],
+  ['honesty-boundary-is-not-optional', 'honesty-boundary-is-not-optional'],
+  ['human-decision-is-not-optional', 'human-decision-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'verified-is-not-assured'")) {
+    fail(`${label} related reading must cite verified-is-not-assured`);
+  }
+}
+
+const verifiedBlock = stepBlock('verified-is-not-assured');
+for (const required of [
+  'complete-is-not-verified',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'green-is-not-go',
+  'honesty-boundary-is-not-optional',
+  'human-decision-is-not-optional',
+]) {
+  if (!verifiedBlock.includes(`'${required}'`)) {
+    fail(`verified-is-not-assured related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(verifiedBlock)) {
+  fail('verified-is-not-assured related reading must include the Strategic Pilot');
+}
+if (verifiedBlock.includes("next: 'strategic-pilot'")) {
+  fail('verified-is-not-assured next step is the Field Manual');
+}
+
+const verifiedPage = read('app/insights/verified-is-not-assured/page.tsx');
+for (const required of [
+  '/insights/complete-is-not-verified',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/green-is-not-go',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'work package',
+  'inspection',
+  'AI recommendation',
+  'evidence collected',
+  'checks passed',
+  'lineage present',
+  'claim about the past',
+  'continuing fitness',
+  'time-bounded',
+  'known-good',
+  'operating conditions',
+  'ownership',
+  'monitoring',
+  'human authority boundary',
+  'false greens',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the verified stamp',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'verified assurance',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says verified is not a customer plant release',
+]) {
+  if (!verifiedPage.includes(required)) {
+    fail(`verified-is-not-assured page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/green-is-not-go/page.tsx',
+  'app/insights/honesty-boundary-is-not-optional/page.tsx',
+  'app/insights/human-decision-is-not-optional/page.tsx',
+]) {
+  if (!read(page).includes('/insights/verified-is-not-assured')) {
+    fail(`${page} must link verified-is-not-assured`);
   }
 }
 

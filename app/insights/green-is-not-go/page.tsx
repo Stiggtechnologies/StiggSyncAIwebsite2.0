@@ -462,6 +462,14 @@ export default function GreenIsNotGoPage() {
               and why that label is not clearance to run, release, start work, leave equipment in
               service, or close a Decision Case. Companion reading:{' '}
               <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              on why a verified stamp is a past check and not assurance, and not a stronger form of
+              green,{' '}
+              <Link
                 href="/insights/ready-is-not-cleared"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
