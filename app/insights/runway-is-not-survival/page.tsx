@@ -917,6 +917,23 @@ export default function RunwayIsNotSurvivalPage() {
               the measured result. The runway figure does not record the survival.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/survival-is-not-solvency"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Survival Is Not Solvency
+              </Link>
+              , on why survival is still not solvency. Survival is whether the business can keep
+              meeting obligations (payroll, vendors, debt service, plant continuity) through the
+              next decision horizon. Solvency is whether assets and claims structure can cover
+              liabilities and pay debts as they come due over a structural horizon — balance-sheet
+              and claim quality, not just near-term obligation continuity. A firm can survive a
+              horizon and still be insolvent, or headed there. A solvent firm can still fail
+              survival in a short horizon when liquidity timing fails or a concentration shock hits.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'survival-is-not-solvency',
+    title: 'Survival Is Not Solvency',
+    description:
+      'Survival is not solvency. Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity. A firm can survive a horizon and still be insolvent, or headed there. A solvent firm can still fail survival in a short horizon when liquidity timing fails or a concentration shock hits. Treating survival as solvency records near-term obligation continuity as a claim about assets, claims, and debts as they come due that nobody has shown, under the honesty and verification boundary. A survival note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown solvency. Evidence from the plant beats the survival note when the note is being used as solvency. Sync may surface a survival note or a solvency note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat survival as solvency as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A firm that meets payroll, vendors, debt service, and plant continuity through the next decision horizon can still be insolvent, or headed there, when assets and claims cannot cover liabilities over the structural horizon. A firm whose assets and claims can cover liabilities and pay debts as they come due can still fail survival when liquidity timing fails or a concentration shock hits inside that short horizon. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity. A firm can survive a horizon and still be insolvent. A solvent firm can still fail survival.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'runway-is-not-survival',
     title: 'Runway Is Not Survival',
     description:
@@ -714,12 +726,108 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'runway-is-not-survival': {
-    relatedSlug: 'cash-is-not-runway',
-    relatedNote: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is how long operations can continue at the current net burn before cash is exhausted. That duration is still not survival.',
+  'survival-is-not-solvency': {
+    relatedSlug: 'runway-is-not-survival',
+    relatedNote: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. That near-term continuity is still not solvency.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, and survival is not solvency. A spendable balance is still not assets and claims covering liabilities.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, and survival is not solvency.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, and survival is not solvency.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, and survival is not solvency.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, and survival is not solvency.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Survival is still not solvency.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and survival is not solvency.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A survival note is not solvency.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Survival is not solvency, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Survival is still not solvency. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A survival note is not solvency either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not solvency.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A survival note after the start is not solvency.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not solvency.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that liabilities are covered. A survival note is not solvency.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show solvency.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a survival note as solvency.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Survival is obligation continuity through the next decision horizon, not standing assurance and not solvency.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a survival note is still a proposal. Recommend is not authorize, and the proposal is not solvency.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A solvency note beside that tile is not a survival note, and a survival note is not solvency.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A solvency note that moved with a survival note is not a cause. Coincidence is not proof the horizon covers liabilities.',
+      },
+    ],
+  },
+  'runway-is-not-survival': {
+    relatedSlug: 'survival-is-not-solvency',
+    relatedNote: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is how long operations can continue at the current net burn before cash is exhausted. That duration is still not survival, and survival is still not solvency.',
+      },
       {
         slug: 'arr-is-not-cash',
         note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, and runway is not survival.',
@@ -809,6 +917,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations through the next decision horizon. It is not solvency. Cash that can be spent now is still not runway, and survival is still not solvency.',
+      },
+      {
         slug: 'arr-is-not-cash',
         note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is money received (collected) that can be spent now. That cash balance is still not runway.',
       },
@@ -896,6 +1008,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is not solvency. An annualized contract is still not cash, and meeting the next decision horizon is still not assets and claims covering liabilities.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'Runway is how long operations can continue at the current net burn before cash is exhausted. It is not survival. A cash balance is still not runway, and a runway figure is still not survival.',
@@ -985,6 +1101,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is not solvency. A recognized sale is still not ARR, and obligation continuity through the next decision horizon is still not the structural claim.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Runway is not survival. A recognized sale is still not ARR, ARR is still not cash, and cash that can be spent now is still not runway.',
       },
@@ -1072,6 +1192,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is not solvency. An impact claim is still not revenue, and a survival note is still not whether assets and claims cover liabilities.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'Runway is not survival. An impact claim is still not revenue, and a runway figure is still not whether obligations will be met.',
@@ -1161,6 +1285,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is not solvency. A measured outcome is still not impact, and a survival note is still not the structural claim.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Runway is not survival. A measured outcome is still not impact, and a runway figure is still not whether obligations will be met.',
       },
@@ -1249,6 +1377,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is not solvency. A reported outcome is still not the value, and a survival note is still not whether liabilities are covered.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Runway is not survival. A reported outcome is still not the value, and a runway figure is still not whether obligations will be met.',
       },
@@ -1308,6 +1440,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'A profit figure is not the value. Survival is still not solvency.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'A profit figure is not the value. Runway is still not survival.',
@@ -1417,6 +1553,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Cash collected is not contribution margin. Survival is still not solvency. Solvency is whether assets and claims can cover liabilities over a structural horizon.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Cash collected is not contribution margin. Runway is still not survival. Survival is whether obligations can be met through the next decision horizon.',
       },
@@ -1504,6 +1644,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'A named owner is not closure. Survival is not solvency.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'A named owner is not closure. Runway is not survival.',
@@ -1745,6 +1889,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not solvency.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not survival.',
       },
@@ -1832,6 +1980,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'A clearance stamp is not proof the work is finished. Survival is not solvency.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'A clearance stamp is not proof the work is finished. Runway is not survival.',
@@ -4092,6 +4244,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'survival-is-not-solvency',
+        note: 'Learning inherits the verified outcome. It does not inherit a survival note as solvency.',
+      },
+      {
         slug: 'runway-is-not-survival',
         note: 'Learning inherits the verified outcome. It does not inherit a runway figure as survival.',
       },
@@ -4158,6 +4314,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show solvency.',
+      },
       {
         slug: 'runway-is-not-survival',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show survival.',

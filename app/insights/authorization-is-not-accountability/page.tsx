@@ -654,6 +654,17 @@ export default function AuthorizationIsNotAccountabilityPage() {
               runway figure is not survival.
             </p>
 
+            <p>
+              <Link
+                href="/insights/survival-is-not-solvency"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Survival Is Not Solvency
+              </Link>{' '}
+              states the split after survival. Authorization answers who may start. A survival note
+              is not solvency.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
