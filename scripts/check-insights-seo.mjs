@@ -578,6 +578,7 @@ for (const required of [
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
   'noise-is-not-signal',
+  'sample-is-not-population',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -645,6 +646,7 @@ for (const required of [
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
   'noise-is-not-signal',
+  'sample-is-not-population',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
   'dashboard-is-not-decision',
@@ -715,6 +717,7 @@ const proxyBlock = stepBlock('proxy-is-not-outcome');
 for (const required of [
   'trend-is-not-truth',
   'noise-is-not-signal',
+  'sample-is-not-population',
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
   'correlation-is-not-causation',
@@ -795,6 +798,7 @@ for (const required of [
   'proxy-is-not-outcome',
   'symptom-is-not-cause',
   'noise-is-not-signal',
+  'sample-is-not-population',
   'alert-is-not-decision',
   'correlation-is-not-causation',
   'verification-is-not-optional',
@@ -873,6 +877,7 @@ const symptomBlock = stepBlock('symptom-is-not-cause');
 for (const required of [
   'threshold-is-not-diagnosis',
   'noise-is-not-signal',
+  'sample-is-not-population',
   'alert-is-not-decision',
   'correlation-is-not-causation',
   'proxy-is-not-outcome',
@@ -966,6 +971,7 @@ if (
 
 const noiseBlock = stepBlock('noise-is-not-signal');
 for (const required of [
+  'sample-is-not-population',
   'symptom-is-not-cause',
   'threshold-is-not-diagnosis',
   'alert-is-not-decision',
@@ -1052,6 +1058,102 @@ for (const required of [
 ]) {
   if (!noisePage.includes(required)) {
     fail(`noise-is-not-signal page must include ${required}`);
+  }
+}
+if (
+  !noisePage.includes('The series continues with') ||
+  !noisePage.includes('/insights/sample-is-not-population')
+) {
+  fail('noise-is-not-signal must point the series forward to sample-is-not-population');
+}
+
+const sampleBlock = stepBlock('sample-is-not-population');
+for (const required of [
+  'noise-is-not-signal',
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'alert-is-not-decision',
+  'correlation-is-not-causation',
+  'proxy-is-not-outcome',
+  'verification-is-not-optional',
+  'trend-is-not-truth',
+  'confidence-is-not-evidence',
+  'dashboard-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'assumption-is-not-evidence',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!sampleBlock.includes(`'${required}'`)) {
+    fail(`sample-is-not-population related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(sampleBlock)) {
+  fail('sample-is-not-population related reading must include the Strategic Pilot');
+}
+if (sampleBlock.includes("next: 'strategic-pilot'")) {
+  fail('sample-is-not-population next step is the Field Manual');
+}
+
+const samplePage = read('app/insights/sample-is-not-population/page.tsx');
+for (const required of [
+  '/insights/noise-is-not-signal',
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/alert-is-not-decision',
+  '/insights/correlation-is-not-causation',
+  '/insights/proxy-is-not-outcome',
+  '/insights/verification-is-not-optional',
+  '/insights/trend-is-not-truth',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/dashboard-is-not-decision',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'handful of observed cases',
+  'plants',
+  'fleet',
+  'population',
+  'population-level proof',
+  'not a diagnosis',
+  'root cause',
+  'authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'false certainty',
+  'work queues',
+  'craft time',
+  'wrong lesson',
+  'approved evidence',
+  'recommend investigation',
+  'auto-close',
+  'auto-authorize',
+  'auto-clear',
+  'Learning credit',
+  'named human',
+  'Verification stays open',
+  'Sync may surface',
+  'Sync refuses to treat a sample as population-level proof',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!samplePage.includes(required)) {
+    fail(`sample-is-not-population page must include ${required}`);
   }
 }
 

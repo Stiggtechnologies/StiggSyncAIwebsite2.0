@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'sample-is-not-population',
+    title: 'Sample Is Not Population',
+    description:
+      'Sample is not population. A handful of observed cases, a few plants, a short list of assets that alarmed, or the work orders that happened to be written is a sample. The fleet, the asset class, and the sites the claim is supposed to cover are the population. A sample can inform a recommendation to investigate. It is not population-level proof, not a diagnosis of the fleet, not root cause for the class, not authorization for fleet-wide corrective work, not a verified operational outcome for assets that were not observed, and not a Decision Case. Sync may surface a sample beside approved evidence. Sync refuses to treat a sample as population-level proof. A named human still records the Decision Case. Companion to Noise Is Not Signal, Symptom Is Not Cause, Threshold Is Not Diagnosis, Correlation Is Not Causation, Proxy Is Not Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'A handful of observed cases or plants is not the fleet. A sample can inform a recommendation to investigate. It is not population-level proof and not a Decision Case.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'noise-is-not-signal',
     title: 'Noise Is Not Signal',
     description:
@@ -342,12 +354,84 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'sample-is-not-population': {
+    relatedSlug: 'noise-is-not-signal',
+    relatedNote: 'Chatter on a dashboard is not an actionable signal. A handful of cases is not the fleet.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A symptom seen on a few assets is not the cause for the population.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A line crossed on a sample is not a diagnosis of the fleet.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert on the observed units is still not a decision for the class.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Co-movement inside a sample is not a recorded causal check for the population.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A stand-in computed on the handful is not the verified operational outcome.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A settled sample is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope drawn through the observed cases is still not a recorded check.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the handful represents the fleet is not a recorded check.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A tile on the assets that alarmed is a display. It is not the population.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a sample stored as the fleet.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'We saw it here, so the fleet has it, is not a recorded fact.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A sample does not fill the unobserved field.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A sample does not record the fleet as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. Plants that did not report are not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A list without a trail of who was observed is not population-level proof.',
+      },
+    ],
+  },
   'noise-is-not-signal': {
     relatedSlug: 'symptom-is-not-cause',
     relatedNote: 'An observed symptom is not the cause. Chatter on the dashboard is not an actionable signal.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'sample-is-not-population',
+        note: 'A handful of cases is not the fleet. Chatter in that handful is still not an actionable signal.',
+      },
       {
         slug: 'threshold-is-not-diagnosis',
         note: 'A line that was crossed is not a diagnosis. Noise around the line is still noise.',
@@ -413,6 +497,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'sample-is-not-population',
+        note: 'A symptom seen on a few assets is not the cause for the population.',
+      },
+      {
         slug: 'noise-is-not-signal',
         note: 'Chatter around a symptom is not an actionable signal and not the cause.',
       },
@@ -476,6 +564,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'sample-is-not-population',
+        note: 'A threshold crossed on a sample is not a diagnosis of the fleet.',
+      },
       {
         slug: 'noise-is-not-signal',
         note: 'Chatter that filled the dashboard is not an actionable signal and not a Decision Case.',
@@ -541,6 +633,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'sample-is-not-population',
+        note: 'A proxy that moved on a few assets is not a population outcome.',
+      },
+      {
         slug: 'noise-is-not-signal',
         note: 'A noisy stand-in is not an actionable signal and not the verified outcome.',
       },
@@ -605,6 +701,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'sample-is-not-population',
+        note: 'A slope on a handful of tags is not fleet truth.',
+      },
+      {
         slug: 'noise-is-not-signal',
         note: 'A noisy slope is not an actionable signal and not a recorded check.',
       },
@@ -664,6 +764,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'sample-is-not-population',
+        note: 'Co-movement in a sample is not a causal check for the population.',
+      },
       {
         slug: 'noise-is-not-signal',
         note: 'Co-moving chatter is not a recorded causal check and not an actionable signal.',
