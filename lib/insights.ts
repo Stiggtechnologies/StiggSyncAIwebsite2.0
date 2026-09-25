@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'flexibility-is-not-optionality',
+    title: 'Flexibility Is Not Optionality',
+    description:
+      'Flexibility is not optionality. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside the named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). A flexible firm can still lack optionality when that reallocation is possible and unused rights, capacity lines, budget envelopes, or contractual choices still do not exist on paper or in a plan. A firm with optionality on paper can still lack flexibility when those choices exist and lead times, skills, covenants, plant continuity, and cash may still block exercise inside the named decision window — none of which an optionality note alone proves. Treating flexibility as optionality records the ability to choose and change course as a claim about unused rights that nobody has shown, under the honesty and verification boundary. A flexibility note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown optionality. Evidence from the plant beats the flexibility note when the note is being used as optionality. Sync may surface a flexibility note or an optionality note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat flexibility as optionality as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not measure liquidity. Sync does not measure liquidity for the customer. Sync does not measure flexibility. Sync does not measure flexibility for the customer. Sync does not measure optionality. Sync does not measure optionality for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A flexible firm can still lack optionality when the reallocation inside the named decision window leaves no unused right on paper. A firm with optionality on paper can still lack flexibility when lead times, skills, covenants, plant continuity, and cash block exercise. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Liquidity Is Not Flexibility, Solvency Is Not Liquidity, Survival Is Not Solvency, Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside the named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). A flexible firm can still lack optionality. A firm with optionality on paper can still lack flexibility. An optionality note alone proves neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'liquidity-is-not-flexibility',
     title: 'Liquidity Is Not Flexibility',
     description:
@@ -750,12 +762,120 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'liquidity-is-not-flexibility': {
-    relatedSlug: 'solvency-is-not-liquidity',
-    relatedNote: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. That near-term window is still not flexibility.',
+  'flexibility-is-not-optionality': {
+    relatedSlug: 'liquidity-is-not-flexibility',
+    relatedNote: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. That ability to change course is still not optionality.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'runway-is-not-survival',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality. A spendable balance is still not unused rights on paper.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, and flexibility is not optionality.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Flexibility is still not optionality.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and flexibility is not optionality.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A flexibility note is not optionality.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Flexibility is not optionality, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Flexibility is still not optionality. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A flexibility note is not optionality either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not optionality.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A flexibility note after the start is not optionality.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not optionality.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that unused rights exist on paper. A flexibility note is not optionality.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show optionality.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a flexibility note as optionality.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Flexibility is the ability to change course inside a named decision window, not standing assurance and not optionality.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a flexibility note is still a proposal. Recommend is not authorize, and the proposal is not optionality.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An optionality note beside that tile is not a flexibility note, and a flexibility note is not optionality. A choice on paper is not a green.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'An optionality note that moved with a flexibility note is not a cause. Coincidence is not proof the ability to change course is unused rights on paper.',
+      },
+    ],
+  },
+  'liquidity-is-not-flexibility': {
+    relatedSlug: 'flexibility-is-not-optionality',
+    relatedNote: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside the named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. The ability to change course is still not optionality.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, and flexibility is not optionality.',
+      },
       {
         slug: 'survival-is-not-solvency',
         note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, and liquidity is not flexibility.',
@@ -857,6 +977,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. Balance-sheet and claim quality over a structural horizon is still not liquidity, and the ability to reallocate inside a named decision window is still not unused rights on paper.',
+      },
+      {
         slug: 'survival-is-not-solvency',
         note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not just near-term obligation continuity. That structural claim is still not liquidity, and liquidity is still not flexibility.',
       },
@@ -956,6 +1080,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. Meeting obligations through the next decision horizon is still not solvency, and the ability to reallocate inside a named decision window is still not unused rights on paper.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. Meeting obligations through the next decision horizon is still not solvency, and cash and near-cash meeting the near-term windows are still not room to reallocate inside a named decision window.',
@@ -1057,6 +1185,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. A duration at the current net burn is still not survival, and the ability to change course is still not theoretical choice inventory.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. A duration at the current net burn is still not survival, and meeting the near-term windows is still not the ability to change course.',
       },
@@ -1156,6 +1288,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. Cash that can be spent now is still not runway, and room to reallocate inside a named decision window is still not an unused right on paper.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. Cash that can be spent now is still not runway, and paying what is already due is still not flexibility.',
@@ -1257,6 +1393,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. An annualized contract is still not cash, and the ability to change course is still not proof unused rights can be exercised inside the named decision window.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. An annualized contract is still not cash, and cash and near-cash meeting the near-term windows are still not room to reallocate.',
       },
@@ -1356,6 +1496,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. A recognized sale is still not ARR, and a flexibility note is still not optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. A recognized sale is still not ARR, and the liquidity window is still not a named decision window for changing course.',
@@ -1457,6 +1601,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. An impact claim is still not revenue, and the ability to reallocate inside a named decision window is still not unused rights, capacity lines, budget envelopes, or contractual choices on paper.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. An impact claim is still not revenue, and a liquidity note is still not whether the firm can reallocate inside a named decision window.',
       },
@@ -1556,6 +1704,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. A measured outcome is still not impact, and a flexibility note is still not optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. A measured outcome is still not impact, and a liquidity note is still not flexibility.',
@@ -1657,6 +1809,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is not optionality. A reported outcome is still not the value, and the ability to change course is still not theoretical choice inventory.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Liquidity is not flexibility. A reported outcome is still not the value, and paying what is already due is still not the ability to change course.',
       },
@@ -1728,6 +1884,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'A profit figure is not the value. Flexibility is still not optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'A profit figure is not the value. Liquidity is still not flexibility.',
@@ -1849,6 +2009,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Cash collected is not contribution margin. Flexibility is still not optionality. Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper that could be exercised in some future state.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Cash collected is not contribution margin. Liquidity is still not flexibility. Flexibility is whether the firm can reallocate inside a named decision window without breaking obligations, covenants, or continuity.',
       },
@@ -1948,6 +2112,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'A named owner is not closure. Flexibility is not optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'A named owner is not closure. Liquidity is not flexibility.',
@@ -2201,6 +2369,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not optionality.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not flexibility.',
       },
@@ -2300,6 +2472,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'A clearance stamp is not proof the work is finished. Flexibility is not optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'A clearance stamp is not proof the work is finished. Liquidity is not flexibility.',
@@ -4572,6 +4748,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Learning inherits the verified outcome. It does not inherit a flexibility note as optionality.',
+      },
+      {
         slug: 'liquidity-is-not-flexibility',
         note: 'Learning inherits the verified outcome. It does not inherit a liquidity note as flexibility.',
       },
@@ -4650,6 +4830,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show optionality.',
+      },
       {
         slug: 'liquidity-is-not-flexibility',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show flexibility.',

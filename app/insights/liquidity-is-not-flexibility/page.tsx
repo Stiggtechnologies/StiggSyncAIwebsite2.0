@@ -100,8 +100,8 @@ export default function LiquidityIsNotFlexibilityPage() {
               not margin. Margin is not profit. Profit is not value. Value is not outcome. Outcome
               is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
-              Liquidity is not flexibility. Each word can be true in its own place. None of the
-              earlier words fills the last one. A closed work order, cash collected, a unit
+              Liquidity is not flexibility. Flexibility is not optionality. Each word can be true
+              in its own place. None of the earlier words fills the last one. A closed work order, cash collected, a unit
               remainder, a profit figure, a measured outcome, an attributed change, a recognized
               sale, an annualized contract, a spendable balance, a duration at the current net burn,
               obligation continuity through the next decision horizon, assets and claims that can
@@ -114,8 +114,12 @@ export default function LiquidityIsNotFlexibilityPage() {
               covenant breaches. Flexibility is whether the firm can reallocate capital, capacity,
               staffing, vendor mix, or plant priorities inside a named decision window without
               breaking obligations, covenants, or continuity — the ability to choose and change
-              course, not merely to pay what is already due. A liquidity note is not that
-              flexibility claim.
+              course, not merely to pay what is already due. Optionality is whether unused rights,
+              capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan)
+              that could be exercised in some future state — theoretical choice inventory, not proof
+              those choices are executable inside the named decision window (lead times, skills,
+              covenants, plant continuity, and cash may still block exercise). A liquidity note is
+              not that flexibility claim. A flexibility note is not that optionality claim.
             </p>
 
             <p>
@@ -1104,6 +1108,28 @@ export default function LiquidityIsNotFlexibilityPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The liquidity note does not record the flexibility.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/flexibility-is-not-optionality"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Flexibility Is Not Optionality
+              </Link>
+              , on why flexibility is still not optionality. Flexibility is whether the firm can
+              reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named
+              decision window without breaking obligations, covenants, or continuity — the ability
+              to choose and change course, not merely to pay what is already due. Optionality is
+              whether unused rights, capacity lines, budget envelopes, or contractual choices exist
+              on paper (or in a plan) that could be exercised in some future state — theoretical
+              choice inventory, not proof those choices are executable inside the named decision
+              window (lead times, skills, covenants, plant continuity, and cash may still block
+              exercise). A flexible firm can still lack optionality when that reallocation leaves no
+              unused right, capacity line, budget envelope, or contractual choice on paper or in a
+              plan. A firm with optionality on paper can still lack flexibility. An optionality note
+              alone proves neither.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
