@@ -523,7 +523,15 @@ export default function ConfidenceIsNotEvidencePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/correlation-is-not-causation"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Correlation Is Not Causation
+              </Link>
+              , on why co-moving tags, coincident alerts, and dashboard trends are not a recorded
+              causal check and do not authorize action. Companion reading:{' '}
               <Link
                 href="/insights/assumption-is-not-evidence"
                 className="text-[#3B82F6] hover:text-white transition-colors"

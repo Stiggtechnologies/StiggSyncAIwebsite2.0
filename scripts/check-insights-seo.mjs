@@ -466,6 +466,7 @@ const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
   'confidence-is-not-evidence',
+  'correlation-is-not-causation',
   'blank-is-not-zero',
   'silence-is-not-clearance',
   'verification-is-not-optional',
@@ -515,6 +516,7 @@ if (
 const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
+  'correlation-is-not-causation',
   'unknown-is-not-clear',
   'blank-is-not-zero',
   'silence-is-not-clearance',
@@ -557,6 +559,69 @@ for (const required of [
 ]) {
   if (!confidencePage.includes(required)) {
     fail(`confidence-is-not-evidence page must include ${required}`);
+  }
+}
+if (
+  !confidencePage.includes('The series continues with') ||
+  !confidencePage.includes('/insights/correlation-is-not-causation')
+) {
+  fail('confidence-is-not-evidence must point the series forward to correlation-is-not-causation');
+}
+
+const correlationBlock = stepBlock('correlation-is-not-causation');
+for (const required of [
+  'confidence-is-not-evidence',
+  'assumption-is-not-evidence',
+  'unknown-is-not-clear',
+  'blank-is-not-zero',
+  'silence-is-not-clearance',
+  'dashboard-is-not-decision',
+  'alert-is-not-decision',
+  'verification-is-not-optional',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!correlationBlock.includes(`'${required}'`)) {
+    fail(`correlation-is-not-causation related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(correlationBlock)) {
+  fail('correlation-is-not-causation related reading must include the Strategic Pilot');
+}
+if (correlationBlock.includes("next: 'strategic-pilot'")) {
+  fail('correlation-is-not-causation next step is the Field Manual');
+}
+
+const correlationPage = read('app/insights/correlation-is-not-causation/page.tsx');
+for (const required of [
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  '/insights/verification-is-not-optional',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'co-moving tags',
+  'coincident alerts',
+  'dashboard trends',
+  'recorded causal check',
+  'do not authorize action',
+  'Sync recommends',
+  'human decides',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!correlationPage.includes(required)) {
+    fail(`correlation-is-not-causation page must include ${required}`);
   }
 }
 
