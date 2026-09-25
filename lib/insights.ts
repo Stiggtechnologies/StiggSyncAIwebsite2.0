@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'closure-is-not-cash',
+    title: 'Closure Is Not Cash',
+    description:
+      'Closure is not cash. Closing a work order, a ticket, or a shift is an operational close. Closure of the operating loop is the verified outcome recorded against named ownership: achieved, not_achieved, or inconclusive, with measured notes. Cash collected is money received. Revenue recognized is the earning event recorded on the books. Neither commercial record is produced by the close. Treating the closed work order, the closed ticket, or the closed shift as cash collected or revenue recognized ships an operational stamp into the books under the honesty and verification boundary. A closed record can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not an invoice, not a cash receipt, and not a Decision Case that has already collected cash. Evidence from the plant beats the closed record. Sync may surface a closed work order, a closed ticket, or a closed shift beside Evidence, Verification, Proof, Authorization, and Accountability. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat a closed work order as cash collected, or as Learning credit. Sync does not collect cash. Sync does not recognize revenue. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Closing a work order, a ticket, or a shift records an operational close. Closure of the operating loop is the verified outcome recorded against named ownership. Neither is cash collected, and neither is revenue recognized.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'accountability-is-not-closure',
     title: 'Accountability Is Not Closure',
     description:
@@ -582,12 +594,40 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'accountability-is-not-closure': {
-    relatedSlug: 'authorization-is-not-accountability',
-    relatedNote: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
+  'closure-is-not-cash': {
+    relatedSlug: 'accountability-is-not-closure',
+    relatedNote: 'Accountability names who remains responsible after the plant move. Closure is the verified outcome recorded against that ownership. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. It is not the verified outcome, and it is not cash collected.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Value realized is still not cash collected or revenue recognized.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit cash collected or revenue recognized.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not collect cash.',
+      },
+    ],
+  },
+  'accountability-is-not-closure': {
+    relatedSlug: 'closure-is-not-cash',
+    relatedNote: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Closure of the operating loop is the verified outcome. Cash is a commercial record.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain answers whether a claim held. It is not authorization, not accountability, and not closure of the operating loop.',
@@ -777,6 +817,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'closure-is-not-cash',
+        note: 'A completed work order is not verification. Closing the work order is not cash collected or revenue recognized.',
+      },
+      {
         slug: 'assured-is-not-proven',
         note: 'A verified record is not assurance. Assurance is still not proof of a specific claim under named conditions.',
       },
@@ -820,6 +864,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'closure-is-not-cash',
+        note: 'A clearance stamp is not completion. A closed work order, ticket, or shift is not cash collected or revenue recognized.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status field is a label, not clearance. A cleared flag can be a clearance decision or a label on one. Neither stamp is proof the work is finished.',
@@ -3036,6 +3084,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'closure-is-not-cash',
+        note: 'Learning inherits the verified outcome. A closed work order is not cash collected, and it is not revenue recognized.',
+      },
+      {
         slug: 'accountability-is-not-closure',
         note: 'Learning inherits the verified outcome. A named accountable owner without that measured result is not closure.',
       },
@@ -3058,6 +3110,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Recording the check is the measured result. The check does not collect cash and does not recognize revenue.',
+      },
       {
         slug: 'accountability-is-not-closure',
         note: 'Recording the check is the measured result. Naming an accountable owner does not close the operating loop without that record.',
