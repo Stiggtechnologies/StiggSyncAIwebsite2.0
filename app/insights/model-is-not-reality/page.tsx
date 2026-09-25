@@ -895,7 +895,16 @@ export default function ModelIsNotRealityPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/forecast-is-not-fact"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Forecast Is Not Fact
+              </Link>
+              , on why a forecast, a projection, an RUL estimate, a demand plan, a Monte Carlo
+              percentile, or an LLM-generated outlook is a forward-looking compression and not a
+              fact about the plant. Companion reading:{' '}
               <Link
                 href="/insights/map-is-not-terrain"
                 className="text-[#3B82F6] hover:text-white transition-colors"
