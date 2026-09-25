@@ -110,8 +110,8 @@ export default function StrategyIsNotExecutionPage() {
               is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
-              strategy. Strategy is not execution. Each word can be true in its own place. None of
-              the earlier words fills the last one. A closed work order, cash collected, a unit
+              strategy. Strategy is not execution. Execution is not results. Each word can be true
+              in its own place. None of the earlier words fills the last one. A closed work order, cash collected, a unit
               remainder, a profit figure, a measured outcome, an attributed change, a recognized
               sale, an annualized contract, a spendable balance, a duration at the current net burn,
               obligation continuity through the next decision horizon, assets and claims that can
@@ -137,8 +137,12 @@ export default function StrategyIsNotExecutionPage() {
               not proof the work was completed inside that window. Execution is work actually
               completed inside the named decision window with evidence of done outcomes (closed work,
               shipped change, verified plant result) — realized performance against the committed
-              path, not the strategy note, roadmap slide, or allocated budget envelope alone. A
-              strategy note is not that execution claim.
+              path, not the strategy note, roadmap slide, or allocated budget envelope alone. Results
+              is the attributed, measured change in plant capacity, risk, cost, or production the
+              firm can show followed from that completed work under a named measurement window —
+              consequence under the honesty and verification boundary, not the WO close,
+              shipped-change ticket, or single verified plant check alone. A strategy note is not
+              that execution claim. An execution note is not that results claim.
             </p>
 
             <p>
@@ -1284,6 +1288,28 @@ export default function StrategyIsNotExecutionPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The strategy note does not record the execution.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/execution-is-not-results"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Execution Is Not Results
+              </Link>
+              , on why execution is still not results. Execution is work actually completed inside
+              the named decision window with evidence of done outcomes (closed work, shipped change,
+              verified plant result) — realized performance against the committed path, not the
+              strategy note, roadmap slide, or allocated budget envelope alone. Results is the
+              attributed, measured change in plant capacity, risk, cost, or production the firm can
+              show followed from that completed work under a named measurement window — consequence
+              under the honesty and verification boundary, not the WO close, shipped-change ticket,
+              or single verified plant check alone. A firm with execution can still lack results
+              when that completed work is not the attributed measured change under the named
+              measurement window. A firm with results can still lack execution. An execution note
+              alone proves neither. A results note alone proves neither. An execution note is not a
+              green. A results note is not a green.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
