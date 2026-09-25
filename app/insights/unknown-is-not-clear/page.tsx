@@ -377,6 +377,14 @@ export default function UnknownIsNotClearPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/blank-is-not-zero"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Blank Is Not Zero
+              </Link>
+              , on why an empty field, a missing reading, or an unset value is not a measured zero.
               Companion reading:{' '}
               <Link
                 href="/insights/human-decision-is-not-optional"

@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'blank-is-not-zero',
+    title: 'Blank Is Not Zero',
+    description:
+      'An empty field, a missing reading, or an unset value is not a measured zero. Blank means unknown or not yet collected. Zero means a verified measurement of none. Treating blank as zero invents false certainty, hides unknown constraints, and corrupts Recovery, verification, and Decision Case math. Companion to Unknown Is Not Clear.',
+    excerpt:
+      'Blank means the value was not collected. Zero means a verified measurement of none. Storing a blank as zero invents a result and hides the unknown constraint on the Decision Case, in Recovery, and in verification.',
+    category: 'Decision Case',
+    readTime: '7 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'unknown-is-not-clear',
     title: 'Unknown Is Not Clear',
     description:
@@ -222,6 +234,30 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'blank-is-not-zero': {
+    relatedSlug: 'unknown-is-not-clear',
+    relatedNote: 'Missing evidence is unknown. A blank is not a measured zero.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'verification-is-not-optional',
+        note: 'A blank verification field is not a verified outcome of none.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A named act does not turn an empty field into a measurement.',
+      },
+      {
+        slug: 'honesty-boundary-is-not-optional',
+        note: 'Stating the limit does not store a blank as zero.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A green tile does not fill an empty field with zero.',
+      },
+    ],
+  },
   'unknown-is-not-clear': {
     relatedSlug: 'human-decision-is-not-optional',
     relatedNote: 'A named act still leaves missing evidence unknown.',
