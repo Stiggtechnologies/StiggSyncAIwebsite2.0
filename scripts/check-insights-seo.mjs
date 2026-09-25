@@ -353,6 +353,47 @@ for (const required of [
     fail(`unknown-is-not-clear page must include ${required}`);
   }
 }
+if (
+  !unknownPage.includes('The series continues with') ||
+  !unknownPage.includes('/insights/blank-is-not-zero')
+) {
+  fail('unknown-is-not-clear must point the series forward to blank-is-not-zero');
+}
+
+const blankBlock = stepBlock('blank-is-not-zero');
+for (const required of [
+  'unknown-is-not-clear',
+  'verification-is-not-optional',
+  'human-decision-is-not-optional',
+  'honesty-boundary-is-not-optional',
+  'dashboard-is-not-decision',
+]) {
+  if (!blankBlock.includes(`'${required}'`)) {
+    fail(`blank-is-not-zero related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(blankBlock)) {
+  fail('blank-is-not-zero related reading must include the Strategic Pilot');
+}
+
+const blankPage = read('app/insights/blank-is-not-zero/page.tsx');
+for (const required of [
+  '/insights/unknown-is-not-clear',
+  '/insights/verification-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/recommend-is-not-authorize',
+  '/insights/learning-requires-a-verified-outcome',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  'verified measurement of none',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+]) {
+  if (!blankPage.includes(required)) {
+    fail(`blank-is-not-zero page must include ${required}`);
+  }
+}
 
 function readingSlugs(name) {
   const block = section(name);
