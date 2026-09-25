@@ -445,7 +445,17 @@ export default function StatusIsNotClearancePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>
+              , on why a green ready flag, a ready checklist, a ready-to-start badge, or a system
+              ready, crew ready, or parts ready string is a readiness label under the thresholds
+              someone chose, and why that label is not clearance to run, release, start work, leave
+              equipment in service, or close a Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/green-is-not-go"
                 className="text-[#3B82F6] hover:text-white transition-colors"
