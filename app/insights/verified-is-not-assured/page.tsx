@@ -605,6 +605,19 @@ export default function VerifiedIsNotAssuredPage() {
               assure the asset.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              , on why time-bounded confidence that an asset stays in a known-good state under
+              operating conditions, with ownership and monitoring, is still not proof. Proof
+              requires a closed evidentiary chain for a specific claim under named conditions.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

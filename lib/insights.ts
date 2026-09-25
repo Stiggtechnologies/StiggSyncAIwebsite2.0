@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'assured-is-not-proven',
+    title: 'Assured Is Not Proven',
+    description:
+      'Assured is not proven. Assurance is time-bounded confidence that an asset stays in a known-good state under operating conditions, with ownership and monitoring. That standing claim can be probabilistic. Proof is a closed evidentiary chain for a specific claim under named conditions: reproducible checks, lineage, and a decision authority that can refuse when evidence is incomplete. Proof is claim-scoped and falsifiable. Treating assurance as proof ships false certainty into maintenance and production decisions under the honesty and verification boundary. An assurance record can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case that is already proven. Evidence from the plant beats the assurance. Sync may surface an assurance record beside approved evidence when the window, the owner, the monitoring, the conditions, and the assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat assured proof as Learning credit. A named human still decides. Proof stays open until the chain is closed for the specific claim. Companion to Verified Is Not Assured, Complete Is Not Verified, Verification Is Not Optional, Simulation Is Not Proof, Green Is Not Go, Honesty Boundary Is Not Optional, and Human Decision Is Not Optional.',
+    excerpt:
+      'Assurance is time-bounded confidence that an asset stays known-good under operating conditions, with ownership and monitoring. It can be standing and probabilistic. Proof is a closed evidentiary chain for a specific claim under named conditions: reproducible checks, lineage, and a decision authority that can refuse when evidence is incomplete. Treating assurance as proof ships false certainty.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'verified-is-not-assured',
     title: 'Verified Is Not Assured',
     description:
@@ -534,12 +546,48 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'verified-is-not-assured': {
-    relatedSlug: 'complete-is-not-verified',
-    relatedNote: 'A complete badge is a completion label. A verified record is named observation against named criteria. Neither is assurance that the asset stays known-good under operating conditions.',
+  'assured-is-not-proven': {
+    relatedSlug: 'verified-is-not-assured',
+    relatedNote: 'A verified record closes a claim about the past. Assurance is standing confidence that the asset stays known-good. Neither is proof of a specific claim under named conditions.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A complete badge is a completion label. Verification is named observation. Assurance is standing confidence. None of the three is proof.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check closes a claim about the past. An assurance label does not replace that check, and the check does not prove the standing claim.',
+      },
+      {
+        slug: 'simulation-is-not-proof',
+        note: 'A controlled representation of possible futures is not proof. An assurance built on that run is not proof either.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An assurance label on that tile is not a closed chain.',
+      },
+      {
+        slug: 'honesty-boundary-is-not-optional',
+        note: 'The boundary keeps standing confidence from being stated as proof of a specific claim.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A named person can refuse when evidence is incomplete. The assurance label does not.',
+      },
+    ],
+  },
+  'verified-is-not-assured': {
+    relatedSlug: 'assured-is-not-proven',
+    relatedNote: 'Assurance is time-bounded confidence that the asset stays known-good. Proof is a closed evidentiary chain for a specific claim under named conditions.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A complete badge is a completion label. A verified record is named observation against named criteria. Neither is assurance that the asset stays known-good under operating conditions.',
+      },
       {
         slug: 'verification-is-not-optional',
         note: 'The check closes a claim about the past. Recording achieved, not_achieved, or inconclusive does not open a standing assurance.',
@@ -568,6 +616,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'A verified record is not assurance. Assurance is still not proof of a specific claim under named conditions.',
+      },
       {
         slug: 'cleared-is-not-complete',
         note: 'A cleared flag is a clearance decision or a label on one. It is not completion. A complete badge is a completion label under criteria someone chose. It is not verification.',
@@ -768,6 +820,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'A green tile is not go. An assurance label on that tile is not proof the asset stays known-good.',
+      },
       {
         slug: 'verified-is-not-assured',
         note: 'A verified stamp on a green tile is a past check. It is not permission to go, and it is not assurance.',
@@ -1240,6 +1296,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'A simulation is not proof. An assurance label is not proof either. Proof is a closed evidentiary chain for a specific claim.',
+      },
       {
         slug: 'telemetry-is-not-truth',
         note: 'A dense feed is not truth for the decision. A well-sampled run is still not proof the plant will behave that way.',
@@ -2565,6 +2625,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'assured-is-not-proven',
+        note: 'A named person can refuse when evidence is incomplete. An assurance label does not close the chain or supply that refusal.',
+      },
+      {
         slug: 'verified-is-not-assured',
         note: 'A named decision does not convert a verified record into assurance. The human authority boundary still has to be named.',
       },
@@ -2604,6 +2668,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'Calling assurance proof crosses the honesty boundary. Assurance is standing confidence. Proof is a closed chain for a specific claim.',
+      },
       {
         slug: 'verified-is-not-assured',
         note: 'A verified record is a claim about the past. Stating it as continuing fitness crosses the honesty boundary.',
@@ -2794,6 +2862,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'assured-is-not-proven',
+        note: 'Recording the check does not prove a standing assurance. Proof is claim-scoped and falsifiable.',
+      },
       {
         slug: 'verified-is-not-assured',
         note: 'The check closes a claim about the past. It does not assure that the asset stays known-good.',
