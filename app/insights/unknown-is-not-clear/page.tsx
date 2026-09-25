@@ -84,8 +84,15 @@ export default function UnknownIsNotClearPage() {
                 Evidence
               </Link>{' '}
               chapter keeps a visible split between observed fact, assumption, and what is still
-              missing. A proposal with no basis is not ready for a human decision. What is still
-              missing is unknown. Recovery uses the same constraint on the record: missing or stale
+              missing.{' '}
+              <Link
+                href="/insights/assumption-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assumption Is Not Evidence
+              </Link>{' '}
+              keeps that assumption from being stored as a recorded fact. A proposal with no basis
+              is not ready for a human decision. What is still missing is unknown. Recovery uses the same constraint on the record: missing or stale
               evidence stays unknown, and bad or not-ready evidence is blocked.
             </p>
 

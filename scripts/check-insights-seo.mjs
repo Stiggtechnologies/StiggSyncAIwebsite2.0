@@ -322,6 +322,7 @@ if (
 const unknownBlock = stepBlock('unknown-is-not-clear');
 for (const required of [
   'human-decision-is-not-optional',
+  'assumption-is-not-evidence',
   'silence-is-not-clearance',
   'verification-is-not-optional',
   'recommend-is-not-authorize',
@@ -339,6 +340,7 @@ if (!/includePilot:\s*true/.test(unknownBlock)) {
 const unknownPage = read('app/insights/unknown-is-not-clear/page.tsx');
 for (const required of [
   '/insights/human-decision-is-not-optional',
+  '/insights/assumption-is-not-evidence',
   '/insights/silence-is-not-clearance',
   '/insights/verification-is-not-optional',
   '/insights/recommend-is-not-authorize',
@@ -365,6 +367,7 @@ if (
 const blankBlock = stepBlock('blank-is-not-zero');
 for (const required of [
   'unknown-is-not-clear',
+  'assumption-is-not-evidence',
   'silence-is-not-clearance',
   'verification-is-not-optional',
   'human-decision-is-not-optional',
@@ -382,6 +385,7 @@ if (!/includePilot:\s*true/.test(blankBlock)) {
 const blankPage = read('app/insights/blank-is-not-zero/page.tsx');
 for (const required of [
   '/insights/unknown-is-not-clear',
+  '/insights/assumption-is-not-evidence',
   '/insights/silence-is-not-clearance',
   '/insights/verification-is-not-optional',
   '/insights/human-decision-is-not-optional',
@@ -408,6 +412,7 @@ if (
 const silenceBlock = stepBlock('silence-is-not-clearance');
 for (const required of [
   'unknown-is-not-clear',
+  'assumption-is-not-evidence',
   'blank-is-not-zero',
   'recommend-is-not-authorize',
   'human-decision-is-not-optional',
@@ -427,6 +432,7 @@ if (silenceBlock.includes("next: 'strategic-pilot'")) {
 const silencePage = read('app/insights/silence-is-not-clearance/page.tsx');
 for (const required of [
   '/insights/unknown-is-not-clear',
+  '/insights/assumption-is-not-evidence',
   '/insights/blank-is-not-zero',
   '/insights/recommend-is-not-authorize',
   '/insights/human-decision-is-not-optional',
@@ -447,6 +453,55 @@ for (const required of [
 ]) {
   if (!silencePage.includes(required)) {
     fail(`silence-is-not-clearance page must include ${required}`);
+  }
+}
+if (
+  !silencePage.includes('The series continues with') ||
+  !silencePage.includes('/insights/assumption-is-not-evidence')
+) {
+  fail('silence-is-not-clearance must point the series forward to assumption-is-not-evidence');
+}
+
+const assumptionBlock = stepBlock('assumption-is-not-evidence');
+for (const required of [
+  'unknown-is-not-clear',
+  'blank-is-not-zero',
+  'silence-is-not-clearance',
+  'verification-is-not-optional',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!assumptionBlock.includes(`'${required}'`)) {
+    fail(`assumption-is-not-evidence related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(assumptionBlock)) {
+  fail('assumption-is-not-evidence related reading must include the Strategic Pilot');
+}
+if (assumptionBlock.includes("next: 'strategic-pilot'")) {
+  fail('assumption-is-not-evidence next step is the Field Manual');
+}
+
+const assumptionPage = read('app/insights/assumption-is-not-evidence/page.tsx');
+for (const required of [
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/verification-is-not-optional',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'not a recorded fact',
+  'recorded check',
+  'verified outcome',
+  'unverified model output',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!assumptionPage.includes(required)) {
+    fail(`assumption-is-not-evidence page must include ${required}`);
   }
 }
 

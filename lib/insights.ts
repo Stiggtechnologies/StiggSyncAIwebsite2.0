@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'assumption-is-not-evidence',
+    title: 'Assumption Is Not Evidence',
+    description:
+      'An assumption is not evidence. A belief, a habit, a prior shift’s story, a tribal “we always do it this way,” or an unverified model output is not a recorded fact on the Decision Case. Clearance, authorization, and learning require a recorded check or a verified outcome, not a confident guess. Companion to Unknown Is Not Clear, Blank Is Not Zero, and Silence Is Not Clearance.',
+    excerpt:
+      'A belief, a habit, a prior shift’s story, or an unverified model output is not a recorded fact. Clearance, authorization, and learning still require a recorded check or a verified outcome.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'silence-is-not-clearance',
     title: 'Silence Is Not Clearance',
     description:
@@ -246,12 +258,40 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'assumption-is-not-evidence': {
+    relatedSlug: 'unknown-is-not-clear',
+    relatedNote: 'Missing evidence stays unknown. An assumption does not record it as fact.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'blank-is-not-zero',
+        note: 'An empty field is not a measured zero. An assumption does not fill it.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not approval. A story about that quiet is not the decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A confident guess is not the check.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A model line without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'silence-is-not-clearance': {
     relatedSlug: 'unknown-is-not-clear',
     relatedNote: 'Missing evidence stays unknown. Silence does not clear it.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A belief or a model line is not a recorded fact.',
+      },
       {
         slug: 'blank-is-not-zero',
         note: 'An empty field is not a measured zero, and silence does not fill it.',
@@ -276,6 +316,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An assumption does not turn a blank into a measurement.',
+      },
       {
         slug: 'silence-is-not-clearance',
         note: 'Silence does not turn a blank into a measured zero.',
@@ -304,6 +348,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'An assumption does not record missing evidence as fact.',
+      },
       {
         slug: 'silence-is-not-clearance',
         note: 'No reply, no alert, and an empty inbox are not clearance.',
