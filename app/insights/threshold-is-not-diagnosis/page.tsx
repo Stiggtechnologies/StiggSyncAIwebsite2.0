@@ -663,7 +663,16 @@ export default function ThresholdIsNotDiagnosisPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/symptom-is-not-cause"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Symptom Is Not Cause
+              </Link>
+              , on why a vibration spike, a hot bearing, a pressure drop, an operator report, a
+              CMMS complaint code, a red tile, or any other observed symptom is not the cause and
+              not a Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/proxy-is-not-outcome"
                 className="text-[#3B82F6] hover:text-white transition-colors"

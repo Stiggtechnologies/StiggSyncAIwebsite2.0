@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'symptom-is-not-cause',
+    title: 'Symptom Is Not Cause',
+    description:
+      'Symptom is not cause. A vibration spike, a hot bearing, a pressure drop, an operator report, a CMMS complaint code, a red tile, or any other observed symptom can inform a recommendation. It does not name the failure mode, prove root cause, authorize corrective work, verify outcome, or replace a named human decision on the Decision Case. Sync may surface symptoms and correlate them with approved evidence. A named human still decides. Companion to Threshold Is Not Diagnosis, Alert Is Not Decision, Correlation Is Not Causation, Proxy Is Not Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'A vibration spike, a hot bearing, a pressure drop, an operator report, a CMMS complaint code, or a red tile can inform a recommendation. It does not name the failure mode, prove root cause, authorize corrective work, or replace a named human decision.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'threshold-is-not-diagnosis',
     title: 'Threshold Is Not Diagnosis',
     description:
@@ -318,12 +330,76 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'symptom-is-not-cause': {
+    relatedSlug: 'threshold-is-not-diagnosis',
+    relatedNote: 'A line that was crossed is not the diagnosis. An observed symptom is not the cause.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'alert-is-not-decision',
+        note: 'Acknowledging the symptom the alert reports is still not a decision.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Holding a symptom beside approved evidence does not prove the cause.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'Symptom clearance is not the verified operational outcome.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A symptom that went away is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope that shows up as a symptom is still not a recorded cause.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the symptom names the mode is not a recorded check.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A red tile is a display. It is not the cause.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not the symptom stored as the cause.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: '“The bearing is hot, so we know the cause” is not a recorded fact.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A symptom does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A symptom does not record it as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A quiet asset is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A candidate cause without a reconstructable trail is not a cause.',
+      },
+    ],
+  },
   'threshold-is-not-diagnosis': {
     relatedSlug: 'proxy-is-not-outcome',
     relatedNote: 'A stand-in is not the outcome. A threshold breach is not the diagnosis.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'An observed symptom is not the cause and not the Decision Case.',
+      },
       {
         slug: 'alert-is-not-decision',
         note: 'An alert can report a breach. Seeing it is still not a decision.',
@@ -381,6 +457,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'symptom-is-not-cause',
+        note: 'A symptom that cleared is not the verified outcome.',
+      },
+      {
         slug: 'threshold-is-not-diagnosis',
         note: 'A line that was crossed is not a diagnosis and not the Decision Case.',
       },
@@ -437,6 +517,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'symptom-is-not-cause',
+        note: 'A slope that looks like a symptom is still not the cause.',
+      },
+      {
         slug: 'threshold-is-not-diagnosis',
         note: 'A line that was crossed is not a diagnosis and not a recorded check.',
       },
@@ -488,6 +572,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'A symptom held beside co-moving tags still does not prove the cause.',
+      },
       {
         slug: 'threshold-is-not-diagnosis',
         note: 'Tags that cross a band together still do not name the failure mode.',
