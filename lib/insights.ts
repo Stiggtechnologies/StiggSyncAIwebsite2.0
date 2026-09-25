@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'noise-is-not-signal',
+    title: 'Noise Is Not Signal',
+    description:
+      'Noise is not signal. Sensor chatter, false positives, process variation, nuisance alarms, telemetry spikes without a confirmed asset state change, and operator anecdote volume can fill a dashboard. That is noise. Noise can inform a recommendation to investigate. It is not an actionable signal, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Sync may surface correlated noise with approved evidence. A named human still records the Decision Case. Companion to Symptom Is Not Cause, Threshold Is Not Diagnosis, Alert Is Not Decision, Correlation Is Not Causation, Proxy Is Not Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Sensor chatter, false positives, nuisance alarms, and telemetry spikes without a confirmed asset state change can fill a dashboard. That is noise. Noise can inform a recommendation to investigate. It is not an actionable signal and not a Decision Case.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'symptom-is-not-cause',
     title: 'Symptom Is Not Cause',
     description:
@@ -330,12 +342,80 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'noise-is-not-signal': {
+    relatedSlug: 'symptom-is-not-cause',
+    relatedNote: 'An observed symptom is not the cause. Chatter on the dashboard is not an actionable signal.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A line that was crossed is not a diagnosis. Noise around the line is still noise.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert can report chatter. Seeing it is still not a decision.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Tags that move together are not a recorded causal check.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A stand-in measure is not the verified operational outcome.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. Clearing the chatter is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope in the chatter is still not a recorded check.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the chatter names the mode is not a recorded check.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A full dashboard is a display. It is not the Decision Case.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not cleared noise.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'The room is loud, so the mode is known, is not a recorded fact.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. Chatter does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. Noise does not record it as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A quiet queue is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'Chatter without a reconstructable trail is not an actionable signal.',
+      },
+    ],
+  },
   'symptom-is-not-cause': {
     relatedSlug: 'threshold-is-not-diagnosis',
     relatedNote: 'A line that was crossed is not the diagnosis. An observed symptom is not the cause.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter around a symptom is not an actionable signal and not the cause.',
+      },
       {
         slug: 'alert-is-not-decision',
         note: 'Acknowledging the symptom the alert reports is still not a decision.',
@@ -397,6 +477,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter that filled the dashboard is not an actionable signal and not a Decision Case.',
+      },
+      {
         slug: 'symptom-is-not-cause',
         note: 'An observed symptom is not the cause and not the Decision Case.',
       },
@@ -456,6 +540,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'noise-is-not-signal',
+        note: 'A noisy stand-in is not an actionable signal and not the verified outcome.',
+      },
       {
         slug: 'symptom-is-not-cause',
         note: 'A symptom that cleared is not the verified outcome.',
@@ -517,6 +605,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'noise-is-not-signal',
+        note: 'A noisy slope is not an actionable signal and not a recorded check.',
+      },
+      {
         slug: 'symptom-is-not-cause',
         note: 'A slope that looks like a symptom is still not the cause.',
       },
@@ -572,6 +664,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Co-moving chatter is not a recorded causal check and not an actionable signal.',
+      },
       {
         slug: 'symptom-is-not-cause',
         note: 'A symptom held beside co-moving tags still does not prove the cause.',

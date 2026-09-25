@@ -577,6 +577,7 @@ for (const required of [
   'proxy-is-not-outcome',
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
+  'noise-is-not-signal',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -643,6 +644,7 @@ for (const required of [
   'proxy-is-not-outcome',
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
+  'noise-is-not-signal',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
   'dashboard-is-not-decision',
@@ -712,6 +714,7 @@ if (
 const proxyBlock = stepBlock('proxy-is-not-outcome');
 for (const required of [
   'trend-is-not-truth',
+  'noise-is-not-signal',
   'threshold-is-not-diagnosis',
   'symptom-is-not-cause',
   'correlation-is-not-causation',
@@ -791,6 +794,7 @@ const thresholdBlock = stepBlock('threshold-is-not-diagnosis');
 for (const required of [
   'proxy-is-not-outcome',
   'symptom-is-not-cause',
+  'noise-is-not-signal',
   'alert-is-not-decision',
   'correlation-is-not-causation',
   'verification-is-not-optional',
@@ -868,6 +872,7 @@ if (
 const symptomBlock = stepBlock('symptom-is-not-cause');
 for (const required of [
   'threshold-is-not-diagnosis',
+  'noise-is-not-signal',
   'alert-is-not-decision',
   'correlation-is-not-causation',
   'proxy-is-not-outcome',
@@ -950,6 +955,103 @@ for (const required of [
 ]) {
   if (!symptomPage.includes(required)) {
     fail(`symptom-is-not-cause page must include ${required}`);
+  }
+}
+if (
+  !symptomPage.includes('The series continues with') ||
+  !symptomPage.includes('/insights/noise-is-not-signal')
+) {
+  fail('symptom-is-not-cause must point the series forward to noise-is-not-signal');
+}
+
+const noiseBlock = stepBlock('noise-is-not-signal');
+for (const required of [
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'alert-is-not-decision',
+  'correlation-is-not-causation',
+  'proxy-is-not-outcome',
+  'verification-is-not-optional',
+  'trend-is-not-truth',
+  'confidence-is-not-evidence',
+  'dashboard-is-not-decision',
+  'learning-requires-a-verified-outcome',
+  'assumption-is-not-evidence',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!noiseBlock.includes(`'${required}'`)) {
+    fail(`noise-is-not-signal related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(noiseBlock)) {
+  fail('noise-is-not-signal related reading must include the Strategic Pilot');
+}
+if (noiseBlock.includes("next: 'strategic-pilot'")) {
+  fail('noise-is-not-signal next step is the Field Manual');
+}
+
+const noisePage = read('app/insights/noise-is-not-signal/page.tsx');
+for (const required of [
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/alert-is-not-decision',
+  '/insights/correlation-is-not-causation',
+  '/insights/proxy-is-not-outcome',
+  '/insights/verification-is-not-optional',
+  '/insights/trend-is-not-truth',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/dashboard-is-not-decision',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'sensor chatter',
+  'false positives',
+  'process variation',
+  'nuisance alarms',
+  'telemetry spikes',
+  'confirmed asset state change',
+  'operator anecdote',
+  'actionable signal',
+  'not a diagnosis',
+  'root cause',
+  'authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'false certainty',
+  'work queues',
+  'craft time',
+  'wrong lesson',
+  'correlated noise',
+  'approved evidence',
+  'recommend investigation',
+  'auto-close',
+  'auto-authorize',
+  'auto-clear',
+  'Learning credit',
+  'named human',
+  'Verification stays open',
+  'Sync may surface',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!noisePage.includes(required)) {
+    fail(`noise-is-not-signal page must include ${required}`);
   }
 }
 
