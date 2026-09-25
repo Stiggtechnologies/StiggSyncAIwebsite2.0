@@ -739,7 +739,16 @@ export default function SymptomIsNotCausePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/noise-is-not-signal"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Noise Is Not Signal
+              </Link>
+              , on why sensor chatter, false positives, process variation, nuisance alarms,
+              telemetry spikes without a confirmed asset state change, and operator anecdote volume
+              are not an actionable signal and not a Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/threshold-is-not-diagnosis"
                 className="text-[#3B82F6] hover:text-white transition-colors"
