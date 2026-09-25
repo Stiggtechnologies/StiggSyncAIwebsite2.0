@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'honesty-boundary-is-not-optional',
+    title: 'Honesty Boundary Is Not Optional',
+    description:
+      'Sync states what is simulated, seeded, or out of scope. Calling a pilot “production,” hiding simulation, or marketing self-guided as live when it is not, crosses the honesty boundary. Naming the boundary is not weakness — it is the industrial requirement. A Decision Case that pretends plant authority Sync does not hold is not a Decision Case.',
+    excerpt:
+      'Calling a pilot production, hiding simulation, or marketing self-guided as live when it is not, crosses the honesty boundary. Naming what is simulated, seeded, or out of scope is the industrial requirement.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'alert-is-not-decision',
     title: 'Alert Is Not Decision',
     description:
@@ -186,6 +198,30 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'honesty-boundary-is-not-optional': {
+    relatedSlug: 'alert-is-not-decision',
+    relatedNote: 'A rule crossing is still not the decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A status display is still not the decision.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A drafted proposal is not permission.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'Work intent on the case is still not plant execution.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The case stays open until the check is recorded.',
+      },
+    ],
+  },
   'alert-is-not-decision': {
     relatedSlug: 'dashboard-is-not-decision',
     relatedNote: 'A status display is still not the decision.',
