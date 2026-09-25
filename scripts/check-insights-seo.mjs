@@ -518,6 +518,7 @@ for (const required of [
   'assumption-is-not-evidence',
   'correlation-is-not-causation',
   'trend-is-not-truth',
+  'proxy-is-not-outcome',
   'unknown-is-not-clear',
   'blank-is-not-zero',
   'silence-is-not-clearance',
@@ -573,6 +574,7 @@ const correlationBlock = stepBlock('correlation-is-not-causation');
 for (const required of [
   'confidence-is-not-evidence',
   'trend-is-not-truth',
+  'proxy-is-not-outcome',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -636,6 +638,7 @@ if (
 const trendBlock = stepBlock('trend-is-not-truth');
 for (const required of [
   'correlation-is-not-causation',
+  'proxy-is-not-outcome',
   'confidence-is-not-evidence',
   'assumption-is-not-evidence',
   'dashboard-is-not-decision',
@@ -693,6 +696,82 @@ for (const required of [
 ]) {
   if (!trendPage.includes(required)) {
     fail(`trend-is-not-truth page must include ${required}`);
+  }
+}
+if (
+  !trendPage.includes('The series continues with') ||
+  !trendPage.includes('/insights/proxy-is-not-outcome')
+) {
+  fail('trend-is-not-truth must point the series forward to proxy-is-not-outcome');
+}
+
+const proxyBlock = stepBlock('proxy-is-not-outcome');
+for (const required of [
+  'trend-is-not-truth',
+  'correlation-is-not-causation',
+  'confidence-is-not-evidence',
+  'dashboard-is-not-decision',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'assumption-is-not-evidence',
+  'alert-is-not-decision',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!proxyBlock.includes(`'${required}'`)) {
+    fail(`proxy-is-not-outcome related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(proxyBlock)) {
+  fail('proxy-is-not-outcome related reading must include the Strategic Pilot');
+}
+if (proxyBlock.includes("next: 'strategic-pilot'")) {
+  fail('proxy-is-not-outcome next step is the Field Manual');
+}
+
+const proxyPage = read('app/insights/proxy-is-not-outcome/page.tsx');
+for (const required of [
+  '/insights/trend-is-not-truth',
+  '/insights/correlation-is-not-causation',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  '/insights/verification-is-not-optional',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'leading indicator',
+  'model score',
+  'green tile',
+  'closed work-order count',
+  'MTBF estimate',
+  'sensor health %',
+  'verified operational outcome',
+  'false closure',
+  'skips verification',
+  'hoped-for proxy move',
+  'does not authorize',
+  'clear a gate',
+  'named human decides',
+  'Sync recommends',
+  'Sync may surface proxies',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!proxyPage.includes(required)) {
+    fail(`proxy-is-not-outcome page must include ${required}`);
   }
 }
 
