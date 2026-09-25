@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'dashboard-is-not-decision',
+    title: 'Dashboard Is Not Decision',
+    description:
+      'A dashboard can surface plant or maintenance state: KPI tiles, trend charts, health scores, and red, amber, and green status. Seeing that display is not a Decision Case and not a decision. Sync may show coverage, recommendations, and status. A named human still opens the case on a question, cites approved evidence, and accepts, rejects, escalates, or returns.',
+    excerpt:
+      'A green dashboard, an improved trend, or a cleared alert tile must not be read as authorization, verification of outcome, work-order execution, or plant control.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'question-is-not-decision',
     title: 'Question Is Not Decision',
     description:
@@ -162,6 +174,26 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'dashboard-is-not-decision': {
+    relatedSlug: 'question-is-not-decision',
+    relatedNote: 'Opening a question is still not the decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'coverage-is-not-control',
+        note: 'A dashboard is part of what is watched. It is not control of the plant.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A status display is not a named decision on a recommendation.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'A green tile is not the check that closes the case.',
+      },
+    ],
+  },
   'question-is-not-decision': {
     relatedSlug: 'coverage-is-not-control',
     relatedNote: 'A watched set is still not control of the plant.',

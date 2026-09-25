@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('question-is-not-decision');
+const article = getInsightArticle('dashboard-is-not-decision');
 
-export default function QuestionIsNotDecisionPage() {
+export default function DashboardIsNotDecisionPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -32,7 +32,7 @@ export default function QuestionIsNotDecisionPage() {
               {article?.category ?? 'Decision Case'}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Question Is Not Decision
+              Dashboard Is Not Decision
             </h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
@@ -42,29 +42,31 @@ export default function QuestionIsNotDecisionPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              A Decision Case opens on a reliability or maintenance question a named person can
-              decide. That question is written down before evidence and before a recommendation.
-              Writing it down does not decide the case.
+              A dashboard can surface plant or maintenance state. KPI tiles, trend charts, health
+              scores, and red, amber, and green status are that display. Seeing them does not open
+              a Decision Case, and it does not decide one.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              A Decision Case opens on a reliability or maintenance question a named person can
-              decide. The question is recorded before evidence or recommendation. Recording or
-              refining a question is not the decision. Sync may hold the question and gather
-              approved evidence; a named human accepts, rejects, escalates, or returns. An open
-              question, a clarified question, or a rephrased question must not be read as
-              authorization, execution, or plant control.
+              A dashboard — KPI tiles, trend charts, health scores, and red, amber, and green
+              status — can surface plant or maintenance state. Seeing a dashboard is not a Decision
+              Case and not a decision. Sync may show coverage, recommendations, and status. A named
+              human still opens a Decision Case on a question, cites approved evidence, and
+              accepts, rejects, escalates, or returns. A green dashboard, an improved trend, or a
+              cleared alert tile must not be read as authorization, verification of outcome,
+              work-order execution, or plant control.
             </p>
 
             <p>
-              Reliability work collapses the first words because a clear question sounds like
-              progress. Someone names the asset, the failure, or the deferral. The meeting tightens
-              the sentence. The case now holds a better line. Later that line is cited as if the
-              work were approved, the job were released, or the plant were under direction. It was
-              not. The record stored a question. No named person had accepted, rejected, escalated,
-              or returned a recommendation.
+              Reliability work collapses the display because a settled color looks like a settled
+              case. The health score moves. The trend line changes direction. An alert tile clears.
+              The meeting treats the screen as if a question had been decided, work had been
+              authorized, an outcome had been checked, or the plant were under direction. It was
+              not. The screen showed state. No named person had opened a Decision Case on a
+              question, cited approved evidence, and accepted, rejected, escalated, or returned a
+              recommendation.
             </p>
 
             <p>
@@ -81,92 +83,92 @@ export default function QuestionIsNotDecisionPage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why the Question step cannot be read as the human decision. The
-              manual is the public contents. The{' '}
-              <Link
-                href={fieldManualPath('question')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Question
-              </Link>{' '}
-              chapter and the{' '}
+              . This essay is why a dashboard cannot be read as the human decision or as
+              verification. The manual is the public contents. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
-              chapter are the two steps this essay keeps apart.
-            </p>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              The case opens on a question
-            </h2>
-
-            <p>
-              The opening record is a reliability or maintenance question a named person can
-              decide. It can be a failure that needs a cause. It can be a job someone wants to
-              defer. It can be a condition someone wants watched until the next outage. The{' '}
+              chapter and the{' '}
               <Link
-                href={fieldManualPath('question')}
+                href={fieldManualPath('verification')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Question
+                Verification
               </Link>{' '}
-              chapter publishes that opening. It is step 01 on the spine.
+              chapter are the two steps this essay keeps apart from the display.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">A dashboard surfaces state</h2>
+
+            <p>
+              A dashboard is a display of plant or maintenance state. A KPI tile shows a number. A
+              trend chart shows how that number moved. A health score summarizes readings into one
+              figure. Red, amber, and green status assigns a color to a condition. Those objects
+              can make a condition visible to a person in the room. They do not open a case, and
+              they do not name who may decide it.
             </p>
 
             <p>
-              The question is recorded before evidence or recommendation. Evidence is not attached
-              yet. No proposed next action has been drafted. Nobody has been asked to approve. The
-              case has a subject a person could decide. It does not have the decision.
+              <Link
+                href="/insights/coverage-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Coverage Is Not Control
+              </Link>{' '}
+              already places a dashboard with the watched set: sensors, CMMS rows, patrol routes,
+              and the tiles on a screen. Coverage is what is watched. Control authority is
+              permission to order work, isolate equipment, or change the plant. This essay is the
+              next boundary. A display of state is not the Decision Case that would decide what to
+              do about that state.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              A question that never leaves this step remains a question.
+              A watched number is not a question on a case. A green tile is not a named decision.
             </p>
 
             <p>
-              Sharper wording does not advance it. Noting a missing fact does not advance it. The
-              signed-in case can store the sentence so the loop has a start. Storage is not
-              acceptance.
+              The number can be current. The color can match a rule someone wrote. The chart can be
+              readable. None of that records a reliability or maintenance question, the evidence
+              cited for it, or a human act on a recommendation.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Recording or refining a question is not the decision
+              Seeing a dashboard is not a Decision Case
             </h2>
 
             <p>
-              Sync may hold the question. Holding it means the signed-in case keeps the sentence
-              where the loop starts, so a later reader can see what was asked. Sync may gather
-              approved evidence onto that same case: observed fact, assumption, and what is still
-              missing. The{' '}
+              A Decision Case opens on a reliability or maintenance question a named person can
+              decide. The question is recorded before evidence or recommendation.{' '}
               <Link
-                href={fieldManualPath('evidence')}
+                href="/insights/question-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Evidence
+                Question Is Not Decision
               </Link>{' '}
-              chapter publishes that step. Stage-1 evidence is the record held on the case. A live
-              connector that pulls historian or control-system tags sits outside this edition.
-              Gathering that record does not accept a proposal. There may not be a proposal yet.
+              states that opening. A dashboard does not write the question. A person does, on the
+              signed-in case.
             </p>
 
             <p>
-              Refining is the same kind of work. The question is narrowed to one asset. “Look at
-              the pump” becomes “can this seal wait until the next outage.” The words are clearer.
-              Authority has not moved. An open question, a clarified question, and a rephrased
-              question are still questions.
+              Seeing the dashboard is not that opening. The screen can be up while no case exists.
+              The screen can change while an existing case stays where it was. The display and the
+              case are different records. One shows state. The other holds a question a named
+              person can decide.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Recording or refining a question is not the decision.
+              Seeing a dashboard is not a Decision Case and not a decision.
             </p>
 
             <p>
-              A later reader should be able to tell those three from a decision. If the case shows
-              only the question, nothing has been accepted, rejected, escalated, or returned. If
-              evidence has been added, the case shows a basis. It still does not show who decided.
+              Sync may show coverage, recommendations, and status. Showing them puts a view where a
+              person can read it. The view can include what is watched, a proposed next action, and
+              a status beside that proposal. The view is still not the case. A named human still
+              opens a Decision Case on a question. Until that opening is recorded, Sync has shown a
+              display. It has not started the loop.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -176,67 +178,106 @@ export default function QuestionIsNotDecisionPage() {
             <p>
               The human decision comes after a recommendation exists to decide. A recommendation
               states a proposed next action, the evidence it uses, and the uncertainty it leaves in
-              view. Drafting that proposal leaves authority where it already sits. That split is
-              the subject of{' '}
+              view. Drafting that proposal leaves authority where it already sits.{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Recommend Is Not Authorize
-              </Link>
-              .
+              </Link>{' '}
+              states that split. A status shown next to the draft does not close it.
             </p>
 
             <p>
-              A named human accepts, rejects, escalates, or returns. That act is the decision. The{' '}
+              A named human still opens the case on a question, cites approved evidence, and
+              accepts, rejects, escalates, or returns. Citing approved evidence means the decision
+              points at the record already on the case: observed fact, assumption, and what is
+              still missing. A health score is not that citation. A trend chart is not that
+              citation. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
-              chapter publishes it. The case keeps the person beside the proposal: who decided, and
-              which recommendation they decided. Until a named person has made that act, the case
-              holds a question and, at most, a proposal. The person who can accept the operational
-              consequence is still the one who decides.
+              chapter publishes the act. The case keeps the person beside the proposal they
+              decided. The person who can accept the operational consequence is still the one who
+              decides.
             </p>
 
             <p>
-              Read the two steps as separate chapters:{' '}
-              <Link
-                href={fieldManualPath('question')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Question
-              </Link>{' '}
-              and{' '}
-              <Link
-                href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Human decision
-              </Link>
-              . The first is recorded before evidence or recommendation. The second is the named
-              act on a recommendation. A well-phrased question is not a substitute for that act.
+              Until that act is on the case, the display can change and the decision is still
+              absent. A tile that turns green does not accept a recommendation. A tile that turns
+              red does not reject one. Amber does not escalate. A cleared alert does not return
+              the proposal to the person who drafted it. Those are colors and states. The four acts
+              are a named person on the case.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              An open question is not authorization, execution, or control
+              A green tile is not verification
             </h2>
 
+            <p>
+              Verification is the check after a named human has authorized an action. It asks
+              whether that action produced the result the decision named, and it names the evidence
+              on the case that would show it. The signed-in case holds that check next to the
+              question, the proposal, and the person who decided. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter publishes that step.{' '}
+              <Link
+                href="/insights/verification-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification Is Not Optional
+              </Link>{' '}
+              states the gate: the case is not closed until the check is recorded.
+            </p>
+
             <p className="text-xl font-semibold text-white">
-              An open question, a clarified question, or a rephrased question must not be read as
-              authorization, execution, or plant control.
+              A green dashboard, an improved trend, or a cleared alert tile must not be read as
+              verification of outcome.
             </p>
 
             <p>
-              Authorization is the named human decision on a recommendation. The question sits
-              before that decision. Clarifying the wording does not grant permission to do the
-              work. Rephrasing it does not either.
+              A tile can turn green because a sensor recovered, a threshold moved, a calculation
+              refreshed, or someone cleared the display. A trend can improve for the same kinds of
+              reasons. None of those events records who authorized an action, or whether the
+              authorized action did what it was supposed to do. A dashboard that was never tied to
+              an authorized action has nothing authorized to check. Citing the color as if the
+              outcome were known treats a display as a closed case.
             </p>
 
             <p>
-              The same question does not execute the work.{' '}
+              Stage-1 verification is the check written on the case. This edition does not treat a
+              live pull of historian or control-system tags as that check. A dashboard fed by those
+              tags, or by simulated or seeded practice records, is still a display. It is not the
+              verification step. Learning that follows verification inherits the closed case. It
+              does not inherit a tile that changed color.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              A cleared display is not authorization, execution, or control
+            </h2>
+
+            <p>
+              A green dashboard, an improved trend, or a cleared alert tile must not be read as
+              authorization, work-order execution, or plant control.
+            </p>
+
+            <p>
+              Authorization is the named human decision on a recommendation. The dashboard sits
+              outside that act. Color does not grant permission to do the work. An improved trend
+              does not either. The recommendation can still be rejected, escalated, or returned
+              after the screen looks calm.
+            </p>
+
+            <p>
+              The same display does not execute the work.{' '}
               <Link
                 href="/insights/action-is-not-execution"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -244,37 +285,18 @@ export default function QuestionIsNotDecisionPage() {
                 Action Is Not Execution
               </Link>{' '}
               states the later boundary. An ACTION disposition records work intent after a human
-              decision. It does not write a work order, isolate equipment, or change the plant. A
-              question is earlier than that disposition. It cannot be read as execution. ACTION
-              stays locked until authorized execution systems write the work order or isolate the
-              equipment. A question does not unlock it.
+              decision. It does not write a work order, isolate equipment, or change the plant.
+              ACTION stays locked until authorized execution systems write the work order or
+              isolate the equipment. A cleared alert tile does not unlock it. A dashboard is not a
+              work order.
             </p>
 
             <p>
-              It also does not control the plant.{' '}
-              <Link
-                href="/insights/coverage-is-not-control"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Coverage Is Not Control
-              </Link>{' '}
-              states why sensors, CMMS rows, dashboards, patrol routes, and a recorded coverage gap
-              are not control authority over work, isolation, or change. A question about coverage
-              is still a question. Sync may hold the question and gather approved evidence. Sync
-              may recommend. A named human decides. Authorized execution systems write the work
-              order or the isolation. None of that follows from the question alone.
-            </p>
-
-            <p>
-              <Link
-                href="/insights/verification-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Verification Is Not Optional
-              </Link>{' '}
-              states the gate after an authorized action. The case is not closed until the check is
-              recorded. A question that was never decided has nothing authorized to check. Citing
-              the question as if the outcome were known treats an opening record as a closed case.
+              It also does not control the plant. Sync may show coverage, recommendations, and
+              status. A named human decides. Authorized execution systems write the work order or
+              the isolation. None of that follows from a status color. A Decision Case that stores
+              a reading from a dashboard stores a record of state. That storage is not permission
+              for Sync to order work, isolate equipment, or change the plant.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -293,9 +315,10 @@ export default function QuestionIsNotDecisionPage() {
               >
                 {fieldManual.title}
               </Link>{' '}
-              directly. Question is step 01. Human decision is step 04. The question is recorded
-              before evidence or recommendation. The decision is the named act that comes after a
-              recommendation. Later editions can deepen a chapter. The spine stays in this order.
+              directly. Human decision is step 04. Verification is step 06. A dashboard is neither
+              step. The display can sit beside the case. It does not replace the named act, and it
+              does not replace the check. Later editions can deepen a chapter. The spine stays in
+              this order.
             </p>
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
@@ -332,8 +355,8 @@ export default function QuestionIsNotDecisionPage() {
             <p>
               This is an essay about the Decision Case order, not a customer case study. It names
               no plant, states no savings figure, and claims no prevented failure. It states no OEM
-              limit and no operating threshold. It does not claim that recording a question
-              authorizes work, executes work, or controls a plant.
+              limit and no operating threshold. It does not claim that a dashboard authorizes work,
+              verifies an outcome, executes a work order, or controls a plant.
             </p>
 
             <p>
@@ -353,29 +376,21 @@ export default function QuestionIsNotDecisionPage() {
             </p>
 
             <p>
-              The series continues with{' '}
+              Companion reading:{' '}
               <Link
-                href="/insights/dashboard-is-not-decision"
+                href="/insights/question-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Dashboard Is Not Decision
-              </Link>
-              , on why a dashboard of plant or maintenance state is not a Decision Case and not a
-              decision. Companion reading:{' '}
+                Question Is Not Decision
+              </Link>{' '}
+              on why recording a reliability or maintenance question is not the human decision,{' '}
               <Link
                 href="/insights/coverage-is-not-control"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Coverage Is Not Control
               </Link>{' '}
-              on why plant coverage is not control authority over work, isolation, or change,{' '}
-              <Link
-                href="/insights/action-is-not-execution"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Action Is Not Execution
-              </Link>{' '}
-              on why a recorded ACTION disposition is not plant execution,{' '}
+              on why a dashboard in the watched set is not control authority,{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -405,22 +420,29 @@ export default function QuestionIsNotDecisionPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The{' '}
               <Link
-                href={fieldManualPath('question')}
+                href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Question
+                Human decision
               </Link>{' '}
-              chapter is where the case opens. It is not the decision.
+              chapter is the named act. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter is the check. A dashboard is neither.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
                 Field Manual {fieldManual.version} states the order and the boundaries, including
-                the question a named person can decide and the human act that decides it. The
-                Reliability Engineer workspace is where a signed-in Decision Case is completed. A
-                Reliability Assessment is the bounded review when the question is whether the
-                records can support a conclusion.
+                the named human decision and the verification that follows it. The Reliability
+                Engineer workspace is where a signed-in Decision Case is completed. A Reliability
+                Assessment is the bounded review when the question is whether the records can
+                support a conclusion.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -444,7 +466,7 @@ export default function QuestionIsNotDecisionPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="question-is-not-decision" />
+          <InsightNextSteps slug="dashboard-is-not-decision" />
         </motion.article>
       </div>
     </main>
