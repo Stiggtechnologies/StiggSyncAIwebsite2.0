@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'correlation-is-not-causation',
+    title: 'Correlation Is Not Causation',
+    description:
+      'Correlation is not causation. Co-moving tags, coincident alerts, and dashboard trends can show that signals moved together. They are not a recorded causal check, and they do not authorize action. Sync recommends. A named human decides. Companion to Confidence Is Not Evidence and Assumption Is Not Evidence.',
+    excerpt:
+      'Co-moving tags, coincident alerts, and dashboard trends are not a recorded causal check. They do not authorize action. Sync recommends. A named human decides.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'confidence-is-not-evidence',
     title: 'Confidence Is Not Evidence',
     description:
@@ -270,12 +282,56 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'correlation-is-not-causation': {
+    relatedSlug: 'confidence-is-not-evidence',
+    relatedNote: 'Being sure is not a recorded check. A co-moving trend is not a causal check.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A belief is not a recorded fact. Co-movement does not record the cause.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A related chart does not record it as clear.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A trend does not fill it.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. Coincident alerts are not the decision.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A dashboard trend is a display. It does not authorize action.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert is not a decision. Two alerts in one window are still alerts.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. Co-movement is not the check.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A chart without a reconstructable trail is not observed causation.',
+      },
+    ],
+  },
   'confidence-is-not-evidence': {
     relatedSlug: 'assumption-is-not-evidence',
     relatedNote: 'An assumption is not a recorded fact. Being sure does not make it one.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Tags that move together are not a recorded causal check.',
+      },
       {
         slug: 'unknown-is-not-clear',
         note: 'Missing evidence stays unknown. Confidence does not record it as clear.',
@@ -304,6 +360,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Co-moving tags are not a recorded causal check, and they do not authorize action.',
+      },
       {
         slug: 'confidence-is-not-evidence',
         note: 'Being sure does not record the check. A high score is not the measurement.',
