@@ -951,6 +951,15 @@ export default function SimulationIsNotProofPage() {
             </p>
 
             <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/calibration-is-not-validation"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Calibration Is Not Validation
+              </Link>
+              , on why tuning a model, a twin, a sensor, or a forecast so historical residuals
+              look small is not validation that the representation is fit for the decision.
               Companion reading:{' '}
               <Link
                 href="/insights/forecast-is-not-fact"

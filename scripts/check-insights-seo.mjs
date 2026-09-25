@@ -466,6 +466,7 @@ const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
   'anecdote-is-not-evidence',
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'model-is-not-reality',
@@ -522,6 +523,7 @@ const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
   'anecdote-is-not-evidence',
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'model-is-not-reality',
@@ -660,6 +662,7 @@ for (const required of [
   'symptom-is-not-cause',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'model-is-not-reality',
@@ -736,6 +739,7 @@ for (const required of [
   'trend-is-not-truth',
   'noise-is-not-signal',
   'anecdote-is-not-evidence',
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'model-is-not-reality',
@@ -1297,6 +1301,7 @@ if (
 
 const mapBlock = stepBlock('map-is-not-terrain');
 for (const required of [
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'model-is-not-reality',
@@ -1404,6 +1409,7 @@ if (
 
 const modelBlock = stepBlock('model-is-not-reality');
 for (const required of [
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'forecast-is-not-fact',
   'map-is-not-terrain',
@@ -1514,6 +1520,7 @@ if (
 
 const forecastBlock = stepBlock('forecast-is-not-fact');
 for (const required of [
+  'calibration-is-not-validation',
   'simulation-is-not-proof',
   'model-is-not-reality',
   'map-is-not-terrain',
@@ -1628,6 +1635,7 @@ if (
 
 const simulationBlock = stepBlock('simulation-is-not-proof');
 for (const required of [
+  'calibration-is-not-validation',
   'forecast-is-not-fact',
   'model-is-not-reality',
   'map-is-not-terrain',
@@ -1732,6 +1740,126 @@ for (const required of [
 ]) {
   if (!simulationPage.includes(required)) {
     fail(`simulation-is-not-proof page must include ${required}`);
+  }
+}
+if (
+  !simulationPage.includes('The series continues with') ||
+  !simulationPage.includes('/insights/calibration-is-not-validation')
+) {
+  fail('simulation-is-not-proof must point the series forward to calibration-is-not-validation');
+}
+
+const calibrationBlock = stepBlock('calibration-is-not-validation');
+for (const required of [
+  'simulation-is-not-proof',
+  'forecast-is-not-fact',
+  'model-is-not-reality',
+  'map-is-not-terrain',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'proxy-is-not-outcome',
+  'assumption-is-not-evidence',
+  'confidence-is-not-evidence',
+  'trend-is-not-truth',
+  'recommend-is-not-authorize',
+  'dashboard-is-not-decision',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'sample-is-not-population',
+  'anecdote-is-not-evidence',
+  'noise-is-not-signal',
+  'symptom-is-not-cause',
+  'threshold-is-not-diagnosis',
+  'correlation-is-not-causation',
+  'alert-is-not-decision',
+  'silence-is-not-clearance',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!calibrationBlock.includes(`'${required}'`)) {
+    fail(`calibration-is-not-validation related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(calibrationBlock)) {
+  fail('calibration-is-not-validation related reading must include the Strategic Pilot');
+}
+if (calibrationBlock.includes("next: 'strategic-pilot'")) {
+  fail('calibration-is-not-validation next step is the Field Manual');
+}
+
+const calibrationPage = read('app/insights/calibration-is-not-validation/page.tsx');
+for (const required of [
+  '/insights/simulation-is-not-proof',
+  '/insights/forecast-is-not-fact',
+  '/insights/model-is-not-reality',
+  '/insights/map-is-not-terrain',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/proxy-is-not-outcome',
+  '/insights/assumption-is-not-evidence',
+  '/insights/confidence-is-not-evidence',
+  '/insights/trend-is-not-truth',
+  '/insights/recommend-is-not-authorize',
+  '/insights/dashboard-is-not-decision',
+  '/insights/blank-is-not-zero',
+  '/insights/unknown-is-not-clear',
+  '/insights/sample-is-not-population',
+  '/insights/anecdote-is-not-evidence',
+  '/insights/noise-is-not-signal',
+  '/insights/symptom-is-not-cause',
+  '/insights/threshold-is-not-diagnosis',
+  '/insights/correlation-is-not-causation',
+  '/insights/alert-is-not-decision',
+  '/insights/silence-is-not-clearance',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'historical residuals',
+  'model',
+  'twin',
+  'sensor',
+  'forecast',
+  'well-calibrated simulation',
+  'RUL curve',
+  'digital twin',
+  'fit for the decision',
+  'honesty boundary',
+  'verification boundary',
+  'observed outcomes',
+  'named coverage',
+  'assumptions',
+  'refusal when evidence is insufficient',
+  'false clearance',
+  'false precision',
+  'Evidence from the plant beats the calibration',
+  'not validation',
+  'not a diagnosis',
+  'not root cause',
+  'not authorization for corrective work',
+  'verified operational outcome',
+  'not a Decision Case',
+  'false certainty',
+  'approved evidence',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'calibration clearance',
+  'Sync may surface a calibration',
+  'Sync refuses false precision',
+  'Verification stays open',
+  'named human',
+  'Sync recommends',
+  'named human decides',
+  'authorized systems',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!calibrationPage.includes(required)) {
+    fail(`calibration-is-not-validation page must include ${required}`);
   }
 }
 
