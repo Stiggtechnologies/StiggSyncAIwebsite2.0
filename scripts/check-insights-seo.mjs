@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const impactIndex = slugs.indexOf('outcome-is-not-impact');
 const outcomeIndex = slugs.indexOf('value-is-not-outcome');
 const valueIndex = slugs.indexOf('profit-is-not-value');
 const profitIndex = slugs.indexOf('margin-is-not-profit');
@@ -37,7 +38,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    outcomeIndex >= 0 &&
+    impactIndex >= 0 &&
+    outcomeIndex > impactIndex &&
     valueIndex > outcomeIndex &&
     profitIndex > valueIndex &&
     marginIndex > profitIndex &&
@@ -55,7 +57,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -3883,6 +3885,156 @@ for (const page of [
 ]) {
   if (!read(page).includes('/insights/value-is-not-outcome')) {
     fail(`${page} must link value-is-not-outcome`);
+  }
+}
+
+if (
+  !outcomePage.includes('The series continues with') ||
+  !outcomePage.includes('/insights/outcome-is-not-impact')
+) {
+  fail('value-is-not-outcome must point the series forward to outcome-is-not-impact');
+}
+
+for (const [slug, label] of [
+  ['value-is-not-outcome', 'value-is-not-outcome'],
+  ['profit-is-not-value', 'profit-is-not-value'],
+  ['cash-is-not-margin', 'cash-is-not-margin'],
+  ['accountability-is-not-closure', 'accountability-is-not-closure'],
+  ['complete-is-not-verified', 'complete-is-not-verified'],
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+]) {
+  if (!stepBlock(slug).includes("'outcome-is-not-impact'")) {
+    fail(`${label} related reading must cite outcome-is-not-impact`);
+  }
+}
+
+const impactBlock = stepBlock('outcome-is-not-impact');
+for (const required of [
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'proxy-is-not-outcome',
+  'margin-is-not-profit',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'verified-is-not-assured',
+  'recommend-is-not-authorize',
+  'green-is-not-go',
+  'correlation-is-not-causation',
+]) {
+  if (!impactBlock.includes(`'${required}'`)) {
+    fail(`outcome-is-not-impact related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(impactBlock)) {
+  fail('outcome-is-not-impact related reading must include the Strategic Pilot');
+}
+if (impactBlock.includes("next: 'strategic-pilot'")) {
+  fail('outcome-is-not-impact next step is the Field Manual');
+}
+
+const impactPage = read('app/insights/outcome-is-not-impact/page.tsx');
+for (const required of [
+  '/insights/value-is-not-outcome',
+  '/insights/profit-is-not-value',
+  '/insights/proxy-is-not-outcome',
+  '/insights/margin-is-not-profit',
+  '/insights/cash-is-not-margin',
+  '/insights/closure-is-not-cash',
+  '/insights/accountability-is-not-closure',
+  '/insights/authorization-is-not-accountability',
+  '/insights/complete-is-not-verified',
+  '/insights/cleared-is-not-complete',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/verified-is-not-assured',
+  '/insights/recommend-is-not-authorize',
+  '/insights/green-is-not-go',
+  '/insights/honesty-boundary-is-not-optional',
+  '/insights/human-decision-is-not-optional',
+  '/insights/correlation-is-not-causation',
+  '/insights/action-is-not-execution',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'measured outcome',
+  'business impact',
+  'cash, risk, or capacity',
+  'green KPI',
+  'completed workflow',
+  'Profit is not value',
+  'Value is not outcome',
+  'Margin is not profit',
+  'Cash is not margin',
+  'Closure is not cash',
+  'measured result',
+  'named intent',
+  'operating loop',
+  'Surfacing is still a read',
+  'after the plant move',
+  'named observation',
+  'named criteria',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the outcome',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'outcome as impact',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'states no price',
+  'CMMS write-back',
+  'Billing write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'Sync does not attribute a change in cash, risk, or capacity',
+  'Sync does not declare impact',
+  'Sync does not compute a return',
+  'Recommend is not authorize',
+  'APP_SETUP_URL',
+  '/reliability-assessment',
+  '/strategic-pilot',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice record that says the outcome',
+  'A named human decides',
+  'A named human remains accountable',
+  'leaves the impact unrecorded',
+]) {
+  if (!impactPage.includes(required)) {
+    fail(`outcome-is-not-impact page must include ${required}`);
+  }
+}
+
+for (const page of [
+  'app/insights/value-is-not-outcome/page.tsx',
+  'app/insights/accountability-is-not-closure/page.tsx',
+  'app/insights/authorization-is-not-accountability/page.tsx',
+  'app/insights/complete-is-not-verified/page.tsx',
+  'app/insights/cleared-is-not-complete/page.tsx',
+  'app/insights/learning-requires-a-verified-outcome/page.tsx',
+  'app/insights/verification-is-not-optional/page.tsx',
+  'app/insights/verified-is-not-assured/page.tsx',
+]) {
+  if (!read(page).includes('/insights/outcome-is-not-impact')) {
+    fail(`${page} must link outcome-is-not-impact`);
   }
 }
 
