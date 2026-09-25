@@ -296,7 +296,14 @@ export default function LearningRequiresAVerifiedOutcomePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/action-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Action Is Not Execution
+              </Link>
+              , on why a recorded ACTION disposition is not plant execution. Companion reading:{' '}
               <Link
                 href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"

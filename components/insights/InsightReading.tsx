@@ -26,17 +26,42 @@ export function InsightNextSteps({ slug }: { slug: string }) {
           note: 'A governed proof around one operating decision.',
         };
 
+  const also = (step.also ?? []).flatMap((item) => {
+    const article = getInsightArticle(item.slug);
+    if (!article || article.slug === related.slug) return [];
+    return [
+      {
+        href: `/insights/${article.slug}`,
+        label: article.title,
+        note: item.note,
+      },
+    ];
+  });
+
+  const pilot =
+    step.includePilot && step.next !== 'strategic-pilot'
+      ? [
+          {
+            href: '/strategic-pilot',
+            label: 'Strategic Pilot',
+            note: 'A governed proof around one operating decision.',
+          },
+        ]
+      : [];
+
   const items = [
     {
       href: `/insights/${related.slug}`,
       label: related.title,
       note: step.relatedNote,
     },
+    ...also,
     {
       href: '/reliability-assessment',
       label: 'Reliability Assessment',
       note: 'Whether the records can support a conclusion.',
     },
+    ...pilot,
     next,
   ];
 
