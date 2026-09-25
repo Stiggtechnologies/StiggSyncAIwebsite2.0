@@ -502,6 +502,17 @@ export default function HumanDecisionIsNotOptionalPage() {
               claim under named conditions.
             </p>
 
+            <p>
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              states the split after the chain closes. Proof answers whether a claim held. A named
+              person still has to accept the consequence before the work is authorized.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the decision, then bring a question</h3>
               <p className="text-gray-400 mb-6">

@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'proof-is-not-authorization',
+    title: 'Proof Is Not Authorization',
+    description:
+      'Proof is not authorization. A closed evidentiary chain for a specific claim under named conditions is proof: reproducible checks, lineage, and a decision authority that can refuse when evidence is incomplete. That chain answers whether the claim held. Authorization is a separate named human decision that accepts consequence and routes intent to authorized execution systems. Proof is still not authorization to execute plant work, write a CMMS work order, clear equipment to run, or treat the case as plant-execute. Treating the closed chain as authorization ships a settled claim into plant work nobody has accepted, under the honesty and verification boundary. A proof record can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a work order, and not a Decision Case that is already plant-execute. Evidence from the plant beats the chain. Sync may surface proof beside Evidence and Verification when the claim, the conditions, the checks, and the lineage are named. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat proven authorization as Learning credit. A named human still decides. Direct plant execute stays off. CMMS write-back is not a live product path. Companion to Assured Is Not Proven, Verified Is Not Assured, Green Is Not Go, Action Is Not Execution, Human Decision Is Not Optional, Honesty Boundary Is Not Optional, and Verification Is Not Optional.',
+    excerpt:
+      'A closed evidentiary chain for a specific claim under named conditions answers whether the claim held. It is not authorization to execute plant work, write a CMMS work order, clear equipment to run, or treat the case as plant-execute. Authorization is a named human decision that accepts consequence and routes intent to authorized execution systems.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'assured-is-not-proven',
     title: 'Assured Is Not Proven',
     description:
@@ -546,12 +558,48 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'assured-is-not-proven': {
-    relatedSlug: 'verified-is-not-assured',
-    relatedNote: 'A verified record closes a claim about the past. Assurance is standing confidence that the asset stays known-good. Neither is proof of a specific claim under named conditions.',
+  'proof-is-not-authorization': {
+    relatedSlug: 'assured-is-not-proven',
+    relatedNote: 'A closed evidentiary chain answers whether a specific claim held under named conditions. Authorization is a separate named human decision that accepts consequence and routes intent to authorized execution systems.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Assurance is standing confidence. Proof is the closed chain. None of the three is authorization to execute.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A closed chain beside that tile does not clear equipment to run.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'ACTION records intent. Authorized execution systems write the work order. A closed chain does not unlock ACTION and does not execute the work.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A named person accepts the consequence. The closed chain does not.',
+      },
+      {
+        slug: 'honesty-boundary-is-not-optional',
+        note: 'Calling proof authorization crosses the honesty boundary. The chain answers whether the claim held. It does not accept the consequence.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive. Recording the check is not authorization to execute.',
+      },
+    ],
+  },
+  'assured-is-not-proven': {
+    relatedSlug: 'proof-is-not-authorization',
+    relatedNote: 'Proof answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent to authorized execution systems. The closed chain is not that decision.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Assurance is standing confidence that the asset stays known-good. Neither is proof of a specific claim under named conditions.',
+      },
       {
         slug: 'complete-is-not-verified',
         note: 'A complete badge is a completion label. Verification is named observation. Assurance is standing confidence. None of the three is proof.',
@@ -584,6 +632,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'A closed chain answers whether a specific claim held. It is not authorization to execute plant work, write a work order, or clear equipment to run.',
+      },
       {
         slug: 'complete-is-not-verified',
         note: 'A complete badge is a completion label. A verified record is named observation against named criteria. Neither is assurance that the asset stays known-good under operating conditions.',
@@ -820,6 +872,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'A green tile is not go. A closed chain beside that tile is not authorization to clear equipment to run.',
+      },
       {
         slug: 'assured-is-not-proven',
         note: 'A green tile is not go. An assurance label on that tile is not proof the asset stays known-good.',
@@ -2625,6 +2681,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'proof-is-not-authorization',
+        note: 'A named person accepts the consequence. Proof of a claim does not record that act and does not authorize execution.',
+      },
+      {
         slug: 'assured-is-not-proven',
         note: 'A named person can refuse when evidence is incomplete. An assurance label does not close the chain or supply that refusal.',
       },
@@ -2668,6 +2728,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'Calling a closed chain authorization crosses the honesty boundary. Proof answers whether the claim held.',
+      },
       {
         slug: 'assured-is-not-proven',
         note: 'Calling assurance proof crosses the honesty boundary. Assurance is standing confidence. Proof is a closed chain for a specific claim.',
@@ -2817,6 +2881,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'proof-is-not-authorization',
+        note: 'A closed chain is not the write. Proof does not unlock ACTION and does not execute plant work.',
+      },
+      {
         slug: 'ready-is-not-cleared',
         note: 'A ready-to-start badge is not the write. The label does not unlock ACTION.',
       },
@@ -2862,6 +2930,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'proof-is-not-authorization',
+        note: 'Recording the check does not authorize plant work. Proof is not authorization.',
+      },
       {
         slug: 'assured-is-not-proven',
         note: 'Recording the check does not prove a standing assurance. Proof is claim-scoped and falsifiable.',

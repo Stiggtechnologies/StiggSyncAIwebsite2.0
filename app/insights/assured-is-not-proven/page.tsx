@@ -554,6 +554,21 @@ export default function AssuredIsNotProvenPage() {
               not prove the claim.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>
+              , on why a closed evidentiary chain for a specific claim under named conditions is
+              still not authorization to execute plant work, write a CMMS work order, clear
+              equipment to run, or treat the case as plant-execute. Authorization is a separate
+              named human decision that accepts consequence and routes intent to authorized
+              execution systems.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
