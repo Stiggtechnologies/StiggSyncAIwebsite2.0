@@ -107,7 +107,8 @@ export default function OptionalityIsNotStrategyPage() {
               is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
-              strategy. Each word can be true in its own place. None of the earlier words fills the
+              strategy. Strategy is not execution. Each word can be true in its own place. None of
+              the earlier words fills the
               last one. A closed work order, cash collected, a unit remainder, a profit figure, a
               measured outcome, an attributed change, a recognized sale, an annualized contract, a
               spendable balance, a duration at the current net burn, obligation continuity through
@@ -129,8 +130,12 @@ export default function OptionalityIsNotStrategyPage() {
               (lead times, skills, covenants, plant continuity, and cash may still block exercise).
               Strategy is a named choice among alternatives with allocated resources, a named
               decision window, accountable owner, and success criteria the firm is actually
-              committing to execute — a committed path, not a menu of unused rights. An optionality
-              note is not that strategy claim.
+              committing to execute — a committed path, not a menu of unused rights. Execution is
+              work actually completed inside the named decision window with evidence of done
+              outcomes (closed work, shipped change, verified plant result) — realized performance
+              against the committed path, not the strategy note, roadmap slide, or allocated budget
+              envelope alone. An optionality note is not that strategy claim. A strategy note is not
+              that execution claim.
             </p>
 
             <p>
@@ -1230,6 +1235,27 @@ export default function OptionalityIsNotStrategyPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The optionality note does not record the strategy.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/strategy-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Strategy Is Not Execution
+              </Link>
+              , on why strategy is still not execution. Strategy is a named choice among alternatives
+              with allocated resources, a named decision window, accountable owner, and success
+              criteria the firm is actually committing to execute — a committed path and resource
+              allocation, not proof the work was completed inside that window. Execution is work
+              actually completed inside the named decision window with evidence of done outcomes
+              (closed work, shipped change, verified plant result) — realized performance against the
+              committed path, not the strategy note, roadmap slide, or allocated budget envelope
+              alone. A firm with a strategy can still lack execution when that path is not work
+              completed inside the window. A firm with execution can still lack strategy. A strategy
+              note alone proves neither. An execution note alone proves neither. A committed path is
+              not a green. An execution note is not a green.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
