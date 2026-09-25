@@ -974,6 +974,26 @@ export default function SurvivalIsNotSolvencyPage() {
               the measured result. The survival note does not record the solvency.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/solvency-is-not-liquidity"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Solvency Is Not Liquidity
+              </Link>
+              , on why solvency is still not liquidity. Solvency is whether assets and claims
+              structure can cover liabilities and pay debts as they come due over a structural
+              horizon — balance-sheet and claim quality, not near-term cash timing alone. Liquidity
+              is whether cash and near-cash can meet obligations as they come due in the near term
+              (payroll, vendors, debt service windows) without forced asset sales or covenant
+              breaches. A solvent firm can still fail a liquidity window when receivables lag, a
+              concentration payment slips, credit lines are drawn, or timing gaps hit before claims
+              structure heals. An illiquid firm can still be solvent on a structural horizon if
+              assets cover claims and a named liquidity bridge is already closed — none of which a
+              solvency ratio alone proves.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
