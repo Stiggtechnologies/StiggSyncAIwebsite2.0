@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('accountability-is-not-closure');
+const article = getInsightArticle('profit-is-not-value');
 
-export default function AccountabilityIsNotClosurePage() {
+export default function ProfitIsNotValuePage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,9 +31,7 @@ export default function AccountabilityIsNotClosurePage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Accountability Is Not Closure
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Profit Is Not Value</h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -42,35 +40,47 @@ export default function AccountabilityIsNotClosurePage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              Accountability is the continuing named ownership of results, exceptions, and learning
-              after the plant move. Closure is the verified outcome recorded against that ownership
-              — a measured result, not named intent. The person who remains responsible is still
-              not the close of the operating loop.
+              Profit is an accounting result for a named period under the cost rules someone chose.
+              Value is the verified operational outcome the Decision Case was opened to change.
+              A turnaround that beat its cost target, or a maintenance result that printed black,
+              is still not that outcome.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              Accountability is not closure. A named human who owns consequences after authorized
-              execution is accountability. That duty answers who remains responsible for results,
-              exceptions, and learning after the plant move. Closure is a different record. It is
-              the verified outcome recorded against that ownership: named observation against named
-              criteria, stored as achieved, not_achieved, or inconclusive, with measured notes.
-              Treating the named owner as closure ships ownership into a finished loop nobody has
-              measured. Sync may surface an accountable owner beside Evidence, Verification, Proof,
-              and Authorization. Surfacing is still a read. A named accountable human without a
-              verified outcome leaves the operating loop open. Direct plant execute stays off. CMMS
-              write-back is not a live product path.
+              Profit is not value. A profit figure is an accounting result for a named period under
+              the cost rules, allocations, and cost base someone chose. That figure answers whether
+              the recorded remainder met those rules. Value is a different record. It is the
+              verified operational outcome the Decision Case was opened to change: restored
+              capacity, a constraint released, a loss avoided, stored as achieved, not_achieved, or
+              inconclusive, with measured notes. Treating the profit figure as value ships an
+              accounting result into a finished claim about plant value nobody has measured. Sync
+              may surface a profit figure beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. A black maintenance result without a verified outcome
+              leaves the value unrecorded. Direct plant execute stays off. CMMS write-back is not a
+              live product path.
             </p>
 
             <p>
-              An accountable owner looks like a closed loop. The named person remained responsible
-              after the work ran. The result was owned. The exception was owned. The learning was
-              owned. The meeting then treats the case as finished: the measured result belongs to
-              the name, the check belongs to the name, and the close belongs to the name. The name
-              did none of that. It answered who remains responsible. It did not record the verified
-              outcome against that ownership. It did not store achieved, not_achieved, or
-              inconclusive. It did not measure the result.
+              A profit figure looks like the close of the shutdown. The turnaround beat its cost
+              target. The maintenance P&L printed black. The job made its number. The meeting then
+              treats the operating decision as finished: the value belongs to the profit, the
+              outcome belongs to the profit, and the close belongs to the profit. The figure did
+              none of that. It answered whether the recorded remainder met the cost rules. It did
+              not record the verified operational outcome. It did not store achieved, not_achieved,
+              or inconclusive. It did not measure what the case was opened to change.
+            </p>
+
+            <p>
+              The accounting stack is the same kind of refusal this series keeps. Closure is not
+              cash. Cash left in the shutdown account, or cash not spent, is a collected or
+              unspent amount. Cash is not margin. Margin is the remainder after the direct cost of
+              the job, before the period allocations and overhead that turn a job result into a
+              period result. Margin is not profit. Profit is the accounting result for the named
+              period after those rules. Profit is not value. Each word can be true in its own
+              place. None of the earlier words fills the last one. Hours burned, work orders
+              closed, and a black P&L are activity and accounting. Value is the verified outcome.
             </p>
 
             <p>
@@ -87,41 +97,67 @@ export default function AccountabilityIsNotClosurePage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why an accountable owner cannot be read as closure. The{' '}
+              . This essay is why a profit figure cannot be read as value. The{' '}
               <Link
                 href={fieldManualPath('evidence')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Evidence
               </Link>{' '}
-              chapter may hold the record. The{' '}
+              chapter may hold the record of the cost rules, the period, and the figure. The{' '}
               <Link
                 href={fieldManualPath('verification')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Verification
               </Link>{' '}
-              chapter records named observation against the criteria the decision named. Proof may
-              sit beside them when the chain is closed. The{' '}
+              chapter records named observation against the criteria the decision named. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
-              chapter records who accepted the consequence and routed the intent. The{' '}
+              chapter records who accepted the consequence. The{' '}
               <Link
                 href={fieldManualPath('learning')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Learning
               </Link>{' '}
-              chapter keeps the closed case. Naming who remains responsible is not that close.
+              chapter keeps the closed case. A profit figure is not that close, and it is not the
+              value of the outcome.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Accountability answers who remains responsible
+              Profit is an accounting result under named cost rules
             </h2>
+
+            <p>
+              <Link
+                href="/insights/accountability-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Closure
+              </Link>{' '}
+              sits one step earlier. Accountability is the continuing named ownership of results,
+              exceptions, and learning after the plant move. Closure is the verified outcome
+              recorded against that ownership: a measured result, not named intent. This essay
+              starts after that split has been kept. The operating loop can be closed with a
+              measured result, and the accounting result can still be a different claim. A profit
+              figure can be recorded. The value of the decision can still be unrecorded. A named
+              accountable human without a verified outcome leaves the operating loop open. A profit
+              figure does not close it, and it does not convert the close into value.
+            </p>
+
+            <p>
+              Profit has a narrower object than the value. It is about whether the recorded
+              remainder met the cost rules for a named period. It is not about whether capacity was
+              restored, whether the constraint was released, or whether the loss the case named was
+              avoided. A sentence that only states the profit figure does not say the outcome was
+              achieved, not_achieved, or inconclusive. The figure can be recorded. The verified
+              operational outcome can still be unrecorded.
+            </p>
 
             <p>
               <Link
@@ -130,51 +166,23 @@ export default function AccountabilityIsNotClosurePage() {
               >
                 Authorization Is Not Accountability
               </Link>{' '}
-              sits one step earlier. Authorization is a named human decision that accepts
-              consequence and routes intent to authorized execution systems. That act answers who
-              may start. Accountability is the continuing named ownership of results, exceptions,
-              and learning after the plant move. This essay starts after that split has been kept.
-              The record really can be accountability. A named human can own the result, the
-              exception, and the learning. That ownership can be honest and still not be closure of
-              the operating loop.
+              sits further back. A named human decision that accepts consequence and routes intent
+              to authorized execution systems answers who may start. That act is not accountability
+              for the outcome after the work runs, not closure of the operating loop, and not a
+              profit figure. An authorized state can sit beside a black maintenance result while
+              the verified outcome is still open. The profit figure does not fill the gap the
+              authorization left, and the authorization does not turn the figure into value.
             </p>
 
             <p>
-              Accountability has a narrower object than the close. It is about who remains
-              responsible, not about whether the measured result was recorded against that
-              ownership. A sentence that only names the owner does not say the outcome was
-              achieved, not_achieved, or inconclusive. The named owner can be recorded. The verified
-              outcome can still be unrecorded.
-            </p>
-
-            <p>
-              <Link
-                href="/insights/proof-is-not-authorization"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Proof Is Not Authorization
-              </Link>{' '}
-              sits further back. A closed evidentiary chain for a specific claim under named
-              conditions answers whether the claim held. That chain is not authorization to
-              execute, not accountability for the outcome, and not closure of the operating loop. A
-              closed chain can sit beside an accountable owner while the verified outcome is still
-              open. Each word can be true in its own place. None of the earlier words fills the
-              last one.
-            </p>
-
-            <p>
-              <Link
-                href="/insights/human-decision-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Human Decision Is Not Optional
-              </Link>{' '}
-              states the act that starts the work. A named person accepts, rejects, escalates, or
-              returns. The Human decision chapter records who accepted the consequence. That record
-              answers who may start. Accountability answers who remains responsible after the plant
-              move. Closure answers whether the measured result was recorded against that
-              ownership. A named human decides. A named human remains accountable after the plant
-              move. Those duties do not, by themselves, close the loop.
+              Cash discipline is the same refusal, one step earlier in the accounting stack.
+              Closure is not cash. A verified outcome is a measured result. Cash is an amount
+              collected, committed, or left unspent. Cash is not margin. Margin on the job is the
+              remainder after direct cost. Margin is not profit. Profit applies the period, the
+              allocations, and the cost base. A shutdown can leave cash in the account, show a
+              margin on the direct work, and still print a period result that the cost rules call
+              profit — or the reverse. None of those three records is the value of the operating
+              decision.
             </p>
 
             <p>
@@ -192,29 +200,30 @@ export default function AccountabilityIsNotClosurePage() {
                 Action
               </Link>{' '}
               chapter records intent. ACTION remains a locked disposition until authorized
-              execution systems write the work order or isolate the equipment. Authorization routes
-              intent to those systems. Accountability keeps a named human on the result after the
-              plant move. None of those records is the verified outcome. Sync does not write the
-              work order. Sync does not clear equipment to run. Sync does not mark the case
-              plant-execute.
+              execution systems write the work order or isolate the equipment. A profit figure does
+              not unlock that write. It does not record that the work produced the outcome the
+              decision named. Sync does not write the work order. Sync does not clear equipment to
+              run. Sync does not mark the case plant-execute.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Accountability answers who remains responsible for results, exceptions, and learning
-              after the plant move. It does not record the verified outcome against that ownership.
+              Profit answers whether the recorded remainder met the cost rules for a named period.
+              It does not record the verified operational outcome the case was opened to change.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Closure is the verified outcome recorded against that ownership
+              Value is the verified operational outcome
             </h2>
 
             <p>
-              Closure is not a property of the named owner. It is the verified outcome recorded
-              against that ownership: a measured result, not named intent. The case stores
-              achieved, not_achieved, or inconclusive, with measured notes, against the human who
-              remains responsible. Until that record exists, the operating loop stays open, however
-              completely the owner is named. Named intent is what the decision meant to do.
-              Closure is what was measured after the plant move.
+              Value is not a property of the profit figure. It is the verified operational outcome
+              recorded against the decision: a measured result, not an accounting remainder.
+              Restored capacity, a released constraint, deferred scope that stayed deferred, a bad
+              actor still in service after return to service — each of those is an outcome the
+              case can name. The case stores achieved, not_achieved, or inconclusive, with measured
+              notes. Until that record exists, the value stays unrecorded, however completely the
+              profit figure is stated. Named intent is what the decision meant to do. Value is
+              what was measured after the plant move.
             </p>
 
             <p>
@@ -226,9 +235,9 @@ export default function AccountabilityIsNotClosurePage() {
               </Link>{' '}
               states the gate for the check. The case stays open until named observation against
               named criteria is recorded as achieved, not_achieved, or inconclusive, with measured
-              notes. That check is the measured result. It is not, by itself, the named ownership
-              of that record, and the named ownership is not, by itself, the check. A named
-              accountable human without that record leaves the operating loop open.
+              notes. That check is the measured result. It is not, by itself, the profit figure,
+              and the profit figure is not, by itself, the check. A black P&L without that record
+              leaves the value unrecorded.
             </p>
 
             <p>
@@ -239,10 +248,10 @@ export default function AccountabilityIsNotClosurePage() {
                 Learning Requires a Verified Outcome
               </Link>{' '}
               keeps what a later case is allowed to inherit. Learning inherits achieved,
-              not_achieved, or inconclusive, with measured notes. It does not inherit a name in
-              place of that outcome. An accountable owner is part of the record the close is
-              recorded against. The owner is not the inheritance. Sync must not auto-close,
-              auto-authorize, or treat accountable closure as Learning credit.
+              not_achieved, or inconclusive, with measured notes. It does not inherit a profit
+              figure in place of that outcome. A later shutdown that cites last turnaround&apos;s
+              profit as if the constraint were already released is citing an accounting result.
+              Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit.
             </p>
 
             <p>
@@ -254,29 +263,30 @@ export default function AccountabilityIsNotClosurePage() {
               </Link>{' '}
               keeps a verified stamp off standing confidence. A verified work package, inspection,
               or AI recommendation closes a claim about the past. Assurance is the standing claim
-              that comes after. Closure of the operating loop is the verified outcome recorded
-              against named ownership. It is not a claim that the asset stays known-good. A
-              verified outcome can be not_achieved or inconclusive. Those results still close the
-              claim about what happened. They are not a green standing state, and they are not
-              produced by naming the owner.
+              that comes after. Value, in this essay, is the verified operational outcome recorded
+              against the decision. It is not a claim that the asset stays known-good, and it is
+              not a claim that the profit will repeat. A verified outcome can be not_achieved or
+              inconclusive. Those results still close the claim about what happened. They are not a
+              green standing state, and they are not produced by a profit figure.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Closure is the verified outcome recorded against that ownership — measured result, not
-              named intent. A named accountable human without that record leaves the operating loop
-              open.
+              Value is the verified operational outcome — measured result, not the profit figure. A
+              profit figure without that record leaves the value unrecorded.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A named owner does not close the loop
+              A profit figure does not record the value
             </h2>
 
             <p>
-              The failure mode is ordinary. The accountable owner is shown beside a maintenance
-              decision or a production decision, and the room treats the loop as closed. The work
-              ran. Someone owns it. The result is known. Each of those is a separate record. The
-              name does not measure the outcome. The ownership can have been recorded. The verified
-              outcome can still be open. The board looks settled because the accountable word was
+              The failure mode is ordinary on a shutdown. The profit figure is shown beside a
+              maintenance decision or a production decision, and the room treats the value as
+              known. The outage window closed. The cost target was met. The unit came back. Each of
+              those is a separate record. The figure does not measure whether the deferred scope
+              stayed open, whether the bad actor is still installed, or whether the constraint
+              still binds. The accounting result can have been recorded. The verified operational
+              outcome can still be open. The board looks settled because the profit word was
               allowed to stand in for the measured result.
             </p>
 
@@ -288,11 +298,10 @@ export default function AccountabilityIsNotClosurePage() {
                 Green Is Not Go
               </Link>{' '}
               already refuses to treat a green tile as permission to run, clear, start, or leave
-              equipment in service. An accountable name painted on that tile is not a stronger
-              green. It is ownership sitting on a display. Go still required a named human
-              decision. The result after the plant move still requires a verified outcome recorded
-              against that ownership. The color supplies neither the decision, the ownership, nor
-              the close.
+              equipment in service. A profit figure painted on that tile is not a stronger green.
+              It is an accounting result sitting on a display. Go still required a named human
+              decision. The result after the plant move still requires a verified outcome. The
+              color supplies neither the decision, the outcome, nor the value.
             </p>
 
             <p>
@@ -303,47 +312,46 @@ export default function AccountabilityIsNotClosurePage() {
                 Honesty Boundary Is Not Optional
               </Link>{' '}
               is the rule that keeps the words apart under the honesty and verification boundary.
-              Sync states what was checked and what was not claimed. Calling accountability closure
-              crosses that boundary. Treating a verified outcome as if it were only a name, or
-              treating the name as if it were the measured result, is the same confusion from the
-              other side.
+              Sync states what was checked and what was not claimed. Calling profit value crosses
+              that boundary. Treating a verified outcome as if it were only a P&L line, or treating
+              the P&L line as if it were the measured result, is the same confusion from the other
+              side.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Treating accountability as closure ships a named owner into a finished loop nobody
-              has measured. The owner can be recorded and the operating loop can still be open.
+              Treating profit as value ships an accounting result into a finished claim about plant
+              value nobody has measured. The figure can be recorded and the value can still be
+              open.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Surfacing an accountable owner beside Evidence, Verification, Proof, and Authorization
-              is still a read
+              Surfacing a profit figure beside Evidence and Verification is still a read
             </h2>
 
             <p>
-              Sync may surface an accountable owner beside Evidence, Verification, Proof, and
-              Authorization. Surfacing is still a read. The screen can show the owner next to the
-              evidence the case holds, next to the named observation the verification step stores,
-              next to a closed chain when the claim, the conditions, the checks, and the lineage
-              are named, and next to the authorized state that answered who may start. Showing the
-              owner does not write a CMMS work order. Showing the owner does not clear equipment to
-              run. Showing the owner does not treat the case as plant-execute. Showing the owner
-              does not record achieved, not_achieved, or inconclusive. A read of an accountable
-              owner is still a read. A named accountable human without a verified outcome leaves
-              the operating loop open.
+              Sync may surface a profit figure beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. The screen can show the figure next to the cost
+              rules the case holds, next to the named observation the verification step stores, and
+              next to achieved, not_achieved, or inconclusive when that record exists. Showing the
+              figure does not write a CMMS work order. Showing the figure does not clear equipment
+              to run. Showing the figure does not treat the case as plant-execute. Showing the
+              figure does not record the verified operational outcome. A read of a profit figure is
+              still a read. A black maintenance result without a verified outcome leaves the value
+              unrecorded.
             </p>
 
             <p>
-              Evidence from the plant beats the accountable owner. If the evidence on the case does
-              not support the named ownership, the case refuses. If the evidence records who
-              remains responsible and does not record the verified outcome, the case may store the
-              owner and must not store the loop as closed. The label does not fill the gap, and it
-              does not close it. Sync refuses false precision. Sync refuses when evidence is insufficient.
+              Evidence from the plant beats the profit figure. If the evidence on the case does not
+              support the cost rules, the period, or the figure, the case refuses. If the evidence
+              records the accounting result and does not record the verified outcome, the case may
+              store the figure and must not store the figure as value. The label does not fill the
+              gap, and it does not close it. Sync refuses false precision. Sync refuses when evidence is insufficient.
             </p>
 
             <p>
               Stage-1 evidence is the record held on the case. A live connector that pulls
-              historian or control-system tags sits outside this edition. Simulated or seeded
-              telemetry and assets are practice records. A practice record that says accountable is not a customer plant release, and it is not closure of the operating loop.
+              historian or control-system tags sits outside this edition. Simulated or seeded telemetry
+              and assets are practice records. A practice record that says profitable is not a customer plant release, and it is not the value of an operating decision.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -351,18 +359,17 @@ export default function AccountabilityIsNotClosurePage() {
             </h2>
 
             <p>
-              Evidence may cite an accountable owner when the named human and the results,
-              exceptions, and learning that human owns are named. That citation is a record of who
-              remains responsible after the plant move. It is not a record that the outcome was
-              measured. A recommendation may say investigate because accountability is unrecorded,
-              or because accountability is recorded and the verified outcome is still open. The
-              proposal does not close the loop.
+              Evidence may cite a profit figure when the period, the cost rules, the allocations,
+              and the cost base are named. That citation is a record of an accounting result. It is
+              not a record that the operational outcome was measured. A recommendation may say
+              investigate because the figure is unrecorded, or because the figure is recorded and
+              the verified outcome is still open. The proposal does not record the value.
             </p>
 
             <p>
               If the named person approves work, the case may store the intent. The intent is not
-              execution, and named intent is not closure. An accountable label does not perform the
-              write and does not record the measured result the work was meant to produce. Authorized
+              execution, and named intent is not value. A profit label does not perform the write
+              and does not record the measured result the work was meant to produce. Authorized
               execution systems write the work order or the isolation. Sync does not write the work
               order. Sync does not mark an asset closed. Sync does not write that state back. CMMS
               write-back is not a live product path. Direct plant execute stays off.
@@ -371,29 +378,27 @@ export default function AccountabilityIsNotClosurePage() {
             <p>
               Verification asks whether the authorized action did what the decision named. The
               check is named observation against named criteria, stored as achieved, not_achieved,
-              or inconclusive, with measured notes. That record is the closure of the claim about
-              the outcome, recorded against the owner. It does not, by itself, turn the name into
-              the measurement, and it does not turn an earlier authorization into the close. A
-              named human decides. A named human remains accountable after the plant move. The
-              operating loop stays open until the verified outcome is recorded against that
-              ownership.
+              or inconclusive, with measured notes. That record is the value claim the case is
+              allowed to close, when the criteria named an operational outcome. It does not, by
+              itself, turn the profit figure into that outcome, and it does not turn an earlier
+              cost target into the value. A named human decides. A named human remains accountable
+              after the plant move. The value stays unrecorded until the verified operational
+              outcome is stored.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Sync may surface an accountable owner beside Evidence, Verification, Proof, and
-              Authorization. Surfacing is still a read. Sync refuses false precision. Sync refuses
-              when evidence is insufficient. A named human decides. A named human remains
-              accountable after the plant move. The accountable owner stays an answer to who
-              remains responsible. Closure stays open until the verified outcome is recorded
-              against that ownership. A named accountable human without a verified outcome leaves
-              the operating loop open.
+              Sync may surface a profit figure beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. A named human decides. A named human remains accountable
+              after the plant move. The profit figure stays an accounting result under named cost
+              rules. Value stays open until the verified operational outcome is recorded. A black
+              maintenance result without a verified outcome leaves the value unrecorded.
             </p>
 
             <p>
               Learning keeps the closed case: achieved, not_achieved, or inconclusive, with
-              measured notes. It does not keep accountability as closure. A later question that
-              cites a named owner as if the outcome were already measured is citing ownership. Sync
-              must not auto-close, auto-authorize, or treat accountable closure as Learning credit.
+              measured notes. It does not keep profit as value. A later question that cites a
+              profit figure as if the outcome were already measured is citing an accounting result.
+              Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -412,20 +417,20 @@ export default function AccountabilityIsNotClosurePage() {
               >
                 {fieldManual.title}
               </Link>{' '}
-              directly. Evidence may hold what was shown and which conditions it named. Human
-              decision may hold who accepted the consequence and who may start. Action may hold the
+              directly. Evidence may hold the cost rules, the period, and the figure that was
+              shown. Human decision may hold who accepted the consequence. Action may hold the
               intent that decision routed. Verification may hold the named observation. Learning
               may hold achieved, not_achieved, or inconclusive, with measured notes — the verified
-              outcome recorded against the owner who remains responsible. None of those steps is an
-              accountable name used as closure. The{' '}
+              operational outcome, not the profit figure. None of those steps is a profit figure
+              used as value. The{' '}
               <Link
                 href={fieldManualPath(honestyChapter.slug)}
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Honesty boundaries
               </Link>{' '}
-              keep this edition from treating a named owner as the measured result. Later editions
-              can deepen a chapter. The spine stays in this order.
+              keep this edition from treating an accounting result as the measured result. Later
+              editions can deepen a chapter. The spine stays in this order.
             </p>
 
             <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
@@ -462,8 +467,8 @@ export default function AccountabilityIsNotClosurePage() {
             <p>
               This is an essay about the Decision Case order, not a customer case study. It names
               no plant, states no savings figure, and claims no prevented failure. It states no OEM limit
-              and no operating threshold. It does not claim that an accountable owner is
-              closure of the operating loop, writes a CMMS work order, clears equipment to run, or
+              and no operating threshold. It does not claim that a profit figure is the value
+              of an operating decision, writes a CMMS work order, clears equipment to run, or
               records the measured result. It does not claim that Sync executes plant work. It does
               not claim CMMS write-back as a shipped product.
             </p>
@@ -477,7 +482,7 @@ export default function AccountabilityIsNotClosurePage() {
               >
                 Field Manual {fieldManual.version}
               </Link>{' '}
-              describes that journey. Walking those steps is not closure of the operating loop. The
+              describes that journey. Walking those steps is not a claim that profit is value. The
               verification step is where named observation against named criteria is stored as
               achieved, not_achieved, or inconclusive, with measured notes. This edition does not
               describe plant execute, a live connector tag pull, CMMS write-back, SMTP invite
@@ -491,6 +496,13 @@ export default function AccountabilityIsNotClosurePage() {
             <p>
               Companion reading:{' '}
               <Link
+                href="/insights/accountability-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Closure
+              </Link>{' '}
+              on why a named owner is not the verified outcome,{' '}
+              <Link
                 href="/insights/authorization-is-not-accountability"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
@@ -499,26 +511,19 @@ export default function AccountabilityIsNotClosurePage() {
               on why a named decision that accepts consequence is not continuing ownership of the
               outcome,{' '}
               <Link
-                href="/insights/proof-is-not-authorization"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Proof Is Not Authorization
-              </Link>{' '}
-              on why a closed chain is not authorization to execute,{' '}
-              <Link
-                href="/insights/learning-requires-a-verified-outcome"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Learning Requires a Verified Outcome
-              </Link>{' '}
-              on why a later case inherits the measured result and not a name,{' '}
-              <Link
                 href="/insights/verification-is-not-optional"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
                 Verification Is Not Optional
               </Link>{' '}
               on why the case stays open until the check is recorded,{' '}
+              <Link
+                href="/insights/learning-requires-a-verified-outcome"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning Requires a Verified Outcome
+              </Link>{' '}
+              on why a later case inherits the measured result and not an accounting figure,{' '}
               <Link
                 href="/insights/verified-is-not-assured"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -568,34 +573,20 @@ export default function AccountabilityIsNotClosurePage() {
                 Strategic Pilot
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
-              the measured result. The accountable owner does not close the loop.
-            </p>
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/profit-is-not-value"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Profit Is Not Value
-              </Link>
-              , on why a profit figure under named cost rules is still not the verified operational
-              outcome. Profit answers whether the recorded remainder met the rules someone chose.
-              Value is the measured result the Decision Case was opened to change. Closure is not
-              cash. Cash is not margin. Margin is not profit. Profit is not value.
+              the measured result. The profit figure does not record the value.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
-                Field Manual {fieldManual.version} states the order and the boundaries.
-                Accountability is the continuing named ownership of results, exceptions, and
-                learning after the plant move. Closure is the verified outcome recorded against
-                that ownership — a measured result, not named intent. The Reliability Engineer
-                workspace is where a signed-in Decision Case is completed. A Reliability Assessment
-                is the bounded review when the question is whether the records can support a
-                conclusion. None of those is a claim that Sync executes plant work, that CMMS
-                write-back is live, or that self-guided onboarding is a live product path.
+                Field Manual {fieldManual.version} states the order and the boundaries. Profit is
+                an accounting result under named cost rules. Value is the verified operational
+                outcome stored as achieved, not_achieved, or inconclusive, with measured notes. The
+                Reliability Engineer workspace is where a signed-in Decision Case is completed. A
+                Reliability Assessment is the bounded review when the question is whether the
+                records can support a conclusion. None of those is a claim that Sync executes plant
+                work, that CMMS write-back is live, or that self-guided onboarding is a live
+                product path.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -619,7 +610,7 @@ export default function AccountabilityIsNotClosurePage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="accountability-is-not-closure" />
+          <InsightNextSteps slug="profit-is-not-value" />
         </motion.article>
       </div>
     </main>

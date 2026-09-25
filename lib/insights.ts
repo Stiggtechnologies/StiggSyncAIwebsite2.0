@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'profit-is-not-value',
+    title: 'Profit Is Not Value',
+    description:
+      'Profit is not value. A profit figure is an accounting result for a named period under the cost rules, allocations, and cost base someone chose. That figure answers whether the recorded remainder met those rules. Value is the verified operational outcome the Decision Case was opened to change: restored capacity, a constraint released, a loss avoided, stored as achieved, not_achieved, or inconclusive, with measured notes. Profit is still not that outcome. Treating the profit figure as value ships an accounting result into a finished claim about plant value nobody has measured, under the honesty and verification boundary. A profit figure can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that is already closed. Evidence from the plant beats the profit figure. Sync may surface a profit figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit. A black maintenance result without a verified outcome leaves the value unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Companion to Accountability Is Not Closure, Authorization Is Not Accountability, Verification Is Not Optional, Learning Requires a Verified Outcome, and Verified Is Not Assured.',
+    excerpt:
+      'A profit figure is an accounting result under the cost rules someone chose. It is not the verified operational outcome the Decision Case was opened to change. Value is that measured result — achieved, not_achieved, or inconclusive — not the profit on the shutdown.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'accountability-is-not-closure',
     title: 'Accountability Is Not Closure',
     description:
@@ -582,12 +594,40 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'accountability-is-not-closure': {
-    relatedSlug: 'authorization-is-not-accountability',
-    relatedNote: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
+  'profit-is-not-value': {
+    relatedSlug: 'accountability-is-not-closure',
+    relatedNote: 'Closure is the verified outcome recorded against named ownership. Profit is an accounting result under named cost rules. Value is that verified operational outcome, not the profit figure.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A profit figure does not own the outcome after the work runs, and it is not the value of that outcome.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. A profit figure does not record that check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Value is that measured operational outcome, not a profit figure and not standing assurance.',
+      },
+    ],
+  },
+  'accountability-is-not-closure': {
+    relatedSlug: 'profit-is-not-value',
+    relatedNote: 'Profit is an accounting result under named cost rules. Value is the verified operational outcome. A profit figure is not that outcome.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. Accountability is continuing named ownership of results, exceptions, and learning after the plant move. Closure is the verified outcome recorded against that ownership.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain answers whether a claim held. It is not authorization, not accountability, and not closure of the operating loop.',
@@ -612,6 +652,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure is an accounting result under named cost rules. It is not the verified operational outcome, and it is not accountability for that outcome.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs.',
@@ -732,6 +776,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A verified record closes a claim about the past. A profit figure is not that claim and is not the value of the operating decision.',
+      },
       {
         slug: 'accountability-is-not-closure',
         note: 'A verified record closes a claim about the past. Closure of the operating loop is that measured result recorded against named ownership, not the name alone.',
@@ -3036,6 +3084,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'profit-is-not-value',
+        note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
+      },
+      {
         slug: 'accountability-is-not-closure',
         note: 'Learning inherits the verified outcome. A named accountable owner without that measured result is not closure.',
       },
@@ -3058,6 +3110,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'Recording the check is the measured result. A profit figure does not record the value of the operating decision.',
+      },
       {
         slug: 'accountability-is-not-closure',
         note: 'Recording the check is the measured result. Naming an accountable owner does not close the operating loop without that record.',
