@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'trend-is-not-truth',
+    title: 'Trend Is Not Truth',
+    description:
+      'Trend is not truth. A rising or falling line, a co-moving tag cluster, a week-over-week delta, or a “we’ve been trending this way” narrative is not a recorded causal check and not a verified outcome. A trend can inform a recommendation. It does not authorize action, clear a gate, or replace a named human decision on the Decision Case. Sync recommends. A named human decides. Companion to Correlation Is Not Causation and Confidence Is Not Evidence.',
+    excerpt:
+      'A rising or falling line, a co-moving tag cluster, a week-over-week delta, or a “we’ve been trending this way” narrative is not a recorded causal check and not a verified outcome. Sync recommends. A named human decides.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'correlation-is-not-causation',
     title: 'Correlation Is Not Causation',
     description:
@@ -282,12 +294,60 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'trend-is-not-truth': {
+    relatedSlug: 'correlation-is-not-causation',
+    relatedNote: 'Co-movement is not causation. A slope is not the recorded truth.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the line will continue is not a recorded check.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A trend narrative is not a recorded fact.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A rising or falling line is a display. It does not authorize action.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert beside a slope is still an alert, not a decision.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A delta does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A trend does not record it as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A quiet slope is not the decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A week-over-week delta is not the check.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A chart without a reconstructable trail is not observed truth.',
+      },
+    ],
+  },
   'correlation-is-not-causation': {
     relatedSlug: 'confidence-is-not-evidence',
     relatedNote: 'Being sure is not a recorded check. A co-moving trend is not a causal check.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A rising or falling line is not a recorded check and not a verified outcome.',
+      },
       {
         slug: 'assumption-is-not-evidence',
         note: 'A belief is not a recorded fact. Co-movement does not record the cause.',
@@ -331,6 +391,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       {
         slug: 'correlation-is-not-causation',
         note: 'Tags that move together are not a recorded causal check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope and a week-over-week delta are not a recorded check.',
       },
       {
         slug: 'unknown-is-not-clear',
