@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'profit-is-not-value',
+    title: 'Profit Is Not Value',
+    description:
+      'Profit is not value. A profit figure is an accounting result for a named period under the cost rules, allocations, and cost base someone chose. That figure answers whether the recorded remainder met those rules. Value is the verified operational outcome the Decision Case was opened to change: restored capacity, a constraint released, a loss avoided, stored as achieved, not_achieved, or inconclusive, with measured notes. Profit is still not that outcome. Treating the profit figure as value ships an accounting result into a finished claim about plant value nobody has measured, under the honesty and verification boundary. A profit figure can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that is already closed. Evidence from the plant beats the profit figure. Sync may surface a profit figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat profit as value as Learning credit. A black maintenance result without a verified outcome leaves the value unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'A profit figure is an accounting result under the cost rules someone chose. It is not the verified operational outcome the Decision Case was opened to change. Value is that measured result — achieved, not_achieved, or inconclusive — not the profit on the shutdown.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'margin-is-not-profit',
     title: 'Margin Is Not Profit',
     description:
@@ -618,12 +630,60 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'margin-is-not-profit': {
-    relatedSlug: 'cash-is-not-margin',
-    relatedNote: 'Cash collected and invoices paid are not contribution margin. Contribution margin after the cost to serve is still not bottom-line profit or durable profitable revenue.',
+  'profit-is-not-value': {
+    relatedSlug: 'margin-is-not-profit',
+    relatedNote: 'Contribution margin and unit economics are not bottom-line profit. A profit figure under named cost rules is still not the verified operational outcome the Decision Case was opened to change.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. A profit figure is not the verified operational outcome.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A profit figure is not the value of the operating decision.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. Profit is an accounting result under named cost rules. Value is that verified operational outcome, not the profit figure.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A profit figure does not own the outcome after the work runs, and it is not the value of that outcome.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A profit figure on that order is not the verified operational outcome.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. A profit figure is not that value.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. A profit figure does not record that check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Value is that measured operational outcome, not a profit figure and not standing assurance.',
+      },
+    ],
+  },
+  'margin-is-not-profit': {
+    relatedSlug: 'profit-is-not-value',
+    relatedNote: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. Bottom-line profit is not that outcome.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Contribution margin after the cost to serve is still not bottom-line profit or durable profitable revenue.',
+      },
       {
         slug: 'closure-is-not-cash',
         note: 'Closing a work order, a ticket, or a shift is not cash collected. A unit remainder after the cost to serve is not bottom-line profit.',
@@ -717,6 +777,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome. A named owner is not that outcome.',
+      },
+      {
         slug: 'margin-is-not-profit',
         note: 'Contribution margin and unit economics are not bottom-line profit or durable profitable revenue. A named owner is not that profit.',
       },
@@ -752,6 +816,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure is an accounting result under named cost rules. It is not the verified operational outcome, and it is not accountability for that outcome.',
+      },
       {
         slug: 'proof-is-not-authorization',
         note: 'A closed chain answers whether a claim held. Authorization is a named human decision that accepts consequence and routes intent. Accountability is the continuing named ownership of results, exceptions, and learning after the work runs.',
@@ -873,6 +941,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'profit-is-not-value',
+        note: 'A verified record closes a claim about the past. A profit figure is not that claim and is not the value of the operating decision.',
+      },
+      {
         slug: 'accountability-is-not-closure',
         note: 'A verified record closes a claim about the past. Closure of the operating loop is that measured result recorded against named ownership, not the name alone.',
       },
@@ -916,6 +988,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A completed work order is not verification. A profit figure on that order is not the verified operational outcome.',
+      },
       {
         slug: 'margin-is-not-profit',
         note: 'A completed work order is not verification. Contribution margin on that order is not bottom-line profit.',
@@ -972,6 +1048,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A clearance stamp is not proof the value is realized. A profit figure is not that verified operational outcome.',
+      },
       {
         slug: 'margin-is-not-profit',
         note: 'A clearance stamp is not completion. Gross margin after the cost to serve is not durable profitable revenue.',
@@ -3200,6 +3280,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'profit-is-not-value',
+        note: 'Learning inherits the verified outcome. A profit figure without that measured result is not value.',
+      },
+      {
         slug: 'margin-is-not-profit',
         note: 'Learning inherits the verified outcome. Contribution margin is not bottom-line profit, and unit economics are not profitable ARR.',
       },
@@ -3234,6 +3318,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'Recording the check is the measured result. A profit figure does not record the value of the operating decision.',
+      },
       {
         slug: 'margin-is-not-profit',
         note: 'Recording the check is the measured result. The check does not compute bottom-line profit and does not declare durable profitable revenue.',
