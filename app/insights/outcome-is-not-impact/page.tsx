@@ -705,6 +705,19 @@ export default function OutcomeIsNotImpactPage() {
               the measured result. The measured outcome does not record the impact.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/impact-is-not-revenue"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Impact Is Not Revenue
+              </Link>
+              , on why business impact is still not revenue. Revenue is recognized sales. Impact can
+              exist without a new recognized sale, and recognized sales can rise without attributable
+              impact from a specific decision recorded on a Sync case.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
