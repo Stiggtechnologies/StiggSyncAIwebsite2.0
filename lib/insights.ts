@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'outcome-is-not-impact',
+    title: 'Outcome Is Not Impact',
+    description:
+      'Outcome is not impact. A measured outcome is named observation against named criteria, stored as achieved, not_achieved, or inconclusive, with measured notes. That record answers what was observed after the plant move. Business impact is attribution that a named decision changed cash, risk, or capacity. A green KPI or a completed workflow is not that attribution. Treating the measured outcome as impact ships a recorded result into a finished claim about cash, risk, or capacity nobody has attributed, under the honesty and verification boundary. A measured outcome can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, and not a Decision Case that has already earned impact. Evidence from the plant beats the outcome when the outcome is being used as impact. Sync may surface a measured outcome beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat outcome as impact as Learning credit. Sync does not attribute a change in cash, risk, or capacity. Sync does not declare impact. Sync does not compute a return. A green KPI without attribution leaves the impact unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Value Is Not Outcome, Profit Is Not Value, Proxy Is Not Outcome, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'A measured outcome records what was observed. It is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity — not a green KPI or a completed workflow.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'value-is-not-outcome',
     title: 'Value Is Not Outcome',
     description:
@@ -642,12 +654,84 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'value-is-not-outcome': {
-    relatedSlug: 'profit-is-not-value',
-    relatedNote: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. A reported outcome is not that value unless it is the verified change the Decision Case named and authorized.',
+  'outcome-is-not-impact': {
+    relatedSlug: 'value-is-not-outcome',
+    relatedNote: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. A measured outcome is still not business impact.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome. That measured outcome is still not business impact.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A measured outcome is still not attribution that a decision changed cash, risk, or capacity.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. A profit figure is not the value. The measured outcome is not impact.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Cash in the bank is not attribution to a decision that changed cash, risk, or capacity.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A closed record is not impact.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not impact.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A measured outcome after the start is not attribution of cash, risk, or capacity.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not impact.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the impact is realized. A green KPI is not that impact.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not attribute impact.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a measured outcome as impact.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Impact is attribution to a decision, not standing assurance and not the measured outcome alone.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a measured outcome is still a proposal. Recommend is not authorize, and the proposal is not impact.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A green KPI on that tile is not impact.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A number that moved with the outcome is not a cause. Coincidence is not attribution to the decision.',
+      },
+    ],
+  },
+  'value-is-not-outcome': {
+    relatedSlug: 'outcome-is-not-impact',
+    relatedNote: 'A measured outcome is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity. A reported outcome is still not the value.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. A reported outcome is not that value unless it is the verified change the Decision Case named and authorized.',
+      },
       {
         slug: 'margin-is-not-profit',
         note: 'Contribution margin and unit economics are not bottom-line profit. Profit under named cost rules is still not value. A reported outcome is not value unless it is the verified change the Decision Case named and authorized.',
@@ -684,6 +768,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. A profit figure is still not the value, and the value is still not attribution of cash, risk, or capacity.',
+      },
       {
         slug: 'margin-is-not-profit',
         note: 'Contribution margin and unit economics are not bottom-line profit. A profit figure under named cost rules is still not the verified operational outcome the Decision Case was opened to change.',
@@ -769,6 +857,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'outcome-is-not-impact',
+        note: 'Cash collected is not contribution margin. A measured outcome beside the receipt is not attribution that a decision changed cash, risk, or capacity.',
+      },
+      {
         slug: 'value-is-not-outcome',
         note: 'Cash collected is not contribution margin. A favorable KPI beside the receipt is not the verified change the case named and authorized.',
       },
@@ -832,6 +924,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not impact.',
+      },
       {
         slug: 'value-is-not-outcome',
         note: 'A named owner is not closure. A reported outcome beside that owner is not the verified change the case named and authorized.',
@@ -1049,6 +1145,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'outcome-is-not-impact',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not impact.',
+      },
+      {
         slug: 'value-is-not-outcome',
         note: 'A completed work order is not verification. A favorable KPI on that order is not the verified change the case named and authorized.',
       },
@@ -1112,6 +1212,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A clearance stamp is not proof the work is finished. A measured outcome is not impact, and a green KPI is not that attribution.',
+      },
       {
         slug: 'value-is-not-outcome',
         note: 'A clearance stamp is not proof the value is realized. A reported outcome is not the verified change the case named and authorized.',
@@ -3348,6 +3452,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'outcome-is-not-impact',
+        note: 'Learning inherits the verified outcome. It does not inherit a measured outcome as impact.',
+      },
+      {
         slug: 'value-is-not-outcome',
         note: 'Learning inherits the verified change the case named. A favorable KPI is not that value.',
       },
@@ -3390,6 +3498,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not attribute impact.',
+      },
       {
         slug: 'value-is-not-outcome',
         note: 'Recording the check is named observation against named criteria. A reported outcome does not declare the value.',
