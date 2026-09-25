@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'proxy-is-not-outcome',
+    title: 'Proxy Is Not Outcome',
+    description:
+      'Proxy is not outcome. A KPI, a leading indicator, a model score, a green tile, a closed work-order count, an MTBF estimate, a sensor health %, or any other stand-in measure can inform a recommendation. It is not the verified operational outcome on the Decision Case. Treating a proxy as the outcome invents false closure, skips verification, and teaches the wrong lesson into Learning. Sync may surface proxies. A named human still decides. Companion to Trend Is Not Truth, Correlation Is Not Causation, and Verification Is Not Optional.',
+    excerpt:
+      'A KPI, a leading indicator, a model score, a green tile, a closed work-order count, an MTBF estimate, or a sensor health % can inform a recommendation. It is not the verified operational outcome. Sync may surface proxies. A named human still decides.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'trend-is-not-truth',
     title: 'Trend Is Not Truth',
     description:
@@ -294,12 +306,68 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'proxy-is-not-outcome': {
+    relatedSlug: 'trend-is-not-truth',
+    relatedNote: 'A slope is not the truth. A proxy move is not the verified outcome.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Co-movement is not causation. A proxy that moved with the work is not the check.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'A high model score is not a recorded check, and it does not close the case.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A green tile is a display. It is not the verified outcome.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A proxy move is not the check.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a hoped-for proxy move.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A stand-in story is not a recorded fact.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert beside a green tile is still an alert, not a decision.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A proxy does not fill it.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A proxy does not record it as clear.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A quiet proxy is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A score without a reconstructable trail is not the outcome.',
+      },
+    ],
+  },
   'trend-is-not-truth': {
     relatedSlug: 'correlation-is-not-causation',
     relatedNote: 'Co-movement is not causation. A slope is not the recorded truth.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A stand-in measure is not the verified operational outcome.',
+      },
       {
         slug: 'confidence-is-not-evidence',
         note: 'Being sure the line will continue is not a recorded check.',
@@ -344,6 +412,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a score, or a closed count is not the verified outcome.',
+      },
       {
         slug: 'trend-is-not-truth',
         note: 'A rising or falling line is not a recorded check and not a verified outcome.',
@@ -395,6 +467,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       {
         slug: 'trend-is-not-truth',
         note: 'A slope and a week-over-week delta are not a recorded check.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'Being sure a proxy moved is not the verified outcome.',
       },
       {
         slug: 'unknown-is-not-clear',

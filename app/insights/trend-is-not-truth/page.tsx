@@ -602,7 +602,16 @@ export default function TrendIsNotTruthPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/proxy-is-not-outcome"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proxy Is Not Outcome
+              </Link>
+              , on why a KPI, a leading indicator, a model score, a green tile, a closed work-order
+              count, an MTBF estimate, a sensor health %, or any other stand-in measure is not the
+              verified operational outcome on the Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/correlation-is-not-causation"
                 className="text-[#3B82F6] hover:text-white transition-colors"
