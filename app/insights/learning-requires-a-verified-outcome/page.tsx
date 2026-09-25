@@ -554,6 +554,18 @@ export default function LearningRequiresAVerifiedOutcomePage() {
               inherit an execution note as results.
             </p>
 
+            <p>
+              <Link
+                href="/insights/results-is-not-learning"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Results Is Not Learning
+              </Link>{' '}
+              is a different essay, a different title, and a different refusal. Learning here inherits
+              the verified outcome. It does not inherit a results note as an updated decision rule.
+              This page does not rewrite that essay, and that essay does not rewrite this one.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
