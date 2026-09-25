@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'margin-is-not-profit',
+    title: 'Margin Is Not Profit',
+    description:
+      'Margin is not profit. Contribution margin is what remains of revenue after the cost to serve. Unit economics is that remainder on a unit of work or a unit of recurring revenue. Gross margin after the cost to serve is the same family of claim. Bottom-line profit is what remains after the costs the unit remainder does not carry. Durable profitable revenue is recurring revenue that remains profitable after those costs and still compounds toward the portfolio northstar. Profitable ARR, in this essay, names that later claim. Covering the cost to serve is not bottom-line profit, and it is not durable profitable revenue. Treating contribution margin, unit economics, or gross margin after the cost to serve as bottom-line profit or profitable ARR ships a unit remainder into a profit claim under the honesty and verification boundary. A margin note can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not overhead, not financing, not period cost, and not a Decision Case that has already earned profit. Evidence from the plant beats the margin. Sync may surface a contribution margin or a unit-economics note beside Evidence, Verification, Proof, Authorization, Accountability, and Closure. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat contribution margin as bottom-line profit, or as Learning credit. Sync does not compute contribution margin. Sync does not compute bottom-line profit. Sync does not declare profitable ARR. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Complete Is Not Verified, Cleared Is Not Complete, Learning Requires a Verified Outcome, and Verification Is Not Optional.',
+    excerpt:
+      'Contribution margin and unit economics are what remain after the cost to serve. Neither is bottom-line profit, and neither is durable profitable revenue. Gross margin after the cost to serve is not profitable ARR that compounds toward the portfolio northstar.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'cash-is-not-margin',
     title: 'Cash Is Not Margin',
     description:
@@ -606,12 +618,48 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'cash-is-not-margin': {
-    relatedSlug: 'closure-is-not-cash',
-    relatedNote: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Cash collected and invoices paid are still not contribution margin or profitable ARR.',
+  'margin-is-not-profit': {
+    relatedSlug: 'cash-is-not-margin',
+    relatedNote: 'Cash collected and invoices paid are not contribution margin. Contribution margin after the cost to serve is still not bottom-line profit or durable profitable revenue.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A unit remainder after the cost to serve is not bottom-line profit.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'A named owner is not closure of the operating loop. Contribution margin is not bottom-line profit or durable profitable revenue.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is a completion label. A contribution margin on that order is not bottom-line profit.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the value is realized. Gross margin after the cost to serve is not durable profitable revenue.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit contribution margin as bottom-line profit or as profitable ARR.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not compute bottom-line profit.',
+      },
+    ],
+  },
+  'cash-is-not-margin': {
+    relatedSlug: 'margin-is-not-profit',
+    relatedNote: 'Contribution margin and unit economics are not bottom-line profit or durable profitable revenue. Gross margin after the cost to serve is not profitable ARR that compounds toward the portfolio northstar.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. Cash collected and invoices paid are still not contribution margin or profitable ARR.',
+      },
       {
         slug: 'accountability-is-not-closure',
         note: 'A named owner is not closure of the operating loop. Cash collected is not contribution margin after the cost to serve.',
@@ -668,6 +716,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin and unit economics are not bottom-line profit or durable profitable revenue. A named owner is not that profit.',
+      },
       {
         slug: 'cash-is-not-margin',
         note: 'Cash collected and invoices paid are not contribution margin or profitable ARR. Cash in the bank is not margin after the cost to serve.',
@@ -865,6 +917,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'margin-is-not-profit',
+        note: 'A completed work order is not verification. Contribution margin on that order is not bottom-line profit.',
+      },
+      {
         slug: 'cash-is-not-margin',
         note: 'A completed work order is not verification. Cash collected and invoices paid are not contribution margin after the cost to serve.',
       },
@@ -916,6 +972,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'margin-is-not-profit',
+        note: 'A clearance stamp is not completion. Gross margin after the cost to serve is not durable profitable revenue.',
+      },
       {
         slug: 'cash-is-not-margin',
         note: 'A clearance stamp is not completion. Cash in the bank is not margin after the cost to serve.',
@@ -3140,6 +3200,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'margin-is-not-profit',
+        note: 'Learning inherits the verified outcome. Contribution margin is not bottom-line profit, and unit economics are not profitable ARR.',
+      },
+      {
         slug: 'cash-is-not-margin',
         note: 'Learning inherits the verified outcome. Invoices paid are not contribution margin, and cash collected is not profitable ARR.',
       },
@@ -3170,6 +3234,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Recording the check is the measured result. The check does not compute bottom-line profit and does not declare durable profitable revenue.',
+      },
       {
         slug: 'cash-is-not-margin',
         note: 'Recording the check is the measured result. The check does not compute contribution margin and does not declare profitable ARR.',
