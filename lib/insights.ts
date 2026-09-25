@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'confidence-is-not-evidence',
+    title: 'Confidence Is Not Evidence',
+    description:
+      'Confidence is not evidence. A strong gut feel, a high model score, years of tribal “we’ve always known,” or a manager’s certainty is still not a recorded check or verified outcome on the Decision Case. Clearance, authorization, and learning require a recorded fact — a check, a measurement, or a verified outcome — not how sure someone feels. Companion to Assumption Is Not Evidence.',
+    excerpt:
+      'A strong gut feel, a high model score, or a manager’s certainty is not a recorded check. Clearance, authorization, and learning still require a recorded fact, not how sure someone feels.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'assumption-is-not-evidence',
     title: 'Assumption Is Not Evidence',
     description:
@@ -258,12 +270,44 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'confidence-is-not-evidence': {
+    relatedSlug: 'assumption-is-not-evidence',
+    relatedNote: 'An assumption is not a recorded fact. Being sure does not make it one.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. Confidence does not record it as clear.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. A high score does not fill it.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. Certainty about the quiet is not the decision.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. A gut feel is not the check.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A high model score without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'assumption-is-not-evidence': {
     relatedSlug: 'unknown-is-not-clear',
     relatedNote: 'Missing evidence stays unknown. An assumption does not record it as fact.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure does not record the check. A high score is not the measurement.',
+      },
       {
         slug: 'blank-is-not-zero',
         note: 'An empty field is not a measured zero. An assumption does not fill it.',

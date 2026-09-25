@@ -465,6 +465,7 @@ if (
 const assumptionBlock = stepBlock('assumption-is-not-evidence');
 for (const required of [
   'unknown-is-not-clear',
+  'confidence-is-not-evidence',
   'blank-is-not-zero',
   'silence-is-not-clearance',
   'verification-is-not-optional',
@@ -502,6 +503,60 @@ for (const required of [
 ]) {
   if (!assumptionPage.includes(required)) {
     fail(`assumption-is-not-evidence page must include ${required}`);
+  }
+}
+if (
+  !assumptionPage.includes('The series continues with') ||
+  !assumptionPage.includes('/insights/confidence-is-not-evidence')
+) {
+  fail('assumption-is-not-evidence must point the series forward to confidence-is-not-evidence');
+}
+
+const confidenceBlock = stepBlock('confidence-is-not-evidence');
+for (const required of [
+  'assumption-is-not-evidence',
+  'unknown-is-not-clear',
+  'blank-is-not-zero',
+  'silence-is-not-clearance',
+  'verification-is-not-optional',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!confidenceBlock.includes(`'${required}'`)) {
+    fail(`confidence-is-not-evidence related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(confidenceBlock)) {
+  fail('confidence-is-not-evidence related reading must include the Strategic Pilot');
+}
+if (confidenceBlock.includes("next: 'strategic-pilot'")) {
+  fail('confidence-is-not-evidence next step is the Field Manual');
+}
+
+const confidencePage = read('app/insights/confidence-is-not-evidence/page.tsx');
+for (const required of [
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/verification-is-not-optional',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'strong gut feel',
+  'high model score',
+  'we&apos;ve always known',
+  'manager&apos;s certainty',
+  'recorded check',
+  'verified outcome',
+  'not how sure someone feels',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!confidencePage.includes(required)) {
+    fail(`confidence-is-not-evidence page must include ${required}`);
   }
 }
 
