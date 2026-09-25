@@ -324,6 +324,10 @@ export default function Home() {
             <Link href="/insights" className="font-semibold text-slate-400 hover:text-white">
               Insights
             </Link>
+            {' · '}
+            <Link href="/manuals/field-manual" className="font-semibold text-slate-400 hover:text-white">
+              Field Manual
+            </Link>
           </p>
         </div>
       </section>
