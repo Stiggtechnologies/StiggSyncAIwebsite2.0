@@ -762,7 +762,15 @@ export default function AnecdoteIsNotEvidencePage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/map-is-not-terrain"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Map Is Not Terrain
+              </Link>
+              , on why a diagram, a CMMS schema, a dashboard, a digital twin, or a process map is a
+              compressed representation and not the operating reality. Companion reading:{' '}
               <Link
                 href="/insights/sample-is-not-population"
                 className="text-[#3B82F6] hover:text-white transition-colors"
