@@ -517,6 +517,7 @@ const confidenceBlock = stepBlock('confidence-is-not-evidence');
 for (const required of [
   'assumption-is-not-evidence',
   'correlation-is-not-causation',
+  'trend-is-not-truth',
   'unknown-is-not-clear',
   'blank-is-not-zero',
   'silence-is-not-clearance',
@@ -571,6 +572,7 @@ if (
 const correlationBlock = stepBlock('correlation-is-not-causation');
 for (const required of [
   'confidence-is-not-evidence',
+  'trend-is-not-truth',
   'assumption-is-not-evidence',
   'unknown-is-not-clear',
   'blank-is-not-zero',
@@ -622,6 +624,75 @@ for (const required of [
 ]) {
   if (!correlationPage.includes(required)) {
     fail(`correlation-is-not-causation page must include ${required}`);
+  }
+}
+if (
+  !correlationPage.includes('The series continues with') ||
+  !correlationPage.includes('/insights/trend-is-not-truth')
+) {
+  fail('correlation-is-not-causation must point the series forward to trend-is-not-truth');
+}
+
+const trendBlock = stepBlock('trend-is-not-truth');
+for (const required of [
+  'correlation-is-not-causation',
+  'confidence-is-not-evidence',
+  'assumption-is-not-evidence',
+  'dashboard-is-not-decision',
+  'alert-is-not-decision',
+  'blank-is-not-zero',
+  'unknown-is-not-clear',
+  'silence-is-not-clearance',
+  'verification-is-not-optional',
+  'evidence-lineage-is-not-optional',
+]) {
+  if (!trendBlock.includes(`'${required}'`)) {
+    fail(`trend-is-not-truth related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(trendBlock)) {
+  fail('trend-is-not-truth related reading must include the Strategic Pilot');
+}
+if (trendBlock.includes("next: 'strategic-pilot'")) {
+  fail('trend-is-not-truth next step is the Field Manual');
+}
+
+const trendPage = read('app/insights/trend-is-not-truth/page.tsx');
+for (const required of [
+  '/insights/correlation-is-not-causation',
+  '/insights/confidence-is-not-evidence',
+  '/insights/assumption-is-not-evidence',
+  '/insights/unknown-is-not-clear',
+  '/insights/blank-is-not-zero',
+  '/insights/silence-is-not-clearance',
+  '/insights/alert-is-not-decision',
+  '/insights/dashboard-is-not-decision',
+  '/insights/verification-is-not-optional',
+  '/insights/evidence-lineage-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/recommend-is-not-authorize',
+  '/insights/human-decision-is-not-optional',
+  "fieldManualPath('evidence')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('learning')",
+  'rising or falling line',
+  'co-moving tag cluster',
+  'week-over-week delta',
+  'we&apos;ve been trending this way',
+  'recorded causal check',
+  'verified outcome',
+  'do not authorize action',
+  'clear a gate',
+  'named human decision',
+  'Sync recommends',
+  'human decides',
+  'states no OEM limit',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+]) {
+  if (!trendPage.includes(required)) {
+    fail(`trend-is-not-truth page must include ${required}`);
   }
 }
 
