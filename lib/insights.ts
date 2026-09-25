@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'anecdote-is-not-evidence',
+    title: 'Anecdote Is Not Evidence',
+    description:
+      'Anecdote is not evidence. A single operator story, a hallway claim, one shift’s memory of “how it always fails,” a vendor demo vignette, or a loud near-miss retelling can feel persuasive. That is anecdote. Anecdote can prompt a question or a recommendation to gather approved evidence. It is not evidence, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Sync may surface an anecdote as a prompt to investigate when it is labeled unconfirmed. A named human still decides. Companion to Sample Is Not Population, Noise Is Not Signal, Symptom Is Not Cause, Assumption Is Not Evidence, Confidence Is Not Evidence, Correlation Is Not Causation, and Verification Is Not Optional.',
+    excerpt:
+      'A single operator story, a hallway claim, a memory of how it always fails, a vendor demo vignette, or a loud near-miss retelling can prompt a question. It is not evidence, not a diagnosis, not root cause, and not a Decision Case.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'sample-is-not-population',
     title: 'Sample Is Not Population',
     description:
@@ -354,12 +366,88 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'anecdote-is-not-evidence': {
+    relatedSlug: 'sample-is-not-population',
+    relatedNote: 'A handful of cases is not the fleet. A story about that handful is not evidence.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'noise-is-not-signal',
+        note: 'Chatter on the dashboard is not an actionable signal. A story about that chatter is not evidence.',
+      },
+      {
+        slug: 'symptom-is-not-cause',
+        note: 'An observed symptom is not the cause. A story about that symptom is not evidence.',
+      },
+      {
+        slug: 'threshold-is-not-diagnosis',
+        note: 'A line that was crossed is not a diagnosis. A story about that line is not evidence.',
+      },
+      {
+        slug: 'assumption-is-not-evidence',
+        note: 'A belief is not a recorded fact. A retelling does not record it.',
+      },
+      {
+        slug: 'confidence-is-not-evidence',
+        note: 'Being sure the story is true is not a recorded check.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'Co-moving tags are not a cause. A hallway claim does not record one.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is a record. Anecdote clearance is not the check.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A stand-in measure is not the verified outcome. A story is not the check.',
+      },
+      {
+        slug: 'trend-is-not-truth',
+        note: 'A slope is not the truth. A memory of the slope is not a recorded check.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'An alert is not a decision. A story about the alert is not one either.',
+      },
+      {
+        slug: 'dashboard-is-not-decision',
+        note: 'A display is not a decision. A vignette about the display is not evidence.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome, not a near-miss retelling.',
+      },
+      {
+        slug: 'unknown-is-not-clear',
+        note: 'Missing evidence stays unknown. A story does not record it as clear.',
+      },
+      {
+        slug: 'blank-is-not-zero',
+        note: 'A blank is not a measured zero. An anecdote does not fill it.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'Quiet is not clearance. A story about the quiet is not the decision.',
+      },
+      {
+        slug: 'evidence-lineage-is-not-optional',
+        note: 'A story without a reconstructable trail is not observed fact.',
+      },
+    ],
+  },
   'sample-is-not-population': {
     relatedSlug: 'noise-is-not-signal',
     relatedNote: 'Chatter on a dashboard is not an actionable signal. A handful of cases is not the fleet.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A story about the handful is not evidence and not the fleet.',
+      },
       {
         slug: 'symptom-is-not-cause',
         note: 'A symptom seen on a few assets is not the cause for the population.',
@@ -429,6 +517,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A story about the chatter is not evidence and not an actionable signal.',
+      },
+      {
         slug: 'sample-is-not-population',
         note: 'A handful of cases is not the fleet. Chatter in that handful is still not an actionable signal.',
       },
@@ -496,6 +588,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A story about the symptom is not evidence and not the cause.',
+      },
       {
         slug: 'sample-is-not-population',
         note: 'A symptom seen on a few assets is not the cause for the population.',
@@ -565,6 +661,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A story about the breach is not evidence and not a diagnosis.',
+      },
+      {
         slug: 'sample-is-not-population',
         note: 'A threshold crossed on a sample is not a diagnosis of the fleet.',
       },
@@ -632,6 +732,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A retelling of the proxy move is not evidence and not the outcome.',
+      },
       {
         slug: 'sample-is-not-population',
         note: 'A proxy that moved on a few assets is not a population outcome.',
@@ -701,6 +805,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A memory of how the line always fails is not a recorded check.',
+      },
+      {
         slug: 'sample-is-not-population',
         note: 'A slope on a handful of tags is not fleet truth.',
       },
@@ -764,6 +872,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A hallway claim about co-movement is not a recorded causal check.',
+      },
       {
         slug: 'sample-is-not-population',
         note: 'Co-movement in a sample is not a causal check for the population.',
@@ -829,6 +941,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A confident retelling is not a recorded check.',
+      },
+      {
         slug: 'correlation-is-not-causation',
         note: 'Tags that move together are not a recorded causal check.',
       },
@@ -868,6 +984,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'anecdote-is-not-evidence',
+        note: 'A prior shift story is not a recorded fact.',
+      },
       {
         slug: 'correlation-is-not-causation',
         note: 'Co-moving tags are not a recorded causal check, and they do not authorize action.',

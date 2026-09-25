@@ -807,7 +807,16 @@ export default function SampleIsNotPopulationPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/anecdote-is-not-evidence"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Anecdote Is Not Evidence
+              </Link>
+              , on why a single operator story, a hallway claim, one shift&apos;s memory of how it
+              always fails, a vendor demo vignette, or a loud near-miss retelling is not evidence
+              and not a Decision Case. Companion reading:{' '}
               <Link
                 href="/insights/noise-is-not-signal"
                 className="text-[#3B82F6] hover:text-white transition-colors"
