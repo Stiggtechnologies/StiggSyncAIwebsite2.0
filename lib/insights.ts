@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'action-is-not-execution',
+    title: 'Action Is Not Execution',
+    description:
+      'Recording an ACTION disposition on a Decision Case is work intent, not plant execution. Sync may recommend and a named human may decide. ACTION stays locked until authorized execution systems write the work order or isolate the equipment.',
+    excerpt:
+      'An ACTION disposition records the work a human decision intends. It does not write a work order, isolate equipment, or change the plant. Execution stays with the systems that already hold that authority.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'learning-requires-a-verified-outcome',
     title: 'Learning Requires a Verified Outcome',
     description:
@@ -113,14 +125,35 @@ export type InsightNextStep = {
   relatedSlug: string;
   relatedNote: string;
   next: InsightNextDestination;
+  /** Further essays in Related reading, after the primary companion. */
+  also?: readonly { slug: string; note: string }[];
+  /** Also link Strategic Pilot when the doctrinal next step is the Field Manual. */
+  includePilot?: boolean;
 };
 
 /**
  * One companion essay, plus the commercial or doctrinal next step.
  * Field Manual when the essay is about the Decision Case order.
  * Strategic Pilot when the essay already points at a governed proof of one decision.
+ * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'action-is-not-execution': {
+    relatedSlug: 'recommend-is-not-authorize',
+    relatedNote: 'A named decision still does not execute the work.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The case stays open until the check is recorded.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'A later case inherits the verified outcome, not the work intent.',
+      },
+    ],
+  },
   'learning-requires-a-verified-outcome': {
     relatedSlug: 'verification-is-not-optional',
     relatedNote: 'The check a later case is allowed to inherit.',
@@ -213,6 +246,13 @@ export function assertInsightLinkGraph(): void {
     }
     if (!step.relatedNote.trim()) {
       throw new Error(`Missing related note for ${article.slug}`);
+    }
+    const seen = new Set<string>([article.slug, step.relatedSlug]);
+    for (const item of step.also ?? []) {
+      if (seen.has(item.slug) || !slugs.has(item.slug) || !item.note.trim()) {
+        throw new Error(`Bad extra related essay for ${article.slug}`);
+      }
+      seen.add(item.slug);
     }
     if (step.next !== 'field-manual' && step.next !== 'strategic-pilot') {
       throw new Error(`Bad next step for ${article.slug}`);

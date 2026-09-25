@@ -95,6 +95,38 @@ for (const [, relatedSlug, relatedNote] of stepBodies) {
   if (!relatedNote.trim()) fail('Related reading notes must be non-empty');
 }
 
+const alsoBlocks = [...stepsSection.matchAll(/also: \[([\s\S]*?)\],/g)];
+for (const [, body] of alsoBlocks) {
+  const items = [...body.matchAll(/slug: '([a-z0-9-]+)',\s*\n\s*note: '([^']+)',/g)];
+  if (items.length === 0) fail('also related reading must list slug and note');
+  for (const [, relatedSlug, relatedNote] of items) {
+    if (!slugs.includes(relatedSlug)) fail(`also related slug is not in the catalog: ${relatedSlug}`);
+    if (!relatedNote.trim()) fail('also related notes must be non-empty');
+  }
+}
+
+function stepBlock(slug) {
+  const key = `'${slug}': {`;
+  const start = stepsSection.indexOf(key);
+  if (start < 0) fail(`insightNextSteps is missing ${slug}`);
+  const next = stepsSection.indexOf("\n  '", start + key.length);
+  return stepsSection.slice(start, next === -1 ? undefined : next);
+}
+
+const actionBlock = stepBlock('action-is-not-execution');
+for (const required of [
+  'recommend-is-not-authorize',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+]) {
+  if (!actionBlock.includes(`'${required}'`)) {
+    fail(`action-is-not-execution related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(actionBlock)) {
+  fail('action-is-not-execution related reading must include the Strategic Pilot');
+}
+
 function readingSlugs(name) {
   const block = section(name);
   const found = [...block.matchAll(/slug: '([a-z0-9-]+)'/g)].map((match) => match[1]);
@@ -111,7 +143,7 @@ readingSlugs('riaFurtherReading');
 readingSlugs('strategicPilotFurtherReading');
 
 const readingComponent = read('components/insights/InsightReading.tsx');
-for (const needle of ['/reliability-assessment', "href: '/strategic-pilot'", 'fieldManualPath()']) {
+for (const needle of ['/reliability-assessment', "href: '/strategic-pilot'", 'fieldManualPath()', 'includePilot']) {
   if (!readingComponent.includes(needle)) fail(`Insight reading strip is missing ${needle}`);
 }
 
