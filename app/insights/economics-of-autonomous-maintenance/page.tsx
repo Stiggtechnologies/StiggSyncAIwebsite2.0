@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Download } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function EconomicsPage() {
   return (
@@ -90,6 +91,7 @@ export default function EconomicsPage() {
               The full whitepaper includes detailed financial models, sensitivity analysis, and implementation cost breakdowns for organizations at different scales.
             </p>
           </div>
+          <InsightNextSteps slug="economics-of-autonomous-maintenance" />
         </motion.article>
       </div>
     </main>

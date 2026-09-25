@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Download } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function GovernancePage() {
   return (
@@ -97,6 +98,7 @@ export default function GovernancePage() {
               The complete whitepaper includes implementation blueprints, compliance mapping for ISO 55000/SOC 2, and organizational change management strategies.
             </p>
           </div>
+          <InsightNextSteps slug="governance-in-industrial-ai" />
         </motion.article>
       </div>
     </main>

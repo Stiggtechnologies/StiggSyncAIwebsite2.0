@@ -95,7 +95,11 @@ export default function SecurityPage() {
                 The model is not the final approver.
               </h2>
               <p className="mt-5 text-base leading-7 text-slate-400">
-                Industrial recommendations can affect safety, production, cost, and asset life. SyncAI therefore treats recommendation and authority as separate layers. A named human remains accountable.
+                Industrial recommendations can affect safety, production, cost, and asset life. SyncAI therefore treats recommendation and authority as separate layers. A named human remains accountable. The argument is{' '}
+                <Link href="/insights/recommend-is-not-authorize" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                  Recommend Is Not Authorize
+                </Link>
+                .
               </p>
             </div>
             <div className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-9">

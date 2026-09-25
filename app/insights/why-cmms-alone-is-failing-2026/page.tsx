@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Download } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function WhyCMMSIsFailingPage() {
   return (
@@ -102,6 +103,7 @@ export default function WhyCMMSIsFailingPage() {
               </p>
             </div>
           </div>
+          <InsightNextSteps slug="why-cmms-alone-is-failing-2026" />
         </motion.article>
       </div>
     </main>

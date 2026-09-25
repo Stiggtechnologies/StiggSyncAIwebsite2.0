@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
 export default function FracasIsNotADecisionSystemPage() {
@@ -357,6 +358,7 @@ export default function FracasIsNotADecisionSystemPage() {
               </div>
             </div>
           </div>
+          <InsightNextSteps slug="fracas-is-not-a-decision-system" />
         </motion.article>
       </div>
     </main>

@@ -74,6 +74,13 @@ export default function ArchitecturePage() {
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
               Five layers from source evidence to verified outcome.
             </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              The last layer is the check. The case stays open until that check is recorded:{' '}
+              <Link href="/insights/verification-is-not-optional" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                Verification Is Not Optional
+              </Link>
+              .
+            </p>
           </div>
 
           <div className="divide-y divide-white/10 border-y border-white/10">
@@ -106,7 +113,11 @@ export default function ArchitecturePage() {
                 The model is not the final approver.
               </h2>
               <p className="mt-5 text-base leading-7 text-slate-400">
-                Industrial decisions can change safety exposure, production risk, maintenance spend, and asset life. SyncAI therefore treats recommendations and authority as separate layers.
+                Industrial decisions can change safety exposure, production risk, maintenance spend, and asset life. SyncAI therefore treats{' '}
+                <Link href="/insights/recommend-is-not-authorize" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                  recommendations and authority as separate layers
+                </Link>
+                .
               </p>
             </div>
             <div className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-9">

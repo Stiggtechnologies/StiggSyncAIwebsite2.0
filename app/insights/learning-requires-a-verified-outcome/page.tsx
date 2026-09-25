@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
@@ -356,6 +357,7 @@ export default function LearningRequiresAVerifiedOutcomePage() {
               </div>
             </div>
           </div>
+          <InsightNextSteps slug="learning-requires-a-verified-outcome" />
         </motion.article>
       </div>
     </main>

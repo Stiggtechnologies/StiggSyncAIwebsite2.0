@@ -77,6 +77,17 @@ export default function MiningReliabilityPage() {
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
               Mining sites are not short of data. They are short of a defensible next action.
             </h2>
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              Incomplete failure coding leaves the next action unproven:{' '}
+              <Link href="/insights/fracas-is-not-a-decision-system" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                FRACAS Is Not a Decision System
+              </Link>
+              . A rank you cannot reconstruct has the same limit:{' '}
+              <Link href="/insights/evidence-lineage-is-not-optional" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                Evidence Lineage Is Not Optional
+              </Link>
+              .
+            </p>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
             {challenges.map((item) => (
