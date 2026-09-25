@@ -11,10 +11,22 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'ready-is-not-cleared',
+    title: 'Ready Is Not Cleared',
+    description:
+      'Ready is not cleared. A green ready flag, a ready checklist, a ready-to-start badge, or a system ready, crew ready, or parts ready string is a readiness label under the thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance remains a named human decision against observed outcomes, named coverage and assumptions, and refusal when evidence is missing. Treating ready as cleared is another path to false clearance under the honesty and verification boundary. A readiness label can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the label. A status is not clearance. Sync may surface a readiness label beside approved evidence when the threshold, coverage, and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat ready clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Status Is Not Clearance, Green Is Not Go, Silence Is Not Clearance, Dashboard Is Not Control, Alert Is Not Decision, Coverage Is Not Control, Action Is Not Execution, Recommend Is Not Authorize, Verification Is Not Optional, Human Decision Is Not Optional, and Learning Requires a Verified Outcome.',
+    excerpt:
+      'A green ready flag, ready checklist, ready-to-start badge, or system ready, crew ready, or parts ready string is a readiness label under the thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Treating ready as cleared is false clearance.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'status-is-not-clearance',
     title: 'Status Is Not Clearance',
     description:
-      'Status is not clearance. A status field, a status tile, a status badge, or an all systems status OK string is a label on stored or computed values under the thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance is a named human decision against observed outcomes, named coverage and assumptions, and refusal when evidence is not enough. Treating a status label as clearance is another path to false clearance under the honesty and verification boundary. A status label can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the label. Sync may surface a status beside approved evidence when the threshold, coverage, and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat status clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Green Is Not Go, Silence Is Not Clearance, Alert Is Not Decision, Dashboard Is Not Control, Telemetry Is Not Truth, Coverage Is Not Control, Verification Is Not Optional, and Human Decision Is Not Optional.',
+      'Status is not clearance. A status field, a status tile, a status badge, or an all systems status OK string is a label on stored or computed values under the thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance is a named human decision against observed outcomes, named coverage and assumptions, and refusal when evidence is not enough. Treating a status label as clearance is another path to false clearance under the honesty and verification boundary. A status label can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the label. Sync may surface a status beside approved evidence when the threshold, coverage, and assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat status clearance as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Ready Is Not Cleared, Green Is Not Go, Silence Is Not Clearance, Alert Is Not Decision, Dashboard Is Not Control, Telemetry Is Not Truth, Coverage Is Not Control, Verification Is Not Optional, and Human Decision Is Not Optional.',
     excerpt:
       'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values under thresholds someone chose. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case. Clearance is a named human decision.',
     category: 'Decision Case',
@@ -486,12 +498,64 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'ready-is-not-cleared': {
+    relatedSlug: 'green-is-not-go',
+    relatedNote: 'A green tile is a color under a threshold someone chose. A ready flag, ready checklist, ready-to-start badge, or ready string is a readiness label under thresholds someone chose. Neither is clearance.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values. A ready flag is a readiness label. Neither is clearance.',
+      },
+      {
+        slug: 'silence-is-not-clearance',
+        note: 'A quiet board is not clearance. A ready label is not a stronger form of quiet. A status string is not the named decision.',
+      },
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'A ready badge on a dashboard is still a read. It does not write a start, a release, or a work order.',
+      },
+      {
+        slug: 'alert-is-not-decision',
+        note: 'The absence of an open item on a ready checklist is the inside of a rule. It is not a decision to go.',
+      },
+      {
+        slug: 'coverage-is-not-control',
+        note: 'Parts ready for the watched set is not clearance to run the equipment the set watches, or the equipment it does not watch.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'A ready-to-start badge does not start the work. ACTION stays locked until authorized execution systems write.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal that cites a ready label is still a proposal.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check is an observed outcome. A later ready flag is not the check, and it does not close the case.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'Clearance still requires a named person to accept, reject, escalate, or return. The label does not record that act.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the closed case, not ready clearance.',
+      },
+    ],
+  },
   'status-is-not-clearance': {
     relatedSlug: 'green-is-not-go',
     relatedNote: 'A green tile is a color on a value under a threshold. A status field, status tile, status badge, or all systems status OK string is the label on that comparison. Neither is clearance.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A green ready flag, ready checklist, ready-to-start badge, or ready string is a readiness label under thresholds someone chose. It is not clearance.',
+      },
       {
         slug: 'silence-is-not-clearance',
         note: 'No reply and an empty inbox are not clearance. An affirmative status label is not a stronger form of quiet.',
@@ -540,6 +604,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready flag, ready checklist, ready-to-start badge, or ready string is a label under a threshold someone chose. It is not clearance to run, release, start work, leave equipment in service, or close the case.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values. It is not clearance to run, release, start work, leave equipment in service, or close a Decision Case.',
@@ -596,6 +664,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready badge on the dashboard is a label under a threshold. It is not clearance to run, release, or start work.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status tile on the dashboard is a label on a read. It is not clearance and not a write.',
@@ -2217,6 +2289,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ready-is-not-cleared',
+        note: 'A quiet board is not clearance. A ready label is not a stronger form of quiet, and a status string is not the named decision.',
+      },
+      {
         slug: 'status-is-not-clearance',
         note: 'An all systems status OK string is an affirmative label, not silence. The label is still not clearance.',
       },
@@ -2313,6 +2389,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready string does not record who decided. Clearance still requires a named human decision.',
+      },
+      {
         slug: 'status-is-not-clearance',
         note: 'A status label does not record who decided. Clearance still requires a named human decision.',
       },
@@ -2368,6 +2448,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready status is the inside of a rule. The label is not clearance to run, release, start work, or close the case.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status that says OK is the inside of a rule. The label is not clearance to run, release, or close the case.',
@@ -2445,6 +2529,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ready-is-not-cleared',
+        note: 'Parts ready for the watched set is still the watched set. Ready is not clearance to run or leave equipment in service.',
+      },
+      {
         slug: 'status-is-not-clearance',
         note: 'An all systems status OK string covers the watched set. It is not clearance to run or leave equipment in service.',
       },
@@ -2473,6 +2561,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready-to-start badge is not the write. The label does not unlock ACTION.',
+      },
+      {
         slug: 'verification-is-not-optional',
         note: 'The case stays open until the check is recorded.',
       },
@@ -2492,6 +2584,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready flag is not the observed outcome that closes the case.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status that returns to OK is not the observed outcome that closes the case.',
