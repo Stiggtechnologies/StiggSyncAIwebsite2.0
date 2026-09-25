@@ -640,6 +640,17 @@ export default function AccountabilityIsNotClosurePage() {
               ownership is not attribution that a decision changed cash, risk, or capacity.
             </p>
 
+            <p>
+              <Link
+                href="/insights/impact-is-not-revenue"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Impact Is Not Revenue
+              </Link>{' '}
+              states the split after the attribution. Business impact is not recognized sales. Risk
+              avoided, capacity freed, or cost deferred is not a new sale on the books.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">

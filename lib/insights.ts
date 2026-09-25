@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'impact-is-not-revenue',
+    title: 'Impact Is Not Revenue',
+    description:
+      'Impact is not revenue. Business impact is attribution that a named decision changed cash, risk, or capacity. Revenue is recognized sales: the earning event recorded on the books. Impact can exist without new revenue. Risk avoided, capacity freed, and cost deferred can be that attributed change and still not be a new recognized sale. Revenue can rise without attributable impact from a specific decision recorded on a Sync case. A recognized sale is not that attribution. Treating the impact as revenue ships an attribution claim into the books nobody has recorded, under the honesty and verification boundary. An impact claim can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already booked revenue. Evidence from the plant beats the impact claim when the claim is being used as revenue. Sync may surface a measured outcome or a revenue figure beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat impact as revenue as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not attribute a change in cash, risk, or capacity. Sync does not declare impact. Sync does not compute a return. Sync does not execute plant work. A recognized sale without attribution leaves the impact unrecorded. An attributed change without a new recognized sale leaves the revenue unrecorded. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Closure Is Not Cash, Cash Is Not Margin, Margin Is Not Profit, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Business impact is attribution that a named decision changed cash, risk, or capacity. It is not revenue. Revenue is recognized sales. Impact can exist without a new recognized sale, and recognized sales can rise without that attribution.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'outcome-is-not-impact',
     title: 'Outcome Is Not Impact',
     description:
@@ -654,12 +666,88 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'outcome-is-not-impact': {
-    relatedSlug: 'value-is-not-outcome',
-    relatedNote: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. A measured outcome is still not business impact.',
+  'impact-is-not-revenue': {
+    relatedSlug: 'outcome-is-not-impact',
+    relatedNote: 'A measured outcome is not business impact. Impact is attribution that a named decision changed cash, risk, or capacity. That attribution is still not revenue.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. The measured outcome is not impact, and the impact is not revenue.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, and an impact claim is not recognized sales.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A revenue figure is not attribution to the decision.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. An impact claim is not recognized sales.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Cash in the bank is not recognized sales, and it is not impact.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected or revenue recognized. An impact claim is not that sale.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not revenue.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. An impact claim after the start is not recognized sales.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not revenue.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or the sale is recognized. Risk avoided is not revenue.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not book revenue.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit an impact claim as revenue.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Revenue is recognized sales, not standing assurance and not the impact claim alone.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites an impact claim is still a proposal. Recommend is not authorize, and the proposal is not revenue.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. A revenue figure beside that tile is not impact.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A sale that moved with the decision is not a cause. Coincidence is not attribution, and it is not proof the sale belongs to the decision.',
+      },
+    ],
+  },
+  'outcome-is-not-impact': {
+    relatedSlug: 'impact-is-not-revenue',
+    relatedNote: 'Business impact is not revenue. Revenue is recognized sales. Impact can exist without a new recognized sale, and recognized sales can rise without that attribution.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. A measured outcome is still not business impact.',
+      },
       {
         slug: 'profit-is-not-value',
         note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome. That measured outcome is still not business impact.',
@@ -729,6 +817,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. A reported outcome is still not the value, and the impact is still not recognized sales.',
+      },
+      {
         slug: 'profit-is-not-value',
         note: 'A profit figure under named cost rules is an accounting result. Value is the verified operational outcome the Decision Case was opened to change. A reported outcome is not that value unless it is the verified change the Decision Case named and authorized.',
       },
@@ -768,6 +860,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'A profit figure is not the value. An impact claim is still not recognized sales.',
+      },
       {
         slug: 'outcome-is-not-impact',
         note: 'A measured outcome is not business impact. A profit figure is still not the value, and the value is still not attribution of cash, risk, or capacity.',
@@ -857,6 +953,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'impact-is-not-revenue',
+        note: 'Cash collected is not contribution margin. A recognized sale is not attribution, and an impact claim is not revenue.',
+      },
+      {
         slug: 'outcome-is-not-impact',
         note: 'Cash collected is not contribution margin. A measured outcome beside the receipt is not attribution that a decision changed cash, risk, or capacity.',
       },
@@ -924,6 +1024,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'A named owner is not closure. An impact claim is not recognized sales.',
+      },
       {
         slug: 'outcome-is-not-impact',
         note: 'Closure is the verified outcome recorded against named ownership. That measured result is not impact.',
@@ -1145,6 +1249,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'impact-is-not-revenue',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not revenue.',
+      },
+      {
         slug: 'outcome-is-not-impact',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not impact.',
       },
@@ -1212,6 +1320,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'A clearance stamp is not proof the work is finished. An impact claim is not recognized sales.',
+      },
       {
         slug: 'outcome-is-not-impact',
         note: 'A clearance stamp is not proof the work is finished. A measured outcome is not impact, and a green KPI is not that attribution.',
@@ -3452,6 +3564,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'impact-is-not-revenue',
+        note: 'Learning inherits the verified outcome. It does not inherit an impact claim as revenue.',
+      },
+      {
         slug: 'outcome-is-not-impact',
         note: 'Learning inherits the verified outcome. It does not inherit a measured outcome as impact.',
       },
@@ -3498,6 +3614,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not book revenue.',
+      },
       {
         slug: 'outcome-is-not-impact',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not attribute impact.',
