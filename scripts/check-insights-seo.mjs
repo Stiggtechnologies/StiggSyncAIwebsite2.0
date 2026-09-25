@@ -20,11 +20,23 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const completeIndex = slugs.indexOf('complete-is-not-verified');
+const clearedIndex = slugs.indexOf('cleared-is-not-complete');
 const readyIndex = slugs.indexOf('ready-is-not-cleared');
 const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
-if (!(readyIndex >= 0 && statusIndex > readyIndex && greenIndex > statusIndex)) {
-  fail('Insights catalog order must list ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go');
+if (
+  !(
+    completeIndex >= 0 &&
+    clearedIndex > completeIndex &&
+    readyIndex > clearedIndex &&
+    statusIndex > readyIndex &&
+    greenIndex > statusIndex
+  )
+) {
+  fail(
+    'Insights catalog order must list complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+  );
 }
 
 const insightPage = read('lib/insight-page.tsx');
@@ -2616,6 +2628,112 @@ for (const required of [
 ]) {
   if (!clearedPage.includes(required)) {
     fail(`cleared-is-not-complete page must include ${required}`);
+  }
+}
+
+if (
+  !clearedPage.includes('The series continues with') ||
+  !clearedPage.includes('/insights/complete-is-not-verified')
+) {
+  fail('cleared-is-not-complete must point the series forward to complete-is-not-verified');
+}
+
+if (!readyPage.includes('/insights/complete-is-not-verified')) {
+  fail('ready-is-not-cleared must link complete-is-not-verified');
+}
+if (!statusPage.includes('/insights/complete-is-not-verified')) {
+  fail('status-is-not-clearance must link complete-is-not-verified');
+}
+
+for (const [slug, label] of [
+  ['cleared-is-not-complete', 'cleared-is-not-complete'],
+  ['ready-is-not-cleared', 'ready-is-not-cleared'],
+  ['status-is-not-clearance', 'status-is-not-clearance'],
+  ['verification-is-not-optional', 'verification-is-not-optional'],
+  ['learning-requires-a-verified-outcome', 'learning-requires-a-verified-outcome'],
+  ['action-is-not-execution', 'action-is-not-execution'],
+]) {
+  if (!stepBlock(slug).includes("'complete-is-not-verified'")) {
+    fail(`${label} related reading must cite complete-is-not-verified`);
+  }
+}
+
+const completeBlock = stepBlock('complete-is-not-verified');
+for (const required of [
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'status-is-not-clearance',
+  'verification-is-not-optional',
+  'learning-requires-a-verified-outcome',
+  'action-is-not-execution',
+]) {
+  if (!completeBlock.includes(`'${required}'`)) {
+    fail(`complete-is-not-verified related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(completeBlock)) {
+  fail('complete-is-not-verified related reading must include the Strategic Pilot');
+}
+if (completeBlock.includes("next: 'strategic-pilot'")) {
+  fail('complete-is-not-verified next step is the Field Manual');
+}
+
+const completePage = read('app/insights/complete-is-not-verified/page.tsx');
+for (const required of [
+  '/insights/cleared-is-not-complete',
+  '/insights/ready-is-not-cleared',
+  '/insights/status-is-not-clearance',
+  '/insights/verification-is-not-optional',
+  '/insights/learning-requires-a-verified-outcome',
+  '/insights/action-is-not-execution',
+  '/insights/human-decision-is-not-optional',
+  '/insights/recommend-is-not-authorize',
+  '/insights/coverage-is-not-control',
+  "fieldManualPath('action')",
+  "fieldManualPath('verification')",
+  "fieldManualPath('human-decision')",
+  "fieldManualPath('evidence')",
+  "fieldManualPath('learning')",
+  'completed checklist',
+  'completed work order',
+  'completed case',
+  '100% complete',
+  'complete badge',
+  'completion label',
+  'criteria someone chose',
+  'named observation',
+  'named criteria',
+  'outcome happened',
+  'measured result matches the Decision Case',
+  'honestly close',
+  'achieved',
+  'not_achieved',
+  'inconclusive',
+  'measured notes',
+  'completion stamp',
+  'false closure',
+  'honesty and verification boundary',
+  'Evidence from the plant beats the badge',
+  'Sync refuses false precision',
+  'Sync refuses when evidence is insufficient',
+  'auto-close',
+  'auto-authorize',
+  'Learning credit',
+  'complete closure',
+  'Direct plant execute stays off',
+  'states no OEM limit',
+  'states no savings figure',
+  'CMMS write-back',
+  'Self-guided onboarding is not claimed as a live product path',
+  'Sync executes plant work',
+  'APP_SETUP_URL',
+  'plant execute',
+  'live connector tag pull',
+  'Simulated or seeded telemetry',
+  'practice badge that says complete is not a customer plant release',
+]) {
+  if (!completePage.includes(required)) {
+    fail(`complete-is-not-verified page must include ${required}`);
   }
 }
 

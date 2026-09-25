@@ -457,6 +457,20 @@ export default function StatusIsNotClearancePage() {
               someone chose, and why that label is not clearance to run, release, start work, leave
               equipment in service, or close a Decision Case. Companion reading:{' '}
               <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              on why a completion label is not verification that the outcome happened,{' '}
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              on why a cleared flag is not proof the work is finished,{' '}
+              <Link
                 href="/insights/green-is-not-go"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

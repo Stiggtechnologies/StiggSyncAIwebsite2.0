@@ -11,10 +11,22 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'complete-is-not-verified',
+    title: 'Complete Is Not Verified',
+    description:
+      'Complete is not verified. A completed checklist, a completed work order, a completed case, a 100% complete string, or a complete badge is a completion label under the criteria someone chose. It is not verification that the outcome happened, the measured result matches the Decision Case, learning closed with achieved, not_achieved, or inconclusive, or that the case can honestly close. Verification remains named observation against named criteria, not the completion stamp. Treating the completion stamp as verification is false closure under the honesty and verification boundary. A completion label can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the badge. Sync may surface a completion label beside approved evidence when the criteria, the coverage, and the assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat complete closure as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Cleared Is Not Complete, Ready Is Not Cleared, Status Is Not Clearance, Verification Is Not Optional, Learning Requires a Verified Outcome, and Action Is Not Execution.',
+    excerpt:
+      'A completed checklist, completed work order, completed case, 100% complete string, or complete badge is a completion label under the criteria someone chose. It is not verification that the outcome happened or that the Decision Case can honestly close. Verification is named observation against named criteria.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'cleared-is-not-complete',
     title: 'Cleared Is Not Complete',
     description:
-      'Cleared is not complete. A cleared flag, a cleared checklist, a cleared-to-proceed badge, or a cleared for start, cleared for service, or case cleared string is a clearance decision, or a label someone attached to one. It is not proof the work is finished, the outcome is verified, the value is realized, or the Decision Case can honestly close. Completion remains observed outcomes plus named verification: achieved, not_achieved, or inconclusive, with measured notes. Treating the clearance stamp as completion is false closure under the honesty and verification boundary. A cleared stamp can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the stamp. Sync may surface a cleared flag beside approved evidence when the decision, the coverage, and the assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat cleared completion as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Status Is Not Clearance, Green Is Not Go, Silence Is Not Clearance, Verification Is Not Optional, Learning Requires a Verified Outcome, Action Is Not Execution, and Coverage Is Not Control.',
+      'Cleared is not complete. A cleared flag, a cleared checklist, a cleared-to-proceed badge, or a cleared for start, cleared for service, or case cleared string is a clearance decision, or a label someone attached to one. It is not proof the work is finished, the outcome is verified, the value is realized, or the Decision Case can honestly close. Completion remains observed outcomes plus named verification: achieved, not_achieved, or inconclusive, with measured notes. Treating the clearance stamp as completion is false closure under the honesty and verification boundary. A cleared stamp can inform a recommendation to investigate. It is not the plant, not a diagnosis, not root cause, not authorization for corrective work, not a verified operational outcome, and not a Decision Case. Evidence from the plant beats the stamp. Sync may surface a cleared flag beside approved evidence when the decision, the coverage, and the assumptions are named. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat cleared completion as Learning credit. A named human still decides. Verification stays open until a verified operational outcome is recorded. Companion to Complete Is Not Verified, Status Is Not Clearance, Green Is Not Go, Silence Is Not Clearance, Verification Is Not Optional, Learning Requires a Verified Outcome, Action Is Not Execution, and Coverage Is Not Control.',
     excerpt:
       'A cleared flag, cleared checklist, cleared-to-proceed badge, or cleared for start, cleared for service, or case cleared string is a clearance decision or a label someone attached to one. It is not proof the work is finished, the outcome is verified, the value is realized, or the Decision Case can close. Completion is observed outcomes plus named verification.',
     category: 'Decision Case',
@@ -510,12 +522,52 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'cleared-is-not-complete': {
-    relatedSlug: 'status-is-not-clearance',
-    relatedNote: 'A status field is a label, not clearance. A cleared flag can be a clearance decision or a label on one. Neither stamp is proof the work is finished.',
+  'complete-is-not-verified': {
+    relatedSlug: 'cleared-is-not-complete',
+    relatedNote: 'A cleared flag is a clearance decision or a label on one. It is not completion. A complete badge is a completion label under criteria someone chose. It is not verification.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ready-is-not-cleared',
+        note: 'A ready label is not clearance. A complete badge is not verification that the outcome happened.',
+      },
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status of OK is not clearance. A complete badge is not named observation against named criteria.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'Verification stores achieved, not_achieved, or inconclusive, with measured notes. A completion stamp is not that record.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning closes on the verified outcome. A 100% complete string is not achieved, not_achieved, or inconclusive.',
+      },
+      {
+        slug: 'action-is-not-execution',
+        note: 'A completed work order in another system is not execution by Sync, and it is not verification of the Decision Case.',
+      },
+      {
+        slug: 'human-decision-is-not-optional',
+        note: 'A named decision does not verify the outcome. The complete badge does not record the check.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A proposal that cites a completed checklist is still a proposal.',
+      },
+    ],
+  },
+  'cleared-is-not-complete': {
+    relatedSlug: 'complete-is-not-verified',
+    relatedNote: 'A complete badge is a completion label under criteria someone chose. It is not verification. A cleared stamp is not proof the work is finished. Neither stamp closes the case.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'status-is-not-clearance',
+        note: 'A status field is a label, not clearance. A cleared flag can be a clearance decision or a label on one. Neither stamp is proof the work is finished.',
+      },
       {
         slug: 'green-is-not-go',
         note: 'A green tile is not permission to go. A cleared-to-proceed badge on that screen is not the observed outcome.',
@@ -556,6 +608,14 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A complete badge is a completion label under criteria someone chose. It is not verification that the outcome happened.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to go. A ready flag on that screen is not clearance.',
+      },
       {
         slug: 'status-is-not-clearance',
         note: 'A status field, status tile, status badge, or all systems status OK string is a label on stored or computed values. A ready flag is a readiness label. Neither is clearance.',
@@ -607,6 +667,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       {
         slug: 'ready-is-not-cleared',
         note: 'A green ready flag, ready checklist, ready-to-start badge, or ready string is a readiness label under thresholds someone chose. It is not clearance.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A complete badge is a completion label under criteria someone chose. It is not named observation, and it does not honestly close the case.',
       },
       {
         slug: 'cleared-is-not-complete',
@@ -2637,6 +2701,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
         note: 'Cleared for start is not execution. The stamp does not unlock ACTION and does not finish the work.',
       },
       {
+        slug: 'complete-is-not-verified',
+        note: 'A completed work order is not verification. The label does not unlock ACTION and does not record the outcome.',
+      },
+      {
         slug: 'verification-is-not-optional',
         note: 'The case stays open until the check is recorded.',
       },
@@ -2652,6 +2720,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'complete-is-not-verified',
+        note: 'Learning closes on achieved, not_achieved, or inconclusive. A complete badge is not that close.',
+      },
+      {
         slug: 'cleared-is-not-complete',
         note: 'Learning inherits the verified outcome. A cleared stamp is not that outcome.',
       },
@@ -2662,6 +2734,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'complete-is-not-verified',
+        note: 'The check is named observation against named criteria. A complete badge is not that check.',
+      },
       {
         slug: 'ready-is-not-cleared',
         note: 'A ready flag is not the observed outcome that closes the case.',
