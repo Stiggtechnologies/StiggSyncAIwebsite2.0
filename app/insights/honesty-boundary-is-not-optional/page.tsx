@@ -413,6 +413,13 @@ export default function HonestyBoundaryIsNotOptionalPage() {
               escalates, or returns the recommendation, and until that act is recorded the case is
               still a proposal. Companion reading:{' '}
               <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              on why calling a verified record assured crosses the honesty boundary,{' '}
+              <Link
                 href="/insights/alert-is-not-decision"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >

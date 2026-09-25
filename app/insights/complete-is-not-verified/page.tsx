@@ -486,7 +486,17 @@ export default function CompleteIsNotVerifiedPage() {
             </p>
 
             <p>
-              Companion reading:{' '}
+              The series continues with{' '}
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              , on why a work package, an inspection, or an AI recommendation marked verified —
+              evidence collected, checks passed, lineage present — closes a claim about the past
+              and is not assurance that the asset stays in a known-good state under operating
+              conditions. Companion reading:{' '}
               <Link
                 href="/insights/cleared-is-not-complete"
                 className="text-[#3B82F6] hover:text-white transition-colors"

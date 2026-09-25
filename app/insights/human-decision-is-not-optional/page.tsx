@@ -426,6 +426,13 @@ export default function HumanDecisionIsNotOptionalPage() {
               , on why missing evidence is recorded as unknown, not as clear or ready, and why the
               operator must not treat unknown as go. Companion reading:{' '}
               <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              on why a named decision does not turn a verified record into assurance,{' '}
+              <Link
                 href="/insights/recommend-is-not-authorize"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
