@@ -42,8 +42,8 @@ export default function CashIsNotRunwayPage() {
             <p className="text-xl text-gray-400">
               Cash is money received (collected) that can be spent now. Runway is how long
               operations can continue at the current net burn before cash is exhausted: cash
-              divided by burn rate, with explicit assumptions. A cash balance can look healthy
-              while runway is short if burn is high or collections are lumpy. Runway can look long
+              divided by burn rate, with explicit assumptions. A cash balance can look healthy while runway is short
+              if burn is high or collections are lumpy. Runway can look long
               while cash is trapped in receivables or restricted accounts.
             </p>
           </header>
@@ -60,11 +60,11 @@ export default function CashIsNotRunwayPage() {
               runway figure beside Evidence, Verification, and the closed outcome. Surfacing is
               still a read. A cash balance that looks healthy while burn is high, or while
               collections are lumpy, leaves runway short. A runway figure that counts receivables
-              or restricted accounts leaves spendable cash smaller than the figure used. Direct
-              plant execute stays off. CMMS write-back is not a live product path. Billing
+              or restricted accounts leaves spendable cash smaller than the figure used. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing
               write-back is not a live product path. Sync does not book revenue. Sync does not
-              recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the
-              customer. Sync does not measure cash. Sync does not measure cash for the customer.
+              recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer.
+              Sync does not measure cash. Sync does not measure cash for the customer.
               Sync does not measure runway. Sync does not measure runway for the customer. Sync
               does not collect cash. Sync does not attribute a change in cash, risk, or capacity.
               Sync does not execute plant work.
@@ -81,8 +81,8 @@ export default function CashIsNotRunwayPage() {
 
             <p>
               The stack is the same kind of refusal this series keeps. Closure is not cash. Cash is
-              not margin. Margin is not profit. Profit is not value. Value is not outcome. Outcome
-              is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
+              not margin. Margin is not profit. Profit is not value. Value is not outcome. Outcome is not impact.
+              Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Each word can be true in its own place. None of the earlier words fills the
               last one. A closed work order, cash collected, a unit remainder, a profit figure, a
               measured outcome, an attributed change, a recognized sale, an annualized contract, and
@@ -614,8 +614,7 @@ export default function CashIsNotRunwayPage() {
               does not turn the balance into a duration. Authorized execution systems write the work
               order or the isolation. Sync does not write the work order. Sync does not mark an
               asset closed. Sync does not write that state back. CMMS write-back is not a live
-              product path. Billing write-back is not a live product path. Direct plant execute
-              stays off.
+              product path. Billing write-back is not a live product path. Direct plant execute stays off.
             </p>
 
             <p>
@@ -749,8 +748,7 @@ export default function CashIsNotRunwayPage() {
               case plant-execute, starting equipment, releasing a hold, controlling the plant,
               booking revenue, recognizing revenue, measuring ARR, measuring cash, measuring runway,
               or collecting cash. Simulated or seeded telemetry and assets are practice records.
-              They are not live plant results. Self-guided onboarding is not claimed as a live
-              product path.
+              They are not live plant results. Self-guided onboarding is not claimed as a live product path.
             </p>
 
             <p>
