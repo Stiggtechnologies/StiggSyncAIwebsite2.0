@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'results-is-not-learning',
+    title: 'Results Is Not Learning',
+    description:
+      'Results is not learning. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. A firm with results can still lack learning when that attributed change is on the record and the firm has not adopted an updated decision rule, model, or operating practice because a verified result changed what it will do next under a named decision window. A firm with learning can still lack results when that adopted rule is on the record and the firm cannot show the attributed, measured change in plant capacity, risk, cost, or production followed from completed work under a named measurement window — none of which a learning note alone proves. Treating results as learning records an attributed measured change as a claim about an updated decision rule that nobody has adopted, under the honesty and verification boundary. A results note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown learning. Evidence from the plant beats the results note when the note is being used as learning. Sync may surface a results/evidence note or a learning note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat results as learning as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not measure liquidity. Sync does not measure liquidity for the customer. Sync does not measure flexibility. Sync does not measure flexibility for the customer. Sync does not measure optionality. Sync does not measure optionality for the customer. Sync does not measure strategy. Sync does not measure strategy for the customer. Sync does not measure execution. Sync does not measure execution for the customer. Sync does not measure results. Sync does not measure results for the customer. Sync does not measure learning. Sync does not measure learning for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A firm with results can still lack learning when the attributed change is not that adopted rule under the named decision window. A firm with learning can still lack results when the adopted rule is not that attributed measured change under the named measurement window. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Execution Is Not Results, Strategy Is Not Execution, Optionality Is Not Strategy, Flexibility Is Not Optionality, Liquidity Is Not Flexibility, Solvency Is Not Liquidity, Survival Is Not Solvency, Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. A firm with results can still lack learning. A firm with learning can still lack results. A results note alone proves neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-25',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'execution-is-not-results',
     title: 'Execution Is Not Results',
     description:
@@ -798,63 +810,187 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'execution-is-not-results': {
-    relatedSlug: 'strategy-is-not-execution',
-    relatedNote: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. That completed work is still not results. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from that completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone.',
+  'results-is-not-learning': {
+    relatedSlug: 'execution-is-not-results',
+    relatedNote: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. An attributed measured change under the measurement window is still not learning.',
     next: 'field-manual',
     includePilot: true,
     also: [
       {
+        slug: 'strategy-is-not-execution',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning.',
+      },
+      {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A strategy note is not execution.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Strategy is not execution, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Strategy is still not execution. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A strategy note is not execution either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not execution.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A strategy note after the start is not execution.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not execution.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that a committed path was carried through the window. A strategy note is not execution.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show execution.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a strategy note as execution.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Strategy is a committed path and resource allocation, not standing assurance and not execution.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a strategy note is still a proposal. Recommend is not authorize, and the proposal is not execution.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An execution note beside that tile is not a strategy note, and a strategy note is not execution. A committed path is not a green. An execution note is not a green.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'An execution note that moved with a strategy note is not a cause. Coincidence is not proof a committed path is work completed inside the window.',
+      },
+    ],
+  },
+  'execution-is-not-results': {
+    relatedSlug: 'results-is-not-learning',
+    relatedNote: 'Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. An attributed measured change under the measurement window is still not learning.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'strategy-is-not-execution',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'optionality-is-not-strategy',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'runway-is-not-survival',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning. A spendable balance is still not work completed inside the window.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -921,56 +1057,60 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. An attributed, measured change in plant capacity, risk, cost, or production under a named measurement window is still not an updated decision rule, model, or operating practice the firm adopts under a named decision window. A results number sitting unread is not learning.',
+      },
+      {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -1037,12 +1177,16 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. Unused rights on paper are still not a committed path, work completed inside the named decision window is still not the attributed measured change, and that attributed change is still not an updated decision rule the firm adopts under a named decision window.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. Unused rights on paper are still not a committed path, work completed inside the named decision window is still not a strategy note, and that completed work is still not the attributed measured change in plant capacity, risk, cost, or production under a named measurement window.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
@@ -1152,6 +1296,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. The ability to reallocate inside a named decision window is still not unused rights on paper, completed work is still not results, and a results note is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. The ability to reallocate inside a named decision window is still not unused rights on paper, a committed path is still not work completed inside that window, and that completed work is still not results.',
@@ -1269,6 +1417,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. Paying what is already due is still not flexibility, an attributed measured change under a named measurement window is still not an updated decision rule, and a results number sitting unread is still not learning.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. Paying what is already due is still not flexibility, a committed path is still not work completed inside the named decision window, and that completed work is still not the attributed measured change under a named measurement window.',
       },
@@ -1384,6 +1536,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. Balance-sheet and claim quality over a structural horizon is still not liquidity, a results note is still not an updated operating practice, and that note is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. Balance-sheet and claim quality over a structural horizon is still not liquidity, a strategy note is still not closed work, a shipped change, or a verified plant result, and that completed work is still not results.',
@@ -1501,6 +1657,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. Meeting obligations through the next decision horizon is still not solvency, an attributed change is still not tempered belief that changes future allocation, and a results note is still not learning.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. Meeting obligations through the next decision horizon is still not solvency, a committed path is still not realized performance, and realized performance is still not results.',
       },
@@ -1616,6 +1776,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. A duration at the current net burn is still not survival, a results number is still not an updated decision rule, and a results number sitting unread is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. A duration at the current net burn is still not survival, a roadmap slide is still not execution, and an execution note is still not results.',
@@ -1733,6 +1897,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. Cash that can be spent now is still not runway, an attributed measured change is still not learning, and a dashboard tile is still not an adopted operating practice.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. Cash that can be spent now is still not runway, an allocated budget envelope is still not work completed inside the named decision window, and that completed work is still not results.',
       },
@@ -1848,6 +2016,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. An annualized contract is still not cash, a results note is still not an updated decision rule, model, or operating practice, and that note is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. An annualized contract is still not cash, a strategy note is still not evidence of done outcomes, and that evidence is still not the attributed measured change in plant capacity, risk, cost, or production.',
@@ -1965,8 +2137,12 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. A recognized sale is still not ARR, execution is still not results, and results is still not learning.',
+      },
+      {
         slug: 'execution-is-not-results',
-        note: 'Execution is not results. A recognized sale is still not ARR, a strategy note is still not execution, and execution is still not results.',
+        note: 'Execution is not results. A recognized sale is still not ARR, a strategy note is still not execution, and execution is still not results, and results is still not learning.',
       },
       {
         slug: 'strategy-is-not-execution',
@@ -2080,6 +2256,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. An impact claim is still not revenue, a verified plant result is still not the attributed measured change under a named measurement window, and that change is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. An impact claim is still not revenue, a committed path is still not a verified plant result, and a verified plant result is still not the attributed measured change under a named measurement window.',
@@ -2197,6 +2377,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. A measured outcome is still not impact, closed work is still not results, and a results note is still not learning.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. A measured outcome is still not impact, a strategy note is still not execution, and closed work is still not results.',
       },
@@ -2313,6 +2497,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Results is not learning. A reported outcome is still not the value, realized performance is still not the attributed measured change, and that change sitting unread is still not an updated decision rule.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Execution is not results. A reported outcome is still not the value, a committed path is still not realized performance against that path, and realized performance is still not the attributed measured change the firm can show followed from that completed work.',
       },
@@ -2400,6 +2588,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'A profit figure is not the value. Execution is still not results. Results is still not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'A profit figure is not the value. Strategy is still not execution. Execution is still not results.',
@@ -2537,6 +2729,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Cash collected is not contribution margin. Results is still not learning. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window, not a results number sitting unread.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Cash collected is not contribution margin. Execution is still not results. Results is the attributed, measured change in plant capacity, risk, cost, or production under a named measurement window, not the WO close alone.',
       },
@@ -2652,6 +2848,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'A named owner is not closure. Results is not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'A named owner is not closure. Execution is not results.',
@@ -2921,6 +3121,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not learning from a results note.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not results of completed work.',
       },
@@ -3036,6 +3240,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'A clearance stamp is not proof the work is finished. Results is not learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'A clearance stamp is not proof the work is finished. Execution is not results.',
@@ -5324,6 +5532,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'results-is-not-learning',
+        note: 'Learning inherits the verified outcome. It does not inherit a results note as an updated decision rule. Results Is Not Learning is a different refusal.',
+      },
+      {
         slug: 'execution-is-not-results',
         note: 'Learning inherits the verified outcome. It does not inherit an execution note as results.',
       },
@@ -5418,6 +5630,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'results-is-not-learning',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show learning.',
+      },
       {
         slug: 'execution-is-not-results',
         note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show results.',

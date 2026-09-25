@@ -112,8 +112,9 @@ export default function ExecutionIsNotResultsPage() {
               is not impact. Impact is not revenue. Revenue is not ARR. ARR is not cash. Cash is not
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
-              strategy. Strategy is not execution. Execution is not results. Each word can be true
-              in its own place. None of the earlier words fills the last one. A closed work order,
+              strategy. Strategy is not execution. Execution is not results. Results is not
+              learning. Each word can be true in its own place. None of the earlier words fills the
+              last one. A closed work order,
               cash collected, a unit remainder, a profit figure, a measured outcome, an attributed
               change in cash, risk, or capacity, a recognized sale, an annualized contract, a
               spendable balance, a duration at the current net burn, obligation continuity through
@@ -146,7 +147,12 @@ export default function ExecutionIsNotResultsPage() {
               attributed, measured change in plant capacity, risk, cost, or production the firm can
               show followed from that completed work under a named measurement window — consequence
               under the honesty and verification boundary, not the WO close, shipped-change ticket,
-              or single verified plant check alone. An execution note is not that results claim.
+              or single verified plant check alone. Learning is an updated decision rule, model, or
+              operating practice the firm adopts because a verified result changed what it will do
+              next under a named decision window — tempered belief that changes future allocation,
+              not a dashboard tile, a learning_events row, a retrospective note, or a results number
+              sitting unread. An execution note is not that results claim. A results note is not
+              that learning claim.
             </p>
 
             <p>
@@ -1367,6 +1373,28 @@ export default function ExecutionIsNotResultsPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records
               the measured result. The execution note does not record the results.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/results-is-not-learning"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Results Is Not Learning
+              </Link>
+              , on why results is still not learning. Results is the attributed, measured change in
+              plant capacity, risk, cost, or production the firm can show followed from completed
+              work under a named measurement window — consequence under the honesty and verification
+              boundary, not the WO close, shipped-change ticket, or single verified plant check
+              alone. Learning is an updated decision rule, model, or operating practice the firm
+              adopts because a verified result changed what it will do next under a named decision
+              window — tempered belief that changes future allocation, not a dashboard tile, a
+              learning_events row, a retrospective note, or a results number sitting unread. A firm
+              with results can still lack learning when that attributed change is not the adopted
+              rule under the named decision window. A firm with learning can still lack results. A
+              results note alone proves neither. A learning note alone proves neither. A results note
+              is not a green. A learning note is not a green.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
