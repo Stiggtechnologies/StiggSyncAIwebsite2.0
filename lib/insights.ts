@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'authority-is-not-accountability',
+    title: 'Authority Is Not Accountability',
+    description:
+      'Authority is not accountability. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that named the right, not a title, and not sitting with the result without the right to bind. A firm with authority can still lack accountability when that formal right is on the record and the firm has not named who owns the outcome of that bound decision. A firm with accountability can still lack authority when that outcome owner is on the record and the firm has not named the formal right to bind within a defined scope and window — none of which an accountability note alone proves. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Treating authority as accountability records a formal right to bind as a claim about who answers for results, misses, and remediation that nobody has named, under the honesty and verification boundary. An authority note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown accountability. Evidence from the plant beats the authority note when the note is being used as accountability. Sync may surface an authority/decision-rights note or an accountability/outcome-owner note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat authority as accountability as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not measure liquidity. Sync does not measure liquidity for the customer. Sync does not measure flexibility. Sync does not measure flexibility for the customer. Sync does not measure optionality. Sync does not measure optionality for the customer. Sync does not measure strategy. Sync does not measure strategy for the customer. Sync does not measure execution. Sync does not measure execution for the customer. Sync does not measure results. Sync does not measure results for the customer. Sync does not measure learning. Sync does not measure learning for the customer. Sync does not measure judgment. Sync does not measure judgment for the customer. Sync does not measure authority. Sync does not measure authority for the customer. Sync does not measure accountability. Sync does not measure accountability for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. A firm with authority can still lack accountability when the formal right is not that outcome owner. A firm with accountability can still lack authority when the outcome owner is not that formal right to bind within the defined scope and window. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Judgment Is Not Authority, Learning Is Not Judgment, Results Is Not Learning, Execution Is Not Results, Strategy Is Not Execution, Optionality Is Not Strategy, Flexibility Is Not Optionality, Liquidity Is Not Flexibility, Solvency Is Not Liquidity, Survival Is Not Solvency, Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. It is not accountability. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that named the right, not a title, and not sitting with the result without the right to bind. A firm with authority can still lack accountability. A firm with accountability can still lack authority. An authority note alone proves neither. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-26',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'judgment-is-not-authority',
     title: 'Judgment Is Not Authority',
     description:
@@ -834,75 +846,211 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'judgment-is-not-authority': {
-    relatedSlug: 'learning-is-not-judgment',
-    relatedNote: 'Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A situated call under the named decision owner and window is still not authority.',
+  'authority-is-not-accountability': {
+    relatedSlug: 'judgment-is-not-authority',
+    relatedNote: 'Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. In the sentence the prior essay fixed, that right is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. It is not accountability. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. A formal right to bind within the defined scope and window is still not accountability. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
     next: 'field-manual',
     includePilot: true,
     also: [
       {
+        slug: 'learning-is-not-judgment',
+        note: 'Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A situated call under the named decision owner and window is still not authority.',
+      },
+      {
         slug: 'results-is-not-learning',
-        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is not judgment, and judgment is not authority.',
+        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'execution-is-not-results',
-        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'strategy-is-not-execution',
-        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A strategy note is not execution.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Strategy is not execution, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Strategy is still not execution. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A strategy note is not execution either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not execution.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A strategy note after the start is not execution.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not execution.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that a committed path was carried through the window. A strategy note is not execution.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show execution.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a learning note as judgment. Learning Requires a Verified Outcome is a different refusal.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Strategy is a committed path and resource allocation, not standing assurance and not execution.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a strategy note is still a proposal. Recommend is not authorize, and the proposal is not execution.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An execution note beside that tile is not a strategy note, and a strategy note is not execution. A committed path is not a green. An execution note is not a green.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A judgment note that moved with a learning note is not a cause. Coincidence is not proof an adopted rule is the situated call that commits plant work, capital, or risk now.',
+      },
+    ],
+  },
+  'judgment-is-not-authority': {
+    relatedSlug: 'authority-is-not-accountability',
+    relatedNote: 'Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that named the right, not a title, and not sitting with the result without the right to bind. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. In the sentence this essay fixed, that right is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A formal right within the defined scope and window is still not accountability. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'learning-is-not-judgment',
+        note: 'Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A situated call under the named decision owner and window is still not authority.',
+      },
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'execution-is-not-results',
+        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'strategy-is-not-execution',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'optionality-is-not-strategy',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'runway-is-not-survival',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -969,68 +1117,72 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'results-is-not-learning',
-        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. It is not judgment. An adopted rule under the named decision window is still not judgment, and judgment is still not authority.',
+        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. It is not judgment. An adopted rule under the named decision window is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'execution-is-not-results',
-        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'strategy-is-not-execution',
-        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -1097,68 +1249,72 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
       {
         slug: 'execution-is-not-results',
-        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'strategy-is-not-execution',
-        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -1225,6 +1381,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -1234,59 +1394,59 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'strategy-is-not-execution',
-        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -1353,6 +1513,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -1366,55 +1530,55 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'optionality-is-not-strategy',
-        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
-        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'solvency-is-not-liquidity',
-        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'survival-is-not-solvency',
-        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'runway-is-not-survival',
-        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'cash-is-not-runway',
-        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority. A spendable balance is still not work completed inside the window.',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. A spendable balance is still not work completed inside the window.',
       },
       {
         slug: 'arr-is-not-cash',
-        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'revenue-is-not-arr',
-        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'impact-is-not-revenue',
-        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'outcome-is-not-impact',
-        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'value-is-not-outcome',
-        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'profit-is-not-value',
-        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'proxy-is-not-outcome',
@@ -1481,6 +1645,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -1498,7 +1666,7 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'flexibility-is-not-optionality',
-        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority.',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability.',
       },
       {
         slug: 'liquidity-is-not-flexibility',
@@ -1608,6 +1776,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -1737,6 +1909,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -1864,6 +2040,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -1993,6 +2173,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -2120,6 +2304,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -2249,6 +2437,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -2376,6 +2568,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -2505,20 +2701,24 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
       {
         slug: 'learning-is-not-judgment',
-        note: 'Learning is not judgment. A recognized sale is still not ARR, results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'Learning is not judgment. A recognized sale is still not ARR, results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'results-is-not-learning',
-        note: 'Results is not learning. A recognized sale is still not ARR, execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'Results is not learning. A recognized sale is still not ARR, execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'execution-is-not-results',
-        note: 'Execution is not results. A recognized sale is still not ARR, a strategy note is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority.',
+        note: 'Execution is not results. A recognized sale is still not ARR, a strategy note is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability.',
       },
       {
         slug: 'strategy-is-not-execution',
@@ -2632,6 +2832,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -2761,6 +2965,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -2889,6 +3097,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -2988,6 +3200,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -3137,6 +3353,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -3264,6 +3484,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -3545,6 +3769,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -3672,6 +3900,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
@@ -5972,6 +6204,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     also: [
       {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
       },
@@ -6078,6 +6314,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is not accountability. The formal, named right to bind the firm within a defined scope and window is still not owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is not authority. The situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window is still not the formal, named right to bind the firm within a defined scope and window. A title without scope is not authority. Judgment sitting with someone who cannot bind is not authority.',
