@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const signoffIndex = slugs.indexOf('accepted-is-not-verified');
 const acceptedIndex = slugs.indexOf('complete-is-not-accepted');
 const acceptanceIndex = slugs.indexOf('closure-is-not-complete');
 const finishedIndex = slugs.indexOf('control-is-not-closure');
@@ -59,7 +60,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    acceptedIndex >= 0 &&
+    signoffIndex >= 0 &&
+    acceptedIndex > signoffIndex &&
     acceptanceIndex > acceptedIndex &&
     finishedIndex > acceptanceIndex &&
     controlIndex > finishedIndex &&
@@ -99,7 +101,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -9270,7 +9272,7 @@ for (const slug of [
 }
 
 const acceptedBlock = stepBlock('complete-is-not-accepted');
-for (const required of [
+const acceptedReadingRequired = [
   'control-is-not-closure',
   'ready-is-not-cleared',
 
@@ -9315,7 +9317,8 @@ for (const required of [
   'human-decision-is-not-optional',
   'proof-is-not-authorization',
   'assured-is-not-proven',
-]) {
+];
+for (const required of acceptedReadingRequired) {
   if (!acceptedBlock.includes(`'${required}'`)) {
     fail(`complete-is-not-accepted related reading must cite ${required}`);
   }
@@ -9328,7 +9331,7 @@ if (acceptedBlock.includes("next: 'strategic-pilot'")) {
 }
 
 const acceptedPage = read('app/insights/complete-is-not-accepted/page.tsx');
-for (const required of [
+const acceptedPageRequired = [
   'Closure is not complete',
   'administrative or operational completion stamp, not proof that every acceptance criterion was met',
   'every named acceptance criterion for that case satisfied under a named measurement window',
@@ -9676,7 +9679,8 @@ for (const required of [
   '/insights/closure-is-not-complete',
   '/insights/proof-is-not-authorization',
   '/insights/assured-is-not-proven',
-]) {
+];
+for (const required of acceptedPageRequired) {
   if (!acceptedPage.includes(required)) {
     fail(`complete-is-not-accepted page must include ${required}`);
   }
@@ -9687,6 +9691,109 @@ if (
   !acceptancePage.includes('/insights/complete-is-not-accepted')
 ) {
   fail('closure-is-not-complete must point the series forward to complete-is-not-accepted');
+}
+
+for (const slug of [
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes("'accepted-is-not-verified'")) {
+    fail(`${slug} related reading must cite accepted-is-not-verified`);
+  }
+}
+
+const signoffBlock = stepBlock('accepted-is-not-verified');
+for (const required of ['complete-is-not-accepted', ...acceptedReadingRequired]) {
+  if (!signoffBlock.includes(`'${required}'`)) {
+    fail(`accepted-is-not-verified related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(signoffBlock)) {
+  fail('accepted-is-not-verified related reading must include the Strategic Pilot');
+}
+if (signoffBlock.includes("next: 'strategic-pilot'")) {
+  fail('accepted-is-not-verified next step is the Field Manual');
+}
+
+const signoffPage = read('app/insights/accepted-is-not-verified/page.tsx');
+for (const required of [
+  ...acceptedPageRequired,
+  'Accepted is not verified',
+  'human acceptance/sign-off, not an independent check',
+  'independent check of that pack or outcome against named evidence under a named measurement window',
+  'verification against evidence, not the acceptance stamp and not measured completeness alone',
+  'A named human acceptance without an independent evidence check is not verified',
+  'An independent verification without named human acceptance of the pack is not accepted',
+  'A firm with acceptance can still lack verification',
+  'A firm with verification can still lack acceptance',
+  'A verification note alone proves neither',
+  'A verification note is not a green',
+  'The sign-off is not the evidence check',
+  'What a verification note is allowed to be',
+  'Named acceptance is not independent verification',
+  'Sync does not measure verification',
+  'Sync does not measure verification for the customer',
+  'Sync does not accept or verify for the customer',
+  'Sync may surface an acceptance/sign-off note or a verification/evidence-check note',
+  'does not collapse verification into acceptance',
+  'does not collapse accepted into verified',
+  'does not collapse verified into assured',
+  'does not collapse verified into proven',
+  'does not rewrite Complete Is Not Accepted',
+  'practice record that says accepted is verified',
+  'accepted as verified',
+  'separates named human acceptance from verification',
+  '/insights/complete-is-not-accepted',
+  'Complete Is Not Verified separates measured completeness from verification',
+]) {
+  if (!signoffPage.includes(required)) {
+    fail(`accepted-is-not-verified page must include ${required}`);
+  }
+}
+
+if (
+  !acceptedPage.includes('The series continues with') ||
+  !acceptedPage.includes('/insights/accepted-is-not-verified')
+) {
+  fail('complete-is-not-accepted must point the series forward to accepted-is-not-verified');
 }
 
 function readingSlugs(name) {
