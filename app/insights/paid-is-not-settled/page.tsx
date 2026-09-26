@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('covered-is-not-paid');
+const article = getInsightArticle('paid-is-not-settled');
 
-export default function CoveredIsNotPaidPage() {
+export default function PaidIsNotSettledPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,515 @@ export default function CoveredIsNotPaidPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Covered Is Not Paid</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Paid Is Not Settled</h1>
+
+            <p className="text-xl text-gray-400">
+              Paid is not settled. Paid means indemnity / loss payment / agreed settlement funds have
+              actually moved (or a binding written settlement with payment date and amount is executed and
+              trackable) for that named covered event under today’s owner and window — not a coverage
+              opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a
+              ticket marked covered. Settled means the named claim/event is finally closed with a written
+              release (or equivalent finality instrument) that ends open reserve, binds the named parties
+              on that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero
+              without release, and not a CMMS checkbox. Paid is not settled. A firm can be paid and still
+              not settled (funds moved or payment scheduled; claim still open, release unsigned,
+              subrogation open, or reserve still live). A firm can chase settlement theater and still not
+              be paid (release draft or "agreed in principle" while no funds have moved and no binding
+              payment date/amount is trackable). A payment alone is not settlement finality. A settlement
+              instrument alone is not proof funds moved. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. Keep them apart: a payment alone is not settlement finality; a
+              settlement instrument alone is not proof funds moved; a CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Covered is not paid. Covered remains a responding grant
+              of coverage for this named event. Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing
+              is still a read. Sync refuses false precision. Sync refuses to pretend payment or settlement
+              is a status light. Sync does not measure payment. Sync does not measure payment for the
+              customer. Sync does not measure settlement. Sync does not measure settlement for the
+              customer. Sync does not measure payment or settlement for the customer. Sync does not issue
+              certificates for the customer. Sync does not issue policies for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not pay for the customer. Sync does not settle
+              claims for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync
+              must not auto-transfer ownership. Sync must not auto-declare RTO met. Sync must not
+              auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync
+              must not auto-issue certificates. Sync must not auto-issue policies. Sync must not
+              auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              or auto-settle.
+            </p>
+
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not
+              closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted
+              is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not
+              owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed.
+              Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified.
+              Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled.
+              Covered, in the prior essay, means the named failure, loss, location, asset class, cause,
+              and window are inside the policy’s responding grant of coverage (triggers met, exclusions
+              not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so
+              a competent claims path would treat the event as in-scope — not "we have a policy," not a
+              certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS
+              checkbox. Paid, there, means indemnity / loss payment / agreed settlement funds have
+              actually moved (or a binding written settlement with payment date and amount is executed and
+              trackable) for that named covered event under today’s owner and window — not a coverage
+              opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a
+              ticket marked covered. That sentence is the prior refusal. The words funds that have
+              actually moved in that sentence name indemnity, loss payment, or agreed settlement funds, or
+              a binding written settlement with payment date and amount that is executed and trackable for
+              that named covered event under today’s owner and window. They do not name a written release,
+              or an equivalent finality instrument, that ends open reserve, binds the named parties on
+              that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner. They do not sign the release. They do not close subrogation. They do not
+              retire a live reserve. This essay does not rewrite that sentence. This essay does not
+              collapse into that split. Coverage versus payment is the prior refusal. This essay separates
+              indemnity that has actually moved from a written release that ends the named claim. A
+              payment record is not evidence the named claim is finally closed. A settlement instrument is
+              not evidence funds moved.
+              <Link
+                href="/insights/covered-is-not-paid"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Covered Is Not Paid
+              </Link>
+              {" "}
+              keeps a responding grant of coverage for this event off indemnity that has actually moved.
+              Read the prior essay at /insights/covered-is-not-paid. Insured Is Not Covered keeps an
+              in-force coverage instrument off a responding grant for this event. Certified Is Not Insured
+              keeps a certification stamp off a named, in-force indemnity instrument. Assured Is Not
+              Certified keeps a dated assurance record off a program stamp. Recoverable Is Not Assured
+              keeps a one-time restore inside a named RTO/RPO off independent, recurring verification that
+              recovery still holds. Rehearsed Is Not Recoverable keeps a rehearsed handoff off a proven
+              restore to a named service level inside a named RTO/RPO. Transferable Is Not Rehearsed keeps
+              a transferable governed owned compounding system off a handoff run under stress. Governed Is
+              Not Transferable keeps a governed owned compounding system off evidence continuity under a
+              new named owner. Owned Is Not Governed keeps a named owner of the compounding system off
+              rules of engagement. Cash Is Not Margin keeps money received off a margin figure. Closure Is
+              Not Cash keeps an administrative completion stamp off money received. Closed Is Not Resolved
+              keeps a closed ticket off a cleared plant exception. Margin Is Not Profit keeps a margin
+              figure off profit. Assured Is Not Proven keeps time-bounded confidence that an asset stays
+              known-good under operating conditions off a closed evidentiary chain for a specific claim.
+              Verified Is Not Assured keeps an independent check off standing assurance. Green Is Not Go
+              keeps a status light off permission to run. None of those refusals is this split. A check
+              that cleared is not this settlement. A release draft, or "agreed in principle," is not this
+              payment. This payment is indemnity that has actually moved, or a binding written settlement
+              with payment date and amount that is executed and trackable, for that named covered event
+              under today’s owner and window. This settlement is the named claim finally closed with a
+              written release, or an equivalent finality instrument, that ends open reserve, binds the
+              named parties on that loss window, and leaves no open adjudication path for that same named
+              event under today’s owner. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and
+              Human Decision Is Not Optional stay beside this split. Sync may surface a payment record or
+              a settlement status beside Evidence, Verification, and the closed outcome. Surfacing is
+              still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
+              refuses to pretend payment or settlement is a status light. Sync must not auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              or auto-settle. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners,
+              auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or treat paid
+              as settled as Learning credit. This essay does not rewrite Covered Is Not Paid. This essay
+              does not rewrite Insured Is Not Covered. This essay does not rewrite Certified Is Not
+              Insured. This essay does not rewrite Assured Is Not Certified. This essay does not rewrite
+              Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This
+              essay does not rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed
+              Is Not Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not
+              rewrite Cash Is Not Margin. This essay does not rewrite Closure Is Not Cash. This essay does
+              not rewrite Closed Is Not Resolved. This essay does not rewrite Margin Is Not Profit. This
+              essay does not rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not
+              Assured. This essay does not rewrite Green Is Not Go. This essay does not collapse into
+              Covered Is Not Paid. This essay does not collapse into Insured Is Not Covered. This essay
+              does not collapse into Certified Is Not Insured. This essay does not collapse into Assured
+              Is Not Certified. This essay does not collapse into Recoverable Is Not Assured. This essay
+              does not collapse into Rehearsed Is Not Recoverable. This essay does not collapse into
+              Transferable Is Not Rehearsed. This essay does not collapse into Governed Is Not
+              Transferable. This essay does not collapse into Owned Is Not Governed. This essay does not
+              collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash.
+              This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into
+              Margin Is Not Profit. This essay does not collapse into Assured Is Not Proven. This essay
+              does not collapse into Verified Is Not Assured. This essay does not collapse into Green Is
+              Not Go. This essay does not collapse paid into settled. This essay does not collapse
+              settlement into payment. This essay does not collapse covered into paid.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Paid is not settled. Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a binding written settlement with payment date and amount is executed and trackable) for that named covered event under today’s owner and window — not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked covered. Settled means the named claim/event is finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero without release, and not a CMMS checkbox. A firm can be paid and still not settled, when funds moved or payment scheduled; claim still open, release unsigned, subrogation open, or reserve still live, is the only settlement story on the record. A firm can chase settlement theater and still not be paid, when release draft or "agreed in principle" while no funds have moved and no binding payment date/amount is trackable, is the only payment story on the record. A payment alone is not settlement finality. A settlement instrument alone is not proof funds moved. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a payment record or a settlement status beside Evidence, Verification, and the closed outcome. This essay separates indemnity that has actually moved from a written release that ends the named claim. This essay does not collapse settlement into payment. This essay does not collapse paid into settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Insured Is Not Covered. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says paid is settled is not shown settlement. Sync refuses to pretend payment or settlement is a status light. Treating paid as settled records indemnity that has actually moved as a written release that ends the named claim, under the honesty and verification boundary. A payment record can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the payment record when the record is being used as settlement. Evidence from the plant beats the settlement instrument when the instrument is being used as proof funds moved. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync must not treat paid as settled as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync does not measure payment or settlement for the customer. Sync does not measure settlement for the customer. Sync does not pay for the customer. Sync does not settle claims for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The paid practice is not the settled practice
+            </h2>
+
+            <p>
+              Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a
+              binding written settlement with payment date and amount is executed and trackable) for that
+              named covered event under today’s owner and window — not a coverage opinion, not an FNOL
+              acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked
+              covered. Settled means the named claim/event is finally closed with a written release (or
+              equivalent finality instrument) that ends open reserve, binds the named parties on that loss
+              window, and leaves no open adjudication path for that same named event under today’s owner —
+              not "a check cleared," not a partial payment, not a reserve reduced to zero without release,
+              and not a CMMS checkbox. Sync may surface a payment record or a settlement status beside
+              Evidence, Verification, and the closed outcome. A practice record that says paid is settled
+              is not shown settlement. Evidence from the plant beats the payment record when the record is
+              being used as settlement. Evidence from the plant beats the settlement instrument when the
+              instrument is being used as proof funds moved. Evidence from the plant beats the note. The
+              paid practice is not the settled practice.
+            </p>
+
+            <p>
+              One line can hold a payment. Indemnity moved, or loss payment moved, or agreed settlement
+              funds moved, or a binding written settlement with payment date and amount is executed and
+              trackable for that named covered event under today’s owner and window. The covered event is
+              named. Today’s owner is named. The window is named. Then the record stops. It does not say a
+              written release is signed. It does not say an equivalent finality instrument ends open
+              reserve. It does not say the named parties are bound on that loss window. It does not say
+              there is no open adjudication path for that same named event under today’s owner. Funds
+              moved or payment scheduled; claim still open, release unsigned, subrogation open, or reserve
+              still live. That record can be paid. It is not settled. A firm can be paid and still not
+              settled. A cleared check is not settlement. "A check cleared" is not settlement. A partial
+              payment is not settlement. A reserve reduced to zero without release is not settlement. A
+              ticket marked paid is not settlement. A release can be drafted and still not be this
+              payment. The file shows a release draft or "agreed in principle" while no funds have moved
+              and no binding payment date/amount is trackable. That record can look like settlement theater. It is not
+              paid. A firm can chase settlement theater and still not be paid. A payment alone is not
+              settlement finality. A settlement instrument alone is not proof funds moved. A sentence that
+              says the claim is agreed in principle is not funds that moved, and it is not a release that
+              ends open reserve. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              A one-off clear is a single quiet interval. It is not funds that moved, and it is not a
+              written release for this named event. The paid practice is not the settled practice. This
+              essay does not invent a customer, a price, or a return. It states no savings figure, states
+              no price, and states no OEM limit. A practice record that says paid is settled is not a
+              customer plant release, and it is not shown settlement. Treating paid as settled records
+              funds the plant has not placed on a finality instrument, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/covered-is-not-paid"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Covered Is Not Paid
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/covered-is-not-paid. Covered,
+              there, means the named failure, loss, location, asset class, cause, and window are inside
+              the policy’s responding grant of coverage (triggers met, exclusions not barring, named
+              insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims
+              path would treat the event as in-scope — not "we have a policy," not a certificate of
+              insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. Paid,
+              there, means indemnity / loss payment / agreed settlement funds have actually moved (or a
+              binding written settlement with payment date and amount is executed and trackable) for that
+              named covered event under today’s owner and window — not a coverage opinion, not an FNOL
+              acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked
+              covered. A coverage grant alone is not payment. A payment alone is not proof this event was
+              in-scope under the named policy. That refusal stops at funds that moved, or at a binding
+              written settlement with payment date and amount that is executed and trackable. It does not
+              ask whether the named claim is finally closed with a written release that ends open reserve,
+              binds the named parties on that loss window, and leaves no open adjudication path for that
+              same named event under today’s owner. The phrase funds moved, in that essay, is not this
+              settlement. It is not a release. It is not the end of subrogation. It is not a reserve that
+              has been retired by a finality instrument. Covered is not paid is a different refusal. Paid
+              is not settled is the next refusal. Named payment is not settlement, and a settlement
+              instrument is not proof funds moved. Covered Is Not Paid separates a responding grant of
+              coverage for this event from indemnity that has actually moved. This essay separates
+              indemnity that has actually moved from a written release that ends the named claim. This
+              essay does not rewrite Covered Is Not Paid. This essay does not collapse into Covered Is Not
+              Paid. This essay does not collapse covered into paid. This essay does not collapse paid into
+              settled.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/insured-is-not-covered"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Insured Is Not Covered
+              </Link>
+              {" "}
+              keeps an in-force coverage instrument off a responding grant for this event. A policy on
+              file is not a written release, and a responding grant is not proof the indemnity moved under
+              a finality instrument. This essay does not rewrite Insured Is Not Covered. This essay does
+              not collapse into Insured Is Not Covered.
+              <Link
+                href="/insights/certified-is-not-insured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Certified Is Not Insured
+              </Link>
+              {" "}
+              keeps a certification stamp off a named, in-force indemnity instrument. A program stamp is
+              not funds that moved, and a policy on file is not a release that ends open reserve. This
+              essay does not rewrite Certified Is Not Insured. This essay does not collapse into Certified
+              Is Not Insured.
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              keeps a dated assurance record off a program stamp that a recovery/continuity program
+              exists or once met a named checklist. A dated re-prove of restore is not a wire, and a
+              certification stamp is not a binding release. This essay does not rewrite Assured Is Not
+              Certified. This essay does not collapse into Assured Is Not Certified.
+              <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>
+              {" "}
+              keeps a proven restore to a named service level inside a named RTO/RPO off independent,
+              recurring verification that recovery capability still holds. A one-time restore is not
+              indemnity, and an assurance PDF is not settlement finality under today’s owner. This essay
+              does not rewrite Recoverable Is Not Assured. This essay does not collapse into Recoverable
+              Is Not Assured.
+              <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>
+              {" "}
+              keeps a named handoff run under stress off a proven restore to a named service level inside
+              a named RTO/RPO. A tabletop pass is not a reserve that became a release, and a backup job
+              green light is not funds that moved. This essay does not rewrite Rehearsed Is Not
+              Recoverable. This essay does not collapse into Rehearsed Is Not Recoverable.
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>
+              {" "}
+              keeps a governed owned compounding system that can change hands with evidence continuity
+              off a handoff run under stress. A succession plan PDF is not a settlement instrument, and a
+              tabletop is not payment for this covered event. This essay does not rewrite Transferable Is
+              Not Rehearsed. This essay does not collapse into Transferable Is Not Rehearsed.
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>
+              {" "}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new
+              named owner. A rule of engagement is not a payment date and amount, and a handoff pack is
+              not a written release. This essay does not rewrite Governed Is Not Transferable. This essay
+              does not collapse into Governed Is Not Transferable.
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>
+              {" "}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system off rules of engagement. A name on the system is not the party bound by a
+              release, and a rule of engagement is not settlement finality. This essay does not rewrite
+              Owned Is Not Governed. This essay does not collapse into Owned Is Not Governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>
+              {" "}
+              keeps money received off a margin figure. A wire that moved is not margin, and a margin
+              line is not a written release that ends this named claim. This essay does not rewrite Cash
+              Is Not Margin. This essay does not collapse into Cash Is Not Margin.
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>
+              {" "}
+              keeps an administrative completion stamp off money received. A closure stamp is not
+              settlement finality for this claim, and cash collected is not a written release. This essay
+              does not rewrite Closure Is Not Cash. This essay does not collapse into Closure Is Not Cash.
+              <Link
+                href="/insights/closed-is-not-resolved"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closed Is Not Resolved
+              </Link>
+              {" "}
+              keeps a closed ticket off a cleared plant exception. Closing the ticket is not a written
+              release that ends open reserve, and resolving the exception is not proof funds moved. This
+              essay does not rewrite Closed Is Not Resolved. This essay does not collapse into Closed Is
+              Not Resolved.
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>
+              {" "}
+              keeps a margin figure off profit. A margin figure is not a settlement instrument, and
+              profit is not indemnity that moved. This essay does not rewrite Margin Is Not Profit. This
+              essay does not collapse into Margin Is Not Profit.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              {" "}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating
+              conditions, with ownership and monitoring, off a closed evidentiary chain for a specific
+              claim under named conditions. That standing claim can be probabilistic. Payment in this
+              essay is not that standing known-good claim. Payment here is indemnity that has actually
+              moved for that named covered event under today’s owner and window. Settlement here is not
+              that standing known-good claim either. Settlement here is a written release that ends the
+              named claim. A known-good asset claim is not a wire, and a closed evidentiary chain is not a
+              release that ends open reserve. This essay does not rewrite Assured Is Not Proven. This
+              essay does not collapse into Assured Is Not Proven.
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              {" "}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is an evidence check versus standing confidence. It is not funds that
+              moved versus a written release. An independent check is not settlement, and standing
+              confidence is not proof funds moved. This essay does not rewrite Verified Is Not Assured.
+              This essay does not collapse into Verified Is Not Assured.
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              {" "}
+              keeps a green tile off permission to run. A status light is not a payment record, and a
+              status light is not a settlement status. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Green Is Not Go. This essay does not collapse settlement into
+              payment.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a settlement status is allowed to be
+            </h2>
+
+            <p>
+              Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a
+              binding written settlement with payment date and amount is executed and trackable) for that
+              named covered event under today’s owner and window — not a coverage opinion, not an FNOL
+              acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked
+              covered. Settled means the named claim/event is finally closed with a written release (or
+              equivalent finality instrument) that ends open reserve, binds the named parties on that loss
+              window, and leaves no open adjudication path for that same named event under today’s owner —
+              not "a check cleared," not a partial payment, not a reserve reduced to zero without release,
+              and not a CMMS checkbox. A payment alone is not settlement finality. A settlement instrument
+              alone is not proof funds moved. A CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. Sync may surface a payment record or a settlement status beside Evidence,
+              Verification, and the closed outcome. This essay does not collapse paid into settled.
+            </p>
+
+            <p>
+              Evidence may cite a payment record when the source of that record is named, and when the
+              citation names the covered event, today’s owner, and the window, and when the citation says
+              indemnity, loss payment, or agreed settlement funds have actually moved, or a binding
+              written settlement with payment date and amount is executed and trackable. The record is
+              about funds for that named event. It is not, by itself, a written release. It is not a
+              coverage opinion used as finality. It is not an FNOL acknowledgment. It is not a reserve
+              set. It is not "we’ll look into it." It is not a ticket marked covered. It is not "a check
+              cleared" used as if the claim were closed. It is not a partial payment used as if the
+              release were signed. Evidence may cite a settlement status when the source of that status is
+              named, and when the citation names the claim, today’s owner, and the loss window, and when
+              the citation says the named claim is finally closed with a written release, or an equivalent
+              finality instrument, that ends open reserve, binds the named parties on that loss window,
+              and leaves no open adjudication path for that same named event under today’s owner. The
+              status is about finality for that named event. It is not a check cleared. It is not a
+              partial payment. It is not a reserve reduced to zero without release. It is not a CMMS
+              checkbox. If the evidence records funds that moved, or a payment scheduled, and does not
+              record a signed release — because the claim is still open, the release is unsigned,
+              subrogation is open, or the reserve is still live — the case may store the note as paid and
+              must not store the note as settled. If the evidence records a release draft or "agreed in
+              principle" while no funds have moved and no binding payment date and amount is trackable,
+              the case may store the note as settlement theater and must not store the note as paid. What
+              a settlement status is allowed to be is that written release, or that equivalent finality
+              instrument, the firm can still show for this named claim. It is not a payment record used as
+              proof the claim is closed. It is not a reserve. It is not permission to execute. Recommend
+              is not authorize. Evidence lineage is not optional. Human decision is not optional.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              or auto-settle. Sync does not pay for the customer. Sync does not settle claims for the
+              customer. Sync does not measure settlement for the customer. Sync does not measure payment
+              for the customer. Sync does not adjudicate claims for the customer. Sync does not file a
+              claim for the customer. Sync does not issue policies for the customer. Direct plant execute
+              stays off. CMMS write-back is not a live product path. Billing write-back is not a live
+              product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named payment is not settlement
+            </h2>
+
+            <p>
+              Named payment is not settlement. The paid practice is not the settled practice. A payment
+              record answers whether indemnity / loss payment / agreed settlement funds have actually
+              moved, or whether a binding written settlement with payment date and amount is executed and
+              trackable, for that named covered event under today’s owner and window. It does not, by
+              itself, show that the named claim is finally closed with a written release that ends open
+              reserve. It does not, by itself, bind the named parties on that loss window. It does not, by
+              itself, leave no open adjudication path for that same named event under today’s owner. Funds
+              moved or payment scheduled, with the claim still open, the release unsigned, subrogation
+              open, or the reserve still live, is still payment. It is not settlement. A firm can be paid
+              and still not settled. A release draft, or "agreed in principle," while no funds have moved
+              and no binding payment date and amount is trackable, is still settlement theater. It is not
+              payment. A firm can chase settlement theater and still not be paid. A payment alone is not
+              settlement finality. A settlement instrument alone is not proof funds moved. Not a check
+              cleared. Not a partial payment. Not a reserve reduced to zero without release. Not a CMMS
+              checkbox. A CMMS checkbox, ticket state, status light, or one-off clear is neither. This
+              essay does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is Not
+              Covered. This essay does not rewrite Certified Is Not Insured. This essay does not rewrite
+              Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This essay
+              does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is
+              Not Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not
+              rewrite Owned Is Not Governed. This essay does not rewrite Cash Is Not Margin. This essay
+              does not rewrite Closure Is Not Cash. This essay does not rewrite Closed Is Not Resolved.
+              This essay does not rewrite Margin Is Not Profit. This essay does not rewrite Assured Is Not
+              Proven. This essay does not rewrite Verified Is Not Assured. This essay does not rewrite
+              Green Is Not Go. This essay does not collapse into Covered Is Not Paid. This essay does not
+              collapse into Insured Is Not Covered. This essay does not collapse into Certified Is Not
+              Insured. This essay does not collapse into Assured Is Not Certified. This essay does not
+              collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This essay
+              does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned
+              Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not
+              collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved.
+              This essay does not collapse into Margin Is Not Profit. This essay does not collapse into
+              Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay
+              does not collapse into Green Is Not Go. This essay does not collapse settlement into
+              payment. This essay does not collapse paid into settled. Sync does not measure payment or
+              settlement for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync
+              refuses to pretend payment or settlement is a status light. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+
 
             <p className="text-xl text-gray-400">
               Covered is not paid. Covered means the named failure, loss, location, asset class, cause,
@@ -9424,17 +9932,6 @@ export default function CoveredIsNotPaidPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/paid-is-not-settled"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Paid Is Not Settled
-              </Link>
-              , on why paid is still not settled. Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a binding written settlement with payment date and amount is executed and trackable) for that named covered event under today’s owner and window — not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked covered. Settled means the named claim/event is finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero without release, and not a CMMS checkbox. A firm can be paid and still not settled when funds moved or payment scheduled; claim still open, release unsigned, subrogation open, or reserve still live, is on the record. A firm can chase settlement theater and still not be paid. A payment alone is not settlement finality. A settlement instrument alone is not proof funds moved. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Covered remains a responding grant of coverage for this event. This essay separates a responding grant of coverage for this event from indemnity that has actually moved. A coverage grant alone is not payment. A payment alone is not proof this event was in-scope under the named policy. Sync does not measure payment or settlement for the customer. Sync does not measure settlement. Sync does not measure settlement for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync must not auto-pay. Sync must not auto-settle. Sync refuses to pretend payment or settlement is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -9494,7 +9991,7 @@ export default function CoveredIsNotPaidPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="covered-is-not-paid" />
+          <InsightNextSteps slug="paid-is-not-settled" />
         </motion.article>
       </div>
     </main>
