@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('closed-is-not-resolved');
+const article = getInsightArticle('resolved-is-not-proven');
 
-export default function ClosedIsNotResolvedPage() {
+export default function ResolvedIsNotProvenPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,73 @@ export default function ClosedIsNotResolvedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Closed Is Not Resolved</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Resolved Is Not Proven</h1>
+
+            <p className="text-xl text-gray-400">
+              Resolved is not proven. Resolved is evidence that the underlying plant, operating, or
+              capital exception is actually cleared under a named resolution window
+              (who/what/when/where against plant or operating evidence) — the instance is gone, not
+              merely that someone closed the ticket. Proven is evidence under a named proof window
+              that the failure mode, defect class, or exception class will not recur as claimed
+              (repeat observation, hold period, counter-evidence, or named verification of the fix
+              against plant reality) — the claim that it stays gone is evidenced, not assumed from a
+              single clear. Resolved is not proven. A firm with resolution can still lack proof. A
+              firm with proof can still lack resolution. A resolution note alone proves neither. A
+              proof note alone proves neither. A resolution note is not a green. A proof note is not
+              a green. A named resolution without proof criteria is not proven. A lab, model, or
+              simulation result without plant resolution of the live exception is not resolved. A
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. Closed is not
+              resolved. Closed remains a named human (or named accountable role) formally closing the
+              case, work order, or exception under a named closure window — administrative closure of
+              the record, not proof the underlying defect, risk, or exception is gone. Simulation is
+              not proof. Proof is not authorization. Verified is not assured. Accepted is not
+              verified. Complete is not accepted. Cleared is not complete. Ready is not cleared.
+              Recommend is not authorize. Evidence lineage is not optional. Human decision is not
+              optional. Sync does not measure resolution. Sync does not measure resolution for the
+              customer. Sync does not measure proof. Sync does not measure proof for the customer.
+              Sync does not resolve or prove cases for the customer. Sync must not auto-close,
+              auto-authorize, auto-resolve, or auto-prove.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Closed, in the prior essay, is administrative
+              closure of the record. Resolved, there, is evidence the underlying exception is actually
+              cleared. That essay separates named administrative closure from resolution evidence.
+              This essay does not collapse into that split. This essay separates a cleared instance
+              from evidence the failure mode will not recur. Simulation Is Not Proof keeps a lab,
+              model, or simulation result off proof the plant will behave that way. Proof Is Not
+              Authorization keeps a closed evidentiary chain off authorization to execute. Verified Is
+              Not Assured keeps an independent check off standing assurance. Assured Is Not Proven
+              keeps standing confidence off a closed chain. Accepted Is Not Verified separates named
+              human acceptance from an independent evidence check. Complete Is Not Accepted separates
+              measured completeness from named human acceptance. Cleared Is Not Complete keeps a
+              clearance stamp off proof the work is finished. Ready Is Not Cleared keeps a readiness
+              label off that gate. This essay does not collapse into those refusals. It separates
+              evidence the instance is gone from evidence the failure mode, defect class, or exception
+              class will not recur as claimed. Recommend Is Not Authorize, Evidence Lineage Is Not
+              Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface a
+              resolution/cleared-exception note or a proof/non-recurrence note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync must not auto-close,
+              auto-authorize, auto-resolve, or auto-prove. Sync must not auto-close, auto-authorize,
+              auto-resolve, or treat resolved as proven as Learning credit. This essay does not rewrite
+              Closed Is Not Resolved. This essay does not rewrite Simulation Is Not Proof. This essay
+              does not rewrite Proof Is Not Authorization. This essay does not rewrite Verified Is Not
+              Assured. This essay does not rewrite Assured Is Not Proven. This essay does not rewrite
+              Accepted Is Not Verified. This essay does not rewrite Complete Is Not Accepted. This
+              essay does not rewrite Cleared Is Not Complete. This essay does not rewrite Ready Is Not
+              Cleared. This essay does not collapse into Closed Is Not Resolved. This essay does not
+              collapse into Simulation Is Not Proof. This essay does not collapse into Proof Is Not
+              Authorization. This essay does not collapse into Verified Is Not Assured. This essay does
+              not collapse into Assured Is Not Proven. This essay does not collapse into Accepted Is
+              Not Verified. This essay does not collapse into Complete Is Not Accepted. This essay does
+              not collapse into Cleared Is Not Complete. This essay does not collapse into Ready Is Not
+              Cleared. This essay does not collapse resolved into proven. This essay does not collapse
+              proof into resolution. This essay does not collapse closed into resolved.
+            </p>
 
             <p className="text-xl text-gray-400">
               Closed is not resolved. Closed is a named human (or named accountable role) formally
@@ -450,6 +516,393 @@ export default function ClosedIsNotResolvedPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+
+            <p className="text-xl font-semibold text-white">
+              Resolved is not proven. Resolved is evidence that the underlying plant, operating, or
+              capital exception is actually cleared under a named resolution window
+              (who/what/when/where against plant or operating evidence) — the instance is gone, not
+              merely that someone closed the ticket. Proven is evidence under a named proof window
+              that the failure mode, defect class, or exception class will not recur as claimed
+              (repeat observation, hold period, counter-evidence, or named verification of the fix
+              against plant reality) — the claim that it stays gone is evidenced, not assumed from a
+              single clear. A firm with resolution can still lack proof when that cleared instance is
+              on the record and the firm has not shown, under a named proof window, that the failure
+              mode, defect class, or exception class will not recur as claimed. A firm with proof can
+              still lack resolution when that proof is on the record and the firm has not shown
+              the live plant, operating, or capital exception is actually cleared under a named
+              resolution window. A named resolution without proof criteria is not proven. A lab,
+              model, or simulation result without plant resolution of the live exception is not
+              resolved. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Treating resolved as proven records a single clear as a claim that the failure mode will
+              not recur that nobody has shown, under the honesty and verification boundary. A
+              resolution note can inform a recommendation to investigate. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Evidence from the plant
+              beats the resolution note when the note is being used as proof. Evidence from the plant
+              beats the proof note when the note is being used as resolution. Sync must not auto-close,
+              auto-authorize, auto-resolve, or auto-prove. Sync must not auto-close, auto-authorize,
+              auto-resolve, or treat resolved as proven as Learning credit. Sync does not measure
+              resolution. Sync does not measure resolution for the customer. Sync does not measure
+              proof. Sync does not measure proof for the customer. Sync does not resolve or prove
+              cases for the customer. Direct plant execute stays off. CMMS write-back is not a live
+              product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The cleared instance is not the proven failure mode
+            </h2>
+
+            <p>
+              Resolved is evidence that the underlying plant, operating, or capital exception is
+              actually cleared under a named resolution window (who/what/when/where against plant or
+              operating evidence) — the instance is gone, not merely that someone closed the ticket.
+              Proven is evidence under a named proof window that the failure mode, defect class, or
+              exception class will not recur as claimed (repeat observation, hold period,
+              counter-evidence, or named verification of the fix against plant reality) — the claim
+              that it stays gone is evidenced, not assumed from a single clear. Sync may surface a
+              resolution/cleared-exception note or a proof/non-recurrence note beside Evidence,
+              Verification, and the closed outcome. A practice record that says resolved is proven is
+              not shown proof. Evidence from the plant beats the resolution note when the note is
+              being used as proof. Evidence from the plant beats the proof note when the note is being
+              used as resolution.
+            </p>
+
+            <p>
+              Plant or operating evidence can show who, what, when, and where the underlying
+              exception was actually cleared under a named resolution window while the firm has not
+              named the proof window: no repeat observation, no hold period, no counter-evidence, and
+              no named verification of the fix against plant reality. That evidence is resolved. It is
+              not proven. A proof record can name repeat observation, a hold period, counter-evidence,
+              or named verification of the fix against plant reality while the live exception was
+              never cleared under a named resolution window. That record is not resolved. A lab,
+              model, or simulation result without plant resolution of the live exception is not
+              resolved. A title on the org chart, with or without scope, is neither the cleared
+              instance nor the claim that it stays gone. A firm with resolution can still lack proof.
+              A firm with proof can still lack resolution. A resolution note alone proves neither. A
+              proof note alone proves neither. A resolution note is not a green. A proof note is not a
+              green. A named resolution without proof criteria is not proven. A CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. A one-off clear is a single quiet
+              interval. It is not a proof window. Named resolution is not proof. The cleared instance
+              is not the proven failure mode. This essay does not invent a customer, a price, or a
+              return. It states no savings figure, states no price, and states no OEM limit. A
+              practice record that says resolved is proven is not a customer plant release, and it is
+              not shown proof. Treating resolved as proven records a single clear as a claim that the
+              failure mode, defect class, or exception class will not recur that nobody has shown,
+              under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/closed-is-not-resolved"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closed Is Not Resolved
+              </Link>{' '}
+              sits one step earlier. Closed, there, is a named human (or named accountable role)
+              formally closing the case, work order, or exception under a named closure window —
+              administrative closure of the record, not proof the underlying defect, risk, or
+              exception is gone. Resolved, there, is evidence that the underlying plant, operating, or
+              capital exception is actually cleared under a named resolution window — the problem is
+              gone, not merely that someone closed the ticket. A named closure without resolution
+              evidence is not resolved. Plant activity that clears a symptom without a named closure
+              is not closed. That refusal stops at the closed record and the cleared instance. It does
+              not ask whether the failure mode, defect class, or exception class will not recur as
+              claimed under a named proof window. Closed is not resolved is a different refusal.
+              Resolved is not proven is the next refusal. Named closure is not resolution evidence,
+              and named resolution is not proof. Closed Is Not Resolved separates named administrative
+              closure from resolution evidence. This essay separates a cleared instance from evidence
+              the failure mode will not recur. This essay does not rewrite Closed Is Not Resolved.
+              This essay does not collapse into Closed Is Not Resolved. This essay does not collapse
+              closed into resolved. This essay does not collapse resolved into proven.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/simulation-is-not-proof"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Simulation Is Not Proof
+              </Link>{' '}
+              keeps a lab, model, or simulation result off proof the plant will behave that way. That
+              refusal is not this split. A simulation can be careful and still not be a named proof
+              window against plant reality. A lab, model, or simulation result without plant
+              resolution of the live exception is not resolved. Simulation is not proof, and a
+              simulation is not resolution of the live exception. This essay does not rewrite
+              Simulation Is Not Proof. This essay does not collapse into Simulation Is Not Proof.{' '}
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed evidentiary chain off authorization to execute. Proven here is not
+              permission to act. A named proof window that the failure mode will not recur is not a
+              named human granting permission to execute a binding move. This essay does not rewrite
+              Proof Is Not Authorization. This essay does not collapse into Proof Is Not
+              Authorization. This essay does not collapse proof into resolution.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is assurance, not this split between a cleared instance and
+              non-recurrence evidence.{' '}
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>{' '}
+              keeps standing confidence off a closed evidentiary chain. Proven in that essay is not
+              the proof window this essay names. This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Assured Is Not Proven. This essay does not collapse into
+              Verified Is Not Assured. This essay does not collapse into Assured Is Not Proven. This
+              essay does not collapse assured into proven.{' '}
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              separates named human acceptance from an independent evidence check. Acceptance is not
+              resolution, and verification is not proof the failure mode will not recur.{' '}
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>{' '}
+              separates measured completeness from named human acceptance. Neither is a cleared
+              instance, and neither is a proof window. This essay does not rewrite Accepted Is Not
+              Verified. This essay does not rewrite Complete Is Not Accepted. This essay does not
+              collapse into Accepted Is Not Verified. This essay does not collapse into Complete Is
+              Not Accepted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared, there, is a ready or
+              permission gate past a clearance check. That gate is not this essay. Resolved here is
+              not a clearance stamp. Resolved here is evidence the instance is gone under a named
+              resolution window. Proven here is not completeness.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not resolution,
+              and not proof. This essay does not rewrite Cleared Is Not Complete. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not collapse into Cleared Is Not Complete.
+              This essay does not collapse into Ready Is Not Cleared.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not resolution
+              evidence, and a recommendation tile is not a proof window.{' '}
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>
+              . Evidence lineage is not optional. A note without a named source is not who, what,
+              when, and where against plant or operating evidence, and it is not a named proof window.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, evidence the instance is gone, and it is not,
+              by itself, evidence the failure mode will not recur. Human decision is not optional.
+              Recommend is not authorize. This essay does not rewrite Recommend Is Not Authorize. This
+              essay does not rewrite Human Decision Is Not Optional. This essay does not collapse into
+              Recommend Is Not Authorize. This essay does not collapse into Human Decision Is Not
+              Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a proof note is allowed to be
+            </h2>
+
+            <p>
+              Resolved is evidence that the underlying plant, operating, or capital exception is
+              actually cleared under a named resolution window (who/what/when/where against plant or
+              operating evidence) — the instance is gone, not merely that someone closed the ticket.
+              Proven is evidence under a named proof window that the failure mode, defect class, or
+              exception class will not recur as claimed (repeat observation, hold period,
+              counter-evidence, or named verification of the fix against plant reality) — the claim that it stays gone is evidenced, not assumed from a single clear. A named resolution
+              without proof criteria is not proven. A lab, model, or simulation result without plant
+              resolution of the live exception is not resolved. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Sync may surface a resolution/cleared-exception note
+              or a proof/non-recurrence note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse resolved into proven.
+            </p>
+
+            <p>
+              Evidence may cite a resolution/cleared-exception note when the source of that note is
+              named, and when the citation says who, what, when, and where against plant or operating
+              evidence under a named resolution window — the instance is gone, not a ticket state and
+              not a symptom that merely quieted. Evidence may cite a proof/non-recurrence note when
+              the source of that note is named, and when the citation names the proof window: repeat
+              observation, a hold period, counter-evidence, or named verification of the fix against
+              plant reality, for a named failure mode, defect class, or exception class. If the
+              evidence records the cleared instance and does not record proof criteria, the case may
+              store the note as resolution and must not store the note as proven. If the evidence
+              records a proof window and does not record plant resolution of the live exception, the
+              case must not store the note as resolved. The label does not fill the gap. The
+              resolution note does not paint a green. The proof note does not paint a green. Evidence
+              lineage is not optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. A one-off clear is a single interval in which the
+              symptom was quiet. None of those, by itself, is who, what, when, and where against plant
+              or operating evidence under a resolution window. None of those, by itself, is repeat
+              observation, a hold period, counter-evidence, or named verification of the fix against
+              plant reality.               A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              A lab, model, or simulation result without plant resolution of the live exception is not resolved.
+              Evidence from the plant beats the resolution note when the note is being used as proof.
+              Evidence from the plant beats the proof note when the note is being used as resolution.
+              Sync may surface a resolution/cleared-exception note or a proof/non-recurrence note beside Evidence, Verification, and the closed outcome.
+              Recommend is not authorize. Human decision is not optional. Sync refuses
+              false precision. Sync refuses when evidence is insufficient. Sync must not auto-close,
+              auto-authorize, auto-resolve, or auto-prove. Sync must not auto-close, auto-authorize,
+              auto-resolve, or treat resolved as proven as Learning credit. A practice record that
+              says resolved is proven is not a customer plant release, and it is not shown proof.
+              Simulated or seeded telemetry and assets are practice records. A live connector tag pull
+              is not a claim of this edition. This essay does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface a resolution/cleared-exception note or
+              a proof/non-recurrence note beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Showing the note does not write a CMMS work order. Showing
+              the note does not clear equipment to run. Showing the note does not close the case for
+              the customer. Showing the note does not resolve the case for the customer. Showing the
+              note does not prove the case for the customer. Showing the note does not book revenue.
+              Showing the note does not recognize revenue. Showing the note does not measure
+              resolution. Showing the note does not measure resolution for the customer. Showing the
+              note does not measure proof. Showing the note does not measure proof for the customer.
+              Showing the note does not resolve or prove cases for the customer. Showing the note does
+              not execute plant work. A named human decides. A named human remains accountable after
+              the plant move. Direct plant execute stays off. CMMS write-back is not a live product
+              path. Billing write-back is not a live product path. Self-guided onboarding is not
+              claimed as a live product path. Sync does not resolve or prove cases for the customer.
+              Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR.
+              Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not
+              measure cash for the customer. Sync does not measure runway. Sync does not measure
+              runway for the customer. Sync does not measure survival. Sync does not measure survival
+              for the customer. Sync does not measure solvency. Sync does not measure solvency for the
+              customer. Sync does not measure liquidity. Sync does not measure liquidity for the
+              customer. Sync does not measure flexibility. Sync does not measure flexibility for the
+              customer. Sync does not measure optionality. Sync does not measure optionality for the
+              customer. Sync does not measure strategy. Sync does not measure strategy for the
+              customer. Sync does not measure execution. Sync does not measure execution for the
+              customer. Sync does not measure results. Sync does not measure results for the customer.
+              Sync does not measure learning. Sync does not measure learning for the customer. Sync
+              does not measure judgment. Sync does not measure judgment for the customer. Sync does
+              not measure authority. Sync does not measure authority for the customer. Sync does not
+              measure accountability. Sync does not measure accountability for the customer. Sync does
+              not measure ownership. Sync does not measure ownership for the customer. Sync does not
+              measure control. Sync does not measure control for the customer. Sync does not measure
+              closure. Sync does not measure closure for the customer. Sync does not measure
+              completeness. Sync does not measure completeness for the customer. Sync does not measure
+              acceptance. Sync does not measure acceptance for the customer. Sync does not measure
+              verification. Sync does not measure verification for the customer. Sync does not measure
+              authorization. Sync does not measure authorization for the customer. Sync does not
+              measure resolution. Sync does not measure resolution for the customer. Sync does not
+              measure proof. Sync does not measure proof for the customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('evidence')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence
+              </Link>{' '}
+              chapter records what the case may cite. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. None of those chapters is, by itself,
+              evidence the instance is gone under a resolution window, and none of them is, by itself,
+              evidence the failure mode will not recur under a proof window. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating a resolution note as proven. Direct plant execute stays
+              off.
+            </p>
+
+            <p>
+              Resolved is not proven. A firm with resolution can still lack proof. A firm with proof
+              can still lack resolution. A proof note alone proves neither. A proof note is not a green. The cleared instance is not the proven failure mode. What a proof note is allowed
+              to be is a named record, under a named proof window, of repeat observation, a hold
+              period, counter-evidence, or named verification of the fix against plant reality — the
+              claim that the failure mode, defect class, or exception class will not recur. Named
+              resolution is not proof. Sync does not resolve or prove cases for the customer. Sync may
+              surface a resolution/cleared-exception note or a proof/non-recurrence note beside
+              Evidence, Verification, and the closed outcome. This essay does not collapse proof into
+              resolution. This essay does not collapse resolved into proven. This essay does not
+              rewrite Closed Is Not Resolved. This essay does not rewrite Simulation Is Not Proof.
+              This essay does not rewrite Proof Is Not Authorization. This essay does not rewrite
+              Verified Is Not Assured. This essay does not rewrite Accepted Is Not Verified. This
+              essay does not rewrite Complete Is Not Accepted. This essay does not rewrite Cleared Is
+              Not Complete. This essay does not rewrite Ready Is Not Cleared. A practice record that
+              says resolved is proven is not shown proof. Treating resolved as proven is the refusal.
+              This essay separates a cleared instance from evidence the failure mode will not recur.
+              This essay does not collapse into Closed Is Not Resolved. This essay does not collapse
+              into Simulation Is Not Proof. This essay does not collapse into Proof Is Not
+              Authorization. This essay does not collapse into Verified Is Not Assured. This essay does
+              not collapse into Accepted Is Not Verified. This essay does not collapse into Complete Is
+              Not Accepted. This essay does not collapse into Cleared Is Not Complete. This essay does
+              not collapse into Ready Is Not Cleared. Evidence from the plant beats the resolution note
+              when the note is being used as proof. Evidence from the plant beats the proof note when
+              the note is being used as resolution. Surfacing is still a read. Sync refuses false
+              precision. Sync must not auto-close, auto-authorize, auto-resolve, or auto-prove. Sync
+              must not auto-close, auto-authorize, auto-resolve, or treat resolved as proven as
+              Learning credit. Direct plant execute stays off. CMMS write-back is not a live product
+              path. Billing write-back is not a live product path. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Sync does not measure
+              proof. Sync does not measure proof for the customer.
+            </p>
 
             <p className="text-xl font-semibold text-white">
               Closed is not resolved. Closed is a named human (or named accountable role) formally
@@ -3360,7 +3813,7 @@ export default function ClosedIsNotResolvedPage() {
               no survival length, no solvency length, no liquidity length, no flexibility length, no
               optionality length, no strategy length, no execution length, no results length, no
               learning length, no judgment length, no authority length, no accountability length, no
-              ownership length, no control length, and no closure length, and no completeness length, and no acceptance length, and no verification length, and no authorization length. It does not claim that
+              ownership length, no control length, and no closure length, and no completeness length, and no acceptance length, and no verification length, and no authorization length, and no resolution length, and no proof length. It does not claim that
               control is closure, does not claim that ownership is control, does not claim that
               accountability is ownership, and does not claim that authority is accountability. It
               does not write a CMMS work order, clear equipment to run, book revenue, recognize
@@ -3381,7 +3834,7 @@ export default function ClosedIsNotResolvedPage() {
               a customer, a price, or a return. It does not invent a case number. It does not treat a
               control note, a closure note, an ownership note, an authority note, a title without
               scope, or a recommendation as the question. It does not treat direction power as a
-              green. It does not treat a closure note as a green. Ownership is not control is a
+              green. It does not treat a closure note as a green. It does not treat a resolution note as proof. It does not treat resolved as proven. Ownership is not control is a
               different refusal. Accountability is not ownership is a different refusal. Authority is
               not accountability is a different refusal. Accountability is not closure is a different
               refusal. Coverage is not control is a different refusal. Dashboard is not control is a
@@ -3433,34 +3886,6 @@ export default function ClosedIsNotResolvedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/resolved-is-not-proven"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Resolved Is Not Proven
-              </Link>
-              , on why resolved is still not proven. Resolved is evidence that the underlying plant,
-              operating, or capital exception is actually cleared under a named resolution window
-              (who/what/when/where against plant or operating evidence) — the instance is gone, not
-              merely that someone closed the ticket. Proven is evidence under a named proof window
-              that the failure mode, defect class, or exception class will not recur as claimed
-              (repeat observation, hold period, counter-evidence, or named verification of the fix
-              against plant reality) — the claim that it stays gone is evidenced, not assumed from a
-              single clear. A firm with resolution can still lack proof when that cleared instance is
-              on the record and the firm has not shown the failure mode will not recur under a named
-              proof window. A firm with proof can still lack resolution. A named resolution without
-              proof criteria is not proven. A lab, model, or simulation result without plant
-              resolution of the live exception is not resolved. A CMMS checkbox, ticket state, status
-              light, or one-off clear is neither. Closed remains a named human formally closing the
-              record under a named closure window. This essay separates named administrative closure
-              from resolution evidence. A resolution note alone proves neither. A proof note alone
-              proves neither. A proof note is not a green. Sync does not measure proof. Sync does not
-              measure proof for the customer. Sync does not resolve or prove cases for the customer.
-              Sync must not auto-close, auto-authorize, auto-resolve, or auto-prove.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -3487,7 +3912,7 @@ export default function ClosedIsNotResolvedPage() {
                 judgment, measures judgment for the customer, measures authority, measures authority
                 for the customer, measures accountability, measures accountability for the customer,
                 measures ownership, measures ownership for the customer, measures control, measures
-                control for the customer, measures closure, measures closure for the customer, measures resolution, measures resolution for the customer,
+                control for the customer, measures closure, measures closure for the customer, measures resolution, measures resolution for the customer, measures proof, measures proof for the customer, resolves or proves cases for the customer,
                 measures completeness, measures completeness for the customer,
                 measures acceptance, measures acceptance for the customer,
                 measures verification, measures verification for the customer,
@@ -3520,7 +3945,7 @@ export default function ClosedIsNotResolvedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="closed-is-not-resolved" />
+          <InsightNextSteps slug="resolved-is-not-proven" />
         </motion.article>
       </div>
     </main>
