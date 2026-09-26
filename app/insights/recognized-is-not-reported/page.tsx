@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('collected-is-not-recognized');
+const article = getInsightArticle('recognized-is-not-reported');
 
-export default function CollectedIsNotRecognizedPage() {
+export default function RecognizedIsNotReportedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,156 +31,487 @@ export default function CollectedIsNotRecognizedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Collected Is Not Recognized</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Recognized Is Not Reported</h1>
 
             <p>
-              Collected is not recognized. Collected means cash for that named closed receivable / invoice /
-              obligation has actually hit the named bank account (or named cleared settlement rail) in the
-              named amount and currency, with a payment application trail tying the cash to the named closed
-              item — not an AR aging green, not "customer said they paid," not a close attestation alone, not
-              a remittance advice without bank evidence, and not a CMMS checkbox. Recognized means that named
-              amount is recognized as earned revenue (or the named contract earning event) for that named
-              entity and period under the named acceptance / milestone / performance obligation rule, with a
-              named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone,
-              not cash application alone, not "invoice was issued," not a dashboard ARR tile, and not a CMMS
-              checkbox. Collected is not recognized. A firm can be collected and still not recognized (cash
-              cleared and applied while the named earning / acceptance rule is not met or attested). A firm
-              can chase recognition theater and still not be collected (revenue booked or claimed while named
-              cash has not cleared and applied). A bank deposit alone is not revenue recognition. A
-              recognition journal alone is not proof the named amount is collected. A CMMS checkbox, ticket
-              state, status light, or one-off clear is neither. Keep them apart: a bank deposit alone is not
-              revenue recognition; a recognition journal alone is not proof the named amount is collected; a
-              CMMS checkbox, ticket state, status light, or one-off clear is neither. This closed is a
-              period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. Closed
-              is not collected. Closed Is Not Collected separates a period close a named controller or CFO can
-              attest from cash that has actually hit the named bank account for that named closed item. This
-              essay separates cash that has actually hit the named bank account for that named closed item
-              from earned revenue recognized under the named acceptance / milestone / performance obligation
-              rule. Recommend is not authorize. Evidence lineage is not optional. Human decision is not
-              optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false
-              precision. Sync refuses to pretend collection or recognition is a status light. Sync does not
-              measure recognition. Sync does not measure recognition for the customer. Sync does not measure
-              collection or recognition for the customer. Sync does not measure collection. Sync does not
-              measure collection for the customer. Sync does not collect the named receivable for the
-              customer. Sync does not recognize revenue for the customer. Sync does not close books for the
-              customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync
-              does not settle claims for the customer. Sync does not pay for the customer. Sync does not
-              adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not
-              issue certificates for the customer. Sync must not auto-transfer ownership, auto-declare RTO
-              met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
-              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book,
-              auto-reconcile, auto-close-books, auto-collect, or auto-recognize. Sync must not auto-recognize.
-              Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat collected as
-              recognized as Learning credit. Direct plant execute stays off. CMMS write-back is not a live
-              product path. Billing write-back is not a live product path. Sync must not auto-recognize.
+              Recognized is not reported. Recognized means that named amount is recognized as earned
+              revenue (or the named contract earning event) for that named entity and period under
+              the named acceptance / milestone / performance obligation rule, with a named
+              controller / revenue attestation and unbroken evidence trail — not a bank deposit
+              alone, not cash application alone, not "invoice was issued," not a dashboard ARR tile,
+              and not a CMMS checkbox. Reported means that named recognized amount appears in the
+              named period report pack (management pack / board pack / statutory / lender pack as
+              applicable) for the named entity with the named line, period, and preparer/attester,
+              reconcilable to the recognition evidence — not a slide that restates cash, not a CMMS
+              KPI tile, not a one-off spreadsheet export, not "finance said it’s in the books," and
+              not a status light. Recognized is not reported. A firm can be recognized and still not
+              reported (earning attested while the named pack omits, mislines, or cannot reconcile
+              the amount). A firm can chase reporting theater and still not be recognized (a pack or
+              dashboard shows revenue while the named earning / acceptance rule is not met or
+              attested). A recognition journal alone is not a period report. A report line alone is
+              not proof the named amount is recognized. A CMMS checkbox, ticket state, status light,
+              or one-off clear is neither. Keep them apart: a recognition journal alone is not a
+              period report; a report line alone is not proof the named amount is recognized; a CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. Keep collected
+              (cash cleared and applied) from Collected Is Not Recognized distinct from recognized
+              and from reported. Collected means cash for that named closed receivable / invoice /
+              obligation has actually hit the named bank account (or named cleared settlement rail)
+              in the named amount and currency, with a payment application trail tying the cash to
+              the named closed item — not an AR aging green, not "customer said they paid," not a
+              close attestation alone, not a remittance advice without bank evidence, and not a CMMS
+              checkbox. Collected is not recognized. Collected Is Not Recognized separates cash that
+              has actually hit the named bank account for that named closed item from earned revenue
+              recognized under the named acceptance / milestone / performance obligation rule. This
+              essay separates earned revenue recognized under the named acceptance / milestone /
+              performance obligation rule from that named recognized amount in the named period
+              report pack. This closed is a period/books close. It is not the work-order / incident
+              closed in Closed Is Not Resolved. Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the note.
+              Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is
+              insufficient. Sync refuses to pretend recognition or reporting is a status light. Sync
+              does not measure reporting. Sync does not measure reporting for the customer. Sync
+              does not measure recognition or reporting for the customer. Sync does not measure
+              recognition. Sync does not measure recognition for the customer. Sync does not report
+              revenue for the customer. Sync does not recognize revenue for the customer. Sync does
+              not collect the named receivable for the customer. Sync does not close books for the
+              customer. Sync does not reconcile for the customer. Sync does not book for the
+              customer. Sync does not settle claims for the customer. Sync does not pay for the
+              customer. Sync does not adjudicate claims for the customer. Sync does not issue
+              policies for the customer. Sync does not issue certificates for the customer. Sync
+              must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue
+              policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile,
+              auto-close-books, auto-collect, auto-recognize, or auto-report. Sync must not
+              auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not
+              auto-close-books. Sync must not treat recognized as reported as Learning credit. Sync
+              must not treat collected as recognized as Learning credit. Direct plant execute stays
+              off. CMMS write-back is not a live product path. Billing write-back is not a live
+              product path.
             </p>
 
             <p>
-              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
-              accountability. Accountability is not ownership. Ownership is not control. Control is not
-              closure. Closure is not complete. Complete is not accepted. Accepted is not verified. Verified
-              is not authorized. Authorized is not executed. Executed is not closed. Closed is not resolved.
-              Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained.
-              Sustained is not scaled. Scaled is not compounded. Compounded is not owned. Owned is not
-              governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed is not
-              recoverable. Recoverable is not assured. Assured is not certified. Certified is not insured.
-              Insured is not covered. Covered is not paid. Paid is not settled. Settled is not booked. Booked
-              is not reconciled. Reconciled is not closed. Closed is not collected. Collected is not
-              recognized. Closed, in the prior essay, means the named period’s books for that named entity and
-              account are formally closed: cut-off locked, reconciling items for that named amount cleared or
-              carried with a signed exception, and a named controller / CFO close attestation exists for that
-              period — not a reconciliation worksheet alone, not "we’ll close after the bank rec," not a
-              dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox.
-              Collected, there, means cash for that named closed receivable / invoice / obligation has
-              actually hit the named bank account (or named cleared settlement rail) in the named amount and
-              currency, with a payment application trail tying the cash to the named closed item — not an AR
-              aging green, not "customer said they paid," not a close attestation alone, not a remittance
-              advice without bank evidence, and not a CMMS checkbox. That sentence is the prior refusal. The
-              words collection record in that sentence name cash for that named closed receivable, invoice, or
-              obligation in the named amount and currency, on the named bank account or named cleared
-              settlement rail, with a payment application trail tying the cash to the named closed item. They
-              do not recognize that named amount as earned revenue. They do not name the acceptance,
-              milestone, or performance obligation rule. They do not record a named controller / revenue
-              attestation. They do not show an unbroken evidence trail for the earning event. This essay does
-              not rewrite that sentence. This essay does not collapse into that split. A period close a named
-              controller or CFO can attest versus cash in the named bank account is the prior refusal. This
-              essay separates cash that has actually hit the named bank account for that named closed item
-              from earned revenue recognized under the named acceptance / milestone / performance obligation
-              rule. A bank deposit is not evidence the named amount is recognized. A recognition journal is
-              not evidence the named amount is collected. Closed Is Not Collected keeps a period close a named
-              controller or CFO can attest off cash that has actually hit the named bank account for that
-              named closed item. Reconciled Is Not Closed keeps a signed reconciliation trail that matches the
-              supporting evidence off a period close a named controller or CFO can attest. Booked Is Not
-              Reconciled keeps a ledger entry that recognizes the named amount off a signed reconciliation
-              trail. Settled Is Not Booked keeps a written release that ends the named claim off a ledger
-              entry that recognizes the named amount. Paid Is Not Settled keeps indemnity that has actually
-              moved off a written release that ends the named claim. Covered Is Not Paid keeps a responding
-              grant of coverage for this event off indemnity that has actually moved. Insured Is Not Covered
-              keeps an in-force coverage instrument off a responding grant for this event. Certified Is Not
-              Insured keeps a certification stamp off a named, in-force indemnity instrument. Assured Is Not
-              Certified keeps a dated assurance record off a program stamp. Recoverable Is Not Assured keeps a
-              one-time restore inside a named RTO/RPO off independent, recurring verification that recovery
-              still holds. Rehearsed Is Not Recoverable keeps a rehearsed handoff off a proven restore to a
-              named service level inside a named RTO/RPO. Transferable Is Not Rehearsed keeps a transferable
-              governed owned compounding system off a handoff run under stress. Governed Is Not Transferable
-              keeps a governed owned compounding system off evidence continuity under a new named owner. Owned
-              Is Not Governed keeps a named owner of the compounding system off rules of engagement. Cash Is
-              Not Margin keeps money received off a margin figure. Closure Is Not Cash keeps an administrative
-              completion stamp off money received. Closed Is Not Resolved keeps a closed ticket off a cleared
-              plant exception. That closed ticket is a work-order / incident closed. It is not this
-              period/books close. None of those refusals is this split. This split is collected versus
-              recognized. A bank deposit alone, cash application alone, a sentence that says "invoice was
-              issued," a dashboard ARR tile, or a CMMS checkbox is not this recognition. An AR aging green, a
-              sentence that says "customer said they paid," a close attestation alone, a remittance advice
-              without bank evidence, or a CMMS checkbox is not this collection. This collection is cash for
-              that named closed item in the named amount and currency, on the named bank account or named
-              cleared settlement rail, with a payment application trail. This recognition is that named amount
-              recognized as earned revenue, or the named contract earning event, for that named entity and
-              period under the named acceptance / milestone / performance obligation rule, with a named
-              controller / revenue attestation and an unbroken evidence trail. Recommend Is Not Authorize,
-              Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split.
-              Sync may surface a collection record or a recognition attestation beside Evidence, Verification,
-              and the closed outcome. Surfacing is still a read. The closed outcome in that sentence is the
-              Decision Case outcome record. It is not a period close of the books, and it is not revenue
-              recognition. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
-              refuses to pretend collection or recognition is a status light. Sync must not auto-recognize.
-              Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat collected as
-              recognized as Learning credit. This essay does not rewrite Closed Is Not Collected. This essay
-              does not rewrite Reconciled Is Not Closed. This essay does not rewrite Booked Is Not Reconciled.
-              This essay does not rewrite Settled Is Not Booked. This essay does not rewrite Paid Is Not
-              Settled. This essay does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is
-              Not Covered. This essay does not rewrite Certified Is Not Insured. This essay does not rewrite
-              Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This essay
-              does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not
-              Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not rewrite
-              Owned Is Not Governed. This essay does not rewrite Cash Is Not Margin. This essay does not
-              rewrite Closure Is Not Cash. This essay does not rewrite Closed Is Not Resolved. This essay does
-              not rewrite Margin Is Not Profit. This essay does not rewrite Assured Is Not Proven. This essay
-              does not rewrite Verified Is Not Assured. This essay does not rewrite Green Is Not Go. This
-              essay does not collapse into Closed Is Not Collected. This essay does not collapse into
-              Reconciled Is Not Closed. This essay does not collapse into Booked Is Not Reconciled. This essay
-              does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not
-              Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse
-              into Insured Is Not Covered. This essay does not collapse into Certified Is Not Insured. This
-              essay does not collapse into Assured Is Not Certified. This essay does not collapse into
-              Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not Recoverable. This
-              essay does not collapse into Transferable Is Not Rehearsed. This essay does not collapse into
-              Governed Is Not Transferable. This essay does not collapse into Owned Is Not Governed. This
-              essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is
-              Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse
-              into Margin Is Not Profit. This essay does not collapse into Assured Is Not Proven. This essay
-              does not collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not
-              Go. This essay does not collapse recognition into collection. This essay does not collapse
-              collected into recognized. This essay does not collapse collection into close. This essay does
-              not collapse closed into collected. Sync must not treat collected as recognized as Learning
-              credit. Sync must not treat closed as collected as Learning credit. Direct plant execute stays
-              off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority
+              is not accountability. Accountability is not ownership. Ownership is not control.
+              Control is not closure. Closure is not complete. Complete is not accepted. Accepted is
+              not verified. Verified is not authorized. Authorized is not executed. Executed is not
+              closed. Closed is not resolved. Resolved is not proven. Proven is not trusted. Trusted
+              is not adopted. Adopted is not sustained. Sustained is not scaled. Scaled is not
+              compounded. Compounded is not owned. Owned is not governed. Governed is not
+              transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Recoverable
+              is not assured. Assured is not certified. Certified is not insured. Insured is not
+              covered. Covered is not paid. Paid is not settled. Settled is not booked. Booked is
+              not reconciled. Reconciled is not closed. Closed is not collected. Collected is not
+              recognized. Recognized is not reported. Collected, in the prior essay, means cash for
+              that named closed receivable / invoice / obligation has actually hit the named bank
+              account (or named cleared settlement rail) in the named amount and currency, with a
+              payment application trail tying the cash to the named closed item — not an AR aging
+              green, not "customer said they paid," not a close attestation alone, not a remittance
+              advice without bank evidence, and not a CMMS checkbox. Recognized, there, means that
+              named amount is recognized as earned revenue (or the named contract earning event) for
+              that named entity and period under the named acceptance / milestone / performance
+              obligation rule, with a named controller / revenue attestation and unbroken evidence
+              trail — not a bank deposit alone, not cash application alone, not "invoice was
+              issued," not a dashboard ARR tile, and not a CMMS checkbox. That sentence is the prior
+              refusal. The words recognition record in that sentence name earned revenue, or the
+              named contract earning event, for that named entity and period, under the named
+              acceptance / milestone / performance obligation rule, with a named controller /
+              revenue attestation and an unbroken evidence trail. They do not place that named
+              recognized amount in the named period report pack. They do not name the line, the
+              period, or the preparer/attester. They do not show the amount reconcilable to the
+              recognition evidence. This essay does not rewrite that sentence. This essay does not
+              collapse into that split. Cash cleared and applied versus earned revenue under the
+              named acceptance rule is the prior refusal. This essay separates earned revenue
+              recognized under the named acceptance / milestone / performance obligation rule from
+              that named recognized amount in the named period report pack. A recognition journal is
+              not evidence the named amount is reported. A report line is not evidence the named
+              amount is recognized. Collected Is Not Recognized keeps cash that has actually hit the
+              named bank account for that named closed item off earned revenue recognized under the
+              named acceptance / milestone / performance obligation rule. Closed Is Not Collected
+              keeps a period close a named controller or CFO can attest off cash that has actually
+              hit the named bank account for that named closed item. Reconciled Is Not Closed keeps
+              a signed reconciliation trail that matches the supporting evidence off a period close
+              a named controller or CFO can attest. Booked Is Not Reconciled keeps a ledger entry
+              that recognizes the named amount off a signed reconciliation trail. Settled Is Not
+              Booked keeps a written release that ends the named claim off a ledger entry that
+              recognizes the named amount. Paid Is Not Settled keeps indemnity that has actually
+              moved off a written release that ends the named claim. Covered Is Not Paid keeps a
+              responding grant of coverage for this event off indemnity that has actually moved.
+              Insured Is Not Covered keeps an in-force coverage instrument off a responding grant
+              for this event. Certified Is Not Insured keeps a certification stamp off a named,
+              in-force indemnity instrument. Assured Is Not Certified keeps a dated assurance record
+              off a program stamp. Recoverable Is Not Assured keeps a one-time restore inside a
+              named RTO/RPO off independent, recurring verification that recovery still holds.
+              Rehearsed Is Not Recoverable keeps a rehearsed handoff off a proven restore to a named
+              service level inside a named RTO/RPO. Transferable Is Not Rehearsed keeps a
+              transferable governed owned compounding system off a handoff run under stress.
+              Governed Is Not Transferable keeps a governed owned compounding system off evidence
+              continuity under a new named owner. Owned Is Not Governed keeps a named owner of the
+              compounding system off rules of engagement. Cash Is Not Margin keeps money received
+              off a margin figure. Closure Is Not Cash keeps an administrative completion stamp off
+              money received. Closed Is Not Resolved keeps a closed ticket off a cleared plant
+              exception. That closed ticket is a work-order / incident closed. It is not this
+              period/books close. None of those refusals is this split. This split is recognized
+              versus reported. A recognition journal alone, a slide that restates cash, a CMMS KPI
+              tile, a one-off spreadsheet export, a sentence that says finance said it’s in the
+              books, or a status light is not this report. A bank deposit alone, cash application
+              alone, a sentence that says "invoice was issued," a dashboard ARR tile, or a CMMS
+              checkbox is not this recognition. Collected cash, cleared and applied, is not this
+              recognition and is not this report. This recognition is that named amount recognized
+              as earned revenue, or the named contract earning event, for that named entity and
+              period under the named acceptance / milestone / performance obligation rule, with a
+              named controller / revenue attestation and an unbroken evidence trail. This report is
+              that named recognized amount in the named period report pack (management pack / board
+              pack / statutory / lender pack as applicable) for the named entity with the named
+              line, period, and preparer/attester, reconcilable to the recognition evidence.
+              Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is
+              Not Optional stay beside this split. Sync may surface a recognition attestation or a
+              report record beside Evidence, Verification, and the closed outcome. Surfacing is
+              still a read. The closed outcome in that sentence is the Decision Case outcome record.
+              It is not a period close of the books, and it is not a period report. This essay does
+              not rewrite Collected Is Not Recognized. This essay does not rewrite Closed Is Not
+              Collected. This essay does not rewrite Reconciled Is Not Closed. This essay does not
+              rewrite Booked Is Not Reconciled. This essay does not rewrite Settled Is Not Booked.
+              This essay does not rewrite Paid Is Not Settled. This essay does not rewrite Covered
+              Is Not Paid. This essay does not rewrite Insured Is Not Covered. This essay does not
+              rewrite Certified Is Not Insured. This essay does not rewrite Assured Is Not
+              Certified. This essay does not rewrite Recoverable Is Not Assured. This essay does not
+              rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not
+              Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does
+              not rewrite Owned Is Not Governed. This essay does not rewrite Cash Is Not Margin.
+              This essay does not rewrite Closure Is Not Cash. This essay does not rewrite Closed Is
+              Not Resolved. This essay does not rewrite Margin Is Not Profit. This essay does not
+              rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Green Is Not Go. This essay does not collapse into
+              Collected Is Not Recognized. This essay does not collapse into Closed Is Not
+              Collected. This essay does not collapse into Reconciled Is Not Closed. This essay does
+              not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled
+              Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does
+              not collapse into Covered Is Not Paid. This essay does not collapse into Insured Is
+              Not Covered. This essay does not collapse into Certified Is Not Insured. This essay
+              does not collapse into Assured Is Not Certified. This essay does not collapse into
+              Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This
+              essay does not collapse into Governed Is Not Transferable. This essay does not
+              collapse into Owned Is Not Governed. This essay does not collapse into Cash Is Not
+              Margin. This essay does not collapse into Closure Is Not Cash. This essay does not
+              collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not
+              Profit. This essay does not collapse into Assured Is Not Proven. This essay does not
+              collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not
+              Go. This essay does not collapse reporting into recognition. This essay does not
+              collapse recognized into reported. This essay does not collapse recognition into
+              collection. This essay does not collapse collected into recognized. This essay does
+              not collapse collection into close. This essay does not collapse closed into
+              collected. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Evidence from the plant beats the note. Surfacing is still a
+              read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
+              refuses to pretend recognition or reporting is a status light. Sync does not measure
+              reporting. Sync does not measure reporting for the customer. Sync does not measure
+              recognition or reporting for the customer. Sync does not measure recognition. Sync
+              does not measure recognition for the customer. Sync does not report revenue for the
+              customer. Sync does not recognize revenue for the customer. Sync does not collect the
+              named receivable for the customer. Sync does not close books for the customer. Sync
+              does not reconcile for the customer. Sync does not book for the customer. Sync does
+              not settle claims for the customer. Sync does not pay for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not issue policies for the customer.
+              Sync does not issue certificates for the customer. Sync must not auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff,
+              auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate
+              claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books,
+              auto-collect, auto-recognize, or auto-report. Sync must not auto-report. Sync must not
+              auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must
+              not treat recognized as reported as Learning credit. Sync must not treat collected as
+              recognized as Learning credit. Direct plant execute stays off. CMMS write-back is not
+              a live product path. Billing write-back is not a live product path.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Collected is not recognized. Collected means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item — not an AR aging green, not "customer said they paid," not a close attestation alone, not a remittance advice without bank evidence, and not a CMMS checkbox. Recognized means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone, not cash application alone, not "invoice was issued," not a dashboard ARR tile, and not a CMMS checkbox. A firm can be collected and still not recognized (cash cleared and applied while the named earning / acceptance rule is not met or attested). A firm can chase recognition theater and still not be collected (revenue booked or claimed while named cash has not cleared and applied). A bank deposit alone is not revenue recognition. A recognition journal alone is not proof the named amount is collected. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A firm can be collected and still not recognized, when cash cleared and applied while the named earning / acceptance rule is not met or attested, is the only recognition story on the record. A firm can chase recognition theater and still not be collected, when revenue booked or claimed while named cash has not cleared and applied, is the only collection story on the record. A bank deposit alone is not revenue recognition. A recognition journal alone is not proof the named amount is collected. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a collection record or a recognition attestation beside Evidence, Verification, and the closed outcome. This essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance / milestone / performance obligation rule. This essay does not collapse recognition into collection. This essay does not collapse collected into recognized. This essay does not collapse into Closed Is Not Collected. This essay does not rewrite Closed Is Not Collected. A practice record that says collected is recognized is not shown recognized. Sync refuses to pretend collection or recognition is a status light. Treating collected as recognized records cash that has hit the named bank account as earned revenue, under the honesty and verification boundary. A collection record can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the collection record when the record is being used as recognition. Evidence from the plant beats the recognition attestation when the attestation is being used as proof the named amount is collected. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat collected as recognized as Learning credit. Sync must not treat closed as collected as Learning credit. Sync must not treat reconciled as closed as Learning credit. Sync refuses to pretend collection or recognition is a status light. Sync refuses to pretend close or collection is a status light. Sync does not measure recognition. Sync does not measure recognition for the customer. Sync does not measure collection or recognition for the customer. Sync does not measure collection for the customer. Sync does not measure collection. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. This closed is a period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. The prior collection split still stands: period attestation locked while named AR cash has not cleared is closed and not collected, and payment chase while cut-off / close attestation not locked is collection theater and not closed. Closed Is Not Collected separates a period close a named controller or CFO can attest from cash that has actually hit the named bank account for that named closed item. Closed is not collected. Closed means the named period’s books for that named entity and account are formally closed: cut-off locked, reconciling items for that named amount cleared or carried with a signed exception, and a named controller / CFO close attestation exists for that period — not a reconciliation worksheet alone, not "we’ll close after the bank rec," not a dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox. Collected means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item — not an AR aging green, not "customer said they paid," not a close attestation alone, not a remittance advice without bank evidence, and not a CMMS checkbox. A firm can be closed and still not collected (period attestation locked while named AR cash has not cleared). A firm can chase collection theater and still not be closed (payment chase while cut-off / close attestation not locked). A close attestation alone is not proof the named amount is collected. A bank deposit alone is not a period close. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A firm can be closed and still not collected, when period attestation locked while named AR cash has not cleared, is the only collection story on the record. A firm can chase collection theater and still not be closed, when payment chase while cut-off / close attestation not locked, is the only close story on the record. A close attestation alone is not proof the named amount is collected. A bank deposit alone is not a period close. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a close attestation or a collection record beside Evidence, Verification, and the closed outcome. This essay separates a period close a named controller or CFO can attest from cash that has actually hit the named bank account for that named closed item. This essay does not collapse collection into close. This essay does not collapse closed into collected. This essay does not collapse into Reconciled Is Not Closed. This essay does not rewrite Reconciled Is Not Closed. This essay does not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says closed is collected is not shown collected. Sync refuses to pretend close or collection is a status light. Treating closed as collected records a period close a named controller or CFO can attest as cash in the named bank account, under the honesty and verification boundary. A close attestation can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the close attestation when the attestation is being used as collection. Evidence from the plant beats the collection record when the record is being used as proof the period is closed. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books, or auto-collect. Sync must not treat closed as collected as Learning credit. Sync must not treat reconciled as closed as Learning credit. Sync must not treat booked as reconciled as Learning credit. Sync must not treat settled as booked as Learning credit. Sync must not auto-collect. Sync must not auto-close-books. Sync must not auto-reconcile. Sync must not auto-book. Sync refuses to pretend close or collection is a status light. Sync refuses to pretend reconciliation or close is a status light. Sync does not measure close or collection for the customer. Sync does not measure collection for the customer. Sync does not measure collection. Sync does not measure close for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior close split still stands: trail signs for the named amount; period cut-off / close attestation not locked is reconciled and not closed, and close checklist or slide while bank/subledger/counterparty evidence does not match the named booked amount is close theater and not reconciled. Reconciled Is Not Closed separates a signed reconciliation trail that matches the supporting evidence from a period close a named controller or CFO can attest. Reconciled is not closed. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. Closed means the named period’s books for that named entity and account are formally closed: cut-off locked, reconciling items for that named amount cleared or carried with a signed exception, and a named controller / CFO close attestation exists for that period — not a reconciliation worksheet alone, not "we’ll close after the bank rec," not a dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox. A firm can be reconciled and still not closed, when trail signs for the named amount; period cut-off / close attestation not locked, is the only close story on the record. A firm can chase close theater and still not be reconciled, when close checklist or slide while bank/subledger/counterparty evidence does not match the named booked amount, is the only reconciliation story on the record. A signed reconciliation alone is not a period close. A close attestation alone is not proof the named amount is reconciled. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a reconciliation trail or a close attestation beside Evidence, Verification, and the closed outcome. This essay separates a signed reconciliation trail that matches the supporting evidence from a period close a named controller or CFO can attest. This essay does not collapse close into reconciliation. This essay does not collapse reconciled into closed. This essay does not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says reconciled is closed is not shown close. Sync refuses to pretend reconciliation or close is a status light. Treating reconciled as closed records a signed reconciliation trail that matches the supporting evidence as a period close, under the honesty and verification boundary. A reconciliation trail can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the reconciliation trail when the trail is being used as close. Evidence from the plant beats the close attestation when the attestation is being used as proof the named amount is reconciled. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, or auto-close-books. Sync must not treat reconciled as closed as Learning credit. Sync must not treat booked as reconciled as Learning credit. Sync must not treat settled as booked as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not auto-reconcile. Sync must not auto-close-books. Sync refuses to pretend booking or reconciliation is a status light. Sync refuses to pretend settlement or booking is a status light. Sync does not measure reconciliation or close for the customer. Sync does not measure close for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior reconciliation split still stands: entry posted; bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide is booked and not reconciled, and worksheet or bank match story while no GL/AR recognition exists for that named amount/period is reconciliation theater and not booked. Booked Is Not Reconciled separates a ledger entry that recognizes the named amount from a signed reconciliation trail that matches the supporting evidence. The prior booking split still stands: release signed; no GL/AR recognition for that named amount/period, and accrual or estimate posted while release unsigned, reserve live, or adjudication still open.
+              Recognized is not reported. Recognized means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone, not cash application alone, not "invoice was issued," not a dashboard ARR tile, and not a CMMS checkbox. Reported means that named recognized amount appears in the named period report pack (management pack / board pack / statutory / lender pack as applicable) for the named entity with the named line, period, and preparer/attester, reconcilable to the recognition evidence — not a slide that restates cash, not a CMMS KPI tile, not a one-off spreadsheet export, not "finance said it’s in the books," and not a status light. A firm can be recognized and still not reported (earning attested while the named pack omits, mislines, or cannot reconcile the amount). A firm can chase reporting theater and still not be recognized (a pack or dashboard shows revenue while the named earning / acceptance rule is not met or attested). A recognition journal alone is not a period report. A report line alone is not proof the named amount is recognized. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized and from reported. A firm can be recognized and still not reported, when earning attested while the named pack omits, mislines, or cannot reconcile the amount, is the only reporting story on the record. A firm can chase reporting theater and still not be recognized, when a pack or dashboard shows revenue while the named earning / acceptance rule is not met or attested, is the only recognition story on the record. A recognition journal alone is not a period report. A report line alone is not proof the named amount is recognized. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a recognition attestation or a report record beside Evidence, Verification, and the closed outcome. This essay separates earned revenue recognized under the named acceptance / milestone / performance obligation rule from that named recognized amount in the named period report pack. This essay does not collapse reporting into recognition. This essay does not collapse recognized into reported. This essay does not collapse into Collected Is Not Recognized. This essay does not rewrite Collected Is Not Recognized. A practice record that says recognized is reported is not shown reported. Sync refuses to pretend recognition or reporting is a status light. Treating recognized as reported records earned revenue under the named acceptance rule as a line in the named period report pack, under the honesty and verification boundary. A recognition attestation can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the recognition attestation when the attestation is being used as reporting. Evidence from the plant beats the report record when the record is being used as proof the named amount is recognized. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat recognized as reported as Learning credit. Sync must not treat collected as recognized as Learning credit. Sync refuses to pretend recognition or reporting is a status light. Sync refuses to pretend collection or recognition is a status light. Sync does not measure reporting. Sync does not measure reporting for the customer. Sync does not measure recognition or reporting for the customer. Sync does not measure recognition for the customer. Sync does not measure recognition. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior recognition split still stands: cash cleared and applied while the named earning / acceptance rule is not met or attested is collected and not recognized, and revenue booked or claimed while named cash has not cleared and applied is recognition theater and not collected. Collected Is Not Recognized separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance / milestone / performance obligation rule. False confidence here is a recognition journal treated as the period report, or a report line treated as proof the named amount is recognized. Field proof is the named trail, not the tile. What changes Tuesday is the refusal to let one record wear the other record’s name. Collected is not recognized. Collected means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item — not an AR aging green, not "customer said they paid," not a close attestation alone, not a remittance advice without bank evidence, and not a CMMS checkbox. Recognized means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone, not cash application alone, not "invoice was issued," not a dashboard ARR tile, and not a CMMS checkbox. A firm can be collected and still not recognized (cash cleared and applied while the named earning / acceptance rule is not met or attested). A firm can chase recognition theater and still not be collected (revenue booked or claimed while named cash has not cleared and applied). A bank deposit alone is not revenue recognition. A recognition journal alone is not proof the named amount is collected. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A firm can be collected and still not recognized, when cash cleared and applied while the named earning / acceptance rule is not met or attested, is the only recognition story on the record. A firm can chase recognition theater and still not be collected, when revenue booked or claimed while named cash has not cleared and applied, is the only collection story on the record. A bank deposit alone is not revenue recognition. A recognition journal alone is not proof the named amount is collected. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a collection record or a recognition attestation beside Evidence, Verification, and the closed outcome. This essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance / milestone / performance obligation rule. This essay does not collapse recognition into collection. This essay does not collapse collected into recognized. This essay does not collapse into Closed Is Not Collected. This essay does not rewrite Closed Is Not Collected. A practice record that says collected is recognized is not shown recognized. Sync refuses to pretend collection or recognition is a status light. Treating collected as recognized records cash that has hit the named bank account as earned revenue, under the honesty and verification boundary. A collection record can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the collection record when the record is being used as recognition. Evidence from the plant beats the recognition attestation when the attestation is being used as proof the named amount is collected. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat collected as recognized as Learning credit. Sync must not treat closed as collected as Learning credit. Sync must not treat reconciled as closed as Learning credit. Sync refuses to pretend collection or recognition is a status light. Sync refuses to pretend close or collection is a status light. Sync does not measure recognition. Sync does not measure recognition for the customer. Sync does not measure collection or recognition for the customer. Sync does not measure collection for the customer. Sync does not measure collection. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. This closed is a period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. The prior collection split still stands: period attestation locked while named AR cash has not cleared is closed and not collected, and payment chase while cut-off / close attestation not locked is collection theater and not closed. Closed Is Not Collected separates a period close a named controller or CFO can attest from cash that has actually hit the named bank account for that named closed item. Closed is not collected. Closed means the named period’s books for that named entity and account are formally closed: cut-off locked, reconciling items for that named amount cleared or carried with a signed exception, and a named controller / CFO close attestation exists for that period — not a reconciliation worksheet alone, not "we’ll close after the bank rec," not a dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox. Collected means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item — not an AR aging green, not "customer said they paid," not a close attestation alone, not a remittance advice without bank evidence, and not a CMMS checkbox. A firm can be closed and still not collected (period attestation locked while named AR cash has not cleared). A firm can chase collection theater and still not be closed (payment chase while cut-off / close attestation not locked). A close attestation alone is not proof the named amount is collected. A bank deposit alone is not a period close. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A firm can be closed and still not collected, when period attestation locked while named AR cash has not cleared, is the only collection story on the record. A firm can chase collection theater and still not be closed, when payment chase while cut-off / close attestation not locked, is the only close story on the record. A close attestation alone is not proof the named amount is collected. A bank deposit alone is not a period close. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a close attestation or a collection record beside Evidence, Verification, and the closed outcome. This essay separates a period close a named controller or CFO can attest from cash that has actually hit the named bank account for that named closed item. This essay does not collapse collection into close. This essay does not collapse closed into collected. This essay does not collapse into Reconciled Is Not Closed. This essay does not rewrite Reconciled Is Not Closed. This essay does not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says closed is collected is not shown collected. Sync refuses to pretend close or collection is a status light. Treating closed as collected records a period close a named controller or CFO can attest as cash in the named bank account, under the honesty and verification boundary. A close attestation can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the close attestation when the attestation is being used as collection. Evidence from the plant beats the collection record when the record is being used as proof the period is closed. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books, or auto-collect. Sync must not treat closed as collected as Learning credit. Sync must not treat reconciled as closed as Learning credit. Sync must not treat booked as reconciled as Learning credit. Sync must not treat settled as booked as Learning credit. Sync must not auto-collect. Sync must not auto-close-books. Sync must not auto-reconcile. Sync must not auto-book. Sync refuses to pretend close or collection is a status light. Sync refuses to pretend reconciliation or close is a status light. Sync does not measure close or collection for the customer. Sync does not measure collection for the customer. Sync does not measure collection. Sync does not measure close for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior close split still stands: trail signs for the named amount; period cut-off / close attestation not locked is reconciled and not closed, and close checklist or slide while bank/subledger/counterparty evidence does not match the named booked amount is close theater and not reconciled. Reconciled Is Not Closed separates a signed reconciliation trail that matches the supporting evidence from a period close a named controller or CFO can attest. Reconciled is not closed. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. Closed means the named period’s books for that named entity and account are formally closed: cut-off locked, reconciling items for that named amount cleared or carried with a signed exception, and a named controller / CFO close attestation exists for that period — not a reconciliation worksheet alone, not "we’ll close after the bank rec," not a dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox. A firm can be reconciled and still not closed, when trail signs for the named amount; period cut-off / close attestation not locked, is the only close story on the record. A firm can chase close theater and still not be reconciled, when close checklist or slide while bank/subledger/counterparty evidence does not match the named booked amount, is the only reconciliation story on the record. A signed reconciliation alone is not a period close. A close attestation alone is not proof the named amount is reconciled. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a reconciliation trail or a close attestation beside Evidence, Verification, and the closed outcome. This essay separates a signed reconciliation trail that matches the supporting evidence from a period close a named controller or CFO can attest. This essay does not collapse close into reconciliation. This essay does not collapse reconciled into closed. This essay does not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says reconciled is closed is not shown close. Sync refuses to pretend reconciliation or close is a status light. Treating reconciled as closed records a signed reconciliation trail that matches the supporting evidence as a period close, under the honesty and verification boundary. A reconciliation trail can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the reconciliation trail when the trail is being used as close. Evidence from the plant beats the close attestation when the attestation is being used as proof the named amount is reconciled. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, or auto-close-books. Sync must not treat reconciled as closed as Learning credit. Sync must not treat booked as reconciled as Learning credit. Sync must not treat settled as booked as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not auto-reconcile. Sync must not auto-close-books. Sync refuses to pretend booking or reconciliation is a status light. Sync refuses to pretend settlement or booking is a status light. Sync does not measure reconciliation or close for the customer. Sync does not measure close for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior reconciliation split still stands: entry posted; bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide is booked and not reconciled, and worksheet or bank match story while no GL/AR recognition exists for that named amount/period is reconciliation theater and not booked. Booked Is Not Reconciled separates a ledger entry that recognizes the named amount from a signed reconciliation trail that matches the supporting evidence. The prior booking split still stands: release signed; no GL/AR recognition for that named amount/period, and accrual or estimate posted while release unsigned, reserve live, or adjudication still open.
             </p>
 
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The recognized practice is not the reported practice
+            </h2>
+
+            <p>
+              Recognized means that named amount is recognized as earned revenue (or the named
+              contract earning event) for that named entity and period under the named acceptance /
+              milestone / performance obligation rule, with a named controller / revenue attestation
+              and unbroken evidence trail — not a bank deposit alone, not cash application alone,
+              not "invoice was issued," not a dashboard ARR tile, and not a CMMS checkbox. Reported
+              means that named recognized amount appears in the named period report pack (management
+              pack / board pack / statutory / lender pack as applicable) for the named entity with
+              the named line, period, and preparer/attester, reconcilable to the recognition
+              evidence — not a slide that restates cash, not a CMMS KPI tile, not a one-off
+              spreadsheet export, not "finance said it’s in the books," and not a status light. Sync
+              may surface a recognition attestation or a report record beside Evidence,
+              Verification, and the closed outcome. A practice record that says recognized is
+              reported is not shown reported. Evidence from the plant beats the recognition
+              attestation when the attestation is being used as reporting. Evidence from the plant
+              beats the report record when the record is being used as proof the named amount is
+              recognized. Evidence from the plant beats the note. The recognized practice is not the
+              reported practice.
+            </p>
+
+            <p>
+              One line can hold a recognition. That named amount is recognized as earned revenue, or
+              the named contract earning event has occurred, for that named entity and period. The
+              acceptance rule, the milestone, or the performance obligation is named. A named
+              controller or revenue attestation is on the record. The evidence trail is unbroken.
+              Then the record stops. It does not say that named recognized amount appears in the
+              named period report pack. It does not name the management pack, the board pack, the
+              statutory pack, or the lender pack. It does not name the line. It does not name the
+              preparer or the attester. It does not show the amount reconcilable to the recognition
+              evidence. That is earning attested while the named pack omits, mislines, or cannot
+              reconcile the amount. That record can be recognized. It is not reported. A firm can be
+              recognized and still not reported. A recognition journal alone is not a period report.
+              A sentence that says the invoice was issued is not a period report. A bank deposit
+              alone is not a period report. Cash application alone is not a period report. A
+              dashboard ARR tile is not a period report. A CMMS checkbox is not a period report. A
+              reporting chase can be loud and still not be this recognition. The file shows a pack
+              or a dashboard with revenue while the named earning / acceptance rule is not met or
+              attested. That is reporting theater. It is not recognized. A firm can chase reporting
+              theater and still not be recognized. A slide that restates cash is not reported. A
+              CMMS KPI tile is not reported. A one-off spreadsheet export is not reported. A
+              sentence that says finance said it’s in the books is not reported. A status light is
+              not reported. A recognition journal can name an entity, a period, and an amount and
+              still not appear on the named line of the named pack with a named preparer/attester,
+              and still not be reconcilable to the recognition evidence. A report line can name an
+              amount and still not meet the named acceptance / milestone / performance obligation
+              rule, still not carry a controller / revenue attestation, and still not be an unbroken
+              evidence trail. A recognition journal alone is not a period report. A report line
+              alone is not proof the named amount is recognized. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. A one-off clear is a single quiet interval.
+              It is not earned revenue under the named acceptance rule with a named controller /
+              revenue attestation and an unbroken evidence trail, and it is not that named
+              recognized amount in the named period report pack. The recognized practice is not the
+              reported practice. This essay does not invent a customer, a price, or a return. It
+              states no savings figure, states no price, and states no OEM limit. A practice record
+              that says recognized is reported is not a customer plant release, and it is not shown
+              reported. Treating recognized as reported records earning attested under the named
+              rule as a pack line the named preparer/attester has not reconciled to the recognition
+              evidence, under the honesty and verification boundary. Keep collected (cash cleared
+              and applied) from Collected Is Not Recognized distinct from recognized and from
+              reported. Cash cleared and applied is the collection record from Collected Is Not
+              Recognized. It is not this recognition. It is not this report. A bank deposit can be
+              collected and still not recognized, and a recognized amount can still be omitted from
+              the named pack.
+            </p>
+
+            <p>
+              Recognized, in this essay, is earned revenue or the named contract earning event for
+              that named entity and period, under the named acceptance / milestone / performance
+              obligation rule, with a named controller / revenue attestation and an unbroken
+              evidence trail. Reported, in this essay, is that named recognized amount in the named
+              period report pack for the named entity, with the named line, period, and
+              preparer/attester, reconcilable to the recognition evidence. Collected, in the prior
+              essay, is cash cleared and applied for that named closed receivable, invoice, or
+              obligation. Closed, in Closed Is Not Collected, is a period/books close. Closed means
+              the named period’s books for that named entity and account are formally closed:
+              cut-off locked, reconciling items for that named amount cleared or carried with a
+              signed exception, and a named controller / CFO close attestation exists for that
+              period — not a reconciliation worksheet alone, not "we’ll close after the bank rec,"
+              not a dashboard period-end tile, not an email saying books are closed, and not a CMMS
+              checkbox. Closed, in Closed Is Not Resolved, is a work-order / incident closed: a
+              ticket, work order, or incident marked done. That essay keeps a closed ticket off a
+              cleared plant exception. This essay does not use that closed. A period close
+              attestation is not a cleared plant exception, and it is not a period report. A closed
+              ticket is not proof the named amount is recognized, and it is not a preparer/attester
+              on the named pack. A recognition journal is not a work-order checkbox. A report line
+              is not a bank deposit. This essay does not rewrite Closed Is Not Resolved. This essay
+              does not rewrite Collected Is Not Recognized. This essay does not rewrite Closed Is
+              Not Collected. This essay does not collapse a period/books close into a work-order /
+              incident closed. This essay does not collapse collected cash into a ticket state. This
+              essay does not collapse recognized revenue into a CMMS checkbox. This essay does not
+              collapse a report line into collection. This closed is a period/books close. It is not
+              the work-order / incident closed in Closed Is Not Resolved.
+            </p>
+
+            <p>
+              On Tuesday the question splits. The recognition file answers whether that named amount
+              is recognized as earned revenue, or the named contract earning event, for that named
+              entity and period under the named acceptance / milestone / performance obligation
+              rule, with a named controller / revenue attestation and an unbroken evidence trail.
+              The report file answers whether that named recognized amount appears in the named
+              period report pack for the named entity with the named line, period, and
+              preparer/attester, reconcilable to the recognition evidence. One file does not answer
+              the other. A recognition journal read as if it were the pack does not change the
+              question. A report line read as if it were the earning attestation does not change the
+              question. A slide that restates cash does not change the question. A CMMS KPI tile
+              does not change the question. A one-off spreadsheet export does not change the
+              question. A sentence that says finance said it’s in the books does not change the
+              question. A status light does not change the question. A bank deposit read as if it
+              were either recognition or reporting does not change the question. Cash application
+              read as if it were either recognition or reporting does not change the question. An
+              invoice that was issued does not change the question. A dashboard ARR tile does not
+              change the question. What changes Tuesday is the refusal to let one record wear the
+              other record’s name.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/collected-is-not-recognized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Collected Is Not Recognized
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/collected-is-not-recognized. Collected Is Not Recognized separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance / milestone / performance obligation rule. Collected, there, means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item. Recognized, there, means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail. A bank deposit alone is not revenue recognition. A recognition journal alone is not proof the named amount is collected. That refusal stops at earned revenue under the named acceptance rule. It does not ask whether that named recognized amount appears in the named period report pack for the named entity with the named line, period, and preparer/attester, reconcilable to the recognition evidence. The phrase recognition record, in that essay, is not this report. It is not a slide that restates cash. It is not a CMMS KPI tile. It is not a one-off spreadsheet export. It is not "finance said it’s in the books." It is not a status light. Collected is not recognized is a different refusal. Recognized is not reported is this refusal. This essay does not rewrite Collected Is Not Recognized. This essay does not collapse into Collected Is Not Recognized. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized and from reported.
+            </p>
+
+            <p>
+              False confidence here is a recognition journal treated as the period report, or a
+              report line treated as proof the named amount is recognized. The problem is the
+              collapse. Recognized earning can be attested while the named pack omits, mislines, or
+              cannot reconcile the amount. A pack or a dashboard can show revenue while the named
+              earning / acceptance rule is not met or attested. A firm can be recognized and still
+              not reported (earning attested while the named pack omits, mislines, or cannot
+              reconcile the amount). A firm can chase reporting theater and still not be recognized
+              (a pack or dashboard shows revenue while the named earning / acceptance rule is not
+              met or attested). A recognition journal alone is not a period report. A report line
+              alone is not proof the named amount is recognized. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. This essay separates earned revenue
+              recognized under the named acceptance / milestone / performance obligation rule from
+              that named recognized amount in the named period report pack. This essay does not
+              collapse into Collected Is Not Recognized. This essay does not collapse into Closed Is
+              Not Collected. This essay does not collapse into Reconciled Is Not Closed. This essay
+              does not collapse into Booked Is Not Reconciled. A practice record that says
+              recognized is reported is not shown reported. Sync refuses to pretend recognition or
+              reporting is a status light. Sync does not measure reporting. Sync does not measure
+              reporting for the customer. Sync does not measure recognition or reporting for the
+              customer. Sync does not report revenue for the customer. Sync must not auto-report.
+              Sync must not auto-recognize. Sync must not auto-collect. Sync must not
+              auto-close-books. Sync must not treat recognized as reported as Learning credit.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a report record is allowed to be
+            </h2>
+
+            <p>
+              Evidence may cite a recognition record when the source of that attestation is named,
+              and when the citation names the same entity and the same period, and when the citation
+              says that named amount is recognized as earned revenue, or names the contract earning
+              event, under the named acceptance / milestone / performance obligation rule, with a
+              named controller or revenue attestation and an unbroken evidence trail. The
+              recognition record is about that earning event. It is not, by itself, a period report.
+              It is not a recognition journal read as the pack. It is not "invoice was issued." It
+              is not a bank deposit alone. It is not cash application alone. It is not a dashboard
+              ARR tile. It is not a CMMS checkbox. Evidence may cite a report record when the source
+              of that pack is named, and when the citation names the same entity and the same
+              period, and when the citation says that named recognized amount appears in the named
+              period report pack (management pack / board pack / statutory / lender pack as
+              applicable) with the named line and the named preparer/attester, reconcilable to the
+              recognition evidence. The report record is about that pack line. It is not, by itself,
+              recognition. It is not proof the named amount is recognized if the acceptance rule is
+              unnamed, if no controller / revenue attestation exists, or if the evidence trail is
+              broken. A report line alone is not proof the named amount is recognized. A recognition
+              journal alone is not a period report. If the evidence records earning attested while
+              the named pack omits, mislines, or cannot reconcile the amount, the case may store the
+              note as recognized and must not store the note as reported. If the evidence records a
+              pack or dashboard showing revenue while the named earning / acceptance rule is not met
+              or attested, the case may store the note as reporting theater and must not store the
+              note as recognized. What a report record is allowed to be is that named recognized
+              amount in the named period report pack for the named entity, with the named line,
+              period, and preparer/attester, reconcilable to the recognition evidence. It is not a
+              recognition record used as proof the pack carries the line. It is not permission to
+              execute. Recommend is not authorize. Evidence lineage is not optional. Human decision
+              is not optional. Surfacing is still a read. Sync refuses false precision. Sync must
+              not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must
+              not auto-close-books. Sync does not report revenue for the customer. Sync does not
+              recognize revenue for the customer. Sync does not collect the named receivable for the
+              customer. Sync does not close books for the customer. Sync does not measure reporting
+              for the customer. Sync does not measure recognition for the customer. Sync does not
+              reconcile for the customer. Sync does not book for the customer. Sync does not settle
+              claims for the customer. Sync does not pay for the customer. Sync does not adjudicate
+              claims for the customer. Sync does not issue policies for the customer. Sync does not
+              issue certificates for the customer. Direct plant execute stays off. CMMS write-back
+              is not a live product path. Billing write-back is not a live product path. Keep
+              collected (cash cleared and applied) from Collected Is Not Recognized distinct from
+              recognized and from reported. A collection record is not stored as reported, and a
+              report record is not stored as collected.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named recognition is not reporting
+            </h2>
+
+            <p>
+              Named recognition is not reporting. The recognized practice is not the reported
+              practice. A recognition record answers whether that named amount is recognized as
+              earned revenue for that named entity and period under the named acceptance / milestone
+              / performance obligation rule, with a named controller / revenue attestation and an
+              unbroken evidence trail. It does not, by itself, show that named recognized amount in
+              the named period report pack with the named line, period, and preparer/attester,
+              reconcilable to the recognition evidence. A record of earning attested while the named
+              pack omits, mislines, or cannot reconcile the amount is still recognition. It is not
+              reporting. A firm can be recognized and still not reported. A record of a pack or
+              dashboard that shows revenue while the named earning / acceptance rule is not met or
+              attested is still reporting theater. It is not recognition. A firm can chase reporting
+              theater and still not be recognized. A recognition journal alone is not a period
+              report. A report line alone is not proof the named amount is recognized. Not a slide
+              that restates cash. Not a CMMS KPI tile. Not a one-off spreadsheet export. Not
+              "finance said it’s in the books." Not a status light. Not a bank deposit alone. Not
+              cash application alone. Not "invoice was issued." Not a dashboard ARR tile. Not a CMMS
+              checkbox. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              This closed is a period/books close. It is not the work-order / incident closed in
+              Closed Is Not Resolved. This essay separates earned revenue recognized under the named
+              acceptance / milestone / performance obligation rule from that named recognized amount
+              in the named period report pack. Keep collected (cash cleared and applied) from
+              Collected Is Not Recognized distinct from recognized and from reported. This essay
+              does not rewrite Collected Is Not Recognized. This essay does not rewrite Closed Is
+              Not Collected. This essay does not rewrite Reconciled Is Not Closed. This essay does
+              not rewrite Booked Is Not Reconciled. This essay does not rewrite Settled Is Not
+              Booked. This essay does not rewrite Paid Is Not Settled. This essay does not rewrite
+              Covered Is Not Paid. This essay does not rewrite Insured Is Not Covered. This essay
+              does not rewrite Certified Is Not Insured. This essay does not rewrite Assured Is Not
+              Certified. This essay does not rewrite Recoverable Is Not Assured. This essay does not
+              rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not
+              Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does
+              not rewrite Owned Is Not Governed. This essay does not rewrite Cash Is Not Margin.
+              This essay does not rewrite Closure Is Not Cash. This essay does not rewrite Closed Is
+              Not Resolved. This essay does not rewrite Margin Is Not Profit. This essay does not
+              rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Green Is Not Go. This essay does not collapse into
+              Collected Is Not Recognized. This essay does not collapse into Closed Is Not
+              Collected. This essay does not collapse into Reconciled Is Not Closed. This essay does
+              not collapse into Booked Is Not Reconciled. This essay does not collapse into Settled
+              Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does
+              not collapse into Covered Is Not Paid. This essay does not collapse into Insured Is
+              Not Covered. This essay does not collapse into Certified Is Not Insured. This essay
+              does not collapse into Assured Is Not Certified. This essay does not collapse into
+              Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This
+              essay does not collapse into Governed Is Not Transferable. This essay does not
+              collapse into Owned Is Not Governed. This essay does not collapse into Cash Is Not
+              Margin. This essay does not collapse into Closure Is Not Cash. This essay does not
+              collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not
+              Profit. This essay does not collapse into Assured Is Not Proven. This essay does not
+              collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not
+              Go. This essay does not collapse reporting into recognition. This essay does not
+              collapse recognized into reported. This essay does not collapse recognition into
+              collection. This essay does not collapse collected into recognized. This essay does
+              not collapse collection into close. This essay does not collapse closed into
+              collected. Sync does not measure reporting. Sync does not measure reporting for the
+              customer. Sync does not measure recognition or reporting for the customer. Sync
+              refuses to pretend recognition or reporting is a status light. Sync does not measure
+              recognition. Sync does not measure recognition for the customer. Sync does not report
+              revenue for the customer. Sync does not recognize revenue for the customer. Sync does
+              not collect the named receivable for the customer. Sync must not auto-report. Sync
+              must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books.
+              Sync must not treat recognized as reported as Learning credit. Sync must not treat
+              collected as recognized as Learning credit. Sync must not treat closed as collected as
+              Learning credit. Sync must not auto-reconcile. Sync must not auto-book. Sync must not
+              auto-settle. Sync must not auto-pay. Direct plant execute stays off. CMMS write-back
+              is not a live product path. Billing write-back is not a live product path. Field proof
+              is the named trail, not the tile. A report record without the named line, the named
+              period, the named preparer/attester, and a reconciliation to the recognition evidence
+              is not reported. A recognition record without the named rule, the named attestation,
+              and the unbroken evidence trail is not recognized. What changes Tuesday is the refusal
+              to let one record wear the other record’s name.
+            </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The collected practice is not the recognized practice
@@ -11445,17 +11776,6 @@ export default function CollectedIsNotRecognizedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/recognized-is-not-reported"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Recognized Is Not Reported
-              </Link>
-              , on why recognized is still not reported. Recognized is not reported. Recognized means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone, not cash application alone, not "invoice was issued," not a dashboard ARR tile, and not a CMMS checkbox. Reported means that named recognized amount appears in the named period report pack (management pack / board pack / statutory / lender pack as applicable) for the named entity with the named line, period, and preparer/attester, reconcilable to the recognition evidence — not a slide that restates cash, not a CMMS KPI tile, not a one-off spreadsheet export, not "finance said it’s in the books," and not a status light. A firm can be recognized and still not reported (earning attested while the named pack omits, mislines, or cannot reconcile the amount). A firm can chase reporting theater and still not be recognized (a pack or dashboard shows revenue while the named earning / acceptance rule is not met or attested). A recognition journal alone is not a period report. A report line alone is not proof the named amount is recognized. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized and from reported. Recognized remains earned revenue under the named acceptance / milestone / performance obligation rule with a named controller / revenue attestation and an unbroken evidence trail. Collected Is Not Recognized separates cash that has actually hit the named bank account for that named closed item from that recognition. This essay separates earned revenue recognized under the named acceptance / milestone / performance obligation rule from that named recognized amount in the named period report pack. A recognition journal alone is not a period report. A report line alone is not proof the named amount is recognized. Sync does not measure recognition or reporting for the customer. Sync does not measure reporting. Sync does not measure reporting for the customer. Sync must not auto-report. Sync must not treat recognized as reported as Learning credit. Sync refuses to pretend recognition or reporting is a status light. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -11515,7 +11835,7 @@ export default function CollectedIsNotRecognizedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="collected-is-not-recognized" />
+          <InsightNextSteps slug="recognized-is-not-reported" />
         </motion.article>
       </div>
     </main>
