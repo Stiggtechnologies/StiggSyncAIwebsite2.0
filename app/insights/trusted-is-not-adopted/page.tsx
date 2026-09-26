@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('proven-is-not-trusted');
+const article = getInsightArticle('trusted-is-not-adopted');
 
-export default function ProvenIsNotTrustedPage() {
+export default function TrustedIsNotAdoptedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,89 @@ export default function ProvenIsNotTrustedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Proven Is Not Trusted</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Trusted Is Not Adopted</h1>
+
+            <p className="text-xl text-gray-400">
+              Trusted is not adopted. Trusted is a standing reliance decision by a named accountable
+              owner that a proven claim may be relied on for a named scope and duration without
+              re-proving every instance (who trusts what, for which assets/classes, until when, under
+              what revoke conditions). Adopted is the plant, crew, and operating system actually use
+              that trusted claim as the default way work runs (procedures, training, CMMS job plans,
+              spare strategy, shift handoffs, and named owners who practice it) — reliance has become
+              operating practice, not a signed note. Trusted is not adopted. A firm can trust a claim
+              and still not adopt it. A firm can adopt a practice and still lack a named trust
+              decision. A trust note alone is not adoption. An adoption roll-out note alone is not
+              trust. A trust note is not a green. An adoption roll-out note is not a green. A named
+              trust decision without the plant, crew, and operating system using that claim as the
+              default way work runs is not adopted. A practice in use without a named trust decision
+              (owner, scope, duration, revoke) is not trusted. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Keep them apart: a trust note alone is not
+              adoption; an adoption roll-out note alone is not trust; a CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Proven is not trusted. Proven remains
+              evidence under a named proof window that the failure mode, defect class, or exception
+              class will not recur as claimed (repeat observation, hold period, counter-evidence, or
+              named verification of the fix against plant reality) — the claim that it stays gone is
+              evidenced, not assumed from a single clear. Simulation is not proof. Proof is not
+              authorization. Verified is not assured. Verified is not authorized. Accepted is not
+              verified. Cleared is not complete. Ready is not cleared. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Evidence from the
+              plant beats the note. Sync does not measure trust. Sync does not measure trust for the
+              customer. Sync does not measure adoption. Sync does not measure adoption for the
+              customer. Sync does not measure trust or adoption for the customer. Sync does not prove
+              or grant trust for the customer. Sync does not adopt for the customer. Sync must not
+              auto-trust or auto-adopt. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, auto-trust, or auto-adopt.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Proven, in the prior essay, is evidence under a named proof window that the failure mode
+              will not recur as claimed. Trusted, there, is a standing reliance decision by a named
+              accountable owner that the proven claim may be relied on for a named scope and duration
+              without re-proving every instance. That essay separates a proven non-recurrence claim
+              from a standing reliance decision. This essay does not collapse into that split. Prove
+              versus trust is the prior refusal. This essay separates a standing reliance decision
+              from operating practice. Learning Is Not Judgment keeps an updated decision rule, model,
+              or operating practice the firm adopts because a verified result changed what it will do
+              next off the situated call that commits work now. Judgment Is Not Authority keeps that
+              situated call off the formal right to bind, and it keeps an adopted rule sitting unused
+              off judgment. An unused rule is not this adoption. A situated call is not this adoption.
+              This adoption is the plant, crew, and operating system actually using that trusted claim
+              as the default way work runs. Proof Is Not Authorization keeps a closed evidentiary
+              chain off authorization to execute. Verified Is Not Assured keeps an independent check
+              off standing assurance. Verified Is Not Authorized separates an independent evidence
+              check from permission to act. Simulation Is Not Proof keeps a lab, model, or simulation
+              result off proof the plant will behave that way. Accepted Is Not Verified separates
+              named human acceptance from an independent evidence check. Cleared Is Not Complete keeps
+              a clearance stamp off proof the work is finished. Ready Is Not Cleared keeps a readiness
+              label off that gate. This essay does not collapse into those refusals. Reliance has
+              become operating practice, not a signed note. Recommend Is Not Authorize, Evidence
+              Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync
+              may surface a trust/reliance note or an adoption/operating-practice note beside
+              Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses
+              false precision. Sync refuses when evidence is insufficient. Sync must not auto-trust or
+              auto-adopt. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, or treat trusted as adopted as Learning credit. This essay does not rewrite
+              Proven Is Not Trusted. This essay does not rewrite Learning Is Not Judgment. This essay
+              does not rewrite Judgment Is Not Authority. This essay does not rewrite Proof Is Not
+              Authorization. This essay does not rewrite Verified Is Not Assured. This essay does not
+              rewrite Verified Is Not Authorized. This essay does not rewrite Simulation Is Not Proof.
+              This essay does not rewrite Accepted Is Not Verified. This essay does not rewrite
+              Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared. This essay
+              does not collapse into Proven Is Not Trusted. This essay does not collapse into
+              Learning Is Not Judgment. This essay does not collapse into Judgment Is Not Authority.
+              This essay does not collapse into Proof Is Not Authorization. This essay does not
+              collapse into Verified Is Not Assured. This essay does not collapse into Verified Is
+              Not Authorized. This essay does not collapse into Simulation Is Not Proof. This essay
+              does not collapse into Accepted Is Not Verified. This essay does not collapse into
+              Cleared Is Not Complete. This essay does not collapse into Ready Is Not Cleared. This
+              essay does not collapse trusted into adopted. This essay does not collapse adoption
+              into trust. This essay does not collapse proven into trusted.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Proven is not trusted. Proven is evidence under a named proof window that the
@@ -586,6 +668,482 @@ export default function ProvenIsNotTrustedPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+            <p>
+              Trusted is not adopted.
+              For this refusal, reliance has become operating practice, not a signed note.
+              Adopted is the plant, crew, and operating system actually use that trusted claim as the default way work runs (procedures, training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice it).
+              Trusted is a standing reliance decision by a named accountable owner that a proven claim may be relied on for a named scope and duration without re-proving every instance (who trusts what, for which assets/classes, until when, under what revoke conditions).
+              A firm can trust a claim and still not adopt it.
+              A firm can adopt a practice and still lack a named trust decision.
+              A trust note alone is not adoption.
+              An adoption roll-out note alone is not trust.
+              A trust note is not a green.
+              An adoption roll-out note is not a green.
+              The trusted reliance is not the adopted practice.
+              What an adoption note is allowed to be is the named operating-practice record.
+              Named trust is not adoption.
+              Sync does not measure trust or adoption for the customer.
+              Sync does not measure adoption.
+              Sync does not measure adoption for the customer.
+              Sync must not auto-trust or auto-adopt.
+              Sync may surface a trust/reliance note or an adoption/operating-practice note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse adoption into trust.
+              This essay does not collapse trusted into adopted.
+              This essay does not rewrite Proven Is Not Trusted.
+              This essay does not rewrite Verified Is Not Authorized.
+              A practice record that says trusted is adopted is not shown adoption.
+              Treating trusted as adopted is the refusal.
+              This essay separates a standing reliance decision from operating practice.
+              Read the prior essay at /insights/proven-is-not-trusted.
+              This essay does not collapse into Proven Is Not Trusted.
+              This essay does not collapse into Learning Is Not Judgment.
+              This essay does not collapse into Proof Is Not Authorization.
+              This essay does not collapse into Verified Is Not Assured.
+              This essay does not collapse into Verified Is Not Authorized.
+              Evidence from the plant beats the trust note when the note is being used as adoption.
+              Evidence from the plant beats the adoption note when the note is being used as trust.
+              Sync does not measure trust.
+              Sync does not measure trust for the customer.
+              Evidence from the plant beats the note.
+              Sync must not treat trusted as adopted as Learning credit.
+              Recommend is not authorize.
+              Surfacing is still a read.
+              Sync refuses false precision.
+              Direct plant execute stays off.
+              CMMS write-back is not a live product path.
+              Billing write-back is not a live product path.
+              Evidence lineage is not optional.
+              Human decision is not optional.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Trusted is not adopted. Trusted is a standing reliance decision by a named accountable
+              owner that a proven claim may be relied on for a named scope and duration without
+              re-proving every instance (who trusts what, for which assets/classes, until when, under
+              what revoke conditions). Adopted is the plant, crew, and operating system actually use
+              that trusted claim as the default way work runs (procedures, training, CMMS job plans,
+              spare strategy, shift handoffs, and named owners who practice it) — reliance has become
+              operating practice, not a signed note. A firm can trust a claim and still not adopt it
+              when that named reliance decision is on the record and the plant, crew, and operating
+              system do not use that trusted claim as the default way work runs. A firm can adopt a
+              practice and still lack a named trust decision when procedures, training, CMMS job
+              plans, spare strategy, shift handoffs, and named owners who practice it are on the
+              record and the firm has not named who trusts what, for which assets or classes, until
+              when, and under what revoke conditions. A trust note alone is not adoption. An adoption
+              roll-out note alone is not trust. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. Treating trusted as adopted records a standing reliance
+              decision as operating practice that nobody has put into the way work runs, under the
+              honesty and verification boundary. A trust note can inform a recommendation to
+              investigate. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Evidence from the plant beats the trust note when the note is
+              being used as adoption. Evidence from the plant beats the adoption note when the note
+              is being used as trust. Sync must not auto-trust or auto-adopt. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, or treat trusted as
+              adopted as Learning credit. Sync does not measure trust. Sync does not measure trust
+              for the customer. Sync does not measure adoption. Sync does not measure adoption for
+              the customer. Sync does not measure trust or adoption for the customer. Sync does not
+              adopt for the customer. Direct plant execute stays off. CMMS write-back is not a live
+              product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The trusted reliance is not the adopted practice
+            </h2>
+
+            <p>
+              Trusted is a standing reliance decision by a named accountable owner that a proven
+              claim may be relied on for a named scope and duration without re-proving every instance
+              (who trusts what, for which assets/classes, until when, under what revoke conditions).
+              Adopted is the plant, crew, and operating system actually use that trusted claim as the
+              default way work runs (procedures, training, CMMS job plans, spare strategy, shift
+              handoffs, and named owners who practice it) — reliance has become operating practice,
+              not a signed note. Sync may surface a trust/reliance note or an adoption/operating-practice
+              note beside Evidence, Verification, and the closed outcome. A practice record that says
+              trusted is adopted is not shown adoption. Evidence from the plant beats the trust note
+              when the note is being used as adoption. Evidence from the plant beats the adoption note
+              when the note is being used as trust. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              A named accountable owner can grant reliance on a proven claim for a named scope of
+              assets or classes, for a named duration, under named revoke conditions, while the
+              procedures, the training, the CMMS job plans, the spare strategy, and the shift
+              handoffs still run the prior way. The crew has not taken the trusted claim as the
+              default way work runs. That record is trusted. It is not adopted. A plant, crew, and
+              operating system can already use a practice as the default way work runs — procedures,
+              training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice
+              it — while nobody has granted a standing reliance decision on a proven claim. That
+              practice is not trusted. An adoption roll-out note can name a procedure draft, a
+              training calendar, or a job-plan change and still leave the default way work runs
+              untouched. An adoption roll-out note alone is not trust. A trust note alone is not
+              adoption. A title on the org chart, with or without scope, is not the reliance
+              decision and is not the operating practice. A firm can trust a claim and still not
+              adopt it. A firm can adopt a practice and still lack a named trust decision. A trust
+              note is not a green. An adoption roll-out note is not a green. A CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. A one-off clear is a single quiet
+              interval. It is not a standing reliance decision, and it is not the default way work
+              runs. Named trust is not adoption. The trusted reliance is not the adopted practice.
+              This essay does not invent a customer, a price, or a return. It states no savings
+              figure, states no price, and states no OEM limit. It states no adoption length. A
+              practice record that says trusted is adopted is not a customer plant release, and it
+              is not shown adoption. Treating trusted as adopted records a reliance decision as
+              operating practice the plant has not taken up, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/proven-is-not-trusted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proven Is Not Trusted
+              </Link>{' '}
+              sits one step earlier. Proven, there, is evidence under a named proof window that the
+              failure mode, defect class, or exception class will not recur as claimed (repeat
+              observation, hold period, counter-evidence, or named verification of the fix against
+              plant reality) — the claim that it stays gone is evidenced, not assumed from a single
+              clear. Trusted, there, is a standing reliance decision by a named accountable owner
+              that the proven claim may be relied on for a named scope and duration without
+              re-proving every instance (who trusts what, for which assets/classes, until when, under
+              what revoke conditions) — reliance is granted, not inferred from proof alone. A named
+              proof without a named trust decision (owner, scope, duration, revoke) is not trusted. A
+              status of trust, tribal confidence, or vendor assurance without proof criteria against
+              plant reality is not proven. That refusal stops at the proof window and the reliance
+              decision. It does not ask whether the plant, crew, and operating system actually use
+              that trusted claim as the default way work runs. Proven is not trusted is a different
+              refusal. Trusted is not adopted is the next refusal. Named proof is not trust, and
+              named trust is not adoption. Proven Is Not Trusted separates a proven non-recurrence
+              claim from a standing reliance decision. This essay separates a standing reliance
+              decision from operating practice. This essay does not rewrite Proven Is Not Trusted.
+              This essay does not collapse into Proven Is Not Trusted. This essay does not collapse
+              proven into trusted. This essay does not collapse trusted into adopted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/learning-is-not-judgment"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning Is Not Judgment
+              </Link>{' '}
+              keeps an updated decision rule, model, or operating practice the firm adopts because a
+              verified result changed what it will do next under a named decision window off the
+              situated call that commits plant work, capital, or risk now. That adopted rule can sit
+              unused. Unused is not this essay. Adopted here means the plant, crew, and operating
+              system actually use a trusted claim as the default way work runs. A learning note is
+              not a trust decision, and a learning note is not that operating practice. This essay
+              does not rewrite Learning Is Not Judgment. This essay does not collapse into Learning
+              Is Not Judgment.{' '}
+              <Link
+                href="/insights/judgment-is-not-authority"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Judgment Is Not Authority
+              </Link>{' '}
+              keeps the situated call off the formal right to bind, and it keeps an adopted rule
+              sitting unused off judgment. A situated call is not adoption. An unused rule is not
+              adoption. This essay does not rewrite Judgment Is Not Authority. This essay does not
+              collapse into Judgment Is Not Authority.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed evidentiary chain off authorization to execute. Trusted here is a
+              standing reliance decision, not permission to execute a binding plant, operating, or
+              capital move. Adopted here is operating practice, not that permission. A crew that
+              runs a trusted claim as the default way work runs has not, by that practice, authorized
+              a new binding move. This essay does not rewrite Proof Is Not Authorization. This essay
+              does not collapse into Proof Is Not Authorization. This essay does not collapse
+              adoption into trust.{' '}
+              <Link
+                href="/insights/simulation-is-not-proof"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Simulation Is Not Proof
+              </Link>{' '}
+              keeps a lab, model, or simulation result off proof the plant will behave that way. A
+              simulation is not this trust decision, and a simulation is not adoption. This essay
+              does not rewrite Simulation Is Not Proof. This essay does not collapse into Simulation
+              Is Not Proof.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is assurance. Trust in this essay is not standing confidence, and
+              adoption is not standing confidence. This essay does not rewrite Verified Is Not
+              Assured. This essay does not collapse into Verified Is Not Assured.{' '}
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              separates an independent evidence check from permission to act. An independent check is
+              not a reliance decision, and permission to act is not the default way work runs. This
+              essay does not rewrite Verified Is Not Authorized. This essay does not collapse into
+              Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              separates named human acceptance of an acceptance pack from an independent evidence
+              check. Acceptance is not trust, and acceptance is not adoption. This essay does not
+              rewrite Accepted Is Not Verified. This essay does not collapse into Accepted Is Not
+              Verified.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared, there, is a ready or
+              permission gate past a clearance check. That gate is not this essay. Trusted here is
+              not a clearance stamp. Adopted here is not completeness.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not trust, and
+              not adoption. This essay does not rewrite Cleared Is Not Complete. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not collapse into Cleared Is Not
+              Complete. This essay does not collapse into Ready Is Not Cleared.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not a trust
+              decision, and a recommendation tile is not adoption.{' '}
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>
+              . Evidence lineage is not optional. A note without a named source is not a named
+              reliance decision, and it is not a record that the plant uses the claim as the default
+              way work runs.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, a standing reliance decision with owner,
+              scope, duration, and revoke conditions, and it is not, by itself, operating practice.
+              Human decision is not optional. Recommend is not authorize. This essay does not rewrite
+              Recommend Is Not Authorize. This essay does not rewrite Human Decision Is Not Optional.
+              This essay does not collapse into Recommend Is Not Authorize. This essay does not
+              collapse into Human Decision Is Not Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an adoption note is allowed to be
+            </h2>
+
+            <p>
+              Trusted is a standing reliance decision by a named accountable owner that a proven
+              claim may be relied on for a named scope and duration without re-proving every instance
+              (who trusts what, for which assets/classes, until when, under what revoke conditions).
+              Adopted is the plant, crew, and operating system actually use that trusted claim as the
+              default way work runs (procedures, training, CMMS job plans, spare strategy, shift
+              handoffs, and named owners who practice it) — reliance has become operating practice,
+              not a signed note. A trust note alone is not adoption. An adoption roll-out note alone
+              is not trust. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Sync may surface a trust/reliance note or an adoption/operating-practice note beside
+              Evidence, Verification, and the closed outcome. This essay does not collapse trusted
+              into adopted.
+            </p>
+
+            <p>
+              Evidence may cite a trust/reliance note when the source of that note is named, and when
+              the citation names the accountable owner, the scope of assets or classes, the duration,
+              and the revoke conditions under which a proven claim may be relied on without
+              re-proving every instance. Evidence may cite an adoption/operating-practice note when
+              the source of that note is named, and when the citation names the procedures, the
+              training, the CMMS job plans, the spare strategy, the shift handoffs, and the named
+              owners who practice the trusted claim as the default way work runs. If the evidence
+              records the reliance decision and does not record that operating practice, the case may
+              store the note as trusted and must not store the note as adopted. If the evidence
+              records an adoption roll-out note and does not record a named trust decision (owner,
+              scope, duration, revoke), the case must not store the note as trusted. The label does
+              not fill the gap. The trust note does not paint a green. The adoption note does not
+              paint a green. Evidence lineage is not optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. A one-off clear is a single interval in which the
+              symptom was quiet. None of those, by itself, is a named accountable owner granting
+              reliance for a named scope and duration under named revoke conditions. None of those, by
+              itself, is the plant, crew, and operating system using that trusted claim as the
+              default way work runs. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. An adoption roll-out note alone is not trust. A trust note alone is not
+              adoption. Evidence from the plant beats the trust note when the note is being used as
+              adoption. Evidence from the plant beats the adoption note when the note is being used
+              as trust. Sync may surface a trust/reliance note or an adoption/operating-practice note
+              beside Evidence, Verification, and the closed outcome. Recommend is not authorize.
+              Human decision is not optional. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync must not auto-trust or auto-adopt. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, or treat trusted as
+              adopted as Learning credit. A practice record that says trusted is adopted is not a
+              customer plant release, and it is not shown adoption. Simulated or seeded telemetry and
+              assets are practice records. A live connector tag pull is not a claim of this edition.
+              This essay does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface a trust/reliance note or an
+              adoption/operating-practice note beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Showing the note does not write a CMMS work order. Showing
+              the note does not clear equipment to run. Showing the note does not close the case for
+              the customer. Showing the note does not resolve the case for the customer. Showing the
+              note does not prove the case for the customer. Showing the note does not grant trust
+              for the customer. Showing the note does not adopt the practice for the customer.
+              Showing the note does not book revenue. Showing the note does not recognize revenue.
+              Showing the note does not measure trust. Showing the note does not measure trust for
+              the customer. Showing the note does not measure adoption. Showing the note does not
+              measure adoption for the customer. Showing the note does not measure trust or adoption
+              for the customer. Showing the note does not execute plant work. A named human decides.
+              A named human remains accountable after the plant move. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path. Self-guided onboarding is not claimed as a live product path. Sync does not
+              measure trust or adoption for the customer. Sync must not auto-trust or auto-adopt.
+              Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR.
+              Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not
+              measure cash for the customer. Sync does not measure runway. Sync does not measure
+              runway for the customer. Sync does not measure survival. Sync does not measure survival
+              for the customer. Sync does not measure solvency. Sync does not measure solvency for
+              the customer. Sync does not measure liquidity. Sync does not measure liquidity for the
+              customer. Sync does not measure flexibility. Sync does not measure flexibility for the
+              customer. Sync does not measure optionality. Sync does not measure optionality for the
+              customer. Sync does not measure strategy. Sync does not measure strategy for the
+              customer. Sync does not measure execution. Sync does not measure execution for the
+              customer. Sync does not measure results. Sync does not measure results for the
+              customer. Sync does not measure learning. Sync does not measure learning for the
+              customer. Sync does not measure judgment. Sync does not measure judgment for the
+              customer. Sync does not measure authority. Sync does not measure authority for the
+              customer. Sync does not measure accountability. Sync does not measure accountability
+              for the customer. Sync does not measure ownership. Sync does not measure ownership for
+              the customer. Sync does not measure control. Sync does not measure control for the
+              customer. Sync does not measure closure. Sync does not measure closure for the
+              customer. Sync does not measure completeness. Sync does not measure completeness for
+              the customer. Sync does not measure acceptance. Sync does not measure acceptance for
+              the customer. Sync does not measure verification. Sync does not measure verification
+              for the customer. Sync does not measure authorization. Sync does not measure
+              authorization for the customer. Sync does not measure resolution. Sync does not measure
+              resolution for the customer. Sync does not measure proof. Sync does not measure proof
+              for the customer. Sync does not measure trust. Sync does not measure trust for the
+              customer. Sync does not measure adoption. Sync does not measure adoption for the
+              customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('evidence')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence
+              </Link>{' '}
+              chapter records what the case may cite. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. The{' '}
+              <Link
+                href={fieldManualPath('learning')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning
+              </Link>{' '}
+              chapter keeps the closed case so a later question can see what was believed,
+              authorized, and checked. None of those chapters is, by itself, a standing reliance
+              decision with owner, scope, duration, and revoke conditions, and none of them is, by
+              itself, the plant using a trusted claim as the default way work runs. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating a trust note as adopted. Direct plant execute stays
+              off.
+            </p>
+
+            <p>
+              Trusted is not adopted. A firm can trust a claim and still not adopt it. A firm can
+              adopt a practice and still lack a named trust decision. A trust note alone is not
+              adoption. An adoption roll-out note alone is not trust. An adoption roll-out note is
+              not a green. The trusted reliance is not the adopted practice. What an adoption note is
+              allowed to be is a named record that the plant, crew, and operating system actually use
+              that trusted claim as the default way work runs (procedures, training, CMMS job plans,
+              spare strategy, shift handoffs, and named owners who practice it) — reliance has become
+              operating practice, not a signed note. Named trust is not adoption. Sync does not
+              measure trust or adoption for the customer. Sync may surface a trust/reliance note or
+              an adoption/operating-practice note beside Evidence, Verification, and the closed
+              outcome. This essay does not collapse adoption into trust. This essay does not collapse
+              trusted into adopted. This essay does not rewrite Proven Is Not Trusted. This essay
+              does not rewrite Learning Is Not Judgment. This essay does not rewrite Proof Is Not
+              Authorization. This essay does not rewrite Verified Is Not Assured. This essay does not
+              rewrite Verified Is Not Authorized. This essay does not rewrite Simulation Is Not
+              Proof. This essay does not rewrite Accepted Is Not Verified. This essay does not
+              rewrite Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared. A
+              practice record that says trusted is adopted is not shown adoption. Treating trusted as
+              adopted is the refusal. This essay separates a standing reliance decision from
+              operating practice. This essay does not collapse into Proven Is Not Trusted. This essay
+              does not collapse into Learning Is Not Judgment. This essay does not collapse into
+              Proof Is Not Authorization. This essay does not collapse into Verified Is Not Assured.
+              This essay does not collapse into Verified Is Not Authorized. This essay does not
+              collapse into Accepted Is Not Verified. This essay does not collapse into Simulation Is
+              Not Proof. This essay does not collapse into Cleared Is Not Complete. This essay does
+              not collapse into Ready Is Not Cleared. Evidence from the plant beats the trust note
+              when the note is being used as adoption. Evidence from the plant beats the adoption
+              note when the note is being used as trust. Surfacing is still a read. Sync refuses
+              false precision. Sync must not auto-trust or auto-adopt. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, auto-trust, or treat trusted as adopted as
+              Learning credit. Direct plant execute stays off. CMMS write-back is not a live product
+              path. Billing write-back is not a live product path. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Sync does not measure
+              adoption. Sync does not measure adoption for the customer.
+            </p>
+
             <p>
               Proven is not trusted.
               For this refusal, reliance is granted, not inferred from proof alone.
@@ -4392,35 +4950,6 @@ export default function ProvenIsNotTrustedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/trusted-is-not-adopted"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Trusted Is Not Adopted
-              </Link>
-              , on why trusted is still not adopted. Trusted is a standing reliance decision by a
-              named accountable owner that a proven claim may be relied on for a named scope and
-              duration without re-proving every instance (who trusts what, for which assets/classes,
-              until when, under what revoke conditions). Adopted is the plant, crew, and operating
-              system actually use that trusted claim as the default way work runs (procedures,
-              training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice
-              it) — reliance has become operating practice, not a signed note. A firm can trust a
-              claim and still not adopt it when that named reliance is on the record and the plant,
-              crew, and operating system do not use that trusted claim as the default way work runs.
-              A firm can adopt a practice and still lack a named trust decision when that operating
-              practice is on the record and the firm has not named who trusts what, for which assets
-              or classes, until when, and under what revoke conditions. A trust note alone is not
-              adoption. An adoption roll-out note alone is not trust. A CMMS checkbox, ticket state,
-              status light, or one-off clear is neither. Proven remains evidence the failure mode
-              will not recur under a named proof window. This essay separates a proven
-              non-recurrence claim from a standing reliance decision. A proof note alone proves
-              neither. A trust note alone proves neither. Sync does not measure trust or adoption for
-              the customer. Sync does not measure adoption. Sync does not measure adoption for the
-              customer. Sync must not auto-trust or auto-adopt.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -4480,7 +5009,7 @@ export default function ProvenIsNotTrustedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="proven-is-not-trusted" />
+          <InsightNextSteps slug="trusted-is-not-adopted" />
         </motion.article>
       </div>
     </main>

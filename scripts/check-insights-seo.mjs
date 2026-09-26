@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const adoptedIndex = slugs.indexOf('trusted-is-not-adopted');
 const trustedIndex = slugs.indexOf('proven-is-not-trusted');
 const provenIndex = slugs.indexOf('resolved-is-not-proven');
 const resolvedIndex = slugs.indexOf('closed-is-not-resolved');
@@ -66,7 +67,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    trustedIndex >= 0 &&
+    adoptedIndex >= 0 &&
+    trustedIndex > adoptedIndex &&
     provenIndex > trustedIndex &&
     resolvedIndex > provenIndex &&
     closedIndex > resolvedIndex &&
@@ -113,7 +115,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -10604,6 +10606,115 @@ if (
 ) {
   fail('resolved-is-not-proven must point the series forward to proven-is-not-trusted');
 }
+
+
+const adoptedPageRequired = [
+  ...trustedPageRequired,
+  'Trusted is not adopted',
+  'reliance has become operating practice, not a signed note',
+  'procedures, training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice it',
+  'a proven claim may be relied on for a named scope and duration without re-proving every instance',
+  'A trust note alone is not adoption',
+  'An adoption roll-out note alone is not trust',
+  'A firm can trust a claim and still not adopt it',
+  'A firm can adopt a practice and still lack a named trust decision',
+  'The trusted reliance is not the adopted practice',
+  'What an adoption note is allowed to be',
+  'Named trust is not adoption',
+  'Sync does not measure adoption',
+  'Sync does not measure adoption for the customer',
+  'Sync does not measure trust or adoption for the customer',
+  'Sync must not auto-trust or auto-adopt',
+  'Sync may surface a trust/reliance note or an adoption/operating-practice note',
+  'does not collapse adoption into trust',
+  'does not collapse trusted into adopted',
+  'does not rewrite Proven Is Not Trusted',
+  'does not rewrite Learning Is Not Judgment',
+  'practice record that says trusted is adopted',
+  'trusted as adopted',
+  'separates a standing reliance decision from operating practice',
+  '/insights/proven-is-not-trusted',
+  'does not collapse into Proven Is Not Trusted',
+  'does not collapse into Learning Is Not Judgment',
+  'Evidence from the plant beats the trust note when the note is being used as adoption',
+  'Evidence from the plant beats the adoption note when the note is being used as trust',
+  'treat trusted as adopted as Learning credit',
+];
+const adoptedPage = read('app/insights/trusted-is-not-adopted/page.tsx');
+for (const required of adoptedPageRequired) {
+  if (!adoptedPage.includes(required)) {
+    fail(`trusted-is-not-adopted page must include ${required}`);
+  }
+}
+
+for (const slug of ['proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'action-is-not-execution', 'simulation-is-not-proof', ...[
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]]) {
+  if (!stepBlock(slug).includes('trusted-is-not-adopted')) {
+    fail(`${slug} related reading must cite trusted-is-not-adopted`);
+  }
+}
+
+const adoptedBlock = stepBlock('trusted-is-not-adopted');
+for (const required of ['proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!adoptedBlock.includes(`'${required}'`)) {
+    fail(`trusted-is-not-adopted related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(adoptedBlock)) {
+  fail('trusted-is-not-adopted related reading must include the Strategic Pilot');
+}
+if (adoptedBlock.includes("next: 'strategic-pilot'")) {
+  fail('trusted-is-not-adopted next step is the Field Manual');
+}
+
+if (
+  !trustedPage.includes('The series continues with') ||
+  !trustedPage.includes('/insights/trusted-is-not-adopted')
+) {
+  fail('proven-is-not-trusted must point the series forward to trusted-is-not-adopted');
+}
+
 
 function readingSlugs(name) {
   const block = section(name);
