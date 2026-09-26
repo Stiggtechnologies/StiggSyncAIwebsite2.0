@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const compoundedIndex = slugs.indexOf('scaled-is-not-compounded');
 const scaledIndex = slugs.indexOf('sustained-is-not-scaled');
 const sustainedIndex = slugs.indexOf('adopted-is-not-sustained');
 const adoptedIndex = slugs.indexOf('trusted-is-not-adopted');
@@ -69,7 +70,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    scaledIndex >= 0 &&
+    compoundedIndex >= 0 &&
+    scaledIndex > compoundedIndex &&
     sustainedIndex > scaledIndex &&
     adoptedIndex > sustainedIndex &&
     trustedIndex > adoptedIndex &&
@@ -119,7 +121,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -10963,6 +10965,133 @@ if (
   !sustainedPage.includes('/insights/sustained-is-not-scaled')
 ) {
   fail('adopted-is-not-sustained must point the series forward to sustained-is-not-scaled');
+}
+
+
+const compoundedPageRequired = [
+  ...scaledPageRequired,
+  'Scaled is not compounded',
+  'each new site/crew/class makes the next one cheaper, faster, or more reliable',
+  'named learning, tooling, staffing, and exception paths transfer and accumulate',
+  'unit economics and failure modes improve with volume',
+  'not a linear headcount multiply of the same fragile setup',
+  'A firm can scale a practice across ten sites and still not have compounded it',
+  'A firm can compound learning on one line and still never have scaled it',
+  'A multi-site roll-out alone is not compounding',
+  'A better KPI chart alone is not scale',
+  'The scaled practice is not the compounded practice',
+  'What a compounding note is allowed to be',
+  'Named scale is not compounding',
+  'Sync does not measure compounding',
+  'Sync does not measure compounding for the customer',
+  'Sync does not measure scale or compounding for the customer',
+  'Sync must not auto-scale or auto-compound',
+  'Sync may surface a scale/transfer note or a compounding/accumulation note',
+  'does not collapse compounding into scale',
+  'does not collapse scaled into compounded',
+  'does not rewrite Sustained Is Not Scaled',
+  'does not rewrite Adopted Is Not Sustained',
+  'does not rewrite Trusted Is Not Adopted',
+  'does not rewrite Liquidity Is Not Flexibility',
+  'does not rewrite Cash Is Not Margin',
+  'practice record that says scaled is compounded',
+  'scaled as compounded',
+  'separates a scaled practice from compounding that accumulates across volume',
+  '/insights/sustained-is-not-scaled',
+  'does not collapse into Sustained Is Not Scaled',
+  'does not collapse into Adopted Is Not Sustained',
+  'does not collapse into Trusted Is Not Adopted',
+  'does not collapse into Liquidity Is Not Flexibility',
+  'does not collapse into Cash Is Not Margin',
+  'Evidence from the plant beats the scale note when the note is being used as compounding',
+  'Evidence from the plant beats the compounding note when the note is being used as scale',
+  'treat scaled as compounded as Learning credit',
+  'Sync refuses to pretend scale or compounding is a status light',
+];
+const compoundedPage = read('app/insights/scaled-is-not-compounded/page.tsx');
+for (const required of compoundedPageRequired) {
+  if (!compoundedPage.includes(required)) {
+    fail(`scaled-is-not-compounded page must include ${required}`);
+  }
+}
+
+for (const slug of [
+  'sustained-is-not-scaled',
+  'adopted-is-not-sustained',
+  'trusted-is-not-adopted',
+  'proven-is-not-trusted',
+  'resolved-is-not-proven',
+  'closed-is-not-resolved',
+  'executed-is-not-closed',
+  'authorized-is-not-executed',
+  'verified-is-not-authorized',
+  'action-is-not-execution',
+  'simulation-is-not-proof',
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes('scaled-is-not-compounded')) {
+    fail(`${slug} related reading must cite scaled-is-not-compounded`);
+  }
+}
+
+const compoundedBlock = stepBlock('scaled-is-not-compounded');
+for (const required of ['sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!compoundedBlock.includes(`'${required}'`)) {
+    fail(`scaled-is-not-compounded related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(compoundedBlock)) {
+  fail('scaled-is-not-compounded related reading must include the Strategic Pilot');
+}
+if (compoundedBlock.includes("next: 'strategic-pilot'")) {
+  fail('scaled-is-not-compounded next step is the Field Manual');
+}
+
+if (
+  !scaledPage.includes('The series continues with') ||
+  !scaledPage.includes('/insights/scaled-is-not-compounded')
+) {
+  fail('sustained-is-not-scaled must point the series forward to scaled-is-not-compounded');
 }
 
 function readingSlugs(name) {

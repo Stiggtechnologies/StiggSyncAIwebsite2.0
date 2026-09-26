@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('sustained-is-not-scaled');
+const article = getInsightArticle('scaled-is-not-compounded');
 
-export default function SustainedIsNotScaledPage() {
+export default function ScaledIsNotCompoundedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,262 @@ export default function SustainedIsNotScaledPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Sustained Is Not Scaled</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Scaled Is Not Compounded</h1>
+            <p className="text-xl text-gray-400">
+              Scaled is not compounded. Scaled is a sustained practice deliberately extended across
+              named additional sites, crews, asset classes, or operating contexts with named owners,
+              transfer conditions, and evidence it still holds under the new load — not a single-site
+              sustainment KPI copied into a slide. Compounded is the condition in which each new
+              site/crew/class makes the next one cheaper, faster, or more reliable because named
+              learning, tooling, staffing, and exception paths transfer and accumulate (unit economics
+              and failure modes improve with volume) — not a linear headcount multiply of the same
+              fragile setup. Scaled is not compounded. A firm can scale a practice across ten sites
+              and still not have compounded it. A firm can compound learning on one line and still
+              never have scaled it. A multi-site roll-out alone is not compounding. A better KPI chart
+              alone is not scale. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Keep them apart: a multi-site roll-out alone is not compounding; a better KPI
+              chart alone is not scale; a CMMS checkbox, ticket state, status light, or one-off clear
+              is neither. Sustained is not scaled. Sustained remains an adopted practice that continues
+              to hold under named time, load, turnover, and exception pressure. Recommend is not
+              authorize. Evidence lineage is not optional. Human decision is not optional. Evidence
+              from the plant beats the note. Surfacing is still a read. Sync refuses false precision.
+              Sync refuses to pretend scale or compounding is a status light. Sync does not measure
+              scale. Sync does not measure scale for the customer. Sync does not measure compounding.
+              Sync does not measure compounding for the customer. Sync does not measure scale or
+              compounding for the customer. Sync does not scale for the customer. Sync does not
+              compound for the customer. Sync must not auto-scale or auto-compound. Sync must not
+              auto-sustain or auto-scale. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale, or auto-compound.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Sustained,
+              in the prior essay, is an adopted practice that continues to hold under named time, load,
+              turnover, and exception pressure after the rollout spotlight ends. Scaled, there, is that
+              sustained practice deliberately extended across named additional sites, crews, asset
+              classes, or operating contexts with named owners, transfer conditions, and evidence it
+              still holds under the new load. That essay separates a sustained practice from deliberate
+              extension across named additional contexts. This essay does not collapse into that split.
+              Sustain versus scale is the prior refusal. This essay separates a scaled practice from
+              compounding that accumulates across volume. A transfer that still holds is not
+              accumulation. A slide that copies a better KPI chart is not scale, and a roll-out that
+              repeats the same fragile setup is not compounding.{' '}
+              <Link
+                href="/insights/sustained-is-not-scaled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Sustained Is Not Scaled
+              </Link>{' '}
+              keeps a hold under named pressure off deliberate extension. Read the prior essay at
+              /insights/sustained-is-not-scaled. Liquidity Is Not Flexibility keeps near-term cash
+              timing off the ability to reallocate inside a named decision window. Cash Is Not Margin
+              keeps collected money off contribution margin. None of those refusals is this split. A
+              multi-site roll-out is not this compounding. A better KPI chart is not this scale. This
+              compounding is each new site, crew, or class making the next one cheaper, faster, or
+              more reliable because named learning, tooling, staffing, and exception paths transfer
+              and accumulate. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human
+              Decision Is Not Optional stay beside this split. Sync may surface a scale/transfer note
+              or a compounding/accumulation note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync refuses to pretend scale or compounding is a status
+              light. Sync must not auto-scale or auto-compound. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, or treat scaled as compounded as Learning credit. This essay does not
+              rewrite Sustained Is Not Scaled. This essay does not rewrite Adopted Is Not Sustained.
+              This essay does not rewrite Trusted Is Not Adopted. This essay does not rewrite
+              Liquidity Is Not Flexibility. This essay does not rewrite Cash Is Not Margin. This
+              essay does not collapse into Sustained Is Not Scaled. This essay does not collapse into
+              Adopted Is Not Sustained. This essay does not collapse into Trusted Is Not Adopted.
+              This essay does not collapse into Liquidity Is Not Flexibility. This essay does not
+              collapse into Cash Is Not Margin. This essay does not collapse scaled into compounded.
+              This essay does not collapse compounding into scale. This essay does not collapse
+              sustained into scaled.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Scaled is not compounded. Scaled is a sustained practice deliberately extended across named additional sites, crews, asset classes, or operating contexts with named owners, transfer conditions, and evidence it still holds under the new load — not a single-site sustainment KPI copied into a slide. Compounded is the condition in which each new site/crew/class makes the next one cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transfer and accumulate (unit economics and failure modes improve with volume) — not a linear headcount multiply of the same fragile setup. A firm can scale a practice across ten sites and still not have compounded it, when that extension is on the record for named additional sites, crews, asset classes, or operating contexts and the next site is not cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transferred and accumulated. A firm can compound learning on one line and still never have scaled it, when unit economics and failure modes improve with volume on that one line and the firm has not named additional sites, crews, asset classes, or operating contexts, owners, transfer conditions, and evidence the practice still holds under the new load. A multi-site roll-out alone is not compounding. A better KPI chart alone is not scale. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Treating scaled as compounded records deliberate extension as accumulation that nobody has shown, under the honesty and verification boundary. A scale note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the scale note when the note is being used as compounding. Evidence from the plant beats the compounding note when the note is being used as scale. Sync must not auto-scale or auto-compound. Sync must not treat scaled as compounded as Learning credit. Sync does not measure scale or compounding for the customer. Sync does not measure compounding for the customer. Sync does not compound for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The scaled practice is not the compounded practice
+            </h2>
+
+            <p>
+              Scaled is a sustained practice deliberately extended across named additional sites,
+              crews, asset classes, or operating contexts with named owners, transfer conditions, and
+              evidence it still holds under the new load — not a single-site sustainment KPI copied
+              into a slide. Compounded is the condition in which each new site/crew/class makes the
+              next one cheaper, faster, or more reliable because named learning, tooling, staffing,
+              and exception paths transfer and accumulate (unit economics and failure modes improve
+              with volume) — not a linear headcount multiply of the same fragile setup. Sync may
+              surface a scale/transfer note or a compounding/accumulation note beside Evidence,
+              Verification, and the closed outcome. A practice record that says scaled is compounded
+              is not shown compounding. Evidence from the plant beats the scale note when the note is
+              being used as compounding. Evidence from the plant beats the compounding note when the
+              note is being used as scale. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              Ten sites can each run the same practice under named owners, with transfer conditions
+              met and evidence the practice still holds under the new load. Headcount, spare kits,
+              and exception calls can multiply in a straight line. The tenth site can cost the same,
+              fail the same way, and wait on the same fragile specialist as the second. That record
+              is scaled. It is not compounded. One line can get cheaper, faster, or more reliable as
+              named learning, tooling, staffing, and exception paths accumulate on that line, while
+              nobody has named the next site, the next crew, the next asset class, or the next
+              operating context. That accumulation is not scale. A multi-site roll-out can name dates
+              and still leave the next site as expensive and as fragile as the last. A roll-out alone
+              is not compounding. A better KPI chart can draw a cleaner curve and still leave unnamed
+              who owns the transfer, what must be true before the practice moves, and whether unit
+              economics and failure modes improve with volume. A better KPI chart alone is not scale.
+              A firm can scale a practice across ten sites and still not have compounded it. A firm
+              can compound learning on one line and still never have scaled it. A multi-site roll-out
+              alone is not compounding. A better KPI chart alone is not scale. A CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. A one-off clear is a single quiet
+              interval. It is not a transfer, and it is not accumulation. Named scale is not
+              compounding. The scaled practice is not the compounded practice. This essay does not
+              invent a customer, a price, or a return. It states no savings figure, states no price,
+              and states no OEM limit. A practice record that says scaled is compounded is not a
+              customer plant release, and it is not shown compounding. Treating scaled as compounded
+              records an extension the plant has not made cheaper, faster, or more reliable with
+              volume, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/sustained-is-not-scaled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Sustained Is Not Scaled
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/sustained-is-not-scaled.
+              Sustained, there, is an adopted practice that continues to hold under named time, load,
+              turnover, and exception pressure. Scaled, there, is that sustained practice deliberately
+              extended across named additional contexts with named owners, transfer conditions, and
+              evidence it still holds under the new load. A sustainment KPI alone is not scale. A
+              multi-site roll-out plan alone is not sustainment. That refusal stops at the hold and
+              the transfer. It does not ask whether each new site/crew/class makes the next one
+              cheaper, faster, or more reliable because named learning, tooling, staffing, and
+              exception paths transfer and accumulate. Sustained is not scaled is a different
+              refusal. Scaled is not compounded is the next refusal. Named sustainment is not scale,
+              and named scale is not compounding. Sustained Is Not Scaled separates a sustained
+              practice from deliberate extension across named additional contexts. This essay
+              separates a scaled practice from compounding that accumulates across volume. This essay
+              does not rewrite Sustained Is Not Scaled. This essay does not collapse into Sustained
+              Is Not Scaled. This essay does not collapse sustained into scaled. This essay does not
+              collapse scaled into compounded.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/adopted-is-not-sustained"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Adopted Is Not Sustained
+              </Link>{' '}
+              keeps operating practice off a hold under named pressure. An adoption roll-out note is
+              not accumulation, and a sustainment KPI is not compounding. This essay does not rewrite
+              Adopted Is Not Sustained. This essay does not collapse into Adopted Is Not Sustained.{' '}
+              <Link
+                href="/insights/trusted-is-not-adopted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Trusted Is Not Adopted
+              </Link>{' '}
+              keeps a standing reliance decision off operating practice. Trust is not scale, and
+              adoption is not compounding. This essay does not rewrite Trusted Is Not Adopted. This
+              essay does not collapse into Trusted Is Not Adopted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/liquidity-is-not-flexibility"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Liquidity Is Not Flexibility
+              </Link>{' '}
+              keeps near-term cash timing off the ability to reallocate capital, capacity, staffing,
+              vendor mix, or plant priorities inside a named decision window. Cash that meets the next
+              payroll is not evidence the next site is cheaper, and a reallocation right is not
+              evidence failure modes improve with volume. This essay does not rewrite Liquidity Is Not
+              Flexibility. This essay does not collapse into Liquidity Is Not Flexibility.{' '}
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              keeps money received off contribution margin. Collected cash is not compounding, and a
+              margin figure is not scale. This essay does not rewrite Cash Is Not Margin. This essay
+              does not collapse into Cash Is Not Margin. This essay does not collapse compounding into
+              scale.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a compounding note is allowed to be
+            </h2>
+
+            <p>
+              Scaled is a sustained practice deliberately extended across named additional sites,
+              crews, asset classes, or operating contexts. Compounded is the condition in which each
+              new site/crew/class makes the next one cheaper, faster, or more reliable because named
+              learning, tooling, staffing, and exception paths transfer and accumulate — unit
+              economics and failure modes improve with volume — not a linear headcount multiply of
+              the same fragile setup. A multi-site roll-out alone is not compounding. A better KPI
+              chart alone is not scale. A CMMS checkbox, ticket state, status light, or one-off clear
+              is neither. Sync may surface a scale/transfer note or a compounding/accumulation note
+              beside Evidence, Verification, and the closed outcome. This essay does not collapse
+              scaled into compounded.
+            </p>
+
+            <p>
+              Evidence may cite a scale/transfer note when the source of that note is named, and when
+              the citation names the additional sites, crews, asset classes, or operating contexts,
+              the owners of the transfer, the conditions that must hold before the practice moves,
+              and the evidence the practice still holds under the new load. Evidence may cite a
+              compounding/accumulation note when the source of that note is named, and when the
+              citation names which learning, tooling, staffing, and exception paths transferred, and
+              how unit economics and failure modes improve with volume so the next site, crew, or
+              class is cheaper, faster, or more reliable. If the evidence records the extension and
+              does not record that accumulation, the case may store the note as scaled and must not
+              store the note as compounded. If the evidence records accumulation on one line and does
+              not record the named extension, the case must not store the note as scaled and must not
+              store the note as compounded. What a compounding note is allowed to be is that named
+              accumulation record. It is not a linear headcount multiply of the same fragile setup.
+              It is not permission to execute. Recommend is not authorize. Surfacing is still a read.
+              Sync refuses false precision. Sync must not auto-scale or auto-compound.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named scale is not compounding
+            </h2>
+
+            <p>
+              Named scale is not compounding. The scaled practice is not the compounded practice. A
+              named extension across additional sites, crews, asset classes, or operating contexts
+              answers who owns the transfer and whether the practice still holds under the new load.
+              It does not, by itself, show that each new site/crew/class makes the next one cheaper,
+              faster, or more reliable. It does not, by itself, name the learning, tooling, staffing,
+              and exception paths that transfer and accumulate. It does not, by itself, show that
+              unit economics and failure modes improve with volume. A firm can scale a practice
+              across ten sites and still not have compounded it. A firm can compound learning on one
+              line and still never have scaled it. A multi-site roll-out alone is not compounding. A
+              better KPI chart alone is not scale. Not a linear headcount multiply of the same
+              fragile setup. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. This essay does not rewrite Sustained Is Not Scaled. This essay does not
+              rewrite Adopted Is Not Sustained. This essay does not rewrite Trusted Is Not Adopted.
+              This essay does not rewrite Liquidity Is Not Flexibility. This essay does not rewrite
+              Cash Is Not Margin. This essay does not collapse into Sustained Is Not Scaled. This
+              essay does not collapse into Adopted Is Not Sustained. This essay does not collapse
+              into Trusted Is Not Adopted. This essay does not collapse into Liquidity Is Not
+              Flexibility. This essay does not collapse into Cash Is Not Margin. Sync does not
+              measure scale or compounding for the customer. Sync must not auto-scale or
+              auto-compound. Sync refuses to pretend scale or compounding is a status light.
+            </p>
+
             <p className="text-xl text-gray-400">
               Sustained is not scaled. Sustained is an adopted practice that continues to hold under
               named time, load, turnover, and exception pressure (who keeps it alive, for which
@@ -5746,17 +6001,6 @@ export default function SustainedIsNotScaledPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/scaled-is-not-compounded"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Scaled Is Not Compounded
-              </Link>
-              , on why scaled is still not compounded. Scaled is a sustained practice deliberately extended across named additional sites, crews, asset classes, or operating contexts with named owners, transfer conditions, and evidence it still holds under the new load — not a single-site sustainment KPI copied into a slide. Compounded is the condition in which each new site/crew/class makes the next one cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transfer and accumulate (unit economics and failure modes improve with volume) — not a linear headcount multiply of the same fragile setup. A firm can scale a practice across ten sites and still not have compounded it when that extension is on the record and the next site is not cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transferred. A firm can compound learning on one line and still never have scaled it when that accumulation is on the record and the firm has not named additional sites, crews, asset classes, or operating contexts, owners, and transfer conditions. A multi-site roll-out alone is not compounding. A better KPI chart alone is not scale. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sustained remains a hold under named pressure. This essay separates a sustained practice from deliberate extension across named additional contexts. A sustainment KPI alone is not scale. A multi-site roll-out plan alone is not sustainment. Sync does not measure scale or compounding for the customer. Sync does not measure compounding. Sync does not measure compounding for the customer. Sync must not auto-scale or auto-compound. Sync refuses to pretend scale or compounding is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -5816,7 +6060,7 @@ export default function SustainedIsNotScaledPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="sustained-is-not-scaled" />
+          <InsightNextSteps slug="scaled-is-not-compounded" />
         </motion.article>
       </div>
     </main>
