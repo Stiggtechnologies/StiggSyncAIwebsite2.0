@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const collectibleAppliedIndex = slugs.indexOf('collectible-is-not-applied');
 const guaranteedCollectibleIndex = slugs.indexOf('guaranteed-is-not-collectible');
 const assuredGuaranteedIndex = slugs.indexOf('assured-is-not-guaranteed');
 const sustainedAssuredIndex = slugs.indexOf('sustained-is-not-assured');
@@ -105,7 +106,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    guaranteedCollectibleIndex >= 0 &&
+    collectibleAppliedIndex >= 0 &&
+    guaranteedCollectibleIndex > collectibleAppliedIndex &&
     assuredGuaranteedIndex > guaranteedCollectibleIndex &&
     sustainedAssuredIndex > assuredGuaranteedIndex &&
     operatedSustainedIndex > sustainedAssuredIndex &&
@@ -191,7 +193,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -14714,6 +14716,101 @@ if (
   !assuredGuaranteedPage.includes('/insights/guaranteed-is-not-collectible')
 ) {
   fail('assured-is-not-guaranteed must point the series forward to guaranteed-is-not-collectible');
+}
+
+const collectibleAppliedPageRequired = [
+  ...guaranteedCollectiblePageRequired,
+  'Collectible Is Not Applied',
+  'Collectible is not applied',
+  'instrument-required application of that collectible recovery to the named loss / repair / make-whole / operating restoration purpose the guarantee, warranty, indemnity, or SLA remedy was written to cover',
+  'application package with named amount applied, named beneficiary purpose/loss/work order/repair order, dates, and trail from the collected funds or credit to that application',
+  'funds applied to the named repair purchase order, credit applied against the named beneficiary loss ledger, SLA credit applied to the named invoice/period, surety draw disbursed to the named restoration contractor',
+  'unbroken trail from the collectibility evidence to that application evidence',
+  'not funds received alone, not a credit posted alone, not a settled draw alone',
+  'not "we collected on the bond,"',
+  'not a bank credit with no named loss application',
+  'not a dashboard "paid" tile',
+  'not treating collectibility theater as automatic application to the named loss',
+  'A firm can have instrument-required collectible recovery on the guarantee claim and still lack instrument-required application of those recovered funds or credits to the named loss, repair, or make-whole purpose for the named window',
+  'A firm can be collectible and still not applied',
+  'collectibility evidence exists while required application evidence for the named application window is missing',
+  'A firm can claim application theater and still not be collectible',
+  'Collectibility evidence alone is not application of that recovery',
+  'An application claim alone is not proof the named collectibility evidence was on the file',
+  'The collectible practice is not the applied practice',
+  'What an application record is allowed to be',
+  'Named collectible is not applied',
+  'Sync does not measure applied',
+  'Sync does not measure applied for the customer',
+  'Sync does not measure collectible or applied for the customer',
+  'Sync may surface a collectibility record or an application record',
+  'does not collapse applied into collectible',
+  'does not collapse collectible into applied',
+  'does not collapse this applied into coverage payment',
+  'does not collapse this applied into accounts-receivable collection',
+  'does not collapse this applied into settlement finality',
+  'does not collapse this applied into booking',
+  'does not collapse this applied into recovery capability',
+  'does not collapse into Covered Is Not Paid',
+  'does not rewrite Covered Is Not Paid',
+  'does not collapse into Closed Is Not Collected',
+  'does not rewrite Closed Is Not Collected',
+  'does not collapse into Collected Is Not Recognized',
+  'does not rewrite Collected Is Not Recognized',
+  'does not collapse into Paid Is Not Settled',
+  'does not rewrite Paid Is Not Settled',
+  'does not collapse into Settled Is Not Booked',
+  'does not rewrite Settled Is Not Booked',
+  'does not collapse into Recoverable Is Not Assured',
+  'does not rewrite Recoverable Is Not Assured',
+  'does not collapse into Guaranteed Is Not Collectible',
+  'does not rewrite Guaranteed Is Not Collectible',
+  'instrument-required application of that collectible recovery to the named loss, repair, make-whole, or operating restoration purpose for the named window, trailed from the collectibility evidence',
+  'practice record that says collectible is applied',
+  'collectible as applied',
+  'separates instrument-required collectible recovery from',
+  '/insights/guaranteed-is-not-collectible',
+  'Evidence from the plant beats the collectibility record when the record is being used as applied',
+  'Evidence from the plant beats the application claim when the claim is being used as proof the named collectible recovery was on the file',
+  'treat collectible as applied as Learning credit',
+  'Sync refuses to pretend collectible or applied is a status light',
+  'Sync does not deem applied for the customer',
+  'Sync must not auto-deem-applied',
+  'Funds received alone is neither',
+  'application theater',
+  'named application window',
+  'This split is collectible versus applied',
+  'Funds received / credit posted / settled draw alone is not that application',
+];
+
+const collectibleAppliedPage = read('app/insights/collectible-is-not-applied/page.tsx');
+for (const required of collectibleAppliedPageRequired) {
+  if (!collectibleAppliedPage.includes(required)) {
+    fail(`collectible-is-not-applied page must include ${required}`);
+  }
+}
+
+const collectibleAppliedBlock = stepBlock('collectible-is-not-applied');
+for (const required of ['guaranteed-is-not-collectible', 'assured-is-not-guaranteed', 'sustained-is-not-assured', 'operated-is-not-sustained', 'delivered-is-not-operated', 'closed-is-not-delivered', 'cleared-is-not-closed', 'recorded-is-not-cleared', 'released-is-not-recorded', 'remediated-is-not-released', 'enforced-is-not-remediated', 'binding-is-not-enforced', 'effective-is-not-binding', 'posted-is-not-effective', 'accepted-is-not-posted', 'filed-is-not-accepted', 'audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!collectibleAppliedBlock.includes(`'${required}'`)) {
+    fail(`collectible-is-not-applied related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(collectibleAppliedBlock)) {
+  fail('collectible-is-not-applied related reading must include the Strategic Pilot');
+}
+if (collectibleAppliedBlock.includes("next: 'strategic-pilot'")) {
+  fail('collectible-is-not-applied next step is the Field Manual');
+}
+if (!stepBlock('guaranteed-is-not-collectible').includes("'collectible-is-not-applied'")) {
+  fail('guaranteed-is-not-collectible related reading must point forward to collectible-is-not-applied');
+}
+
+if (
+  !guaranteedCollectiblePage.includes('The series continues with') ||
+  !guaranteedCollectiblePage.includes('/insights/collectible-is-not-applied')
+) {
+  fail('guaranteed-is-not-collectible must point the series forward to collectible-is-not-applied');
 }
 
 
