@@ -713,6 +713,22 @@ export default function SuccessorRecordedIsNotClearedPage() {
             measured result. The register entry does not record clearance.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-cleared-is-not-closed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Cleared Is Not Closed
+            </Link>{' '}
+            on why cleared is still not closed. That next refusal is instrument-required clearance
+            that removes or retires a recorded release / recorded successor obligation from the
+            active hold register only when the named clearance criteria are met for that remaining
+            window versus instrument-required close-out that ends the cleared successor-obligation
+            matter for that named channel / remaining window after clearance. It is not the
+            filing-spine essay at /insights/cleared-is-not-closed.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
