@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('paid-is-not-settled');
+const article = getInsightArticle('settled-is-not-booked');
 
-export default function PaidIsNotSettledPage() {
+export default function SettledIsNotBookedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,474 @@ export default function PaidIsNotSettledPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Paid Is Not Settled</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Settled Is Not Booked</h1>
+
+            <p className="text-xl text-gray-400">
+              Settled is not booked. Settled means the named claim/event is finally closed with a written
+              release (or equivalent finality instrument) that ends open reserve, binds the named parties
+              on that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero
+              without release, and not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Settled is not booked. A firm can be settled and still
+              not booked (release signed; no GL/AR recognition for that named amount/period). A firm can chase booking theater and still not be settled (accrual or estimate posted while release unsigned, reserve live, or adjudication still open). A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. Keep them apart: a settlement instrument alone is not a booked financial recognition; a ledger line alone is not proof the named claim is settled; a CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Paid is not settled. Paid remains indemnity that has
+              actually moved, or a binding written settlement with payment date and amount that is
+              executed and trackable, for that named covered event under today’s owner and window.
+              Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing
+              is still a read. Sync refuses false precision. Sync refuses to pretend settlement or booking is a status light. Sync does not measure settlement. Sync does not measure settlement for the
+              customer. Sync does not measure booking. Sync does not measure booking for the customer. Sync does not measure settlement or booking for the customer. Sync does not issue
+              certificates for the customer. Sync does not issue policies for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not pay for the customer. Sync does not settle
+              claims for the customer. Sync does not book for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync
+              must not auto-transfer ownership. Sync must not auto-declare RTO met. Sync must not
+              auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync
+              must not auto-issue certificates. Sync must not auto-issue policies. Sync must not
+              auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              auto-settle, or auto-book.
+            </p>
+
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not
+              closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted
+              is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not
+              owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed.
+              Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified.
+              Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled.
+              Settled is not booked.
+              Paid, in the prior essay, means indemnity / loss payment / agreed settlement funds have
+              actually moved (or a binding written settlement with payment date and amount is executed and
+              trackable) for that named covered event under today’s owner and window — not a coverage
+              opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a
+              ticket marked covered. Settled, there, means the named claim/event is finally closed with a
+              written release (or equivalent finality instrument) that ends open reserve, binds the named
+              parties on that loss window, and leaves no open adjudication path for that same named event
+              under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to
+              zero without release, and not a CMMS checkbox. That sentence is the prior refusal. The words
+              written release in that sentence name a finality instrument that ends open reserve, binds
+              the named parties on that loss window, and leaves no open adjudication path for that same
+              named event under today’s owner. They do not name the indemnity / recovery / settlement amount recognized on the named entity’s financials for a named period and account. They do not point a controller at a GL / AR / cash ledger entry with amount, date, and counterparty trackable. They do not post the entry. This essay does not rewrite that sentence. This essay does
+              not collapse into that split. Payment versus settlement finality is the prior refusal. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. A
+              settlement instrument is not evidence the named amount is booked. A ledger line is not evidence the named claim is settled.
+              <Link
+                href="/insights/paid-is-not-settled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Paid Is Not Settled
+              </Link>
+              {" "}
+              keeps indemnity that has actually moved off a written release that ends the named claim.
+              Read the prior essay at /insights/paid-is-not-settled. Covered Is Not Paid keeps a
+              responding grant of coverage for this event off indemnity that has actually moved. Insured
+              Is Not Covered keeps an in-force coverage instrument off a responding grant for this event.
+              Certified Is Not Insured keeps a certification stamp off a named, in-force indemnity
+              instrument. Assured Is Not Certified keeps a dated assurance record off a program stamp.
+              Recoverable Is Not Assured keeps a one-time restore inside a named RTO/RPO off independent,
+              recurring verification that recovery still holds. Rehearsed Is Not Recoverable keeps a
+              rehearsed handoff off a proven restore to a named service level inside a named RTO/RPO.
+              Transferable Is Not Rehearsed keeps a transferable governed owned compounding system off a
+              handoff run under stress. Governed Is Not Transferable keeps a governed owned compounding
+              system off evidence continuity under a new named owner. Owned Is Not Governed keeps a named
+              owner of the compounding system off rules of engagement. Cash Is Not Margin keeps money
+              received off a margin figure. Closure Is Not Cash keeps an administrative completion stamp
+              off money received. Closed Is Not Resolved keeps a closed ticket off a cleared plant
+              exception. Margin Is Not Profit keeps a margin figure off profit. Assured Is Not Proven
+              keeps time-bounded confidence that an asset stays known-good under operating conditions off
+              a closed evidentiary chain for a specific claim. Verified Is Not Assured keeps an
+              independent check off standing assurance. Green Is Not Go keeps a status light off
+              permission to run. None of those refusals is this split. A signed release is not this
+              booking. A release PDF in a folder, a bank credit alone without a GL post, a dashboard tile,
+              or "we’ll book it at month-end" without a posted entry is not this settlement. This
+              settlement is the named claim finally closed with a written release, or an equivalent
+              finality instrument, that ends open reserve, binds the named parties on that loss window,
+              and leaves no open adjudication path for that same named event under today’s owner. This
+              booking is the indemnity / recovery / settlement amount recognized on the named entity’s
+              financials for a named period and account, a GL / AR / cash ledger entry that a controller
+              can point to, with amount, date, and counterparty trackable. Recommend Is Not Authorize,
+              Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split.
+              Sync may surface a settlement status or a ledger entry beside Evidence, Verification, and the closed outcome. Surfacing is
+              still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
+              refuses to pretend settlement or booking is a status light. Sync must not auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              auto-settle, or auto-book. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners,
+              auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or treat settled as booked as Learning credit. This essay does not rewrite Paid Is Not Settled. This essay
+              does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is Not
+              Covered. This essay does not rewrite Certified Is Not Insured. This essay does not rewrite
+              Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This
+              essay does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite
+              Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not Transferable.
+              This essay does not rewrite Owned Is Not Governed. This essay does not rewrite Cash Is Not
+              Margin. This essay does not rewrite Closure Is Not Cash. This essay does not rewrite Closed
+              Is Not Resolved. This essay does not rewrite Margin Is Not Profit. This essay does not
+              rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This
+              essay does not rewrite Green Is Not Go. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay
+              does not collapse into Insured Is Not Covered. This essay does not collapse into Certified
+              Is Not Insured. This essay does not collapse into Assured Is Not Certified. This essay does
+              not collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed
+              Is Not Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This
+              essay does not collapse into Governed Is Not Transferable. This essay does not collapse
+              into Owned Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse settled into booked. This essay does not collapse booking into settlement. This essay does not collapse paid into settled.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Settled is not booked. Settled means the named claim/event is finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero without release, and not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. A firm can be settled and still not booked, when release signed; no GL/AR recognition for that named amount/period, is the only booking story on the record. A firm can chase booking theater and still not be settled, when accrual or estimate posted while release unsigned, reserve live, or adjudication still open, is the only settlement story on the record. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a settlement status or a ledger entry beside Evidence, Verification, and the closed outcome. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. This essay does not collapse booking into settlement. This essay does not collapse settled into booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says settled is booked is not shown booking. Sync refuses to pretend settlement or booking is a status light. Treating settled as booked records a written release that ends the named claim as a ledger entry that recognizes the named amount, under the honesty and verification boundary. A settlement status can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the settlement status when the status is being used as booking. Evidence from the plant beats the ledger entry when the entry is being used as proof the named claim is settled. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync must not treat settled as booked as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync does not measure settlement or booking for the customer. Sync does not measure booking for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The settled practice is not the booked practice
+            </h2>
+
+            <p>
+              Settled means the named claim/event is finally closed with a written release (or equivalent
+              finality instrument) that ends open reserve, binds the named parties on that loss window,
+              and leaves no open adjudication path for that same named event under today’s owner — not "a
+              check cleared," not a partial payment, not a reserve reduced to zero without release, and
+              not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Sync may surface a settlement status or a ledger entry beside
+              Evidence, Verification, and the closed outcome. A practice record that says settled is booked
+              is not shown booking. Evidence from the plant beats the settlement status when the status is being used as booking. Evidence from the plant beats the ledger entry when the entry is being used as proof the named claim is settled. Evidence from the plant beats the note. The settled practice is not the booked practice.
+            </p>
+
+            <p>
+              One line can hold a settlement. The named claim is finally closed with a written release, or
+              an equivalent finality instrument, that ends open reserve, binds the named parties on that
+              loss window, and leaves no open adjudication path for that same named event under today’s
+              owner. The claim is named. Today’s owner is named. The loss window is named. Then the record
+              stops. It does not say the indemnity, recovery, or settlement amount is recognized on the
+              named entity’s financials. It does not say the period is named. It does not say the account
+              is named. It does not say a controller can point to a GL, AR, or cash ledger entry with
+              amount, date, and counterparty trackable. Release signed; no GL/AR recognition for that named amount/period. That record can be settled. It is not booked. A firm can be settled and still not
+              booked. A release PDF in a folder is not booking. A bank credit alone without a GL post is
+              not booking. A dashboard tile is not booking. "We’ll book it at month-end" without a posted
+              entry is not booking. A ledger line can be posted and still not be this settlement. The file
+              shows an accrual or estimate posted while the release is unsigned, the reserve is live, or
+              adjudication is still open. That record can look like booking theater. It is not settled. A firm can chase booking theater and still not be settled. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A sentence that
+              says the amount will be booked at month-end is not a posted entry, and it is not a release
+              that ends open reserve. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              A one-off clear is a single quiet interval. It is not a written release for this named event,
+              and it is not a ledger entry a controller can point to. The settled practice is not the booked practice. This
+              essay does not invent a customer, a price, or a return. It states no savings figure, states
+              no price, and states no OEM limit. A practice record that says settled is booked is not a
+              customer plant release, and it is not shown booking. Treating settled as booked records
+              a finality instrument the plant has not placed on a named account for a named period, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/paid-is-not-settled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Paid Is Not Settled
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/paid-is-not-settled. Paid,
+              there, means indemnity / loss payment / agreed settlement funds have actually moved (or a
+              binding written settlement with payment date and amount is executed and trackable) for that
+              named covered event under today’s owner and window — not a coverage opinion, not an FNOL
+              acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked
+              covered. Settled, there, means the named claim/event is finally closed with a written
+              release (or equivalent finality instrument) that ends open reserve, binds the named parties
+              on that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero
+              without release, and not a CMMS checkbox. A payment alone is not settlement finality. A
+              settlement instrument alone is not proof funds moved. That refusal stops at a written
+              release that ends the named claim. It does not ask whether the indemnity / recovery /
+              settlement amount is recognized on the named entity’s financials for a named period and
+              account, a GL / AR / cash ledger entry that a controller can point to, with amount, date,
+              and counterparty trackable. The phrase written release, in that essay, is not this booking.
+              It is not a GL post. It is not an AR recognition. It is not a cash-ledger entry for that
+              named amount and period. Paid is not settled is a different refusal. Settled is not booked
+              is the next refusal. Named settlement is not booking, and a ledger line is not proof the
+              named claim is settled. Paid Is Not Settled separates indemnity that has actually moved from a written release that ends the named claim. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. This
+              essay does not rewrite Paid Is Not Settled. This essay does not collapse into Paid Is Not Settled. This essay does not collapse paid into
+              settled. This essay does not collapse settled into booked.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/covered-is-not-paid"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Covered Is Not Paid
+              </Link>
+              {" "}
+              keeps a responding grant of coverage for this event off indemnity that has actually moved.
+              A coverage grant is not a GL post, and a payment record is not a booked recognition for a
+              named period and account. This essay does not rewrite Covered Is Not Paid. This essay does
+              not collapse into Covered Is Not Paid.
+              <Link
+                href="/insights/insured-is-not-covered"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Insured Is Not Covered
+              </Link>
+              {" "}
+              keeps an in-force coverage instrument off a responding grant for this event. A policy on
+              file is not a ledger entry, and a responding grant is not proof the named amount was
+              recognized. This essay does not rewrite Insured Is Not Covered. This essay does not collapse
+              into Insured Is Not Covered.
+              <Link
+                href="/insights/certified-is-not-insured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Certified Is Not Insured
+              </Link>
+              {" "}
+              keeps a certification stamp off a named, in-force indemnity instrument. A program stamp is
+              not a posted entry, and a policy on file is not booking. This essay does not rewrite
+              Certified Is Not Insured. This essay does not collapse into Certified Is Not Insured.
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              keeps a dated assurance record off a program stamp that a recovery/continuity program
+              exists or once met a named checklist. A dated re-prove of restore is not a controller’s
+              ledger line, and a certification stamp is not a named account. This essay does not rewrite
+              Assured Is Not Certified. This essay does not collapse into Assured Is Not Certified.
+              <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>
+              {" "}
+              keeps a proven restore to a named service level inside a named RTO/RPO off independent,
+              recurring verification that recovery capability still holds. A one-time restore is not a GL
+              post, and an assurance PDF is not recognition of the settlement amount. This essay does not
+              rewrite Recoverable Is Not Assured. This essay does not collapse into Recoverable Is Not
+              Assured.
+              <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>
+              {" "}
+              keeps a named handoff run under stress off a proven restore to a named service level inside
+              a named RTO/RPO. A tabletop pass is not a booked amount, and a backup job green light is not
+              a release that ends the claim. This essay does not rewrite Rehearsed Is Not Recoverable.
+              This essay does not collapse into Rehearsed Is Not Recoverable.
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>
+              {" "}
+              keeps a governed owned compounding system that can change hands with evidence continuity
+              off a handoff run under stress. A succession plan PDF is not a ledger entry, and a tabletop
+              is not settlement finality. This essay does not rewrite Transferable Is Not Rehearsed. This
+              essay does not collapse into Transferable Is Not Rehearsed.
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>
+              {" "}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new
+              named owner. A rule of engagement is not a named period and account, and a handoff pack is
+              not a posted entry. This essay does not rewrite Governed Is Not Transferable. This essay
+              does not collapse into Governed Is Not Transferable.
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>
+              {" "}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system off rules of engagement. A name on the system is not the counterparty on
+              the ledger line, and a rule of engagement is not booking. This essay does not rewrite Owned
+              Is Not Governed. This essay does not collapse into Owned Is Not Governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>
+              {" "}
+              keeps money received off a margin figure. A bank credit is not margin, and a margin line is
+              not a GL / AR / cash ledger entry that recognizes this named settlement amount for a named
+              period. This essay does not rewrite Cash Is Not Margin. This essay does not collapse into Cash Is Not Margin.
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>
+              {" "}
+              keeps an administrative completion stamp off money received. A closure stamp is not a booked
+              recognition, and cash collected is not proof the named claim is settled. This essay does not
+              rewrite Closure Is Not Cash. This essay does not collapse into Closure Is Not Cash.
+              <Link
+                href="/insights/closed-is-not-resolved"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closed Is Not Resolved
+              </Link>
+              {" "}
+              keeps a closed ticket off a cleared plant exception. Closing the ticket is not a posted
+              entry, and resolving the exception is not a written release. This essay does not rewrite
+              Closed Is Not Resolved. This essay does not collapse into Closed Is Not Resolved.
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>
+              {" "}
+              keeps a margin figure off profit. A margin figure is not a ledger entry for this settlement,
+              and profit is not finality of the named claim. This essay does not rewrite Margin Is Not
+              Profit. This essay does not collapse into Margin Is Not Profit.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              {" "}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating
+              conditions, with ownership and monitoring, off a closed evidentiary chain for a specific
+              claim under named conditions. That standing claim can be probabilistic. Settlement in this
+              essay is not that standing known-good claim. Settlement here is a written release that ends
+              the named claim. Booking here is not that standing known-good claim either. Booking here is
+              recognition of the named amount on the named entity’s financials for a named period and
+              account. A known-good asset claim is not a release, and a closed evidentiary chain is not a
+              GL post. This essay does not rewrite Assured Is Not Proven. This essay does not collapse
+              into Assured Is Not Proven.
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              {" "}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is an evidence check versus standing confidence. It is not a written
+              release versus a ledger entry. An independent check is not booking, and standing confidence
+              is not proof the named claim is settled. This essay does not rewrite Verified Is Not
+              Assured. This essay does not collapse into Verified Is Not Assured.
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              {" "}
+              keeps a green tile off permission to run. A status light is not a settlement status, and a
+              status light is not a ledger entry. This essay does not rewrite Green Is Not Go. This essay
+              does not collapse into Green Is Not Go. This essay does not collapse booking into settlement.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a ledger entry is allowed to be
+            </h2>
+
+            <p>
+              Settled means the named claim/event is finally closed with a written release (or equivalent
+              finality instrument) that ends open reserve, binds the named parties on that loss window,
+              and leaves no open adjudication path for that same named event under today’s owner — not "a
+              check cleared," not a partial payment, not a reserve reduced to zero without release, and
+              not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. Sync may surface a settlement status or a ledger entry beside Evidence,
+              Verification, and the closed outcome. This essay does not collapse settled into booked.
+            </p>
+
+            <p>
+              Evidence may cite a settlement status when the source of that status is named, and when the
+              citation names the claim, today’s owner, and the loss window, and when the citation says the
+              named claim is finally closed with a written release, or an equivalent finality instrument,
+              that ends open reserve, binds the named parties on that loss window, and leaves no open
+              adjudication path for that same named event under today’s owner. The status is about
+              finality for that named event. It is not, by itself, a GL post. It is not an AR recognition.
+              It is not a cash-ledger entry. It is not a release PDF in a folder used as if the amount
+              were recognized. It is not a bank credit alone without a GL post. It is not a dashboard tile.
+              It is not "we’ll book it at month-end" without a posted entry. Evidence may cite a ledger
+              entry when the source of that entry is named, and when the citation names the entity, the
+              period, and the account, and when the citation says the indemnity, recovery, or settlement
+              amount is recognized on that entity’s financials, a GL / AR / cash ledger entry that a
+              controller can point to, with amount, date, and counterparty trackable. The entry is about
+              recognition for that named amount and period. It is not a release. It is not the end of open
+              reserve. It is not the close of an adjudication path. It is not a CMMS checkbox. If the
+              evidence records a signed release and does not record GL/AR recognition for that named
+              amount and period, the case may store the note as settled and must not store the note as
+              booked. If the evidence records an accrual or estimate posted while the release is unsigned,
+              the reserve is live, or adjudication is still open, the case may store the note as booking
+              theater and must not store the note as settled. What a ledger entry is allowed to be is that
+              posted recognition, with amount, date, and counterparty, the controller can still point to
+              for this named amount, period, and account. It is not a settlement instrument used as proof
+              the amount is booked. It is not permission to execute. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
+              auto-settle, or auto-book. Sync does not book for the customer. Sync does not settle claims for the
+              customer. Sync does not measure booking for the customer. Sync does not measure settlement
+              for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not file a
+              claim for the customer. Sync does not issue policies for the customer. Direct plant execute
+              stays off. CMMS write-back is not a live product path. Billing write-back is not a live
+              product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named settlement is not booking
+            </h2>
+
+            <p>
+              Named settlement is not booking. The settled practice is not the booked practice. A
+              settlement status answers whether the named claim is finally closed with a written release,
+              or an equivalent finality instrument, that ends open reserve, binds the named parties on
+              that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner. It does not, by itself, show that the indemnity / recovery / settlement
+              amount is recognized on the named entity’s financials for a named period and account. It
+              does not, by itself, show a GL / AR / cash ledger entry that a controller can point to. It
+              does not, by itself, show amount, date, and counterparty trackable. Release signed, with no
+              GL/AR recognition for that named amount and period, is still settlement. It is not booking. A firm can be settled and still not booked. An accrual or estimate posted while the release is unsigned, the reserve is live, or adjudication is still open, is still booking theater. It is not
+              settlement. A firm can chase booking theater and still not be settled. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. Not a release PDF in a folder. Not a bank credit alone without a GL post. Not a dashboard tile. Not "we’ll book it at month-end" without a posted entry. A CMMS checkbox, ticket state, status light, or one-off clear is neither. This
+              essay does not rewrite Paid Is Not Settled. This essay does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is Not
+              Covered. This essay does not rewrite Certified Is Not Insured. This essay does not rewrite
+              Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This essay
+              does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is
+              Not Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not
+              rewrite Owned Is Not Governed. This essay does not rewrite Cash Is Not Margin. This essay
+              does not rewrite Closure Is Not Cash. This essay does not rewrite Closed Is Not Resolved.
+              This essay does not rewrite Margin Is Not Profit. This essay does not rewrite Assured Is Not
+              Proven. This essay does not rewrite Verified Is Not Assured. This essay does not rewrite
+              Green Is Not Go. This essay does not collapse into Paid Is Not Settled. This essay does not
+              collapse into Covered Is Not Paid. This essay does not collapse into Insured Is Not Covered. This essay does not collapse into Certified Is Not
+              Insured. This essay does not collapse into Assured Is Not Certified. This essay does not
+              collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This essay
+              does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned
+              Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not
+              collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved.
+              This essay does not collapse into Margin Is Not Profit. This essay does not collapse into
+              Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay
+              does not collapse into Green Is Not Go. This essay does not collapse booking into settlement. This essay does not collapse settled into booked. Sync does not measure settlement or booking for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync
+              refuses to pretend settlement or booking is a status light. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
 
             <p className="text-xl text-gray-400">
               Paid is not settled. Paid means indemnity / loss payment / agreed settlement funds have
@@ -9932,17 +10399,6 @@ export default function PaidIsNotSettledPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/settled-is-not-booked"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Settled Is Not Booked
-              </Link>
-              , on why settled is still not booked. Settled means the named claim/event is finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero without release, and not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. A firm can be settled and still not booked when release signed; no GL/AR recognition for that named amount/period, is on the record. A firm can chase booking theater and still not be settled. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Paid remains indemnity that has actually moved for that named covered event. This essay separates indemnity that has actually moved from a written release that ends the named claim. A payment alone is not settlement finality. A settlement instrument alone is not proof funds moved. Sync does not measure settlement or booking for the customer. Sync does not measure booking. Sync does not measure booking for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not treat settled as booked as Learning credit. Sync refuses to pretend settlement or booking is a status light. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -10002,7 +10458,7 @@ export default function PaidIsNotSettledPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="paid-is-not-settled" />
+          <InsightNextSteps slug="settled-is-not-booked" />
         </motion.article>
       </div>
     </main>

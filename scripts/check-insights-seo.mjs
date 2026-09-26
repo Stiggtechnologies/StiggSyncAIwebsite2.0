@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const bookedIndex = slugs.indexOf('settled-is-not-booked');
 const settledIndex = slugs.indexOf('paid-is-not-settled');
 const paidIndex = slugs.indexOf('covered-is-not-paid');
 const coveredIndex = slugs.indexOf('insured-is-not-covered');
@@ -81,7 +82,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    settledIndex >= 0 &&
+    bookedIndex >= 0 &&
+    settledIndex > bookedIndex &&
     paidIndex > settledIndex &&
     coveredIndex > paidIndex &&
     insuredIndex > coveredIndex &&
@@ -143,7 +145,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -12649,6 +12651,86 @@ if (
   !paidPage.includes('/insights/paid-is-not-settled')
 ) {
   fail('covered-is-not-paid must point the series forward to paid-is-not-settled');
+}
+
+const bookedPageRequired = [
+  ...settledPageRequired,
+  "Settled is not booked",
+  "the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable",
+  "not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not \"we’ll book it at month-end\" without a posted entry",
+  "A firm can be settled and still not booked",
+  "release signed; no GL/AR recognition for that named amount/period",
+  "A firm can chase booking theater and still not be settled",
+  "accrual or estimate posted while release unsigned, reserve live, or adjudication still open",
+  "A settlement instrument alone is not a booked financial recognition",
+  "A ledger line alone is not proof the named claim is settled",
+  "The settled practice is not the booked practice",
+  "What a ledger entry is allowed to be",
+  "Named settlement is not booking",
+  "Sync does not measure booking",
+  "Sync does not measure booking for the customer",
+  "Sync does not measure settlement or booking for the customer",
+  "Sync may surface a settlement status or a ledger entry",
+  "does not collapse booking into settlement",
+  "does not collapse settled into booked",
+  "does not rewrite Paid Is Not Settled",
+  "does not collapse into Paid Is Not Settled",
+  "does not collapse into Covered Is Not Paid",
+  "does not collapse into Cash Is Not Margin",
+  "does not collapse into Closure Is Not Cash",
+  "does not collapse into Closed Is Not Resolved",
+  "does not collapse into Margin Is Not Profit",
+  "practice record that says settled is booked",
+  "settled as booked",
+  "separates a written release that ends the named claim from a ledger entry that recognizes the named amount",
+  "/insights/paid-is-not-settled",
+  "Evidence from the plant beats the settlement status when the status is being used as booking",
+  "Evidence from the plant beats the ledger entry when the entry is being used as proof the named claim is settled",
+  "treat settled as booked as Learning credit",
+  "Sync refuses to pretend settlement or booking is a status light",
+  "Sync does not book for the customer",
+  "Sync must not auto-book",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+  "does not rewrite Covered Is Not Paid",
+  "Sync does not settle claims for the customer",
+  "Sync must not auto-settle",
+  "Sync must not auto-pay",
+  "Sync must not auto-adjudicate",
+  "under the honesty and verification boundary",
+];
+const bookedPage = read('app/insights/settled-is-not-booked/page.tsx');
+for (const required of bookedPageRequired) {
+  if (!bookedPage.includes(required)) {
+    fail(`settled-is-not-booked page must include ${required}`);
+  }
+}
+
+const bookedBlock = stepBlock('settled-is-not-booked');
+for (const required of ['paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!bookedBlock.includes(`'${required}'`)) {
+    fail(`settled-is-not-booked related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(bookedBlock)) {
+  fail('settled-is-not-booked related reading must include the Strategic Pilot');
+}
+if (bookedBlock.includes("next: 'strategic-pilot'")) {
+  fail('settled-is-not-booked next step is the Field Manual');
+}
+if (!stepBlock('paid-is-not-settled').includes("'settled-is-not-booked'")) {
+  fail('paid-is-not-settled related reading must point forward to settled-is-not-booked');
+}
+
+if (
+  !settledPage.includes('The series continues with') ||
+  !settledPage.includes('/insights/settled-is-not-booked')
+) {
+  fail('paid-is-not-settled must point the series forward to settled-is-not-booked');
 }
 
 function readingSlugs(name) {
