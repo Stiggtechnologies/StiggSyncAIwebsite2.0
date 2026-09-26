@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('scaled-is-not-compounded');
+const article = getInsightArticle('compounded-is-not-owned');
 
-export default function ScaledIsNotCompoundedPage() {
+export default function CompoundedIsNotOwnedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,294 @@ export default function ScaledIsNotCompoundedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Scaled Is Not Compounded</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Compounded Is Not Owned</h1>
+            <p className="text-xl text-gray-400">
+              Compounded is not owned. Compounded is the condition in which each new
+              site/crew/class makes the next one cheaper, faster, or more reliable because named
+              learning, tooling, staffing, and exception paths transfer and accumulate (unit economics
+              and failure modes improve with volume) — not a linear headcount multiply of the same
+              fragile setup. Owned means a named accountable owner can change, stop, transfer, audit, or
+              withhold the compounding system (playbooks, tooling, staffing rights, exception paths,
+              residual claim on the learning) with clear authority and evidence the owner still holds
+              it — not the org somehow got better, not a shared drive nobody owns, and not a KPI chart
+              that improved while no one can redirect the machine. Compounded is not owned. A firm can
+              compound learning across ten sites and still not own the compounding system. A firm can
+              own a practice tightly on one line and still never have compounded it. Multi-site
+              improvement alone is not ownership. A better unit-cost chart alone is not ownership. A
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep them apart:
+              multi-site improvement alone is not ownership; a better unit-cost chart alone is not
+              ownership; a CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Scaled is not compounded. Scaled remains a sustained practice deliberately extended
+              across named additional sites, crews, asset classes, or operating contexts. Recommend is
+              not authorize. Evidence lineage is not optional. Human decision is not optional.
+              Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses to pretend compounding or ownership is a status light. Sync does
+              not measure compounding. Sync does not measure compounding for the customer. Sync does
+              not measure ownership. Sync does not measure ownership for the customer. Sync does not
+              measure compounding or ownership for the customer. Sync does not compound for the
+              customer. Sync does not assign ownership for the customer. Sync must not auto-compound
+              or auto-assign ownership. Sync must not auto-scale or auto-compound. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt,
+              auto-sustain, auto-scale, auto-compound, or auto-assign ownership.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded
+              is not owned. Scaled, in the prior essay, is a sustained practice deliberately extended
+              across named additional sites, crews, asset classes, or operating contexts with named
+              owners, transfer conditions, and evidence it still holds under the new load. Compounded,
+              there, is the condition in which each new site, crew, or class makes the next one
+              cheaper, faster, or more reliable because named learning, tooling, staffing, and
+              exception paths transfer and accumulate. That essay separates a scaled practice from
+              compounding that accumulates across volume. This essay does not collapse into that
+              split. Scale versus compounding is the prior refusal. This essay separates a compounded
+              practice from ownership of the compounding system. Accumulation that improves unit
+              economics is not a named owner who can redirect the machine. A slide that copies a
+              better unit-cost chart is not ownership, and a shared drive of playbooks is not a
+              compounding system anyone can change, stop, transfer, audit, or withhold.{' '}
+              <Link
+                href="/insights/scaled-is-not-compounded"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Scaled Is Not Compounded
+              </Link>{' '}
+              keeps deliberate extension off accumulation. Read the prior essay at
+              /insights/scaled-is-not-compounded. Sustained Is Not Scaled keeps a hold under named
+              pressure off deliberate extension. Adopted Is Not Sustained keeps operating practice off
+              that hold. Ownership Is Not Control keeps a residual economic claim off direction power.
+              Control Is Not Closure keeps direction power off a finished end-state. Cash Is Not Margin
+              keeps collected money off contribution margin. None of those refusals is this split. A
+              multi-site improvement is not this ownership. A better unit-cost chart is not this
+              ownership. This ownership names an accountable owner who can change, stop, transfer,
+              audit, or withhold the compounding system, with clear authority and evidence the owner
+              still holds it. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human
+              Decision Is Not Optional stay beside this split. Sync may surface a compounding/accumulation note or an ownership/accountable-owner note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync refuses to pretend
+              compounding or ownership is a status light. Sync must not auto-compound or auto-assign
+              ownership. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, or treat compounded as
+              owned as Learning credit. This essay does not rewrite Scaled Is Not Compounded. This
+              essay does not rewrite Sustained Is Not Scaled. This essay does not rewrite Adopted Is
+              Not Sustained. This essay does not rewrite Ownership Is Not Control. This essay does not
+              rewrite Control Is Not Closure. This essay does not rewrite Cash Is Not Margin. This
+              essay does not collapse into Scaled Is Not Compounded. This essay does not collapse into
+              Sustained Is Not Scaled. This essay does not collapse into Adopted Is Not Sustained.
+              This essay does not collapse into Ownership Is Not Control. This essay does not collapse
+              into Control Is Not Closure. This essay does not collapse into Cash Is Not Margin. This
+              essay does not collapse compounded into owned. This essay does not collapse ownership
+              into compounding. This essay does not collapse scaled into compounded.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Compounded is not owned. Compounded is the condition in which each new site/crew/class makes the next one cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transfer and accumulate (unit economics and failure modes improve with volume) — not a linear headcount multiply of the same fragile setup. Owned means a named accountable owner can change, stop, transfer, audit, or withhold the compounding system (playbooks, tooling, staffing rights, exception paths, residual claim on the learning) with clear authority and evidence the owner still holds it — not the org somehow got better, not a shared drive nobody owns, and not a KPI chart that improved while no one can redirect the machine. A firm can compound learning across ten sites and still not own the compounding system, when that accumulation is on the record and the compounding system walks out with a contractor, lives in tribal memory, or cannot be transferred, changed, stopped, audited, or withheld by a named accountable owner. A firm can own a practice tightly on one line and still never have compounded it, when a named accountable owner can change, stop, transfer, audit, or withhold that practice on the one line and the next site, crew, or class is not cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transferred and accumulated. Multi-site improvement alone is not ownership. A better unit-cost chart alone is not ownership. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Treating compounded as owned records accumulation as a named owner of the compounding system that nobody has shown, under the honesty and verification boundary. A compounding note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the compounding note when the note is being used as ownership. Evidence from the plant beats the ownership note when the note is being used as compounding. Sync must not auto-compound or auto-assign ownership. Sync must not treat compounded as owned as Learning credit. Sync does not measure compounding or ownership for the customer. Sync does not measure ownership for the customer. Sync does not assign ownership for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The compounded practice is not the owned practice
+            </h2>
+
+            <p>
+              Compounded is the condition in which each new site/crew/class makes the next one
+              cheaper, faster, or more reliable because named learning, tooling, staffing, and
+              exception paths transfer and accumulate — unit economics and failure modes improve with
+              volume — not a linear headcount multiply of the same fragile setup. Owned means a named
+              accountable owner can change, stop, transfer, audit, or withhold the compounding system
+              (playbooks, tooling, staffing rights, exception paths, residual claim on the learning)
+              with clear authority and evidence the owner still holds it — not the org somehow got
+              better, not a shared drive nobody owns, and not a KPI chart that improved while no one
+              can redirect the machine. Sync may surface a compounding/accumulation note or an
+              ownership/accountable-owner note beside Evidence, Verification, and the closed outcome.
+              A practice record that says compounded is owned is not shown ownership. Evidence from
+              the plant beats the compounding note when the note is being used as ownership. Evidence
+              from the plant beats the ownership note when the note is being used as compounding.
+              Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              Ten sites can each get cheaper, faster, or more reliable as named learning, tooling,
+              staffing, and exception paths transfer and accumulate. Unit economics and failure modes
+              can improve with volume. The playbooks can live in a shared drive. The tooling can live
+              on a contractor laptop. The staffing rights can live in tribal memory. When the
+              contractor leaves, the compounding system leaves. Nobody named can change it, stop it,
+              transfer it, audit it, or withhold it. That record is compounded. It is not owned. One
+              line can have a named accountable owner who can change, stop, transfer, audit, or
+              withhold the practice on that line, with clear authority and evidence the owner still
+              holds it, while the next site is not cheaper, faster, or more reliable. That ownership
+              is not compounding. Multi-site improvement can show a cleaner curve across plants and
+              still leave the machine without an owner who can redirect it. Multi-site improvement
+              alone is not ownership. A better unit-cost chart can fall while no one can change the
+              playbooks, the tooling, the staffing rights, or the exception paths. A better unit-cost
+              chart alone is not ownership. A firm can compound learning across ten sites and still
+              not own the compounding system. A firm can own a practice tightly on one line and still
+              never have compounded it. A CMMS checkbox, ticket state, status light, or one-off clear
+              is neither. A one-off clear is a single quiet interval. It is not accumulation, and it
+              is not an owner of the compounding system. Named compounding is not ownership. The
+              compounded practice is not the owned practice. This essay does not invent a customer, a
+              price, or a return. It states no savings figure, states no price, and states no OEM
+              limit. A practice record that says compounded is owned is not a customer plant release,
+              and it is not shown ownership. Treating compounded as owned records accumulation the
+              plant has not placed under a named accountable owner, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/scaled-is-not-compounded"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Scaled Is Not Compounded
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/scaled-is-not-compounded.
+              Scaled, there, is a sustained practice deliberately extended across named additional
+              sites, crews, asset classes, or operating contexts with named owners, transfer
+              conditions, and evidence it still holds under the new load. Compounded, there, is the
+              condition in which each new site/crew/class makes the next one cheaper, faster, or more
+              reliable because named learning, tooling, staffing, and exception paths transfer and
+              accumulate. A multi-site roll-out alone is not compounding. A better KPI chart alone is
+              not scale. That refusal stops at extension and accumulation. It does not ask whether a
+              named accountable owner can change, stop, transfer, audit, or withhold the compounding
+              system, with clear authority and evidence the owner still holds it. Scaled is not
+              compounded is a different refusal. Compounded is not owned is the next refusal. Named
+              scale is not compounding, and named compounding is not ownership. Scaled Is Not
+              Compounded separates a scaled practice from compounding that accumulates across volume.
+              This essay separates a compounded practice from ownership of the compounding system.
+              This essay does not rewrite Scaled Is Not Compounded. This essay does not collapse into
+              Scaled Is Not Compounded. This essay does not collapse scaled into compounded. This
+              essay does not collapse compounded into owned.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/sustained-is-not-scaled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Sustained Is Not Scaled
+              </Link>{' '}
+              keeps a hold under named pressure off deliberate extension across named additional
+              contexts. A sustainment KPI is not ownership of the compounding system, and a transfer
+              plan is not a residual claim on the learning. This essay does not rewrite Sustained Is
+              Not Scaled. This essay does not collapse into Sustained Is Not Scaled.{' '}
+              <Link
+                href="/insights/adopted-is-not-sustained"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Adopted Is Not Sustained
+              </Link>{' '}
+              keeps operating practice off a hold under named pressure. An adoption roll-out note is
+              not ownership, and a sustainment KPI is not compounding. This essay does not rewrite
+              Adopted Is Not Sustained. This essay does not collapse into Adopted Is Not Sustained.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim on an asset, equity, IP, or cash flow off the practical
+              power to set or change direction. That residual claim is a balance-sheet claim. Owned
+              here is not that claim. Owned here is a named accountable owner of the compounding
+              system: playbooks, tooling, staffing rights, exception paths, and a residual claim on
+              the learning, with clear authority and evidence the owner still holds it. A
+              balance-sheet residual does not show that the owner can redirect the machine. Direction
+              power does not show that unit economics improve with volume. This essay does not rewrite
+              Ownership Is Not Control. This essay does not collapse into Ownership Is Not Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not ownership of the
+              compounding system, and a finished work-state is not compounding. This essay does not
+              rewrite Control Is Not Closure. This essay does not collapse into Control Is Not
+              Closure.{' '}
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>{' '}
+              keeps money received off contribution margin. Collected cash is not ownership of the
+              compounding system, and a margin figure is not compounding. This essay does not rewrite
+              Cash Is Not Margin. This essay does not collapse into Cash Is Not Margin. This essay
+              does not collapse ownership into compounding.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an ownership note is allowed to be
+            </h2>
+
+            <p>
+              Compounded is the condition in which each new site/crew/class makes the next one
+              cheaper, faster, or more reliable because named learning, tooling, staffing, and
+              exception paths transfer and accumulate. Owned means a named accountable owner can change,
+              stop, transfer, audit, or withhold the compounding system (playbooks, tooling, staffing
+              rights, exception paths, residual claim on the learning) with clear authority and
+              evidence the owner still holds it. Multi-site improvement alone is not ownership. A
+              better unit-cost chart alone is not ownership. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Sync may surface a compounding/accumulation note or
+              an ownership/accountable-owner note beside Evidence, Verification, and the closed
+              outcome. This essay does not collapse compounded into owned.
+            </p>
+
+            <p>
+              Evidence may cite a compounding/accumulation note when the source of that note is named,
+              and when the citation names which learning, tooling, staffing, and exception paths
+              transferred, and how unit economics and failure modes improve with volume so the next
+              site, crew, or class is cheaper, faster, or more reliable. Evidence may cite an
+              ownership/accountable-owner note when the source of that note is named, and when the
+              citation names the accountable owner, the compounding system that owner can change, stop,
+              transfer, audit, or withhold (playbooks, tooling, staffing rights, exception paths,
+              residual claim on the learning), the authority under which that owner acts, and the
+              evidence the owner still holds it. If the evidence records the accumulation and does not
+              record that owner, the case may store the note as compounded and must not store the note
+              as owned. If the evidence records a named owner of a practice on one line and does not
+              record that accumulation, the case must not store the note as compounded and must not
+              store the note as owned. What an ownership note is allowed to be is that named
+              accountable-owner record. It is not the org somehow got better. It is not a shared drive
+              nobody owns. It is not a KPI chart that improved while no one can redirect the machine.
+              It is not permission to execute. Recommend is not authorize. Surfacing is still a read.
+              Sync refuses false precision. Sync must not auto-compound or auto-assign ownership.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named compounding is not ownership
+            </h2>
+
+            <p>
+              Named compounding is not ownership. The compounded practice is not the owned practice. A
+              named accumulation across sites, crews, or classes answers whether the next one is
+              cheaper, faster, or more reliable because learning, tooling, staffing, and exception
+              paths transfer. It does not, by itself, name an accountable owner who can change, stop,
+              transfer, audit, or withhold that system. It does not, by itself, show clear authority.
+              It does not, by itself, show evidence the owner still holds it. A shared drive can hold
+              the playbooks and still have nobody who can withhold them. Tribal memory can make the
+              tenth site faster and still walk out with a contractor. A firm can compound learning
+              across ten sites and still not own the compounding system. A firm can own a practice
+              tightly on one line and still never have compounded it. Multi-site improvement alone is
+              not ownership. A better unit-cost chart alone is not ownership. Not the org somehow got
+              better. Not a shared drive nobody owns. Not a KPI chart that improved while no one can
+              redirect the machine. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. This essay does not rewrite Scaled Is Not Compounded. This essay does not
+              rewrite Sustained Is Not Scaled. This essay does not rewrite Adopted Is Not Sustained.
+              This essay does not rewrite Ownership Is Not Control. This essay does not rewrite
+              Control Is Not Closure. This essay does not rewrite Cash Is Not Margin. This essay does
+              not collapse into Scaled Is Not Compounded. This essay does not collapse into Sustained
+              Is Not Scaled. This essay does not collapse into Adopted Is Not Sustained. This essay
+              does not collapse into Ownership Is Not Control. This essay does not collapse into
+              Control Is Not Closure. This essay does not collapse into Cash Is Not Margin. Sync does
+              not measure compounding or ownership for the customer. Sync must not auto-compound or
+              auto-assign ownership. Sync refuses to pretend compounding or ownership is a status
+              light.
+            </p>
+
+
             <p className="text-xl text-gray-400">
               Scaled is not compounded. Scaled is a sustained practice deliberately extended across
               named additional sites, crews, asset classes, or operating contexts with named owners,
@@ -6001,18 +6288,6 @@ export default function ScaledIsNotCompoundedPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/compounded-is-not-owned"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Compounded Is Not Owned
-              </Link>
-              , on why compounded is still not owned. Compounded is the condition in which each new site/crew/class makes the next one cheaper, faster, or more reliable because named learning, tooling, staffing, and exception paths transfer and accumulate (unit economics and failure modes improve with volume) — not a linear headcount multiply of the same fragile setup. Owned means a named accountable owner can change, stop, transfer, audit, or withhold the compounding system (playbooks, tooling, staffing rights, exception paths, residual claim on the learning) with clear authority and evidence the owner still holds it — not the org somehow got better, not a shared drive nobody owns, and not a KPI chart that improved while no one can redirect the machine. A firm can compound learning across ten sites and still not own the compounding system when that accumulation is on the record and the system walks out with a contractor, lives in tribal memory, or cannot be transferred. A firm can own a practice tightly on one line and still never have compounded it when that owner is on the record and the next site is not cheaper, faster, or more reliable because named learning transferred and accumulated. Multi-site improvement alone is not ownership. A better unit-cost chart alone is not ownership. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Scaled remains deliberate extension across named additional contexts. This essay separates a scaled practice from compounding that accumulates across volume. A multi-site roll-out alone is not compounding. A better KPI chart alone is not scale. Sync does not measure compounding or ownership for the customer. Sync does not measure ownership. Sync does not measure ownership for the customer. Sync must not auto-compound or auto-assign ownership. Sync refuses to pretend compounding or ownership is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -6072,7 +6347,7 @@ export default function ScaledIsNotCompoundedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="scaled-is-not-compounded" />
+          <InsightNextSteps slug="compounded-is-not-owned" />
         </motion.article>
       </div>
     </main>
