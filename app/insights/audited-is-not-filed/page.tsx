@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('reported-is-not-audited');
+const article = getInsightArticle('audited-is-not-filed');
 
-export default function ReportedIsNotAuditedPage() {
+export default function AuditedIsNotFiledPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,365 @@ export default function ReportedIsNotAuditedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Reported Is Not Audited</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Audited Is Not Filed</h1>
+
+            <p>
+              Audited is not filed. Audited means an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Audited is not filed. A firm can be audited and still not filed (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase filing theater and still not be audited (a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line). An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep reported (named recognized amount in the named period report pack) from Reported Is Not Audited distinct from audited and from filed. Keep recognized (earning attested under the named acceptance rule) from Recognized Is Not Reported distinct from reported, from audited, and from filed. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized, from reported, from audited, and from filed. Reported is not audited. Recognized is not reported. Collected is not recognized. This closed is a period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. Reported Is Not Audited separates that named recognized amount in the named period report pack from an independent named opinion or assurance conclusion. This essay separates an independent named opinion or assurance conclusion from a named filing receipt. A named opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend auditing or filing is a status light. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not measure auditing or filing for the customer. Sync does not measure auditing. Sync does not measure auditing for the customer. Sync does not measure reporting or auditing for the customer. Sync does not measure reporting. Sync does not measure reporting for the customer. Sync does not measure recognition or reporting for the customer. Sync does not measure recognition. Sync does not measure recognition for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books, auto-collect, auto-recognize, auto-report, auto-audit, or auto-file. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat audited as filed as Learning credit. Sync must not treat reported as audited as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <p>
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not accountability. Accountability is not ownership. Ownership is not control. Control is not closure. Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled. Settled is not booked. Booked is not reconciled. Reconciled is not closed. Closed is not collected. Collected is not recognized. Recognized is not reported. Reported is not audited. Audited is not filed. That last sentence is this refusal. The words audit opinion in the prior sentence name an independent named auditor or assurance provider’s named opinion or assurance conclusion on that named period’s financial statements, or on a named scoped assertion, for that named entity, covering that named line or the statements that include it, with an unbroken evidence trail to the reported pack and the recognition evidence. They do not name a regulator. They do not name a registry. They do not name a lender filing channel. They do not name a board filing channel. They do not name a filing receipt. They do not name a filing confirmation. They do not name a filing timestamp. They do not show an unbroken trail from that receipt back to the audited pack. This essay does not rewrite that sentence. This essay does not collapse into that split. A named recognized amount in the named period report pack versus an independent named opinion is the prior refusal. This essay separates an independent named opinion or assurance conclusion from a named filing receipt. An audit opinion is not evidence the named audited period pack has been lodged. A filing receipt is not evidence an independent opinion covers the named line. Reported Is Not Audited keeps that named recognized amount in the named period report pack off an independent opinion that has not been issued. Recognized Is Not Reported keeps earned revenue under the named acceptance rule off a pack line that omits, mislines, or cannot reconcile the amount. Collected Is Not Recognized keeps cash that has actually hit the named bank account for that named closed item off earned revenue recognized under the named acceptance rule. Closed Is Not Collected keeps a period close a named controller or CFO can attest off cash that has actually hit the named bank account for that named closed item. This closed is a period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. None of those refusals is this split. This split is audited versus filed. A management pack alone, an internal controller close attestation alone, a sentence that says we’re audit-ready, a dashboard green, or a CMMS checkbox is not this audit. A sentence that says audit is done, a draft upload, an email saying we sent it, a dashboard green, or a CMMS checkbox is not this filing. Reported, the named recognized amount in the named period report pack, is not this audit and is not this filing. This audit is an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. This filing is that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface an audit opinion or a filing receipt beside Evidence, Verification, and the closed outcome. Surfacing is still a read. The closed outcome in that sentence is the Decision Case outcome record. It is not a period close of the books, it is not a period report, it is not an audit opinion, and it is not a filing receipt. This essay does not rewrite Reported Is Not Audited. This essay does not collapse into Reported Is Not Audited. This essay does not collapse filing into auditing. This essay does not collapse audited into filed.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Audited is not filed. Audited means an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. A firm can be audited and still not filed (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase filing theater and still not be audited (a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line). An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep reported (named recognized amount in the named period report pack) from Reported Is Not Audited distinct from audited and from filed. A firm can be audited and still not filed, when named opinion exists while no lodging receipt for that entity/period/channel, is the only filing story on the record. A firm can chase filing theater and still not be audited, when a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line, is the only audit story on the record. An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface an audit opinion or a filing receipt beside Evidence, Verification, and the closed outcome. This essay separates an independent named opinion or assurance conclusion from a named filing receipt. This essay does not collapse filing into auditing. This essay does not collapse audited into filed. This essay does not collapse into Reported Is Not Audited. This essay does not rewrite Reported Is Not Audited. A practice record that says audited is filed is not shown filed. Sync refuses to pretend auditing or filing is a status light. Treating audited as filed records a named opinion as a lodging receipt for that entity, period, and channel, under the honesty and verification boundary. An audit opinion can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the audit opinion when the opinion is being used as a filing. Evidence from the plant beats the filing receipt when the receipt is being used as proof an independent opinion covers the named line. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat audited as filed as Learning credit. Sync must not treat reported as audited as Learning credit. Sync refuses to pretend auditing or filing is a status light. Sync refuses to pretend reporting or audit is a status light. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not measure auditing or filing for the customer. Sync does not measure auditing. Sync does not measure auditing for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync does not report revenue for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior audit split still stands: pack line and preparer/attester exist while no independent opinion covers that period/entity/line is reported and not audited, and an opinion or readiness claim exists while the named recognized amount is omitted, mislined, or not reconcilable in the named pack is audit theater and not reported. Reported Is Not Audited separates that named recognized amount in the named period report pack from an independent named opinion or assurance conclusion. False confidence here is an audit opinion treated as a filing, or a filing receipt treated as proof an independent opinion covers the named line. Field proof is the named trail, not the tile. What changes Tuesday is the refusal to let one record wear the other record’s name.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The audited practice is not the filed practice
+            </h2>
+
+            <p>
+              Audited means an independent named auditor / assurance provider has issued a named
+              opinion or assurance conclusion on that named period’s financial statements (or named
+              scoped assertion) for that named entity, covering that named line (or the statements
+              that include it), with an unbroken evidence trail to the reported pack and recognition
+              evidence — not a management pack alone, not an internal controller close attestation
+              alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Filed
+              means that named audited period pack (statements + named opinion/assurance conclusion
+              as applicable) has been lodged with the named regulator / registry / lender / board
+              filing channel for that named entity and period, with a named filing receipt /
+              confirmation, filing timestamp, and unbroken trail back to the audited pack — not
+              "audit is done," not a draft upload, not an email saying we sent it, not a dashboard
+              green, and not a CMMS checkbox. Sync may surface an audit opinion or a filing receipt
+              beside Evidence, Verification, and the closed outcome. A practice record that says
+              audited is filed is not shown filed. Evidence from the plant beats the audit opinion
+              when the opinion is being used as a filing. Evidence from the plant beats the filing
+              receipt when the receipt is being used as proof an independent opinion covers the
+              named line. Evidence from the plant beats the note. The audited practice is not the
+              filed practice.
+            </p>
+
+            <p>
+              One file can hold an audit. An independent named auditor or assurance provider has
+              issued a named opinion or assurance conclusion. The period is named. The entity is
+              named. The opinion covers that named line, or the statements that include it. The
+              evidence trail back to the reported pack and the recognition evidence is unbroken.
+              Then the record stops. It does not say that named audited period pack has been lodged
+              with the named regulator, registry, lender, or board filing channel. It does not name
+              a filing receipt or confirmation. It does not name a filing timestamp. It does not
+              show an unbroken trail from that receipt back to the audited pack. That is named
+              opinion exists while no lodging receipt for that entity/period/channel. That record
+              can be audited. It is not filed. A firm can be audited and still not filed. An audit
+              opinion alone is not a filing. A management pack alone is not a filing. An internal
+              controller close attestation alone is not a filing. A sentence that says we’re
+              audit-ready is not a filing. A sentence that says audit is done is not a filing. A
+              draft upload is not a filing. An email saying we sent it is not a filing. A dashboard
+              green is not a filing. A CMMS checkbox is not a filing. A filing chase can be loud and
+              still not be this audit. The file shows a lodging claim or a draft upload while no
+              independent named opinion covers that period, entity, and line. That is filing
+              theater. It is not audited. A firm can chase filing theater and still not be audited.
+              A lodging claim alone is not audited. A draft upload alone is not audited. An audit
+              opinion can name an entity and a period and still have no lodging receipt for that
+              entity, period, and channel. A filing receipt can name a channel and a timestamp and
+              still fail to show that an independent named opinion covers the named line. An audit
+              opinion alone is not a filing. A filing receipt alone is not proof an independent
+              opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. A one-off clear is a single quiet interval. It is not an independent
+              opinion with an unbroken evidence trail to the reported pack and the recognition
+              evidence, and it is not a named filing receipt with an unbroken trail back to the
+              audited pack. The audited practice is not the filed practice. This essay does not
+              invent a customer, a price, or a return. It states no savings figure, states no
+              price, and states no OEM limit. A practice record that says audited is filed is not a
+              customer plant release, and it is not shown filed. Treating audited as filed records
+              a named opinion nobody has lodged as a filing receipt for that entity, period, and
+              channel, under the honesty and verification boundary. Keep reported (named recognized
+              amount in the named period report pack) from Reported Is Not Audited distinct from
+              audited and from filed. Reported, the named recognized amount in the named period
+              report pack, is the reporting record from Reported Is Not Audited. It is not this
+              audit. It is not this filing. A reported amount can still lack an independent opinion,
+              and an audited period can still lack a lodging receipt.
+            </p>
+
+            <p>
+              Audited, in this essay, is an independent named auditor or assurance provider’s named
+              opinion or assurance conclusion on that named period’s financial statements, or on a
+              named scoped assertion, for that named entity, covering that named line or the
+              statements that include it, with an unbroken evidence trail to the reported pack and
+              the recognition evidence. Filed, in this essay, is that named audited period pack,
+              statements plus the named opinion or assurance conclusion as applicable, lodged with
+              the named regulator, registry, lender, or board filing channel for that named entity
+              and period, with a named filing receipt or confirmation, a filing timestamp, and an
+              unbroken trail back to the audited pack. Reported, in Reported Is Not Audited, is that
+              named recognized amount in the named period report pack for the named entity, with the
+              named line, period, and preparer/attester, reconcilable to the recognition evidence.
+              Recognized, in Recognized Is Not Reported, is earned revenue or the named contract
+              earning event for that named entity and period, under the named acceptance /
+              milestone / performance obligation rule, with a named controller / revenue attestation
+              and an unbroken evidence trail. Collected, in Collected Is Not Recognized, is cash
+              cleared and applied for that named closed receivable, invoice, or obligation. Closed,
+              in Closed Is Not Collected, is a period/books close. Closed means the named period’s
+              books for that named entity and account are formally closed: cut-off locked,
+              reconciling items for that named amount cleared or carried with a signed exception,
+              and a named controller / CFO close attestation exists for that period. Closed, in
+              Closed Is Not Resolved, is a work-order / incident closed: a ticket, work order, or
+              incident marked done. That essay keeps a closed ticket off a cleared plant exception.
+              This essay does not use that closed. A period close attestation is not a cleared plant
+              exception, it is not a period report, it is not an independent audit opinion, and it
+              is not a filing receipt. A closed ticket is not proof the named amount is audited, and
+              it is not proof the named pack was lodged. A report line is not a work-order checkbox.
+              An audit opinion is not a lodging receipt. A filing receipt is not a bank deposit.
+              This essay does not rewrite Closed Is Not Resolved. This essay does not rewrite
+              Reported Is Not Audited. This essay does not rewrite Recognized Is Not Reported. This
+              essay does not rewrite Collected Is Not Recognized. This essay does not rewrite Closed
+              Is Not Collected. This essay does not collapse a period/books close into a work-order
+              / incident closed. This essay does not collapse collected cash into a ticket state.
+              This essay does not collapse recognized revenue into a CMMS checkbox. This essay does
+              not collapse an audit opinion into a report line. This essay does not collapse a
+              filing receipt into an audit opinion. This closed is a period/books close. It is not
+              the work-order / incident closed in Closed Is Not Resolved.
+            </p>
+
+            <p>
+              On Tuesday the question splits. The audit file answers whether an independent named
+              auditor or assurance provider has issued a named opinion or assurance conclusion on
+              that named period’s financial statements, or on a named scoped assertion, for that
+              named entity, covering that named line or the statements that include it, with an
+              unbroken evidence trail to the reported pack and the recognition evidence. The filing
+              file answers whether that named audited period pack has been lodged with the named
+              regulator, registry, lender, or board filing channel for that named entity and period,
+              with a named filing receipt or confirmation, a filing timestamp, and an unbroken trail
+              back to the audited pack. One file does not answer the other. An audit opinion read as
+              if it were the lodging receipt does not change the question. A filing receipt read as
+              if it were the opinion does not change the question. A sentence that says audit is
+              done does not change the question. A draft upload does not change the question. An
+              email saying we sent it does not change the question. A dashboard green does not
+              change the question. A CMMS checkbox does not change the question. A management pack
+              alone does not change the question. An internal controller close attestation alone
+              does not change the question. A sentence that says we’re audit-ready does not change
+              the question. A report pack read as if it were either auditing or filing does not
+              change the question. What changes Tuesday is the refusal to let one record wear the
+              other record’s name.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/reported-is-not-audited"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Reported Is Not Audited
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/reported-is-not-audited.
+              Reported Is Not Audited separates that named recognized amount in the named period
+              report pack from an independent named opinion or assurance conclusion. Reported,
+              there, means that named recognized amount appears in the named period report pack
+              (management pack / board pack / statutory / lender pack as applicable) for the named
+              entity with the named line, period, and preparer/attester, reconcilable to the
+              recognition evidence — not a slide that restates cash, not a CMMS KPI tile, not a
+              one-off spreadsheet export, not "finance said it’s in the books," and not a status
+              light. Audited, there, means an independent named auditor / assurance provider has
+              issued a named opinion or assurance conclusion on that named period’s financial
+              statements (or named scoped assertion) for that named entity, covering that named line
+              (or the statements that include it), with an unbroken evidence trail to the reported
+              pack and recognition evidence — not a management pack alone, not an internal
+              controller close attestation alone, not "we’re audit-ready," not a dashboard green,
+              and not a CMMS checkbox. A report pack alone is not an audit opinion. An audit opinion
+              alone is not proof the named amount is reported in the pack. That refusal stops at the
+              named opinion. It does not ask whether that named audited period pack has been lodged
+              with the named regulator, registry, lender, or board filing channel, with a named
+              filing receipt, a filing timestamp, and an unbroken trail back to the audited pack.
+              The phrase audit record, in that essay, is not this filing. It is not "audit is done."
+              It is not a draft upload. It is not an email saying we sent it. It is not a dashboard
+              green. It is not a CMMS checkbox. Reported is not audited is a different refusal.
+              Audited is not filed is this refusal. This essay does not rewrite Reported Is Not
+              Audited. This essay does not collapse into Reported Is Not Audited. Keep reported
+              (named recognized amount in the named period report pack) from Reported Is Not Audited
+              distinct from audited and from filed.
+            </p>
+
+            <p>
+              The problem is the collapse. False confidence here is an audit opinion treated as a
+              filing, or a filing receipt treated as proof an independent opinion covers the named
+              line. A named opinion can exist while no lodging receipt exists for that
+              entity/period/channel. A lodging claim or a draft upload can exist while no
+              independent named opinion covers that period/entity/line. A firm can be audited and
+              still not filed (named opinion exists while no lodging receipt for that
+              entity/period/channel). A firm can chase filing theater and still not be audited (a
+              lodging claim or draft upload exists while no independent named opinion covers that
+              period/entity/line). An audit opinion alone is not a filing. A filing receipt alone is
+              not proof an independent opinion covers the named line. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. This essay separates an independent named
+              opinion or assurance conclusion from a named filing receipt. This essay does not
+              collapse into Reported Is Not Audited. This essay does not collapse into Recognized Is
+              Not Reported. This essay does not collapse into Collected Is Not Recognized. This
+              essay does not collapse into Closed Is Not Collected. This essay does not collapse
+              into Reconciled Is Not Closed. A practice record that says audited is filed is not
+              shown filed. Sync refuses to pretend auditing or filing is a status light. Sync does
+              not measure filing. Sync does not measure filing for the customer. Sync does not
+              measure auditing or filing for the customer. Sync does not file for the customer. Sync
+              must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not
+              auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must
+              not treat audited as filed as Learning credit. Direct plant execute stays off. CMMS
+              write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a filing record is allowed to be
+            </h2>
+
+            <p>
+              Evidence may cite an audit record when the source of that opinion is named, and when
+              the citation names the same entity and the same period, and when the citation says an
+              independent named auditor or assurance provider has issued a named opinion or
+              assurance conclusion on that named period’s financial statements (or named scoped
+              assertion) for that named entity, covering that named line (or the statements that
+              include it), with an unbroken evidence trail to the reported pack and the recognition
+              evidence. The audit record is about that opinion. It is not, by itself, a filing. It
+              is not "audit is done." It is not a draft upload. It is not an email saying we sent
+              it. It is not a dashboard green. It is not a CMMS checkbox. Evidence may cite a filing
+              record when the source of that lodging is named, and when the citation names the same
+              entity and the same period, and when the citation says that named audited period pack
+              (statements + named opinion/assurance conclusion as applicable) has been lodged with
+              the named regulator / registry / lender / board filing channel, with a named filing
+              receipt / confirmation, a filing timestamp, and an unbroken trail back to the audited
+              pack. The filing record is about that lodging. It is not, by itself, proof an
+              independent opinion covers the named line if no named auditor or assurance provider
+              has issued a named opinion on that period, entity, and line. A filing receipt alone is
+              not proof an independent opinion covers the named line. An audit opinion alone is not
+              a filing. If the evidence records that the named opinion exists while no lodging
+              receipt for that entity/period/channel, the case may store the note as audited and
+              must not store the note as filed. If the evidence records that a lodging claim or
+              draft upload exists while no independent named opinion covers that period/entity/line,
+              the case may store the note as filing theater and must not store the note as audited.
+              What a filing record is allowed to be is that named lodging, with the named channel,
+              the named receipt or confirmation, the filing timestamp, the named entity, the named
+              period, and an unbroken trail back to the audited pack. It is not an audit opinion
+              used as proof the pack was lodged. It is not permission to execute. Recommend is not
+              authorize. Evidence lineage is not optional. Human decision is not optional. Surfacing
+              is still a read. Sync refuses false precision. Sync must not auto-file. Sync must not
+              auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not
+              auto-collect. Sync must not auto-close-books. Sync does not file for the customer.
+              Sync does not audit for the customer. Sync does not report revenue for the customer.
+              Sync does not recognize revenue for the customer. Sync does not collect the named
+              receivable for the customer. Sync does not close books for the customer. Sync does not
+              measure filing for the customer. Sync does not measure auditing for the customer. Sync
+              does not reconcile for the customer. Sync does not book for the customer. Sync does
+              not settle claims for the customer. Sync does not pay for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not issue policies for the customer.
+              Sync does not issue certificates for the customer. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path. Keep reported (named recognized amount in the named period report pack) from
+              Reported Is Not Audited distinct from audited and from filed. A report record is not
+              stored as filed, and a filing receipt is not stored as reported.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named auditing is not filing
+            </h2>
+
+            <p>
+              Named auditing is not filing. The audited practice is not the filed practice. An audit
+              record answers whether an independent named auditor or assurance provider has issued a
+              named opinion or assurance conclusion covering that named line, with an unbroken
+              evidence trail to the reported pack and the recognition evidence. It does not, by
+              itself, show that the named audited period pack has been lodged with the named
+              regulator, registry, lender, or board filing channel, with a named filing receipt, a
+              filing timestamp, and an unbroken trail back to the audited pack. A record where the
+              named opinion exists while no lodging receipt for that entity/period/channel is still
+              auditing. It is not filing. A firm can be audited and still not filed. A record where
+              a lodging claim or draft upload exists while no independent named opinion covers that
+              period/entity/line is still filing theater. It is not auditing. A firm can chase
+              filing theater and still not be audited. An audit opinion alone is not a filing. A
+              filing receipt alone is not proof an independent opinion covers the named line. Not
+              "audit is done." Not a draft upload. Not an email saying we sent it. Not a dashboard
+              green. Not a CMMS checkbox. Not a management pack alone. Not an internal controller
+              close attestation alone. Not "we’re audit-ready." A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. This closed is a period/books close. It is
+              not the work-order / incident closed in Closed Is Not Resolved. This essay separates
+              an independent named opinion or assurance conclusion from a named filing receipt. Keep
+              reported (named recognized amount in the named period report pack) from Reported Is
+              Not Audited distinct from audited and from filed. Keep recognized (earning attested
+              under the named acceptance rule) from Recognized Is Not Reported distinct from
+              reported, from audited, and from filed.
+            </p>
+
+            <p>
+              This essay does not rewrite Reported Is Not Audited.
+              This essay does not rewrite Recognized Is Not Reported.
+              This essay does not rewrite Collected Is Not Recognized.
+              This essay does not rewrite Closed Is Not Collected.
+              This essay does not rewrite Reconciled Is Not Closed.
+              This essay does not rewrite Booked Is Not Reconciled.
+              This essay does not rewrite Settled Is Not Booked.
+              This essay does not rewrite Paid Is Not Settled.
+              This essay does not rewrite Covered Is Not Paid.
+              This essay does not rewrite Insured Is Not Covered.
+              This essay does not rewrite Certified Is Not Insured.
+              This essay does not rewrite Assured Is Not Certified.
+              This essay does not rewrite Recoverable Is Not Assured.
+              This essay does not rewrite Rehearsed Is Not Recoverable.
+              This essay does not rewrite Transferable Is Not Rehearsed.
+              This essay does not rewrite Governed Is Not Transferable.
+              This essay does not rewrite Owned Is Not Governed.
+              This essay does not rewrite Cash Is Not Margin.
+              This essay does not rewrite Closure Is Not Cash.
+              This essay does not rewrite Closed Is Not Resolved.
+              This essay does not rewrite Margin Is Not Profit.
+              This essay does not rewrite Assured Is Not Proven.
+              This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Green Is Not Go.
+              This essay does not collapse into Reported Is Not Audited.
+              This essay does not collapse into Recognized Is Not Reported.
+              This essay does not collapse into Collected Is Not Recognized.
+              This essay does not collapse into Closed Is Not Collected.
+              This essay does not collapse into Reconciled Is Not Closed.
+              This essay does not collapse into Booked Is Not Reconciled.
+              This essay does not collapse into Settled Is Not Booked.
+              This essay does not collapse into Paid Is Not Settled.
+              This essay does not collapse into Covered Is Not Paid.
+              This essay does not collapse into Insured Is Not Covered.
+              This essay does not collapse into Certified Is Not Insured.
+              This essay does not collapse into Assured Is Not Certified.
+              This essay does not collapse into Recoverable Is Not Assured.
+              This essay does not collapse into Rehearsed Is Not Recoverable.
+              This essay does not collapse into Transferable Is Not Rehearsed.
+              This essay does not collapse into Governed Is Not Transferable.
+              This essay does not collapse into Owned Is Not Governed.
+              This essay does not collapse into Cash Is Not Margin.
+              This essay does not collapse into Closure Is Not Cash.
+              This essay does not collapse into Closed Is Not Resolved.
+              This essay does not collapse into Margin Is Not Profit.
+              This essay does not collapse into Assured Is Not Proven.
+              This essay does not collapse into Verified Is Not Assured.
+              This essay does not collapse into Green Is Not Go.
+              This essay does not collapse filing into auditing.
+              This essay does not collapse audited into filed.
+              This essay does not collapse auditing into reporting.
+              This essay does not collapse reported into audited.
+              Sync does not measure filing. Sync does not measure filing for the customer. Sync
+              does not measure auditing or filing for the customer. Sync refuses to pretend
+              auditing or filing is a status light. Sync does not measure auditing. Sync does not
+              measure auditing for the customer. Sync does not file for the customer. Sync does not
+              audit for the customer. Sync does not report revenue for the customer. Sync does not
+              recognize revenue for the customer. Sync does not collect the named receivable for the
+              customer. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report.
+              Sync must not auto-recognize. Sync must not auto-collect. Sync must not
+              auto-close-books. Sync must not treat audited as filed as Learning credit. Sync must
+              not treat reported as audited as Learning credit. Sync must not treat recognized as
+              reported as Learning credit. Sync must not auto-reconcile. Sync must not auto-book.
+              Sync must not auto-settle. Sync must not auto-pay. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path. Field proof is the named trail, not the tile. A filing record without the named
+              channel, the named receipt or confirmation, the filing timestamp, the named entity,
+              the named period, and an unbroken trail back to the audited pack is not filed. An
+              audit record without the named auditor or assurance provider, the named opinion or
+              assurance conclusion, the named period, the named entity, the named line or the
+              statements that include it, and an unbroken evidence trail to the reported pack and
+              the recognition evidence is not audited. What changes Tuesday is the refusal to let
+              one record wear the other record’s name.
+            </p>
+
 
             <p>
               Reported is not audited. Reported means that named recognized amount appears in the named period report pack (management pack / board pack / statutory / lender pack as applicable) for the named entity with the named line, period, and preparer/attester, reconcilable to the recognition evidence — not a slide that restates cash, not a CMMS KPI tile, not a one-off spreadsheet export, not "finance said it’s in the books," and not a status light. Audited means an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Reported is not audited. A firm can be reported and still not audited (pack line and preparer/attester exist while no independent opinion covers that period/entity/line). A firm can chase audit theater and still not be reported (an opinion or readiness claim exists while the named recognized amount is omitted, mislined, or not reconcilable in the named pack). A report pack alone is not an audit opinion. An audit opinion alone is not proof the named amount is reported in the pack. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep recognized (earning attested under the named acceptance rule) from Recognized Is Not Reported distinct from reported and from audited. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized, from reported, and from audited. Keep the period/books close from Closed Is Not Collected distinct from the work-order / incident closed in Closed Is Not Resolved. Collected means cash for that named closed receivable / invoice / obligation has actually hit the named bank account (or named cleared settlement rail) in the named amount and currency, with a payment application trail tying the cash to the named closed item. Recognized means that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail. Recognized is not reported. Recognized Is Not Reported separates earned revenue recognized under the named acceptance rule from that named recognized amount in the named period report pack. This essay separates that named recognized amount in the named period report pack from an independent named opinion or assurance conclusion. A report pack alone is not an audit opinion. An audit opinion alone is not proof the named amount is reported. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend reporting or audit is a status light. Sync does not measure auditing. Sync does not measure auditing for the customer. Sync does not measure reporting or auditing for the customer. Sync does not measure reporting. Sync does not measure reporting for the customer. Sync does not measure recognition or reporting for the customer. Sync does not measure recognition. Sync does not measure recognition for the customer. Sync does not audit for the customer. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books, auto-collect, auto-recognize, auto-report, or auto-audit. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat reported as audited as Learning credit. Sync must not treat recognized as reported as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
@@ -12123,17 +12481,6 @@ export default function ReportedIsNotAuditedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/audited-is-not-filed"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Audited Is Not Filed
-              </Link>
-              , on why audited is still not filed. Audited is not filed. Audited means an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. A firm can be audited and still not filed (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase filing theater and still not be audited (a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line). An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep reported (named recognized amount in the named period report pack) from Reported Is Not Audited distinct from audited and from filed. Audited remains an independent named opinion or assurance conclusion on that named period. Reported Is Not Audited separates that named recognized amount in the named period report pack from that opinion. This essay separates an independent named opinion or assurance conclusion from a named filing receipt. An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. Sync does not measure auditing or filing for the customer. Sync does not measure filing. Sync does not measure filing for the customer. Sync must not auto-file. Sync must not treat audited as filed as Learning credit. Sync refuses to pretend auditing or filing is a status light. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -12193,7 +12540,7 @@ export default function ReportedIsNotAuditedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="reported-is-not-audited" />
+          <InsightNextSteps slug="audited-is-not-filed" />
         </motion.article>
       </div>
     </main>
