@@ -40,13 +40,13 @@ export default function JudgmentIsNotAuthorityPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Judgment is not authority. Authority is not accountability. A firm with judgment can still lack authority. A firm with authority can still lack judgment. A judgment note alone proves neither. An authority note alone proves neither. A judgment note is not a green. An authority note is not a green. A title without scope is not a green. A recommendation is not a green. Learning is not judgment. Results is not learning. Execution is not results. Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. A situated call is not the formal right to bind. A charter line is not the call. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window.
+              Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Judgment is not authority. Authority is not accountability. Accountability is not ownership. A firm with judgment can still lack authority. A firm with authority can still lack judgment. A judgment note alone proves neither. An authority note alone proves neither. A judgment note is not a green. An authority note is not a green. A title without scope is not a green. A recommendation is not a green. Learning is not judgment. Results is not learning. Execution is not results. Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. A situated call is not the formal right to bind. A charter line is not the call. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              Judgment is not authority. Authority is not accountability. Judgment is the situated call under incomplete information
+              Judgment is not authority. Authority is not accountability. Accountability is not ownership. Judgment is the situated call under incomplete information
               that commits plant work, capital, or risk now under a named decision owner and window —
               accountable choice with consequence, not an adopted rule sitting unused, a
               recommendation tile, a scored suggestion, or a learning note alone. Authority is the
@@ -123,7 +123,7 @@ export default function JudgmentIsNotAuthorityPage() {
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not learning.
-              Learning is not judgment. Judgment is not authority. Authority is not accountability. Each word can be true in its own
+              Learning is not judgment. Judgment is not authority. Authority is not accountability. Accountability is not ownership. Each word can be true in its own
               place. None of the earlier words fills the last one. A closed work order, cash
               collected, a unit remainder, a profit figure, a measured outcome, an attributed change
               in cash, risk, or capacity, a recognized sale, an annualized contract, a spendable
@@ -305,7 +305,7 @@ export default function JudgmentIsNotAuthorityPage() {
               under a named measurement window — consequence under the honesty and verification
               boundary, not the WO close, shipped-change ticket, or single verified plant check
               alone. Learning is tempered belief that changes future allocation. The results are not
-              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. An attributed
+              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. An attributed
               measured change under a named measurement window is not the formal right to bind.
             </p>
 
@@ -321,7 +321,7 @@ export default function JudgmentIsNotAuthorityPage() {
               plant result) — realized performance against the committed path, not the strategy note,
               roadmap slide, or allocated budget envelope alone. Results is consequence under the
               honesty and verification boundary. The execution is not results. The results are not
-              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. Completed work
+              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. Completed work
               inside the named decision window is not decision rights on the org chart or charter.
             </p>
 
@@ -337,7 +337,7 @@ export default function JudgmentIsNotAuthorityPage() {
               actually committing to execute — a committed path and resource allocation, not proof
               the work was completed inside that window. Execution is realized performance against
               that path. The strategy is not execution. The execution is not results. The results are
-              not learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. A committed
+              not learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. A committed
               path is not the formal right to bind. The accountable owner inside the strategy
               definition is not, by that naming, the holder of authority in this essay, and is not,
               by that naming, the named decision owner of the judgment definition.
@@ -357,7 +357,7 @@ export default function JudgmentIsNotAuthorityPage() {
               continuity, and cash may still block exercise). Strategy is a committed path, not a
               menu of unused rights. The optionality is not strategy. The strategy is not execution.
               The execution is not results. The results are not learning. The learning is not
-              judgment. The judgment is not authority. The authority is not accountability. Unused rights on paper are not decision rights
+              judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. Unused rights on paper are not decision rights
               on the org chart or charter.
             </p>
 
@@ -374,7 +374,7 @@ export default function JudgmentIsNotAuthorityPage() {
               change course, not merely to pay what is already due. Optionality is theoretical choice
               inventory. The flexibility is not optionality. The optionality is not strategy. The
               strategy is not execution. The execution is not results. The results are not learning.
-              The learning is not judgment. The judgment is not authority. The authority is not accountability. The ability to change
+              The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. The ability to change
               course is not the formal right to bind the firm within a defined scope and window.
             </p>
 
@@ -391,7 +391,7 @@ export default function JudgmentIsNotAuthorityPage() {
               inside a named decision window. The liquidity is not flexibility. The flexibility is
               not optionality. The optionality is not strategy. The strategy is not execution. The
               execution is not results. The results are not learning. The learning is not judgment.
-              The judgment is not authority. The authority is not accountability. Cash and near-cash that meet the near-term windows are
+              The judgment is not authority. The authority is not accountability. The accountability is not ownership. Cash and near-cash that meet the near-term windows are
               not authority.
             </p>
 
@@ -408,7 +408,7 @@ export default function JudgmentIsNotAuthorityPage() {
               near-cash can meet the near-term windows. The solvency is not liquidity. The liquidity
               is not flexibility. The flexibility is not optionality. The optionality is not
               strategy. The strategy is not execution. The execution is not results. The results are
-              not learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. Balance-sheet
+              not learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. Balance-sheet
               and claim quality over a structural horizon is not authority.
             </p>
 
@@ -426,7 +426,7 @@ export default function JudgmentIsNotAuthorityPage() {
               The solvency is not liquidity. The liquidity is not flexibility. The flexibility is not
               optionality. The optionality is not strategy. The strategy is not execution. The
               execution is not results. The results are not learning. The learning is not judgment.
-              The judgment is not authority. The authority is not accountability. Obligation continuity through the next decision horizon
+              The judgment is not authority. The authority is not accountability. The accountability is not ownership. Obligation continuity through the next decision horizon
               is not authority. That horizon is a different object from the named decision window
               under which learning asks whether the firm adopted what it will do next, from the named
               decision owner and window under which judgment asks whether the call commits plant
@@ -448,7 +448,7 @@ export default function JudgmentIsNotAuthorityPage() {
               survival is not solvency. The solvency is not liquidity. The liquidity is not
               flexibility. The flexibility is not optionality. The optionality is not strategy. The
               strategy is not execution. The execution is not results. The results are not learning.
-              The learning is not judgment. The judgment is not authority. The authority is not accountability. A duration at the current
+              The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. A duration at the current
               net burn is not the formal right to bind.
             </p>
 
@@ -465,7 +465,7 @@ export default function JudgmentIsNotAuthorityPage() {
               solvency. The solvency is not liquidity. The liquidity is not flexibility. The
               flexibility is not optionality. The optionality is not strategy. The strategy is not
               execution. The execution is not results. The results are not learning. The learning is
-              not judgment. The judgment is not authority. The authority is not accountability. Money received that can be spent now is
+              not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. Money received that can be spent now is
               not authority. Cash is not runway is a different refusal from this one.
             </p>
 
@@ -482,7 +482,7 @@ export default function JudgmentIsNotAuthorityPage() {
               The solvency is not liquidity. The liquidity is not flexibility. The flexibility is not
               optionality. The optionality is not strategy. The strategy is not execution. The
               execution is not results. The results are not learning. The learning is not judgment.
-              The judgment is not authority. The authority is not accountability. An annualized contract is not authority.
+              The judgment is not authority. The authority is not accountability. The accountability is not ownership. An annualized contract is not authority.
             </p>
 
             <p>
@@ -498,7 +498,7 @@ export default function JudgmentIsNotAuthorityPage() {
               The survival is not solvency. The solvency is not liquidity. The liquidity is not
               flexibility. The flexibility is not optionality. The optionality is not strategy. The
               strategy is not execution. The execution is not results. The results are not learning.
-              The learning is not judgment. The judgment is not authority. The authority is not accountability. A period booking is not
+              The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. A period booking is not
               the formal right to bind within a defined scope and window.
             </p>
 
@@ -515,7 +515,7 @@ export default function JudgmentIsNotAuthorityPage() {
               The solvency is not liquidity. The liquidity is not flexibility. The flexibility is not
               optionality. The optionality is not strategy. The strategy is not execution. The
               execution is not results. The results are not learning. The learning is not judgment.
-              The judgment is not authority. The authority is not accountability. An attributed change in cash, risk, or capacity is not,
+              The judgment is not authority. The authority is not accountability. The accountability is not ownership. An attributed change in cash, risk, or capacity is not,
               by that claim, the formal right to bind. Impact is not revenue is a different refusal.
               This essay does not rewrite that one, and it does not treat an impact claim as
               authority.
@@ -535,7 +535,7 @@ export default function JudgmentIsNotAuthorityPage() {
               survival. The survival is not solvency. The solvency is not liquidity. The liquidity is
               not flexibility. The flexibility is not optionality. The optionality is not strategy.
               The strategy is not execution. The execution is not results. The results are not
-              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. This essay does
+              learning. The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. This essay does
               not rewrite Outcome Is Not Impact. A measured outcome is not authority. A single
               verified plant check can be that kind of observation. It is still not the formal right
               to bind within a defined scope and window.
@@ -556,7 +556,7 @@ export default function JudgmentIsNotAuthorityPage() {
               survival is not solvency. The solvency is not liquidity. The liquidity is not
               flexibility. The flexibility is not optionality. The optionality is not strategy. The
               strategy is not execution. The execution is not results. The results are not learning.
-              The learning is not judgment. The judgment is not authority. The authority is not accountability. This essay does not rewrite
+              The learning is not judgment. The judgment is not authority. The authority is not accountability. The accountability is not ownership. This essay does not rewrite
               Value Is Not Outcome. Value is not authority. A verified change the case named is not,
               by that naming, the formal, named right to bind the firm.
             </p>
@@ -592,7 +592,7 @@ export default function JudgmentIsNotAuthorityPage() {
               is not margin. Cash is not runway. Runway is not survival. Survival is not solvency.
               Solvency is not liquidity. Liquidity is not flexibility. Flexibility is not
               optionality. Optionality is not strategy. Strategy is not execution. Execution is not
-              results. Results is not learning. Learning is not judgment. Judgment is not authority. Authority is not accountability.
+              results. Results is not learning. Learning is not judgment. Judgment is not authority. Authority is not accountability. Accountability is not ownership.
               A positive unit remainder beside a judgment note still does not show authority.
             </p>
 
@@ -874,7 +874,7 @@ export default function JudgmentIsNotAuthorityPage() {
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Judgment is not authority. Authority is not accountability. Judgment is the situated call under incomplete information
+              Judgment is not authority. Authority is not accountability. Accountability is not ownership. Judgment is the situated call under incomplete information
               that commits plant work, capital, or risk now under a named decision owner and window —
               accountable choice with consequence, not an adopted rule sitting unused, a
               recommendation tile, a scored suggestion, or a learning note alone. Authority is the
@@ -950,7 +950,7 @@ export default function JudgmentIsNotAuthorityPage() {
               survival. Survival is not solvency. Solvency is not liquidity. Liquidity is not
               flexibility. Flexibility is not optionality. Optionality is not strategy. Strategy is
               not execution. Execution is not results. Results is not learning. Learning is not
-              judgment. Judgment is not authority. Authority is not accountability.
+              judgment. Judgment is not authority. Authority is not accountability. Accountability is not ownership.
             </p>
 
             <p>
@@ -1598,7 +1598,7 @@ export default function JudgmentIsNotAuthorityPage() {
               >
                 Authority Is Not Accountability
               </Link>
-              , on why authority is still not accountability. Authority is the formal, named right to bind the firm within a defined scope and window — decision
+              , on why authority is still not accountability. Accountability is still not ownership. Authority is the formal, named right to bind the firm within a defined scope and window — decision
               rights on the org chart or charter. In the sentence this essay already fixed, that
               right is the formal, named right to bind the firm to plant work, capital, or risk
               within a defined scope and window — decision rights on the org chart or charter, not
