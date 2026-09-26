@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const recoverableIndex = slugs.indexOf('rehearsed-is-not-recoverable');
 const rehearsedIndex = slugs.indexOf('transferable-is-not-rehearsed');
 const transferableIndex = slugs.indexOf('governed-is-not-transferable');
 const governedIndex = slugs.indexOf('owned-is-not-governed');
@@ -74,7 +75,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    rehearsedIndex >= 0 &&
+    recoverableIndex >= 0 &&
+    rehearsedIndex > recoverableIndex &&
     transferableIndex > rehearsedIndex &&
     governedIndex > transferableIndex &&
     ownedIndex > governedIndex &&
@@ -129,7 +131,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -11646,6 +11648,140 @@ if (
   !transferablePage.includes('/insights/transferable-is-not-rehearsed')
 ) {
   fail('governed-is-not-transferable must point the series forward to transferable-is-not-rehearsed');
+}
+
+
+const recoverablePageRequired = [
+  ...rehearsedPageRequired,
+  'Rehearsed is not recoverable',
+  'after a real disruption (or a named recovery drill that actually breaks the live path)',
+  'the named successor restores the governed owned compounding system',
+  'to a named service level inside a named RTO/RPO',
+  'evidence continuity still holding under their authority',
+  'not a green tabletop score',
+  'not a laminated recovery card',
+  'not a hope that the old owner will pick up the phone',
+  'A firm can rehearse a handoff under load and still not be recoverable',
+  'drill passed, successor signed the checklist, but no proven restore',
+  'A firm can chase recoverability theater and still never have rehearsed the transfer',
+  'a disaster-recovery runbook that restores servers while ownership, exception authority, and residual claim stay with the departed owner',
+  'A tabletop pass alone is not recoverability',
+  'A backup job green light alone is not rehearsal',
+  'The rehearsed practice is not the recoverable practice',
+  'What a recovery note is allowed to be',
+  'Named rehearsal is not recoverability',
+  'Sync does not measure recoverability',
+  'Sync does not measure recoverability for the customer',
+  'Sync does not measure rehearsal or recoverability for the customer',
+  'Sync must not auto-transfer ownership, auto-declare RTO met, or auto-credit Learning for an unrecovered handoff',
+  'Sync must not auto-declare RTO met',
+  'Sync must not auto-credit Learning for an unrecovered handoff',
+  'Sync may surface a rehearsal/drill note or a recovery/restore note',
+  'does not collapse recoverability into rehearsal',
+  'does not collapse rehearsed into recoverable',
+  'does not rewrite Transferable Is Not Rehearsed',
+  'does not collapse into Transferable Is Not Rehearsed',
+  'practice record that says rehearsed is recoverable',
+  'rehearsed as recoverable',
+  'separates a rehearsed handoff from recoverability of that governed owned compounding system',
+  '/insights/transferable-is-not-rehearsed',
+  'Evidence from the plant beats the rehearsal note when the note is being used as recoverability',
+  'Evidence from the plant beats the recovery note when the note is being used as rehearsal',
+  'treat rehearsed as recoverable as Learning credit',
+  'Sync refuses to pretend rehearsal or recoverability is a status light',
+  'Direct plant execute stays off',
+  'CMMS write-back is not a live product path',
+  'Billing write-back is not a live product path',
+];
+const recoverablePage = read('app/insights/rehearsed-is-not-recoverable/page.tsx');
+for (const required of recoverablePageRequired) {
+  if (!recoverablePage.includes(required)) {
+    fail(`rehearsed-is-not-recoverable page must include ${required}`);
+  }
+}
+
+for (const slug of [
+  'transferable-is-not-rehearsed',
+  'governed-is-not-transferable',
+  'owned-is-not-governed',
+  'compounded-is-not-owned',
+  'scaled-is-not-compounded',
+  'sustained-is-not-scaled',
+  'adopted-is-not-sustained',
+  'trusted-is-not-adopted',
+  'proven-is-not-trusted',
+  'resolved-is-not-proven',
+  'closed-is-not-resolved',
+  'executed-is-not-closed',
+  'authorized-is-not-executed',
+  'verified-is-not-authorized',
+  'action-is-not-execution',
+  'simulation-is-not-proof',
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes('rehearsed-is-not-recoverable')) {
+    fail(`${slug} related reading must cite rehearsed-is-not-recoverable`);
+  }
+}
+
+const recoverableBlock = stepBlock('rehearsed-is-not-recoverable');
+for (const required of ['transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!recoverableBlock.includes(`'${required}'`)) {
+    fail(`rehearsed-is-not-recoverable related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(recoverableBlock)) {
+  fail('rehearsed-is-not-recoverable related reading must include the Strategic Pilot');
+}
+if (recoverableBlock.includes("next: 'strategic-pilot'")) {
+  fail('rehearsed-is-not-recoverable next step is the Field Manual');
+}
+
+if (
+  !rehearsedPage.includes('The series continues with') ||
+  !rehearsedPage.includes('/insights/rehearsed-is-not-recoverable')
+) {
+  fail('transferable-is-not-rehearsed must point the series forward to rehearsed-is-not-recoverable');
 }
 
 function readingSlugs(name) {
