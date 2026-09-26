@@ -634,6 +634,23 @@ export default function SuccessorRemediatedIsNotReleasedPage() {
             measured result. The remediation note does not record release.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-released-is-not-recorded"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Released Is Not Recorded
+            </Link>{' '}
+            on why released is still not recorded. That next refusal is instrument-required
+            release / close-out that returns the remediated successor obligations into the named
+            operating / warranty / successor window as released for continued hold versus
+            instrument-required recording of that release into the named operating / warranty /
+            successor register / evidence ledger so the released successor obligations stay on-file
+            for the remaining window. It is not the filing-spine essay at
+            /insights/released-is-not-recorded.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
