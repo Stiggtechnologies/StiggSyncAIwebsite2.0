@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const transferableIndex = slugs.indexOf('governed-is-not-transferable');
 const governedIndex = slugs.indexOf('owned-is-not-governed');
 const ownedIndex = slugs.indexOf('compounded-is-not-owned');
 const compoundedIndex = slugs.indexOf('scaled-is-not-compounded');
@@ -72,7 +73,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    governedIndex >= 0 &&
+    transferableIndex >= 0 &&
+    governedIndex > transferableIndex &&
     ownedIndex > governedIndex &&
     compoundedIndex > ownedIndex &&
     scaledIndex > compoundedIndex &&
@@ -125,7 +127,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -11363,6 +11365,151 @@ if (
   !ownedPage.includes('/insights/owned-is-not-governed')
 ) {
   fail('compounded-is-not-owned must point the series forward to owned-is-not-governed');
+}
+
+
+const transferablePageRequired = [
+  ...governedPageRequired,
+  'Governed is not transferable',
+  'stays safe and compliant under named stress',
+  'not a binder nobody practices',
+  "someone's name is on it",
+  'can change hands',
+  'successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff',
+  'evidence continuity',
+  'playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail',
+  'under the new named owner within a named window',
+  'someone will figure it out',
+  'not a RACI update with no rehearsal',
+  'the departing owner takes in their head',
+  'A firm can govern a practice tightly on one line and still not make it transferable',
+  'rules exist only while the current owner is present',
+  'succession is untested',
+  'exception authority dies with a contractor',
+  'A firm can transfer a thin ritual and still never have governed the compounding system that actually runs the plant',
+  'A succession plan PDF alone is not transferability',
+  'A governance binder alone is not transfer',
+  'The governed practice is not the transferable practice',
+  'What a transfer note is allowed to be',
+  'Named governance is not transferability',
+  'Sync does not measure transferability',
+  'Sync does not measure transferability for the customer',
+  'Sync does not measure governance or transferability for the customer',
+  'Sync must not auto-assign owners, auto-approve governed actions, or auto-transfer ownership',
+  'Sync must not auto-transfer ownership',
+  'Sync may surface a governance/rules-of-engagement note or a transfer/handoff note',
+  'does not collapse transferability into governance',
+  'does not collapse governed into transferable',
+  'does not rewrite Owned Is Not Governed',
+  'does not rewrite Compounded Is Not Owned',
+  'does not rewrite Ownership Is Not Control',
+  'does not rewrite Control Is Not Closure',
+  'does not rewrite Accountability Is Not Ownership',
+  'does not rewrite Verified Is Not Authorized',
+  'does not rewrite Green Is Not Go',
+  'practice record that says governed is transferable',
+  'governed as transferable',
+  'separates a governed owned compounding system from transfer of that system',
+  '/insights/owned-is-not-governed',
+  'does not collapse into Owned Is Not Governed',
+  'does not collapse into Compounded Is Not Owned',
+  'does not collapse into Ownership Is Not Control',
+  'does not collapse into Control Is Not Closure',
+  'does not collapse into Accountability Is Not Ownership',
+  'does not collapse into Verified Is Not Authorized',
+  'does not collapse into Green Is Not Go',
+  'Evidence from the plant beats the governance note when the note is being used as transferability',
+  'Evidence from the plant beats the transfer note when the note is being used as governance',
+  'treat governed as transferable as Learning credit',
+  'Sync refuses to pretend governance or transferability is a status light',
+];
+const transferablePage = read('app/insights/governed-is-not-transferable/page.tsx');
+for (const required of transferablePageRequired) {
+  if (!transferablePage.includes(required)) {
+    fail(`governed-is-not-transferable page must include ${required}`);
+  }
+}
+
+for (const slug of [
+  'owned-is-not-governed',
+  'compounded-is-not-owned',
+  'scaled-is-not-compounded',
+  'sustained-is-not-scaled',
+  'adopted-is-not-sustained',
+  'trusted-is-not-adopted',
+  'proven-is-not-trusted',
+  'resolved-is-not-proven',
+  'closed-is-not-resolved',
+  'executed-is-not-closed',
+  'authorized-is-not-executed',
+  'verified-is-not-authorized',
+  'action-is-not-execution',
+  'simulation-is-not-proof',
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes('governed-is-not-transferable')) {
+    fail(`${slug} related reading must cite governed-is-not-transferable`);
+  }
+}
+
+const transferableBlock = stepBlock('governed-is-not-transferable');
+for (const required of ['owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!transferableBlock.includes(`'${required}'`)) {
+    fail(`governed-is-not-transferable related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(transferableBlock)) {
+  fail('governed-is-not-transferable related reading must include the Strategic Pilot');
+}
+if (transferableBlock.includes("next: 'strategic-pilot'")) {
+  fail('governed-is-not-transferable next step is the Field Manual');
+}
+
+if (
+  !governedPage.includes('The series continues with') ||
+  !governedPage.includes('/insights/governed-is-not-transferable')
+) {
+  fail('owned-is-not-governed must point the series forward to governed-is-not-transferable');
 }
 
 function readingSlugs(name) {
