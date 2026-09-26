@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('judgment-is-not-authority');
+const article = getInsightArticle('authority-is-not-accountability');
 
-export default function JudgmentIsNotAuthorityPage() {
+export default function AuthorityIsNotAccountabilityPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,7 @@ export default function JudgmentIsNotAuthorityPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Judgment Is Not Authority</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Authority Is Not Accountability</h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -40,16 +40,42 @@ export default function JudgmentIsNotAuthorityPage() {
               </p>
             ) : null}
             <p className="text-xl text-gray-400">
-              Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Judgment is not authority. Authority is not accountability. A firm with judgment can still lack authority. A firm with authority can still lack judgment. A judgment note alone proves neither. An authority note alone proves neither. A judgment note is not a green. An authority note is not a green. A title without scope is not a green. A recommendation is not a green. Learning is not judgment. Results is not learning. Execution is not results. Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. A situated call is not the formal right to bind. A charter line is not the call. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window.
+              Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that named the right, not a title, and not sitting with the result without the right to bind. Authority is not accountability. A firm with authority can still lack accountability. A firm with accountability can still lack authority. An authority note alone proves neither. An accountability note alone proves neither. An authority note is not a green. An accountability note is not a green. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Judgment is not authority. A situated call is not the formal right to bind. A charter line is not the outcome owner. Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window.
             </p>
           </header>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              Judgment is not authority. Authority is not accountability. Judgment is the situated call under incomplete information
-              that commits plant work, capital, or risk now under a named decision owner and window —
-              accountable choice with consequence, not an adopted rule sitting unused, a
-              recommendation tile, a scored suggestion, or a learning note alone. Authority is the
+              Authority is not accountability. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org
+              chart or charter. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that
+              named the right, not a title, and not sitting with the result without the right to
+              bind. A firm with authority can still lack accountability when that formal right is on
+              the record and the firm has not named who owns the outcome of that bound decision. A
+              firm with accountability can still lack authority when that outcome owner is on the
+              record and the firm has not named the formal right to bind within a defined scope and
+              window. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Treating authority as accountability records a formal right to bind as
+              a claim about who answers for results, misses, and remediation that nobody has named,
+              under the honesty and verification boundary. An authority note can inform a
+              recommendation to investigate. Recommend is not authorize. It is not the plant, not a
+              diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case
+              that has already shown accountability. Evidence from the plant beats the authority note
+              when the note is being used as accountability. Sync may surface an authority/decision-rights note or an accountability/outcome-owner note beside Evidence, Verification, and the closed outcome. Sync may surface an authority/decision-rights note or an accountability/outcome-owner note beside Evidence/Verification/closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync must not auto-close, auto-authorize, or treat authority
+              as accountability as Learning credit. Sync does not measure authority. Sync does not measure accountability. Sync does not
+              measure authority for the customer. Sync does not measure accountability. Sync does not
+              measure accountability for the customer. This essay does not collapse accountability into authority. This essay does not rewrite Judgment Is Not Authority. Authorization Is
+              Not Accountability already refuses to treat who may start as ownership after the work
+              runs. Accountability Is Not Closure already names the continuing named ownership of
+              results, exceptions, and learning after the plant move, and refuses to treat that
+              ownership as the verified close. This essay does not rewrite either. Here, accountability
+              is owning the outcome of the bound decision — who answers for results, misses, and
+              remediation. The charter is not that owner. A practice record that says authority is accountability is not a customer plant release, and it is not shown accountability.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              The prior essay kept a different split. Judgment is not authority. Authority is not accountability. Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. Authority is the
               formal, named right to bind the firm to plant work, capital, or risk within a defined
               scope and window — decision rights on the org chart or charter, not the quality of the
               call, not a title without scope, not a recommendation, and not judgment sitting with
@@ -85,7 +111,7 @@ export default function JudgmentIsNotAuthorityPage() {
               measure results. Sync does not measure results for the customer. Sync does not measure
               learning. Sync does not measure learning for the customer. Sync does not measure
               judgment. Sync does not measure judgment for the customer. Sync does not measure
-              authority. Sync does not measure authority for the customer. Sync does not collect
+              authority. Sync does not measure authority for the customer. Sync does not measure accountability. Sync does not measure accountability for the customer. Sync does not collect
               cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not
               execute plant work.
             </p>
@@ -176,7 +202,7 @@ export default function JudgmentIsNotAuthorityPage() {
             </p>
 
             <p>
-              Flexibility is not optionality. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. Liquidity is not flexibility. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. Solvency is not liquidity. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. Survival is not solvency. Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. Runway is not survival. Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. Cash is not runway. Cash is money received (collected) that can be spent now. ARR is not cash. ARR is the annualized value of recurring contracted subscription revenue that renews. Revenue is not ARR. Impact is not revenue. Outcome is not impact. Value is not outcome. Profit is not value. Margin is not profit. Contribution margin is not bottom-line profit. Cash is not margin. Closure is not cash. Optionality is not strategy. Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). Strategy, in that earlier essay, is a committed path, not a menu of unused rights. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync does not measure solvency for the customer. Sync does not measure liquidity for the customer. Sync does not measure flexibility for the customer. Sync does not measure optionality for the customer. Sync does not measure strategy for the customer. Sync does not measure execution for the customer. Sync does not measure results for the customer. Sync does not measure learning for the customer. Sync does not measure judgment for the customer. Sync does not measure authority for the customer. Sync does not attribute a change in cash, risk, or capacity. Sync does not collect cash. Those checks do not show authority.
+              Flexibility is not optionality. Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. Liquidity is not flexibility. Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. Solvency is not liquidity. Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. Survival is not solvency. Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. Runway is not survival. Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. Cash is not runway. Cash is money received (collected) that can be spent now. ARR is not cash. ARR is the annualized value of recurring contracted subscription revenue that renews. Revenue is not ARR. Impact is not revenue. Outcome is not impact. Value is not outcome. Profit is not value. Margin is not profit. Contribution margin is not bottom-line profit. Cash is not margin. Closure is not cash. Optionality is not strategy. Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). Strategy, in that earlier essay, is a committed path, not a menu of unused rights. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync does not measure solvency for the customer. Sync does not measure liquidity for the customer. Sync does not measure flexibility for the customer. Sync does not measure optionality for the customer. Sync does not measure strategy for the customer. Sync does not measure execution for the customer. Sync does not measure results for the customer. Sync does not measure learning for the customer. Sync does not measure judgment for the customer. Sync does not measure authority for the customer. Sync does not measure accountability. Sync does not measure accountability for the customer. Sync does not attribute a change in cash, risk, or capacity. Sync does not collect cash. Those checks do not show authority. Those checks do not show accountability.
             </p>
 
             <p>
@@ -222,7 +248,7 @@ export default function JudgmentIsNotAuthorityPage() {
               <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
                 /manuals
               </Link>
-              . This essay is why judgment cannot be read as authority. The{' '}
+              . Judgment Is Not Authority is why judgment cannot be read as authority. This essay is why authority cannot be read as accountability. The{' '}
               <Link
                 href={fieldManualPath('evidence')}
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -261,16 +287,41 @@ export default function JudgmentIsNotAuthorityPage() {
               </Link>{' '}
               chapter keeps the closed case: achieved, not_achieved, or inconclusive, with measured
               notes. That chapter name is the step in the order. It is not, by the step name, this
-              essay definition of judgment, and it is not this essay definition of authority. None of
-              those steps shows authority. None of them treats judgment as authority. None of them
-              measures judgment for the customer. None of them measures authority for the customer.
+              essay definition of authority, and it is not this essay definition of accountability. None of
+              those steps shows accountability. None of them treats authority as accountability. None of them treats judgment as authority. None of them
+              measures judgment for the customer. None of them measures authority for the customer. None of them measures accountability for the customer.
               None of them attributes cash, risk, or capacity. None of them binds the firm for the
               customer.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A situated call is not the right to bind
+              The right to bind is not the outcome owner
             </h2>
+
+
+            <p>
+              <Link
+                href="/insights/judgment-is-not-authority"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Judgment Is Not Authority
+              </Link>{' '}
+              sits one step earlier. Judgment is the situated call under incomplete information that
+              commits plant work, capital, or risk now under a named decision owner and window —
+              accountable choice with consequence, not an adopted rule sitting unused, a
+              recommendation tile, a scored suggestion, or a learning note alone. Authority, there,
+              is the formal, named right to bind the firm to plant work, capital, or risk within a
+              defined scope and window — decision rights on the org chart or charter, not the quality
+              of the call, not a title without scope, not a recommendation, and not judgment sitting
+              with someone who cannot bind. A firm with judgment can still lack authority. A firm
+              with authority can still lack judgment. This essay starts after that split has been
+              kept. Judgment is not authority. The next refusal is that authority is not
+              accountability. The formal right can be on the charter within a defined scope and
+              window, and the firm can still have no one who owns the outcome of that bound decision
+              — who answers for results, misses, and remediation. Someone can sit with the result,
+              and the firm can still lack the right to bind. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Judgment is not authority is a
+              different refusal. This essay does not rewrite Judgment Is Not Authority.
+            </p>
 
             <p>
               <Link
@@ -279,14 +330,13 @@ export default function JudgmentIsNotAuthorityPage() {
               >
                 Learning Is Not Judgment
               </Link>{' '}
-              sits one step earlier. Learning is an updated decision rule, model, or operating
+              sits one step before that. Learning is an updated decision rule, model, or operating
               practice the firm adopts because a verified result changed what it will do next under a
               named decision window — tempered belief that changes future allocation, not a dashboard
               tile, a learning_events row, a retrospective note, or a results number sitting unread.
               Judgment, there, is the situated call under incomplete information. A firm with
               learning can still lack judgment. A firm with judgment can still lack learning. This
-              essay starts after that split has been kept. Learning is not judgment. The next refusal
-              is that judgment is not authority. The call can be on the record under the named
+              essay starts after that split has been kept. Learning is not judgment. That essay kept the refusal that judgment is not authority. The refusal in this essay is that authority is not accountability. The call can be on the record under the named
               decision owner and window, and the formal right to bind within a defined scope and
               window can still be absent. That right can be on a charter, and the situated call can
               still be absent. Learning is not judgment is a different refusal. This essay does not
@@ -633,7 +683,7 @@ export default function JudgmentIsNotAuthorityPage() {
               the right was stated within a defined scope and window. The firm can still lack
               judgment, because that right is not, by itself, the accountable choice under incomplete
               information. A judgment note alone proves neither the call as authority nor the right
-              as judgment. An authority note alone proves neither.
+              as judgment. An authority note alone proves neither. An accountability note alone proves neither.
             </p>
 
             <p>
@@ -683,8 +733,7 @@ export default function JudgmentIsNotAuthorityPage() {
               still not survival. Survival is still not solvency. Solvency is still not liquidity.
               Liquidity is still not flexibility. Flexibility is still not optionality. Optionality
               is still not strategy. Strategy is still not execution. Execution is still not results.
-              Results is still not learning. Learning is still not judgment. Judgment is still not
-              authority. Margin is not profit. Profit is not value. A shutdown can collect cash, show
+              Results is still not learning.               Learning is still not judgment. Judgment is still not authority. Authority is still not accountability. Margin is not profit. Profit is not value. A shutdown can collect cash, show
               a margin, print a profit, store a measured outcome, carry an impact claim, recognize a
               sale, hold an ARR figure, state a runway, meet obligations through the next decision
               horizon, state that assets and claims cover liabilities, meet the near-term windows,
@@ -722,7 +771,7 @@ export default function JudgmentIsNotAuthorityPage() {
               not measure solvency. Sync does not measure liquidity. Sync does not measure
               flexibility. Sync does not measure optionality. Sync does not measure strategy. Sync
               does not measure execution. Sync does not measure results. Sync does not measure
-              learning. Sync does not measure judgment. Sync does not measure authority. Sync does
+              learning. Sync does not measure judgment. Sync does not measure authority. Sync does not measure accountability. Sync does
               not collect cash. Direct plant execute stays off.
             </p>
 
@@ -734,8 +783,26 @@ export default function JudgmentIsNotAuthorityPage() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Authority is the formal, named right to bind
+              Accountability is owning the outcome of the bound decision
             </h2>
+
+            <p>
+              Accountability is not a property of the authority note. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not
+              the charter that named the right, not a title, and not sitting with the result without
+              the right to bind. The owner, in this essay, is the named person who answers for
+              results, misses, and remediation after the right has bound the firm. It is not the
+              formal right by itself. It is not the quality of the call. It is not a title. A charter
+              without an outcome owner is not accountability. Sitting with the result without the
+              right to bind is not authority. A title is neither. Authority is the formal, named right to bind the firm within a defined scope and window — decision
+              rights on the org chart or charter. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Naming the right does not
+              name the owner. Naming the owner does not confer the right. Accountability Is Not
+              Closure already names the continuing named ownership of results, exceptions, and
+              learning after the plant move. This essay uses that duty as owning the outcome of the
+              bound decision. It does not rewrite Accountability Is Not Closure. Authorization Is Not
+              Accountability already refuses to treat who may start as that ownership. Who may start
+              is not the formal right to bind, and the formal right to bind is not the outcome owner.
+              This essay does not rewrite Authorization Is Not Accountability.
+            </p>
 
             <p>
               Authority is not a property of the judgment note. Authority is the formal, named right
@@ -780,7 +847,7 @@ export default function JudgmentIsNotAuthorityPage() {
               the firm to plant work, capital, or risk within a defined scope and window. That
               question does not prove the situated call was made, and a judgment note alone proves
               neither the formal right nor the accountable choice as the other claim. A judgment note
-              is not a green. An authority note is not a green. A title without scope is not a green.
+              is not a green. An authority note is not a green. An accountability note is not a green. A title without scope is not a green.
               A recommendation is not a green. An adopted rule sitting unused is not a green. A
               recommendation tile is not a green. A scored suggestion is not a green. A dashboard
               tile is not a green. A learning_events row is not a green. A retrospective note is not
@@ -885,8 +952,8 @@ export default function JudgmentIsNotAuthorityPage() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              A firm with judgment can still lack authority, and a firm with authority can still lack
-              judgment
+              A firm with authority can still lack accountability, and a firm with accountability can
+              still lack authority
             </h2>
 
             <p>
@@ -962,7 +1029,7 @@ export default function JudgmentIsNotAuthorityPage() {
               </Link>{' '}
               already refuses to treat a green tile as permission to run, clear, start, or leave
               equipment in service. An authority note painted beside that tile is not a stronger
-              green. A judgment note is not a green. An authority note is not a green. A title
+              green. A judgment note is not a green. An authority note is not a green. An accountability note is not a green. A title
               without scope is not a green. A recommendation is not a green. An adopted rule sitting
               unused is not a green. A recommendation tile is not a green. A scored suggestion is not
               a green. A dashboard tile is not a green. A learning_events row is not a green. A
@@ -1030,8 +1097,8 @@ export default function JudgmentIsNotAuthorityPage() {
               title without scope as a green is the same confusion. Treating an authority note as a
               green is the same confusion. Treating the quality of the call as the right is the same
               confusion. A judgment note does not repair any of those misses. Sync refuses false
-              precision. Sync refuses when evidence is insufficient. Sync does not measure authority.
-              Sync does not measure authority for the customer. Sync does not measure judgment. Sync
+              precision. Sync refuses when evidence is insufficient. Sync does not measure authority. Sync does not measure accountability.
+              Sync does not measure authority for the customer. Sync does not measure accountability. Sync does not measure accountability for the customer. Sync does not measure judgment. Sync
               does not measure judgment for the customer. Sync does not measure learning. Sync does
               not measure learning for the customer. Sync does not measure results. Sync does not
               measure results for the customer. Sync does not measure execution. Sync does not
@@ -1055,11 +1122,11 @@ export default function JudgmentIsNotAuthorityPage() {
               scope and window. A firm with authority can still lack judgment when that right is not
               the situated call under incomplete information that commits plant work, capital, or
               risk now under a named decision owner and window. A judgment note alone proves neither.
-              An authority note alone proves neither.
+              An authority note alone proves neither. An accountability note alone proves neither.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Surfacing a judgment note or an authority note is still a read
+              Surfacing an authority note or an accountability note is still a read
             </h2>
 
             <p>
@@ -1178,7 +1245,7 @@ export default function JudgmentIsNotAuthorityPage() {
               solvency. Sync does not measure liquidity. Sync does not measure flexibility. Sync does
               not measure optionality. Sync does not measure strategy. Sync does not measure
               execution. Sync does not measure results. Sync does not measure learning. Sync does not
-              measure judgment. Sync does not measure authority. Sync does not collect cash.
+              measure judgment. Sync does not measure authority. Sync does not measure accountability. Sync does not collect cash.
             </p>
 
             <p className="text-xl font-semibold text-white">
@@ -1291,7 +1358,7 @@ export default function JudgmentIsNotAuthorityPage() {
               strategy for the customer, measures execution, measures execution for the customer,
               measures results, measures results for the customer, measures learning, measures
               learning for the customer, measures judgment, measures judgment for the customer,
-              measures authority, measures authority for the customer, collects cash, or attributes a
+              measures authority, measures authority for the customer, measures accountability, measures accountability for the customer, collects cash, or attributes a
               change in cash, risk, or capacity. It does not claim that Sync executes plant work. It
               does not claim CMMS write-back as a shipped product. It does not claim billing
               write-back as a shipped product. It does not invent a customer, a price, or a return.
@@ -1366,6 +1433,14 @@ export default function JudgmentIsNotAuthorityPage() {
 
             <p>
               Companion reading:{' '}
+              <Link
+                href="/insights/judgment-is-not-authority"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Judgment Is Not Authority
+              </Link>{' '}
+              on why the situated call under a named decision owner and window is not the formal
+              right to bind within a defined scope and window,{' '}
               <Link
                 href="/insights/learning-is-not-judgment"
                 className="text-[#3B82F6] hover:text-white transition-colors"
@@ -1590,25 +1665,6 @@ export default function JudgmentIsNotAuthorityPage() {
             </p>
 
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/authority-is-not-accountability"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Authority Is Not Accountability
-              </Link>
-              , on why authority is still not accountability. Authority is the formal, named right to bind the firm within a defined scope and window — decision
-              rights on the org chart or charter. In the sentence this essay already fixed, that
-              right is the formal, named right to bind the firm to plant work, capital, or risk
-              within a defined scope and window — decision rights on the org chart or charter, not
-              the quality of the call, not a title without scope, not a recommendation, and not
-              judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. A firm with
-              authority can still lack accountability when that right is not the outcome owner. A
-              firm with accountability can still lack authority. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. An authority note alone
-              proves neither. An accountability note alone proves neither. An authority note is not
-              a green. An accountability note is not a green.
-            </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
@@ -1635,7 +1691,7 @@ export default function JudgmentIsNotAuthorityPage() {
                 customer, measures execution, measures execution for the customer, measures results,
                 measures results for the customer, measures learning, measures learning for the
                 customer, measures judgment, measures judgment for the customer, measures authority,
-                measures authority for the customer, collects cash, attributes cash, risk, or
+                measures authority for the customer, measures accountability, measures accountability for the customer, collects cash, attributes cash, risk, or
                 capacity, declares a return, that CMMS write-back is live, that billing write-back is
                 live, or that self-guided onboarding is a live product path.
               </p>
@@ -1661,7 +1717,7 @@ export default function JudgmentIsNotAuthorityPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="judgment-is-not-authority" />
+          <InsightNextSteps slug="authority-is-not-accountability" />
         </motion.article>
       </div>
     </main>
