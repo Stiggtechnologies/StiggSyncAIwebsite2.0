@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('recoverable-is-not-assured');
+const article = getInsightArticle('assured-is-not-certified');
 
-export default function RecoverableIsNotAssuredPage() {
+export default function AssuredIsNotCertifiedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,335 @@ export default function RecoverableIsNotAssuredPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Recoverable Is Not Assured</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Assured Is Not Certified</h1>
+
+            <p className="text-xl text-gray-400">
+              Assured is not certified. Assured means independent, recurring verification that recovery
+              capability still holds under the current named owner, tooling rights, exception paths, and evidence
+              continuity — a dated assurance record that the restore path was re-proven inside the named window,
+              with residual gaps closed — not a one-time restore credit from last year’s drill, not a binder that
+              says "DR tested," and not a status light that never re-broke the live path. Certified means a
+              third-party or internal program stamp that a recovery/continuity program exists or once met a named
+              checklist (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge) — not the
+              same as re-proving restore under today’s named owner inside the named window with evidence continuity
+              intact. Assured is not certified. A firm can be assured and still not certified (dated owner-side
+              re-prove of restore in window, no external stamp). A firm can chase certification theater and still
+              not be assured (annual DR certificate while the restore path has not been re-broken and re-proven
+              under the current owner inside the named window). A certificate alone is not assurance. An assurance
+              record alone is not certification. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Keep them apart: a certificate alone is not assurance; an assurance record alone is not
+              certification; a CMMS checkbox, ticket state, status light, or one-off clear is neither. Recoverable
+              is not assured. Recoverable remains a proven restore to a named service level inside a named RTO/RPO
+              with evidence under the new owner. Recommend is not authorize. Evidence lineage is not optional.
+              Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read.
+              Sync refuses false precision. Sync refuses to pretend assurance or certification is a status light.
+              Sync does not measure assurance. Sync does not measure assurance for the customer. Sync does not
+              measure certification. Sync does not measure certification for the customer. Sync does not measure
+              assurance or certification for the customer. Sync does not issue assurance for the customer. Sync
+              does not issue certificates for the customer. Sync must not auto-transfer ownership, auto-declare RTO
+              met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, or auto-issue
+              certificates. Sync must not auto-transfer ownership. Sync must not auto-declare RTO met. Sync must
+              not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync must
+              not auto-issue certificates. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners, auto-approve
+              governed actions, auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, or auto-issue certificates.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not closure.
+              Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not
+              authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is
+              not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not
+              scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not
+              transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Recoverable is not
+              assured. Assured is not certified. Assured, in the prior essay, means independent, recurring
+              verification that recovery capability still holds under the current named owner, tooling rights,
+              exception paths, and evidence continuity. Recoverable, there, means after a real disruption (or a
+              named recovery drill that actually breaks the live path), the named successor restores the governed
+              owned compounding system to a named service level inside a named RTO/RPO with evidence continuity
+              still holding under their authority. That sentence is the prior refusal. The words dated assurance
+              record in that sentence name a restore path re-proven inside the named window, with residual gaps
+              closed. They do not name a third-party or internal program stamp. They do not show an ISO/SOC/DR
+              cert, an annual auditor letter, or a laminated "certified recoverable" badge. This essay does not
+              rewrite that sentence. This essay does not collapse into that split. Recoverability versus assurance
+              is the prior refusal. This essay separates a dated assurance record from a certification stamp. A
+              dated owner-side re-prove of restore in window is not evidence a program stamp was issued. An annual
+              DR certificate is not assurance, and a laminated "certified recoverable" badge is not a restore path
+              re-broken and re-proven under the current owner.{' '}
+                            <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>{' '}
+              keeps a one-time restore inside a named RTO/RPO off independent, recurring verification that recovery
+              still holds. Read the prior essay at /insights/recoverable-is-not-assured. Rehearsed Is Not
+              Recoverable keeps a rehearsed handoff off a proven restore to a named service level inside a named
+              RTO/RPO. Transferable Is Not Rehearsed keeps a transferable governed owned compounding system off a
+              handoff run under stress. Governed Is Not Transferable keeps a governed owned compounding system off
+              evidence continuity under a new named owner. Owned Is Not Governed keeps a named owner of the
+              compounding system off rules of engagement. Assured Is Not Proven keeps time-bounded confidence that
+              an asset stays known-good under operating conditions off a closed evidentiary chain for a specific
+              claim. Verified Is Not Assured keeps an independent check off standing assurance. Green Is Not Go
+              keeps a status light off permission to run. None of those refusals is this split. A certificate is
+              not this assurance. An assurance record is not this certification. This assurance is independent,
+              recurring verification that recovery capability still holds. This certification is a program stamp
+              that a recovery/continuity program exists or once met a named checklist. Recommend Is Not Authorize,
+              Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may
+              surface an assurance record or a certification stamp beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is
+              insufficient. Sync refuses to pretend assurance or certification is a status light. Sync must not
+              auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff,
+              auto-issue assurance, or auto-issue certificates. Sync must not auto-close, auto-authorize,
+              auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound,
+              auto-assign owners, auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or
+              treat assured as certified as Learning credit. This essay does not rewrite Recoverable Is Not
+              Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite
+              Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay
+              does not rewrite Owned Is Not Governed. This essay does not rewrite Assured Is Not Proven. This essay
+              does not rewrite Verified Is Not Assured. This essay does not rewrite Green Is Not Go. This essay
+              does not collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This essay does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned Is Not Governed.
+              This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified
+              Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              assured into certified. This essay does not collapse certification into assurance. This essay does
+              not collapse recoverable into assured.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Assured is not certified. Assured means independent, recurring verification that recovery capability still holds under the current named owner, tooling rights, exception paths, and evidence continuity — a dated assurance record that the restore path was re-proven inside the named window, with residual gaps closed — not a one-time restore credit from last year’s drill, not a binder that says "DR tested," and not a status light that never re-broke the live path. Certified means a third-party or internal program stamp that a recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge) — not the same as re-proving restore under today’s named owner inside the named window with evidence continuity intact. A firm can be assured and still not certified, when dated owner-side re-prove of restore in window, no external stamp, is the only certification story on the record. A firm can chase certification theater and still not be assured, when an annual DR certificate while the restore path has not been re-broken and re-proven under the current owner inside the named window is the only assurance story on the record. A certificate alone is not assurance. An assurance record alone is not certification. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface an assurance record or a certification stamp beside Evidence, Verification, and the closed outcome. This essay does not collapse certification into assurance. This essay does not collapse assured into certified. This essay does not collapse into Recoverable Is Not Assured. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. A practice record that says assured is certified is not shown certification. Sync refuses to pretend assurance or certification is a status light. Treating assured as certified records a dated assurance record as a program stamp that nobody has shown, under the honesty and verification boundary. An assurance record can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the assurance record when the record is being used as certification. Evidence from the plant beats the certificate when the certificate is being used as assurance. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, or auto-issue certificates. Sync must not treat assured as certified as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync must not auto-issue certificates. Sync does not measure assurance or certification for the customer. Sync does not measure certification for the customer. Sync does not issue certificates for the customer. Sync does not issue assurance for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The assured practice is not the certified practice
+            </h2>
+
+            <p>
+              Assured means independent, recurring verification that recovery capability still holds under the
+              current named owner, tooling rights, exception paths, and evidence continuity — a dated assurance
+              record that the restore path was re-proven inside the named window, with residual gaps closed — not a
+              one-time restore credit from last year’s drill, not a binder that says "DR tested," and not a status
+              light that never re-broke the live path. Certified means a third-party or internal program stamp that
+              a recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual auditor
+              letter, laminated "certified recoverable" badge) — not the same as re-proving restore under today’s
+              named owner inside the named window with evidence continuity intact. Sync may surface an assurance
+              record or a certification stamp beside Evidence, Verification, and the closed outcome. A practice
+              record that says assured is certified is not shown certification. Evidence from the plant beats the
+              assurance record when the record is being used as certification. Evidence from the plant beats the
+              certificate when the certificate is being used as assurance. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              One line can hold a dated assurance record. The current named owner is named. Tooling rights are
+              named. Exception paths are named. Evidence continuity is named. The named window is named. The
+              restore path was re-broken and re-proven inside that window. Residual gaps are closed. The record is
+              dated. Then the record stops. No third party stamps the program. No internal program issues an
+              ISO/SOC/DR cert. No annual auditor letter sits in the cabinet. No laminated "certified recoverable"
+              badge hangs on the wall. Dated owner-side re-prove of restore in window, no external stamp. That
+              record can be assured. It is not certified. A firm can be assured and still not certified. An annual
+              DR certificate can hang beside the binder. The restore path has not been re-broken and re-proven
+              under the current owner inside the named window. A firm can chase certification theater and still not
+              be assured. A certificate alone is not assurance. An assurance record alone is not certification. A
+              one-time restore credit from last year’s drill is not this certification, and it is not this
+              assurance. A binder that says "DR tested" is not a program stamp, and it is not a dated re-proof. A
+              status light that never re-broke the live path is not a certificate, and it is not assurance. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. A one-off clear is a single quiet
+              interval. It is not a restore path re-proven under today’s named owner, and it is not a checklist
+              stamp. The assured practice is not the certified practice. This essay does not invent a customer, a
+              price, or a return. It states no savings figure, states no price, and states no OEM limit. A practice
+              record that says assured is certified is not a customer plant release, and it is not shown
+              certification. Treating assured as certified records a dated assurance record the plant has not
+              stamped as certification, under the honesty and verification boundary.
+            </p>
+
+            <p>
+                            <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/recoverable-is-not-assured. Recoverable,
+              there, means after a real disruption (or a named recovery drill that actually breaks the live path),
+              the named successor restores the governed owned compounding system to a named service level inside a
+              named RTO/RPO with evidence continuity still holding under their authority. Assured, there, means
+              independent, recurring verification that recovery capability still holds under the current named
+              owner, tooling rights, exception paths, and evidence continuity. A one-time restore alone is not
+              assurance. An assurance PDF alone is not recoverability. That refusal stops at a dated assurance
+              record that the restore path was re-proven inside the named window, with residual gaps closed. It
+              does not ask whether a third-party or internal program stamp says a recovery/continuity program
+              exists or once met a named checklist. The phrase dated assurance record, in that essay, is not this
+              ISO/SOC/DR cert. Recoverable is not assured is a different refusal. Assured is not certified is the
+              next refusal. Named assurance is not certification, and certification theater is not a dated
+              re-proof. Recoverable Is Not Assured separates a recoverable restore from assurance that recovery
+              capability still holds. This essay separates a dated assurance record from a certification stamp.
+              This essay does not rewrite Recoverable Is Not Assured. This essay does not collapse into Recoverable
+              Is Not Assured. This essay does not collapse recoverable into assured. This essay does not collapse
+              assured into certified.
+            </p>
+
+            <p>
+                            <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>{' '}
+              keeps a named handoff run under stress off a proven restore to a named service level inside a named
+              RTO/RPO. A tabletop pass is not a certification stamp, and a backup job green light is not a dated
+              assurance record re-proven under today’s named owner. This essay does not rewrite Rehearsed Is Not
+              Recoverable. This essay does not collapse into Rehearsed Is Not Recoverable.{' '}
+                            <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>{' '}
+              keeps a governed owned compounding system that can change hands with evidence continuity off a
+              handoff run under stress. A succession plan PDF is not an annual auditor letter, and a tabletop is
+              not re-proving restore under today’s named owner inside the named window with evidence continuity
+              intact. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not collapse into
+              Transferable Is Not Rehearsed.{' '}
+                            <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>{' '}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new named owner.
+              A rule of engagement is not an ISO/SOC/DR cert, and a handoff pack is not a laminated "certified
+              recoverable" badge. This essay does not rewrite Governed Is Not Transferable. This essay does not
+              collapse into Governed Is Not Transferable.{' '}
+                            <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>{' '}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the compounding
+              system off rules of engagement. A name on the system is not a certification stamp, and a rule of
+              engagement is not a restore path re-broken and re-proven under the current owner. This essay does not
+              rewrite Owned Is Not Governed. This essay does not collapse into Owned Is Not Governed.
+            </p>
+
+            <p>
+                            <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>{' '}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating conditions,
+              with ownership and monitoring, off a closed evidentiary chain for a specific claim under named
+              conditions. That standing claim can be probabilistic. Assurance in this essay is not that standing
+              known-good claim. Assurance here is independent, recurring verification that recovery capability
+              still holds under the current named owner — a dated assurance record that the restore path was
+              re-proven inside the named window, with residual gaps closed. Certification here is not that standing
+              known-good claim either. Certification here is a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist. A known-good asset claim is not an
+              ISO/SOC/DR cert, and a closed evidentiary chain is not an annual DR certificate. This essay does not
+              rewrite Assured Is Not Proven. This essay does not collapse into Assured Is Not Proven.{' '}
+                            <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps an independent check of the past off standing confidence that the asset stays known-good. That
+              axis is an evidence check versus standing confidence. It is not a dated assurance record of recovery
+              versus a program stamp. An independent check is not certification, and standing confidence is not
+              re-proving restore under today’s named owner inside the named window with evidence continuity
+              intact. This essay does not rewrite Verified Is Not Assured. This essay does not collapse into
+              Verified Is Not Assured.{' '}
+                            <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>{' '}
+              keeps a green tile off permission to run. A status light is not a certification stamp, and a status
+              light that never re-broke the live path is not a dated assurance record. This essay does not rewrite
+              Green Is Not Go. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              certification into assurance.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a certification stamp is allowed to be
+            </h2>
+
+            <p>
+              Assured means a dated assurance record that the restore path was re-proven inside the named window,
+              with residual gaps closed, under the current named owner, tooling rights, exception paths, and
+              evidence continuity. Certified means a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist. A certificate alone is not
+              assurance. An assurance record alone is not certification. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Sync may surface an assurance record or a certification stamp
+              beside Evidence, Verification, and the closed outcome. This essay does not collapse assured into
+              certified.
+            </p>
+
+            <p>
+              Evidence may cite an assurance record when the source of that record is named, and when the citation
+              names the current named owner, the tooling rights, the exception paths, and the evidence continuity
+              that were re-checked, the named window, the date of the record, the restore path that was re-proven,
+              and the residual gaps closed. The verification is independent. The verification recurs. Evidence may
+              cite a certification stamp when the source of that stamp is named, and when the citation names the
+              third party or the internal program, the named checklist, the date of the stamp, and whether the
+              stamp is an ISO/SOC/DR cert, an annual auditor letter, or a laminated "certified recoverable" badge.
+              The stamp says a recovery/continuity program exists or once met that checklist. It does not, by
+              itself, show the restore path re-broken and re-proven under today’s named owner inside the named
+              window with evidence continuity intact. If the evidence records a dated owner-side re-prove of
+              restore in window and does not record an external stamp, the case may store the note as assured and
+              must not store the note as certified. If the evidence records certification theater — an annual DR
+              certificate while the restore path has not been re-broken and re-proven under the current owner
+              inside the named window — the case must not store the note as assured and must not store the note as
+              certified. What a certification stamp is allowed to be is that named program stamp the firm can still
+              show. It is not a dated assurance record used as a badge. It is not a one-time restore credit from
+              last year’s drill. It is not a binder that says "DR tested." It is not a status light that never
+              re-broke the live path. It is not permission to execute. Recommend is not authorize. Evidence lineage
+              is not optional. Human decision is not optional. Surfacing is still a read. Sync refuses false
+              precision. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, or auto-issue certificates. Sync does not issue
+              certificates for the customer. Sync does not measure certification for the customer.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named assurance is not certification
+            </h2>
+
+            <p>
+              Named assurance is not certification. The assured practice is not the certified practice. A dated
+              assurance record answers whether independent, recurring verification still shows that recovery
+              capability holds under the current named owner, tooling rights, exception paths, and evidence
+              continuity, inside the named window, with residual gaps closed. It does not, by itself, show a
+              third-party or internal program stamp. It does not, by itself, show an ISO/SOC/DR cert, an annual
+              auditor letter, or a laminated "certified recoverable" badge. It does not, by itself, show that a
+              recovery/continuity program once met a named checklist. A dated owner-side re-prove of restore in
+              window, with no external stamp, is still assurance. It is not certification. A firm can be assured
+              and still not certified. An annual DR certificate while the restore path has not been re-broken and
+              re-proven under the current owner inside the named window is still a certificate. It is not
+              assurance. A firm can chase certification theater and still not be assured. A certificate alone is
+              not assurance. An assurance record alone is not certification. Not the same as re-proving restore
+              under today’s named owner inside the named window with evidence continuity intact. Not a one-time
+              restore credit from last year’s drill. Not a binder that says "DR tested." Not a status light that
+              never re-broke the live path. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. This essay does not rewrite Recoverable Is Not Assured. This essay does not rewrite
+              Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not Rehearsed. This essay
+              does not rewrite Governed Is Not Transferable. This essay does not rewrite Owned Is Not Governed.
+              This essay does not rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not
+              Assured. This essay does not rewrite Green Is Not Go. This essay does not collapse into Recoverable
+              Is Not Assured. This essay does not collapse into Rehearsed Is Not Recoverable. This essay does not
+              collapse into Transferable Is Not Rehearsed. This essay does not collapse into Governed Is Not
+              Transferable. This essay does not collapse into Owned Is Not Governed. This essay does not collapse
+              into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay
+              does not collapse into Green Is Not Go. This essay does not collapse certification into assurance.
+              This essay does not collapse assured into certified. Sync does not measure assurance or certification
+              for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning
+              for an unrecovered handoff, auto-issue assurance, or auto-issue certificates. Sync refuses to pretend
+              assurance or certification is a status light. Direct plant execute stays off. CMMS write-back is not
+              a live product path. Billing write-back is not a live product path.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Recoverable is not assured. Recoverable means after a real disruption (or a named recovery drill that
@@ -7926,17 +8254,6 @@ export default function RecoverableIsNotAssuredPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/assured-is-not-certified"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Assured Is Not Certified
-              </Link>
-              , on why assured is still not certified. Assured means independent, recurring verification that recovery capability still holds under the current named owner, tooling rights, exception paths, and evidence continuity — a dated assurance record that the restore path was re-proven inside the named window, with residual gaps closed — not a one-time restore credit from last year’s drill, not a binder that says "DR tested," and not a status light that never re-broke the live path. Certified means a third-party or internal program stamp that a recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge) — not the same as re-proving restore under today’s named owner inside the named window with evidence continuity intact. A firm can be assured and still not certified when dated owner-side re-prove of restore in window, no external stamp, is on the record. A firm can chase certification theater and still not be assured. A certificate alone is not assurance. An assurance record alone is not certification. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Recoverable remains a proven restore inside a named RTO/RPO. This essay separates a recoverable restore from assurance that recovery capability still holds. A one-time restore alone is not assurance. An assurance PDF alone is not recoverability. Sync does not measure assurance or certification for the customer. Sync does not measure certification. Sync does not measure certification for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, or auto-issue certificates. Sync must not auto-issue certificates. Sync refuses to pretend assurance or certification is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -7996,7 +8313,7 @@ export default function RecoverableIsNotAssuredPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="recoverable-is-not-assured" />
+          <InsightNextSteps slug="assured-is-not-certified" />
         </motion.article>
       </div>
     </main>
