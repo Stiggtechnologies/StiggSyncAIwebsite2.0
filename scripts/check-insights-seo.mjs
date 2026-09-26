@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const effectiveIndex = slugs.indexOf('posted-is-not-effective');
 const postedIndex = slugs.indexOf('accepted-is-not-posted');
 const acceptedFilingIndex = slugs.indexOf('filed-is-not-accepted');
 const filedIndex = slugs.indexOf('audited-is-not-filed');
@@ -91,7 +92,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    postedIndex >= 0 &&
+    effectiveIndex >= 0 &&
+    postedIndex > effectiveIndex &&
     acceptedFilingIndex > postedIndex &&
     filedIndex > acceptedFilingIndex &&
     auditedIndex > filedIndex &&
@@ -163,7 +165,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -13515,6 +13517,101 @@ if (
   fail('filed-is-not-accepted must point the series forward to accepted-is-not-posted');
 }
 
+
+
+
+
+const effectivePageRequired = [
+  ...postedPageRequired,
+  "Posted Is Not Effective",
+  "Posted is not effective",
+  "under the named rule / instrument / board resolution / lender covenant / statute for that channel, that posted filing has reached its named legal or operational effective date and named scope (who it binds, from when, for which entity/period/obligation), with an unbroken evidence trail from that effectiveness claim back to the posting accession and the named effectiveness rule",
+  "not the posting timestamp alone, not \"it’s on SEDAR so it counts,\" not a dashboard green, not a CMMS checkbox, and not treating accession as automatic legal effect",
+  "A firm can be posted and still not effective",
+  "public accession exists while the named effectiveness date/scope under the instrument has not been reached or evidenced",
+  "A firm can chase effectiveness theater and still not be posted",
+  "a claim that \"we’re live / in force\" exists while no named public posting/accession for that filing",
+  "A posting accession alone is not effectiveness",
+  "An effectiveness claim alone is not proof of public posting under the named filing trail",
+  "The posted practice is not the effective practice",
+  "What an effectiveness record is allowed to be",
+  "Named posting is not effectiveness",
+  "Sync does not measure effectiveness",
+  "Sync does not measure effectiveness for the customer",
+  "Sync does not measure posting or effectiveness for the customer",
+  "Sync may surface a public posting or an effectiveness record",
+  "does not collapse effectiveness into posting",
+  "does not collapse posted into effective",
+  "does not rewrite Accepted Is Not Posted",
+  "does not collapse into Accepted Is Not Posted",
+  "does not collapse into Complete Is Not Accepted",
+  "does not rewrite Complete Is Not Accepted",
+  "does not collapse into Accepted Is Not Verified",
+  "does not rewrite Accepted Is Not Verified",
+  "public registry/disclosure posting of that accepted filing",
+  "named legal/operational effectiveness under the instrument for that posted filing",
+  "distinct from Complete Is Not Accepted",
+  "practice record that says posted is effective",
+  "posted as effective",
+  "separates a named public posting from a named effectiveness",
+  "/insights/accepted-is-not-posted",
+  "Evidence from the plant beats the public posting when the posting is being used as effectiveness",
+  "Evidence from the plant beats the effectiveness claim when the claim is being used as proof of public posting under the named filing trail",
+  "treat posted as effective as Learning credit",
+  "Sync refuses to pretend posting or effectiveness is a status light",
+  "Sync does not deem effective for the customer",
+  "Sync must not auto-deem-effective",
+  "Sync must not auto-post",
+  "Sync must not auto-accept",
+  "Sync must not auto-file",
+  "Sync must not auto-audit",
+  "Sync must not auto-report",
+  "Sync must not auto-recognize",
+  "Sync must not auto-collect",
+  "Sync must not auto-close-books",
+  "Keep accepted (named channel acceptance/completeness acknowledgement) from Accepted Is Not Posted, filed (named lodging receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from posted and from effective",
+  "False confidence here is a posting accession treated as effectiveness, or an effectiveness claim treated as proof of public posting under the named filing trail.",
+  "Field proof is the named trail, not the tile.",
+  "What changes Tuesday is the refusal to let one record wear the other record’s name.",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+  "under the honesty and verification boundary",
+  "work-order / incident closed",
+  "period/books close",
+];
+const effectivePage = read('app/insights/posted-is-not-effective/page.tsx');
+for (const required of effectivePageRequired) {
+  if (!effectivePage.includes(required)) {
+    fail(`posted-is-not-effective page must include ${required}`);
+  }
+}
+
+const effectiveBlock = stepBlock('posted-is-not-effective');
+for (const required of ['accepted-is-not-posted', 'filed-is-not-accepted', 'audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!effectiveBlock.includes(`'${required}'`)) {
+    fail(`posted-is-not-effective related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(effectiveBlock)) {
+  fail('posted-is-not-effective related reading must include the Strategic Pilot');
+}
+if (effectiveBlock.includes("next: 'strategic-pilot'")) {
+  fail('posted-is-not-effective next step is the Field Manual');
+}
+if (!stepBlock('accepted-is-not-posted').includes("'posted-is-not-effective'")) {
+  fail('accepted-is-not-posted related reading must point forward to posted-is-not-effective');
+}
+
+if (
+  !postedPage.includes('The series continues with') ||
+  !postedPage.includes('/insights/posted-is-not-effective')
+) {
+  fail('accepted-is-not-posted must point the series forward to posted-is-not-effective');
+}
 
 
 
