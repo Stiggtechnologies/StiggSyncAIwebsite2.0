@@ -1877,6 +1877,29 @@ export default function AccountabilityIsNotOwnershipPage() {
 
 
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>
+              , on why ownership is still not control. Ownership is the residual economic claim on an
+              asset, equity, IP, or cash flow — residual rights and upside/downside on the balance
+              sheet, not the power to direct the asset. Control is the practical power to set or
+              change direction of the asset or plant — who can steer capital allocation, operating
+              priorities, or binding plant moves in practice — direction power, not a residual claim.
+              A firm with ownership can still lack control when that residual claimant is not the
+              person who steers. A firm with control can still lack ownership. A residual claim
+              without direction power is not control. Direction power without a residual claim is not
+              ownership. A title is neither. Authority remains the formal, named right to bind within
+              a defined scope and window. Control here is practical steering power over the asset or
+              plant, not that charter alone. An ownership note alone proves neither. A control note
+              alone proves neither. An ownership note is not a green. A control note is not a green.
+              Sync does not measure control. Sync does not measure control for the customer.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
