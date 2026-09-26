@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-delivered-is-not-operated',
+    title: 'Delivered Is Not Operated',
+    description:
+      'Delivered is not operated. Delivered means under that same named instrument / governing law for that channel, instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window — evidenced by delivery package with named deliverer / receiver roles, named delivery criteria met (close package cited, receiving register updated, acceptance or receipt recorded, residual ownership named), dates, and an unbroken trail from the close evidence to that delivery evidence — not a dashboard green tile with no delivery authority, not a verbal "they have it," not emailing a PDF with no receipt, not a chat note that says delivered, not "handoff is informal" without instrument-required delivery evidence, and not treating close theater as automatic delivery of that closed successor-obligation outcome. Operated means under that same named instrument / governing law for that channel, instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window — evidenced by operate package with named operator / acceptor roles, named operate criteria met (delivery package cited, run started under named duty, control limits or warranty in force, residual ownership named), dates, and an unbroken trail from the delivery evidence to that operate evidence — not a dashboard green tile with no operate authority, not a verbal "they are running it," not flipping a feature flag with no instrument path, not a chat note that says live, not "ops will babysit" without instrument-required operate evidence, and not treating delivery theater as automatic operation of that delivered successor-obligation outcome. Delivered is not operated. A firm can be delivered and still not operated (delivery evidence exists while required operate evidence for the control window is missing). A firm can have instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window and still lack instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window. A firm can claim operate theater and still not be delivered (a dashboard green tile with no operate authority, a verbal "they are running it," flipping a feature flag with no instrument path, a chat note that says live, or a sentence that says ops will babysit while required delivery evidence is missing). Delivery evidence alone is not operation of that delivered successor-obligation outcome. An operate claim alone is not proof the named delivery evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard delivered tile, verbal "they are running it," dashboard green tile with no operate authority, feature flag with no instrument path, chat note that says live, or ops-will-babysit note alone is neither. A verbal "they are running it" alone is neither. Keep this delivered distinct from the filing-spine Closed Is Not Delivered and from Delivered Is Not Operated. Keep this operated distinct from the filing-spine Delivered Is Not Operated and from Operated Is Not Sustained. Keep this closed distinct from the filing-spine Cleared Is Not Closed and from Closed Is Not Delivered. This delivered is instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window, trailed from the close evidence. This operated is instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window, trailed from the delivery evidence. This closed is instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. Do not collapse this delivered into the filing-spine delivery Closed Is Not Delivered names. Do not collapse this delivered into the productive operation Delivered Is Not Operated names. Do not collapse this operated into the productive operation Delivered Is Not Operated names. Do not collapse this operated into the duty-window sustainment Operated Is Not Sustained names. Do not collapse this closed into the closing completion Cleared Is Not Closed names. Do not collapse this closed into the delivery Closed Is Not Delivered names. This essay does not collapse this delivered into filing-spine delivery. This essay does not collapse this delivered into productive operation. This essay does not collapse this operated into productive operation. This essay does not collapse this operated into filing-spine sustainment. This essay does not collapse this closed into closing completion. This essay does not collapse this closed into delivery. This essay does not collapse into Closed Is Not Delivered. This essay does not rewrite Closed Is Not Delivered. This essay does not collapse into Delivered Is Not Operated. This essay does not rewrite Delivered Is Not Operated. This essay does not collapse into Operated Is Not Sustained. This essay does not rewrite Operated Is Not Sustained. This essay does not collapse into Cleared Is Not Closed. This essay does not rewrite Cleared Is Not Closed. This essay does not collapse into Recorded Is Not Cleared. This essay does not rewrite Recorded Is Not Cleared. This essay does not collapse into Released Is Not Recorded. This essay does not rewrite Released Is Not Recorded. This essay does not collapse into Remediated Is Not Released. This essay does not rewrite Remediated Is Not Released. This essay does not collapse into Enforced Is Not Remediated. This essay does not rewrite Enforced Is Not Remediated. This essay does not collapse into Binding Is Not Enforced. This essay does not rewrite Binding Is Not Enforced. This essay does not collapse into Effective Is Not Binding. This essay does not rewrite Effective Is Not Binding. This essay does not collapse into Restored Is Not Accepted. This essay does not rewrite Restored Is Not Accepted. This essay does not collapse into Governed Is Not Transferable. This essay does not rewrite Governed Is Not Transferable. This essay does not collapse into Transferable Is Not Rehearsed. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not collapse into Transferable Is Not Binding. This essay does not rewrite Transferable Is Not Binding. This essay does not collapse operated into delivered. This essay does not collapse delivered into operated. A dashboard green tile with no operate authority, a verbal "they are running it," or flipping a feature flag with no instrument path without instrument-required operate evidence is not that operate. A chat note that says live, or "ops will babysit," without instrument-required operate evidence is not that operate. This split is delivered versus operated. This essay separates instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window from instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window. Evidence from the plant beats the delivery record when the record is being used as operated. Evidence from the plant beats the operate claim when the claim is being used as proof the named delivery of that successor-obligation outcome was on the file. Sync refuses to pretend delivered or operated is a status light. Sync does not measure operated. Sync does not measure operated for the customer. Sync does not measure delivered or operated for the customer. Sync may surface a delivery record or an operate record beside Evidence, Verification, and the closed outcome. Sync must not treat delivered as operated as Learning credit. Sync does not deem operated for the customer. Sync must not auto-deem-operated. A practice record that says delivered is operated is not shown operated.',
+    excerpt:
+      'Delivered is not operated. Delivered means under that same named instrument / governing law for that channel, instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window — evidenced by delivery package with named deliverer / receiver roles, named delivery criteria met (close package cited, receiving register updated, acceptance or receipt recorded, residual ownership named), dates, and an unbroken trail from the close evidence to that delivery evidence — not a dashboard green tile with no delivery authority, not a verbal "they have it," not emailing a PDF with no receipt, not a chat note that says delivered, not "handoff is informal" without instrument-required delivery evidence, and not treating close theater as automatic delivery of that closed successor-obligation outcome. Operated means under that same named instrument / governing law for that channel, instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window — evidenced by operate package with named operator / acceptor roles, named operate criteria met (delivery package cited, run started under named duty, control limits or warranty in force, residual ownership named), dates, and an unbroken trail from the delivery evidence to that operate evidence — not a dashboard green tile with no operate authority, not a verbal "they are running it," not flipping a feature flag with no instrument path, not a chat note that says live, not "ops will babysit" without instrument-required operate evidence, and not treating delivery theater as automatic operation of that delivered successor-obligation outcome. Delivered is not operated. A firm can be delivered and still not operated (delivery evidence exists while required operate evidence for the control window is missing). A firm can have instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window and still lack instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window. A firm can claim operate theater and still not be delivered (a dashboard green tile with no operate authority, a verbal "they are running it," flipping a feature flag with no instrument path, a chat note that says live, or a sentence that says ops will babysit while required delivery evidence is missing). Delivery evidence alone is not operation of that delivered successor-obligation outcome. An operate claim alone is not proof the named delivery evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard delivered tile, verbal "they are running it," dashboard green tile with no operate authority, feature flag with no instrument path, chat note that says live, or ops-will-babysit note alone is neither. A verbal "they are running it" alone is neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-26',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'successor-closed-is-not-delivered',
     title: 'Closed Is Not Delivered',
     description:
@@ -1614,12 +1626,104 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'successor-closed-is-not-delivered': {
-    relatedSlug: 'successor-cleared-is-not-closed',
-    relatedNote: 'Cleared is not closed. The prior essay in this spine separates instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window from instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. This essay does not rewrite that thesis.',
+  'successor-delivered-is-not-operated': {
+    relatedSlug: 'successor-closed-is-not-delivered',
+    relatedNote: 'Closed is not delivered. The prior essay in this spine separates instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance from instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window, trailed from the close evidence. This essay does not rewrite that thesis.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-cleared-is-not-closed',
+        note: 'Cleared is not closed. The prior essay in this spine separates instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window from instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. This essay does not rewrite that thesis.',
+      },
+      {
+        slug: 'successor-recorded-is-not-cleared',
+        note: 'Recorded is not cleared. Earlier essay in this spine: instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window is not instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window.',
+      },
+      {
+        slug: 'successor-released-is-not-recorded',
+        note: 'Released is not recorded. Earlier essay in this spine: instrument-required release / close-out that returns the remediated successor obligations into the named operating / warranty / successor window as released for continued hold is not instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window.',
+      },
+      {
+        slug: 'successor-remediated-is-not-released',
+        note: 'Remediated is not released. Earlier essay in this spine: instrument-required remediation that restores the named successor obligations after the named breach is not instrument-required release / close-out that returns those remediated successor obligations into the named operating / warranty / successor window as released for continued hold.',
+      },
+      {
+        slug: 'successor-enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Earlier essay in this spine: instrument-required enforcement of those named successor binding obligations for the named successor window is not instrument-required remediation that restores the named successor obligations after the named breach.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Earlier essay in this spine: instrument-required binding of that named successor is not instrument-required enforcement of those named successor binding obligations for the named successor window.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Earlier essay in this spine: instrument-required transfer of the sustained accepted restored condition is not instrument-required binding of that successor to the named sustainment, accountability, and operating obligations.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Different spine: a named effective date for a posted filing is not the instrument-required bind mechanics of that filing. Do not collapse this binding into that filing bind.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement against the named parties for a filing scope. Do not collapse this enforced into that filing-spine enforcement.',
+      },
+      {
+        slug: 'enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Different spine: filing-spine enforcement actions are not instrument-required cure or remedy completion for a filed default. Do not collapse this remediated into that filing-spine remedy completion.',
+      },
+      {
+        slug: 'remediated-is-not-released',
+        note: 'Remediated is not released. Different spine: filing-spine cure completion is not a release, waiver, or discharge of enforcement rights. Do not collapse this released into that filing-spine release.',
+      },
+      {
+        slug: 'released-is-not-recorded',
+        note: 'Released is not recorded. Different spine: a filing-spine release, waiver, or discharge is not registry recording of that executed release. Do not collapse this recorded into that registry recording.',
+      },
+      {
+        slug: 'recorded-is-not-cleared',
+        note: 'Recorded is not cleared. Different spine: registry recording of an executed filing release is not clearance of that encumbrance from the operating title. Do not collapse this cleared into that clearance of filing obligations.',
+      },
+      {
+        slug: 'cleared-is-not-closed',
+        note: 'Cleared is not closed. Different spine: clearance of a filing encumbrance from the operating title, search position, and counterparty books is not closing completion of that transaction. Do not collapse this closed into that closing completion.',
+      },
+      {
+        slug: 'closed-is-not-delivered',
+        note: 'Closed is not delivered. Different spine, and a different URL: closing completion of a filing transaction is not delivery of the named asset, scope, or obligation into the counterparty hands. Do not collapse this closed into that closing completion. Do not collapse this delivered into that filing-spine delivery.',
+      },
+      {
+        slug: 'delivered-is-not-operated',
+        note: 'Delivered is not operated. Different spine, and a different URL: filing-spine delivery of the named asset, scope, or obligation into the counterparty hands is not instrument-required productive operation of that delivered asset. Do not collapse this delivered into that filing-spine delivery. Do not collapse this operated into that productive operation.',
+      },
+      {
+        slug: 'operated-is-not-sustained',
+        note: 'Operated is not sustained. Different spine: filing-spine productive operation of the named asset, system, or scope that was delivered is not instrument-required ongoing, repeatable, in-control operation over the required duty window. Do not collapse this operated into that productive operation. Do not collapse this operated into that filing-spine sustainment.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. Different step: restoration of the named operating condition the guarantee was written to return is not owner acceptance of that condition. Do not collapse this delivered into that operating-condition restoration.',
+      },
+      {
+        slug: 'governed-is-not-transferable',
+        note: 'Governed is not transferable. Different spine: ownership inside rules of engagement is not a governed compounding system changing hands. Do not collapse this transferable into that governance handoff.',
+      },
+      {
+        slug: 'transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. Different spine: a governed system changing hands is not a named handoff run under stress. Do not collapse this transferable into that rehearsal.',
+      },
+    ],
+  },
+  'successor-closed-is-not-delivered': {
+    relatedSlug: 'successor-delivered-is-not-operated',
+    relatedNote: 'Delivered is not operated. Delivered means under that same named instrument / governing law for that channel, instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window — evidenced by delivery package with named deliverer / receiver roles, named delivery criteria met (close package cited, receiving register updated, acceptance or receipt recorded, residual ownership named), dates, and an unbroken trail from the close evidence to that delivery evidence. Operated means under that same named instrument / governing law for that channel, instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window — evidenced by operate package with named operator / acceptor roles, named operate criteria met (delivery package cited, run started under named duty, control limits or warranty in force, residual ownership named), dates, and an unbroken trail from the delivery evidence to that operate evidence. A dashboard green tile with no operate authority, a verbal "they are running it," flipping a feature flag with no instrument path, a chat note that says live, or "ops will babysit" without instrument-required operate evidence is not that operate. This operated is successor-obligation operation in the industrial control and transfer spine. It is not the filing-spine productive operation in Delivered Is Not Operated, and it is not the duty-window sustainment in Operated Is Not Sustained.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-cleared-is-not-closed',
+        note: 'Cleared is not closed. The prior essay in this spine separates instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window from instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. This essay does not rewrite that thesis.',
+      },
       {
         slug: 'successor-recorded-is-not-cleared',
         note: 'Recorded is not cleared. Earlier essay in this spine: instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window is not instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window.',
