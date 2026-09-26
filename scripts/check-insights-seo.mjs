@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const periodCloseIndex = slugs.indexOf('reconciled-is-not-closed');
 const reconciledIndex = slugs.indexOf('booked-is-not-reconciled');
 const bookedIndex = slugs.indexOf('settled-is-not-booked');
 const settledIndex = slugs.indexOf('paid-is-not-settled');
@@ -83,7 +84,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    reconciledIndex >= 0 &&
+    periodCloseIndex >= 0 &&
+    reconciledIndex > periodCloseIndex &&
     bookedIndex > reconciledIndex &&
     settledIndex > bookedIndex &&
     paidIndex > settledIndex &&
@@ -147,7 +149,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -12817,6 +12819,95 @@ if (
   fail('settled-is-not-booked must point the series forward to booked-is-not-reconciled');
 }
 
+
+
+const periodClosedPageRequired = [
+  ...reconciledPageRequired,
+  "Reconciled Is Not Closed",
+  "Reconciled is not closed",
+  "that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated)",
+  "not a GL line alone, not \"it’ll clear in the bank rec,\" not a dashboard green, not a month-end hope, and not a CMMS checkbox",
+  "the named period’s books for that named entity and account are formally closed: cut-off locked, reconciling items for that named amount cleared or carried with a signed exception, and a named controller / CFO close attestation exists for that period",
+  "not a reconciliation worksheet alone, not \"we’ll close after the bank rec,\" not a dashboard period-end tile, not an email saying books are closed, and not a CMMS checkbox",
+  "A firm can be reconciled and still not closed",
+  "trail signs for the named amount; period cut-off / close attestation not locked",
+  "A firm can chase close theater and still not be reconciled",
+  "close checklist or slide while bank/subledger/counterparty evidence does not match the named booked amount",
+  "A signed reconciliation alone is not a period close",
+  "A close attestation alone is not proof the named amount is reconciled",
+  "The reconciled practice is not the closed practice",
+  "What a close attestation is allowed to be",
+  "Named reconciliation is not close",
+  "Sync does not measure close",
+  "Sync does not measure close for the customer",
+  "Sync does not measure reconciliation or close for the customer",
+  "Sync may surface a reconciliation trail or a close attestation",
+  "does not collapse close into reconciliation",
+  "does not collapse reconciled into closed",
+  "does not rewrite Booked Is Not Reconciled",
+  "does not collapse into Booked Is Not Reconciled",
+  "does not collapse into Settled Is Not Booked",
+  "does not collapse into Paid Is Not Settled",
+  "does not collapse into Cash Is Not Margin",
+  "does not collapse into Closure Is Not Cash",
+  "does not collapse into Closed Is Not Resolved",
+  "does not collapse into Margin Is Not Profit",
+  "practice record that says reconciled is closed",
+  "reconciled as closed",
+  "separates a signed reconciliation trail that matches the supporting evidence from a period close a named controller or CFO can attest",
+  "/insights/booked-is-not-reconciled",
+  "Evidence from the plant beats the reconciliation trail when the trail is being used as close",
+  "Evidence from the plant beats the close attestation when the attestation is being used as proof the named amount is reconciled",
+  "treat reconciled as closed as Learning credit",
+  "Sync refuses to pretend reconciliation or close is a status light",
+  "Sync does not close books for the customer",
+  "Sync must not auto-close-books",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+  "does not rewrite Settled Is Not Booked",
+  "Sync does not reconcile for the customer",
+  "Sync must not auto-reconcile",
+  "Sync must not auto-book",
+  "Sync must not auto-settle",
+  "Sync must not auto-pay",
+  "Sync must not auto-adjudicate",
+  "under the honesty and verification boundary",
+  "work-order / incident closed",
+  "period/books close",
+];
+const periodClosedPage = read('app/insights/reconciled-is-not-closed/page.tsx');
+for (const required of periodClosedPageRequired) {
+  if (!periodClosedPage.includes(required)) {
+    fail(`reconciled-is-not-closed page must include ${required}`);
+  }
+}
+
+const periodClosedBlock = stepBlock('reconciled-is-not-closed');
+for (const required of ['booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!periodClosedBlock.includes(`'${required}'`)) {
+    fail(`reconciled-is-not-closed related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(periodClosedBlock)) {
+  fail('reconciled-is-not-closed related reading must include the Strategic Pilot');
+}
+if (periodClosedBlock.includes("next: 'strategic-pilot'")) {
+  fail('reconciled-is-not-closed next step is the Field Manual');
+}
+if (!stepBlock('booked-is-not-reconciled').includes("'reconciled-is-not-closed'")) {
+  fail('booked-is-not-reconciled related reading must point forward to reconciled-is-not-closed');
+}
+
+if (
+  !reconciledPage.includes('The series continues with') ||
+  !reconciledPage.includes('/insights/reconciled-is-not-closed')
+) {
+  fail('booked-is-not-reconciled must point the series forward to reconciled-is-not-closed');
+}
 
 function readingSlugs(name) {
   const block = section(name);
