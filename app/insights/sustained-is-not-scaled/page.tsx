@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('adopted-is-not-sustained');
+const article = getInsightArticle('sustained-is-not-scaled');
 
-export default function AdoptedIsNotSustainedPage() {
+export default function SustainedIsNotScaledPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,225 @@ export default function AdoptedIsNotSustainedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Adopted Is Not Sustained</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Sustained Is Not Scaled</h1>
+            <p className="text-xl text-gray-400">
+              Sustained is not scaled. Sustained is an adopted practice that continues to hold under
+              named time, load, turnover, and exception pressure (who keeps it alive, for which
+              assets/classes, measured how, until when, under what revoke or re-train conditions) —
+              the practice stays the default after the rollout spotlight ends. Scaled is that
+              sustained practice deliberately extended across named additional sites, crews, asset
+              classes, or operating contexts with named owners, transfer conditions, and evidence it
+              still holds under the new load — not a single-site sustainment KPI copied into a slide.
+              Sustained is not scaled. A firm can sustain a practice on one line/crew and still not have scaled it. A firm can push a roll-out across sites and still never have sustained it under named pressure on the first site. A sustainment KPI alone is not scale. A multi-site roll-out plan alone is not sustainment. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep them apart: a sustainment KPI alone is not scale; a multi-site roll-out plan alone is not sustainment; a CMMS checkbox, ticket state, status light, or one-off clear is neither. Adopted is not sustained. Adopted remains the plant, crew, and operating system actually using a trusted claim as the default way work runs. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses to pretend sustainment or scale is a status light. Sync does not measure sustainment. Sync does not measure sustainment for the customer. Sync does not measure scale. Sync does not measure scale for the customer. Sync does not measure sustainment or scale for the customer. Sync does not sustain for the customer. Sync does not scale for the customer. Sync must not auto-sustain or auto-scale. Sync must not auto-adopt or auto-sustain. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, or auto-scale.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Sustained is not scaled. Adopted, in the prior essay, is the
+              plant, crew, and operating system actually use a trusted claim as the default way work
+              runs. Sustained, there, is that adopted practice continuing to hold under named time,
+              load, turnover, and exception pressure after the rollout spotlight ends. That essay
+              separates adopted operating practice from sustainment under named pressure. This essay
+              does not collapse into that split. Adopt versus sustain is the prior refusal. This essay
+              separates a sustained practice from deliberate extension across named additional contexts.
+              A hold on one line is not a transfer. A slide that copies a single-site sustainment KPI
+              is not scale. Ownership Is Not Control keeps a residual claim off direction power.
+              Control Is Not Closure keeps direction power off a finished end-state. Trusted Is Not
+              Adopted keeps a standing reliance decision off operating practice. Proven Is Not Trusted
+              keeps a proof window off that reliance decision. None of those refusals is this split. A
+              sustainment KPI is not this scale. A multi-site roll-out plan is not this sustainment.
+              This scale is the sustained practice deliberately extended across named additional sites,
+              crews, asset classes, or operating contexts with named owners, transfer conditions, and
+              evidence it still holds under the new load. Recommend Is Not Authorize, Evidence Lineage
+              Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface a sustainment/hold note or a scale/transfer note beside Evidence, Verification,
+              and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync
+              refuses when evidence is insufficient. Sync refuses to pretend sustainment or scale is a
+              status light. Sync must not auto-sustain or auto-scale. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, or treat
+              sustained as scaled as Learning credit. This essay does not rewrite Adopted Is Not
+              Sustained. This essay does not rewrite Trusted Is Not Adopted. This essay does not
+              rewrite Proven Is Not Trusted. This essay does not rewrite Ownership Is Not Control.
+              This essay does not rewrite Control Is Not Closure. This essay does not collapse into
+              Adopted Is Not Sustained. This essay does not collapse into Trusted Is Not Adopted.
+              This essay does not collapse into Proven Is Not Trusted. This essay does not collapse
+              into Ownership Is Not Control. This essay does not collapse into Control Is Not Closure.
+              This essay does not collapse sustained into scaled. This essay does not collapse scale into sustainment. This essay does not collapse adopted into sustained.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Sustained is not scaled. Sustained is an adopted practice that continues to hold under named time, load, turnover, and exception pressure (who keeps it alive, for which assets/classes, measured how, until when, under what revoke or re-train conditions) — the practice stays the default after the rollout spotlight ends. Scaled is that sustained practice deliberately extended across named additional sites, crews, asset classes, or operating contexts with named owners, transfer conditions, and evidence it still holds under the new load — not a single-site sustainment KPI copied into a slide. A firm can sustain a practice on one line/crew and still not have scaled it, when that hold is on the record for one line or one crew and the firm has not named the additional sites, crews, asset classes, or operating contexts, the owners, the transfer conditions, and the evidence the practice still holds under the new load. A firm can push a roll-out across sites and still never have sustained it under named pressure on the first site, when that roll-out plan is on the record and the first site has not shown who keeps the practice alive under named time, load, turnover, and exception pressure. A sustainment KPI alone is not scale. A multi-site roll-out plan alone is not sustainment. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Treating sustained as scaled records a hold under named pressure as deliberate extension across named additional contexts that nobody has shown, under the honesty and verification boundary. A sustainment note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the sustainment note when the note is being used as scale. Evidence from the plant beats the scale note when the note is being used as sustainment. Sync must not auto-sustain or auto-scale. Sync must not treat sustained as scaled as Learning credit. Sync does not measure sustainment or scale for the customer. Sync does not measure scale for the customer. Sync does not scale for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The sustained practice is not the scaled practice
+            </h2>
+
+            <p>
+              Sustained is an adopted practice that continues to hold under named time, load,
+              turnover, and exception pressure (who keeps it alive, for which assets/classes, measured
+              how, until when, under what revoke or re-train conditions) — the practice stays the
+              default after the rollout spotlight ends. Scaled is that sustained practice deliberately
+              extended across named additional sites, crews, asset classes, or operating contexts with
+              named owners, transfer conditions, and evidence it still holds under the new load — not
+              a single-site sustainment KPI copied into a slide. Sync may surface a sustainment/hold
+              note or a scale/transfer note beside Evidence, Verification, and the closed outcome. A
+              practice record that says sustained is scaled is not shown scale. Evidence from the
+              plant beats the sustainment note when the note is being used as scale. Evidence from the
+              plant beats the scale note when the note is being used as sustainment. Evidence from the
+              plant beats the note.
+            </p>
+
+            <p>
+              One line can keep the practice after the sponsor leaves, the audit ends, and the next
+              outage hits. The crew that owns it is named. The asset class is named. The measurement
+              is named. The revoke and re-train conditions are named. That record is sustained. It is
+              not scaled. The same percentage can be pasted onto a slide for three other sites while
+              nobody names who receives the practice, which asset classes travel, what must be true
+              before the transfer, or what evidence would show the practice still holds under the new
+              load. That slide is not scale. A multi-site roll-out plan can name dates and still never
+              have shown the first site holding under named time, load, turnover, and exception
+              pressure. A roll-out plan is not sustainment. A firm can sustain a practice on one
+              line/crew and still not have scaled it. A firm can push a roll-out across sites and
+              still never have sustained it under named pressure on the first site. A sustainment KPI
+              alone is not scale. A multi-site roll-out plan alone is not sustainment. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. A one-off clear is a
+              single quiet interval. It is not a hold, and it is not a transfer. Named sustainment is
+              not scale. The sustained practice is not the scaled practice. This essay does not invent
+              a customer, a price, or a return. It states no savings figure, states no price, and
+              states no OEM limit. It states no site count and no scale length. A practice record that
+              says sustained is scaled is not a customer plant release, and it is not shown scale.
+              Treating sustained as scaled records a hold the plant has not extended, under the honesty
+              and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/adopted-is-not-sustained"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Adopted Is Not Sustained
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/adopted-is-not-sustained.
+              Adopted, there, is the plant, crew, and operating system actually use a trusted claim as
+              the default way work runs (procedures, training, CMMS job plans, spare strategy, shift
+              handoffs, and named owners who practice it) — reliance has become operating practice,
+              not a signed note. Sustained, there, is that adopted practice continues to hold under
+              named time, load, turnover, and exception pressure after the rollout spotlight ends. An
+              adoption roll-out note alone is not sustainment. A sustainment KPI alone is not
+              adoption. That refusal stops at operating practice and the hold under named pressure. It
+              does not ask whether that sustained practice is deliberately extended across named
+              additional sites, crews, asset classes, or operating contexts with named owners,
+              transfer conditions, and evidence it still holds under the new load. Adopted is not
+              sustained is a different refusal. Sustained is not scaled is the next refusal. Named
+              adoption is not sustainment, and named sustainment is not scale. Adopted Is Not
+              Sustained separates adopted operating practice from sustainment under named pressure.
+              This essay separates a sustained practice from deliberate extension across named
+              additional contexts. This essay does not rewrite Adopted Is Not Sustained. This essay
+              does not collapse into Adopted Is Not Sustained. This essay does not collapse adopted
+              into sustained. This essay does not collapse sustained into scaled.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/trusted-is-not-adopted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Trusted Is Not Adopted
+              </Link>{' '}
+              keeps a standing reliance decision off operating practice. A trust note is not a hold,
+              and an adoption roll-out note is not a transfer. This essay does not rewrite Trusted Is
+              Not Adopted. This essay does not collapse into Trusted Is Not Adopted.{' '}
+              <Link
+                href="/insights/proven-is-not-trusted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proven Is Not Trusted
+              </Link>{' '}
+              keeps a proof window off that reliance decision. Proof is not sustainment, and trust is
+              not scale. This essay does not rewrite Proven Is Not Trusted. This essay does not
+              collapse into Proven Is Not Trusted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim off the practical power to set or change direction.
+              Residual rights are not a hold on one line, and direction power is not evidence the
+              practice still holds under a new site, crew, asset class, or operating context. This
+              essay does not rewrite Ownership Is Not Control. This essay does not collapse into
+              Ownership Is Not Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not scale. This essay
+              does not rewrite Control Is Not Closure. This essay does not collapse into Control Is
+              Not Closure. This essay does not collapse scale into sustainment.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a scale note is allowed to be
+            </h2>
+
+            <p>
+              Sustained is an adopted practice that continues to hold under named time, load,
+              turnover, and exception pressure. Scaled is that sustained practice deliberately
+              extended across named additional sites, crews, asset classes, or operating contexts with
+              named owners, transfer conditions, and evidence it still holds under the new load — not
+              a single-site sustainment KPI copied into a slide. A sustainment KPI alone is not scale.
+              A multi-site roll-out plan alone is not sustainment. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Sync may surface a sustainment/hold note or a
+              scale/transfer note beside Evidence, Verification, and the closed outcome. This essay
+              does not collapse sustained into scaled.
+            </p>
+
+            <p>
+              Evidence may cite a sustainment/hold note when the source of that note is named, and
+              when the citation names who keeps the practice alive, for which assets or classes,
+              measured how, until when, and under what revoke or re-train conditions, including time,
+              load, turnover, and exception pressure after the rollout spotlight ends. Evidence may
+              cite a scale/transfer note when the source of that note is named, and when the citation
+              names the additional sites, crews, asset classes, or operating contexts, the owners of
+              the transfer, the conditions that must hold before the practice moves, and the evidence
+              the practice still holds under the new load. If the evidence records the hold on one
+              line or one crew and does not record that extension, the case may store the note as
+              sustained and must not store the note as scaled. If the evidence records a multi-site
+              roll-out plan and does not record the hold under named pressure on the first site, the
+              case must not store the note as sustained and must not store the note as scaled. What a
+              scale note is allowed to be is that named transfer record. It is not a sustainment KPI
+              copied into a slide. It is not permission to execute. Recommend is not authorize.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-sustain or
+              auto-scale.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named sustainment is not scale
+            </h2>
+
+            <p>
+              Named sustainment is not scale. The sustained practice is not the scaled practice. A
+              named hold under time, load, turnover, and exception pressure answers who keeps the
+              practice alive on the assets already in scope. It does not, by itself, name the next
+              site, the next crew, the next asset class, or the next operating context. It does not,
+              by itself, name the owner of the transfer, the conditions of the transfer, or the
+              evidence the practice still holds under the new load. A firm can sustain a practice on
+              one line/crew and still not have scaled it. A firm can push a roll-out across sites and
+              still never have sustained it under named pressure on the first site. A sustainment KPI
+              alone is not scale. A multi-site roll-out plan alone is not sustainment. Not a
+              single-site sustainment KPI copied into a slide. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. This essay does not rewrite Adopted Is Not Sustained. This essay does not rewrite Trusted Is Not Adopted. This essay does not rewrite Proven Is Not Trusted. This essay does not rewrite Ownership Is Not Control. This essay does not rewrite Control Is Not Closure. This essay does not collapse into Adopted Is Not Sustained. This essay does not collapse into Trusted Is Not Adopted. This essay does not collapse into Proven Is Not Trusted. This essay does not collapse into Ownership Is Not Control. This essay does not collapse into Control Is Not Closure. Sync does not measure
+              sustainment or scale for the customer. Sync must not auto-sustain or auto-scale. Sync
+              refuses to pretend sustainment or scale is a status light.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Adopted is not sustained. Adopted is the plant, crew, and operating system actually use
@@ -5528,17 +5746,6 @@ export default function AdoptedIsNotSustainedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/sustained-is-not-scaled"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Sustained Is Not Scaled
-              </Link>
-              , on why sustained is still not scaled. Sustained is an adopted practice that continues to hold under named time, load, turnover, and exception pressure (who keeps it alive, for which assets/classes, measured how, until when, under what revoke or re-train conditions) — the practice stays the default after the rollout spotlight ends. Scaled is that sustained practice deliberately extended across named additional sites, crews, asset classes, or operating contexts with named owners, transfer conditions, and evidence it still holds under the new load — not a single-site sustainment KPI copied into a slide. A firm can sustain a practice on one line/crew and still not have scaled it when that hold is on the record and the firm has not named additional sites, crews, asset classes, or operating contexts, owners, and transfer conditions. A firm can push a roll-out across sites and still never have sustained it under named pressure on the first site when that roll-out plan is on the record and the first site has not shown the practice holds under named pressure. A sustainment KPI alone is not scale. A multi-site roll-out plan alone is not sustainment. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Adopted remains operating practice. This essay separates adopted operating practice from sustainment under named pressure. An adoption roll-out note alone is not sustainment. A sustainment KPI alone is not adoption. Sync does not measure sustainment or scale for the customer. Sync does not measure scale. Sync does not measure scale for the customer. Sync must not auto-sustain or auto-scale. Sync refuses to pretend sustainment or scale is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -5598,7 +5805,7 @@ export default function AdoptedIsNotSustainedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="adopted-is-not-sustained" />
+          <InsightNextSteps slug="sustained-is-not-scaled" />
         </motion.article>
       </div>
     </main>
