@@ -677,6 +677,23 @@ export default function SuccessorReleasedIsNotRecordedPage() {
             measured result. The release note does not record the register entry.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-recorded-is-not-cleared"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Recorded Is Not Cleared
+            </Link>{' '}
+            on why recorded is still not cleared. That next refusal is instrument-required
+            recording of that release into the named operating / warranty / successor register /
+            evidence ledger so the released successor obligations stay on-file for the remaining
+            window versus instrument-required clearance that removes or retires a recorded release /
+            recorded successor obligation from the active hold register only when the named
+            clearance criteria are met for that remaining window. It is not the filing-spine essay
+            at /insights/recorded-is-not-cleared.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
