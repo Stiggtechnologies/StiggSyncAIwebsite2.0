@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('closure-is-not-complete');
+const article = getInsightArticle('complete-is-not-accepted');
 
-export default function ClosureIsNotCompletePage() {
+export default function CompleteIsNotAcceptedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,50 @@ export default function ClosureIsNotCompletePage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Closure Is Not Complete</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Complete Is Not Accepted</h1>
+            <p className="text-xl text-gray-400">
+              Complete is every named acceptance criterion for a case satisfied under a named
+              measurement window — acceptance completeness, not a closed stamp and not a human
+              sign-off. Accepted is a named human formally accepting that acceptance pack (or the
+              case outcome it covers) under a named decision window — human acceptance/sign-off, not
+              merely that the criteria measured as met. Complete is not accepted. A firm with
+              completeness can still lack acceptance. A firm with acceptance can still lack
+              completeness. A completeness note alone proves neither. An acceptance note alone
+              proves neither. A completeness note is not a green. An acceptance note is not a green.
+              A complete acceptance pack without named human acceptance is not accepted. A named
+              human acceptance without every named acceptance criterion satisfied under the
+              measurement window is not complete. A title is neither. Closure is not complete.
+              Cleared is not complete. Complete is not verified. Ready is not cleared. Verified is
+              not assured. Assured is not proven. Recommend is not authorize. Human decision is not
+              optional. Proof is not authorization. Sync does not measure completeness. Sync does
+              not measure completeness for the customer. Sync does not measure acceptance. Sync does
+              not measure acceptance for the customer.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority
+              is not accountability. Accountability is not ownership. Ownership is not control.
+              Control is not closure. Closure is not complete. Complete is not accepted. This essay
+              separates measured completeness from named acceptance. Recommend Is Not Authorize and
+              Human Decision Is Not Optional refuse auto-authorization and auto-decision. Those
+              refusals stay beside this split, and this essay does not collapse into them. Closure
+              remains a finished work-state with a named end condition — an administrative or
+              operational completion stamp. Cleared remains a ready or permission gate past a
+              clearance check. Verified remains an independent check against evidence. Sync may
+              surface a completeness/acceptance-pack note or an acceptance/sign-off note beside
+              Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync
+              refuses false precision. Sync refuses when evidence is insufficient. This essay does
+              not rewrite Closure Is Not Complete. This essay does not rewrite Cleared Is Not
+              Complete. This essay does not rewrite Complete Is Not Verified. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Assured Is Not Proven. This essay does not rewrite
+              Recommend Is Not Authorize. This essay does not rewrite Human Decision Is Not Optional.
+              This essay does not rewrite Proof Is Not Authorization. This essay does not collapse
+              acceptance into completeness. This essay does not collapse complete into accepted. This
+              essay does not collapse accepted into authorized. This essay does not collapse
+              completeness into closure. This essay does not collapse complete into cleared. This
+              essay does not collapse complete into verified.
+            </p>
+
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -129,6 +172,272 @@ export default function ClosureIsNotCompletePage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+            <p className="text-xl font-semibold text-white">
+              Complete is not accepted. Complete is every named acceptance criterion for a case
+              satisfied under a named measurement window — acceptance completeness, not a closed
+              stamp and not a human sign-off. Accepted is a named human formally accepting that
+              acceptance pack (or the case outcome it covers) under a named decision window — human
+              acceptance/sign-off, not merely that the criteria measured as met. A firm with
+              completeness can still lack acceptance when that acceptance pack is on the record and
+              the firm has not named a human who formally accepted that pack, or the case outcome it
+              covers, under a named decision window. A firm with acceptance can still lack
+              completeness when that named human acceptance is on the record and the firm has not
+              satisfied every named acceptance criterion for that case under a named measurement
+              window. A complete acceptance pack without named human acceptance is not accepted. A
+              named human acceptance without every named acceptance criterion satisfied under the
+              measurement window is not complete. A title is neither. Treating complete as accepted
+              records acceptance completeness as a claim about named human acceptance that nobody has
+              shown, under the honesty and verification boundary. A completeness note can inform a
+              recommendation to investigate. Recommend is not authorize. Evidence from the plant
+              beats the completeness note when the note is being used as acceptance. Evidence from
+              the plant beats the acceptance note when the note is being used as completeness. Sync
+              must not auto-close, auto-authorize, or treat complete as accepted as Learning credit.
+              Sync does not measure acceptance. Sync does not measure acceptance for the customer.
+              Sync does not measure completeness. Sync does not measure completeness for the
+              customer. The prior refusal stays beside that split, and this essay does not rewrite
+              it. Closure is not complete. Closure is a finished work-state with a named end
+              condition — administrative or operational completion stamp, not proof that every
+              acceptance criterion was met. Complete, in that essay, is acceptance completeness, not
+              merely a closed stamp. A closed ticket without every acceptance criterion satisfied is
+              not complete. A complete acceptance pack without a named end-condition stamp is not
+              closure. A title is neither. This essay does not collapse acceptance into completeness.
+              This essay does not collapse completeness into closure. This essay does not collapse
+              accepted into authorized. A practice record that says complete is accepted is not a
+              customer plant release, and it is not shown acceptance. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The acceptance pack is not the sign-off
+            </h2>
+
+            <p>
+              An acceptance pack can show every named acceptance criterion for a case satisfied under
+              a named measurement window while no named human has formally accepted that pack, or the
+              case outcome it covers, under a named decision window. That pack is complete. It is not
+              accepted. A named human can formally accept a pack, or the case outcome it covers,
+              under a named decision window while one or more named acceptance criteria for that case
+              are still unsatisfied under the measurement window. That act is accepted. It is not
+              complete. A title on the org chart, with or without scope, is neither the acceptance
+              pack nor the sign-off. A firm with completeness can still lack acceptance. A firm with
+              acceptance can still lack completeness. A completeness note alone proves neither. An
+              acceptance note alone proves neither. A completeness note is not a green. An acceptance
+              note is not a green. A complete acceptance pack without named human acceptance is not
+              accepted. A named human acceptance without every named acceptance criterion satisfied
+              under the measurement window is not complete. A title is neither. Measured completeness
+              is not named acceptance. The acceptance pack is not the sign-off. This essay does not
+              invent a customer, a price, or a return. It states no savings figure, states no price,
+              and states no OEM limit. A practice record that says complete is accepted is not a
+              customer plant release, and it is not shown acceptance. Treating complete as accepted
+              records acceptance completeness as a claim about named human acceptance that nobody has
+              shown, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/closure-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Complete
+              </Link>{' '}
+              sits one step earlier. Closure, there, is a finished work-state: a ticket, work order,
+              investigation, or decision cycle marked done with a named end condition —
+              administrative or operational completion stamp, not proof that every acceptance
+              criterion was met. Complete, there, is every named acceptance criterion for that case
+              satisfied under a named measurement window — acceptance completeness, not merely a
+              closed stamp. A closed ticket without every acceptance criterion satisfied is not
+              complete. A complete acceptance pack without a named end-condition stamp is not
+              closure. A title is neither. That refusal stops at the finished end-state and the
+              acceptance pack. It does not ask whether a named human formally accepted that pack, or
+              the case outcome it covers, under a named decision window. Closure is not complete is a
+              different refusal. Complete is not accepted is the next refusal. A finished end-state
+              is not acceptance completeness, and acceptance completeness is not named human
+              acceptance. This essay does not rewrite Closure Is Not Complete. This essay does not
+              collapse completeness into closure. This essay does not collapse acceptance into
+              completeness.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared is a ready or
+              permission gate past a clearance check — a flag, a checklist, a badge, or a
+              cleared-to-proceed string. Passing that gate is not acceptance completeness, and it is
+              not a named human formally accepting an acceptance pack under a named decision window.
+              A cleared flag is not complete, and a cleared flag is not accepted.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that permission gate. A ready flag is not clearance, not an
+              acceptance pack, and not a sign-off. This essay does not rewrite Cleared Is Not
+              Complete. This essay does not rewrite Ready Is Not Cleared. This essay does not
+              collapse complete into cleared.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              keeps a completion label off the verified outcome. Verified is an independent check
+              against evidence — named observation against named criteria, not the completion label,
+              and not this essay definition of acceptance completeness. A case can meet every named
+              acceptance criterion under the measurement window and still lack that independent
+              check. A case can hold the independent check and still lack named human acceptance. A
+              named human acceptance is not that independent check. This essay does not rewrite
+              Complete Is Not Verified. This essay does not collapse complete into verified.{' '}
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps that past check off standing confidence that the asset stays known-good.{' '}
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>{' '}
+              keeps standing confidence off a closed evidentiary chain for a specific claim under
+              named conditions. Assurance is not acceptance. Proof is not acceptance. This essay does
+              not rewrite Verified Is Not Assured. This essay does not rewrite Assured Is Not Proven.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. Recommend is not authorize.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. Those
+              essays refuse auto-authorization. This essay separates measured
+              completeness from named acceptance. A recommendation tile is not an acceptance pack,
+              and a recommendation tile is not named human acceptance. A required human decision is
+              not, by itself, the statement that every named acceptance criterion was satisfied under
+              the measurement window. This essay does not rewrite Recommend Is Not Authorize. This
+              essay does not rewrite Human Decision Is Not Optional. This essay does not collapse
+              accepted into authorized.{' '}
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed chain off authorization to execute plant work, write a work order, or
+              clear equipment to run. Named human acceptance of an acceptance pack is not that
+              authorization, and it is not proof. This essay does not rewrite Proof Is Not
+              Authorization.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an acceptance note is allowed to be
+            </h2>
+
+            <p>
+              Complete is every named acceptance criterion for a case satisfied under a named measurement window — acceptance completeness, not a closed stamp and not a human sign-off. Accepted is a named human formally accepting that acceptance pack (or the case outcome it covers) under a named decision window — human acceptance/sign-off, not merely that the criteria measured as met. A named human acceptance without every named acceptance criterion satisfied under the measurement window is not complete. A firm with acceptance can still lack completeness. An acceptance note alone proves neither. Measured completeness is not named acceptance. Sync may surface a completeness/acceptance-pack note or an acceptance/sign-off note beside Evidence, Verification, and the closed outcome.
+            </p>
+
+            <p>
+              Complete is not accepted. Complete is every named acceptance criterion for a case
+              satisfied under a named measurement window — acceptance completeness, not a closed
+              stamp and not a human sign-off. Accepted is a named human formally accepting that
+              acceptance pack (or the case outcome it covers) under a named decision window — human
+              acceptance/sign-off, not merely that the criteria measured as met. A firm with
+              completeness can still lack acceptance. A firm with acceptance can still lack
+              completeness. A complete acceptance pack without named human acceptance is not
+              accepted. A named human acceptance without every named acceptance criterion satisfied
+              under the measurement window is not complete. A title is neither. Measured completeness
+              is not named acceptance. The acceptance pack is not the sign-off. Sync may surface a
+              completeness/acceptance-pack note or an acceptance/sign-off note beside Evidence,
+              Verification, and the closed outcome. This essay does not rewrite Closure Is Not
+              Complete. This essay does not rewrite Ready Is Not Cleared. This essay does not rewrite
+              Cleared Is Not Complete. This essay does not rewrite Complete Is Not Verified. This
+              essay does not rewrite Verified Is Not Assured. This essay does not rewrite Assured Is
+              Not Proven. This essay does not rewrite Recommend Is Not Authorize. This essay does not
+              rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not
+              Authorization. A practice record that says complete is accepted is not shown
+              acceptance. Sync does not measure acceptance. Sync does not measure acceptance for the
+              customer. Sync does not measure completeness for the customer.
+            </p>
+
+            <p>
+              Evidence may cite a completeness/acceptance-pack note when the source is named and the
+              citation says every named acceptance criterion for that case was satisfied under a
+              named measurement window — acceptance completeness, not a closed stamp and not a human
+              sign-off. Evidence may cite an acceptance/sign-off note when the source is named and
+              the citation says a named human formally accepted that acceptance pack, or the case
+              outcome it covers, under a named decision window — human acceptance/sign-off, not
+              merely that the criteria measured as met. If the evidence records the acceptance pack
+              and does not record that named human acceptance, the case may store the note as
+              complete and must not store the note as accepted. If the evidence records the named
+              human acceptance and does not record every named acceptance criterion satisfied under
+              the measurement window, the case may store the note as accepted and must not store the
+              note as complete. A complete acceptance pack without named human acceptance is not
+              accepted. A named human acceptance without every named acceptance criterion satisfied
+              under the measurement window is not complete. A title is neither. The label does not
+              fill the gap, and it does not close it. The completeness note does not paint a green.
+              The acceptance note does not paint a green.
+            </p>
+
+            <p>
+              Evidence from the plant beats the completeness note when the note is being used as
+              acceptance. Evidence from the plant beats the acceptance note when the note is being
+              used as completeness. A completeness note can inform a recommendation to investigate.
+              Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a
+              work order, not an invoice, and not a Decision Case that has already shown acceptance.
+              Surfacing is still a read. Sync may surface a completeness/acceptance-pack note or an
+              acceptance/sign-off note beside Evidence, Verification, and the closed outcome. Sync
+              may surface a completeness/acceptance-pack note or an acceptance/sign-off note beside
+              Evidence/Verification/closed outcome. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync must not auto-close, auto-authorize, or treat complete
+              as accepted as Learning credit. Sync does not measure completeness. Sync does not
+              measure completeness for the customer. Sync does not measure acceptance. Sync does not
+              measure acceptance for the customer. Sync does not book revenue. Sync does not
+              recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the
+              customer. Sync does not measure cash. Sync does not measure cash for the customer.
+              Sync does not measure runway. Sync does not measure runway for the customer. Sync does
+              not measure survival. Sync does not measure survival for the customer. Sync does not
+              measure solvency. Sync does not measure solvency for the customer. Sync does not
+              measure liquidity. Sync does not measure liquidity for the customer. Sync does not
+              measure flexibility. Sync does not measure flexibility for the customer. Sync does not
+              measure optionality. Sync does not measure optionality for the customer. Sync does not
+              measure strategy. Sync does not measure strategy for the customer. Sync does not
+              measure execution. Sync does not measure execution for the customer. Sync does not
+              measure results. Sync does not measure results for the customer. Sync does not measure
+              learning. Sync does not measure learning for the customer. Sync does not measure
+              judgment. Sync does not measure judgment for the customer. Sync does not measure
+              authority. Sync does not measure authority for the customer. Sync does not measure
+              accountability. Sync does not measure accountability for the customer. Sync does not
+              measure ownership. Sync does not measure ownership for the customer. Sync does not
+              measure control. Sync does not measure control for the customer. Sync does not measure
+              closure. Sync does not measure closure for the customer. Sync does not collect cash.
+              Sync does not attribute a change in cash, risk, or capacity. Sync does not execute
+              plant work. Direct plant execute stays off. CMMS write-back is not a live product path.
+              Billing write-back is not a live product path. A named human decides. A named human
+              remains accountable after the plant move. Self-guided onboarding is not claimed as a
+              live product path.
+            </p>
+
+
             <p className="text-xl font-semibold text-white">
               Closure is not complete. Closure is a finished work-state: a ticket, work order,
               investigation, or decision cycle marked done with a named end condition —
@@ -1347,7 +1656,7 @@ export default function ClosureIsNotCompletePage() {
               no survival length, no solvency length, no liquidity length, no flexibility length, no
               optionality length, no strategy length, no execution length, no results length, no
               learning length, no judgment length, no authority length, no accountability length, no
-              ownership length, no control length, and no closure length, and no completeness length. It does not claim that
+              ownership length, no control length, and no closure length, and no completeness length, and no acceptance length. It does not claim that
               control is closure, does not claim that ownership is control, does not claim that
               accountability is ownership, and does not claim that authority is accountability. It
               does not write a CMMS work order, clear equipment to run, book revenue, recognize
@@ -1362,7 +1671,7 @@ export default function ClosureIsNotCompletePage() {
               measure authority, measure authority for the customer, measure accountability, measure
               accountability for the customer, measure ownership, measure ownership for the customer,
               measure control, measure control for the customer, measure closure, measure closure for
-              the customer, measure completeness, measure completeness for the customer, collect cash, or attribute a change in cash, risk, or capacity. It does
+              the customer, measure completeness, measure completeness for the customer, measure acceptance, measure acceptance for the customer, collect cash, or attribute a change in cash, risk, or capacity. It does
               not claim that Sync executes plant work. It does not claim CMMS write-back as a shipped
               product. It does not claim billing write-back as a shipped product. It does not invent
               a customer, a price, or a return. It does not invent a case number. It does not treat a
@@ -1390,7 +1699,7 @@ export default function ClosureIsNotCompletePage() {
               Requires a Verified Outcome. This essay does not rewrite Verification Is Not Optional.
               This essay does not rewrite Verified Is Not Assured. This essay does not rewrite
               Results Is Not Learning. This essay does not rewrite Alert Is Not Decision. This essay
-              does not rewrite Authorization Is Not Accountability.
+              does not rewrite Authorization Is Not Accountability. This essay does not rewrite Closure Is Not Complete. This essay does not rewrite Assured Is Not Proven. This essay does not rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not Authorization. This essay does not collapse acceptance into completeness. This essay does not collapse complete into accepted. This essay does not collapse accepted into authorized. Complete is not accepted is a different refusal.
             </p>
 
             <p>
@@ -1420,31 +1729,6 @@ export default function ClosureIsNotCompletePage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/complete-is-not-accepted"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Complete Is Not Accepted
-              </Link>
-              , on why complete is still not accepted. Complete is every named acceptance criterion
-              for a case satisfied under a named measurement window — acceptance completeness, not a
-              closed stamp and not a human sign-off. Accepted is a named human formally accepting
-              that acceptance pack (or the case outcome it covers) under a named decision window —
-              human acceptance/sign-off, not merely that the criteria measured as met. A firm with
-              completeness can still lack acceptance when that acceptance pack has not been formally
-              accepted by a named human under a named decision window. A firm with acceptance can
-              still lack completeness. A complete acceptance pack without named human acceptance is
-              not accepted. A named human acceptance without every named acceptance criterion
-              satisfied under the measurement window is not complete. A title is neither. Closure
-              remains a finished work-state with a named end condition. Cleared remains a ready or
-              permission gate past a clearance check. Verified remains an independent check against
-              evidence. A completeness note alone proves neither. An acceptance note alone proves
-              neither. A completeness note is not a green. An acceptance note is not a green. Sync
-              does not measure acceptance. Sync does not measure acceptance for the customer.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -1472,6 +1756,8 @@ export default function ClosureIsNotCompletePage() {
                 for the customer, measures accountability, measures accountability for the customer,
                 measures ownership, measures ownership for the customer, measures control, measures
                 control for the customer, measures closure, measures closure for the customer,
+                measures completeness, measures completeness for the customer,
+                measures acceptance, measures acceptance for the customer,
                 collects cash, attributes cash, risk, or capacity, declares a return, that CMMS
                 write-back is live, that billing write-back is live, or that self-guided onboarding
                 is a live product path.
@@ -1498,7 +1784,7 @@ export default function ClosureIsNotCompletePage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="closure-is-not-complete" />
+          <InsightNextSteps slug="complete-is-not-accepted" />
         </motion.article>
       </div>
     </main>
