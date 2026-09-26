@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const paidIndex = slugs.indexOf('covered-is-not-paid');
 const coveredIndex = slugs.indexOf('insured-is-not-covered');
 const insuredIndex = slugs.indexOf('certified-is-not-insured');
 const certifiedIndex = slugs.indexOf('assured-is-not-certified');
@@ -79,7 +80,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    coveredIndex >= 0 &&
+    paidIndex >= 0 &&
+    coveredIndex > paidIndex &&
     insuredIndex > coveredIndex &&
     certifiedIndex > insuredIndex &&
     recoveryAssuredIndex > certifiedIndex &&
@@ -139,7 +141,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -12359,6 +12361,146 @@ if (
   !insuredPage.includes('/insights/insured-is-not-covered')
 ) {
   fail('certified-is-not-insured must point the series forward to insured-is-not-covered');
+}
+
+
+const paidPageRequired = [
+  ...coveredPageRequired,
+  "Covered is not paid",
+  "indemnity / loss payment / agreed settlement funds have actually moved (or a binding written settlement with payment date and amount is executed and trackable)",
+  "for that named covered event under today’s owner and window",
+  "not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not \"we’ll look into it,\" and not a ticket marked covered",
+  "A firm can be covered and still not paid",
+  "event in-scope; claim open, denied on process, underpaid, delayed, or never filed",
+  "A firm can be paid for a named loss and still not covered",
+  "ex gratia / goodwill payment, or payment under a different instrument than the one they thought responded",
+  "A coverage grant alone is not payment",
+  "A payment alone is not proof this event was in-scope under the named policy",
+  "The covered practice is not the paid practice",
+  "What a payment record is allowed to be",
+  "Named coverage is not payment",
+  "Sync does not measure payment",
+  "Sync does not measure payment for the customer",
+  "Sync does not measure coverage or payment for the customer",
+  "Sync must not auto-pay",
+  "Sync must not auto-settle",
+  "Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle",
+  "Sync may surface a coverage determination or a payment record",
+  "does not collapse payment into coverage",
+  "does not collapse covered into paid",
+  "does not rewrite Insured Is Not Covered",
+  "does not collapse into Insured Is Not Covered",
+  "practice record that says covered is paid",
+  "covered as paid",
+  "separates a responding grant of coverage for this event from indemnity that has actually moved",
+  "/insights/insured-is-not-covered",
+  "Evidence from the plant beats the coverage determination when the determination is being used as payment",
+  "Evidence from the plant beats the payment when the payment is being used as coverage for this event",
+  "treat covered as paid as Learning credit",
+  "Sync refuses to pretend coverage or payment is a status light",
+  "Sync does not pay for the customer",
+  "Sync does not settle claims for the customer",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+];
+const paidPage = read('app/insights/covered-is-not-paid/page.tsx');
+for (const required of paidPageRequired) {
+  if (!paidPage.includes(required)) {
+    fail(`covered-is-not-paid page must include ${required}`);
+  }
+}
+
+for (const slug of [
+  'insured-is-not-covered',
+  'certified-is-not-insured',
+  'assured-is-not-certified',
+  'recoverable-is-not-assured',
+  'rehearsed-is-not-recoverable',
+  'transferable-is-not-rehearsed',
+  'governed-is-not-transferable',
+  'owned-is-not-governed',
+  'compounded-is-not-owned',
+  'scaled-is-not-compounded',
+  'sustained-is-not-scaled',
+  'adopted-is-not-sustained',
+  'trusted-is-not-adopted',
+  'proven-is-not-trusted',
+  'resolved-is-not-proven',
+  'closed-is-not-resolved',
+  'executed-is-not-closed',
+  'authorized-is-not-executed',
+  'verified-is-not-authorized',
+  'action-is-not-execution',
+  'simulation-is-not-proof',
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes('covered-is-not-paid')) {
+    fail(`${slug} related reading must cite covered-is-not-paid`);
+  }
+}
+
+const paidBlock = stepBlock('covered-is-not-paid');
+for (const required of ['insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!paidBlock.includes(`'${required}'`)) {
+    fail(`covered-is-not-paid related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(paidBlock)) {
+  fail('covered-is-not-paid related reading must include the Strategic Pilot');
+}
+if (paidBlock.includes("next: 'strategic-pilot'")) {
+  fail('covered-is-not-paid next step is the Field Manual');
+}
+
+if (
+  !coveredPage.includes('The series continues with') ||
+  !coveredPage.includes('/insights/covered-is-not-paid')
+) {
+  fail('insured-is-not-covered must point the series forward to covered-is-not-paid');
 }
 
 function readingSlugs(name) {
