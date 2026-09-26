@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('compounded-is-not-owned');
+const article = getInsightArticle('owned-is-not-governed');
 
-export default function CompoundedIsNotOwnedPage() {
+export default function OwnedIsNotGovernedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,302 @@ export default function CompoundedIsNotOwnedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Compounded Is Not Owned</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Owned Is Not Governed</h1>
+
+            <p className="text-xl text-gray-400">
+              Owned is not governed. Owned means a named accountable owner can change, stop,
+              transfer, audit, or withhold the compounding system (playbooks, tooling, staffing
+              rights, exception paths, residual claim on the learning) with clear authority and
+              evidence the owner still holds it — not the org somehow got better, not a shared drive
+              nobody owns, and not a KPI chart that improved while no one can redirect the machine.
+              Governed means that ownership sits inside explicit rules of engagement: who may
+              authorize, what evidence is required, when to escalate, how exceptions are bounded, how
+              conflicts of interest are handled, and how the owner is audited or replaced — so the
+              system stays safe, compliant, and transferable under stress, not merely that a name is
+              on it. Owned is not governed. A firm can own a practice tightly on one line and still
+              not govern it. A firm can write governance binders and still not own the compounding
+              system that actually runs the plant. A name on a RACI alone is not governance. A policy
+              PDF alone is not ownership. A CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. Keep them apart: a name on a RACI alone is not governance; a policy
+              PDF alone is not ownership; a CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. Compounded is not owned. Compounded remains the condition in which
+              each new site/crew/class makes the next one cheaper, faster, or more reliable because
+              named learning, tooling, staffing, and exception paths transfer and accumulate.
+              Recommend is not authorize. Evidence lineage is not optional. Human decision is not
+              optional. Evidence from the plant beats the note. Surfacing is still a read. Sync
+              refuses false precision. Sync refuses to pretend ownership or governance is a status
+              light. Sync does not measure ownership. Sync does not measure ownership for the
+              customer. Sync does not measure governance. Sync does not measure governance for the
+              customer. Sync does not measure ownership or governance for the customer. Sync does not
+              assign ownership for the customer. Sync does not govern for the customer. Sync must not
+              auto-assign owners or auto-approve governed actions. Sync must not auto-assign owners.
+              Sync must not auto-approve governed actions. Sync must not auto-compound or auto-assign
+              ownership. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners, or
+              auto-approve governed actions.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded
+              is not owned. Owned is not governed. Compounded, in the prior essay, is the condition in
+              which each new site, crew, or class makes the next one cheaper, faster, or more reliable
+              because named learning, tooling, staffing, and exception paths transfer and accumulate.
+              Owned, there, means a named accountable owner can change, stop, transfer, audit, or
+              withhold the compounding system, with clear authority and evidence the owner still holds
+              it. That essay separates a compounded practice from ownership of the compounding system.
+              This essay does not collapse into that split. Compounding versus ownership is the prior
+              refusal. This essay separates an owned compounding system from governance of that system.
+              A named owner who can redirect the machine is not a rules-of-engagement record. A binder
+              that names who may authorize is not ownership, and a name on a RACI is not governance.{' '}
+              <Link
+                href="/insights/compounded-is-not-owned"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Compounded Is Not Owned
+              </Link>{' '}
+              keeps accumulation off a named owner of the compounding system. Read the prior essay at
+              /insights/compounded-is-not-owned. Ownership Is Not Control keeps a residual economic
+              claim off direction power. Control Is Not Closure keeps direction power off a finished
+              end-state. Accountability Is Not Ownership keeps outcome answerability off a residual
+              claim. Verified Is Not Authorized keeps an independent evidence check off permission to
+              act. Green Is Not Go keeps a status light off permission to run. None of those refusals
+              is this split. A name on a RACI is not this governance. A policy PDF is not this
+              ownership. This governance is ownership sitting inside explicit rules of engagement: who
+              may authorize, what evidence is required, when to escalate, how exceptions are bounded,
+              how conflicts of interest are handled, and how the owner is audited or replaced.
+              Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is Not
+              Optional stay beside this split. Sync may surface an ownership/accountable-owner note or
+              a governance/rules-of-engagement note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync refuses to pretend ownership or governance is a status
+              light. Sync must not auto-assign owners or auto-approve governed actions. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt,
+              auto-sustain, auto-scale, auto-compound, auto-assign owners, or treat owned as governed
+              as Learning credit. This essay does not rewrite Compounded Is Not Owned. This essay does
+              not rewrite Ownership Is Not Control. This essay does not rewrite Control Is Not Closure.
+              This essay does not rewrite Accountability Is Not Ownership. This essay does not rewrite
+              Verified Is Not Authorized. This essay does not rewrite Green Is Not Go. This essay does
+              not collapse into Compounded Is Not Owned. This essay does not collapse into Ownership Is
+              Not Control. This essay does not collapse into Control Is Not Closure. This essay does
+              not collapse into Accountability Is Not Ownership. This essay does not collapse into
+              Verified Is Not Authorized. This essay does not collapse into Green Is Not Go. This essay
+              does not collapse owned into governed. This essay does not collapse governance into
+              ownership. This essay does not collapse compounded into owned.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Owned is not governed. Owned means a named accountable owner can change, stop, transfer, audit, or withhold the compounding system (playbooks, tooling, staffing rights, exception paths, residual claim on the learning) with clear authority and evidence the owner still holds it — not the org somehow got better, not a shared drive nobody owns, and not a KPI chart that improved while no one can redirect the machine. Governed means that ownership sits inside explicit rules of engagement: who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how the owner is audited or replaced — so the system stays safe, compliant, and transferable under stress, not merely that a name is on it. A firm can own a practice tightly on one line and still not govern it, when that named owner can change, stop, transfer, audit, or withhold the compounding system on the one line and the record has no escalation ladder, no dual-control on high-risk changes, no audit trail, no succession. A firm can write governance binders and still not own the compounding system that actually runs the plant, when the binders name who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how an owner would be audited or replaced, and nobody named can change, stop, transfer, audit, or withhold the compounding system that actually runs the plant. A name on a RACI alone is not governance. A policy PDF alone is not ownership. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface an ownership/accountable-owner note or a governance/rules-of-engagement note beside Evidence, Verification, and the closed outcome. This essay does not collapse governance into ownership. This essay does not collapse owned into governed. This essay does not collapse into Accountability Is Not Ownership. A practice record that says owned is governed is not shown governance. Sync refuses to pretend ownership or governance is a status light. Treating owned as governed records a named owner as rules of engagement that nobody has shown, under the honesty and verification boundary. An ownership note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the ownership note when the note is being used as governance. Evidence from the plant beats the governance note when the note is being used as ownership. Sync must not auto-assign owners or auto-approve governed actions. Sync must not treat owned as governed as Learning credit. Sync does not measure ownership or governance for the customer. Sync does not measure governance for the customer. Sync does not govern for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The owned practice is not the governed practice
+            </h2>
+
+            <p>
+              Owned means a named accountable owner can change, stop, transfer, audit, or withhold the
+              compounding system (playbooks, tooling, staffing rights, exception paths, residual claim
+              on the learning) with clear authority and evidence the owner still holds it — not the
+              org somehow got better, not a shared drive nobody owns, and not a KPI chart that
+              improved while no one can redirect the machine. Governed means that ownership sits
+              inside explicit rules of engagement: who may authorize, what evidence is required, when
+              to escalate, how exceptions are bounded, how conflicts of interest are handled, and how
+              the owner is audited or replaced — so the system stays safe, compliant, and transferable
+              under stress, not merely that a name is on it. Sync may surface an
+              ownership/accountable-owner note or a governance/rules-of-engagement note beside
+              Evidence, Verification, and the closed outcome. A practice record that says owned is
+              governed is not shown governance. Evidence from the plant beats the ownership note when
+              the note is being used as governance. Evidence from the plant beats the governance note
+              when the note is being used as ownership. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              One line can have a named accountable owner who can change the playbooks, stop the
+              tooling, transfer the staffing rights, audit the exception paths, or withhold the
+              residual claim on the learning, with clear authority and evidence the owner still holds
+              it. The same line can have no escalation ladder, no dual-control on high-risk changes,
+              no audit trail, and no succession. When that owner is absent, the machine stops, and
+              nobody named can replace the owner under a rule. That record is owned. It is not
+              governed. A shelf of governance binders can name who may authorize, what evidence is
+              required, when to escalate, how exceptions are bounded, how conflicts of interest are
+              handled, and how an owner would be audited or replaced, while the compounding system
+              that actually runs the plant lives in tribal memory, on a contractor laptop, or in a
+              shared drive nobody can withhold. That binder is not ownership. A name on a RACI can
+              sit in a cell and still leave who may authorize, what evidence is required, when to
+              escalate, how exceptions are bounded, how conflicts of interest are handled, and how the
+              owner is audited or replaced unshown. A name on a RACI alone is not governance. A policy
+              PDF can sit in a folder and still leave nobody who can change, stop, transfer, audit, or
+              withhold the compounding system that actually runs the plant. A policy PDF alone is not
+              ownership. A firm can own a practice tightly on one line and still not govern it. A firm
+              can write governance binders and still not own the compounding system that actually runs
+              the plant. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A
+              one-off clear is a single quiet interval. It is not an owner, and it is not a rule of
+              engagement. Named ownership is not governance. The owned practice is not the governed
+              practice. This essay does not invent a customer, a price, or a return. It states no
+              savings figure, states no price, and states no OEM limit. A practice record that says
+              owned is governed is not a customer plant release, and it is not shown governance.
+              Treating owned as governed records a named owner the plant has not placed inside explicit
+              rules of engagement, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/compounded-is-not-owned"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Compounded Is Not Owned
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/compounded-is-not-owned.
+              Compounded, there, is the condition in which each new site/crew/class makes the next one
+              cheaper, faster, or more reliable because named learning, tooling, staffing, and
+              exception paths transfer and accumulate. Owned, there, means a named accountable owner
+              can change, stop, transfer, audit, or withhold the compounding system, with clear
+              authority and evidence the owner still holds it. Multi-site improvement alone is not
+              ownership. A better unit-cost chart alone is not ownership. That refusal stops at
+              accumulation and the named owner. It does not ask whether that ownership sits inside
+              explicit rules of engagement: who may authorize, what evidence is required, when to
+              escalate, how exceptions are bounded, how conflicts of interest are handled, and how the
+              owner is audited or replaced. Compounded is not owned is a different refusal. Owned is
+              not governed is the next refusal. Named compounding is not ownership, and named
+              ownership is not governance. Compounded Is Not Owned separates a compounded practice
+              from ownership of the compounding system. This essay separates an owned compounding
+              system from governance of that system. This essay does not rewrite Compounded Is Not
+              Owned. This essay does not collapse into Compounded Is Not Owned. This essay does not
+              collapse compounded into owned. This essay does not collapse owned into governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim on an asset, equity, IP, or cash flow off the practical
+              power to set or change direction. That residual claim is a balance-sheet claim. Owned
+              here is not that claim. Owned here is a named accountable owner of the compounding
+              system. Governed here is not direction power. Governed here is that owner sitting inside
+              explicit rules of engagement. A balance-sheet residual does not show dual-control on
+              high-risk changes, and direction power does not show succession. This essay does not
+              rewrite Ownership Is Not Control. This essay does not collapse into Ownership Is Not
+              Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not governance of the
+              compounding system, and a finished work-state is not an escalation ladder. This essay
+              does not rewrite Control Is Not Closure. This essay does not collapse into Control Is
+              Not Closure.{' '}
+              <Link
+                href="/insights/accountability-is-not-ownership"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Ownership
+              </Link>{' '}
+              keeps named answerability for an outcome off a residual economic claim. Answering for a
+              result is not rules of engagement, and a residual claim is not dual-control. This essay
+              does not rewrite Accountability Is Not Ownership. This essay does not collapse into
+              Accountability Is Not Ownership.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              keeps an independent check of a pack or outcome against named evidence off a named human
+              granting permission to execute a binding move. Who may authorize, inside a rule of
+              engagement, is not that independent check, and it is not that grant. Recommend is not
+              authorize. A governance note does not authorize. This essay does not rewrite Verified Is
+              Not Authorized. This essay does not collapse into Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>{' '}
+              keeps a green tile off permission to run. A status light is not an owner, and a status
+              light is not a rule of engagement. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Green Is Not Go. This essay does not collapse governance
+              into ownership.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a governance note is allowed to be
+            </h2>
+
+            <p>
+              Owned means a named accountable owner can change, stop, transfer, audit, or withhold the
+              compounding system. Governed means that ownership sits inside explicit rules of
+              engagement: who may authorize, what evidence is required, when to escalate, how
+              exceptions are bounded, how conflicts of interest are handled, and how the owner is
+              audited or replaced. A name on a RACI alone is not governance. A policy PDF alone is not
+              ownership. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Sync may surface an ownership/accountable-owner note or a governance/rules-of-engagement
+              note beside Evidence, Verification, and the closed outcome. This essay does not collapse
+              owned into governed.
+            </p>
+
+            <p>
+              Evidence may cite an ownership/accountable-owner note when the source of that note is
+              named, and when the citation names the accountable owner, the compounding system that
+              owner can change, stop, transfer, audit, or withhold (playbooks, tooling, staffing
+              rights, exception paths, residual claim on the learning), the authority under which that
+              owner acts, and the evidence the owner still holds it. Evidence may cite a
+              governance/rules-of-engagement note when the source of that note is named, and when the
+              citation names who may authorize, what evidence is required, when to escalate, how
+              exceptions are bounded, how conflicts of interest are handled, and how the owner is
+              audited or replaced, so the system stays safe, compliant, and transferable under stress.
+              If the evidence records the named owner and does not record those rules, the case may
+              store the note as owned and must not store the note as governed. If the evidence records
+              a binder and does not record a named owner who can change, stop, transfer, audit, or
+              withhold the compounding system that actually runs the plant, the case must not store
+              the note as owned and must not store the note as governed. What a governance note is
+              allowed to be is that named rules-of-engagement record around an owner the plant can
+              still show. It is not merely that a name is on it. It is not a name on a RACI alone. It
+              is not a policy PDF alone. It is not permission to execute. Recommend is not authorize.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-assign
+              owners or auto-approve governed actions.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named ownership is not governance
+            </h2>
+
+            <p>
+              Named ownership is not governance. The owned practice is not the governed practice. A
+              named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system answers who can redirect the machine, and whether the evidence still
+              shows that hold. It does not, by itself, name who may authorize. It does not, by itself,
+              name what evidence is required. It does not, by itself, name when to escalate, how
+              exceptions are bounded, how conflicts of interest are handled, or how the owner is
+              audited or replaced. No escalation ladder, no dual-control on high-risk changes, no
+              audit trail, no succession: that owner can still be real. A firm can own a practice
+              tightly on one line and still not govern it. A firm can write governance binders and
+              still not own the compounding system that actually runs the plant. A name on a RACI
+              alone is not governance. A policy PDF alone is not ownership. Not merely that a name is
+              on it. Not the org somehow got better. Not a shared drive nobody owns. Not a KPI chart
+              that improved while no one can redirect the machine. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. This essay does not rewrite Compounded Is Not
+              Owned. This essay does not rewrite Ownership Is Not Control. This essay does not rewrite
+              Control Is Not Closure. This essay does not rewrite Accountability Is Not Ownership.
+              This essay does not rewrite Verified Is Not Authorized. This essay does not rewrite
+              Green Is Not Go. This essay does not collapse into Compounded Is Not Owned. This essay
+              does not collapse into Ownership Is Not Control. This essay does not collapse into
+              Control Is Not Closure. This essay does not collapse into Accountability Is Not
+              Ownership. This essay does not collapse into Verified Is Not Authorized. This essay does
+              not collapse into Green Is Not Go. Sync does not measure ownership or governance for the
+              customer. Sync must not auto-assign owners or auto-approve governed actions. Sync
+              refuses to pretend ownership or governance is a status light.
+            </p>
+
             <p className="text-xl text-gray-400">
               Compounded is not owned. Compounded is the condition in which each new
               site/crew/class makes the next one cheaper, faster, or more reliable because named
@@ -6288,18 +6583,6 @@ export default function CompoundedIsNotOwnedPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/owned-is-not-governed"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Owned Is Not Governed
-              </Link>
-              , on why owned is still not governed. Owned means a named accountable owner can change, stop, transfer, audit, or withhold the compounding system (playbooks, tooling, staffing rights, exception paths, residual claim on the learning) with clear authority and evidence the owner still holds it — not the org somehow got better, not a shared drive nobody owns, and not a KPI chart that improved while no one can redirect the machine. Governed means that ownership sits inside explicit rules of engagement: who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how the owner is audited or replaced — so the system stays safe, compliant, and transferable under stress, not merely that a name is on it. A firm can own a practice tightly on one line and still not govern it when that owner is on the record and the line has no escalation ladder, no dual-control on high-risk changes, no audit trail, and no succession. A firm can write governance binders and still not own the compounding system that actually runs the plant when those binders are on the record and nobody named can change, stop, transfer, audit, or withhold the system that runs the plant. A name on a RACI alone is not governance. A policy PDF alone is not ownership. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Compounded remains accumulation that improves unit economics with volume. This essay separates a compounded practice from ownership of the compounding system. Multi-site improvement alone is not ownership. A better unit-cost chart alone is not ownership. Sync does not measure ownership or governance for the customer. Sync does not measure governance. Sync does not measure governance for the customer. Sync must not auto-assign owners or auto-approve governed actions. Sync refuses to pretend ownership or governance is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -6359,7 +6642,7 @@ export default function CompoundedIsNotOwnedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="compounded-is-not-owned" />
+          <InsightNextSteps slug="owned-is-not-governed" />
         </motion.article>
       </div>
     </main>
