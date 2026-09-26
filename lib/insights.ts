@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'ownership-is-not-control',
+    title: 'Ownership Is Not Control',
+    description:
+      'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A firm with ownership can still lack control when that residual claim is on the record and the firm has not named who can steer capital allocation, operating priorities, or binding plant moves in practice. A firm with control can still lack ownership when that direction power is on the record and the firm has not named a residual economic claim on an asset, equity, IP, or cash flow — none of which a control note alone proves. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Treating ownership as control records a residual claim as a claim about direction power that nobody has named, under the honesty and verification boundary. An ownership note can inform a recommendation to investigate. Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a work order, not an invoice, and not a Decision Case that has already shown control. Evidence from the plant beats the ownership note when the note is being used as control. Sync may surface an ownership/residual-claim note or a control/direction-power note beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat ownership as control as Learning credit. Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not measure cash for the customer. Sync does not measure runway. Sync does not measure runway for the customer. Sync does not measure survival. Sync does not measure survival for the customer. Sync does not measure solvency. Sync does not measure solvency for the customer. Sync does not measure liquidity. Sync does not measure liquidity for the customer. Sync does not measure flexibility. Sync does not measure flexibility for the customer. Sync does not measure optionality. Sync does not measure optionality for the customer. Sync does not measure strategy. Sync does not measure strategy for the customer. Sync does not measure execution. Sync does not measure execution for the customer. Sync does not measure results. Sync does not measure results for the customer. Sync does not measure learning. Sync does not measure learning for the customer. Sync does not measure judgment. Sync does not measure judgment for the customer. Sync does not measure authority. Sync does not measure authority for the customer. Sync does not measure accountability. Sync does not measure accountability for the customer. Sync does not measure ownership. Sync does not measure ownership for the customer. Sync does not measure control. Sync does not measure control for the customer. Sync does not collect cash. Sync does not attribute a change in cash, risk, or capacity. Sync does not execute plant work. Control here is practical steering power over the asset or plant, not the formal decision-rights charter alone. Authority is the formal, named right to bind the firm within a defined scope and window. A named human remains accountable after the plant move. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Companion to Accountability Is Not Ownership, Authority Is Not Accountability, Judgment Is Not Authority, Learning Is Not Judgment, Results Is Not Learning, Execution Is Not Results, Strategy Is Not Execution, Optionality Is Not Strategy, Flexibility Is Not Optionality, Liquidity Is Not Flexibility, Solvency Is Not Liquidity, Survival Is Not Solvency, Runway Is Not Survival, Cash Is Not Runway, ARR Is Not Cash, Revenue Is Not ARR, Impact Is Not Revenue, Outcome Is Not Impact, Value Is Not Outcome, Profit Is Not Value, Margin Is Not Profit, Cash Is Not Margin, Closure Is Not Cash, Accountability Is Not Closure, Coverage Is Not Control, Dashboard Is Not Control, Learning Requires a Verified Outcome, Verification Is Not Optional, and Recommend Is Not Authorize.',
+    excerpt:
+      'Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. It is not control. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A firm with ownership can still lack control. A firm with control can still lack ownership. An ownership note alone proves neither. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-26',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'accountability-is-not-ownership',
     title: 'Accountability Is Not Ownership',
     description:
@@ -858,12 +870,164 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'accountability-is-not-ownership': {
-    relatedSlug: 'authority-is-not-accountability',
-    relatedNote: 'Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. In the sentence the prior essay fixed, that right is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation — not the charter that named the right, not a title, and not sitting with the result without the right to bind. It is not ownership. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
+  'ownership-is-not-control': {
+    relatedSlug: 'accountability-is-not-ownership',
+    relatedNote: 'Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. That is outcome ownership after authority was exercised. It is not ownership. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome, and not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Sync does not measure accountability for the customer. Sync does not measure ownership for the customer. Sync does not measure control for the customer.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Control in this essay is practical steering power, not that charter alone.',
+      },
+      {
+        slug: 'coverage-is-not-control',
+        note: 'Coverage is the watched set: sensors, CMMS rows, dashboards, and patrol routes. Control in that essay is permission to order work, isolate equipment, or change the plant. Direction power in this essay is not a coverage gap, and this essay does not rewrite that refusal.',
+      },
+      {
+        slug: 'dashboard-is-not-control',
+        note: 'A dashboard reads a stored or streamed value and draws it. Control in that essay is a write that changes equipment state. A tile is not direction power. This essay does not rewrite that refusal.',
+      },
+      {
+        slug: 'judgment-is-not-authority',
+        note: 'Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. A situated call under the named decision owner and window is still not authority. Authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'learning-is-not-judgment',
+        note: 'Learning is an updated decision rule, model, or operating practice the firm adopts because a verified result changed what it will do next under a named decision window — tempered belief that changes future allocation, not a dashboard tile, a learning_events row, a retrospective note, or a results number sitting unread. Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A situated call under the named decision owner and window is still not authority.',
+      },
+      {
+        slug: 'results-is-not-learning',
+        note: 'Results is the attributed, measured change in plant capacity, risk, cost, or production the firm can show followed from completed work under a named measurement window — consequence under the honesty and verification boundary, not the WO close, shipped-change ticket, or single verified plant check alone. It is not learning. Learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'execution-is-not-results',
+        note: 'Execution is work actually completed inside the named decision window with evidence of done outcomes (closed work, shipped change, verified plant result) — realized performance against the committed path, not the strategy note, roadmap slide, or allocated budget envelope alone. It is not results. Results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'strategy-is-not-execution',
+        note: 'Strategy is a named choice among alternatives with allocated resources, a named decision window, accountable owner, and success criteria the firm is actually committing to execute — a committed path and resource allocation, not proof the work was completed inside that window. It is not execution. Execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'optionality-is-not-strategy',
+        note: 'Optionality is whether unused rights, capacity lines, budget envelopes, or contractual choices exist on paper (or in a plan) that could be exercised in some future state — theoretical choice inventory, not proof those choices are executable inside a named decision window (lead times, skills, covenants, plant continuity, and cash may still block exercise). It is not strategy. Strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'flexibility-is-not-optionality',
+        note: 'Flexibility is whether the firm can reallocate capital, capacity, staffing, vendor mix, or plant priorities inside a named decision window without breaking obligations, covenants, or continuity — the ability to choose and change course, not merely to pay what is already due. It is not optionality. Optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is whether cash and near-cash can meet obligations as they come due in the near term (payroll, vendors, debt service windows) without forced asset sales or covenant breaches. It is not flexibility. Flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is whether assets and claims structure can cover liabilities and pay debts as they come due over a structural horizon — balance-sheet and claim quality, not near-term cash timing alone. It is not liquidity. Liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'survival-is-not-solvency',
+        note: 'Survival is whether the business can keep meeting obligations (payroll, vendors, debt service, plant continuity) through the next decision horizon. It is not solvency. Solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'runway-is-not-survival',
+        note: 'Runway is how long operations can continue at the current net burn before cash is exhausted: cash divided by burn rate, with explicit assumptions. It is not survival. Survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is money received (collected) that can be spent now. It is not runway. Runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership. A spendable balance is still not work completed inside the window.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is the annualized value of recurring contracted subscription revenue that renews. It is not cash. Cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Recognized revenue is sales booked in a period. It is not ARR. ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'impact-is-not-revenue',
+        note: 'Business impact is not revenue. The recognized sale is not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'outcome-is-not-impact',
+        note: 'A measured outcome is not business impact. The impact is not recognized sales, recognized sales are not ARR, ARR is not cash, cash is not runway, runway is not survival, survival is not solvency, solvency is not liquidity, liquidity is not flexibility, flexibility is not optionality, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'value-is-not-outcome',
+        note: 'A reported outcome is not value unless it is the verified change the Decision Case named and authorized. Optionality is still not strategy, and strategy is still not execution, and execution is still not results, and results is still not learning, and learning is still not judgment, and judgment is still not authority, and authority is still not accountability. Accountability is still not ownership.',
+      },
+      {
+        slug: 'profit-is-not-value',
+        note: 'A profit figure under named cost rules is an accounting result. That result is not the value, optionality is not strategy, and strategy is not execution, and execution is not results, and results is not learning, and learning is not judgment, and judgment is not authority, and authority is not accountability. Accountability is not ownership.',
+      },
+      {
+        slug: 'proxy-is-not-outcome',
+        note: 'A KPI, a green tile, or a closed count is not the verified operational outcome. A strategy note is not execution.',
+      },
+      {
+        slug: 'margin-is-not-profit',
+        note: 'Contribution margin is not bottom-line profit. Strategy is not execution, and cash is not profitable ARR.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash collected and invoices paid are not contribution margin. Strategy is still not execution. That is a different refusal from cash is not margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closing a work order, a ticket, or a shift is not cash collected. A strategy note is not execution either.',
+      },
+      {
+        slug: 'accountability-is-not-closure',
+        note: 'Closure is the verified outcome recorded against named ownership. That measured result is not execution.',
+      },
+      {
+        slug: 'authorization-is-not-accountability',
+        note: 'Authorization answers who may start. A strategy note after the start is not execution.',
+      },
+      {
+        slug: 'complete-is-not-verified',
+        note: 'A completed workflow is a completion label. It is not the verified outcome, and it is not execution.',
+      },
+      {
+        slug: 'cleared-is-not-complete',
+        note: 'A clearance stamp is not proof the work is finished or that a committed path was carried through the window. A strategy note is not execution.',
+      },
+      {
+        slug: 'verification-is-not-optional',
+        note: 'The check records achieved, not_achieved, or inconclusive, with measured notes. Recording the check does not show execution.',
+      },
+      {
+        slug: 'learning-requires-a-verified-outcome',
+        note: 'Learning inherits the verified outcome. It does not inherit a learning note as judgment. Learning Requires a Verified Outcome is a different refusal.',
+      },
+      {
+        slug: 'verified-is-not-assured',
+        note: 'A verified record closes a claim about the past. Strategy is a committed path and resource allocation, not standing assurance and not execution.',
+      },
+      {
+        slug: 'recommend-is-not-authorize',
+        note: 'A recommendation that cites a strategy note is still a proposal. Recommend is not authorize, and the proposal is not execution.',
+      },
+      {
+        slug: 'green-is-not-go',
+        note: 'A green tile is not permission to run. An execution note beside that tile is not a strategy note, and a strategy note is not execution. A committed path is not a green. An execution note is not a green.',
+      },
+      {
+        slug: 'correlation-is-not-causation',
+        note: 'A judgment note that moved with a learning note is not a cause. Coincidence is not proof an adopted rule is the situated call that commits plant work, capital, or risk now.',
+      },
+    ],
+  },
+  'accountability-is-not-ownership': {
+    relatedSlug: 'ownership-is-not-control',
+    relatedNote: 'Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority remains the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone. Sync does not measure ownership for the customer. Sync does not measure control for the customer.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'authority-is-not-accountability',
+        note: 'Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither. Control in this essay is practical steering power, not that charter alone.',
+      },
       {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. A situated call under the named decision owner and window is still not authority. Authority is not accountability. Accountability is not ownership.',
@@ -1001,6 +1165,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'judgment-is-not-authority',
         note: 'Judgment is the situated call under incomplete information that commits plant work, capital, or risk now under a named decision owner and window — accountable choice with consequence, not an adopted rule sitting unused, a recommendation tile, a scored suggestion, or a learning note alone. It is not authority. Authority is the formal, named right to bind the firm within a defined scope and window — decision rights on the org chart or charter. A situated call under the named decision owner and window is still not authority. Authority is not accountability. Accountability is not ownership.',
       },
@@ -1136,6 +1304,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -1273,6 +1445,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -1408,6 +1584,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -1545,6 +1725,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -1680,6 +1864,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -1817,6 +2005,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -1952,6 +2144,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -2089,6 +2285,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -2224,6 +2424,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -2361,6 +2565,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -2496,6 +2704,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -2633,6 +2845,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -2768,6 +2984,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -2905,6 +3125,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -3040,6 +3264,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -3177,6 +3405,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -3313,6 +3545,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -3420,6 +3656,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -3577,6 +3817,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -3685,6 +3929,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -3716,6 +3964,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -3832,6 +4084,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -4009,6 +4265,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
       },
@@ -4144,6 +4404,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -4476,6 +4740,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'ready-is-not-cleared',
         note: 'A ready badge on the dashboard is a label under a threshold. It is not clearance to run, release, or start work.',
@@ -6381,6 +6649,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
+      {
         slug: 'ready-is-not-cleared',
         note: 'Parts ready for the watched set is still the watched set. Ready is not clearance to run or leave equipment in service.',
       },
@@ -6451,6 +6723,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'The check a later case is allowed to inherit.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
@@ -6566,6 +6842,10 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     relatedNote: 'What a closed case is allowed to pass forward.',
     next: 'field-manual',
     also: [
+      {
+        slug: 'ownership-is-not-control',
+        note: 'Ownership is not control. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the power to direct the asset. Control is the practical power to set or change direction of the asset or plant — who can steer capital allocation, operating priorities, or binding plant moves in practice — direction power, not a residual claim. A residual claim without direction power is not control. Direction power without a residual claim is not ownership. A title is neither. Authority is the formal, named right to bind within a defined scope and window. Control here is practical steering power over the asset or plant, not that charter alone.',
+      },
       {
         slug: 'accountability-is-not-ownership',
         note: 'Accountability is not ownership. Accountability is owning the outcome of a bound decision — who answers for results, misses, and remediation under a named decision window. Ownership is the residual economic claim on an asset, equity, IP, or cash flow — residual rights and upside/downside on the balance sheet, not the duty to answer for a named plant outcome. A residual claim without an outcome owner is not accountability. Answering for results without a residual claim is not ownership. A title is neither.',
