@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('accepted-is-not-verified');
+const article = getInsightArticle('verified-is-not-authorized');
 
-export default function AcceptedIsNotVerifiedPage() {
+export default function VerifiedIsNotAuthorizedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,56 @@ export default function AcceptedIsNotVerifiedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Accepted Is Not Verified</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Verified Is Not Authorized</h1>
+            <p className="text-xl text-gray-400">
+              Verified is not authorized. Verified is an independent check of a pack or outcome
+              against named evidence under a named measurement window — verification against
+              evidence, not permission to act. Authorized is a named human (or named accountable
+              role) granting permission to execute a binding plant/operating/capital move under a
+              named decision window — authorization to act, not merely that evidence checked out.
+              Verified is not authorized. A firm with verification can still lack authorization. A
+              firm with authorization can still lack verification. A verification note alone proves
+              neither. An authorization note alone proves neither. A verification note is not a
+              green. An authorization note is not a green. An independent verification without named
+              authorization is not authorized. A named authorization without an independent evidence
+              check is not verified. A title is neither. Accepted is not verified. Accepted remains
+              a named human formally accepting an acceptance pack under a named decision window —
+              human acceptance/sign-off, not an independent check, and not permission to act.
+              Complete is not accepted. Complete is not verified. Verified is not assured. Assured
+              is not proven. Recommend is not authorize. Human decision is not optional. Proof is
+              not authorization. Sync does not measure verification. Sync does not measure
+              verification for the customer. Sync does not measure authorization. Sync does not
+              measure authorization for the customer. Sync does not verify or authorize for the
+              customer. Sync does not accept or verify for the customer.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority
+              is not accountability. Accountability is not ownership. Ownership is not control.
+              Control is not closure. Closure is not complete. Complete is not accepted. Accepted is
+              not verified. Verified is not authorized. Accepted, in the prior essay, is named human
+              acceptance/sign-off of an acceptance pack. That essay separates named human acceptance
+              from verification. This essay does not collapse into that split. This essay separates
+              independent verification from authorization. Verified Is Not Assured and Assured Is Not
+              Proven are the assurance and proof stack — a different axis. Recommend Is Not
+              Authorize, Proof Is Not Authorization, and Human Decision Is Not Optional refuse
+              auto-authorization and treat a recommendation or a proof as insufficient for authorize.
+              This essay does not collapse into those refusals. It separates an independent evidence
+              check from named authorization specifically. Complete Is Not Verified separates
+              measured completeness from verification. This essay does not collapse into that split
+              either. Sync may surface a verification/evidence-check note or an
+              authorization/permission-to-act note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync must not auto-close or auto-authorize. This essay does
+              not rewrite Accepted Is Not Verified. This essay does not rewrite Complete Is Not
+              Accepted. This essay does not rewrite Complete Is Not Verified. This essay does not
+              rewrite Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared.
+              This essay does not rewrite Verified Is Not Assured. This essay does not rewrite
+              Assured Is Not Proven. This essay does not rewrite Recommend Is Not Authorize. This
+              essay does not rewrite Human Decision Is Not Optional. This essay does not rewrite
+              Proof Is Not Authorization. This essay does not collapse authorization into
+              verification. This essay does not collapse verified into authorized. This essay does not collapse authorized into assured. This essay does not collapse authorized into proven. This essay does not collapse verification into acceptance. This essay does not
+              collapse accepted into verified. This essay does not collapse accepted into authorized.
+            </p>
             <p className="text-xl text-gray-400">
               Accepted is a named human formally accepting an acceptance pack (or the case outcome it
               covers) under a named decision window — human acceptance/sign-off, not an independent
@@ -245,6 +294,240 @@ export default function AcceptedIsNotVerifiedPage() {
               verification for the customer. Sync does not measure acceptance. Sync does not measure
               acceptance for the customer. Sync does not accept or verify for the customer. Direct
               plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The evidence check is not the permission to act
+            </h2>
+
+            <p>
+              An independent check can match a pack or outcome against named evidence under a named
+              measurement window while no named human, and no named accountable role, has granted
+              permission to execute a binding plant/operating/capital move under a named decision
+              window. That check is verified. It is not authorized. A named human, or a named
+              accountable role, can grant that permission under a named decision window while nobody
+              has independently checked the pack or outcome against named evidence under a named
+              measurement window. That grant is authorized. It is not verified. A title on the org
+              chart, with or without scope, is neither the evidence check nor the permission to act.
+              A firm with verification can still lack authorization. A firm with authorization can
+              still lack verification. A verification note alone proves neither. An authorization
+              note alone proves neither. A verification note is not a green. An authorization note
+              is not a green. An independent verification without named authorization is not
+              authorized. A named authorization without an independent evidence check is not
+              verified. A title is neither. Independent verification is not named authorization. The
+              evidence check is not the permission to act. This essay does not invent a customer, a
+              price, or a return. It states no savings figure, states no price, and states no OEM
+              limit. A practice record that says verified is authorized is not a customer plant
+              release, and it is not shown authorization. Treating verified as authorized records an
+              independent evidence check as a claim about permission to act that nobody has granted,
+              under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              sits one step earlier. Accepted, there, is a named human formally accepting an
+              acceptance pack (or the case outcome it covers) under a named decision window — human
+              acceptance/sign-off, not an independent check. Verified, there, is an independent check
+              of that pack or outcome against named evidence under a named measurement window —
+              verification against evidence, not the acceptance stamp and not measured completeness
+              alone. A named human acceptance without an independent evidence check is not verified.
+              An independent verification without named human acceptance of the pack is not accepted.
+              A title is neither. That refusal stops at named human acceptance and independent
+              verification. It does not ask whether a named human, or a named accountable role, has
+              granted permission to execute a binding plant/operating/capital move under a named
+              decision window. Accepted is not verified is a different refusal. Verified is not
+              authorized is the next refusal. Named acceptance is not independent verification, and
+              independent verification is not named authorization. Accepted Is Not Verified separates
+              named human acceptance from verification. This essay separates independent verification
+              from authorization. This essay does not rewrite Accepted Is Not Verified. This essay
+              does not collapse verification into acceptance. This essay does not collapse verified
+              into authorized.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              separates measured completeness from verification. Complete, in that essay, is a
+              completion label under criteria someone chose. Verified, in that essay, is an
+              independent check against evidence — named observation against named criteria, not the
+              completion label. A case can meet every named acceptance criterion under a measurement
+              window and still lack that independent check. That split is not this one. This essay
+              does not ask whether the pack is complete. It asks whether an independent check of the
+              pack or outcome against named evidence is the same thing as named permission to execute
+              a binding move. It is not. Complete Is Not Verified separates measured completeness
+              from verification. This essay separates independent verification from authorization.
+              This essay does not rewrite Complete Is Not Verified. This essay does not collapse
+              verification into completeness. This essay does not collapse verified into authorized.{' '}
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared is a ready or
+              permission gate past a clearance check. Passing that gate is not an independent
+              evidence check, and it is not named authorization to execute a binding
+              plant/operating/capital move.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that permission gate. A ready flag is not clearance, not
+              verification, and not authorization to act. This essay does not rewrite Cleared Is Not
+              Complete. This essay does not rewrite Ready Is Not Cleared.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. Assurance is not permission to act, and assurance is not this essay&apos;s
+              authorization.{' '}
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>{' '}
+              keeps standing confidence off a closed evidentiary chain for a specific claim under
+              named conditions. Proof is not authorization to act, and proof is not the independent
+              check this essay names. The assurance and proof stack is a different axis. This essay
+              does not rewrite Verified Is Not Assured. This essay does not rewrite Assured Is Not
+              Proven. This essay does not collapse verified into assured. This essay does not
+              collapse authorized into assured. This essay does not collapse authorized into proven.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. Recommend is not authorize.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return.{' '}
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed chain off authorization to execute plant work, write a work order, or
+              clear equipment to run. Those essays refuse auto-authorization and treat a
+              recommendation or a proof as insufficient for authorize. This essay does not collapse
+              into them. This essay separates independent verification from authorization. A
+              recommendation tile is not an evidence check, and a recommendation tile is not named
+              permission to act. A required human decision is not, by itself, the statement that the
+              pack or outcome was checked against named evidence, and it is not, by itself, the
+              grant of permission to execute a binding move. A closed chain is not that grant. An
+              independent verification of a pack is not that grant either. This essay does not
+              rewrite Recommend Is Not Authorize. This essay does not rewrite Human Decision Is Not
+              Optional. This essay does not rewrite Proof Is Not Authorization. This essay does not
+              collapse verified into authorized.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an authorization note is allowed to be
+            </h2>
+
+            <p>
+              Verified is an independent check of a pack or outcome against named evidence under a named measurement window — verification against evidence, not permission to act. Authorized is a named human (or named accountable role) granting permission to execute a binding plant/operating/capital move under a named decision window — authorization to act, not merely that evidence checked out. An independent verification without named authorization is not authorized. A named authorization without an independent evidence check is not verified. Sync may surface a verification/evidence-check note or an authorization/permission-to-act note beside Evidence, Verification, and the closed outcome.
+            </p>
+
+            <p>
+              Verified is an independent check of a pack or outcome against named evidence under a
+              named measurement window — verification against evidence, not permission to act.
+              Authorized is a named human (or named accountable role) granting permission to execute
+              a binding plant/operating/capital move under a named decision window — authorization to
+              act, not merely that evidence checked out. An independent verification without named
+              authorization is not authorized. A firm with authorization can still lack verification.
+              An authorization note alone proves neither. Independent verification is not named
+              authorization. Sync may surface a verification/evidence-check note or an
+              authorization/permission-to-act note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read.
+            </p>
+
+            <p>
+              Verified is not authorized. Verified is an independent check of a pack or outcome
+              against named evidence under a named measurement window — verification against
+              evidence, not permission to act. Authorized is a named human (or named accountable
+              role) granting permission to execute a binding plant/operating/capital move under a
+              named decision window — authorization to act, not merely that evidence checked out. A
+              firm with verification can still lack authorization. A firm with authorization can
+              still lack verification. An independent verification without named authorization is not
+              authorized. A named authorization without an independent evidence check is not
+              verified. A title is neither. Independent verification is not named authorization. The
+              evidence check is not the permission to act. Sync may surface a
+              verification/evidence-check note or an authorization/permission-to-act note beside
+              Evidence, Verification, and the closed outcome. This essay does not rewrite Accepted Is
+              Not Verified. This essay does not rewrite Complete Is Not Verified. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not rewrite Cleared Is Not Complete. This
+              essay does not rewrite Verified Is Not Assured. This essay does not rewrite Assured Is
+              Not Proven. This essay does not rewrite Recommend Is Not Authorize. This essay does not
+              rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not
+              Authorization. A practice record that says verified is authorized is not shown
+              authorization. Sync does not measure authorization. Sync does not measure authorization
+              for the customer. Sync does not measure verification for the customer. Sync does not
+              verify or authorize for the customer. Sync does not book revenue. Sync does not
+              recognize revenue. Sync refuses false precision. Sync refuses when evidence is
+              insufficient. Sync must not auto-close, auto-authorize, or treat verified as authorized
+              as Learning credit.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Accepted is not verified. Accepted is a named human formally accepting an acceptance
+              pack (or the case outcome it covers) under a named decision window — human
+              acceptance/sign-off, not an independent check. Verified is an independent check of that
+              pack or outcome against named evidence under a named measurement window — verification
+              against evidence, not the acceptance stamp and not permission to act. Authorized is a
+              named human (or named accountable role) granting permission to execute a binding
+              plant/operating/capital move under a named decision window — authorization to act, not
+              merely that evidence checked out. A firm with acceptance can still lack verification
+              when that named human acceptance is on the record and the firm has not independently
+              checked that pack or outcome against named evidence under a named measurement window. A
+              firm with verification can still lack authorization when that independent check is on
+              the record and the firm has not named a human, or a named accountable role, who granted
+              permission to execute that binding move under a named decision window. A named human
+              acceptance without an independent evidence check is not verified. An independent
+              verification without named authorization is not authorized. A named authorization
+              without an independent evidence check is not verified. A title is neither. Treating
+              verified as authorized records an independent evidence check as a claim about
+              permission to act that nobody has granted, under the honesty and verification boundary.
+              A verification note can inform a recommendation to investigate. Recommend is not
+              authorize. Evidence from the plant beats the verification note when the note is being
+              used as authorization. Evidence from the plant beats the authorization note when the
+              note is being used as verification. Sync must not auto-close, auto-authorize, or treat
+              verified as authorized as Learning credit. Sync does not measure authorization. Sync
+              does not measure authorization for the customer. Sync does not measure verification.
+              Sync does not measure verification for the customer. Sync does not verify or authorize
+              for the customer. The prior refusal stays beside that split, and this essay does not
+              rewrite it. Accepted is not verified. This essay separates independent verification
+              from authorization. This essay does not collapse verified into authorized. This essay
+              does not collapse authorization into verification. A practice record that says verified
+              is authorized is not a customer plant release, and it is not shown authorization.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
               write-back is not a live product path.
             </p>
 
@@ -1927,7 +2210,7 @@ export default function AcceptedIsNotVerifiedPage() {
               no survival length, no solvency length, no liquidity length, no flexibility length, no
               optionality length, no strategy length, no execution length, no results length, no
               learning length, no judgment length, no authority length, no accountability length, no
-              ownership length, no control length, and no closure length, and no completeness length, and no acceptance length, and no verification length. It does not claim that
+              ownership length, no control length, and no closure length, and no completeness length, and no acceptance length, and no verification length, and no authorization length. It does not claim that
               control is closure, does not claim that ownership is control, does not claim that
               accountability is ownership, and does not claim that authority is accountability. It
               does not write a CMMS work order, clear equipment to run, book revenue, recognize
@@ -1942,7 +2225,7 @@ export default function AcceptedIsNotVerifiedPage() {
               measure authority, measure authority for the customer, measure accountability, measure
               accountability for the customer, measure ownership, measure ownership for the customer,
               measure control, measure control for the customer, measure closure, measure closure for
-              the customer, measure completeness, measure completeness for the customer, measure acceptance, measure acceptance for the customer, measure verification, measure verification for the customer, collect cash, or attribute a change in cash, risk, or capacity. Sync does not accept or verify for the customer. It does
+              the customer, measure completeness, measure completeness for the customer, measure acceptance, measure acceptance for the customer, measure verification, measure verification for the customer, collect cash, or attribute a change in cash, risk, or capacity. Sync does not accept or verify for the customer. Sync does not measure authorization. Sync does not measure authorization for the customer. Sync does not verify or authorize for the customer. It does
               not claim that Sync executes plant work. It does not claim CMMS write-back as a shipped
               product. It does not claim billing write-back as a shipped product. It does not invent
               a customer, a price, or a return. It does not invent a case number. It does not treat a
@@ -1970,7 +2253,7 @@ export default function AcceptedIsNotVerifiedPage() {
               Requires a Verified Outcome. This essay does not rewrite Verification Is Not Optional.
               This essay does not rewrite Verified Is Not Assured. This essay does not rewrite
               Results Is Not Learning. This essay does not rewrite Alert Is Not Decision. This essay
-              does not rewrite Authorization Is Not Accountability. This essay does not rewrite Closure Is Not Complete. This essay does not rewrite Assured Is Not Proven. This essay does not rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not Authorization. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse acceptance into completeness. This essay does not collapse complete into accepted. This essay does not collapse accepted into authorized. This essay does not collapse verification into acceptance. This essay does not collapse accepted into verified. This essay does not collapse verified into assured. This essay does not collapse verified into proven. Complete is not accepted is a different refusal. Accepted is not verified is a different refusal. Complete Is Not Verified separates measured completeness from verification. This essay separates named human acceptance from verification.
+              does not rewrite Authorization Is Not Accountability. This essay does not rewrite Closure Is Not Complete. This essay does not rewrite Assured Is Not Proven. This essay does not rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not Authorization. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse acceptance into completeness. This essay does not collapse complete into accepted. This essay does not collapse accepted into authorized. This essay does not collapse verification into acceptance. This essay does not collapse accepted into verified. This essay does not collapse verified into assured. This essay does not collapse verified into proven. Complete is not accepted is a different refusal. Accepted is not verified is a different refusal. Complete Is Not Verified separates measured completeness from verification. This essay separates named human acceptance from verification. Verified is not authorized is a different refusal. This essay separates independent verification from authorization. This essay does not collapse verified into authorized. This essay does not collapse authorization into verification. This essay does not rewrite Accepted Is Not Verified.
             </p>
 
             <p>
@@ -1998,33 +2281,6 @@ export default function AcceptedIsNotVerifiedPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records the
               measured result. The control note does not record closure.
-            </p>
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/verified-is-not-authorized"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Verified Is Not Authorized
-              </Link>
-              , on why verified is still not authorized. Verified is an independent check of a pack
-              or outcome against named evidence under a named measurement window — verification
-              against evidence, not permission to act. Authorized is a named human (or named
-              accountable role) granting permission to execute a binding plant/operating/capital move
-              under a named decision window — authorization to act, not merely that evidence checked
-              out. A firm with verification can still lack authorization when that independent check
-              is on the record and the firm has not named a human, or a named accountable role, who
-              granted permission to execute that binding move under a named decision window. A firm
-              with authorization can still lack verification. An independent verification without
-              named authorization is not authorized. A named authorization without an independent
-              evidence check is not verified. A title is neither. Accepted remains a named human
-              formally accepting an acceptance pack under a named decision window. This essay
-              separates independent verification from authorization. An authorization note alone
-              proves neither. A verification note alone proves neither. An authorization note is not
-              a green. A verification note is not a green. Sync does not measure authorization. Sync
-              does not measure authorization for the customer. Sync does not verify or authorize for
-              the customer.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
@@ -2058,6 +2314,8 @@ export default function AcceptedIsNotVerifiedPage() {
                 measures acceptance, measures acceptance for the customer,
                 measures verification, measures verification for the customer,
                 accepts or verifies for the customer,
+                measures authorization, measures authorization for the customer,
+                verifies or authorizes for the customer,
                 collects cash, attributes cash, risk, or capacity, declares a return, that CMMS
                 write-back is live, that billing write-back is live, or that self-guided onboarding
                 is a live product path.
@@ -2084,7 +2342,7 @@ export default function AcceptedIsNotVerifiedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="accepted-is-not-verified" />
+          <InsightNextSteps slug="verified-is-not-authorized" />
         </motion.article>
       </div>
     </main>
