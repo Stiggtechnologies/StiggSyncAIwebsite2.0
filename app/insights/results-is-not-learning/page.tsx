@@ -123,7 +123,7 @@ export default function ResultsIsNotLearningPage() {
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not learning.
-              Each word can be true in its own place. None of the earlier words fills the last one. A
+              Learning is not judgment. Each word can be true in its own place. None of the earlier words fills the last one. A
               closed work order, cash collected, a unit remainder, a profit figure, a measured
               outcome, an attributed change in cash, risk, or capacity, a recognized sale, an
               annualized contract, a spendable balance, a duration at the current net burn,
@@ -159,7 +159,11 @@ export default function ResultsIsNotLearningPage() {
               operating practice the firm adopts because a verified result changed what it will do
               next under a named decision window — tempered belief that changes future allocation,
               not a dashboard tile, a learning_events row, a retrospective note, or a results number
-              sitting unread. A results note is not that learning claim.
+              sitting unread. Judgment is the situated call under incomplete information that
+              commits plant work, capital, or risk now under a named decision owner and window —
+              accountable choice with consequence, not an adopted rule sitting unused, a
+              recommendation tile, a scored suggestion, or a learning note alone. A results note is
+              not that learning claim. A learning note is not that judgment claim.
             </p>
 
             <p>
@@ -862,6 +866,7 @@ export default function ResultsIsNotLearningPage() {
               Runway is not survival. Survival is not solvency. Solvency is not liquidity. Liquidity
               is not flexibility. Flexibility is not optionality. Optionality is not strategy.
               Strategy is not execution. Execution is not results. Results is not learning.
+              Learning is not judgment.
             </p>
 
             <p>
@@ -1446,6 +1451,28 @@ export default function ResultsIsNotLearningPage() {
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records the
               measured result. The results note does not record the learning.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/learning-is-not-judgment"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning Is Not Judgment
+              </Link>
+              , on why learning is still not judgment. Learning is an updated decision rule, model,
+              or operating practice the firm adopts because a verified result changed what it will do
+              next under a named decision window — tempered belief that changes future allocation,
+              not a dashboard tile, a learning_events row, a retrospective note, or a results number
+              sitting unread. Judgment is the situated call under incomplete information that commits
+              plant work, capital, or risk now under a named decision owner and window — accountable
+              choice with consequence, not an adopted rule sitting unused, a recommendation tile, a
+              scored suggestion, or a learning note alone. A firm with learning can still lack
+              judgment when that adopted rule is not the situated call under the named decision owner
+              and window. A firm with judgment can still lack learning. A learning note alone proves
+              neither. A judgment note alone proves neither. A learning note is not a green. A
+              judgment note is not a green.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
