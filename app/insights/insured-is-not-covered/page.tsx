@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('certified-is-not-insured');
+const article = getInsightArticle('insured-is-not-covered');
 
-export default function CertifiedIsNotInsuredPage() {
+export default function InsuredIsNotCoveredPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,403 @@ export default function CertifiedIsNotInsuredPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Certified Is Not Insured</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Insured Is Not Covered</h1>
+
+            <p className="text-xl text-gray-400">
+              Insured is not covered. Insured means a named, in-force indemnity/coverage instrument exists
+              (policy, binder, endorsement, named insured + limits + triggers + exclusions + claims path on
+              file) — not the same as the specific restore/continuity/loss event actually falling inside
+              that instrument’s responding terms today. Covered means the named failure, loss, location,
+              asset class, cause, and window are inside the policy’s responding grant of coverage (triggers
+              met, exclusions not barring, named insured correct, limits not exhausted, notice conditions
+              satisfiable) so a competent claims path would treat the event as in-scope — not "we have a
+              policy," not a certificate of insurance PDF, not a broker email saying "you’re good," and not
+              a CMMS checkbox. Insured is not covered. A firm can be insured and still not covered (policy
+              in force; this restore failure / flood / cyber / downtime cause is excluded, sublimited,
+              misnamed, or outside the period). A firm can be covered for a named event class and still not
+              insured in the sense operators mean (coverage language exists in a draft or quote, no in-force
+              binder). A policy alone is not coverage for this event. Coverage language alone is not an
+              in-force policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Keep them apart: a policy alone is not coverage for this event; coverage language alone is not
+              an in-force policy; a CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Certified is not insured. Certified remains a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Evidence from the plant
+              beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses to
+              pretend insurance or coverage is a status light. Sync does not measure insurance. Sync does
+              not measure insurance for the customer. Sync does not measure coverage. Sync does not measure
+              coverage for the customer. Sync does not measure insurance or coverage for the customer. Sync
+              does not issue certificates for the customer. Sync does not issue policies for the customer.
+              Sync does not adjudicate claims for the customer. Sync must not auto-transfer ownership,
+              auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance,
+              auto-issue certificates, auto-issue policies, or auto-adjudicate claims. Sync must not
+              auto-transfer ownership. Sync must not auto-declare RTO met. Sync must not auto-credit
+              Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync must not
+              auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate
+              claims. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust,
+              auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners, auto-approve governed
+              actions, auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or
+              auto-adjudicate claims.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not
+              closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not
+              resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is
+              not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned.
+              Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed
+              is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not
+              insured. Insured is not covered. Certified, in the prior essay, means a third-party or
+              internal program stamp that a recovery/continuity program exists or once met a named checklist
+              (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge). Insured,
+              there, means a named, in-force indemnity/coverage instrument (policy, binder, endorsement,
+              named insured + limits + triggers + exclusions + claims path) that actually responds when
+              recovery fails or loss lands. That sentence is the prior refusal. The words in-force coverage
+              instrument in that sentence name a policy, binder, or endorsement on file, with a named
+              insured, limits, triggers, exclusions, and a claims path. They do not name the specific
+              restore, flood, cyber, or downtime event falling inside that instrument’s responding terms
+              today. They do not show triggers met, exclusions not barring, the named insured correct,
+              limits not exhausted, and notice conditions satisfiable for this failure, this location, this
+              asset class, this cause, and this window. This essay does not rewrite that sentence. This
+              essay does not collapse into that split. Certification versus insurance is the prior refusal.
+              This essay separates an in-force coverage instrument from a responding grant of coverage for this event. A policy on file is not evidence this restore failure is inside the responding
+              grant. Coverage language in a draft or quote is not an in-force binder.{" "}
+              <Link
+                href="/insights/certified-is-not-insured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Certified Is Not Insured
+              </Link>
+              {" "}
+              keeps a certification stamp off a named, in-force indemnity instrument. Read the prior essay
+              at /insights/certified-is-not-insured. Assured Is Not Certified keeps a dated assurance record
+              off a program stamp that a recovery/continuity program exists or once met a named checklist.
+              Recoverable Is Not Assured keeps a one-time restore inside a named RTO/RPO off independent,
+              recurring verification that recovery still holds. Rehearsed Is Not Recoverable keeps a
+              rehearsed handoff off a proven restore to a named service level inside a named RTO/RPO.
+              Transferable Is Not Rehearsed keeps a transferable governed owned compounding system off a
+              handoff run under stress. Governed Is Not Transferable keeps a governed owned compounding
+              system off evidence continuity under a new named owner. Owned Is Not Governed keeps a named
+              owner of the compounding system off rules of engagement. Assured Is Not Proven keeps
+              time-bounded confidence that an asset stays known-good under operating conditions off a
+              closed evidentiary chain for a specific claim. Verified Is Not Assured keeps an independent
+              check off standing assurance. Green Is Not Go keeps a status light off permission to run.
+              None of those refusals is this split. A policy on file is not this coverage. Coverage
+              language is not this in-force policy. This insurance is a named instrument that exists and is
+              in force. This coverage is the named event class sitting inside the responding grant so a
+              competent claims path would treat the event as in-scope. Recommend Is Not Authorize, Evidence
+              Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may
+              surface an insurance instrument or a coverage determination beside Evidence, Verification, and
+              the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses
+              when evidence is insufficient. Sync refuses to pretend insurance or coverage is a status
+              light. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for
+              an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or
+              auto-adjudicate claims. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners,
+              auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or treat insured
+              as covered as Learning credit. This essay does not rewrite Certified Is Not Insured. This
+              essay does not rewrite Assured Is Not Certified. This essay does not rewrite Recoverable Is
+              Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This essay does not
+              rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not
+              Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not rewrite
+              Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This essay does
+              not rewrite Green Is Not Go. This essay does not collapse into Certified Is Not Insured. This
+              essay does not collapse into Assured Is Not Certified. This essay does not collapse into
+              Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not Recoverable.
+              This essay does not collapse into Transferable Is Not Rehearsed. This essay does not collapse
+              into Governed Is Not Transferable. This essay does not collapse into Owned Is Not Governed.
+              This essay does not collapse into Assured Is Not Proven. This essay does not collapse into
+              Verified Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does
+              not collapse insured into covered. This essay does not collapse coverage into insurance. This
+              essay does not collapse certified into insured.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Insured is not covered. Insured means a named, in-force indemnity/coverage instrument exists (policy, binder, endorsement, named insured + limits + triggers + exclusions + claims path on file) — not the same as the specific restore/continuity/loss event actually falling inside that instrument’s responding terms today. Covered means the named failure, loss, location, asset class, cause, and window are inside the policy’s responding grant of coverage (triggers met, exclusions not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims path would treat the event as in-scope — not "we have a policy," not a certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. A firm can be insured and still not covered, when policy in force; this restore failure / flood / cyber / downtime cause is excluded, sublimited, misnamed, or outside the period, is the only coverage story on the record. A firm can be covered for a named event class and still not insured in the sense operators mean, when coverage language exists in a draft or quote, no in-force binder, is the only insurance story on the record. A policy alone is not coverage for this event. Coverage language alone is not an in-force policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface an insurance instrument or a coverage determination beside Evidence, Verification, and the closed outcome. This essay does not collapse coverage into insurance. This essay does not collapse insured into covered. This essay does not collapse into Certified Is Not Insured. This essay does not collapse into Assured Is Not Certified. This essay does not collapse into Recoverable Is Not Assured. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. A practice record that says insured is covered is not shown coverage. Sync refuses to pretend insurance or coverage is a status light. Treating insured as covered records an in-force instrument as a responding grant for this event that nobody has shown, under the honesty and verification boundary. A policy can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the policy when the policy is being used as coverage for this event. Evidence from the plant beats the coverage language when the language is being used as an in-force policy. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or auto-adjudicate claims. Sync must not treat insured as covered as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync does not measure insurance or coverage for the customer. Sync does not measure coverage for the customer. Sync does not issue policies for the customer. Sync does not adjudicate claims for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The insured practice is not the covered practice
+            </h2>
+
+            <p>
+              Insured means a named, in-force indemnity/coverage instrument exists (policy, binder,
+              endorsement, named insured + limits + triggers + exclusions + claims path on file) — not the
+              same as the specific restore/continuity/loss event actually falling inside that instrument’s
+              responding terms today. Covered means the named failure, loss, location, asset class, cause,
+              and window are inside the policy’s responding grant of coverage (triggers met, exclusions not
+              barring, named insured correct, limits not exhausted, notice conditions satisfiable) so a
+              competent claims path would treat the event as in-scope — not "we have a policy," not a
+              certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS
+              checkbox. Sync may surface an insurance instrument or a coverage determination beside
+              Evidence, Verification, and the closed outcome. A practice record that says insured is covered
+              is not shown coverage. Evidence from the plant beats the policy when the policy is being used
+              as coverage for this event. Evidence from the plant beats the coverage language when the
+              language is being used as an in-force policy. Evidence from the plant beats the note. The
+              insured practice is not the covered practice.
+            </p>
+
+            <p>
+              One line can hold an in-force instrument. The policy, binder, or endorsement is named. The
+              named insured is named. Limits, triggers, exclusions, and a claims path are on file. The
+              instrument is in force. Then the record stops. It does not say this restore failure, this
+              flood, this cyber event, or this downtime cause sits inside the responding grant today. It
+              does not say the trigger for this cause is met. It does not say the exclusion does not bar
+              this location, this asset class, or this window. It does not say the named insured on the
+              loss is the named insured on the instrument. It does not say limits are not exhausted. It
+              does not say notice conditions are satisfiable. Policy in force; this restore failure / flood
+              / cyber / downtime cause is excluded, sublimited, misnamed, or outside the period. That
+              record can be insured. It is not covered. A firm can be insured and still not covered.
+              Coverage language can sit in a draft or a quote and describe a named event class. No binder
+              is in force. Coverage language exists in a draft or quote, no in-force binder. A firm can be
+              covered for a named event class and still not insured in the sense operators mean. A policy
+              alone is not coverage for this event. Coverage language alone is not an in-force policy. A
+              sentence that says "we have a policy" is not a responding grant. A certificate of insurance
+              PDF is not triggers met and exclusions not barring. A broker email saying "you’re good" is
+              not a named insured, and it is not limits not exhausted, and it is not notice conditions
+              satisfiable. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A
+              one-off clear is a single quiet interval. It is not an in-force instrument, and it is not a
+              competent claims path treating this event as in-scope. The insured practice is not the
+              covered practice. This essay does not invent a customer, a price, or a return. It states no
+              savings figure, states no price, and states no OEM limit. A practice record that says insured
+              is covered is not a customer plant release, and it is not shown coverage. Treating insured as
+              covered records an instrument the plant has not placed inside a responding grant for this
+              event, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/certified-is-not-insured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Certified Is Not Insured
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/certified-is-not-insured. Certified,
+              there, means a third-party or internal program stamp that a recovery/continuity program
+              exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated
+              "certified recoverable" badge) — not the same as risk transfer that pays when restore fails
+              under today’s named owner inside the named window. Insured, there, means a named, in-force
+              indemnity/coverage instrument (policy, binder, endorsement, named insured + limits + triggers
+              + exclusions + claims path) that actually responds when recovery fails or loss lands. A
+              certificate alone is not insurance. A policy alone is not certification. That refusal stops
+              at an instrument on file. It does not ask whether the named failure, loss, location, asset
+              class, cause, and window are inside the policy’s responding grant of coverage today. The
+              phrase actually responds, in that essay, is not this coverage determination. It is not
+              triggers met, exclusions not barring, named insured correct, limits not exhausted, and notice
+              conditions satisfiable for this event. Certified is not insured is a different refusal.
+              Insured is not covered is the next refusal. Named insurance is not coverage, and coverage
+              language is not an in-force binder. Certified Is Not Insured separates a certification stamp
+              from an in-force coverage instrument. This essay separates an in-force coverage instrument
+              from a responding grant of coverage for this event. This essay does not rewrite Certified Is
+              Not Insured. This essay does not collapse into Certified Is Not Insured. This essay does not
+              collapse certified into insured. This essay does not collapse insured into covered.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              keeps a dated assurance record off a program stamp that a recovery/continuity program exists
+              or once met a named checklist. A dated re-prove of restore is not a responding grant, and a
+              certification stamp is not triggers met for this flood, cyber, or downtime cause. This essay
+              does not rewrite Assured Is Not Certified. This essay does not collapse into Assured Is Not
+              Certified.{" "}
+              <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>
+              {" "}
+              keeps a proven restore to a named service level inside a named RTO/RPO off independent,
+              recurring verification that recovery capability still holds. A one-time restore is not an
+              in-scope claim, and an assurance PDF is not a policy whose exclusions do not bar this event.
+              This essay does not rewrite Recoverable Is Not Assured. This essay does not collapse into
+              Recoverable Is Not Assured.{" "}
+              <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>
+              {" "}
+              keeps a named handoff run under stress off a proven restore to a named service level inside
+              a named RTO/RPO. A tabletop pass is not notice conditions satisfiable, and a backup job green
+              light is not limits not exhausted. This essay does not rewrite Rehearsed Is Not Recoverable.
+              This essay does not collapse into Rehearsed Is Not Recoverable.{" "}
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>
+              {" "}
+              keeps a governed owned compounding system that can change hands with evidence continuity off
+              a handoff run under stress. A succession plan PDF is not a responding grant, and a tabletop
+              is not coverage for this restore failure. This essay does not rewrite Transferable Is Not
+              Rehearsed. This essay does not collapse into Transferable Is Not Rehearsed.{" "}
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>
+              {" "}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new named
+              owner. A rule of engagement is not an exclusion that does not bar this cause, and a handoff
+              pack is not a binder in force. This essay does not rewrite Governed Is Not Transferable. This
+              essay does not collapse into Governed Is Not Transferable.{" "}
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>
+              {" "}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system off rules of engagement. A name on the system is not the named insured
+              correct for this loss, and a rule of engagement is not coverage language that has become an
+              in-force policy. This essay does not rewrite Owned Is Not Governed. This essay does not
+              collapse into Owned Is Not Governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              {" "}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating
+              conditions, with ownership and monitoring, off a closed evidentiary chain for a specific
+              claim under named conditions. That standing claim can be probabilistic. Insurance in this
+              essay is not that standing known-good claim. Insurance here is a named, in-force instrument
+              on file. Coverage here is not that standing known-good claim either. Coverage here is the
+              named failure, loss, location, asset class, cause, and window inside the responding grant. A
+              known-good asset claim is not a policy, and a closed evidentiary chain is not a competent
+              claims path treating this event as in-scope. This essay does not rewrite Assured Is Not
+              Proven. This essay does not collapse into Assured Is Not Proven.{" "}
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              {" "}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is an evidence check versus standing confidence. It is not an in-force
+              instrument versus a responding grant for this event. An independent check is not coverage,
+              and standing confidence is not a policy whose exclusions do not bar this restore failure.
+              This essay does not rewrite Verified Is Not Assured. This essay does not collapse into
+              Verified Is Not Assured.{" "}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              {" "}
+              keeps a green tile off permission to run. A status light is not an in-force policy, and a
+              status light is not a coverage determination. This essay does not rewrite Green Is Not Go.
+              This essay does not collapse into Green Is Not Go. This essay does not collapse coverage into
+              insurance.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a coverage determination is allowed to be
+            </h2>
+
+            <p>
+              Insured means a named, in-force indemnity/coverage instrument exists on file. Covered means
+              the named failure, loss, location, asset class, cause, and window are inside the policy’s
+              responding grant of coverage so a competent claims path would treat the event as in-scope. A
+              policy alone is not coverage for this event. Coverage language alone is not an in-force
+              policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may
+              surface an insurance instrument or a coverage determination beside Evidence, Verification, and
+              the closed outcome. This essay does not collapse insured into covered.
+            </p>
+
+            <p>
+              Evidence may cite an insurance instrument when the source of that instrument is named, and
+              when the citation names the policy, binder, or endorsement, the named insured, the limits,
+              the triggers, the exclusions, and the claims path, and when the citation says the instrument
+              exists and is in force. The instrument is on file. It is not, by itself, the specific
+              restore/continuity/loss event falling inside that instrument’s responding terms today.
+              Evidence may cite a coverage determination when the source of that determination is named,
+              and when the citation names the failure, the loss, the location, the asset class, the cause,
+              and the window, and when the citation says the triggers are met, the exclusions are not
+              barring, the named insured is correct, the limits are not exhausted, and the notice
+              conditions are satisfiable, so a competent claims path would treat the event as in-scope. The
+              determination is about this event. It is not "we have a policy." It is not a certificate of
+              insurance PDF. It is not a broker email saying "you’re good." It is not a CMMS checkbox. If
+              the evidence records a policy in force and does not record that this restore failure / flood
+              / cyber / downtime cause is inside the responding grant — because it is excluded, sublimited,
+              misnamed, or outside the period — the case may store the note as insured and must not store
+              the note as covered. If the evidence records coverage language for a named event class in a
+              draft or a quote and does not record an in-force binder, the case may store the note as
+              language about a covered class and must not store the note as insured in the sense operators
+              mean. What a coverage determination is allowed to be is that responding grant the firm can
+              still show for this named event. It is not a policy used as proof this event is in scope. It
+              is not a certificate of insurance PDF. It is not a broker email. It is not permission to
+              execute. Recommend is not authorize. Evidence lineage is not optional. Human decision is not
+              optional. Surfacing is still a read. Sync refuses false precision. Sync must not
+              auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered
+              handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or
+              auto-adjudicate claims. Sync does not issue policies for the customer. Sync does not measure
+              coverage for the customer. Sync does not bind coverage for the customer. Sync does not file a
+              claim for the customer. Sync does not adjudicate claims for the customer.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named insurance is not coverage
+            </h2>
+
+            <p>
+              Named insurance is not coverage. The insured practice is not the covered practice. An
+              in-force instrument answers whether a policy, binder, or endorsement exists, with a named
+              insured, limits, triggers, exclusions, and a claims path on file. It does not, by itself,
+              show that this named failure, loss, location, asset class, cause, and window are inside the
+              responding grant. It does not, by itself, show triggers met. It does not, by itself, show
+              exclusions not barring. It does not, by itself, show the named insured correct, limits not
+              exhausted, and notice conditions satisfiable. A policy in force, with this restore failure /
+              flood / cyber / downtime cause excluded, sublimited, misnamed, or outside the period, is
+              still insurance. It is not coverage for this event. A firm can be insured and still not
+              covered. Coverage language for a named event class, with no in-force binder, is still
+              language about a class. It is not insurance in the sense operators mean. A firm can be
+              covered for a named event class and still not insured in the sense operators mean. A policy
+              alone is not coverage for this event. Coverage language alone is not an in-force policy. Not
+              the same as the specific restore/continuity/loss event actually falling inside that
+              instrument’s responding terms today. Not "we have a policy." Not a certificate of insurance
+              PDF. Not a broker email saying "you’re good." Not a CMMS checkbox. A CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. This essay does not rewrite Certified Is
+              Not Insured. This essay does not rewrite Assured Is Not Certified. This essay does not
+              rewrite Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable.
+              This essay does not rewrite Transferable Is Not Rehearsed. This essay does not rewrite
+              Governed Is Not Transferable. This essay does not rewrite Owned Is Not Governed. This essay
+              does not rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured.
+              This essay does not rewrite Green Is Not Go. This essay does not collapse into Certified Is
+              Not Insured. This essay does not collapse into Assured Is Not Certified. This essay does not
+              collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This essay does
+              not collapse into Governed Is Not Transferable. This essay does not collapse into Owned Is
+              Not Governed. This essay does not collapse into Assured Is Not Proven. This essay does not
+              collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not Go.
+              This essay does not collapse coverage into insurance. This essay does not collapse insured
+              into covered. Sync does not measure insurance or coverage for the customer. Sync must not
+              auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered
+              handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or
+              auto-adjudicate claims. Sync refuses to pretend insurance or coverage is a status light.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Certified is not insured. Certified means a third-party or internal program stamp that a
@@ -8614,17 +9010,6 @@ export default function CertifiedIsNotInsuredPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/insured-is-not-covered"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Insured Is Not Covered
-              </Link>
-              , on why insured is still not covered. Insured means a named, in-force indemnity/coverage instrument exists (policy, binder, endorsement, named insured + limits + triggers + exclusions + claims path on file) — not the same as the specific restore/continuity/loss event actually falling inside that instrument’s responding terms today. Covered means the named failure, loss, location, asset class, cause, and window are inside the policy’s responding grant of coverage (triggers met, exclusions not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims path would treat the event as in-scope — not "we have a policy," not a certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. A firm can be insured and still not covered when policy in force; this restore failure / flood / cyber / downtime cause is excluded, sublimited, misnamed, or outside the period, is on the record. A firm can be covered for a named event class and still not insured in the sense operators mean. A policy alone is not coverage for this event. Coverage language alone is not an in-force policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Certified remains a third-party or internal program stamp that a recovery/continuity program exists or once met a named checklist. This essay separates a certification stamp from an in-force coverage instrument. A certificate alone is not insurance. A policy alone is not certification. Sync does not measure insurance or coverage for the customer. Sync does not measure coverage. Sync does not measure coverage for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, or auto-adjudicate claims. Sync must not auto-adjudicate claims. Sync refuses to pretend insurance or coverage is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -8684,7 +9069,7 @@ export default function CertifiedIsNotInsuredPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="certified-is-not-insured" />
+          <InsightNextSteps slug="insured-is-not-covered" />
         </motion.article>
       </div>
     </main>
