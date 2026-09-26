@@ -570,6 +570,21 @@ export default function SuccessorEnforcedIsNotRemediatedPage() {
             measured result. The enforcement note does not record remediation.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-remediated-is-not-released"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Remediated Is Not Released
+            </Link>{' '}
+            on why remediated is still not released. That next refusal is instrument-required
+            remediation that restores those successor obligations after the named breach versus
+            instrument-required release / close-out that returns the remediated successor obligations
+            into the named operating / warranty / successor window as released for continued hold. It
+            is not the filing-spine essay at /insights/remediated-is-not-released.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
