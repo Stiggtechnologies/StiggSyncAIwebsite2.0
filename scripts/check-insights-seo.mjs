@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const guaranteedCollectibleIndex = slugs.indexOf('guaranteed-is-not-collectible');
 const assuredGuaranteedIndex = slugs.indexOf('assured-is-not-guaranteed');
 const sustainedAssuredIndex = slugs.indexOf('sustained-is-not-assured');
 const operatedSustainedIndex = slugs.indexOf('operated-is-not-sustained');
@@ -104,7 +105,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    assuredGuaranteedIndex >= 0 &&
+    guaranteedCollectibleIndex >= 0 &&
+    assuredGuaranteedIndex > guaranteedCollectibleIndex &&
     sustainedAssuredIndex > assuredGuaranteedIndex &&
     operatedSustainedIndex > sustainedAssuredIndex &&
     deliveredOperatedIndex > operatedSustainedIndex &&
@@ -189,7 +191,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -14623,6 +14625,95 @@ if (
   !sustainedAssuredPage.includes('/insights/assured-is-not-guaranteed')
 ) {
   fail('sustained-is-not-assured must point the series forward to assured-is-not-guaranteed');
+}
+
+
+
+const guaranteedCollectiblePageRequired = [
+  ...assuredGuaranteedPageRequired,
+  "Guaranteed Is Not Collectible",
+  "Guaranteed is not collectible",
+  "instrument-required collectible recovery on the guarantee claim",
+  "perfected claim package with named claim notice/dates/amount/trigger met, surety or obligor acknowledgment of a payable claim, funds received or credit posted against the named beneficiary, settled draw on the bond/indemnity/SLA remedy, or other named collectibility evidence",
+  "unbroken trail from the guarantee instrument to that collectibility evidence",
+  "not a signed guarantee, not a warranty deed, not a surety policy on file",
+  "not a claim letter without payoff",
+  "not a dashboard \"covered\" status",
+  "not treating guarantee theater as automatic collectible recovery",
+  "A firm can hold a binding guarantee, warranty, or indemnity with an enforceable remedy path and still lack instrument-required collectible recovery on that claim for the named window",
+  "A firm can be guaranteed and still not collectible",
+  "guarantee evidence exists while required collectibility evidence for the named claim window is missing",
+  "A firm can claim collectibility theater and still not be guaranteed",
+  "Guarantee evidence alone is not collectible recovery",
+  "A collectibility claim alone is not proof the named guarantee instrument was on the file",
+  "The guaranteed practice is not the collectible practice",
+  "What a collectibility record is allowed to be",
+  "Named guarantee is not collectible",
+  "Sync does not measure collectible",
+  "Sync does not measure collectible for the customer",
+  "Sync does not measure guaranteed or collectible for the customer",
+  "Sync may surface a guarantee record or a collectibility record",
+  "does not collapse collectible into guaranteed",
+  "does not collapse guaranteed into collectible",
+  "does not collapse this collectible into coverage payment",
+  "does not collapse this collectible into accounts-receivable collection",
+  "does not collapse this collectible into recovery capability",
+  "does not collapse into Covered Is Not Paid",
+  "does not rewrite Covered Is Not Paid",
+  "does not collapse into Closed Is Not Collected",
+  "does not rewrite Closed Is Not Collected",
+  "does not collapse into Collected Is Not Recognized",
+  "does not rewrite Collected Is Not Recognized",
+  "does not collapse into Paid Is Not Settled",
+  "does not rewrite Paid Is Not Settled",
+  "does not collapse into Recoverable Is Not Assured",
+  "does not rewrite Recoverable Is Not Assured",
+  "does not collapse into Assured Is Not Guaranteed",
+  "does not rewrite Assured Is Not Guaranteed",
+  "instrument-required collectible recovery on the guarantee claim for the named window, trailed from the guarantee instrument",
+  "practice record that says guaranteed is collectible",
+  "guaranteed as collectible",
+  "separates a binding instrument-required guarantee from",
+  "/insights/assured-is-not-guaranteed",
+  "Evidence from the plant beats the guarantee record when the record is being used as collectible",
+  "Evidence from the plant beats the collectibility claim when the claim is being used as proof the named guarantee was on the file",
+  "treat guaranteed as collectible as Learning credit",
+  "Sync refuses to pretend guaranteed or collectible is a status light",
+  "Sync does not deem collectible for the customer",
+  "Sync must not auto-deem-collectible",
+  "signed guarantee alone is neither",
+  "guarantee theater",
+  "named claim window",
+  "This split is guaranteed versus collectible",
+];
+const guaranteedCollectiblePage = read('app/insights/guaranteed-is-not-collectible/page.tsx');
+for (const required of guaranteedCollectiblePageRequired) {
+  if (!guaranteedCollectiblePage.includes(required)) {
+    fail(`guaranteed-is-not-collectible page must include ${required}`);
+  }
+}
+
+const guaranteedCollectibleBlock = stepBlock('guaranteed-is-not-collectible');
+for (const required of ['assured-is-not-guaranteed', 'sustained-is-not-assured', 'operated-is-not-sustained', 'delivered-is-not-operated', 'closed-is-not-delivered', 'cleared-is-not-closed', 'recorded-is-not-cleared', 'released-is-not-recorded', 'remediated-is-not-released', 'enforced-is-not-remediated', 'binding-is-not-enforced', 'effective-is-not-binding', 'posted-is-not-effective', 'accepted-is-not-posted', 'filed-is-not-accepted', 'audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!guaranteedCollectibleBlock.includes(`'${required}'`)) {
+    fail(`guaranteed-is-not-collectible related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(guaranteedCollectibleBlock)) {
+  fail('guaranteed-is-not-collectible related reading must include the Strategic Pilot');
+}
+if (guaranteedCollectibleBlock.includes("next: 'strategic-pilot'")) {
+  fail('guaranteed-is-not-collectible next step is the Field Manual');
+}
+if (!stepBlock('assured-is-not-guaranteed').includes("'guaranteed-is-not-collectible'")) {
+  fail('assured-is-not-guaranteed related reading must point forward to guaranteed-is-not-collectible');
+}
+
+if (
+  !assuredGuaranteedPage.includes('The series continues with') ||
+  !assuredGuaranteedPage.includes('/insights/guaranteed-is-not-collectible')
+) {
+  fail('assured-is-not-guaranteed must point the series forward to guaranteed-is-not-collectible');
 }
 
 
