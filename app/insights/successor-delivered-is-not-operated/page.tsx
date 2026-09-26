@@ -817,6 +817,22 @@ export default function SuccessorDeliveredIsNotOperatedPage() {
             measured result. The delivery package does not operate the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-operated-is-not-sustained"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Operated Is Not Sustained
+            </Link>{' '}
+            on why operated is still not sustained. That next refusal is instrument-required
+            operation that puts the delivered successor-obligation outcome into active run under the
+            named operator / duty / warranty / control window versus instrument-required sustainment
+            that holds the operated successor-obligation outcome in continued force under the named
+            sustainment / remaining-duty / warranty / control register for the named hold window. It
+            is not the filing-spine essay at /insights/operated-is-not-sustained.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">

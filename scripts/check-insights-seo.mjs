@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorOperatedSustainedIndex = slugs.indexOf('successor-operated-is-not-sustained');
 const successorDeliveredOperatedIndex = slugs.indexOf('successor-delivered-is-not-operated');
 const successorClosedDeliveredIndex = slugs.indexOf('successor-closed-is-not-delivered');
 const successorClearedClosedIndex = slugs.indexOf('successor-cleared-is-not-closed');
@@ -119,7 +120,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorDeliveredOperatedIndex >= 0 &&
+    successorOperatedSustainedIndex >= 0 &&
+    successorDeliveredOperatedIndex > successorOperatedSustainedIndex &&
     successorClosedDeliveredIndex > successorDeliveredOperatedIndex &&
     successorClearedClosedIndex > successorClosedDeliveredIndex &&
     successorRecordedClearedIndex > successorClearedClosedIndex &&
@@ -219,7 +221,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -16407,7 +16409,7 @@ for (const required of successorDeliveredOperatedPageRequired) {
 }
 
 const successorDeliveredOperatedBlock = stepBlock('successor-delivered-is-not-operated');
-for (const required of ['successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+for (const required of ['successor-operated-is-not-sustained', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
   if (!successorDeliveredOperatedBlock.includes(`'${required}'`)) {
     fail(`successor-delivered-is-not-operated related reading must cite ${required}`);
   }
@@ -16433,6 +16435,165 @@ if (filingClearedClosedPage.includes('successor-delivered-is-not-operated')) {
 }
 if (filingRecordedClearedPage.includes('successor-delivered-is-not-operated')) {
   fail('filing-spine recorded-is-not-cleared must stay off successor-delivered-is-not-operated');
+}
+if (
+  !successorDeliveredOperatedPage.includes('/insights/successor-operated-is-not-sustained')
+) {
+  fail('successor-delivered-is-not-operated must point the series forward to successor-operated-is-not-sustained');
+}
+
+const successorOperatedSustainedPageRequired = [
+  'Operated Is Not Sustained',
+  'Operated is not sustained',
+  'instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window',
+  'operate package with named operator / acceptor roles',
+  'named operate criteria met (delivery package cited, run started under named duty, control limits or warranty in force, residual ownership named)',
+  'unbroken trail from the delivery evidence to that operate evidence',
+  'not a dashboard green tile with no operate authority',
+  'not a verbal "they are running it,"',
+  'not flipping a feature flag with no instrument path',
+  'not a chat note that says live',
+  'not "ops will babysit" without instrument-required operate evidence',
+  'not treating delivery theater as automatic operation of that delivered successor-obligation outcome',
+  'instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window',
+  'sustain package with named sustainer / acceptor roles',
+  'named sustain criteria met (operate package cited, hold window kept in force, recurrence or repeat evidence on the register, residual ownership still named)',
+  'unbroken trail from the operate evidence to that sustain evidence',
+  'not a dashboard green tile with no sustain authority',
+  'not a verbal "it will keep running,"',
+  'not extending a feature flag with no instrument path',
+  'not a chat note that says stable',
+  'not "ops will keep babysitting" without instrument-required sustain evidence',
+  'not treating operate theater as automatic sustainment of that operated successor-obligation outcome',
+  'A firm can have instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window and still lack instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window',
+  'A firm can be operated and still not sustained',
+  'operate evidence exists while required sustain evidence for the hold window is missing',
+  'A firm can claim sustain theater and still not be operated',
+  'Operate evidence alone is not sustainment of that operated successor-obligation outcome',
+  'A sustain claim alone is not proof the named operate evidence was on the file',
+  'The operated practice is not the sustained practice',
+  'What a sustain record is allowed to be',
+  'Named operated is not sustained',
+  'Sync does not measure sustained',
+  'Sync does not measure sustained for the customer',
+  'Sync does not measure operated or sustained for the customer',
+  'Sync may surface an operate record or a sustain record',
+  'does not collapse sustained into operated',
+  'does not collapse operated into sustained',
+  'does not collapse this operated into productive operation',
+  'does not collapse this operated into filing-spine sustainment',
+  'does not collapse this sustained into filing-spine sustainment',
+  'does not collapse this sustained into forward assurance',
+  'does not collapse this delivered into filing-spine delivery',
+  'does not collapse this delivered into productive operation',
+  'does not collapse into Delivered Is Not Operated',
+  'does not rewrite Delivered Is Not Operated',
+  'does not collapse into Operated Is Not Sustained',
+  'does not rewrite Operated Is Not Sustained',
+  'does not collapse into Sustained Is Not Assured',
+  'does not rewrite Sustained Is Not Assured',
+  'does not collapse into Closed Is Not Delivered',
+  'does not rewrite Closed Is Not Delivered',
+  'does not collapse into Cleared Is Not Closed',
+  'does not rewrite Cleared Is Not Closed',
+  'does not collapse into Recorded Is Not Cleared',
+  'does not rewrite Recorded Is Not Cleared',
+  'does not collapse into Released Is Not Recorded',
+  'does not rewrite Released Is Not Recorded',
+  'does not collapse into Remediated Is Not Released',
+  'does not rewrite Remediated Is Not Released',
+  'does not collapse into Enforced Is Not Remediated',
+  'does not rewrite Enforced Is Not Remediated',
+  'does not collapse into Binding Is Not Enforced',
+  'does not rewrite Binding Is Not Enforced',
+  'does not collapse into Effective Is Not Binding',
+  'does not rewrite Effective Is Not Binding',
+  'does not collapse into Restored Is Not Accepted',
+  'does not rewrite Restored Is Not Accepted',
+  'does not collapse into Governed Is Not Transferable',
+  'does not rewrite Governed Is Not Transferable',
+  'does not collapse into Transferable Is Not Rehearsed',
+  'does not rewrite Transferable Is Not Rehearsed',
+  'does not collapse into Transferable Is Not Binding',
+  'does not rewrite Transferable Is Not Binding',
+  'instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window, trailed from the operate evidence',
+  'separates instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window from',
+  '/insights/successor-delivered-is-not-operated',
+  '/insights/successor-closed-is-not-delivered',
+  '/insights/successor-cleared-is-not-closed',
+  '/insights/successor-recorded-is-not-cleared',
+  '/insights/successor-released-is-not-recorded',
+  '/insights/successor-remediated-is-not-released',
+  '/insights/successor-enforced-is-not-remediated',
+  '/insights/successor-binding-is-not-enforced',
+  '/insights/transferable-is-not-binding',
+  '/insights/remediated-is-not-released',
+  '/insights/released-is-not-recorded',
+  '/insights/recorded-is-not-cleared',
+  '/insights/cleared-is-not-closed',
+  '/insights/closed-is-not-delivered',
+  '/insights/delivered-is-not-operated',
+  '/insights/operated-is-not-sustained',
+  '/insights/sustained-is-not-assured',
+  '/insights/enforced-is-not-remediated',
+  '/insights/binding-is-not-enforced',
+  '/insights/effective-is-not-binding',
+  '/insights/restored-is-not-accepted',
+  'Evidence from the plant beats the operate record when the record is being used as sustained',
+  'Evidence from the plant beats the sustain claim when the claim is being used as proof the named operation of that successor-obligation outcome was on the file',
+  'treat operated as sustained as Learning credit',
+  'Sync refuses to pretend operated or sustained is a status light',
+  'Sync does not deem sustained for the customer',
+  'Sync must not auto-deem-sustained',
+  'A verbal "it will keep running" alone is neither',
+  'sustain theater',
+  'hold window kept in force',
+  'This split is operated versus sustained',
+  'practice record that says operated is sustained',
+  'Delivered Is Not Operated',
+  'Delivered is not operated',
+  'This essay does not rewrite that thesis',
+  'Sustained Is Not Assured',
+  'industrial control and transfer spine',
+];
+
+const successorOperatedSustainedPage = read('app/insights/successor-operated-is-not-sustained/page.tsx');
+for (const required of successorOperatedSustainedPageRequired) {
+  if (!successorOperatedSustainedPage.includes(required)) {
+    fail(`successor-operated-is-not-sustained page must include ${required}`);
+  }
+}
+
+const successorOperatedSustainedBlock = stepBlock('successor-operated-is-not-sustained');
+for (const required of ['successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+  if (!successorOperatedSustainedBlock.includes(`'${required}'`)) {
+    fail(`successor-operated-is-not-sustained related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorOperatedSustainedBlock)) {
+  fail('successor-operated-is-not-sustained related reading must include the Strategic Pilot');
+}
+if (successorOperatedSustainedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-operated-is-not-sustained next step is the Field Manual');
+}
+
+if (read('app/insights/operated-is-not-sustained/page.tsx').includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine operated-is-not-sustained must stay off successor-operated-is-not-sustained');
+}
+if (read('app/insights/delivered-is-not-operated/page.tsx').includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine delivered-is-not-operated must stay off successor-operated-is-not-sustained');
+}
+if (read('app/insights/sustained-is-not-assured/page.tsx').includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine sustained-is-not-assured must stay off successor-operated-is-not-sustained');
+}
+if (filingClosedDeliveredPage.includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine closed-is-not-delivered must stay off successor-operated-is-not-sustained');
+}
+if (filingClearedClosedPage.includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine cleared-is-not-closed must stay off successor-operated-is-not-sustained');
+}
+if (filingRecordedClearedPage.includes('successor-operated-is-not-sustained')) {
+  fail('filing-spine recorded-is-not-cleared must stay off successor-operated-is-not-sustained');
 }
 
 function readingSlugs(name) {
