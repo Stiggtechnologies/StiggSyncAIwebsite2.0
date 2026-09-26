@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('owned-is-not-governed');
+const article = getInsightArticle('governed-is-not-transferable');
 
-export default function OwnedIsNotGovernedPage() {
+export default function GovernedIsNotTransferablePage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,339 @@ export default function OwnedIsNotGovernedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Owned Is Not Governed</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Governed Is Not Transferable</h1>
+
+            <p className="text-xl text-gray-400">
+              Governed is not transferable. Governed means ownership sits inside explicit rules of
+              engagement: who may authorize, what evidence is required, when to escalate, how
+              exceptions are bounded, how conflicts of interest are handled, and how the owner is
+              audited or replaced — so the compounding system stays safe and compliant under named
+              stress, not just "someone's name is on it" and not a binder nobody
+              practices. Transferable means that governed owned compounding system can change hands
+              (successor owner, new operator, crew/site turnover, contractor exit, or organizational
+              handoff) with evidence continuity: playbooks, tooling rights, exception paths, residual
+              claim on the learning, and audit trail still hold under the new named owner within a
+              named window — not a hope that "someone will figure it out," not a RACI update
+              with no rehearsal, and not a shared drive the departing owner takes in their head.
+              Governed is not transferable. A firm can govern a practice tightly on one line and still
+              not make it transferable (rules exist only while the current owner is present;
+              succession is untested; exception authority dies with a contractor). A firm can transfer
+              a thin ritual and still never have governed the compounding system that actually runs
+              the plant. A succession plan PDF alone is not transferability. A governance binder alone
+              is not transfer. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Keep them apart: a succession plan PDF alone is not transferability; a
+              governance binder alone is not transfer; a CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. Owned is not governed. Owned remains a named accountable owner
+              who can change, stop, transfer, audit, or withhold the compounding system. Recommend is
+              not authorize. Evidence lineage is not optional. Human decision is not optional.
+              Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses to pretend governance or transferability is a status light. Sync
+              does not measure governance. Sync does not measure governance for the customer. Sync
+              does not measure transferability. Sync does not measure transferability for the
+              customer. Sync does not measure governance or transferability for the customer. Sync
+              does not govern for the customer. Sync does not transfer ownership for the customer.
+              Sync must not auto-assign owners, auto-approve governed actions, or auto-transfer
+              ownership. Sync must not auto-assign owners. Sync must not auto-approve governed
+              actions. Sync must not auto-transfer ownership. Sync must not auto-assign owners or
+              auto-approve governed actions. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound,
+              auto-assign owners, auto-approve governed actions, or auto-transfer ownership.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded
+              is not owned. Owned is not governed. Governed is not transferable. Owned, in the prior
+              essay, means a named accountable owner can change, stop, transfer, audit, or withhold the
+              compounding system, with clear authority and evidence the owner still holds it. Governed,
+              there, means that ownership sits inside explicit rules of engagement so the system stays
+              safe, compliant, and transferable under stress. That sentence is the prior refusal. The
+              words transferable under stress in that sentence are not a shown handoff.
+              They do not name a successor owner, a new operator, a crew or site turnover, a contractor
+              exit, or an organizational handoff. They do not show playbooks, tooling rights, exception
+              paths, residual claim on the learning, and audit trail still holding under a new named
+              owner within a named window. This essay does not rewrite that sentence. This essay does
+              not collapse into that split. Ownership versus governance is the prior refusal. This
+              essay separates a governed owned compounding system from transfer of that system. A rule
+              that names who may authorize is not evidence the system changed hands. A binder nobody
+              practices is not governance, and a succession plan PDF is not transferability.{' '}
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>{' '}
+              keeps a named owner of the compounding system off rules of engagement. Read the prior
+              essay at /insights/owned-is-not-governed. Compounded Is Not Owned keeps accumulation off
+              a named owner of the compounding system. Ownership Is Not Control keeps a residual
+              economic claim off direction power. Control Is Not Closure keeps direction power off a
+              finished end-state. Accountability Is Not Ownership keeps outcome answerability off a
+              residual claim. Verified Is Not Authorized keeps an independent evidence check off
+              permission to act. Green Is Not Go keeps a status light off permission to run. None of
+              those refusals is this split. A succession plan PDF is not this transferability. A
+              governance binder is not this transfer. This transferability is evidence continuity under
+              a new named owner within a named window. Recommend Is Not Authorize, Evidence Lineage Is
+              Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface
+              a governance/rules-of-engagement note or a transfer/handoff note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync refuses to pretend governance
+              or transferability is a status light. Sync must not auto-assign owners, auto-approve
+              governed actions, or auto-transfer ownership. Sync must not auto-close, auto-authorize,
+              auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale,
+              auto-compound, auto-assign owners, auto-approve governed actions, or treat governed as
+              transferable as Learning credit. This essay does not rewrite Owned Is Not Governed. This
+              essay does not rewrite Compounded Is Not Owned. This essay does not rewrite Ownership Is
+              Not Control. This essay does not rewrite Control Is Not Closure. This essay does not
+              rewrite Accountability Is Not Ownership. This essay does not rewrite Verified Is Not
+              Authorized. This essay does not rewrite Green Is Not Go. This essay does not collapse
+              into Owned Is Not Governed. This essay does not collapse into Compounded Is Not Owned.
+              This essay does not collapse into Ownership Is Not Control. This essay does not collapse
+              into Control Is Not Closure. This essay does not collapse into Accountability Is Not
+              Ownership. This essay does not collapse into Verified Is Not Authorized. This essay does
+              not collapse into Green Is Not Go. This essay does not collapse governed into
+              transferable. This essay does not collapse transferability into governance. This essay
+              does not collapse owned into governed.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Governed is not transferable. Governed means ownership sits inside explicit rules of engagement: who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how the owner is audited or replaced — so the compounding system stays safe and compliant under named stress, not just that a name is on it and not a binder nobody practices. Transferable means that governed owned compounding system can change hands (successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff) with evidence continuity: playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold under the new named owner within a named window — not a hope that someone will figure it out, not a RACI update with no rehearsal, and not a shared drive the departing owner takes in their head. A firm can govern a practice tightly on one line and still not make it transferable, when the rules exist only while the current owner is present, succession is untested, and exception authority dies with a contractor. A firm can transfer a thin ritual and still never have governed the compounding system that actually runs the plant, when a laminated card, a RACI cell, or a shared folder moves and the compounding system that actually runs the plant was never inside those rules. A succession plan PDF alone is not transferability. A governance binder alone is not transfer. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a governance/rules-of-engagement note or a transfer/handoff note beside Evidence, Verification, and the closed outcome. This essay does not collapse transferability into governance. This essay does not collapse governed into transferable. This essay does not collapse into Owned Is Not Governed. A practice record that says governed is transferable is not shown transferability. Sync refuses to pretend governance or transferability is a status light. Treating governed as transferable records rules of engagement as a handoff with evidence continuity that nobody has shown, under the honesty and verification boundary. A governance note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the governance note when the note is being used as transferability. Evidence from the plant beats the transfer note when the note is being used as governance. Sync must not auto-assign owners, auto-approve governed actions, or auto-transfer ownership. Sync must not treat governed as transferable as Learning credit. Sync does not measure governance or transferability for the customer. Sync does not measure transferability for the customer. Sync does not transfer ownership for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The governed practice is not the transferable practice
+            </h2>
+
+            <p>
+              Governed means ownership sits inside explicit rules of engagement: who may authorize,
+              what evidence is required, when to escalate, how exceptions are bounded, how conflicts
+              of interest are handled, and how the owner is audited or replaced — so the compounding
+              system stays safe and compliant under named stress, not just that a name is on it and
+              not a binder nobody practices. Transferable means that governed owned compounding system
+              can change hands (successor owner, new operator, crew/site turnover, contractor exit, or
+              organizational handoff) with evidence continuity: playbooks, tooling rights, exception
+              paths, residual claim on the learning, and audit trail still hold under the new named
+              owner within a named window — not a hope that someone will figure it out, not a RACI
+              update with no rehearsal, and not a shared drive the departing owner takes in their
+              head. Sync may surface a governance/rules-of-engagement note or a transfer/handoff note
+              beside Evidence, Verification, and the closed outcome. A practice record that says
+              governed is transferable is not shown transferability. Evidence from the plant beats the
+              governance note when the note is being used as transferability. Evidence from the plant
+              beats the transfer note when the note is being used as governance. Evidence from the
+              plant beats the note.
+            </p>
+
+            <p>
+              One line can practice the rules while the current owner is present. Who may authorize is
+              named. The evidence required for a high-risk change is named. The escalation ladder is
+              walked. Exceptions are bounded. Conflicts of interest are handled. The owner can be
+              audited. The same line can have no rehearsed successor. The contractor who holds
+              exception authority leaves on Friday, and the authority leaves with the contractor. The
+              playbooks stay in a binder the next crew has not run. The tooling rights stay on a login
+              the departing owner does not hand over. The audit trail stays in a notebook. The residual
+              claim on the learning stays in that owner's head. Rules exist only while the current
+              owner is present. Succession is untested. Exception authority dies with a contractor.
+              That record is governed. It is not transferable. A laminated pre-start card can move to
+              the next crew. A RACI cell can be updated with no rehearsal. A shared folder can be
+              renamed. The compounding system that actually runs the plant was never inside the rules
+              of engagement. That move is a thin ritual. It is not governance of the compounding
+              system, and it is not transfer of a governed system. A firm can govern a practice tightly
+              on one line and still not make it transferable. A firm can transfer a thin ritual and
+              still never have governed the compounding system that actually runs the plant. A
+              succession plan PDF can sit in a folder and still leave playbooks, tooling rights,
+              exception paths, residual claim on the learning, and the audit trail unshown under the
+              new named owner. A succession plan PDF alone is not transferability. A governance binder
+              can name who may authorize, what evidence is required, when to escalate, how exceptions
+              are bounded, how conflicts of interest are handled, and how the owner is audited or
+              replaced, and still never change hands. A governance binder alone is not transfer. A
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. A one-off clear
+              is a single quiet interval. It is not a rule of engagement, and it is not a handoff. The
+              governed practice is not the transferable practice. This essay does not invent a
+              customer, a price, or a return. It states no savings figure, states no price, and states
+              no OEM limit. A practice record that says governed is transferable is not a customer
+              plant release, and it is not shown transferability. Treating governed as transferable
+              records rules of engagement the plant has not shown changing hands with evidence
+              continuity, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/owned-is-not-governed. Owned,
+              there, means a named accountable owner can change, stop, transfer, audit, or withhold the
+              compounding system (playbooks, tooling, staffing rights, exception paths, residual claim
+              on the learning) with clear authority and evidence the owner still holds it. Governed,
+              there, means that ownership sits inside explicit rules of engagement: who may authorize,
+              what evidence is required, when to escalate, how exceptions are bounded, how conflicts of
+              interest are handled, and how the owner is audited or replaced — so the system stays
+              safe, compliant, and transferable under stress, not merely that a name is on it. A name
+              on a RACI alone is not governance. A policy PDF alone is not ownership. That refusal
+              stops at the named owner and the rules around that owner. It does not ask whether that
+              governed owned compounding system can change hands with evidence continuity under a new
+              named owner within a named window. The phrase transferable under stress, in that essay,
+              is not this handoff. Owned is not governed is a different refusal. Governed is not
+              transferable is the next refusal. Named ownership is not governance, and named governance
+              is not transferability. Owned Is Not Governed separates an owned compounding system from
+              governance of that system. This essay separates a governed owned compounding system from
+              transfer of that system. This essay does not rewrite Owned Is Not Governed. This essay
+              does not collapse into Owned Is Not Governed. This essay does not collapse owned into
+              governed. This essay does not collapse governed into transferable.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/compounded-is-not-owned"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Compounded Is Not Owned
+              </Link>{' '}
+              keeps accumulation that improves unit economics off a named owner who can redirect the
+              compounding system. A multi-site improvement is not a handoff, and a better unit-cost
+              chart is not evidence continuity. This essay does not rewrite Compounded Is Not Owned.
+              This essay does not collapse into Compounded Is Not Owned.{' '}
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim on an asset, equity, IP, or cash flow off the practical
+              power to set or change direction. That residual claim is a balance-sheet claim. Transfer
+              here is not that claim changing names on a cap table. Transfer here is evidence
+              continuity of the governed owned compounding system under a new named owner. A
+              balance-sheet residual does not show tooling rights in the successor's hands, and
+              direction power does not show an audit trail that still holds after a contractor exit.
+              This essay does not rewrite Ownership Is Not Control. This essay does not collapse into
+              Ownership Is Not Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not a handoff of the
+              compounding system, and a finished work-state is not a named window under a new owner.
+              This essay does not rewrite Control Is Not Closure. This essay does not collapse into
+              Control Is Not Closure.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/accountability-is-not-ownership"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Ownership
+              </Link>{' '}
+              keeps named answerability for an outcome off a residual economic claim. Answering for a
+              result after the owner leaves is not evidence continuity, and a residual claim is not a
+              rehearsed successor. This essay does not rewrite Accountability Is Not Ownership. This
+              essay does not collapse into Accountability Is Not Ownership.{' '}
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              keeps an independent check of a pack or outcome against named evidence off a named human
+              granting permission to execute a binding move. A handoff note is not that independent
+              check, and it is not that grant. Recommend is not authorize. A transfer note does not
+              authorize. Sync must not auto-transfer ownership. This essay does not rewrite Verified Is
+              Not Authorized. This essay does not collapse into Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>{' '}
+              keeps a green tile off permission to run. A status light is not a rule of engagement,
+              and a status light is not a handoff. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Green Is Not Go. This essay does not collapse
+              transferability into governance.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a transfer note is allowed to be
+            </h2>
+
+            <p>
+              Governed means ownership sits inside explicit rules of engagement. Transferable means
+              that governed owned compounding system can change hands with evidence continuity.
+              Playbooks, tooling rights, exception paths, residual claim on the learning, and audit
+              trail still hold under the new named owner within a named window. A succession plan PDF
+              alone is not transferability. A governance binder alone is not transfer. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a
+              governance/rules-of-engagement note or a transfer/handoff note beside Evidence,
+              Verification, and the closed outcome. This essay does not collapse governed into
+              transferable.
+            </p>
+
+            <p>
+              Evidence may cite a governance/rules-of-engagement note when the source of that note is
+              named, and when the citation names who may authorize, what evidence is required, when to
+              escalate, how exceptions are bounded, how conflicts of interest are handled, and how the
+              owner is audited or replaced, so the compounding system stays safe and compliant under
+              named stress. Evidence may cite a transfer/handoff note when the source of that note is
+              named, and when the citation names the hand (successor owner, new operator, crew/site
+              turnover, contractor exit, or organizational handoff), the new named owner, the named
+              window, and the evidence continuity that still holds: playbooks, tooling rights,
+              exception paths, residual claim on the learning, and audit trail. If the evidence records
+              the rules and does not record that handoff, the case may store the note as governed and
+              must not store the note as transferable. If the evidence records a thin ritual — a
+              succession plan PDF, a RACI update with no rehearsal, a hope that someone will figure it
+              out, or a shared drive the departing owner takes in their head — and does not record the
+              rules around the compounding system that actually runs the plant, the case must not store
+              the note as governed and must not store the note as transferable. What a transfer note is
+              allowed to be is that named handoff record around a governed system the plant can still
+              show under the new owner. It is not a binder nobody practices. It is not just that a name
+              is on it. It is not permission to execute. Recommend is not authorize. Surfacing is still
+              a read. Sync refuses false precision. Sync must not auto-assign owners, auto-approve
+              governed actions, or auto-transfer ownership.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named governance is not transferability
+            </h2>
+
+            <p>
+              Named governance is not transferability. The governed practice is not the transferable
+              practice. Rules of engagement answer who may authorize, what evidence is required, when
+              to escalate, how exceptions are bounded, how conflicts of interest are handled, and how
+              the owner is audited or replaced, so the compounding system stays safe and compliant
+              under named stress. They do not, by themselves, show a successor owner. They do not, by
+              themselves, show a new operator, a crew or site turnover, a contractor exit, or an
+              organizational handoff. They do not, by themselves, show playbooks, tooling rights,
+              exception paths, residual claim on the learning, and audit trail still holding under the
+              new named owner within a named window. A rule that says how the owner is replaced is
+              still a rule. It is not a rehearsed handoff. No tested succession, no tooling rights in
+              the successor's name, no audit trail that survives the contractor: the line can
+              still be governed while the current owner is present. A firm can govern a practice
+              tightly on one line and still not make it transferable. A firm can transfer a thin ritual
+              and still never have governed the compounding system that actually runs the plant. A
+              succession plan PDF alone is not transferability. A governance binder alone is not
+              transfer. Not a hope that someone will figure it out. Not a RACI update with no
+              rehearsal. Not a shared drive the departing owner takes in their head. Not a binder
+              nobody practices. Not just that a name is on it. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. This essay does not rewrite Owned Is Not Governed.
+              This essay does not rewrite Compounded Is Not Owned. This essay does not rewrite
+              Ownership Is Not Control. This essay does not rewrite Control Is Not Closure. This essay
+              does not rewrite Accountability Is Not Ownership. This essay does not rewrite Verified Is
+              Not Authorized. This essay does not rewrite Green Is Not Go. This essay does not collapse
+              into Owned Is Not Governed. This essay does not collapse into Compounded Is Not Owned.
+              This essay does not collapse into Ownership Is Not Control. This essay does not collapse
+              into Control Is Not Closure. This essay does not collapse into Accountability Is Not
+              Ownership. This essay does not collapse into Verified Is Not Authorized. This essay does
+              not collapse into Green Is Not Go. This essay does not collapse transferability into
+              governance. This essay does not collapse governed into transferable. Sync does not
+              measure governance or transferability for the customer. Sync must not auto-assign owners,
+              auto-approve governed actions, or auto-transfer ownership. Sync refuses to pretend
+              governance or transferability is a status light.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Owned is not governed. Owned means a named accountable owner can change, stop,
@@ -6583,17 +6915,6 @@ export default function OwnedIsNotGovernedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/governed-is-not-transferable"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Governed Is Not Transferable
-              </Link>
-              , on why governed is still not transferable. Governed means ownership sits inside explicit rules of engagement: who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how the owner is audited or replaced — so the compounding system stays safe and compliant under named stress, not just that a name is on it and not a binder nobody practices. Transferable means that governed owned compounding system can change hands (successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff) with evidence continuity: playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold under the new named owner within a named window — not a hope that someone will figure it out, not a RACI update with no rehearsal, and not a shared drive the departing owner takes in their head. A firm can govern a practice tightly on one line and still not make it transferable when the rules exist only while the current owner is present, succession is untested, and exception authority dies with a contractor. A firm can transfer a thin ritual and still never have governed the compounding system that actually runs the plant. A succession plan PDF alone is not transferability. A governance binder alone is not transfer. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Owned remains a named accountable owner who can change, stop, transfer, audit, or withhold the compounding system. This essay separates an owned compounding system from governance of that system. A name on a RACI alone is not governance. A policy PDF alone is not ownership. Sync does not measure governance or transferability for the customer. Sync does not measure transferability. Sync does not measure transferability for the customer. Sync must not auto-assign owners, auto-approve governed actions, or auto-transfer ownership. Sync must not auto-transfer ownership. Sync refuses to pretend governance or transferability is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -6653,7 +6974,7 @@ export default function OwnedIsNotGovernedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="owned-is-not-governed" />
+          <InsightNextSteps slug="governed-is-not-transferable" />
         </motion.article>
       </div>
     </main>
