@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('authorized-is-not-executed');
+const article = getInsightArticle('executed-is-not-closed');
 
-export default function AuthorizedIsNotExecutedPage() {
+export default function ExecutedIsNotClosedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,69 @@ export default function AuthorizedIsNotExecutedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Authorized Is Not Executed</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Executed Is Not Closed</h1>
+            <p className="text-xl text-gray-400">
+              Executed is not closed. Executed is evidence that a binding plant/operating/capital move
+              actually ran to completion under a named execution window (who/what/when/where against
+              plant or operating evidence) — execution happened, not that the case is finished
+              administratively. Closed is a named human (or named accountable role) formally closing
+              the case/work/exception under a named closure window — administrative/work-state closure,
+              not merely that the move ran. Executed is not closed. A firm with execution can still
+              lack closure. A firm with closure can still lack execution. An execution note alone
+              proves neither. A closure note alone proves neither. An execution note is not a green. A
+              closure note is not a green. Execution evidence without named closure is not closed. A
+              closed stamp without execution evidence is not executed. A CMMS checkbox, ticket state,
+              or status light is neither. Authorized is not executed. Authorized remains a named human
+              (or named accountable role) granting permission to execute a binding
+              plant/operating/capital move under a named decision window — authorization to act, not
+              proof the move happened. Closure is not complete. Control is not closure. Accountability
+              is not closure. Cleared is not complete. Ready is not cleared. Closure is not cash.
+              Action is not execution. Strategy is not execution. Execution is not results. Recommend
+              is not authorize. Evidence lineage is not optional. Human decision is not optional. Sync
+              does not measure execution. Sync does not measure execution for the customer. Sync does
+              not measure closure. Sync does not measure closure for the customer. Sync does not
+              execute or close cases for the customer. Sync does not authorize or execute for the
+              customer. Sync does not authorize, execute, or close for the customer.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed.
+              Authorized, in the prior essay, is named permission to execute a binding move. That essay
+              separates named permission from completed execution. This essay does not collapse into
+              that split. This essay separates completed execution from named closure. Closure Is Not
+              Complete separates a closure stamp from acceptance completeness. Control Is Not Closure
+              separates direction power from a finished end-state. Accountability Is Not Closure
+              separates named answerability from a closed stamp. Cleared Is Not Complete and Ready Is
+              Not Cleared separate clearance and readiness from completeness. Closure Is Not Cash
+              separates a closed stamp from collected money. Action Is Not Execution, Strategy Is Not
+              Execution, and Execution Is Not Results separate intent, plan, action labels, and results
+              from execution. This essay does not collapse into those refusals. It separates evidence
+              the binding move ran to completion from a named human formally closing the case under a
+              named closure window. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and
+              Human Decision Is Not Optional stay beside this split. Sync may surface an
+              execution/completed-move note or a closure/end-state note beside Evidence, Verification,
+              and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync
+              refuses when evidence is insufficient. Sync must not auto-close or auto-authorize. This
+              essay does not rewrite Authorized Is Not Executed. This essay does not rewrite Closure Is
+              Not Complete. This essay does not rewrite Control Is Not Closure. This essay does not
+              rewrite Accountability Is Not Closure. This essay does not rewrite Cleared Is Not
+              Complete. This essay does not rewrite Ready Is Not Cleared. This essay does not rewrite
+              Closure Is Not Cash. This essay does not rewrite Action Is Not Execution. This essay does
+              not rewrite Strategy Is Not Execution. This essay does not rewrite Execution Is Not
+              Results. This essay does not collapse into Authorized Is Not Executed. This essay does not
+              collapse into Closure Is Not Complete. This essay does not collapse into Control Is Not
+              Closure. This essay does not collapse into Accountability Is Not Closure. This essay does
+              not collapse into Cleared Is Not Complete. This essay does not collapse into Ready Is Not
+              Cleared. This essay does not collapse into Closure Is Not Cash. This essay does not
+              collapse into Action Is Not Execution. This essay does not collapse into Strategy Is Not
+              Execution. This essay does not collapse into Execution Is Not Results. This essay does not
+              collapse executed into closed. This essay does not collapse closure into execution. This
+              essay does not collapse authorized into executed. This essay does not collapse executed
+              into results.
+            </p>
+
             <p className="text-xl text-gray-400">
               Authorized is not executed. Authorized is a named human (or named accountable role)
               granting permission to execute a binding plant/operating/capital move under a named
@@ -327,6 +389,332 @@ export default function AuthorizedIsNotExecutedPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+
+            <p className="text-xl font-semibold text-white">
+              Executed is not closed. Executed is evidence that a binding plant/operating/capital move
+              actually ran to completion under a named execution window (who/what/when/where against
+              plant or operating evidence) — execution happened, not that the case is finished
+              administratively. Closed is a named human (or named accountable role) formally closing
+              the case/work/exception under a named closure window — administrative/work-state closure,
+              not merely that the move ran. A firm with execution can still lack closure when that
+              completed move is on the record and the firm has not named a human, or a named
+              accountable role, who formally closed the case, the work, or the exception under a named
+              closure window. A firm with closure can still lack execution when that named close is on
+              the record and the firm has not shown who did what, when, and where against plant or
+              operating evidence under a named execution window. Execution evidence without named
+              closure is not closed. A closed stamp without execution evidence is not executed. A CMMS
+              checkbox, ticket state, or status light is neither. Treating executed as closed records
+              a completed binding move as a claim about administrative closure that nobody has named,
+              under the honesty and verification boundary. An execution note can inform a
+              recommendation to investigate. Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the execution
+              note when the note is being used as closure. Evidence from the plant beats the closure
+              note when the note is being used as execution. Sync must not auto-close, auto-authorize,
+              or treat executed as closed as Learning credit. Sync does not measure execution. Sync
+              does not measure execution for the customer. Sync does not measure closure. Sync does not
+              measure closure for the customer. Sync does not execute or close cases for the customer.
+              Sync does not authorize, execute, or close for the customer. Direct plant execute stays
+              off. CMMS write-back is not a live product path. Billing write-back is not a live product
+              path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The completed move is not the closed case
+            </h2>
+
+            <p>
+              Plant or operating evidence can show who did what, when, and where under a named
+              execution window while nobody has named the human, or the accountable role, who formally
+              closed the case, the work, or the exception under a named closure window. That completed
+              move is executed. It is not closed. A named human, or a named accountable role, can
+              formally close the case under a named closure window while the firm has not shown that
+              the binding plant, operating, or capital move ran to completion. That stamp is closed. It
+              is not executed. A title on the org chart, with or without scope, is neither the
+              completed move nor the administrative close. A firm with execution can still lack
+              closure. A firm with closure can still lack execution. An execution note alone proves
+              neither. A closure note alone proves neither. An execution note is not a green. A closure
+              note is not a green. Execution evidence without named closure is not closed. A closed
+              stamp without execution evidence is not executed. A CMMS checkbox, ticket state, or
+              status light is neither. Completed execution is not named closure. The completed move is
+              not the closed case. This essay does not invent a customer, a price, or a return. It
+              states no savings figure, states no price, and states no OEM limit. A practice record
+              that says executed is closed is not a customer plant release, and it is not shown
+              closure. Treating executed as closed records a completed binding move as a claim about
+              administrative closure that nobody has named, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/authorized-is-not-executed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Authorized Is Not Executed
+              </Link>{' '}
+              sits one step earlier. Authorized, there, is a named human (or named accountable role)
+              granting permission to execute a binding plant/operating/capital move under a named
+              decision window — authorization to act, not proof the move happened. Executed, there, is
+              evidence that the binding move actually ran to completion under a named execution window
+              (who/what/when/where against plant or operating evidence) — execution happened, not
+              merely that someone said yes. A named authorization without execution evidence is not
+              executed. Plant activity without a named authorization is not authorized. A status light,
+              ticket state, or CMMS checkbox is neither. That refusal stops at permission to act and
+              completed execution. It does not ask whether a named human, or a named accountable role,
+              formally closed the case, the work, or the exception under a named closure window.
+              Authorized is not executed is a different refusal. Executed is not closed is the next
+              refusal. Named permission is not completed execution, and completed execution is not
+              named closure. Authorized Is Not Executed separates named permission from completed
+              execution. This essay separates completed execution from named closure. This essay does
+              not rewrite Authorized Is Not Executed. This essay does not collapse into Authorized Is
+              Not Executed. This essay does not collapse authorized into executed. This essay does not
+              collapse executed into closed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/closure-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Complete
+              </Link>{' '}
+              separates a finished work-state — a ticket, work order, investigation, or decision cycle
+              marked done with a named end condition — from acceptance completeness. Complete, there,
+              is every named acceptance criterion for that case satisfied under a named measurement
+              window. That refusal is a closure stamp versus acceptance completeness. This essay does
+              not ask whether every acceptance criterion measured as met. It asks whether evidence the
+              binding move ran to completion is the same thing as a named human formally closing the
+              case under a named closure window. It is not. 
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              separates direction power from a finished end-state. Who can steer capital allocation,
+              operating priorities, or binding plant moves in practice is not who/what/when/where
+              against plant or operating evidence, and it is not the named close. 
+              <Link
+                href="/insights/accountability-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Closure
+              </Link>{' '}
+              separates named answerability for an outcome within a defined scope and window from a
+              closure stamp. Answering for the result is not execution evidence. This essay does not
+              rewrite Closure Is Not Complete. This essay does not rewrite Control Is Not Closure.
+              This essay does not rewrite Accountability Is Not Closure. This essay does not collapse
+              into Closure Is Not Complete. This essay does not collapse into Control Is Not Closure.
+              This essay does not collapse into Accountability Is Not Closure. This essay does not
+              collapse closure into execution.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared is a ready or permission
+              gate past a clearance check. 
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not authorization,
+              not execution, and not closure. Passing a clearance gate is not who/what/when/where
+              against plant or operating evidence, and it is not a named human formally closing the
+              case under a named closure window. 
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              keeps a closed work order, ticket, or shift off cash collected. Collected money is not
+              execution evidence, and a closure stamp is not a completed binding move. This essay does
+              not rewrite Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared.
+              This essay does not rewrite Closure Is Not Cash. This essay does not collapse into
+              Cleared Is Not Complete. This essay does not collapse into Ready Is Not Cleared. This
+              essay does not collapse into Closure Is Not Cash.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/action-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Action Is Not Execution
+              </Link>{' '}
+              keeps an action label, an intent, or a plan off completed execution. 
+              <Link
+                href="/insights/strategy-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Strategy Is Not Execution
+              </Link>{' '}
+              keeps a committed path and resource allocation off proof the work was completed. 
+              <Link
+                href="/insights/execution-is-not-results"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Execution Is Not Results
+              </Link>{' '}
+              keeps completed work off the attributed, measured change in plant capacity, risk, cost,
+              or production. Those refusals stay on the intent, plan, and results axis. This essay does
+              not ask whether a roadmap, a budget envelope, an action tile, or a results number is the
+              completed work. It asks whether evidence the binding move ran to completion is the same
+              thing as a named administrative close. It is not. Executed here is not a results number.
+              This essay does not rewrite Action Is Not Execution. This essay does not rewrite Strategy
+              Is Not Execution. This essay does not rewrite Execution Is Not Results. This essay does
+              not collapse into Action Is Not Execution. This essay does not collapse into Strategy Is
+              Not Execution. This essay does not collapse into Execution Is Not Results. This essay
+              does not collapse executed into results.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>{' '}
+              separates measured completeness from named human acceptance. Neither is execution
+              evidence, and neither is a named human formally closing the case under a named closure
+              window. 
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not execution
+              evidence, and a recommendation tile is not named closure. 
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>
+              . Evidence lineage is not optional. A note without a named source is not who, what,
+              when, and where against plant or operating evidence, and it is not a named human closing
+              the case under a named closure window. 
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link> 
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, evidence the binding move ran to completion,
+              and it is not, by itself, the named close. Human decision is not optional. Recommend is
+              not authorize. This essay does not rewrite Recommend Is Not Authorize. This essay does
+              not rewrite Human Decision Is Not Optional. This essay does not collapse into Recommend
+              Is Not Authorize. This essay does not collapse into Human Decision Is Not Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a closure note is allowed to be
+            </h2>
+
+            <p>
+              Closed is a named human (or named accountable role) formally closing the case/work/exception under a named closure window.
+              Sync may surface an execution/completed-move note or a closure/end-state note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse executed into closed.
+            </p>
+
+            <p>
+              Executed is evidence that a binding plant/operating/capital move actually ran to
+              completion under a named execution window (who/what/when/where against plant or operating
+              evidence) — execution happened, not that the case is finished administratively. Closed is
+              a named human (or named accountable role) formally closing the case/work/exception under
+              a named closure window — administrative/work-state closure, not merely that the move ran.
+              Execution evidence without named closure is not closed. A closed stamp without execution
+              evidence is not executed. A CMMS checkbox, ticket state, or status light is neither. Sync
+              may surface an execution/completed-move note or a closure/end-state note beside Evidence,
+              Verification, and the closed outcome.
+            </p>
+
+            <p>
+              Evidence may cite an execution/completed-move note when the source of that note is named,
+              and when the citation says who did what, when, and where against plant or operating
+              evidence under a named execution window. Evidence may cite a closure/end-state note when
+              the source of that note is named, and when the citation says which human, or which
+              accountable role, formally closed which case, work, or exception under which closure
+              window. If the evidence records the completed move and does not record the named close,
+              the case may store the note as execution and must not store the note as closed. If the
+              evidence records the named close and does not record the completed move, the case may
+              store the note as closure and must not store the note as executed. The label does not
+              fill the gap. The execution note does not paint a green. The closure note does not paint
+              a green. Evidence lineage is not optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. None of those, by itself, is who, what, when, and
+              where against plant or operating evidence under an execution window. None of those, by
+              itself, names the human, or the accountable role, who formally closed the case under a
+              closure window. A CMMS checkbox, ticket state, or status light is neither. Evidence from
+              the plant beats the execution note when the note is being used as closure. Evidence from
+              the plant beats the closure note when the note is being used as execution. Recommend is
+              not authorize. Human decision is not optional. Sync refuses false precision. Sync refuses
+              when evidence is insufficient. Sync must not auto-close, auto-authorize, or treat
+              executed as closed as Learning credit. A practice record that says executed is closed is
+              not a customer plant release, and it is not shown closure. Simulated or seeded telemetry
+              and assets are practice records. A live connector tag pull is not a claim of this
+              edition. This essay does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface an execution/completed-move note or a
+              closure/end-state note beside Evidence, Verification, and the closed outcome. Surfacing
+              is still a read. Showing the note does not write a CMMS work order. Showing the note does
+              not clear equipment to run. Showing the note does not close the case for the customer.
+              Showing the note does not book revenue. Showing the note does not recognize revenue.
+              Showing the note does not measure execution. Showing the note does not measure execution
+              for the customer. Showing the note does not measure closure. Showing the note does not
+              measure closure for the customer. Showing the note does not authorize, execute, or close
+              for the customer. Showing the note does not execute plant work. A named human decides. A
+              named human remains accountable after the plant move. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path. Self-guided onboarding is not claimed as a live product path. Sync does not execute
+              or close cases for the customer.
+            </p>
+
+            <p>
+              Executed is not closed. A firm with execution can still lack closure. A firm with closure
+              can still lack execution. A closure note alone proves neither. A closure note is not a
+              green. The completed move is not the closed case. What a closure note is allowed to be is
+              a named record of who formally closed the case, the work, or the exception under a named
+              closure window. Completed execution is not named closure. Sync does not execute or close
+              cases for the customer. Sync may surface an execution/completed-move note or a
+              closure/end-state note beside Evidence, Verification, and the closed outcome. This essay
+              does not collapse closure into execution. This essay does not collapse executed into
+              closed. This essay does not rewrite Authorized Is Not Executed. This essay does not
+              rewrite Closure Is Not Complete. This essay does not rewrite Control Is Not Closure. This
+              essay does not rewrite Accountability Is Not Closure. This essay does not rewrite Cleared
+              Is Not Complete. This essay does not rewrite Ready Is Not Cleared. This essay does not
+              rewrite Closure Is Not Cash. This essay does not rewrite Action Is Not Execution. This
+              essay does not rewrite Strategy Is Not Execution. This essay does not rewrite Execution
+              Is Not Results. A practice record that says executed is closed is not shown closure.
+              Treating executed as closed is the refusal. This essay separates completed execution from
+              named closure. This essay does not collapse into Authorized Is Not Executed. This essay
+              does not collapse into Closure Is Not Complete. This essay does not collapse into Control
+              Is Not Closure. This essay does not collapse into Accountability Is Not Closure. This
+              essay does not collapse into Cleared Is Not Complete. This essay does not collapse into
+              Ready Is Not Cleared. This essay does not collapse into Closure Is Not Cash. This essay
+              does not collapse into Action Is Not Execution. This essay does not collapse into
+              Strategy Is Not Execution. This essay does not collapse into Execution Is Not Results.
+              Evidence from the plant beats the execution note when the note is being used as closure.
+              Evidence from the plant beats the closure note when the note is being used as execution.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-close,
+              auto-authorize, or treat executed as closed as Learning credit. Direct plant execute
+              stays off. CMMS write-back is not a live product path. Billing write-back is not a live
+              product path. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Sync does not authorize, execute, or close for the customer.
+            </p>
             <p className="text-xl font-semibold text-white">
               Accepted is not verified. Accepted is a named human formally accepting an acceptance
               pack (or the case outcome it covers) under a named decision window — human
@@ -2627,34 +3015,6 @@ export default function AuthorizedIsNotExecutedPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/executed-is-not-closed"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Executed Is Not Closed
-              </Link>
-              , on why executed is still not closed. Executed is evidence that a binding
-              plant/operating/capital move actually ran to completion under a named execution window
-              (who/what/when/where against plant or operating evidence) — execution happened, not that
-              the case is finished administratively. Closed is a named human (or named accountable
-              role) formally closing the case/work/exception under a named closure window —
-              administrative/work-state closure, not merely that the move ran. A firm with execution
-              can still lack closure when that completed move is on the record and the firm has not
-              named a human, or a named accountable role, who formally closed the case, the work, or
-              the exception under a named closure window. A firm with closure can still lack execution.
-              Execution evidence without named closure is not closed. A closed stamp without execution
-              evidence is not executed. A CMMS checkbox, ticket state, or status light is neither.
-              Authorized remains a named human (or named accountable role) granting permission to
-              execute a binding plant/operating/capital move under a named decision window. This essay
-              separates named permission from completed execution. An execution note alone proves
-              neither. A closure note alone proves neither. An execution note is not a green. A
-              closure note is not a green. Sync does not measure closure. Sync does not measure
-              closure for the customer. Sync does not execute or close cases for the customer.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -2714,7 +3074,7 @@ export default function AuthorizedIsNotExecutedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="authorized-is-not-executed" />
+          <InsightNextSteps slug="executed-is-not-closed" />
         </motion.article>
       </div>
     </main>
