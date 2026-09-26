@@ -113,7 +113,7 @@ export default function ExecutionIsNotResultsPage() {
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not
-              learning. Each word can be true in its own place. None of the earlier words fills the
+              learning. Learning is not judgment. Each word can be true in its own place. None of the earlier words fills the
               last one. A closed work order,
               cash collected, a unit remainder, a profit figure, a measured outcome, an attributed
               change in cash, risk, or capacity, a recognized sale, an annualized contract, a
@@ -151,8 +151,12 @@ export default function ExecutionIsNotResultsPage() {
               operating practice the firm adopts because a verified result changed what it will do
               next under a named decision window — tempered belief that changes future allocation,
               not a dashboard tile, a learning_events row, a retrospective note, or a results number
-              sitting unread. An execution note is not that results claim. A results note is not
-              that learning claim.
+              sitting unread. Judgment is the situated call under incomplete information that
+              commits plant work, capital, or risk now under a named decision owner and window —
+              accountable choice with consequence, not an adopted rule sitting unused, a
+              recommendation tile, a scored suggestion, or a learning note alone. An execution note
+              is not that results claim. A results note is not that learning claim. A learning note
+              is not that judgment claim.
             </p>
 
             <p>
