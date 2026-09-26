@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorRecordedClearedIndex = slugs.indexOf('successor-recorded-is-not-cleared');
 const successorReleasedRecordedIndex = slugs.indexOf('successor-released-is-not-recorded');
 const successorRemediatedReleasedIndex = slugs.indexOf('successor-remediated-is-not-released');
 const successorEnforcedRemediatedIndex = slugs.indexOf('successor-enforced-is-not-remediated');
@@ -115,7 +116,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorReleasedRecordedIndex >= 0 &&
+    successorRecordedClearedIndex >= 0 &&
+    successorReleasedRecordedIndex > successorRecordedClearedIndex &&
     successorRemediatedReleasedIndex > successorReleasedRecordedIndex &&
     successorEnforcedRemediatedIndex > successorRemediatedReleasedIndex &&
     successorBindingEnforcedIndex > successorEnforcedRemediatedIndex &&
@@ -211,7 +213,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -15832,16 +15834,150 @@ if (filingRemediatedPage.includes('successor-remediated-is-not-released') || fil
   fail('filing-spine remediated-is-not-released must stay off the industrial successor slugs');
 }
 const filingReleasedRecordedPage = read('app/insights/released-is-not-recorded/page.tsx');
-if (filingReleasedRecordedPage.includes('successor-released-is-not-recorded')) {
-  fail('filing-spine released-is-not-recorded must stay off the industrial successor slug');
+if (filingReleasedRecordedPage.includes('successor-released-is-not-recorded') || filingReleasedRecordedPage.includes('successor-recorded-is-not-cleared')) {
+  fail('filing-spine released-is-not-recorded must stay off the industrial successor slugs');
 }
 const filingRecordedClearedPage = read('app/insights/recorded-is-not-cleared/page.tsx');
-if (filingRecordedClearedPage.includes('successor-released-is-not-recorded')) {
-  fail('filing-spine recorded-is-not-cleared must stay off the industrial successor slug');
+if (filingRecordedClearedPage.includes('successor-released-is-not-recorded') || filingRecordedClearedPage.includes('successor-recorded-is-not-cleared')) {
+  fail('filing-spine recorded-is-not-cleared must stay off the industrial successor slugs');
+}
+const filingClearedClosedPage = read('app/insights/cleared-is-not-closed/page.tsx');
+if (filingClearedClosedPage.includes('successor-recorded-is-not-cleared') || filingClearedClosedPage.includes('successor-released-is-not-recorded')) {
+  fail('filing-spine cleared-is-not-closed must stay off the industrial successor slugs');
 }
 const filingEnforcedPage = read('app/insights/enforced-is-not-remediated/page.tsx');
 if (filingEnforcedPage.includes('successor-remediated-is-not-released') || filingEnforcedPage.includes('successor-enforced-is-not-remediated')) {
   fail('filing-spine enforced-is-not-remediated must stay off the industrial successor slugs');
+}
+
+
+const successorRecordedClearedPageRequired = [
+  'Recorded Is Not Cleared',
+  'Recorded is not cleared',
+  'instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window',
+  'register entry / recording package with named recorder role',
+  'named recording criteria met (release package cited, register updated, retention / discoverability satisfied)',
+  'unbroken trail from the release evidence to that recording evidence',
+  'not a verbal "it is in the system,"',
+  'not a dashboard green tile with no register key',
+  'not a folder rename with no register line',
+  'not a chat note that says filed',
+  'not "records will catch up" without instrument-required recording evidence',
+  'not treating release theater as automatic recording of those successor obligations',
+  'instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window',
+  'clearance package with named clearer / acceptor roles',
+  'named clearance criteria met (recording cited, obligation retired or transferred per instrument, residual risk accepted or closed)',
+  'unbroken trail from the recording evidence to that clearance evidence',
+  'not a dashboard green tile with no clearance authority',
+  'not a verbal "we can close that out,"',
+  'not deleting a register row with no instrument path',
+  'not a chat note that says cleared',
+  'not "finance will write it off" without instrument-required clearance evidence',
+  'not treating recording theater as automatic clearance of those successor obligations',
+  'A firm can have instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window and still lack instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window',
+  'A firm can be recorded and still not cleared',
+  'recording evidence exists while required clearance evidence for the remaining window is missing',
+  'A firm can claim clearance theater and still not be recorded',
+  'Recording evidence alone is not clearance of those successor obligations from the active hold register',
+  'A clearance claim alone is not proof the named recording evidence was on the file',
+  'The recorded practice is not the cleared practice',
+  'What a clearance record is allowed to be',
+  'Named recorded is not cleared',
+  'Sync does not measure cleared',
+  'Sync does not measure cleared for the customer',
+  'Sync does not measure recorded or cleared for the customer',
+  'Sync may surface a recording record or a clearance record',
+  'does not collapse cleared into recorded',
+  'does not collapse recorded into cleared',
+  'does not collapse this recorded into registry recording',
+  'does not collapse this recorded into clearance of filing obligations',
+  'does not collapse this cleared into clearance of filing obligations',
+  'does not collapse this cleared into closing completion',
+  'does not collapse this released into filing-spine release, waiver, or discharge',
+  'does not collapse this released into registry recording',
+  'does not collapse into Released Is Not Recorded',
+  'does not rewrite Released Is Not Recorded',
+  'does not collapse into Recorded Is Not Cleared',
+  'does not rewrite Recorded Is Not Cleared',
+  'does not collapse into Cleared Is Not Closed',
+  'does not rewrite Cleared Is Not Closed',
+  'does not collapse into Remediated Is Not Released',
+  'does not rewrite Remediated Is Not Released',
+  'does not collapse into Enforced Is Not Remediated',
+  'does not rewrite Enforced Is Not Remediated',
+  'does not collapse into Binding Is Not Enforced',
+  'does not rewrite Binding Is Not Enforced',
+  'does not collapse into Effective Is Not Binding',
+  'does not rewrite Effective Is Not Binding',
+  'does not collapse into Restored Is Not Accepted',
+  'does not rewrite Restored Is Not Accepted',
+  'does not collapse into Governed Is Not Transferable',
+  'does not rewrite Governed Is Not Transferable',
+  'does not collapse into Transferable Is Not Rehearsed',
+  'does not rewrite Transferable Is Not Rehearsed',
+  'does not collapse into Transferable Is Not Binding',
+  'does not rewrite Transferable Is Not Binding',
+  'instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window, trailed from the recording evidence',
+  'separates instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window from',
+  '/insights/successor-released-is-not-recorded',
+  '/insights/successor-remediated-is-not-released',
+  '/insights/successor-enforced-is-not-remediated',
+  '/insights/successor-binding-is-not-enforced',
+  '/insights/transferable-is-not-binding',
+  '/insights/remediated-is-not-released',
+  '/insights/released-is-not-recorded',
+  '/insights/recorded-is-not-cleared',
+  '/insights/cleared-is-not-closed',
+  '/insights/enforced-is-not-remediated',
+  '/insights/binding-is-not-enforced',
+  '/insights/effective-is-not-binding',
+  '/insights/restored-is-not-accepted',
+  'Evidence from the plant beats the recording record when the record is being used as cleared',
+  'Evidence from the plant beats the clearance claim when the claim is being used as proof the named recording of those successor obligations was on the file',
+  'treat recorded as cleared as Learning credit',
+  'Sync refuses to pretend recorded or cleared is a status light',
+  'Sync does not deem cleared for the customer',
+  'Sync must not auto-deem-cleared',
+  'A verbal "we can close that out" alone is neither',
+  'clearance theater',
+  'active hold register',
+  'This split is recorded versus cleared',
+  'practice record that says recorded is cleared',
+  'Released Is Not Recorded',
+  'Released is not recorded',
+  'This essay does not rewrite that thesis',
+  'Cleared Is Not Closed',
+  'industrial control and transfer spine',
+];
+
+const successorRecordedClearedPage = read('app/insights/successor-recorded-is-not-cleared/page.tsx');
+for (const required of successorRecordedClearedPageRequired) {
+  if (!successorRecordedClearedPage.includes(required)) {
+    fail(`successor-recorded-is-not-cleared page must include ${required}`);
+  }
+}
+
+const successorRecordedClearedBlock = stepBlock('successor-recorded-is-not-cleared');
+for (const required of ['successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+  if (!successorRecordedClearedBlock.includes(`'${required}'`)) {
+    fail(`successor-recorded-is-not-cleared related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorRecordedClearedBlock)) {
+  fail('successor-recorded-is-not-cleared related reading must include the Strategic Pilot');
+}
+if (successorRecordedClearedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-recorded-is-not-cleared next step is the Field Manual');
+}
+if (!stepBlock('successor-released-is-not-recorded').includes("'successor-recorded-is-not-cleared'")) {
+  fail('successor-released-is-not-recorded related reading must point forward to successor-recorded-is-not-cleared');
+}
+
+if (
+  !successorReleasedRecordedPage.includes('The series continues with') ||
+  !successorReleasedRecordedPage.includes('/insights/successor-recorded-is-not-cleared')
+) {
+  fail('successor-released-is-not-recorded must point the series forward to successor-recorded-is-not-cleared');
 }
 
 
