@@ -113,7 +113,7 @@ export default function ExecutionIsNotResultsPage() {
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not
-              learning. Learning is not judgment. Judgment is not authority. Authority is not accountability. Each word can be true in its own place. None of the earlier words fills the
+              learning. Learning is not judgment. Judgment is not authority. Authority is not accountability. Accountability is not ownership. Each word can be true in its own place. None of the earlier words fills the
               last one. A closed work order,
               cash collected, a unit remainder, a profit figure, a measured outcome, an attributed
               change in cash, risk, or capacity, a recognized sale, an annualized contract, a
@@ -160,7 +160,7 @@ export default function ExecutionIsNotResultsPage() {
               plant work, capital, or risk within a defined scope and window — decision rights on the
               org chart or charter, not the quality of the call, not a title without scope, not a
               recommendation, and not judgment sitting with someone who cannot bind. A judgment note
-              is not that authority claim. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. Authority is not accountability. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.
+              is not that authority claim. Accountability is owning the outcome of that bound decision — who answers for results, misses, and remediation. Authority is not accountability. Accountability is not ownership. A charter without an outcome owner is not accountability. Sitting with the result without the right to bind is not authority. A title is neither.
             </p>
 
             <p>
