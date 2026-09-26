@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-cleared-is-not-closed',
+    title: 'Cleared Is Not Closed',
+    description:
+      'Cleared is not closed. Cleared means under that same named instrument / governing law for that channel, instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window — evidenced by clearance package with named clearer / acceptor roles, named clearance criteria met (recording cited, obligation retired or transferred per instrument, residual risk accepted or closed), dates, and an unbroken trail from the recording evidence to that clearance evidence — not a dashboard green tile with no clearance authority, not a verbal "we can close that out," not deleting a register row with no instrument path, not a chat note that says cleared, not "finance will write it off" without instrument-required clearance evidence, and not treating recording theater as automatic clearance of those successor obligations from the active hold register. Closed means under that same named instrument / governing law for that channel, instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance — evidenced by close package with named closer / acceptor roles, named close criteria met (clearance package cited, matter closed per instrument, residual accepted or transferred, hold register shows closed for that scope), dates, and an unbroken trail from the clearance evidence to that close evidence — not a dashboard green tile with no close authority, not a verbal "we are done," not archiving a ticket with no instrument path, not a chat note that says closed, not "ops will wrap it" without instrument-required close evidence, and not treating clearance theater as automatic close of that successor-obligation matter. Cleared is not closed. A firm can be cleared and still not closed (clearance evidence exists while required close evidence for the remaining window is missing). A firm can have instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window and still lack instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance. A firm can claim close theater and still not be cleared (a dashboard green tile with no close authority, a verbal "we are done," archiving a ticket with no instrument path, a chat note that says closed, or a sentence that says ops will wrap it while required clearance evidence is missing). Clearance evidence alone is not close of that successor-obligation matter. A close claim alone is not proof the named clearance evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard cleared tile, verbal "we are done," dashboard green tile with no close authority, archived ticket with no instrument path, chat note that says closed, or ops-will-wrap-it note alone is neither. A verbal "we are done" alone is neither. Keep this cleared distinct from the filing-spine Recorded Is Not Cleared and from Cleared Is Not Closed. Keep this closed distinct from the filing-spine Cleared Is Not Closed and from Closed Is Not Delivered. Keep this recorded distinct from the filing-spine Released Is Not Recorded and from Recorded Is Not Cleared. This cleared is instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window, trailed from the recording evidence. This closed is instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. This recorded is instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window, trailed from the release evidence. Do not collapse this cleared into the clearance of filing obligations Recorded Is Not Cleared names. Do not collapse this cleared into the closing completion Cleared Is Not Closed names. Do not collapse this closed into the closing completion Cleared Is Not Closed names. Do not collapse this closed into the delivery Closed Is Not Delivered names. Do not collapse this recorded into the registry recording Released Is Not Recorded names. Do not collapse this recorded into the clearance of filing obligations Recorded Is Not Cleared names. This essay does not collapse this cleared into clearance of filing obligations. This essay does not collapse this cleared into closing completion. This essay does not collapse this closed into closing completion. This essay does not collapse this closed into delivery. This essay does not collapse this recorded into registry recording. This essay does not collapse this recorded into clearance of filing obligations. This essay does not collapse into Recorded Is Not Cleared. This essay does not rewrite Recorded Is Not Cleared. This essay does not collapse into Cleared Is Not Closed. This essay does not rewrite Cleared Is Not Closed. This essay does not collapse into Closed Is Not Delivered. This essay does not rewrite Closed Is Not Delivered. This essay does not collapse into Released Is Not Recorded. This essay does not rewrite Released Is Not Recorded. This essay does not collapse into Remediated Is Not Released. This essay does not rewrite Remediated Is Not Released. This essay does not collapse into Enforced Is Not Remediated. This essay does not rewrite Enforced Is Not Remediated. This essay does not collapse into Binding Is Not Enforced. This essay does not rewrite Binding Is Not Enforced. This essay does not collapse into Effective Is Not Binding. This essay does not rewrite Effective Is Not Binding. This essay does not collapse into Restored Is Not Accepted. This essay does not rewrite Restored Is Not Accepted. This essay does not collapse into Governed Is Not Transferable. This essay does not rewrite Governed Is Not Transferable. This essay does not collapse into Transferable Is Not Rehearsed. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not collapse into Transferable Is Not Binding. This essay does not rewrite Transferable Is Not Binding. This essay does not collapse closed into cleared. This essay does not collapse cleared into closed. A dashboard green tile with no close authority, a verbal "we are done," or archiving a ticket with no instrument path without instrument-required close evidence is not that close. A chat note that says closed, or "ops will wrap it," without instrument-required close evidence is not that close. This split is cleared versus closed. This essay separates instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window from instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance. Evidence from the plant beats the clearance record when the record is being used as closed. Evidence from the plant beats the close claim when the claim is being used as proof the named clearance of those successor obligations was on the file. Sync refuses to pretend cleared or closed is a status light. Sync does not measure closed. Sync does not measure closed for the customer. Sync does not measure cleared or closed for the customer. Sync may surface a clearance record or a close record beside Evidence, Verification, and the closed outcome. Sync must not treat cleared as closed as Learning credit. Sync does not deem closed for the customer. Sync must not auto-deem-closed. A practice record that says cleared is closed is not shown closed.',
+    excerpt:
+      'Cleared is not closed. Cleared means under that same named instrument / governing law for that channel, instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window — evidenced by clearance package with named clearer / acceptor roles, named clearance criteria met (recording cited, obligation retired or transferred per instrument, residual risk accepted or closed), dates, and an unbroken trail from the recording evidence to that clearance evidence — not a dashboard green tile with no clearance authority, not a verbal "we can close that out," not deleting a register row with no instrument path, not a chat note that says cleared, not "finance will write it off" without instrument-required clearance evidence, and not treating recording theater as automatic clearance of those successor obligations from the active hold register. Closed means under that same named instrument / governing law for that channel, instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance — evidenced by close package with named closer / acceptor roles, named close criteria met (clearance package cited, matter closed per instrument, residual accepted or transferred, hold register shows closed for that scope), dates, and an unbroken trail from the clearance evidence to that close evidence — not a dashboard green tile with no close authority, not a verbal "we are done," not archiving a ticket with no instrument path, not a chat note that says closed, not "ops will wrap it" without instrument-required close evidence, and not treating clearance theater as automatic close of that successor-obligation matter. Cleared is not closed. A firm can be cleared and still not closed (clearance evidence exists while required close evidence for the remaining window is missing). A firm can have instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window and still lack instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance. A firm can claim close theater and still not be cleared (a dashboard green tile with no close authority, a verbal "we are done," archiving a ticket with no instrument path, a chat note that says closed, or a sentence that says ops will wrap it while required clearance evidence is missing). Clearance evidence alone is not close of that successor-obligation matter. A close claim alone is not proof the named clearance evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard cleared tile, verbal "we are done," dashboard green tile with no close authority, archived ticket with no instrument path, chat note that says closed, or ops-will-wrap-it note alone is neither. A verbal "we are done" alone is neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-26',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'successor-recorded-is-not-cleared',
     title: 'Recorded Is Not Cleared',
     description:
@@ -1590,12 +1602,88 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'successor-recorded-is-not-cleared': {
-    relatedSlug: 'successor-released-is-not-recorded',
-    relatedNote: 'Released is not recorded. The prior essay in this spine separates instrument-required release / close-out that returns the remediated successor obligations / sustained accepted restored condition into the named operating / warranty / successor window as released for continued hold from instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window, trailed from the release evidence. This essay does not rewrite that thesis.',
+  'successor-cleared-is-not-closed': {
+    relatedSlug: 'successor-recorded-is-not-cleared',
+    relatedNote: 'Recorded is not cleared. The prior essay in this spine separates instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window from instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window, trailed from the recording evidence. This essay does not rewrite that thesis.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-released-is-not-recorded',
+        note: 'Released is not recorded. Earlier essay in this spine: instrument-required release / close-out that returns the remediated successor obligations into the named operating / warranty / successor window as released for continued hold is not instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window.',
+      },
+      {
+        slug: 'successor-remediated-is-not-released',
+        note: 'Remediated is not released. Earlier essay in this spine: instrument-required remediation that restores the named successor obligations after the named breach is not instrument-required release / close-out that returns those remediated successor obligations into the named operating / warranty / successor window as released for continued hold.',
+      },
+      {
+        slug: 'successor-enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Earlier essay in this spine: instrument-required enforcement of those named successor binding obligations for the named successor window is not instrument-required remediation that restores the named successor obligations after the named breach.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Earlier essay in this spine: instrument-required binding of that named successor is not instrument-required enforcement of those named successor binding obligations for the named successor window.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Earlier essay in this spine: instrument-required transfer of the sustained accepted restored condition is not instrument-required binding of that successor to the named sustainment, accountability, and operating obligations.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Different spine: a named effective date for a posted filing is not the instrument-required bind mechanics of that filing. Do not collapse this binding into that filing bind.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement against the named parties for a filing scope. Do not collapse this enforced into that filing-spine enforcement.',
+      },
+      {
+        slug: 'enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Different spine: filing-spine enforcement actions are not instrument-required cure or remedy completion for a filed default. Do not collapse this remediated into that filing-spine remedy completion.',
+      },
+      {
+        slug: 'remediated-is-not-released',
+        note: 'Remediated is not released. Different spine: filing-spine cure completion is not a release, waiver, or discharge of enforcement rights. Do not collapse this released into that filing-spine release.',
+      },
+      {
+        slug: 'released-is-not-recorded',
+        note: 'Released is not recorded. Different spine: a filing-spine release, waiver, or discharge is not registry recording of that executed release. Do not collapse this recorded into that registry recording.',
+      },
+      {
+        slug: 'recorded-is-not-cleared',
+        note: 'Recorded is not cleared. Different spine: registry recording of an executed filing release is not clearance of that encumbrance from the operating title. Do not collapse this cleared into that clearance of filing obligations.',
+      },
+      {
+        slug: 'cleared-is-not-closed',
+        note: 'Cleared is not closed. Different spine: clearance of a filing encumbrance from the operating title, search position, and counterparty books is not closing completion of that transaction. Do not collapse this closed into that closing completion.',
+      },
+      {
+        slug: 'closed-is-not-delivered',
+        note: 'Closed is not delivered. Different spine: closing completion of a filing transaction is not delivery of the named asset, scope, or obligation into the counterparty hands. Do not collapse this closed into that delivery.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. Different step: restoration of the named operating condition the guarantee was written to return is not owner acceptance of that condition. Do not collapse this cleared into that operating-condition restoration.',
+      },
+      {
+        slug: 'governed-is-not-transferable',
+        note: 'Governed is not transferable. Different spine: ownership inside rules of engagement is not a governed compounding system changing hands. Do not collapse this transferable into that governance handoff.',
+      },
+      {
+        slug: 'transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. Different spine: a governed system changing hands is not a named handoff run under stress. Do not collapse this transferable into that rehearsal.',
+      },
+    ],
+  },
+  'successor-recorded-is-not-cleared': {
+    relatedSlug: 'successor-cleared-is-not-closed',
+    relatedNote: 'Cleared is not closed. Cleared means under that same named instrument / governing law for that channel, instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window — evidenced by clearance package with named clearer / acceptor roles, named clearance criteria met (recording cited, obligation retired or transferred per instrument, residual risk accepted or closed), dates, and an unbroken trail from the recording evidence to that clearance evidence. Closed means under that same named instrument / governing law for that channel, instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance — evidenced by close package with named closer / acceptor roles, named close criteria met (clearance package cited, matter closed per instrument, residual accepted or transferred, hold register shows closed for that scope), dates, and an unbroken trail from the clearance evidence to that close evidence. A dashboard green tile with no close authority, a verbal "we are done," archiving a ticket with no instrument path, a chat note that says closed, or "ops will wrap it" without instrument-required close evidence is not that close. This closed is successor-obligation close-out in the industrial control and transfer spine. It is not the filing-spine closing completion in Cleared Is Not Closed, and it is not the delivery in Closed Is Not Delivered.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-released-is-not-recorded',
+        note: 'Released is not recorded. The prior essay in this spine separates instrument-required release / close-out that returns the remediated successor obligations / sustained accepted restored condition into the named operating / warranty / successor window as released for continued hold from instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window, trailed from the release evidence. This essay does not rewrite that thesis.',
+      },
       {
         slug: 'successor-remediated-is-not-released',
         note: 'Remediated is not released. Earlier essay in this spine: instrument-required remediation that restores the named successor obligations after the named breach is not instrument-required release / close-out that returns those remediated successor obligations into the named operating / warranty / successor window as released for continued hold.',
