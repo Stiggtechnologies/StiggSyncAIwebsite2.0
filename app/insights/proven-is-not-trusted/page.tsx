@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('resolved-is-not-proven');
+const article = getInsightArticle('proven-is-not-trusted');
 
-export default function ResolvedIsNotProvenPage() {
+export default function ProvenIsNotTrustedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,77 @@ export default function ResolvedIsNotProvenPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Resolved Is Not Proven</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Proven Is Not Trusted</h1>
+
+            <p className="text-xl text-gray-400">
+              Proven is not trusted. Proven is evidence under a named proof window that the
+              failure mode, defect class, or exception class will not recur as claimed (repeat
+              observation, hold period, counter-evidence, or named verification of the fix against
+              plant reality) — the claim that it stays gone is evidenced, not assumed from a single
+              clear. Trusted is a standing reliance decision by a named accountable owner that the
+              proven claim may be relied on for a named scope and duration without re-proving every
+              instance (who trusts what, for which assets/classes, until when, under what revoke
+              conditions) — reliance is granted, not inferred from proof alone. Proven is not
+              trusted. A firm with proof can still lack trust. A firm with trust can still lack
+              proof. A proof note alone proves neither. A trust note alone proves neither. A proof
+              note is not a green. A trust note is not a green. A named proof without a named trust
+              decision (owner, scope, duration, revoke) is not trusted. A status of trust, tribal
+              confidence, or vendor assurance without proof criteria against plant reality is not
+              proven. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep
+              them apart: a named proof without a named trust decision (owner, scope, duration,
+              revoke) is not trusted; a status of trust, tribal confidence, or vendor assurance
+              without proof criteria against plant reality is not proven; a CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. Resolved is not proven. Resolved
+              remains evidence that the underlying plant, operating, or capital exception is actually
+              cleared under a named resolution window — the instance is gone, not merely that someone
+              closed the ticket. Simulation is not proof. Proof is not authorization. Verified is not
+              assured. Verified is not authorized. Accepted is not verified. Cleared is not complete.
+              Ready is not cleared. Recommend is not authorize. Evidence lineage is not optional.
+              Human decision is not optional. Evidence from the plant beats the note. Sync does not
+              measure proof. Sync does not measure proof for the customer. Sync does not measure
+              trust. Sync does not measure trust for the customer. Sync does not prove or grant trust
+              for the customer. Sync does not resolve or prove cases for the customer. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, or auto-trust.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Resolved, in the prior
+              essay, is evidence the instance is gone. Proven, there, is evidence under a named proof
+              window that the failure mode will not recur as claimed. That essay separates a cleared
+              instance from evidence the failure mode will not recur. This essay does not collapse into
+              that split. Resolve versus prove is the prior refusal. This essay separates a proven
+              non-recurrence claim from a standing reliance decision. Proof Is Not Authorization keeps
+              a closed evidentiary chain off authorization to execute. Verified Is Not Assured keeps an
+              independent check off standing assurance. Verified Is Not Authorized separates an
+              independent evidence check from permission to act. Simulation Is Not Proof keeps a lab,
+              model, or simulation result off proof the plant will behave that way. Accepted Is Not
+              Verified separates named human acceptance from an independent evidence check. Cleared Is
+              Not Complete keeps a clearance stamp off proof the work is finished. Ready Is Not Cleared
+              keeps a readiness label off that gate. This essay does not collapse into those refusals.
+              Reliance is granted, not inferred from proof alone. Recommend Is Not Authorize, Evidence
+              Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync
+              may surface a proof/non-recurrence note or a trust/reliance note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, or auto-trust. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, or treat proven as trusted as Learning credit.
+              This essay does not rewrite Resolved Is Not Proven. This essay does not rewrite Proof Is
+              Not Authorization. This essay does not rewrite Verified Is Not Assured. This essay does
+              not rewrite Verified Is Not Authorized. This essay does not rewrite Simulation Is Not
+              Proof. This essay does not rewrite Accepted Is Not Verified. This essay does not rewrite
+              Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared. This essay
+              does not collapse into Resolved Is Not Proven. This essay does not collapse into Proof Is
+              Not Authorization. This essay does not collapse into Verified Is Not Assured. This essay
+              does not collapse into Verified Is Not Authorized. This essay does not collapse into
+              Simulation Is Not Proof. This essay does not collapse into Accepted Is Not Verified. This
+              essay does not collapse into Cleared Is Not Complete. This essay does not collapse into
+              Ready Is Not Cleared. This essay does not collapse proven into trusted. This essay does
+              not collapse trust into proof. This essay does not collapse resolved into proven.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Resolved is not proven. Resolved is evidence that the underlying plant, operating, or
@@ -516,6 +586,442 @@ export default function ResolvedIsNotProvenPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+            <p>
+              Proven is not trusted.
+              For this refusal, reliance is granted, not inferred from proof alone.
+              The trust decision names who trusts what, for which assets/classes, until when, under what revoke conditions.
+              A named proof without a named trust decision (owner, scope, duration, revoke) is not trusted.
+              Keep them apart: a status of trust, tribal confidence, or vendor assurance without proof criteria against plant reality is not proven.
+              A firm with proof can still lack trust.
+              A firm with trust can still lack proof.
+              A trust note alone proves neither.
+              A trust note is not a green.
+              The proven claim is not the trusted reliance.
+              What a trust note is allowed to be is the named reliance record.
+              Named proof is not trust.
+              Sync does not prove or grant trust for the customer.
+              Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, or auto-trust.
+              Sync may surface a proof/non-recurrence note or a trust/reliance note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse trust into proof.
+              This essay does not collapse proven into trusted.
+              This essay does not rewrite Resolved Is Not Proven.
+              This essay does not rewrite Verified Is Not Authorized.
+              A practice record that says proven is trusted is not shown trust.
+              Treating proven as trusted is the refusal.
+              This essay separates a proven non-recurrence claim from a standing reliance decision.
+              Read the prior essay at /insights/resolved-is-not-proven.
+              This essay does not collapse into Resolved Is Not Proven.
+              This essay does not collapse into Proof Is Not Authorization.
+              This essay does not collapse into Verified Is Not Assured.
+              This essay does not collapse into Verified Is Not Authorized.
+              This essay does not collapse into Accepted Is Not Verified.
+              This essay does not collapse into Simulation Is Not Proof.
+              This essay does not collapse into Cleared Is Not Complete.
+              This essay does not collapse into Ready Is Not Cleared.
+              Evidence from the plant beats the proof note when the note is being used as trust.
+              Evidence from the plant beats the trust note when the note is being used as proof.
+              Sync does not measure trust.
+              Sync does not measure trust for the customer.
+              Evidence from the plant beats the note.
+              Sync must not treat proven as trusted as Learning credit.
+              Recommend is not authorize.
+              Surfacing is still a read.
+              Sync refuses false precision.
+              Direct plant execute stays off.
+              CMMS write-back is not a live product path.
+              Billing write-back is not a live product path.
+              Evidence lineage is not optional.
+              Human decision is not optional.
+            </p>
+
+
+            <p className="text-xl font-semibold text-white">
+              Proven is not trusted. Proven is evidence under a named proof window that the failure
+              mode, defect class, or exception class will not recur as claimed (repeat observation,
+              hold period, counter-evidence, or named verification of the fix against plant reality)
+              — the claim that it stays gone is evidenced, not assumed from a single clear. Trusted
+              is a standing reliance decision by a named accountable owner that the proven claim may
+              be relied on for a named scope and duration without re-proving every instance (who
+              trusts what, for which assets/classes, until when, under what revoke conditions) —
+              reliance is granted, not inferred from proof alone. A firm with proof can still lack
+              trust when that named proof is on the record and the firm has not named who trusts
+              what, for which assets or classes, until when, and under what revoke conditions. A firm
+              with trust can still lack proof when that reliance decision is on the record and the
+              firm has not shown, under a named proof window against plant reality, that the failure
+              mode will not recur as claimed. A named proof without a named trust decision (owner,
+              scope, duration, revoke) is not trusted. A status of trust, tribal confidence, or
+              vendor assurance without proof criteria against plant reality is not proven. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. Treating proven as
+              trusted records a proof window as a standing reliance decision that nobody has granted,
+              under the honesty and verification boundary. A proof note can inform a recommendation
+              to investigate. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Evidence from the plant beats the proof note when the note is
+              being used as trust. Evidence from the plant beats the trust note when the note is
+              being used as proof. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, or auto-trust. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, or treat proven as trusted as Learning credit. Sync does not measure proof.
+              Sync does not measure proof for the customer. Sync does not measure trust. Sync does
+              not measure trust for the customer. Sync does not prove or grant trust for the
+              customer. Direct plant execute stays off. CMMS write-back is not a live product path.
+              Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The proven claim is not the trusted reliance
+            </h2>
+
+            <p>
+              Proven is evidence under a named proof window that the failure mode, defect class, or
+              exception class will not recur as claimed (repeat observation, hold period,
+              counter-evidence, or named verification of the fix against plant reality) — the claim
+              that it stays gone is evidenced, not assumed from a single clear. Trusted is a standing
+              reliance decision by a named accountable owner that the proven claim may be relied on
+              for a named scope and duration without re-proving every instance (who trusts what, for
+              which assets/classes, until when, under what revoke conditions) — reliance is granted,
+              not inferred from proof alone. Sync may surface a proof/non-recurrence note or a
+              trust/reliance note beside Evidence, Verification, and the closed outcome. A practice
+              record that says proven is trusted is not shown trust. Evidence from the plant beats
+              the proof note when the note is being used as trust. Evidence from the plant beats the
+              trust note when the note is being used as proof. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              Plant or operating evidence can show repeat observation, a hold period,
+              counter-evidence, or named verification of the fix against plant reality under a named
+              proof window while nobody has granted reliance: no named accountable owner, no named
+              scope of assets or classes, no duration, and no revoke conditions. That evidence is
+              proven. It is not trusted. A reliance record can name who trusts what, for which
+              assets/classes, until when, and under what revoke conditions, while the firm has not
+              shown the failure mode will not recur under a named proof window against plant reality.
+              That record is not proven. A status of trust, tribal confidence, or vendor assurance
+              without proof criteria against plant reality is not proven. A title on the org chart,
+              with or without scope, is not the proof window and is not the reliance decision. A firm
+              with proof can still lack trust. A firm with trust can still lack proof. A proof note
+              alone proves neither. A trust note alone proves neither. A proof note is not a green. A
+              trust note is not a green. A named proof without a named trust decision (owner, scope,
+              duration, revoke) is not trusted. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. A one-off clear is a single quiet interval. It is not a proof
+              window, and it is not a standing reliance decision. Named proof is not trust. The
+              proven claim is not the trusted reliance. This essay does not invent a customer, a
+              price, or a return. It states no savings figure, states no price, and states no OEM
+              limit. It states no trust length. A practice record that says proven is trusted is not
+              a customer plant release, and it is not shown trust. Treating proven as trusted records
+              a non-recurrence claim as reliance the owner has not granted, under the honesty and
+              verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/resolved-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Resolved Is Not Proven
+              </Link>{' '}
+              sits one step earlier. Resolved, there, is evidence that the underlying plant,
+              operating, or capital exception is actually cleared under a named resolution window —
+              the instance is gone, not merely that someone closed the ticket. Proven, there, is
+              evidence under a named proof window that the failure mode, defect class, or exception
+              class will not recur as claimed. A named resolution without proof criteria is not
+              proven. A lab, model, or simulation result without plant resolution of the live
+              exception is not resolved. That refusal stops at the cleared instance and the proof
+              window. It does not ask whether a named accountable owner has granted reliance on that
+              proven claim for a named scope and duration, with revoke conditions. Resolved is not
+              proven is a different refusal. Proven is not trusted is the next refusal. Named
+              resolution is not proof, and named proof is not trust. Resolved Is Not Proven separates
+              a cleared instance from evidence the failure mode will not recur. This essay separates
+              a proven non-recurrence claim from a standing reliance decision. This essay does not
+              rewrite Resolved Is Not Proven. This essay does not collapse into Resolved Is Not
+              Proven. This essay does not collapse resolved into proven. This essay does not collapse
+              proven into trusted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed evidentiary chain off authorization to execute. Proven here is a named
+              proof window against plant reality that a failure mode will not recur as claimed.
+              Trusted here is a standing reliance decision, not permission to execute a binding
+              plant, operating, or capital move. A named owner who trusts a proven claim for a named
+              scope and duration has not, by that reliance, authorized execution. This essay does not
+              rewrite Proof Is Not Authorization. This essay does not collapse into Proof Is Not
+              Authorization. This essay does not collapse trust into proof.{' '}
+              <Link
+                href="/insights/simulation-is-not-proof"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Simulation Is Not Proof
+              </Link>{' '}
+              keeps a lab, model, or simulation result off proof the plant will behave that way. A
+              simulation is not this proof window, and a simulation is not a trust decision. This
+              essay does not rewrite Simulation Is Not Proof. This essay does not collapse into
+              Simulation Is Not Proof.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>{' '}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is assurance. Trust in this essay is not standing confidence. Trust
+              is a named accountable owner granting reliance for a named scope and duration, until a
+              named revoke condition. This essay does not rewrite Verified Is Not Assured. This essay
+              does not collapse into Verified Is Not Assured.{' '}
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              separates an independent evidence check from permission to act. An independent check is
+              not a proof window that the failure mode will not recur, and permission to act is not a
+              reliance decision on a proven claim. This essay does not rewrite Verified Is Not
+              Authorized. This essay does not collapse into Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              separates named human acceptance of an acceptance pack from an independent evidence
+              check. Acceptance is not proof the failure mode will not recur, and acceptance is not
+              trust. This essay does not rewrite Accepted Is Not Verified. This essay does not
+              collapse into Accepted Is Not Verified.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared, there, is a ready or
+              permission gate past a clearance check. That gate is not this essay. Proven here is not
+              a clearance stamp. Trusted here is not completeness.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not proof, and
+              not trust. This essay does not rewrite Cleared Is Not Complete. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not collapse into Cleared Is Not Complete.
+              This essay does not collapse into Ready Is Not Cleared.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not a proof
+              window, and a recommendation tile is not a trust decision.{' '}
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>
+              . Evidence lineage is not optional. A note without a named source is not a named proof
+              window against plant reality, and it is not a named reliance decision.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, evidence the failure mode will not recur, and
+              it is not, by itself, a standing reliance decision with owner, scope, duration, and
+              revoke conditions. Human decision is not optional. Recommend is not authorize. This
+              essay does not rewrite Recommend Is Not Authorize. This essay does not rewrite Human
+              Decision Is Not Optional. This essay does not collapse into Recommend Is Not Authorize.
+              This essay does not collapse into Human Decision Is Not Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a trust note is allowed to be
+            </h2>
+
+            <p>
+              Proven is evidence under a named proof window that the failure mode, defect class, or
+              exception class will not recur as claimed (repeat observation, hold period,
+              counter-evidence, or named verification of the fix against plant reality) — the claim
+              that it stays gone is evidenced, not assumed from a single clear. Trusted is a standing
+              reliance decision by a named accountable owner that the proven claim may be relied on
+              for a named scope and duration without re-proving every instance (who trusts what, for
+              which assets/classes, until when, under what revoke conditions) — reliance is granted,
+              not inferred from proof alone. A named proof without a named trust decision (owner,
+              scope, duration, revoke) is not trusted. A status of trust, tribal confidence, or
+              vendor assurance without proof criteria against plant reality is not proven. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a
+              proof/non-recurrence note or a trust/reliance note beside Evidence, Verification, and
+              the closed outcome. This essay does not collapse proven into trusted.
+            </p>
+
+            <p>
+              Evidence may cite a proof/non-recurrence note when the source of that note is named,
+              and when the citation names the proof window: repeat observation, a hold period,
+              counter-evidence, or named verification of the fix against plant reality, for a named
+              failure mode, defect class, or exception class. Evidence may cite a trust/reliance note
+              when the source of that note is named, and when the citation names the accountable
+              owner, the scope of assets or classes, the duration, and the revoke conditions under
+              which the proven claim may be relied on without re-proving every instance. If the
+              evidence records the proof window and does not record that reliance decision, the case
+              may store the note as proven and must not store the note as trusted. If the evidence
+              records a status of trust, tribal confidence, or vendor assurance and does not record
+              proof criteria against plant reality, the case must not store the note as proven. The
+              label does not fill the gap. The proof note does not paint a green. The trust note does
+              not paint a green. Evidence lineage is not optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. A one-off clear is a single interval in which the
+              symptom was quiet. None of those, by itself, is repeat observation, a hold period,
+              counter-evidence, or named verification of the fix against plant reality. None of those,
+              by itself, is a named accountable owner granting reliance for a named scope and
+              duration under named revoke conditions. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. A status of trust, tribal confidence, or vendor assurance
+              without proof criteria against plant reality is not proven. Evidence from the plant
+              beats the proof note when the note is being used as trust. Evidence from the plant
+              beats the trust note when the note is being used as proof. Sync may surface a
+              proof/non-recurrence note or a trust/reliance note beside Evidence, Verification, and
+              the closed outcome. Recommend is not authorize. Human decision is not optional. Sync
+              refuses false precision. Sync refuses when evidence is insufficient. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, or auto-trust. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, or treat proven as trusted as
+              Learning credit. A practice record that says proven is trusted is not a customer plant
+              release, and it is not shown trust. Simulated or seeded telemetry and assets are
+              practice records. A live connector tag pull is not a claim of this edition. This essay
+              does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface a proof/non-recurrence note or a
+              trust/reliance note beside Evidence, Verification, and the closed outcome. Surfacing is
+              still a read. Showing the note does not write a CMMS work order. Showing the note does
+              not clear equipment to run. Showing the note does not close the case for the customer.
+              Showing the note does not resolve the case for the customer. Showing the note does not
+              prove the case for the customer. Showing the note does not grant trust for the customer.
+              Showing the note does not book revenue. Showing the note does not recognize revenue.
+              Showing the note does not measure proof. Showing the note does not measure proof for
+              the customer. Showing the note does not measure trust. Showing the note does not measure
+              trust for the customer. Showing the note does not prove or grant trust for the customer.
+              Showing the note does not execute plant work. A named human decides. A named human
+              remains accountable after the plant move. Direct plant execute stays off. CMMS
+              write-back is not a live product path. Billing write-back is not a live product path.
+              Self-guided onboarding is not claimed as a live product path. Sync does not prove or
+              grant trust for the customer. Sync does not book revenue. Sync does not recognize
+              revenue. Sync does not measure ARR. Sync does not measure ARR for the customer. Sync
+              does not measure cash. Sync does not measure cash for the customer. Sync does not
+              measure runway. Sync does not measure runway for the customer. Sync does not measure
+              survival. Sync does not measure survival for the customer. Sync does not measure
+              solvency. Sync does not measure solvency for the customer. Sync does not measure
+              liquidity. Sync does not measure liquidity for the customer. Sync does not measure
+              flexibility. Sync does not measure flexibility for the customer. Sync does not measure
+              optionality. Sync does not measure optionality for the customer. Sync does not measure
+              strategy. Sync does not measure strategy for the customer. Sync does not measure
+              execution. Sync does not measure execution for the customer. Sync does not measure
+              results. Sync does not measure results for the customer. Sync does not measure learning.
+              Sync does not measure learning for the customer. Sync does not measure judgment. Sync
+              does not measure judgment for the customer. Sync does not measure authority. Sync does
+              not measure authority for the customer. Sync does not measure accountability. Sync does
+              not measure accountability for the customer. Sync does not measure ownership. Sync does
+              not measure ownership for the customer. Sync does not measure control. Sync does not
+              measure control for the customer. Sync does not measure closure. Sync does not measure
+              closure for the customer. Sync does not measure completeness. Sync does not measure
+              completeness for the customer. Sync does not measure acceptance. Sync does not measure
+              acceptance for the customer. Sync does not measure verification. Sync does not measure
+              verification for the customer. Sync does not measure authorization. Sync does not measure
+              authorization for the customer. Sync does not measure execution for the customer. Sync
+              does not measure resolution. Sync does not measure resolution for the customer. Sync
+              does not measure proof. Sync does not measure proof for the customer. Sync does not
+              measure trust. Sync does not measure trust for the customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('evidence')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence
+              </Link>{' '}
+              chapter records what the case may cite. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. None of those chapters is, by itself,
+              evidence the failure mode will not recur under a proof window, and none of them is, by
+              itself, a standing reliance decision with owner, scope, duration, and revoke
+              conditions. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating a proof note as trusted. Direct plant execute stays
+              off.
+            </p>
+
+            <p>
+              Proven is not trusted. A firm with proof can still lack trust. A firm with trust can
+              still lack proof. A trust note alone proves neither. A trust note is not a green. The
+              proven claim is not the trusted reliance. What a trust note is allowed to be is a named
+              record, by a named accountable owner, of who trusts what, for which assets/classes,
+              until when, under what revoke conditions — reliance granted on a proven claim, not
+              inferred from the proof window alone. Named proof is not trust. Sync does not prove or
+              grant trust for the customer. Sync may surface a proof/non-recurrence note or a
+              trust/reliance note beside Evidence, Verification, and the closed outcome. This essay
+              does not collapse trust into proof. This essay does not collapse proven into trusted.
+              This essay does not rewrite Resolved Is Not Proven. This essay does not rewrite Proof Is
+              Not Authorization. This essay does not rewrite Verified Is Not Assured. This essay does
+              not rewrite Verified Is Not Authorized. This essay does not rewrite Simulation Is Not
+              Proof. This essay does not rewrite Accepted Is Not Verified. This essay does not rewrite
+              Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared. A practice
+              record that says proven is trusted is not shown trust. Treating proven as trusted is the
+              refusal. This essay separates a proven non-recurrence claim from a standing reliance
+              decision. This essay does not collapse into Resolved Is Not Proven. This essay does not
+              collapse into Proof Is Not Authorization. This essay does not collapse into Verified Is
+              Not Assured. This essay does not collapse into Verified Is Not Authorized. This essay
+              does not collapse into Accepted Is Not Verified. This essay does not collapse into
+              Simulation Is Not Proof. This essay does not collapse into Cleared Is Not Complete. This
+              essay does not collapse into Ready Is Not Cleared. Evidence from the plant beats the
+              proof note when the note is being used as trust. Evidence from the plant beats the trust
+              note when the note is being used as proof. Surfacing is still a read. Sync refuses false
+              precision. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, or
+              auto-trust. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, or treat
+              proven as trusted as Learning credit. Direct plant execute stays off. CMMS write-back is
+              not a live product path. Billing write-back is not a live product path. Recommend is not
+              authorize. Evidence lineage is not optional. Human decision is not optional. Sync does
+              not measure trust. Sync does not measure trust for the customer.
+            </p>
+
 
             <p className="text-xl font-semibold text-white">
               Resolved is not proven. Resolved is evidence that the underlying plant, operating, or
@@ -3886,39 +4392,6 @@ export default function ResolvedIsNotProvenPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/proven-is-not-trusted"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Proven Is Not Trusted
-              </Link>
-              , on why proven is still not trusted. Proven is evidence under a named proof window
-              that the failure mode, defect class, or exception class will not recur as claimed
-              (repeat observation, hold period, counter-evidence, or named verification of the fix
-              against plant reality) — the claim that it stays gone is evidenced, not assumed from a
-              single clear. Trusted is a standing reliance decision by a named accountable owner that
-              the proven claim may be relied on for a named scope and duration without re-proving
-              every instance (who trusts what, for which assets/classes, until when, under what revoke
-              conditions) — reliance is granted, not inferred from proof alone. A firm with proof can
-              still lack trust when that named proof is on the record and the firm has not named an
-              accountable owner, a scope, a duration, and revoke conditions. A firm with trust can
-              still lack proof when that reliance is on the record and the firm has not shown the
-              failure mode will not recur under a named proof window against plant reality. A named
-              proof without a named trust decision (owner, scope, duration, revoke) is not trusted. A
-              status of trust, tribal confidence, or vendor assurance without proof criteria against
-              plant reality is not proven. A CMMS checkbox, ticket state, status light, or one-off
-              clear is neither. Resolved remains evidence the instance is gone under a named
-              resolution window. This essay separates a cleared instance from evidence the failure
-              mode will not recur. A resolution note alone proves neither. A proof note alone proves
-              neither. A trust note alone proves neither. A trust note is not a green. Sync does not
-              measure trust. Sync does not measure trust for the customer. Sync does not prove or
-              grant trust for the customer. Sync must not auto-close, auto-authorize, auto-resolve,
-              auto-prove, or auto-trust.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -3978,7 +4451,7 @@ export default function ResolvedIsNotProvenPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="resolved-is-not-proven" />
+          <InsightNextSteps slug="proven-is-not-trusted" />
         </motion.article>
       </div>
     </main>
