@@ -123,7 +123,7 @@ export default function ResultsIsNotLearningPage() {
               runway. Runway is not survival. Survival is not solvency. Solvency is not liquidity.
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not learning.
-              Learning is not judgment. Each word can be true in its own place. None of the earlier words fills the last one. A
+              Learning is not judgment. Judgment is not authority. Each word can be true in its own place. None of the earlier words fills the last one. A
               closed work order, cash collected, a unit remainder, a profit figure, a measured
               outcome, an attributed change in cash, risk, or capacity, a recognized sale, an
               annualized contract, a spendable balance, a duration at the current net burn,
@@ -163,7 +163,7 @@ export default function ResultsIsNotLearningPage() {
               commits plant work, capital, or risk now under a named decision owner and window —
               accountable choice with consequence, not an adopted rule sitting unused, a
               recommendation tile, a scored suggestion, or a learning note alone. A results note is
-              not that learning claim. A learning note is not that judgment claim.
+              not that learning claim. A learning note is not that judgment claim. Authority is the formal, named right to bind the firm to plant work, capital, or risk within a defined scope and window — decision rights on the org chart or charter, not the quality of the call, not a title without scope, not a recommendation, and not judgment sitting with someone who cannot bind. A judgment note is not that authority claim.
             </p>
 
             <p>
@@ -866,7 +866,7 @@ export default function ResultsIsNotLearningPage() {
               Runway is not survival. Survival is not solvency. Solvency is not liquidity. Liquidity
               is not flexibility. Flexibility is not optionality. Optionality is not strategy.
               Strategy is not execution. Execution is not results. Results is not learning.
-              Learning is not judgment.
+              Learning is not judgment. Judgment is not authority.
             </p>
 
             <p>
