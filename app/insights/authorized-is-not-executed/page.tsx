@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('verified-is-not-authorized');
+const article = getInsightArticle('authorized-is-not-executed');
 
-export default function VerifiedIsNotAuthorizedPage() {
+export default function AuthorizedIsNotExecutedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,64 @@ export default function VerifiedIsNotAuthorizedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Verified Is Not Authorized</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Authorized Is Not Executed</h1>
+            <p className="text-xl text-gray-400">
+              Authorized is not executed. Authorized is a named human (or named accountable role)
+              granting permission to execute a binding plant/operating/capital move under a named
+              decision window — authorization to act, not proof the move happened. Executed is
+              evidence that the binding move actually ran to completion under a named execution
+              window (who/what/when/where against plant or operating evidence) — execution happened,
+              not merely that someone said yes. Authorized is not executed. A firm with
+              authorization can still lack execution. A firm with execution can still lack
+              authorization. An authorization note alone proves neither. An execution note alone
+              proves neither. An authorization note is not a green. An execution note is not a
+              green. A named authorization without execution evidence is not executed. Plant
+              activity without a named authorization is not authorized. A status light, ticket
+              state, or CMMS checkbox is neither. Verified is not authorized. Verified remains an
+              independent check of a pack or outcome against named evidence under a named
+              measurement window — verification against evidence, not permission to act. Action is
+              not execution. Strategy is not execution. Execution is not results. Recommend is not
+              authorize. Human decision is not optional. Proof is not authorization. Sync does not
+              measure authorization. Sync does not measure authorization for the customer. Sync does
+              not measure execution. Sync does not measure execution for the customer. Sync does not
+              authorize or execute for the customer. Sync does not verify or authorize for the
+              customer.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority
+              is not accountability. Accountability is not ownership. Ownership is not control.
+              Control is not closure. Closure is not complete. Complete is not accepted. Accepted is
+              not verified. Verified is not authorized. Authorized is not executed. Verified, in the
+              prior essay, is an independent check against named evidence. That essay separates
+              independent verification from authorization. This essay does not collapse into that
+              split. This essay separates named permission from completed execution. Action Is Not
+              Execution and Strategy Is Not Execution separate intent, plan, and action labels from
+              execution. Execution Is Not Results is the results and learning axis. This essay does
+              not collapse into those refusals. It separates permission to act from evidence the
+              binding move ran to completion. Recommend Is Not Authorize, Proof Is Not Authorization,
+              and Human Decision Is Not Optional refuse auto-authorization and treat a recommendation,
+              a proof, or a skipped human decision as insufficient for authorize. This essay does not
+              collapse into those refusals either. Sync may surface an authorization/permission-to-act
+              note or an execution/completed-move note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync must not auto-close or auto-authorize. This essay does
+              not rewrite Verified Is Not Authorized. This essay does not rewrite Accepted Is Not
+              Verified. This essay does not rewrite Action Is Not Execution. This essay does not
+              rewrite Strategy Is Not Execution. This essay does not rewrite Execution Is Not
+              Results. This essay does not rewrite Recommend Is Not Authorize. This essay does not
+              rewrite Human Decision Is Not Optional. This essay does not rewrite Proof Is Not
+              Authorization. This essay does not rewrite Cleared Is Not Complete. This essay does not
+              rewrite Ready Is Not Cleared. This essay does not rewrite Complete Is Not Accepted.
+              This essay does not collapse into Verified Is Not Authorized. This essay does not
+              collapse into Action Is Not Execution. This essay does not collapse into Strategy Is
+              Not Execution. This essay does not collapse into Execution Is Not Results. This essay
+              does not collapse into Recommend Is Not Authorize. This essay does not collapse into
+              Proof Is Not Authorization. This essay does not collapse into Human Decision Is Not
+              Optional. This essay does not collapse authorized into executed. This essay does not
+              collapse execution into authorization. This essay does not collapse executed into
+              results. This essay does not collapse verified into authorized.
+            </p>
+
             <p className="text-xl text-gray-400">
               Verified is not authorized. Verified is an independent check of a pack or outcome
               against named evidence under a named measurement window — verification against
@@ -295,6 +352,293 @@ export default function VerifiedIsNotAuthorizedPage() {
               acceptance for the customer. Sync does not accept or verify for the customer. Direct
               plant execute stays off. CMMS write-back is not a live product path. Billing
               write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The permission to act is not the completed move
+            </h2>
+
+            <p>
+              A named human, or a named accountable role, can grant permission to execute a binding
+              plant/operating/capital move under a named decision window while the move has not run
+              to completion. That grant is authorized. It is not executed. Plant or operating
+              evidence can show who did what, when, and where under a named execution window while
+              nobody has named the human, or the accountable role, who granted permission for that
+              move. That completed move is executed. It is not authorized. A title on the org chart,
+              with or without scope, is neither the permission nor the completed move. A firm with
+              authorization can still lack execution. A firm with execution can still lack
+              authorization. An authorization note alone proves neither. An execution note alone
+              proves neither. An authorization note is not a green. An execution note is not a
+              green. A named authorization without execution evidence is not executed. Plant
+              activity without a named authorization is not authorized. A status light, ticket
+              state, or CMMS checkbox is neither. Named authorization is not completed execution.
+              The permission to act is not the completed move. This essay does not invent a customer,
+              a price, or a return. It states no savings figure, states no price, and states no OEM
+              limit. A practice record that says authorized is executed is not a customer plant
+              release, and it is not shown execution. Treating authorized as executed records
+              permission to act as a claim about a completed binding move that nobody has shown,
+              under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              sits one step earlier. Verified, there, is an independent check of a pack or outcome
+              against named evidence under a named measurement window — verification against
+              evidence, not permission to act. Authorized, there, is a named human (or named
+              accountable role) granting permission to execute a binding plant/operating/capital move
+              under a named decision window — authorization to act, not merely that evidence checked
+              out. An independent verification without named authorization is not authorized. A named
+              authorization without an independent evidence check is not verified. A title is
+              neither. That refusal stops at the evidence check and the permission to act. It does
+              not ask whether the binding move actually ran to completion under a named execution
+              window. Verified is not authorized is a different refusal. Authorized is not executed
+              is the next refusal. Independent verification is not named authorization, and named
+              authorization is not completed execution. Verified Is Not Authorized separates
+              independent verification from authorization. This essay separates named permission from
+              completed execution. This essay does not rewrite Verified Is Not Authorized. This essay
+              does not collapse into Verified Is Not Authorized. This essay does not collapse
+              verified into authorized. This essay does not collapse authorized into executed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/action-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Action Is Not Execution
+              </Link>{' '}
+              keeps an action label, an intent, or a plan off the write that authorized execution
+              systems perform. ACTION on the Decision Case records intent. That label is not
+              permission a named human granted, and it is not evidence the binding move ran to
+              completion under a named execution window. Strategy, in{' '}
+              <Link
+                href="/insights/strategy-is-not-execution"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Strategy Is Not Execution
+              </Link>
+              , is a committed path and resource allocation, not proof the work was completed.
+              Those essays separate intent, plan, and action labels from execution. This essay does
+              not ask whether a roadmap, a budget envelope, or an action tile is the completed work.
+              It asks whether named permission to execute a binding move is the same thing as
+              evidence that the move ran to completion. It is not. This essay does not rewrite
+              Action Is Not Execution. This essay does not rewrite Strategy Is Not Execution. This
+              essay does not collapse into Action Is Not Execution. This essay does not collapse
+              into Strategy Is Not Execution.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/execution-is-not-results"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Execution Is Not Results
+              </Link>{' '}
+              keeps completed work off the attributed, measured change in plant capacity, risk,
+              cost, or production. Results, there, is consequence under the honesty and verification
+              boundary. Learning follows that axis in later essays. Executed, in this essay, is
+              evidence the binding move ran to completion under a named execution window
+              (who/what/when/where against plant or operating evidence) — execution happened, not
+              merely that someone said yes, and not a results number. A completed move can still
+              lack an attributed result. An attributed result can still lack the who, what, when,
+              and where of the binding move. This essay does not rewrite Execution Is Not Results.
+              This essay does not collapse into Execution Is Not Results. This essay does not
+              collapse executed into results.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not the named
+              grant of permission, and a recommendation tile is not evidence the binding move ran to
+              completion.{' '}
+              <Link
+                href="/insights/proof-is-not-authorization"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proof Is Not Authorization
+              </Link>{' '}
+              keeps a closed evidentiary chain off authorization to execute plant work, write a work
+              order, or clear equipment to run. A closed chain is not the named grant, and a closed
+              chain is not the completed move.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, the grant of permission to execute a
+              binding move, and it is not, by itself, evidence that move ran to completion. This
+              essay does not rewrite Recommend Is Not Authorize. This essay does not rewrite Proof
+              Is Not Authorization. This essay does not rewrite Human Decision Is Not Optional. This
+              essay does not collapse into Recommend Is Not Authorize. This essay does not collapse
+              into Proof Is Not Authorization. This essay does not collapse into Human Decision Is
+              Not Optional. Recommend is not authorize.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>{' '}
+              separates measured completeness from named human acceptance. Neither is permission to
+              act, and neither is evidence the binding move ran to completion.{' '}
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared is a ready or
+              permission gate past a clearance check.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not
+              authorization, and not execution. Passing a clearance gate is not a named grant under
+              a decision window, and it is not who/what/when/where against plant or operating
+              evidence. This essay does not rewrite Complete Is Not Accepted. This essay does not
+              rewrite Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an execution note is allowed to be
+            </h2>
+
+            <p>
+              Authorized is a named human (or named accountable role) granting permission to execute a binding plant/operating/capital move under a named decision window — authorization to act, not proof the move happened. Executed is evidence that the binding move actually ran to completion under a named execution window (who/what/when/where against plant or operating evidence) — execution happened, not merely that someone said yes. A named authorization without execution evidence is not executed. Plant activity without a named authorization is not authorized. A status light, ticket state, or CMMS checkbox is neither. Sync may surface an authorization/permission-to-act note or an execution/completed-move note beside Evidence, Verification, and the closed outcome.
+            </p>
+
+            <p>
+              Evidence may cite an authorization/permission-to-act note when the source of that note
+              is named, and when the citation says which human, or which accountable role, granted
+              permission to execute which binding plant, operating, or capital move under which
+              decision window. Evidence may cite an execution/completed-move note when the source of
+              that note is named, and when the citation says who did what, when, and where against
+              plant or operating evidence under a named execution window. If the evidence records
+              the grant and does not record the completed move, the case may store the note as
+              authorization and must not store the note as execution. If the evidence records the
+              completed move and does not record the grant, the case may store the note as execution
+              and must not store the note as authorization. The label does not fill the gap. The
+              authorization note does not paint a green. The execution note does not paint a green.
+            </p>
+
+            <p>
+              A status light is a display. A ticket state is a workflow mark. A CMMS checkbox is a
+              row someone, or something, ticked. None of those names the human, or the accountable
+              role, who granted permission under a decision window. None of those, by itself, is
+              who, what, when, and where against plant or operating evidence under an execution
+              window. A status light, ticket state, or CMMS checkbox is neither. Evidence from the
+              plant beats the authorization note when the note is being used as execution. Evidence
+              from the plant beats the execution note when the note is being used as authorization.
+              Recommend is not authorize. Sync refuses false precision. Sync refuses when evidence
+              is insufficient. Sync must not auto-close, auto-authorize, or treat authorized as
+              executed as Learning credit. A practice record that says authorized is executed is not
+              a customer plant release, and it is not shown execution. Simulated or seeded telemetry
+              and assets are practice records. A live connector tag pull is not a claim of this
+              edition. This essay does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface an authorization/permission-to-act
+              note or an execution/completed-move note beside Evidence, Verification, and the closed
+              outcome. Surfacing is still a read. Showing the note does not write a CMMS work order.
+              Showing the note does not clear equipment to run. Showing the note does not book
+              revenue. Showing the note does not recognize revenue. Showing the note does not
+              measure ARR. Showing the note does not measure ARR for the customer. Showing the note
+              does not measure cash. Showing the note does not measure cash for the customer.
+              Showing the note does not measure runway. Showing the note does not measure runway for
+              the customer. Showing the note does not measure survival. Showing the note does not
+              measure survival for the customer. Showing the note does not measure solvency. Showing
+              the note does not measure solvency for the customer. Showing the note does not measure
+              liquidity. Showing the note does not measure liquidity for the customer. Showing the
+              note does not measure flexibility. Showing the note does not measure flexibility for
+              the customer. Showing the note does not measure optionality. Showing the note does not
+              measure optionality for the customer. Showing the note does not measure strategy.
+              Showing the note does not measure strategy for the customer. Showing the note does not
+              measure execution. Showing the note does not measure execution for the customer.
+              Showing the note does not measure results. Showing the note does not measure results
+              for the customer. Showing the note does not measure learning. Showing the note does
+              not measure learning for the customer. Showing the note does not measure judgment.
+              Showing the note does not measure judgment for the customer. Showing the note does not
+              measure authority. Showing the note does not measure authority for the customer.
+              Showing the note does not measure accountability. Showing the note does not measure
+              accountability for the customer. Showing the note does not measure ownership. Showing
+              the note does not measure ownership for the customer. Showing the note does not
+              measure control. Showing the note does not measure control for the customer. Showing
+              the note does not measure closure. Showing the note does not measure closure for the
+              customer. Showing the note does not measure completeness. Showing the note does not
+              measure completeness for the customer. Showing the note does not measure acceptance.
+              Showing the note does not measure acceptance for the customer. Showing the note does
+              not measure verification. Showing the note does not measure verification for the
+              customer. Showing the note does not measure authorization. Showing the note does not
+              measure authorization for the customer. Showing the note does not authorize or execute
+              for the customer. Showing the note does not collect cash. Showing the note does not
+              attribute a change in cash, risk, or capacity. Showing the note does not execute plant
+              work. A named human decides. A named human remains accountable after the plant move.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path. Self-guided onboarding is not claimed as a live
+              product path. Sync does not authorize or execute for the customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. The{' '}
+              <Link
+                href={fieldManualPath('action')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Action
+              </Link>{' '}
+              chapter records intent. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. None of those chapters is
+              the named grant of permission under a decision window, and none of them is evidence
+              the binding move ran to completion under an execution window. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating an authorization note as executed. Direct plant
+              execute stays off.
+            </p>
+
+            <p>
+              Authorized is not executed. A firm with authorization can still lack execution. A firm with execution can still lack authorization. An execution note alone proves neither. An execution note is not a green. The permission to act is not the completed move. What an execution note is allowed to be is a named record of who, what, when, and where. Named authorization is not completed execution. Sync does not authorize or execute for the customer. Sync may surface an authorization/permission-to-act note or an execution/completed-move note beside Evidence, Verification, and the closed outcome. This essay does not collapse execution into authorization. This essay does not collapse authorized into executed. This essay does not collapse executed into results. This essay does not rewrite Verified Is Not Authorized. This essay does not rewrite Action Is Not Execution. This essay does not rewrite Strategy Is Not Execution. This essay does not rewrite Execution Is Not Results. A practice record that says authorized is executed is not shown execution. Treating authorized as executed is the refusal. This essay separates named permission from completed execution. This essay does not collapse into Verified Is Not Authorized. This essay does not collapse into Action Is Not Execution. This essay does not collapse into Strategy Is Not Execution. This essay does not collapse into Execution Is Not Results. This essay does not collapse into Recommend Is Not Authorize. This essay does not collapse into Proof Is Not Authorization. This essay does not collapse into Human Decision Is Not Optional. Evidence from the plant beats the authorization note when the note is being used as execution. Evidence from the plant beats the execution note when the note is being used as authorization. Surfacing is still a read. Sync refuses false precision. Sync must not auto-close, auto-authorize, or treat authorized as executed as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Recommend is not authorize.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -2283,34 +2627,6 @@ export default function VerifiedIsNotAuthorizedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/authorized-is-not-executed"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Authorized Is Not Executed
-              </Link>
-              , on why authorized is still not executed. Authorized is a named human (or named
-              accountable role) granting permission to execute a binding plant/operating/capital move
-              under a named decision window — authorization to act, not proof the move happened.
-              Executed is evidence that the binding move actually ran to completion under a named
-              execution window (who/what/when/where against plant or operating evidence) — execution
-              happened, not merely that someone said yes. A firm with authorization can still lack
-              execution when that named permission is on the record and the firm has not shown
-              evidence that the binding move actually ran to completion under a named execution
-              window. A firm with execution can still lack authorization. A named authorization
-              without execution evidence is not executed. Plant activity without a named
-              authorization is not authorized. A status light, ticket state, or CMMS checkbox is
-              neither. Verified remains an independent check of a pack or outcome against named
-              evidence under a named measurement window. This essay separates independent
-              verification from authorization. An execution note alone proves neither. An
-              authorization note alone proves neither. An execution note is not a green. An
-              authorization note is not a green. Sync does not measure execution. Sync does not
-              measure execution for the customer. Sync does not authorize or execute for the
-              customer.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -2370,7 +2686,7 @@ export default function VerifiedIsNotAuthorizedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="verified-is-not-authorized" />
+          <InsightNextSteps slug="authorized-is-not-executed" />
         </motion.article>
       </div>
     </main>

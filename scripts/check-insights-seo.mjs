@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const executedIndex = slugs.indexOf('authorized-is-not-executed');
 const authorizedIndex = slugs.indexOf('verified-is-not-authorized');
 const signoffIndex = slugs.indexOf('accepted-is-not-verified');
 const acceptedIndex = slugs.indexOf('complete-is-not-accepted');
@@ -61,7 +62,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    authorizedIndex >= 0 &&
+    executedIndex >= 0 &&
+    authorizedIndex > executedIndex &&
     signoffIndex > authorizedIndex &&
     acceptedIndex > signoffIndex &&
     acceptanceIndex > acceptedIndex &&
@@ -103,7 +105,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -9927,6 +9929,181 @@ if (
   !signoffPage.includes('/insights/verified-is-not-authorized')
 ) {
   fail('accepted-is-not-verified must point the series forward to verified-is-not-authorized');
+}
+
+
+for (const slug of ['verified-is-not-authorized', 'action-is-not-execution', ...[
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]]) {
+  if (!stepBlock(slug).includes("'authorized-is-not-executed'")) {
+    fail(`${slug} related reading must cite authorized-is-not-executed`);
+  }
+}
+
+const executedBlock = stepBlock('authorized-is-not-executed');
+for (const required of ['verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', ...acceptedReadingRequired]) {
+  if (!executedBlock.includes(`'${required}'`)) {
+    fail(`authorized-is-not-executed related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(executedBlock)) {
+  fail('authorized-is-not-executed related reading must include the Strategic Pilot');
+}
+if (executedBlock.includes("next: 'strategic-pilot'")) {
+  fail('authorized-is-not-executed next step is the Field Manual');
+}
+
+const executedPage = read('app/insights/authorized-is-not-executed/page.tsx');
+for (const required of [
+  'Accepted is not verified',
+  'human acceptance/sign-off, not an independent check',
+  'independent check of that pack or outcome against named evidence under a named measurement window',
+  'verification against evidence, not the acceptance stamp and not measured completeness alone',
+  'A named human acceptance without an independent evidence check is not verified',
+  'An independent verification without named human acceptance of the pack is not accepted',
+  'A firm with acceptance can still lack verification',
+  'A firm with verification can still lack acceptance',
+  'A verification note alone proves neither',
+  'A verification note is not a green',
+  'The sign-off is not the evidence check',
+  'What a verification note is allowed to be',
+  'Named acceptance is not independent verification',
+  'Sync does not measure verification',
+  'Sync does not measure verification for the customer',
+  'Sync does not accept or verify for the customer',
+  'Sync may surface an acceptance/sign-off note or a verification/evidence-check note',
+  'does not collapse verification into acceptance',
+  'does not collapse accepted into verified',
+  'does not collapse verified into assured',
+  'does not collapse verified into proven',
+  'does not rewrite Complete Is Not Accepted',
+  'practice record that says accepted is verified',
+  'accepted as verified',
+  'separates named human acceptance from verification',
+  '/insights/complete-is-not-accepted',
+  'Complete Is Not Verified separates measured completeness from verification',
+  ...acceptedPageRequired,
+  'Verified is not authorized',
+  'verification against evidence, not permission to act',
+  'authorization to act, not merely that evidence checked out',
+  'named human (or named accountable role) granting permission to execute a binding plant/operating/capital move under a named decision window',
+  'An independent verification without named authorization is not authorized',
+  'A named authorization without an independent evidence check is not verified',
+  'A firm with verification can still lack authorization',
+  'A firm with authorization can still lack verification',
+  'An authorization note alone proves neither',
+  'An authorization note is not a green',
+  'The evidence check is not the permission to act',
+  'What an authorization note is allowed to be',
+  'Independent verification is not named authorization',
+  'Sync does not measure authorization',
+  'Sync does not measure authorization for the customer',
+  'Sync does not verify or authorize for the customer',
+  'Sync may surface a verification/evidence-check note or an authorization/permission-to-act note',
+  'does not collapse authorization into verification',
+  'does not collapse verified into authorized',
+  'does not collapse authorized into assured',
+  'does not collapse authorized into proven',
+  'does not rewrite Accepted Is Not Verified',
+  'practice record that says verified is authorized',
+  'verified as authorized',
+  'separates independent verification from authorization',
+  '/insights/accepted-is-not-verified',
+  'Authorized is not executed',
+  'authorization to act, not proof the move happened',
+  'execution happened, not merely that someone said yes',
+  'named execution window (who/what/when/where against plant or operating evidence)',
+  'A named authorization without execution evidence is not executed',
+  'Plant activity without a named authorization is not authorized',
+  'A status light, ticket state, or CMMS checkbox is neither',
+  'A firm with authorization can still lack execution',
+  'A firm with execution can still lack authorization',
+  'An execution note alone proves neither',
+  'An execution note is not a green',
+  'The permission to act is not the completed move',
+  'What an execution note is allowed to be',
+  'Named authorization is not completed execution',
+  'Sync does not authorize or execute for the customer',
+  'Sync may surface an authorization/permission-to-act note or an execution/completed-move note',
+  'does not collapse execution into authorization',
+  'does not collapse authorized into executed',
+  'does not collapse executed into results',
+  'does not rewrite Verified Is Not Authorized',
+  'does not rewrite Action Is Not Execution',
+  'does not rewrite Strategy Is Not Execution',
+  'does not rewrite Execution Is Not Results',
+  'practice record that says authorized is executed',
+  'authorized as executed',
+  'separates named permission from completed execution',
+  '/insights/verified-is-not-authorized',
+  'does not collapse into Verified Is Not Authorized',
+  'does not collapse into Action Is Not Execution',
+  'does not collapse into Strategy Is Not Execution',
+  'does not collapse into Execution Is Not Results',
+  'does not collapse into Recommend Is Not Authorize',
+  'does not collapse into Proof Is Not Authorization',
+  'does not collapse into Human Decision Is Not Optional',
+  'Evidence from the plant beats the authorization note when the note is being used as execution',
+  'Evidence from the plant beats the execution note when the note is being used as authorization',
+  '/insights/action-is-not-execution',
+  '/insights/strategy-is-not-execution',
+  '/insights/execution-is-not-results',
+  '/insights/recommend-is-not-authorize',
+  '/insights/proof-is-not-authorization',
+  '/insights/human-decision-is-not-optional',
+  '/insights/cleared-is-not-complete',
+  '/insights/ready-is-not-cleared',
+]) {
+  if (!executedPage.includes(required)) {
+    fail(`authorized-is-not-executed page must include ${required}`);
+  }
+}
+
+if (
+  !authorizedPage.includes('The series continues with') ||
+  !authorizedPage.includes('/insights/authorized-is-not-executed')
+) {
+  fail('verified-is-not-authorized must point the series forward to authorized-is-not-executed');
 }
 
 function readingSlugs(name) {
