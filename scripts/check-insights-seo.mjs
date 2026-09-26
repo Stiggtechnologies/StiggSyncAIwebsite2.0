@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorEnforcedRemediatedIndex = slugs.indexOf('successor-enforced-is-not-remediated');
 const successorBindingEnforcedIndex = slugs.indexOf('successor-binding-is-not-enforced');
 const transferableBindingIndex = slugs.indexOf('transferable-is-not-binding');
 const sustainedTransferableIndex = slugs.indexOf('sustained-is-not-transferable');
@@ -112,7 +113,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorBindingEnforcedIndex >= 0 &&
+    successorEnforcedRemediatedIndex >= 0 &&
+    successorBindingEnforcedIndex > successorEnforcedRemediatedIndex &&
     transferableBindingIndex > successorBindingEnforcedIndex &&
     sustainedTransferableIndex > transferableBindingIndex &&
     acceptedSustainedIndex > sustainedTransferableIndex &&
@@ -205,7 +207,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -15450,6 +15452,124 @@ if (
   !transferableBindingPage.includes('/insights/successor-binding-is-not-enforced')
 ) {
   fail('transferable-is-not-binding must point the series forward to successor-binding-is-not-enforced');
+}
+
+const successorEnforcedRemediatedPageRequired = [
+  'Enforced Is Not Remediated',
+  'Enforced is not remediated',
+  'instrument-required enforcement of those named successor binding obligations for the named successor window',
+  'enforcement package with named enforcement authority / remedy / cure / escalation criteria met',
+  'unbroken trail from the binding evidence to that enforcement evidence',
+  'not a countersigned binding instrument that sits unexecuted when breached',
+  'not a policy citation with no cure clock',
+  'not a dashboard "noncompliant" tile with no named remedy',
+  'not verbal pressure',
+  'not "legal will follow up" without instrument-required enforcement action on the named breach',
+  'not treating binding theater as automatic enforcement of those successor obligations',
+  'instrument-required remediation that restores the named successor obligations / sustained accepted restored condition after the named breach or enforcement trigger for the named remediation window',
+  'remediation package with named remediator role',
+  'named remediation criteria met (cure completed, condition restored, acceptance of cure)',
+  'unbroken trail from the enforcement evidence to that remediation evidence',
+  'not an open ticket',
+  'not a promised CAPA with no close-out',
+  'not a verbal "we fixed it,"',
+  'not a dashboard cleared tile with no trail to the named breach',
+  'not "ops will handle" without instrument-required remediation evidence',
+  'not treating enforcement theater as automatic remediation of those successor obligations',
+  'A firm can have instrument-required enforcement of those named successor binding obligations for the named successor window and still lack instrument-required remediation that restores the named successor obligations / sustained accepted restored condition after the named breach or enforcement trigger for the named remediation window',
+  'A firm can be enforced and still not remediated',
+  'enforcement evidence exists while required remediation evidence for the named remediation window is missing',
+  'A firm can claim remediation theater and still not be enforced',
+  'Enforcement evidence alone is not remediation of those successor obligations',
+  'A remediation claim alone is not proof the named enforcement evidence was on the file',
+  'The enforced practice is not the remediated practice',
+  'What a remediation record is allowed to be',
+  'Named enforced is not remediated',
+  'Sync does not measure remediated',
+  'Sync does not measure remediated for the customer',
+  'Sync does not measure enforced or remediated for the customer',
+  'Sync may surface an enforcement record or a remediation record',
+  'does not collapse remediated into enforced',
+  'does not collapse enforced into remediated',
+  'does not collapse this enforced into filing-spine enforcement',
+  'does not collapse this remediated into filing-spine remedy completion',
+  'does not collapse this remediated into release',
+  'does not collapse this binding into filing-effectiveness bind',
+  'does not collapse this remediated into operating-condition restoration',
+  'does not collapse into Binding Is Not Enforced',
+  'does not rewrite Binding Is Not Enforced',
+  'does not collapse into Enforced Is Not Remediated',
+  'does not rewrite Enforced Is Not Remediated',
+  'does not collapse into Remediated Is Not Released',
+  'does not rewrite Remediated Is Not Released',
+  'does not collapse into Effective Is Not Binding',
+  'does not rewrite Effective Is Not Binding',
+  'does not collapse into Restored Is Not Accepted',
+  'does not rewrite Restored Is Not Accepted',
+  'does not collapse into Governed Is Not Transferable',
+  'does not rewrite Governed Is Not Transferable',
+  'does not collapse into Transferable Is Not Rehearsed',
+  'does not rewrite Transferable Is Not Rehearsed',
+  'does not collapse into Transferable Is Not Binding',
+  'does not rewrite Transferable Is Not Binding',
+  'instrument-required remediation that restores the named successor obligations and the sustained accepted restored condition after the named breach or enforcement trigger for the named remediation window, trailed from the enforcement evidence',
+  'separates instrument-required enforcement of those successor obligations from',
+  '/insights/successor-binding-is-not-enforced',
+  '/insights/transferable-is-not-binding',
+  '/insights/binding-is-not-enforced',
+  '/insights/enforced-is-not-remediated',
+  '/insights/remediated-is-not-released',
+  '/insights/effective-is-not-binding',
+  '/insights/restored-is-not-accepted',
+  'Evidence from the plant beats the enforcement record when the record is being used as remediated',
+  'Evidence from the plant beats the remediation claim when the claim is being used as proof the named enforcement of those successor obligations was on the file',
+  'treat enforced as remediated as Learning credit',
+  'Sync refuses to pretend enforced or remediated is a status light',
+  'Sync does not deem remediated for the customer',
+  'Sync must not auto-deem-remediated',
+  'An open ticket alone is neither',
+  'remediation theater',
+  'named remediation window',
+  'This split is enforced versus remediated',
+  'practice record that says enforced is remediated',
+  'Binding Is Not Enforced',
+  'Binding is not enforced',
+  'Effective Is Not Binding',
+  'Remediated Is Not Released',
+  'Restored Is Not Accepted',
+  'Governed Is Not Transferable',
+  'Transferable Is Not Rehearsed',
+  'Transferable Is Not Binding',
+];
+
+const successorEnforcedRemediatedPage = read('app/insights/successor-enforced-is-not-remediated/page.tsx');
+for (const required of successorEnforcedRemediatedPageRequired) {
+  if (!successorEnforcedRemediatedPage.includes(required)) {
+    fail(`successor-enforced-is-not-remediated page must include ${required}`);
+  }
+}
+
+const successorEnforcedRemediatedBlock = stepBlock('successor-enforced-is-not-remediated');
+for (const required of ['successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+  if (!successorEnforcedRemediatedBlock.includes(`'${required}'`)) {
+    fail(`successor-enforced-is-not-remediated related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorEnforcedRemediatedBlock)) {
+  fail('successor-enforced-is-not-remediated related reading must include the Strategic Pilot');
+}
+if (successorEnforcedRemediatedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-enforced-is-not-remediated next step is the Field Manual');
+}
+if (!stepBlock('successor-binding-is-not-enforced').includes("'successor-enforced-is-not-remediated'")) {
+  fail('successor-binding-is-not-enforced related reading must point forward to successor-enforced-is-not-remediated');
+}
+
+if (
+  !successorBindingEnforcedPage.includes('The series continues with') ||
+  !successorBindingEnforcedPage.includes('/insights/successor-enforced-is-not-remediated')
+) {
+  fail('successor-binding-is-not-enforced must point the series forward to successor-enforced-is-not-remediated');
 }
 
 
