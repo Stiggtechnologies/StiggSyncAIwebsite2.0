@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('control-is-not-closure');
+const article = getInsightArticle('closure-is-not-complete');
 
-export default function ControlIsNotClosurePage() {
+export default function ClosureIsNotCompletePage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,7 @@ export default function ControlIsNotClosurePage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Control Is Not Closure</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Closure Is Not Complete</h1>
             {article?.author ? (
               <p className="mb-6 text-sm text-slate-400">
                 <span className="font-semibold text-slate-200">{article.author}</span>
@@ -39,6 +39,52 @@ export default function ControlIsNotClosurePage() {
                 Author
               </p>
             ) : null}
+            <p className="text-xl text-gray-400">
+              Closure is a finished work-state: a ticket, work order, investigation, or decision
+              cycle marked done with a named end condition — administrative or operational completion
+              stamp, not proof that every acceptance criterion was met. Complete is every named
+              acceptance criterion for that case satisfied under a named measurement window —
+              acceptance completeness, not merely a closed stamp. Closure is not complete. A firm
+              with closure can still lack completeness. A firm with completeness can still lack
+              closure. A closure note alone proves neither. A completeness note alone proves neither.
+              A closure note is not a green. A completeness note is not a green. A closed ticket
+              without every acceptance criterion satisfied is not complete. A complete acceptance
+              pack without a named end-condition stamp is not closure. A title is neither. Control is
+              not closure. Ownership is not control. Accountability is not closure. Closure is not
+              cash. Cleared is not complete. Complete is not verified. Ready is not cleared. Sync
+              does not measure closure. Sync does not measure closure for the customer. Sync does not
+              measure completeness. Sync does not measure completeness for the customer.
+            </p>
+            <p className="text-xl text-gray-400">
+              The earlier essays already fixed the chain this refusal sits on. Judgment is not
+              authority. Authority is not accountability. Accountability is not ownership. Ownership
+              is not control. Control is not closure. Closure is not complete. Learning is an updated
+              decision rule, model, or operating practice the firm adopts because a verified result
+              changed what it will do next under a named decision window — tempered belief that
+              changes future allocation, not a dashboard tile, a learning_events row, a retrospective
+              note, or a results number sitting unread. Results is the attributed, measured change in
+              plant capacity, risk, cost, or production the firm can show followed from completed work
+              under a named measurement window — consequence under the honesty and verification
+              boundary, not the WO close, shipped-change ticket, or single verified plant check
+              alone. Execution is work actually completed inside the named decision window with
+              evidence of done outcomes (closed work, shipped change, verified plant result) —
+              realized performance against the committed path, not the strategy note, roadmap slide,
+              or allocated budget envelope alone. Strategy is a named choice among alternatives with
+              allocated resources, a named decision window, accountable owner, and success criteria
+              the firm is actually committing to execute — a committed path and resource allocation,
+              not proof the work was completed inside that window. Sync may surface a closure/end-state
+              note or a completeness/acceptance-pack note beside Evidence, Verification, and the
+              closed outcome. Sync refuses when evidence is insufficient. This essay does not rewrite
+              Control Is Not Closure. This essay does not rewrite Ownership Is Not Control. This
+              essay does not rewrite Accountability Is Not Closure. This essay does not rewrite
+              Closure Is Not Cash. This essay does not rewrite Cleared Is Not Complete. This essay
+              does not rewrite Complete Is Not Verified. This essay does not rewrite Ready Is Not
+              Cleared. This essay does not collapse completeness into closure. This essay does not
+              collapse complete into cleared. This essay does not collapse complete into verified.
+              This essay does not collapse closure into control. This essay does not collapse closure
+              into cash. This essay does not collapse closure into accountability.
+            </p>
+
             <p className="text-xl text-gray-400">
               Control is the practical power to set or change direction of an asset or plant — who
               can steer capital allocation, operating priorities, or binding plant moves in practice
@@ -84,7 +130,26 @@ export default function ControlIsNotClosurePage() {
 
           <div className="text-gray-300 space-y-6">
             <p className="text-xl font-semibold text-white">
-              Control is not closure. Control is the practical power to set or change direction of
+              Closure is not complete. Closure is a finished work-state: a ticket, work order,
+              investigation, or decision cycle marked done with a named end condition —
+              administrative or operational completion stamp, not proof that every acceptance
+              criterion was met. Complete is every named acceptance criterion for that case satisfied
+              under a named measurement window — acceptance completeness, not merely a closed stamp. A
+              firm with closure can still lack completeness when that finished work-state is on the
+              record and the firm has not satisfied every named acceptance criterion for that case
+              under a named measurement window. A firm with completeness can still lack closure when
+              that acceptance pack is on the record and the firm has not marked a ticket, work order,
+              investigation, or decision cycle done with a named end condition. A closed ticket
+              without every acceptance criterion satisfied is not complete. A complete acceptance pack
+              without a named end-condition stamp is not closure. A title is neither. Treating closure
+              as complete records a finished end-state as a claim about acceptance completeness that
+              nobody has shown, under the honesty and verification boundary. A closure note can inform
+              a recommendation to investigate. Recommend is not authorize. Evidence from the plant
+              beats the closure note when the note is being used as completeness. Sync must not
+              auto-close, auto-authorize, or treat closure as complete as Learning credit. Sync does
+              not measure completeness. Sync does not measure completeness for the customer. The prior
+              refusal stays beside that split, and this essay does not rewrite it. Control is not
+              closure. Control is the practical power to set or change direction of
               the asset or plant — who can steer capital allocation, operating priorities, or binding
               plant moves in practice — direction power, not a residual claim and not a formal
               authority charter alone. Closure is a finished work-state: a ticket, work order,
@@ -118,6 +183,191 @@ export default function ControlIsNotClosurePage() {
               off. CMMS write-back is not a live product path. Billing write-back is not a live
               product path.
             </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The closed stamp is not the acceptance pack
+            </h2>
+
+            <p>
+              A ticket, work order, investigation, or decision cycle can be marked done with a named
+              end condition while one or more named acceptance criteria for that case are still
+              unsatisfied under the named measurement window. That mark is closure. It is not
+              complete. An acceptance pack can show every named acceptance criterion for that case
+              satisfied under a named measurement window while nobody has marked the ticket, work
+              order, investigation, or decision cycle done with a named end condition. That pack is
+              complete. It is not closure. A title on the org chart, with or without scope, is
+              neither the finished end-state nor the acceptance pack. A firm with closure can still
+              lack completeness. A firm with completeness can still lack closure. A closure note
+              alone proves neither. A completeness note alone proves neither. A closure note is not a
+              green. A completeness note is not a green. A closed ticket without every acceptance
+              criterion satisfied is not complete. A complete acceptance pack without a named
+              end-condition stamp is not closure. A title is neither. A finished end-state is not
+              acceptance completeness. This essay does not invent a customer, a price, or a return.
+              It states no savings figure, states no price, and states no OEM limit. A practice
+              record that says closure is complete is not a customer plant release, and it is not
+              shown completeness. Treating closure as complete records a finished end-state as a
+              claim about acceptance completeness that nobody has shown, under the honesty and
+              verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              sits one step earlier. Control, there, is the practical power to set or change
+              direction of an asset or plant — who can steer capital allocation, operating priorities,
+              or binding plant moves in practice — direction power, not a residual claim and not a
+              formal authority charter alone. Closure, there, is a finished work-state: a ticket,
+              work order, investigation, or decision cycle marked done with a named end condition —
+              administrative or operational completion, not the power to steer. Direction power
+              without a finished end-state is not closure. A closed ticket without practical steering
+              power is not control. A title is neither. That refusal stops at direction power and the
+              finished end-state. It does not ask whether every named acceptance criterion for that
+              case was satisfied under a named measurement window. Control is not closure is a
+              different refusal. Closure is not complete is the next refusal. Direction power is not
+              a closed stamp, and direction power is not acceptance completeness. This essay does not
+              rewrite Control Is Not Closure. This essay does not collapse closure into control. This
+              essay does not collapse completeness into closure.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              sits one step earlier than that. Ownership is the residual economic claim on an asset,
+              equity, IP, or cash flow — residual rights and upside/downside on the balance sheet,
+              not the power to direct the asset. A residual claim is not a named end-condition stamp,
+              and a residual claim is not acceptance completeness. This essay does not rewrite
+              Ownership Is Not Control. This essay does not collapse control into ownership.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/accountability-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Closure
+              </Link>{' '}
+              keeps a different pair. Accountability is named answerability for an outcome within a
+              defined scope and window — who answers for results, misses, and remediation. Closure, in
+              that essay, is the verified outcome recorded against that ownership. That answerability
+              is not the administrative or operational completion stamp this essay names, and it is
+              not every named acceptance criterion satisfied under a named measurement window. A
+              person who answers for an outcome can still lack a closed stamp. A closed stamp can
+              still lack that named answerability. A complete acceptance pack can still lack that
+              named answerability. This essay does not rewrite Accountability Is Not Closure. This
+              essay does not collapse closure into accountability.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              already refuses to treat a closed work order, ticket, or shift as cash collected. Cash
+              is money received (collected) that can be spent now. Cash is collected money. A
+              finished work-state is not that collected money. Acceptance completeness is not that
+              collected money. A closed ticket is not cash. An acceptance pack is not a receipt. This
+              essay does not rewrite Closure Is Not Cash. This essay does not collapse closure into
+              cash. Closure is not cash is a different refusal.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared, in that essay, is a
+              ready or permission gate past a clearance check — a flag, a checklist, a badge, or a
+              cleared-to-proceed string — not acceptance completeness, and not a named end-condition
+              stamp. Passing that gate does not mark the ticket done, and it does not satisfy every
+              named acceptance criterion under a named measurement window. This essay does not
+              rewrite Cleared Is Not Complete. This essay does not collapse complete into cleared. A
+              cleared flag is neither closure nor complete.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that permission gate. A ready flag is not clearance, not a
+              closed stamp, and not an acceptance pack. This essay does not rewrite Ready Is Not
+              Cleared.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Verified
+              </Link>{' '}
+              keeps a completion label off the verified outcome. Verified, there, is an independent
+              check against evidence — named observation against named criteria, not the completion
+              label. Complete, in that essay, is the completion label under criteria someone chose.
+              Complete, in this essay, is acceptance completeness: every named acceptance criterion
+              for that case satisfied under a named measurement window. That acceptance pack is not
+              the independent check against evidence. A case can meet every named acceptance
+              criterion under the window and still lack that independent check. A case can hold the
+              independent check and still lack the named end-condition stamp. This essay does not
+              rewrite Complete Is Not Verified. This essay does not collapse complete into verified.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a completeness note is allowed to be
+            </h2>
+
+            <p>
+              Closure is not complete. Closure is a finished work-state: a ticket, work order, investigation, or decision cycle marked done with a named end condition — administrative or operational completion stamp, not proof that every acceptance criterion was met. Complete is every named acceptance criterion for that case satisfied under a named measurement window — acceptance completeness, not merely a closed stamp. A firm with closure can still lack completeness. A firm with completeness can still lack closure. A closed ticket without every acceptance criterion satisfied is not complete. A complete acceptance pack without a named end-condition stamp is not closure. A title is neither. A finished end-state is not acceptance completeness. Sync may surface a closure/end-state note or a completeness/acceptance-pack note beside Evidence, Verification, and the closed outcome. This essay does not rewrite Control Is Not Closure. This essay does not rewrite Ready Is Not Cleared. This essay does not rewrite Cleared Is Not Complete. This essay does not rewrite Complete Is Not Verified. This essay does not rewrite Closure Is Not Cash. This essay does not rewrite Accountability Is Not Closure. This essay does not rewrite Ownership Is Not Control. A practice record that says closure is complete is not shown completeness. Sync does not measure completeness. Sync does not measure completeness for the customer. Sync does not measure closure for the customer.
+            </p>
+
+            <p>
+              Evidence may cite a closure/end-state note when the source of that note is named, and
+              when the citation says a ticket, work order, investigation, or decision cycle was
+              marked done with a named end condition — administrative or operational completion
+              stamp, not proof that every acceptance criterion was met. Evidence may cite a
+              completeness/acceptance-pack note when the source is named and the citation says every
+              named acceptance criterion for that case was satisfied under a named measurement window
+              — acceptance completeness, not merely a closed stamp. If the evidence records the
+              finished end-state and does not record that acceptance pack, the case may store the
+              note as closure and must not store the note as complete. If the evidence records the
+              acceptance pack and does not record the named end-condition stamp, the case may store
+              the note as complete and must not store the note as closure. A closed ticket without
+              every acceptance criterion satisfied is not complete. A complete acceptance pack
+              without a named end-condition stamp is not closure. A title is neither. The label does
+              not fill the gap, and it does not close it. The closure note does not paint a green.
+              The completeness note does not paint a green.
+            </p>
+
+            <p>
+              Evidence from the plant beats the closure note when the note is being used as
+              completeness. Evidence from the plant beats the completeness note when the note is
+              being used as closure. A closure note can inform a recommendation to investigate.
+              Recommend is not authorize. It is not the plant, not a diagnosis, not root cause, not a
+              work order, not an invoice, and not a Decision Case that has already shown
+              completeness. Surfacing is still a read. Sync may surface a closure/end-state note or
+              a completeness/acceptance-pack note beside Evidence, Verification, and the closed
+              outcome. Sync may surface a closure/end-state note or a completeness/acceptance-pack
+              note beside Evidence/Verification/closed outcome. Sync refuses false precision. Sync
+              refuses when evidence is insufficient. Sync must not auto-close, auto-authorize, or
+              treat closure as complete as Learning credit. Sync does not measure closure. Sync does
+              not measure closure for the customer. Sync does not measure completeness. Sync does not
+              measure completeness for the customer. Direct plant execute stays off. CMMS write-back
+              is not a live product path. Billing write-back is not a live product path. A named
+              human decides. A named human remains accountable after the plant move.
+            </p>
+
+
 
             <p>
               <Link
@@ -494,10 +744,10 @@ export default function ControlIsNotClosurePage() {
             <p>
               The chain below is the series this refusal sits on. Learning is not judgment. Judgment
               is not authority. Authority is not accountability. Accountability is not ownership.
-              Ownership is not control. Control is not closure. Each word can be true in its own
+              Ownership is not control. Control is not closure. Closure is not complete. Each word can be true in its own
               place. None of the earlier words fills the last one. What follows keeps that chain in
               the words the earlier essays fixed. It does not move their boundaries, and it does not
-              treat direction power as a finished end-state.
+              treat a closed stamp as acceptance completeness.
             </p>
 
             <p className="text-xl font-semibold text-white">
@@ -555,8 +805,8 @@ export default function ControlIsNotClosurePage() {
               Liquidity is not flexibility. Flexibility is not optionality. Optionality is not
               strategy. Strategy is not execution. Execution is not results. Results is not learning.
               Learning is not judgment. Judgment is not authority. Authority is not accountability.
-              Accountability is not ownership. Ownership is not control. Control is not closure. Each
-              word can be true in its own place. None of the earlier words fills the last one. A
+              Accountability is not ownership. Ownership is not control. Control is not closure. Closure is not complete. Each
+              word can be true in its own place. None of them is acceptance completeness. None of the earlier words fills the last one. A
               closed work order, cash collected, a unit remainder, a profit figure, a measured
               outcome, an attributed change in cash, risk, or capacity, a recognized sale, an
               annualized contract, a spendable balance, a duration at the current net burn,
@@ -1097,7 +1347,7 @@ export default function ControlIsNotClosurePage() {
               no survival length, no solvency length, no liquidity length, no flexibility length, no
               optionality length, no strategy length, no execution length, no results length, no
               learning length, no judgment length, no authority length, no accountability length, no
-              ownership length, no control length, and no closure length. It does not claim that
+              ownership length, no control length, and no closure length, and no completeness length. It does not claim that
               control is closure, does not claim that ownership is control, does not claim that
               accountability is ownership, and does not claim that authority is accountability. It
               does not write a CMMS work order, clear equipment to run, book revenue, recognize
@@ -1112,7 +1362,7 @@ export default function ControlIsNotClosurePage() {
               measure authority, measure authority for the customer, measure accountability, measure
               accountability for the customer, measure ownership, measure ownership for the customer,
               measure control, measure control for the customer, measure closure, measure closure for
-              the customer, collect cash, or attribute a change in cash, risk, or capacity. It does
+              the customer, measure completeness, measure completeness for the customer, collect cash, or attribute a change in cash, risk, or capacity. It does
               not claim that Sync executes plant work. It does not claim CMMS write-back as a shipped
               product. It does not claim billing write-back as a shipped product. It does not invent
               a customer, a price, or a return. It does not invent a case number. It does not treat a
@@ -1170,33 +1420,6 @@ export default function ControlIsNotClosurePage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/closure-is-not-complete"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Closure Is Not Complete
-              </Link>
-              , on why closure is still not complete. Closure is a finished work-state: a ticket,
-              work order, investigation, or decision cycle marked done with a named end condition —
-              administrative or operational completion stamp, not proof that every acceptance
-              criterion was met. Complete is every named acceptance criterion for that case satisfied
-              under a named measurement window — acceptance completeness, not merely a closed stamp. A
-              firm with closure can still lack completeness when that finished end-state has not met
-              every named acceptance criterion. A firm with completeness can still lack closure. A
-              closed ticket without every acceptance criterion satisfied is not complete. A complete
-              acceptance pack without a named end-condition stamp is not closure. A title is neither.
-              Control remains the practical power to steer capital allocation, operating priorities,
-              or binding plant moves in practice. Cleared remains a ready or permission gate past a
-              clearance check. Verified remains an independent check against evidence. Cash remains
-              money received (collected). Accountability remains named answerability for an outcome
-              within a defined scope and window. A closure note alone proves neither. A completeness
-              note alone proves neither. A closure note is not a green. A completeness note is not a
-              green. Sync does not measure completeness. Sync does not measure completeness for the
-              customer.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -1250,7 +1473,7 @@ export default function ControlIsNotClosurePage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="control-is-not-closure" />
+          <InsightNextSteps slug="closure-is-not-complete" />
         </motion.article>
       </div>
     </main>
