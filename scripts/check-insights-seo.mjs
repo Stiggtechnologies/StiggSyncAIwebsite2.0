@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const releasedIndex = slugs.indexOf('remediated-is-not-released');
 const remediatedIndex = slugs.indexOf('enforced-is-not-remediated');
 const enforcedIndex = slugs.indexOf('binding-is-not-enforced');
 const bindingIndex = slugs.indexOf('effective-is-not-binding');
@@ -95,7 +96,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    remediatedIndex >= 0 &&
+    releasedIndex >= 0 &&
+    remediatedIndex > releasedIndex &&
     enforcedIndex > remediatedIndex &&
     bindingIndex > enforcedIndex &&
     effectiveIndex > bindingIndex &&
@@ -171,7 +173,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -13864,6 +13866,88 @@ if (
 ) {
   fail('binding-is-not-enforced must point the series forward to enforced-is-not-remediated');
 }
+
+
+const releasedPageRequired = [
+  ...remediatedPageRequired,
+  "Remediated Is Not Released",
+  "Remediated is not released",
+  "the named parties’ enforcement rights / cured default / acceleration / claims arising from that remediated breach have actually been released, waived, or discharged for the named scope",
+  "not the cure alone, not \"we’re remediated so we’re released,\" not a dashboard green, not a CMMS checkbox, and not treating remediation theater as automatic release of claims or enforcement rights",
+  "A firm can be remediated and still not released",
+  "cure/remedy completion exists while required release/waiver/discharge evidence is missing",
+  "A firm can claim release theater and still not be remediated",
+  "we’re released / waived / discharged",
+  "Remediation evidence alone is not release",
+  "A release claim alone is not proof of named remediation under the enforcement trail",
+  "The remediated practice is not the released practice",
+  "What a release record is allowed to be",
+  "Named remediation is not released",
+  "Sync does not measure released",
+  "Sync does not measure released for the customer",
+  "Sync does not measure remediated or released for the customer",
+  "Sync may surface a remediation record or a release record",
+  "does not collapse released into remediated",
+  "does not collapse remediated into released",
+  "does not rewrite Enforced Is Not Remediated",
+  "does not collapse into Enforced Is Not Remediated",
+  "does not collapse into Authorized Is Not Executed",
+  "does not rewrite Authorized Is Not Executed",
+  "does not collapse into Executed Is Not Closed",
+  "does not rewrite Executed Is Not Closed",
+  "does not collapse into Complete Is Not Accepted",
+  "does not rewrite Complete Is Not Accepted",
+  "does not collapse into Accepted Is Not Verified",
+  "does not rewrite Accepted Is Not Verified",
+  "does not collapse into Closed Is Not Resolved",
+  "does not rewrite Closed Is Not Resolved",
+  "does not collapse into Closure Is Not Complete",
+  "does not rewrite Closure Is Not Complete",
+  "instrument-required release/waiver/discharge of the enforcement rights or cured default for that named scope",
+  "practice record that says remediated is released",
+  "remediated as released",
+  "separates instrument-required cure and remedy completion from",
+  "/insights/enforced-is-not-remediated",
+  "Evidence from the plant beats the remediation record when the record is being used as released",
+  "Evidence from the plant beats the release claim when the claim is being used as proof of named remediation under the enforcement trail",
+  "treat remediated as released as Learning credit",
+  "Sync refuses to pretend remediated or released is a status light",
+  "Sync does not deem released for the customer",
+  "Sync must not auto-deem-released",
+  "Keep enforced from Enforced Is Not Remediated, binding from Binding Is Not Enforced, effective from Effective Is Not Binding, posted from Posted Is Not Effective, accepted from Accepted Is Not Posted, filed from Filed Is Not Accepted, audited from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from remediated and from released.",
+  "False confidence here is remediation evidence treated as release, or a release claim treated as proof of named remediation under the enforcement trail.",
+  "executed release or waiver of default, discharge of acceleration, release of security or claims when the instrument requires it, reinstatement-to-pre-default status with named release language, or other named release/discharge completion evidence",
+];
+const releasedPage = read('app/insights/remediated-is-not-released/page.tsx');
+for (const required of releasedPageRequired) {
+  if (!releasedPage.includes(required)) {
+    fail(`remediated-is-not-released page must include ${required}`);
+  }
+}
+
+const releasedBlock = stepBlock('remediated-is-not-released');
+for (const required of ['enforced-is-not-remediated', 'binding-is-not-enforced', 'effective-is-not-binding', 'posted-is-not-effective', 'accepted-is-not-posted', 'filed-is-not-accepted', 'audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!releasedBlock.includes(`'${required}'`)) {
+    fail(`remediated-is-not-released related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(releasedBlock)) {
+  fail('remediated-is-not-released related reading must include the Strategic Pilot');
+}
+if (releasedBlock.includes("next: 'strategic-pilot'")) {
+  fail('remediated-is-not-released next step is the Field Manual');
+}
+if (!stepBlock('enforced-is-not-remediated').includes("'remediated-is-not-released'")) {
+  fail('enforced-is-not-remediated related reading must point forward to remediated-is-not-released');
+}
+
+if (
+  !remediatedPage.includes('The series continues with') ||
+  !remediatedPage.includes('/insights/remediated-is-not-released')
+) {
+  fail('enforced-is-not-remediated must point the series forward to remediated-is-not-released');
+}
+
 
 function readingSlugs(name) {
   const block = section(name);
