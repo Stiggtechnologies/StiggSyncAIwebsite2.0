@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('filed-is-not-accepted');
+const article = getInsightArticle('accepted-is-not-posted');
 
-export default function FiledIsNotAcceptedPage() {
+export default function AcceptedIsNotPostedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,431 @@ export default function FiledIsNotAcceptedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Filed Is Not Accepted</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Accepted Is Not Posted</h1>
+
+            <p>
+              Accepted is not posted. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. Posted means that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not "we sent it to the portal," not a dashboard green, and not a CMMS checkbox. Accepted is not posted. A firm can be accepted and still not posted (acceptance/completeness acknowledgement exists while no named public posting/accession for that filing). A firm can chase posting theater and still not be accepted (a public-looking URL or draft portal entry exists while no named acceptance for that entity/period/channel). An acceptance notice alone is not a public posting. A public URL alone is not proof of acceptance under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep filed (named lodging receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from accepted and from posted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. This posted is public registry/disclosure posting of that accepted filing. Complete Is Not Accepted keeps an acceptance pack’s measured completeness off a named human sign-off of that pack. Accepted Is Not Verified keeps that named human sign-off off an independent evidence check. Neither of those refusals is this split. This split is accepted versus posted. An acceptance notice is not a public posting. A public URL is not an acceptance notice. This essay does not collapse into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse into Accepted Is Not Verified. This essay does not rewrite Accepted Is Not Verified. This essay does not collapse into Filed Is Not Accepted. This essay does not rewrite Filed Is Not Accepted. This essay does not collapse posting into acceptance. This essay does not collapse accepted into posted. Filed Is Not Accepted separates a named filing receipt from a named acceptance or completeness acknowledgement. This essay separates a named acceptance or completeness acknowledgement from a named public posting. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend acceptance or posting is a status light. Sync does not measure posting. Sync does not measure posting for the customer. Sync does not measure acceptance or posting for the customer. Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does not post for the customer. Sync does not accept for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync refuses to pretend acceptance or posting is a status light. Sync may surface an acceptance notice or a public posting beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync does not declare RTO met for the customer. Sync must not auto-post. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat accepted as posted as Learning credit. Sync must not treat filed as accepted as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <p>
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not accountability. Accountability is not ownership. Ownership is not control. Control is not closure. Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled. Settled is not booked. Booked is not reconciled. Reconciled is not closed. Closed is not collected. Collected is not recognized. Recognized is not reported. Reported is not audited. Audited is not filed. Filed is not accepted. Accepted is not posted. That last sentence is this refusal. The words accepted in Complete is not accepted, and the words accepted in Accepted is not verified, name a named human formally accepting an acceptance pack, or the case outcome it covers, under a named decision window. That is human acceptance and sign-off of plant or work acceptance. Those words do not name a regulator. They do not name a registry. They do not name a lender filing channel. They do not name a board filing channel. They do not name a board secretary. They do not name a public disclosure system. They do not name SEDAR+. They do not name EDGAR. They do not name an accession number. They do not name a posting timestamp. They do not name a filing receipt. They do not name a filing identifier. This essay does not rewrite that sentence. This essay does not collapse into that split. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. This posted is public registry/disclosure posting of that accepted filing. The words accepted in Filed is not accepted name channel acceptance of a lodged filing: the named receiving authority for that channel has issued a named acceptance or completeness acknowledgement for that specific lodged filing, with an unbroken evidence trail from that acceptance notice back to the filing receipt. They do not name a public posting. A named acceptance or completeness acknowledgement versus a named public posting is this refusal. Filed Is Not Accepted keeps a lodging receipt off an acceptance notice that has not been issued. Audited Is Not Filed keeps an independent named opinion off a lodging receipt that has not been issued. Reported Is Not Audited keeps that named recognized amount in the named period report pack off an independent opinion that has not been issued. None of those refusals is this split. This split is accepted versus posted. A firm can be accepted and still not posted (acceptance/completeness acknowledgement exists while no named public posting/accession for that filing). A firm can chase posting theater and still not be accepted (a public-looking URL or draft portal entry exists while no named acceptance for that entity/period/channel). An acceptance notice alone is not a public posting. A public URL alone is not proof of acceptance under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep filed (named lodging receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from accepted and from posted. An internal share link, a draft upload sitting in a private folder, an email attachment, a sentence that says "we sent it to the portal," a dashboard green, or a CMMS checkbox is not this posting. An auto-ack that only confirms message delivery, a status that says "under review," a draft status page, a dashboard green, or a CMMS checkbox is not this acceptance. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. That lodging is not this acceptance and is not this posting. Reported, the named recognized amount in the named period report pack, is not this acceptance and is not this posting. Audited, an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence, is not this acceptance and is not this posting. This acceptance means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. This posting means that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not "we sent it to the portal," not a dashboard green, and not a CMMS checkbox. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface an acceptance notice or a public posting beside Evidence, Verification, and the closed outcome. Surfacing is still a read. The closed outcome in that sentence is the Decision Case outcome record. It is not a period close of the books, it is not a period report, it is not an audit opinion, it is not a filing receipt, it is not an acceptance notice, and it is not a public posting. This essay does not rewrite Filed Is Not Accepted. This essay does not collapse into Filed Is Not Accepted. This essay does not collapse posting into acceptance. This essay does not collapse accepted into posted. This essay does not collapse into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse into Accepted Is Not Verified. This essay does not rewrite Accepted Is Not Verified.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Accepted is not posted. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. Posted means that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not "we sent it to the portal," not a dashboard green, and not a CMMS checkbox. A firm can be accepted and still not posted (acceptance/completeness acknowledgement exists while no named public posting/accession for that filing). A firm can chase posting theater and still not be accepted (a public-looking URL or draft portal entry exists while no named acceptance for that entity/period/channel). An acceptance notice alone is not a public posting. A public URL alone is not proof of acceptance under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep filed (named lodging receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from accepted and from posted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. This posted is public registry/disclosure posting of that accepted filing. A firm can be accepted and still not posted, when an acceptance/completeness acknowledgement exists while no named public posting/accession for that filing, is the only posting story on the record. A firm can chase posting theater and still not be accepted, when a public-looking URL or draft portal entry exists while no named acceptance for that entity/period/channel, is the only acceptance story on the record. An acceptance notice alone is not a public posting. A public URL alone is not proof of acceptance under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. The accepted practice is not the posted practice. Sync may surface an acceptance notice or a public posting beside Evidence, Verification, and the closed outcome. This essay separates a named acceptance or completeness acknowledgement from a named public posting. This essay does not collapse posting into acceptance. This essay does not collapse accepted into posted. This essay does not collapse into Filed Is Not Accepted. This essay does not rewrite Filed Is Not Accepted. This essay does not collapse into Complete Is Not Accepted. This essay does not collapse into Accepted Is Not Verified. A practice record that says accepted is posted is not shown posted. Sync refuses to pretend acceptance or posting is a status light. Treating accepted as posted records an acceptance notice as a named public posting for that entity, period, channel, and filing identifier, under the honesty and verification boundary. An acceptance notice can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the acceptance notice when the notice is being used as posting. Evidence from the plant beats the public posting when the posting is being used as proof of acceptance under the named filing trail. Sync must not auto-post. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat accepted as posted as Learning credit. Sync must not treat filed as accepted as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Sync does not measure posting. Sync does not measure posting for the customer. Sync does not measure acceptance or posting for the customer. Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does not post for the customer. Sync does not accept for the customer. Sync does not file for the customer. Sync refuses to pretend acceptance or posting is a status light. Sync may surface an acceptance notice or a public posting beside Evidence, Verification, and the closed outcome. Surfacing is still a read. The prior acceptance split still stands: lodging receipt exists while no named acceptance/completeness acknowledgement for that filing is filed and not accepted, and an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel is acceptance theater and not filed. Filed Is Not Accepted separates a named filing receipt from a named acceptance or completeness acknowledgement. False confidence here is an acceptance notice treated as a public posting, or a public URL treated as proof of acceptance under the named filing trail. Field proof is the named trail, not the tile. What changes Tuesday is the refusal to let one record wear the other record’s name.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The accepted practice is not the posted practice
+            </h2>
+
+            <p>
+              Accepted means the named receiving authority for that channel (regulator / registry / lender /
+              board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for
+              that specific lodged filing (entity, period, channel, filing identifier), with an unbroken
+              evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that
+              only confirms message delivery, not "under review," not a draft status page, not a dashboard
+              green, and not a CMMS checkbox. Posted means that same accepted filing has been published / made
+              available on the named public disclosure system or registry of record for that channel (e.g.
+              SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable),
+              with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail
+              from that public posting back to the acceptance notice and filing receipt — not an internal
+              share link, not a draft upload sitting in a private folder, not an email attachment, not "we
+              sent it to the portal," not a dashboard green, and not a CMMS checkbox. Sync may surface an
+              acceptance notice or a public posting beside Evidence, Verification, and the closed outcome. A
+              practice record that says accepted is posted is not shown posted. Evidence from the plant beats
+              the acceptance notice when the notice is being used as posting. Evidence from the plant beats
+              the public posting when the posting is being used as proof of acceptance under the named filing
+              trail. Evidence from the plant beats the note. The accepted practice is not the posted practice.
+            </p>
+
+            <p>
+              One file can hold an acceptance. The named receiving authority for that channel (regulator /
+              registry / lender / board secretary or equivalent) has issued a named acceptance / completeness
+              acknowledgement for that specific lodged filing. The authority is named. The acknowledgement is
+              named. The entity, the period, the channel, and the filing identifier are named. The trail from
+              that acceptance notice back to the filing receipt is unbroken. Then the record stops. It does
+              not say that same accepted filing has been published on the named public disclosure system or
+              registry of record. It does not name a posting identifier, a URL, or an accession. It does not
+              name a posting timestamp. It does not show an unbroken trail from that public posting back to
+              the acceptance notice and filing receipt. That is acceptance/completeness acknowledgement exists
+              while no named public posting/accession for that filing. That record can be accepted. It is not
+              posted. A firm can be accepted and still not posted. An acceptance notice alone is not a public
+              posting. An internal share link is not posting. A draft upload sitting in a private folder is
+              not posting. An email attachment is not posting. A sentence that says "we sent it to the portal"
+              is not posting. A dashboard green is not posting. A CMMS checkbox is not posting. A posting
+              chase can be loud and still not be this acceptance. The file shows a public-looking URL or a
+              draft portal entry while no named acceptance for that entity, period, and channel. That is
+              posting theater. It is not accepted. A firm can chase posting theater and still not be accepted.
+              A public-looking URL alone is not accepted. A draft portal entry alone is not accepted. An
+              acceptance notice can name an entity, a period, a channel, and a filing identifier and still
+              have no named public posting for that filing. A public URL can name a host and a path and still
+              fail to show acceptance under the named filing trail. An acceptance notice alone is not a public
+              posting. A public URL alone is not proof of acceptance under the named filing trail. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. A one-off clear is a single
+              quiet interval. It is not a named acceptance notice with an unbroken evidence trail back to the
+              filing receipt, and it is not a named public posting with an unbroken trail back to that
+              acceptance notice and that filing receipt. The accepted practice is not the posted practice.
+              This essay does not invent a customer, a price, or a return. It states no savings figure, states
+              no price, and states no OEM limit. A practice record that says accepted is posted is not a
+              customer plant release, and it is not shown posted. Treating accepted as posted records an
+              acceptance notice nobody has had posted as a public posting for that entity, period, channel,
+              and filing identifier, under the honesty and verification boundary. Keep filed (named lodging
+              receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is Not
+              Filed, and reported from Reported Is Not Audited, distinct from accepted and from posted. Filed
+              means that named audited period pack (statements + named opinion/assurance conclusion as
+              applicable) has been lodged with the named regulator / registry / lender / board filing channel
+              for that named entity and period, with a named filing receipt / confirmation, filing timestamp,
+              and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an
+              email saying we sent it, not a dashboard green, and not a CMMS checkbox. That is the lodging
+              record from Filed Is Not Accepted. It is not this acceptance. It is not this posting. An
+              accepted filing can still lack a named public posting, and a public-looking URL can still lack a
+              named acceptance.
+            </p>
+
+            <p>
+              Accepted, in this essay, means the named receiving authority for that channel (regulator /
+              registry / lender / board secretary or equivalent) has issued a named acceptance / completeness
+              acknowledgement for that specific lodged filing (entity, period, channel, filing identifier),
+              with an unbroken evidence trail from that acceptance notice back to the filing receipt. Posted,
+              in this essay, means that same accepted filing has been published / made available on the named
+              public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent
+              lender portal public packet / board minutes repository as applicable), with a named posting
+              identifier / URL / accession and posting timestamp, and an unbroken trail from that public
+              posting back to the acceptance notice and filing receipt. This accepted is channel acceptance of
+              a lodged filing, distinct from Complete Is Not Accepted. This posted is public
+              registry/disclosure posting of that accepted filing. Filed, in Filed Is Not Accepted, is that
+              named audited period pack has been lodged with the named regulator / registry / lender / board
+              filing channel for that named entity and period, with a named filing receipt / confirmation,
+              filing timestamp, and unbroken trail back to the audited pack. Audited, in Audited Is Not Filed,
+              is an independent named auditor / assurance provider has issued a named opinion or assurance
+              conclusion on that named period’s financial statements (or named scoped assertion) for that
+              named entity, covering that named line (or the statements that include it), with an unbroken
+              evidence trail to the reported pack and recognition evidence. Reported, in Reported Is Not
+              Audited, is that named recognized amount in the named period report pack for the named entity,
+              with the named line, period, and preparer/attester, reconcilable to the recognition evidence.
+              Accepted, in Complete Is Not Accepted, is a named human formally accepting an acceptance pack,
+              or the case outcome it covers, under a named decision window. That accepted is plant or work
+              acceptance. It is not this accepted. Accepted, in Accepted Is Not Verified, is that same named
+              human sign-off, kept off an independent evidence check. That accepted is not this accepted.
+              Posted, in this essay, is not that sign-off and is not that evidence check. Closed, in Closed Is
+              Not Collected, is a period/books close. This closed is a period/books close. It is not the
+              work-order / incident closed in Closed Is Not Resolved. A period close attestation is not a
+              cleared plant exception, it is not a period report, it is not an independent audit opinion, it
+              is not a filing receipt, it is not an acceptance notice from a receiving authority, and it is
+              not a public posting. A closed ticket is not proof the named authority accepted that filing, and
+              it is not proof the accepted filing was posted. A report line is not a work-order checkbox. An
+              audit opinion is not a lodging receipt. A filing receipt is not an acceptance notice. An
+              acceptance notice is not a public posting. An acceptance pack sign-off is not a regulator
+              acknowledgement and it is not an accession. This essay does not rewrite Closed Is Not Resolved.
+              This essay does not rewrite Filed Is Not Accepted. This essay does not rewrite Audited Is Not
+              Filed. This essay does not rewrite Reported Is Not Audited. This essay does not rewrite Complete
+              Is Not Accepted. This essay does not rewrite Accepted Is Not Verified. This essay does not
+              collapse a period/books close into a work-order / incident closed. This essay does not collapse
+              an acceptance notice into a filing receipt. This essay does not collapse a public posting into
+              an acceptance notice. This essay does not collapse channel acceptance of a lodged filing into an
+              acceptance pack. This essay does not collapse public registry/disclosure posting of that
+              accepted filing into a plant sign-off.
+            </p>
+
+            <p>
+              On Tuesday the question splits. The acceptance file answers whether the named receiving
+              authority for that channel (regulator / registry / lender / board secretary or equivalent) has
+              issued a named acceptance / completeness acknowledgement for that specific lodged filing
+              (entity, period, channel, filing identifier), with an unbroken evidence trail from that
+              acceptance notice back to the filing receipt. The posting file answers whether that same
+              accepted filing has been published / made available on the named public disclosure system or
+              registry of record for that channel, with a named posting identifier / URL / accession and
+              posting timestamp, and an unbroken trail from that public posting back to the acceptance notice
+              and filing receipt. One file does not answer the other. An acceptance notice read as if it were
+              the public posting does not change the question. A public URL read as if it were the acceptance
+              notice does not change the question. An internal share link does not change the question. A
+              draft upload sitting in a private folder does not change the question. An email attachment does
+              not change the question. A sentence that says we sent it to the portal does not change the
+              question. An auto-ack that only confirms message delivery does not change the question. A status
+              that says "under review" does not change the question. A draft status page does not change the
+              question. A dashboard green does not change the question. A CMMS checkbox does not change the
+              question. An acceptance pack sign-off does not change the question. An independent check of an
+              acceptance pack does not change the question. A filing receipt read as if it were either
+              acceptance or posting does not change the question. An audit opinion read as if it were either
+              acceptance or posting does not change the question. A report pack read as if it were either
+              acceptance or posting does not change the question. What changes Tuesday is the refusal to let
+              one record wear the other record’s name.
+            </p>
+
+            <p>
+              The problem is an accepted filing treated as if it had been published on the named public
+              disclosure system, or a public-looking URL treated as if the named receiving authority had
+              accepted that specific filing. The dashboard can be green. The ticket can be closed. The email
+              can carry an attachment. The portal can hold a draft. The share link can open for the people who
+              already have the folder. None of those is the named public posting, and none of those repairs a
+              missing acceptance notice. False confidence here is an acceptance notice treated as a public
+              posting, or a public URL treated as proof of acceptance under the named filing trail. The
+              distinction is the authority’s named acknowledgement on one side and the named public posting on
+              the other, joined only by an unbroken trail back through the acceptance notice to the filing
+              receipt. Field proof is the named trail, not the tile. What changes Tuesday is the refusal to
+              let one record wear the other record’s name.
+            </p>
+
+            <p>
+              An internal share link is not posting. It can name a folder, a permission list, and a timestamp.
+              It does not say the accepted filing has been published on the named public disclosure system or
+              registry of record. It does not name an accession. It does not tie a public posting back to the
+              acceptance notice and the filing receipt. An internal share is not a public posting. An
+              acceptance notice can exist beside that link and the filing can still be unposted.
+            </p>
+
+            <p>
+              A draft upload sitting in a private folder is not posting. A draft portal entry is not posting.
+              A page that shows a draft, a preview, or an unsubmitted public form has not published the
+              accepted filing and has not recorded a named posting identifier, URL, or accession. A
+              public-looking URL or draft portal entry that exists while no named acceptance for that
+              entity/period/channel is posting theater. It is not acceptance. A dashboard green is not
+              acceptance and is not posting. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither.
+            </p>
+
+            <p>
+              An email attachment is not a public posting. A sentence that says "we sent it to the portal" is
+              not a posting identifier and is not an acceptance notice. Message delivery to a portal inbox is
+              not publication on the registry of record. Filed Is Not Accepted already refuses to treat a
+              lodging receipt as acceptance, and refuses to treat an acceptance claim as the lodging. This
+              essay refuses to treat the acceptance notice as posting, and refuses to treat a public URL as
+              proof of acceptance under the named filing trail.
+            </p>
+
+            <p>
+              A named human sign-off of an acceptance pack is not this acceptance, and it is not this posting.
+              Complete Is Not Accepted separates measured completeness of that pack from the human who
+              formally accepts it. Accepted Is Not Verified separates that human sign-off from an independent
+              evidence check. This accepted is channel acceptance of a lodged filing, distinct from Complete
+              Is Not Accepted. This posted is public registry/disclosure posting of that accepted filing. The
+              receiving authority’s completeness acknowledgement is not a plant acceptance criterion
+              satisfied, and it is not a human accepting a case pack inside Sync. A SEDAR+ or EDGAR accession
+              is not that plant sign-off. Sync must not auto-post. Sync must not auto-accept. Sync must not
+              treat accepted as posted as Learning credit. Sync does not post for the customer. Sync does not
+              accept for the customer.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/filed-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Filed Is Not Accepted
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/filed-is-not-accepted. Filed Is Not
+              Accepted separates a named filing receipt from a named acceptance or completeness
+              acknowledgement. Filed, there, means that named audited period pack (statements + named
+              opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry
+              / lender / board filing channel for that named entity and period, with a named filing receipt /
+              confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is
+              done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS
+              checkbox. Accepted, there, means the named receiving authority for that channel (regulator /
+              registry / lender / board secretary or equivalent) has issued a named acceptance / completeness
+              acknowledgement for that specific lodged filing (entity, period, channel, filing identifier),
+              with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an
+              auto-ack that only confirms message delivery, not "under review," not a draft status page, not a
+              dashboard green, and not a CMMS checkbox. A firm can be filed and still not accepted (lodging
+              receipt exists while no named acceptance/completeness acknowledgement for that filing). A firm
+              can chase acceptance theater and still not be filed (an acceptance claim or under-review status
+              exists while no lodging receipt for that entity/period/channel). A filing receipt alone is not
+              acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing
+              trail. That refusal stops at the acceptance notice. It does not ask whether that same accepted
+              filing has been published / made available on the named public disclosure system or registry of
+              record for that channel, with a named posting identifier / URL / accession and posting
+              timestamp, and an unbroken trail from that public posting back to the acceptance notice and
+              filing receipt. A named acceptance can still lack a named public posting. Keep filed (named
+              lodging receipt) from Filed Is Not Accepted, audited (independent named opinion) from Audited Is
+              Not Filed, and reported from Reported Is Not Audited, distinct from accepted and from posted.
+              This essay keeps that filing receipt, that audited opinion, and that reported amount, distinct
+              from accepted and from posted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>
+              {" "}
+              is a different refusal. Complete, there, is every named acceptance criterion for a case
+              satisfied under a named measurement window — acceptance completeness, not a closed stamp and not
+              a human sign-off. Accepted, there, is a named human formally accepting that acceptance pack, or
+              the case outcome it covers, under a named decision window — human acceptance and sign-off, not
+              merely that the criteria measured as met. That accepted is not this accepted. This accepted is
+              channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. This posted is
+              public registry/disclosure posting of that accepted filing. An acceptance pack sign-off does not
+              publish a lodged filing on SEDAR+, EDGAR, a lender portal public packet, or a board minutes
+              repository. A public accession does not satisfy a plant acceptance criterion and does not name a
+              human who accepted an acceptance pack inside the Decision Case. This essay does not collapse
+              into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted. Accepted Is
+              Not Verified is a different refusal beside that one. Verified, there, is an independent check of
+              that pack or outcome against named evidence under a named measurement window. That check is not
+              an acceptance notice from a receiving authority and it is not a public posting. This essay does
+              not collapse into Accepted Is Not Verified. This essay does not rewrite Accepted Is Not
+              Verified.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a posting record is allowed to be
+            </h2>
+
+            <p>
+              Evidence may cite an acceptance record when the source of that acknowledgement is named, and
+              when the citation names the same entity, the same period, the same channel, and the same filing
+              identifier, and when the citation says the named receiving authority for that channel (regulator
+              / registry / lender / board secretary or equivalent) has issued a named acceptance /
+              completeness acknowledgement for that specific lodged filing (entity, period, channel, filing
+              identifier), with an unbroken evidence trail from that acceptance notice back to the filing
+              receipt. The acceptance record is about that acknowledgement. It is not, by itself, posting. It
+              is not an internal share link. It is not a draft upload sitting in a private folder. It is not
+              an email attachment. It is not a sentence that says we sent it to the portal. It is not a
+              dashboard green. It is not a CMMS checkbox. Evidence may cite a posting record when the source
+              of that publication is named, and when the citation names the same entity, the same period, the
+              same channel, and the same filing, and when the citation says that same accepted filing has been
+              published / made available on the named public disclosure system or registry of record for that
+              channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as
+              applicable), with a named posting identifier / URL / accession and posting timestamp, and an
+              unbroken trail from that public posting back to the acceptance notice and filing receipt. The
+              posting record is about that publication. It is not, by itself, proof of acceptance under the
+              named filing trail if no acceptance notice exists for that entity, period, and channel. A public
+              URL alone is not proof of acceptance under the named filing trail. An acceptance notice alone is
+              not a public posting. If the evidence records that the acceptance/completeness acknowledgement
+              exists while no named public posting/accession for that filing, the case may store the note as
+              accepted and must not store the note as posted. If the evidence records that a public-looking
+              URL or draft portal entry exists while no named acceptance for that entity/period/channel, the
+              case may store the note as posting theater and must not store the note as accepted. What a
+              posting record is allowed to be is that named public posting, with the named disclosure system
+              or registry of record, the named entity, the named period, the named channel, the posting
+              identifier or URL or accession, the posting timestamp, and an unbroken trail from that public
+              posting back to the acceptance notice and filing receipt. It is not an acceptance notice used as
+              proof the filing was posted. It is not permission to execute. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Surfacing is still a read.
+              Sync refuses false precision. Sync must not auto-post. Sync must not auto-accept. Sync must not
+              auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize.
+              Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat accepted as
+              posted as Learning credit. Sync must not treat filed as accepted as Learning credit. Direct
+              plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a
+              live product path. Sync does not measure posting. Sync does not measure posting for the
+              customer. Sync does not measure acceptance or posting for the customer. Sync does not post for
+              the customer. Sync refuses to pretend acceptance or posting is a status light. Sync may surface
+              an acceptance notice or a public posting beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Keep filed (named lodging receipt) from Filed Is Not Accepted,
+              audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not
+              Audited, distinct from accepted and from posted. A filing receipt is not stored as posted, an
+              acceptance notice is not stored as posted, and a public URL is not stored as accepted. This
+              accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. This
+              posted is public registry/disclosure posting of that accepted filing.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named acceptance is not posting
+            </h2>
+
+            <p>
+              Named acceptance is not posting. The accepted practice is not the posted practice. An acceptance
+              record answers whether the named receiving authority for that channel (regulator / registry /
+              lender / board secretary or equivalent) has issued a named acceptance / completeness
+              acknowledgement for that specific lodged filing (entity, period, channel, filing identifier),
+              with an unbroken evidence trail from that acceptance notice back to the filing receipt. It does
+              not, by itself, show that the same accepted filing has been published / made available on the
+              named public disclosure system or registry of record, with a named posting identifier / URL /
+              accession and posting timestamp, and an unbroken trail from that public posting back to the
+              acceptance notice and filing receipt. A record where the acceptance/completeness acknowledgement
+              exists while no named public posting/accession for that filing is still acceptance. It is not
+              posting. A firm can be accepted and still not posted. A record where a public-looking URL or
+              draft portal entry exists while no named acceptance for that entity/period/channel is still
+              posting theater. It is not acceptance. A firm can chase posting theater and still not be
+              accepted. An acceptance notice alone is not a public posting. A public URL alone is not proof of
+              acceptance under the named filing trail. Not an internal share link. Not a draft upload sitting
+              in a private folder. Not an email attachment. Not "we sent it to the portal." Not a dashboard
+              green. Not a CMMS checkbox. Not an auto-ack that only confirms message delivery. Not "under
+              review." Not a draft status page. A CMMS checkbox, ticket state, status light, or one-off clear
+              is neither. This closed is a period/books close. It is not the work-order / incident closed in
+              Closed Is Not Resolved. This essay separates a named acceptance or completeness acknowledgement
+              from a named public posting. Keep filed (named lodging receipt) from Filed Is Not Accepted,
+              audited (independent named opinion) from Audited Is Not Filed, and reported from Reported Is Not
+              Audited, distinct from accepted and from posted. This accepted is channel acceptance of a lodged
+              filing, distinct from Complete Is Not Accepted. This posted is public registry/disclosure
+              posting of that accepted filing. This essay does not collapse posting into acceptance. This
+              essay does not collapse accepted into posted.
+            </p>
+
+            <p>
+              This essay does not rewrite Filed Is Not Accepted. This essay does not collapse into Filed Is
+              Not Accepted. This essay does not rewrite Audited Is Not Filed. This essay does not collapse
+              into Audited Is Not Filed. This essay does not rewrite Reported Is Not Audited. This essay does
+              not collapse into Reported Is Not Audited. This essay does not rewrite Recognized Is Not
+              Reported. This essay does not collapse into Recognized Is Not Reported. This essay does not
+              rewrite Collected Is Not Recognized. This essay does not collapse into Collected Is Not
+              Recognized. This essay does not rewrite Closed Is Not Collected. This essay does not collapse
+              into Closed Is Not Collected. This essay does not rewrite Reconciled Is Not Closed. This essay
+              does not collapse into Reconciled Is Not Closed. This essay does not rewrite Booked Is Not
+              Reconciled. This essay does not collapse into Booked Is Not Reconciled. This essay does not
+              rewrite Settled Is Not Booked. This essay does not collapse into Settled Is Not Booked. This
+              essay does not rewrite Paid Is Not Settled. This essay does not collapse into Paid Is Not
+              Settled. This essay does not rewrite Covered Is Not Paid. This essay does not collapse into
+              Covered Is Not Paid. This essay does not rewrite Insured Is Not Covered. This essay does not
+              collapse into Insured Is Not Covered. This essay does not rewrite Certified Is Not Insured. This
+              essay does not collapse into Certified Is Not Insured. This essay does not rewrite Assured Is
+              Not Certified. This essay does not collapse into Assured Is Not Certified. This essay does not
+              rewrite Recoverable Is Not Assured. This essay does not collapse into Recoverable Is Not
+              Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This essay does not collapse
+              into Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not Rehearsed.
+              This essay does not collapse into Transferable Is Not Rehearsed. This essay does not rewrite
+              Governed Is Not Transferable. This essay does not collapse into Governed Is Not Transferable.
+              This essay does not rewrite Owned Is Not Governed. This essay does not collapse into Owned Is
+              Not Governed. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse
+              into Complete Is Not Accepted. This essay does not rewrite Accepted Is Not Verified. This essay
+              does not collapse into Accepted Is Not Verified. This essay does not rewrite Cash Is Not Margin.
+              This essay does not collapse into Cash Is Not Margin. This essay does not rewrite Closure Is Not
+              Cash. This essay does not collapse into Closure Is Not Cash. This essay does not rewrite Closed
+              Is Not Resolved. This essay does not collapse into Closed Is Not Resolved. This essay does not
+              rewrite Margin Is Not Profit. This essay does not collapse into Margin Is Not Profit. This essay
+              does not rewrite Assured Is Not Proven. This essay does not collapse into Assured Is Not Proven.
+              This essay does not rewrite Verified Is Not Assured. This essay does not collapse into Verified
+              Is Not Assured. This essay does not rewrite Green Is Not Go. This essay does not collapse into
+              Green Is Not Go. This essay does not collapse acceptance into filing. This essay does not
+              collapse filed into accepted. This essay does not collapse filing into auditing. This essay does
+              not collapse audited into filed. Sync does not measure acceptance. Sync does not measure
+              acceptance for the customer. Sync does not measure filing or acceptance for the customer. Sync
+              refuses to pretend filing or acceptance is a status light. Sync does not accept for the
+              customer. Sync does not file for the customer. Sync does not audit for the customer. Sync does
+              not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does
+              not collect the named receivable for the customer. Sync must not auto-accept. Sync must not
+              auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize.
+              Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat filed as
+              accepted as Learning credit. Sync must not treat audited as filed as Learning credit. Direct
+              plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a
+              live product path. Field proof is the named trail, not the tile. A filing record without the
+              named channel, the named receipt or confirmation, the filing timestamp, the named entity, the
+              named period, and an unbroken trail back to the audited pack is not filed. An acceptance record
+              without the named receiving authority, the named acceptance or completeness acknowledgement, the
+              named entity, the named period, the named channel, the filing identifier, and an unbroken
+              evidence trail from that acceptance notice back to the filing receipt is not accepted. False
+              confidence here is a filing receipt treated as acceptance, or an acceptance notice treated as
+              proof the pack was lodged under the named filing trail. What changes Tuesday is the refusal to
+              let one record wear the other record’s name. This essay does not collapse posting into
+              acceptance. This essay does not collapse accepted into posted. This essay does not collapse
+              acceptance into posting. Sync does not measure posting. Sync does not measure posting for the
+              customer. Sync does not measure acceptance or posting for the customer. Sync refuses to pretend
+              acceptance or posting is a status light. Sync does not post for the customer. Sync does not
+              accept for the customer. Sync must not auto-post. Sync must not treat accepted as posted as
+              Learning credit. Field proof is the named trail, not the tile. An acceptance record without the
+              named receiving authority, the named acceptance or completeness acknowledgement, the named
+              entity, the named period, the named channel, the filing identifier, and an unbroken evidence
+              trail from that acceptance notice back to the filing receipt is not accepted. A posting record
+              without the named public disclosure system or registry of record, the named posting identifier
+              or URL or accession, the posting timestamp, the named entity, the named period, the named
+              channel, and an unbroken trail from that public posting back to the acceptance notice and filing
+              receipt is not posted. False confidence here is an acceptance notice treated as a public
+              posting, or a public URL treated as proof of acceptance under the named filing trail. What
+              changes Tuesday is the refusal to let one record wear the other record’s name.
+            </p>
+
 
             <p>
               Filed is not accepted. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. Filed is not accepted. A firm can be filed and still not accepted (lodging receipt exists while no named acceptance/completeness acknowledgement for that filing). A firm can chase acceptance theater and still not be filed (an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel). A filing receipt alone is not acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized amount in the named period report pack) from Reported Is Not Audited, distinct from filed and from accepted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. Complete Is Not Accepted keeps an acceptance pack’s measured completeness off a named human sign-off of that pack. Accepted Is Not Verified keeps that named human sign-off off an independent evidence check. Neither of those refusals is this split. This split is filed versus accepted. A lodging receipt is not a named acceptance. An acceptance notice is not a lodging receipt. This essay does not collapse into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse into Accepted Is Not Verified. This essay does not rewrite Accepted Is Not Verified. This essay does not collapse into Audited Is Not Filed. This essay does not rewrite Audited Is Not Filed. Audited Is Not Filed separates an independent named opinion or assurance conclusion from a named filing receipt. This essay separates a named filing receipt from a named acceptance or completeness acknowledgement. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend filing or acceptance is a status light. Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does not measure filing or acceptance for the customer. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not accept for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync refuses to pretend filing or acceptance is a status light. Sync may surface a filing receipt or an acceptance notice beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat filed as accepted as Learning credit. Sync must not treat audited as filed as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
@@ -12871,54 +13295,6 @@ export default function FiledIsNotAcceptedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/accepted-is-not-posted"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Accepted Is Not Posted
-              </Link>
-              {' '}
-              on why accepted is still not posted. Accepted is not posted. Accepted means the named receiving
-              authority for that channel (regulator / registry / lender / board secretary or equivalent) has
-              issued a named acceptance / completeness acknowledgement for that specific lodged filing
-              (entity, period, channel, filing identifier), with an unbroken evidence trail from that
-              acceptance notice back to the filing receipt — not an auto-ack that only confirms message
-              delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS
-              checkbox. Posted means that same accepted filing has been published / made available on the
-              named public disclosure system or registry of record for that channel (e.g.
-              SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable),
-              with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail
-              from that public posting back to the acceptance notice and filing receipt — not an internal
-              share link, not a draft upload sitting in a private folder, not an email attachment, not "we
-              sent it to the portal," not a dashboard green, and not a CMMS checkbox. A firm can be accepted
-              and still not posted (acceptance/completeness acknowledgement exists while no named public
-              posting/accession for that filing). A firm can chase posting theater and still not be accepted
-              (a public-looking URL or draft portal entry exists while no named acceptance for that
-              entity/period/channel). An acceptance notice alone is not a public posting. A public URL alone
-              is not proof of acceptance under the named filing trail. A CMMS checkbox, ticket state, status
-              light, or one-off clear is neither. Keep filed (named lodging receipt) from Filed Is Not
-              Accepted, audited (independent named opinion) from Audited Is Not Filed, and reported from
-              Reported Is Not Audited, distinct from accepted and from posted. This accepted is channel
-              acceptance of a lodged filing, distinct from Complete Is Not Accepted. This posted is public
-              registry/disclosure posting of that accepted filing. This essay separates a named acceptance or
-              completeness acknowledgement from a named public posting. False confidence here is an acceptance
-              notice treated as a public posting, or a public URL treated as proof of acceptance under the
-              named filing trail. Field proof is the named trail, not the tile. What changes Tuesday is the
-              refusal to let one record wear the other record’s name. Sync must not auto-post. Sync must not
-              auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync
-              must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must
-              not treat accepted as posted as Learning credit. Sync must not treat filed as accepted as
-              Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path.
-              Billing write-back is not a live product path. Filed Is Not Accepted separates a named filing
-              receipt from a named acceptance or completeness acknowledgement. Accepted Is Not Posted
-              separates that acceptance from a named public posting. Sync does not measure acceptance or
-              posting for the customer. Sync does not measure posting. Sync does not measure posting for the
-              customer. Sync must not auto-post. Sync must not treat accepted as posted as Learning credit.
-              Sync refuses to pretend acceptance or posting is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -12978,7 +13354,7 @@ export default function FiledIsNotAcceptedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="filed-is-not-accepted" />
+          <InsightNextSteps slug="accepted-is-not-posted" />
         </motion.article>
       </div>
     </main>
