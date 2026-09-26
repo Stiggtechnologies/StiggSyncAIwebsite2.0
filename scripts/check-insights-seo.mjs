@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const closedIndex = slugs.indexOf('executed-is-not-closed');
 const executedIndex = slugs.indexOf('authorized-is-not-executed');
 const authorizedIndex = slugs.indexOf('verified-is-not-authorized');
 const signoffIndex = slugs.indexOf('accepted-is-not-verified');
@@ -62,7 +63,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    executedIndex >= 0 &&
+    closedIndex >= 0 &&
+    executedIndex > closedIndex &&
     authorizedIndex > executedIndex &&
     signoffIndex > authorizedIndex &&
     acceptedIndex > signoffIndex &&
@@ -105,7 +107,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -9993,8 +9995,7 @@ if (executedBlock.includes("next: 'strategic-pilot'")) {
   fail('authorized-is-not-executed next step is the Field Manual');
 }
 
-const executedPage = read('app/insights/authorized-is-not-executed/page.tsx');
-for (const required of [
+const executedPageRequired = [
   'Accepted is not verified',
   'human acceptance/sign-off, not an independent check',
   'independent check of that pack or outcome against named evidence under a named measurement window',
@@ -10093,9 +10094,67 @@ for (const required of [
   '/insights/human-decision-is-not-optional',
   '/insights/cleared-is-not-complete',
   '/insights/ready-is-not-cleared',
-]) {
+];
+const executedPage = read('app/insights/authorized-is-not-executed/page.tsx');
+for (const required of executedPageRequired) {
   if (!executedPage.includes(required)) {
     fail(`authorized-is-not-executed page must include ${required}`);
+  }
+}
+
+const closedPageRequired = [
+  ...executedPageRequired,
+  'Executed is not closed',
+  'execution happened, not that the case is finished administratively',
+  'formally closing the case/work/exception under a named closure window',
+  'administrative/work-state closure, not merely that the move ran',
+  'Execution evidence without named closure is not closed',
+  'A closed stamp without execution evidence is not executed',
+  'A CMMS checkbox, ticket state, or status light is neither',
+  'A firm with execution can still lack closure',
+  'A firm with closure can still lack execution',
+  'A closure note alone proves neither',
+  'A closure note is not a green',
+  'The completed move is not the closed case',
+  'What a closure note is allowed to be',
+  'Completed execution is not named closure',
+  'Sync does not execute or close cases for the customer',
+  'Sync does not authorize, execute, or close for the customer',
+  'Sync may surface an execution/completed-move note or a closure/end-state note',
+  'does not collapse closure into execution',
+  'does not collapse executed into closed',
+  'does not rewrite Authorized Is Not Executed',
+  'does not rewrite Closure Is Not Complete',
+  'does not rewrite Control Is Not Closure',
+  'does not rewrite Accountability Is Not Closure',
+  'does not rewrite Cleared Is Not Complete',
+  'does not rewrite Ready Is Not Cleared',
+  'does not rewrite Closure Is Not Cash',
+  'practice record that says executed is closed',
+  'executed as closed',
+  'separates completed execution from named closure',
+  '/insights/authorized-is-not-executed',
+  'does not collapse into Authorized Is Not Executed',
+  'does not collapse into Closure Is Not Complete',
+  'does not collapse into Control Is Not Closure',
+  'does not collapse into Accountability Is Not Closure',
+  'does not collapse into Cleared Is Not Complete',
+  'does not collapse into Ready Is Not Cleared',
+  'does not collapse into Closure Is Not Cash',
+  'Evidence from the plant beats the execution note when the note is being used as closure',
+  'Evidence from the plant beats the closure note when the note is being used as execution',
+  '/insights/closure-is-not-complete',
+  '/insights/control-is-not-closure',
+  '/insights/accountability-is-not-closure',
+  '/insights/closure-is-not-cash',
+  '/insights/evidence-lineage-is-not-optional',
+  'Evidence lineage is not optional',
+  'Human decision is not optional',
+];
+const closedPage = read('app/insights/executed-is-not-closed/page.tsx');
+for (const required of closedPageRequired) {
+  if (!closedPage.includes(required)) {
+    fail(`executed-is-not-closed page must include ${required}`);
   }
 }
 
@@ -10104,6 +10163,74 @@ if (
   !authorizedPage.includes('/insights/authorized-is-not-executed')
 ) {
   fail('verified-is-not-authorized must point the series forward to authorized-is-not-executed');
+}
+
+for (const slug of ['authorized-is-not-executed', 'verified-is-not-authorized', 'action-is-not-execution', ...[
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]]) {
+  if (!stepBlock(slug).includes("'executed-is-not-closed'")) {
+    fail(`${slug} related reading must cite executed-is-not-closed`);
+  }
+}
+
+const closedBlock = stepBlock('executed-is-not-closed');
+for (const required of ['authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', ...acceptedReadingRequired]) {
+  if (!closedBlock.includes(`'${required}'`)) {
+    fail(`executed-is-not-closed related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(closedBlock)) {
+  fail('executed-is-not-closed related reading must include the Strategic Pilot');
+}
+if (closedBlock.includes("next: 'strategic-pilot'")) {
+  fail('executed-is-not-closed next step is the Field Manual');
+}
+
+if (
+  !executedPage.includes('The series continues with') ||
+  !executedPage.includes('/insights/executed-is-not-closed')
+) {
+  fail('authorized-is-not-executed must point the series forward to executed-is-not-closed');
 }
 
 function readingSlugs(name) {
