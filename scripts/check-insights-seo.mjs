@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const deliveredOperatedIndex = slugs.indexOf('delivered-is-not-operated');
 const closedDeliveredIndex = slugs.indexOf('closed-is-not-delivered');
 const clearedCloseIndex = slugs.indexOf('cleared-is-not-closed');
 const recordedClearanceIndex = slugs.indexOf('recorded-is-not-cleared');
@@ -100,7 +101,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    closedDeliveredIndex >= 0 &&
+    deliveredOperatedIndex >= 0 &&
+    closedDeliveredIndex > deliveredOperatedIndex &&
     clearedCloseIndex > closedDeliveredIndex &&
     recordedClearanceIndex > clearedCloseIndex &&
     recordedIndex > recordedClearanceIndex &&
@@ -181,7 +183,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -14286,6 +14288,84 @@ if (
   fail('cleared-is-not-closed must point the series forward to closed-is-not-delivered');
 }
 
+
+
+const deliveredOperatedPageRequired = [
+  ...closedDeliveredPageRequired,
+  "Delivered Is Not Operated",
+  "Delivered is not operated",
+  "the named asset / system / scope that was delivered is actually in instrument-required productive operation for the named scope",
+  "not the delivery alone, not \"they have the keys so it is running,\" not a dashboard green, not a CMMS checkbox, and not treating handover theater as automatic productive operation",
+  "A firm can be delivered and still not operated",
+  "delivery/handover/possession trail exists while required commissioning/in-service/operating evidence is missing",
+  "A firm can claim operating theater and still not be delivered",
+  "it is running / producing / in service",
+  "Delivery evidence alone is not operation",
+  "An operating claim alone is not proof of named delivery under the close/delivery trail",
+  "The delivered practice is not the operated practice",
+  "What an operating record is allowed to be",
+  "Named delivery is not operated",
+  "Sync does not measure operated",
+  "Sync does not measure operated for the customer",
+  "Sync does not measure delivered or operated for the customer",
+  "Sync may surface a delivery record or an operating record",
+  "does not collapse operated into delivered",
+  "does not collapse delivered into operated",
+  "does not collapse this operated into transferable",
+  "does not collapse this operated into controlled",
+  "does not collapse this operated into executed",
+  "does not collapse into Action Is Not Execution",
+  "does not collapse into Closed Is Not Delivered",
+  "does not rewrite Closed Is Not Delivered",
+  "instrument-required commissioning/in-service/productive-operation completion evidence for the named asset/system that depended on that delivery",
+  "instrument-required delivery/handover/possession/turnover completion evidence for the named asset/scope after close",
+  "practice record that says delivered is operated",
+  "delivered as operated",
+  "separates instrument-required delivery, handover, possession, or turnover completion from",
+  "/insights/closed-is-not-delivered",
+  "Evidence from the plant beats the delivery record when the record is being used as operated",
+  "Evidence from the plant beats the operating claim when the claim is being used as proof of named delivery under the close/delivery trail",
+  "treat delivered as operated as Learning credit",
+  "Sync refuses to pretend delivered or operated is a status light",
+  "Sync does not deem operated for the customer",
+  "Sync must not auto-deem-operated",
+  "Keep closed from Closed Is Not Delivered, cleared from Cleared Is Not Closed, recorded from Recorded Is Not Cleared, released from Released Is Not Recorded, remediated from Remediated Is Not Released, enforced from Enforced Is Not Remediated, binding from Binding Is Not Enforced, effective from Effective Is Not Binding, posted from Posted Is Not Effective, accepted from Accepted Is Not Posted, filed from Filed Is Not Accepted, audited from Audited Is Not Filed, and reported from Reported Is Not Audited, distinct from delivered and from operated",
+  "False confidence here is delivery evidence treated as operation, or an operating claim treated as proof of named delivery under the close/delivery trail.",
+  "signed commissioning or in-service certificate with named date/parties/scope, first productive run / operating log against the delivered configuration, operator acceptance into the named operating procedure or CMMS operating baseline, duty-cycle or production evidence required by the instrument, or other named operating-in-service completion evidence",
+  "one-off action",
+  "one-off start-up is neither",
+  "capability to move",
+  "ongoing operating control",
+];
+const deliveredOperatedPage = read('app/insights/delivered-is-not-operated/page.tsx');
+for (const required of deliveredOperatedPageRequired) {
+  if (!deliveredOperatedPage.includes(required)) {
+    fail(`delivered-is-not-operated page must include ${required}`);
+  }
+}
+
+const deliveredOperatedBlock = stepBlock('delivered-is-not-operated');
+for (const required of ['closed-is-not-delivered', 'cleared-is-not-closed', 'recorded-is-not-cleared', 'released-is-not-recorded', 'remediated-is-not-released', 'enforced-is-not-remediated', 'binding-is-not-enforced', 'effective-is-not-binding', 'posted-is-not-effective', 'accepted-is-not-posted', 'filed-is-not-accepted', 'audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!deliveredOperatedBlock.includes(`'${required}'`)) {
+    fail(`delivered-is-not-operated related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(deliveredOperatedBlock)) {
+  fail('delivered-is-not-operated related reading must include the Strategic Pilot');
+}
+if (deliveredOperatedBlock.includes("next: 'strategic-pilot'")) {
+  fail('delivered-is-not-operated next step is the Field Manual');
+}
+if (!stepBlock('closed-is-not-delivered').includes("'delivered-is-not-operated'")) {
+  fail('closed-is-not-delivered related reading must point forward to delivered-is-not-operated');
+}
+
+if (
+  !closedDeliveredPage.includes('The series continues with') ||
+  !closedDeliveredPage.includes('/insights/delivered-is-not-operated')
+) {
+  fail('closed-is-not-delivered must point the series forward to delivered-is-not-operated');
+}
 
 function readingSlugs(name) {
   const block = section(name);
