@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const ownedIndex = slugs.indexOf('compounded-is-not-owned');
 const compoundedIndex = slugs.indexOf('scaled-is-not-compounded');
 const scaledIndex = slugs.indexOf('sustained-is-not-scaled');
 const sustainedIndex = slugs.indexOf('adopted-is-not-sustained');
@@ -70,7 +71,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    compoundedIndex >= 0 &&
+    ownedIndex >= 0 &&
+    compoundedIndex > ownedIndex &&
     scaledIndex > compoundedIndex &&
     sustainedIndex > scaledIndex &&
     adoptedIndex > sustainedIndex &&
@@ -121,7 +123,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -11092,6 +11094,138 @@ if (
   !scaledPage.includes('/insights/scaled-is-not-compounded')
 ) {
   fail('sustained-is-not-scaled must point the series forward to scaled-is-not-compounded');
+}
+
+
+const ownedPageRequired = [
+  ...compoundedPageRequired,
+  'Compounded is not owned',
+  'a named accountable owner can change, stop, transfer, audit, or withhold the compounding system',
+  'playbooks, tooling, staffing rights, exception paths, residual claim on the learning',
+  'clear authority and evidence the owner still holds it',
+  'not the org somehow got better',
+  'not a shared drive nobody owns',
+  'not a KPI chart that improved while no one can redirect the machine',
+  'A firm can compound learning across ten sites and still not own the compounding system',
+  'A firm can own a practice tightly on one line and still never have compounded it',
+  'Multi-site improvement alone is not ownership',
+  'A better unit-cost chart alone is not ownership',
+  'The compounded practice is not the owned practice',
+  'What an ownership note is allowed to be',
+  'Named compounding is not ownership',
+  'Sync does not measure ownership',
+  'Sync does not measure ownership for the customer',
+  'Sync does not measure compounding or ownership for the customer',
+  'Sync must not auto-compound or auto-assign ownership',
+  'Sync may surface a compounding/accumulation note or an ownership/accountable-owner note',
+  'does not collapse ownership into compounding',
+  'does not collapse compounded into owned',
+  'does not rewrite Scaled Is Not Compounded',
+  'does not rewrite Sustained Is Not Scaled',
+  'does not rewrite Adopted Is Not Sustained',
+  'does not rewrite Ownership Is Not Control',
+  'does not rewrite Control Is Not Closure',
+  'does not rewrite Cash Is Not Margin',
+  'practice record that says compounded is owned',
+  'compounded as owned',
+  'separates a compounded practice from ownership of the compounding system',
+  '/insights/scaled-is-not-compounded',
+  'does not collapse into Scaled Is Not Compounded',
+  'does not collapse into Sustained Is Not Scaled',
+  'does not collapse into Adopted Is Not Sustained',
+  'does not collapse into Ownership Is Not Control',
+  'does not collapse into Control Is Not Closure',
+  'does not collapse into Cash Is Not Margin',
+  'Evidence from the plant beats the compounding note when the note is being used as ownership',
+  'Evidence from the plant beats the ownership note when the note is being used as compounding',
+  'treat compounded as owned as Learning credit',
+  'Sync refuses to pretend compounding or ownership is a status light',
+];
+const ownedPage = read('app/insights/compounded-is-not-owned/page.tsx');
+for (const required of ownedPageRequired) {
+  if (!ownedPage.includes(required)) {
+    fail(`compounded-is-not-owned page must include ${required}`);
+  }
+}
+
+for (const slug of [
+  'scaled-is-not-compounded',
+  'sustained-is-not-scaled',
+  'adopted-is-not-sustained',
+  'trusted-is-not-adopted',
+  'proven-is-not-trusted',
+  'resolved-is-not-proven',
+  'closed-is-not-resolved',
+  'executed-is-not-closed',
+  'authorized-is-not-executed',
+  'verified-is-not-authorized',
+  'action-is-not-execution',
+  'simulation-is-not-proof',
+  'accepted-is-not-verified',
+  'complete-is-not-accepted',
+  'closure-is-not-complete',
+  'control-is-not-closure',
+  'ownership-is-not-control',
+  'accountability-is-not-ownership',
+  'authority-is-not-accountability',
+  'judgment-is-not-authority',
+  'learning-is-not-judgment',
+  'results-is-not-learning',
+  'execution-is-not-results',
+  'strategy-is-not-execution',
+  'optionality-is-not-strategy',
+  'flexibility-is-not-optionality',
+  'liquidity-is-not-flexibility',
+  'solvency-is-not-liquidity',
+  'survival-is-not-solvency',
+  'runway-is-not-survival',
+  'cash-is-not-runway',
+  'arr-is-not-cash',
+  'revenue-is-not-arr',
+  'impact-is-not-revenue',
+  'outcome-is-not-impact',
+  'value-is-not-outcome',
+  'profit-is-not-value',
+  'cash-is-not-margin',
+  'closure-is-not-cash',
+  'accountability-is-not-closure',
+  'authorization-is-not-accountability',
+  'complete-is-not-verified',
+  'cleared-is-not-complete',
+  'ready-is-not-cleared',
+  'verified-is-not-assured',
+  'assured-is-not-proven',
+  'recommend-is-not-authorize',
+  'human-decision-is-not-optional',
+  'proof-is-not-authorization',
+  'learning-requires-a-verified-outcome',
+  'verification-is-not-optional',
+  'coverage-is-not-control',
+  'dashboard-is-not-control',
+]) {
+  if (!stepBlock(slug).includes('compounded-is-not-owned')) {
+    fail(`${slug} related reading must cite compounded-is-not-owned`);
+  }
+}
+
+const ownedBlock = stepBlock('compounded-is-not-owned');
+for (const required of ['scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!ownedBlock.includes(`'${required}'`)) {
+    fail(`compounded-is-not-owned related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(ownedBlock)) {
+  fail('compounded-is-not-owned related reading must include the Strategic Pilot');
+}
+if (ownedBlock.includes("next: 'strategic-pilot'")) {
+  fail('compounded-is-not-owned next step is the Field Manual');
+}
+
+if (
+  !compoundedPage.includes('The series continues with') ||
+  !compoundedPage.includes('/insights/compounded-is-not-owned')
+) {
+  fail('scaled-is-not-compounded must point the series forward to compounded-is-not-owned');
 }
 
 function readingSlugs(name) {
