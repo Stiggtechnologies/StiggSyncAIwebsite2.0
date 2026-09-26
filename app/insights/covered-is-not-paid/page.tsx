@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('insured-is-not-covered');
+const article = getInsightArticle('covered-is-not-paid');
 
-export default function InsuredIsNotCoveredPage() {
+export default function CoveredIsNotPaidPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,421 @@ export default function InsuredIsNotCoveredPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Insured Is Not Covered</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Covered Is Not Paid</h1>
+
+            <p className="text-xl text-gray-400">
+              Covered is not paid. Covered means the named failure, loss, location, asset class, cause,
+              and window are inside the policy’s responding grant of coverage (triggers met, exclusions
+              not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so
+              a competent claims path would treat the event as in-scope — not "we have a policy," not a
+              certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS
+              checkbox. Paid means indemnity / loss payment / agreed settlement funds have actually moved
+              (or a binding written settlement with payment date and amount is executed and trackable) for
+              that named covered event under today’s owner and window — not a coverage opinion, not an
+              FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked
+              covered. Covered is not paid. A firm can be covered and still not paid (event in-scope;
+              claim open, denied on process, underpaid, delayed, or never filed). A firm can be paid for
+              a named loss and still not covered in the sense operators mean (ex gratia / goodwill
+              payment, or payment under a different instrument than the one they thought responded). A
+              coverage grant alone is not payment. A payment alone is not proof this event was in-scope
+              under the named policy. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Keep them apart: a coverage grant alone is not payment; a payment alone is not
+              proof this event was in-scope under the named policy; a CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Insured is not covered. Insured remains a named,
+              in-force indemnity/coverage instrument on file. Recommend is not authorize. Evidence lineage
+              is not optional. Human decision is not optional. Evidence from the plant beats the note.
+              Surfacing is still a read. Sync refuses false precision. Sync refuses to pretend coverage
+              or payment is a status light. Sync does not measure coverage. Sync does not measure coverage
+              for the customer. Sync does not measure payment. Sync does not measure payment for the
+              customer. Sync does not measure coverage or payment for the customer. Sync does not issue
+              certificates for the customer. Sync does not issue policies for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not pay for the customer. Sync does not settle
+              claims for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync
+              must not auto-transfer ownership. Sync must not auto-declare RTO met. Sync must not
+              auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync
+              must not auto-issue certificates. Sync must not auto-issue policies. Sync must not
+              auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
+              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or
+              auto-settle.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not
+              closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not
+              resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is
+              not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned.
+              Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed
+              is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not
+              insured. Insured is not covered. Covered is not paid. Insured, in the prior essay, means a
+              named, in-force indemnity/coverage instrument exists (policy, binder, endorsement, named
+              insured + limits + triggers + exclusions + claims path on file). Covered, there, means the
+              named failure, loss, location, asset class, cause, and window are inside the policy’s
+              responding grant of coverage so a competent claims path would treat the event as in-scope.
+              That sentence is the prior refusal. The words responding grant in that sentence name
+              triggers met, exclusions not barring, the named insured correct, limits not exhausted, and
+              notice conditions satisfiable for this failure, this location, this asset class, this cause,
+              and this window. They do not name indemnity / loss payment / agreed settlement funds that
+              have actually moved. They do not show a binding written settlement with payment date and
+              amount executed and trackable for that named covered event under today’s owner and window.
+              This essay does not rewrite that sentence. This essay does not collapse into that split.
+              Insurance versus coverage is the prior refusal. This essay separates a responding grant of coverage for this event from indemnity that has actually moved. A coverage determination is
+              not evidence the indemnity moved. A payment that moved is not evidence this event was
+              in-scope under the named policy.{" "}
+              <Link
+                href="/insights/insured-is-not-covered"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Insured Is Not Covered
+              </Link>
+              {" "}
+              keeps an in-force coverage instrument off a responding grant for this event. Read the prior
+              essay at /insights/insured-is-not-covered. Certified Is Not Insured keeps a certification
+              stamp off a named, in-force indemnity instrument. Assured Is Not Certified keeps a dated
+              assurance record off a program stamp. Recoverable Is Not Assured keeps a one-time restore
+              inside a named RTO/RPO off independent, recurring verification that recovery still holds.
+              Rehearsed Is Not Recoverable keeps a rehearsed handoff off a proven restore to a named
+              service level inside a named RTO/RPO. Transferable Is Not Rehearsed keeps a transferable
+              governed owned compounding system off a handoff run under stress. Governed Is Not
+              Transferable keeps a governed owned compounding system off evidence continuity under a new
+              named owner. Owned Is Not Governed keeps a named owner of the compounding system off rules
+              of engagement. Assured Is Not Proven keeps time-bounded confidence that an asset stays
+              known-good under operating conditions off a closed evidentiary chain for a specific claim.
+              Verified Is Not Assured keeps an independent check off standing assurance. Green Is Not Go
+              keeps a status light off permission to run. None of those refusals is this split. A coverage
+              opinion is not this payment. A wire, a draft, or a goodwill check is not this coverage. This
+              coverage is the named event sitting inside the responding grant so a competent claims path
+              would treat the event as in-scope. This payment is indemnity that has actually moved, or a
+              binding written settlement with payment date and amount that is executed and trackable, for
+              that named covered event under today’s owner and window. Recommend Is Not Authorize,
+              Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split.
+              Sync may surface a coverage determination or a payment record beside Evidence, Verification,
+              and the closed outcome. Surfacing is still a read. Sync refuses false precision. Sync
+              refuses when evidence is insufficient. Sync refuses to pretend coverage or payment is a
+              status light. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit
+              Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates,
+              auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, or treat covered as paid as Learning credit. This essay
+              does not rewrite Insured Is Not Covered. This essay does not rewrite Certified Is Not
+              Insured. This essay does not rewrite Assured Is Not Certified. This essay does not rewrite
+              Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This
+              essay does not rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed
+              Is Not Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not
+              rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This
+              essay does not rewrite Green Is Not Go. This essay does not collapse into Insured Is Not
+              Covered. This essay does not collapse into Certified Is Not Insured. This essay does not
+              collapse into Assured Is Not Certified. This essay does not collapse into Recoverable Is Not
+              Assured. This essay does not collapse into Rehearsed Is Not Recoverable. This essay does not
+              collapse into Transferable Is Not Rehearsed. This essay does not collapse into Governed Is
+              Not Transferable. This essay does not collapse into Owned Is Not Governed. This essay does
+              not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not
+              Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              covered into paid. This essay does not collapse payment into coverage. This essay does not
+              collapse insured into covered.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Covered is not paid. Covered means the named failure, loss, location, asset class, cause, and window are inside the policy’s responding grant of coverage (triggers met, exclusions not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims path would treat the event as in-scope — not "we have a policy," not a certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a binding written settlement with payment date and amount is executed and trackable) for that named covered event under today’s owner and window — not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked covered. A firm can be covered and still not paid, when event in-scope; claim open, denied on process, underpaid, delayed, or never filed, is the only payment story on the record. A firm can be paid for a named loss and still not covered in the sense operators mean, when ex gratia / goodwill payment, or payment under a different instrument than the one they thought responded, is the only coverage story on the record. A coverage grant alone is not payment. A payment alone is not proof this event was in-scope under the named policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a coverage determination or a payment record beside Evidence, Verification, and the closed outcome. This essay does not collapse payment into coverage. This essay does not collapse covered into paid. This essay does not collapse into Insured Is Not Covered. This essay does not collapse into Certified Is Not Insured. This essay does not collapse into Assured Is Not Certified. This essay does not collapse into Recoverable Is Not Assured. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. A practice record that says covered is paid is not shown payment. Sync refuses to pretend coverage or payment is a status light. Treating covered as paid records a responding grant as indemnity that has actually moved, under the honesty and verification boundary. A coverage determination can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the coverage determination when the determination is being used as payment. Evidence from the plant beats the payment when the payment is being used as coverage for this event. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync must not treat covered as paid as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync does not measure coverage or payment for the customer. Sync does not measure payment for the customer. Sync does not pay for the customer. Sync does not settle claims for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The covered practice is not the paid practice
+            </h2>
+
+            <p>
+              Covered means the named failure, loss, location, asset class, cause, and window are inside
+              the policy’s responding grant of coverage (triggers met, exclusions not barring, named
+              insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims
+              path would treat the event as in-scope — not "we have a policy," not a certificate of
+              insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. Paid means
+              indemnity / loss payment / agreed settlement funds have actually moved (or a binding written
+              settlement with payment date and amount is executed and trackable) for that named covered
+              event under today’s owner and window — not a coverage opinion, not an FNOL acknowledgment,
+              not a reserve set, not "we’ll look into it," and not a ticket marked covered. Sync may
+              surface a coverage determination or a payment record beside Evidence, Verification, and the
+              closed outcome. A practice record that says covered is paid is not shown payment. Evidence
+              from the plant beats the coverage determination when the determination is being used as
+              payment. Evidence from the plant beats the payment when the payment is being used as
+              coverage for this event. Evidence from the plant beats the note. The covered practice is not
+              the paid practice.
+            </p>
+
+            <p>
+              One line can hold a responding grant. The failure is named. The loss is named. The location,
+              the asset class, the cause, and the window are named. Triggers are met. Exclusions are not
+              barring. The named insured is correct. Limits are not exhausted. Notice conditions are
+              satisfiable. A competent claims path would treat the event as in-scope. Then the record
+              stops. It does not say indemnity moved. It does not say loss payment moved. It does not say
+              agreed settlement funds moved. It does not say a binding written settlement with payment date
+              and amount is executed and trackable for that named covered event under today’s owner and
+              window. Event in-scope; claim open, denied on process, underpaid, delayed, or never filed.
+              That record can be covered. It is not paid. A firm can be covered and still not paid. A
+              coverage opinion is not payment. An FNOL acknowledgment is not payment. A reserve set is not
+              payment. "We’ll look into it" is not payment. A ticket marked covered is not payment. Money
+              can move and still not be this coverage. An ex gratia / goodwill payment, or payment under a
+              different instrument than the one they thought responded, can leave the named event outside
+              the policy the operators meant. A firm can be paid for a named loss and still not covered in
+              the sense operators mean. A coverage grant alone is not payment. A payment alone is not proof
+              this event was in-scope under the named policy. A sentence that says "we have a policy" is
+              not a responding grant, and it is not funds that moved. A certificate of insurance PDF is not
+              a settlement with a payment date and amount. A broker email saying "you’re good" is not
+              indemnity. A CMMS checkbox, ticket state, status light, or one-off clear is neither. A
+              one-off clear is a single quiet interval. It is not a responding grant, and it is not a
+              trackable payment for this named event. The covered practice is not the paid practice. This
+              essay does not invent a customer, a price, or a return. It states no savings figure, states
+              no price, and states no OEM limit. A practice record that says covered is paid is not a
+              customer plant release, and it is not shown payment. Treating covered as paid records a grant
+              the plant has not placed on funds that moved, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/insured-is-not-covered"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Insured Is Not Covered
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/insured-is-not-covered. Insured,
+              there, means a named, in-force indemnity/coverage instrument exists (policy, binder,
+              endorsement, named insured + limits + triggers + exclusions + claims path on file) — not the
+              same as the specific restore/continuity/loss event actually falling inside that instrument’s
+              responding terms today. Covered, there, means the named failure, loss, location, asset class,
+              cause, and window are inside the policy’s responding grant of coverage. A policy alone is not
+              coverage for this event. Coverage language alone is not an in-force policy. That refusal
+              stops at a responding grant. It does not ask whether indemnity / loss payment / agreed
+              settlement funds have actually moved for that named covered event under today’s owner and
+              window. The phrase in-scope, in that essay, is not this payment. It is not a binding written
+              settlement with payment date and amount executed and trackable. Insured is not covered is a
+              different refusal. Covered is not paid is the next refusal. Named coverage is not payment,
+              and a payment is not proof this event was in-scope under the named policy. Insured Is Not
+              Covered separates an in-force coverage instrument from a responding grant of coverage for this event. This essay separates a responding grant of coverage for this event from indemnity that has actually moved. This essay does not rewrite Insured Is Not Covered. This essay does
+              not collapse into Insured Is Not Covered. This essay does not collapse insured into covered.
+              This essay does not collapse covered into paid.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/certified-is-not-insured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Certified Is Not Insured
+              </Link>
+              {" "}
+              keeps a certification stamp off a named, in-force indemnity instrument. A program stamp is
+              not funds that moved, and a policy on file is not a settlement with a payment date and
+              amount. This essay does not rewrite Certified Is Not Insured. This essay does not collapse
+              into Certified Is Not Insured.{" "}
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              keeps a dated assurance record off a program stamp that a recovery/continuity program exists
+              or once met a named checklist. A dated re-prove of restore is not a wire, and a certification
+              stamp is not a binding settlement. This essay does not rewrite Assured Is Not Certified. This
+              essay does not collapse into Assured Is Not Certified.{" "}
+              <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>
+              {" "}
+              keeps a proven restore to a named service level inside a named RTO/RPO off independent,
+              recurring verification that recovery capability still holds. A one-time restore is not
+              indemnity, and an assurance PDF is not payment under today’s owner and window. This essay
+              does not rewrite Recoverable Is Not Assured. This essay does not collapse into Recoverable Is
+              Not Assured.{" "}
+              <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>
+              {" "}
+              keeps a named handoff run under stress off a proven restore to a named service level inside
+              a named RTO/RPO. A tabletop pass is not a reserve that became payment, and a backup job green
+              light is not funds that moved. This essay does not rewrite Rehearsed Is Not Recoverable. This
+              essay does not collapse into Rehearsed Is Not Recoverable.{" "}
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>
+              {" "}
+              keeps a governed owned compounding system that can change hands with evidence continuity off
+              a handoff run under stress. A succession plan PDF is not a settlement, and a tabletop is not
+              payment for this covered event. This essay does not rewrite Transferable Is Not Rehearsed.
+              This essay does not collapse into Transferable Is Not Rehearsed.{" "}
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>
+              {" "}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new named
+              owner. A rule of engagement is not a payment date and amount, and a handoff pack is not
+              indemnity that moved. This essay does not rewrite Governed Is Not Transferable. This essay
+              does not collapse into Governed Is Not Transferable.{" "}
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>
+              {" "}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system off rules of engagement. A name on the system is not the payee on a
+              settlement, and a rule of engagement is not a coverage grant that became payment. This essay
+              does not rewrite Owned Is Not Governed. This essay does not collapse into Owned Is Not
+              Governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              {" "}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating
+              conditions, with ownership and monitoring, off a closed evidentiary chain for a specific
+              claim under named conditions. That standing claim can be probabilistic. Coverage in this
+              essay is not that standing known-good claim. Coverage here is the named failure inside the
+              responding grant. Payment here is not that standing known-good claim either. Payment here is
+              indemnity that has actually moved for that named covered event under today’s owner and
+              window. A known-good asset claim is not a wire, and a closed evidentiary chain is not a
+              binding written settlement. This essay does not rewrite Assured Is Not Proven. This essay
+              does not collapse into Assured Is Not Proven.{" "}
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              {" "}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is an evidence check versus standing confidence. It is not a responding
+              grant versus funds that moved. An independent check is not payment, and standing confidence
+              is not proof this event was in-scope under the named policy. This essay does not rewrite
+              Verified Is Not Assured. This essay does not collapse into Verified Is Not Assured.{" "}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              {" "}
+              keeps a green tile off permission to run. A status light is not a coverage determination,
+              and a status light is not a payment record. This essay does not rewrite Green Is Not Go.
+              This essay does not collapse into Green Is Not Go. This essay does not collapse payment into
+              coverage.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a payment record is allowed to be
+            </h2>
+
+            <p>
+              Covered means the named failure, loss, location, asset class, cause, and window are inside
+              the policy’s responding grant of coverage so a competent claims path would treat the event
+              as in-scope. Paid means indemnity / loss payment / agreed settlement funds have actually
+              moved, or a binding written settlement with payment date and amount is executed and
+              trackable, for that named covered event under today’s owner and window. A coverage grant
+              alone is not payment. A payment alone is not proof this event was in-scope under the named
+              policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may
+              surface a coverage determination or a payment record beside Evidence, Verification, and the
+              closed outcome. This essay does not collapse covered into paid.
+            </p>
+
+            <p>
+              Evidence may cite a coverage determination when the source of that determination is named,
+              and when the citation names the failure, the loss, the location, the asset class, the cause,
+              and the window, and when the citation says the triggers are met, the exclusions are not
+              barring, the named insured is correct, the limits are not exhausted, and the notice
+              conditions are satisfiable, so a competent claims path would treat the event as in-scope.
+              The determination is about this event. It is not, by itself, indemnity that moved. It is not
+              a coverage opinion used as a wire. It is not an FNOL acknowledgment. It is not a reserve set.
+              It is not "we’ll look into it." It is not a ticket marked covered. Evidence may cite a
+              payment record when the source of that record is named, and when the citation names the
+              covered event, today’s owner, and the window, and when the citation says indemnity, loss
+              payment, or agreed settlement funds have actually moved, or a binding written settlement with
+              payment date and amount is executed and trackable. The record is about funds for that named
+              event. It is not a coverage opinion. It is not an FNOL acknowledgment. It is not a reserve
+              set. It is not a ticket marked covered. If the evidence records the event in-scope and does
+              not record funds that moved — because the claim is open, denied on process, underpaid,
+              delayed, or never filed — the case may store the note as covered and must not store the note
+              as paid. If the evidence records an ex gratia / goodwill payment, or payment under a
+              different instrument than the one they thought responded, and does not record that this event
+              was in-scope under the named policy, the case may store the note as money that moved and must
+              not store the note as covered in the sense operators mean. What a payment record is allowed
+              to be is that moved indemnity, or that executed and trackable settlement, the firm can still
+              show for this named covered event. It is not a coverage grant used as proof of payment. It is
+              not a reserve. It is not permission to execute. Recommend is not authorize. Evidence lineage
+              is not optional. Human decision is not optional. Surfacing is still a read. Sync refuses
+              false precision. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit
+              Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates,
+              auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync does not pay for
+              the customer. Sync does not settle claims for the customer. Sync does not measure payment for
+              the customer. Sync does not adjudicate claims for the customer. Sync does not file a claim
+              for the customer. Sync does not issue policies for the customer.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named coverage is not payment
+            </h2>
+
+            <p>
+              Named coverage is not payment. The covered practice is not the paid practice. A responding
+              grant answers whether this named failure, loss, location, asset class, cause, and window are
+              inside the policy’s responding grant so a competent claims path would treat the event as
+              in-scope. It does not, by itself, show that indemnity / loss payment / agreed settlement
+              funds have actually moved. It does not, by itself, show a binding written settlement with
+              payment date and amount executed and trackable for that named covered event under today’s
+              owner and window. An event in-scope, with the claim open, denied on process, underpaid,
+              delayed, or never filed, is still coverage. It is not payment. A firm can be covered and
+              still not paid. An ex gratia / goodwill payment, or payment under a different instrument than
+              the one they thought responded, is still money that moved. It is not coverage in the sense
+              operators mean. A firm can be paid for a named loss and still not covered in the sense
+              operators mean. A coverage grant alone is not payment. A payment alone is not proof this
+              event was in-scope under the named policy. Not a coverage opinion. Not an FNOL
+              acknowledgment. Not a reserve set. Not "we’ll look into it." Not a ticket marked covered. A
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. This essay does not
+              rewrite Insured Is Not Covered. This essay does not rewrite Certified Is Not Insured. This
+              essay does not rewrite Assured Is Not Certified. This essay does not rewrite Recoverable Is
+              Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This essay does not
+              rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not
+              Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not rewrite
+              Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This essay does
+              not rewrite Green Is Not Go. This essay does not collapse into Insured Is Not Covered. This
+              essay does not collapse into Certified Is Not Insured. This essay does not collapse into
+              Assured Is Not Certified. This essay does not collapse into Recoverable Is Not Assured. This
+              essay does not collapse into Rehearsed Is Not Recoverable. This essay does not collapse into
+              Transferable Is Not Rehearsed. This essay does not collapse into Governed Is Not
+              Transferable. This essay does not collapse into Owned Is Not Governed. This essay does not
+              collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not
+              Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              payment into coverage. This essay does not collapse covered into paid. Sync does not measure
+              coverage or payment for the customer. Sync must not auto-transfer ownership, auto-declare RTO
+              met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync
+              refuses to pretend coverage or payment is a status light. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+
 
             <p className="text-xl text-gray-400">
               Insured is not covered. Insured means a named, in-force indemnity/coverage instrument exists
@@ -9010,17 +9424,6 @@ export default function InsuredIsNotCoveredPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/covered-is-not-paid"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Covered Is Not Paid
-              </Link>
-              , on why covered is still not paid. Covered means the named failure, loss, location, asset class, cause, and window are inside the policy’s responding grant of coverage (triggers met, exclusions not barring, named insured correct, limits not exhausted, notice conditions satisfiable) so a competent claims path would treat the event as in-scope — not "we have a policy," not a certificate of insurance PDF, not a broker email saying "you’re good," and not a CMMS checkbox. Paid means indemnity / loss payment / agreed settlement funds have actually moved (or a binding written settlement with payment date and amount is executed and trackable) for that named covered event under today’s owner and window — not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a ticket marked covered. A firm can be covered and still not paid when event in-scope; claim open, denied on process, underpaid, delayed, or never filed, is on the record. A firm can be paid for a named loss and still not covered in the sense operators mean. A coverage grant alone is not payment. A payment alone is not proof this event was in-scope under the named policy. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Insured remains a named, in-force indemnity/coverage instrument on file. This essay separates an in-force coverage instrument from a responding grant of coverage for this event. A policy alone is not coverage for this event. Coverage language alone is not an in-force policy. Sync does not measure coverage or payment for the customer. Sync does not measure payment. Sync does not measure payment for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, or auto-settle. Sync must not auto-pay. Sync must not auto-settle. Sync refuses to pretend coverage or payment is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -9080,7 +9483,7 @@ export default function InsuredIsNotCoveredPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="insured-is-not-covered" />
+          <InsightNextSteps slug="covered-is-not-paid" />
         </motion.article>
       </div>
     </main>
