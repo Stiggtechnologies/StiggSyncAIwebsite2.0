@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('governed-is-not-transferable');
+const article = getInsightArticle('transferable-is-not-rehearsed');
 
-export default function GovernedIsNotTransferablePage() {
+export default function TransferableIsNotRehearsedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,329 @@ export default function GovernedIsNotTransferablePage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Governed Is Not Transferable</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Transferable Is Not Rehearsed</h1>
+
+            <p className="text-xl text-gray-400">
+              Transferable is not rehearsed. Transferable means that governed owned compounding system can change
+              hands (successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff)
+              with evidence continuity: playbooks, tooling rights, exception paths, residual claim on the learning,
+              and audit trail still hold under the new named owner within a named window — not a hope that someone
+              will figure it out, not a RACI update with no rehearsal, and not a shared drive the departing owner
+              takes in their head. Rehearsed means the named handoff has been run under stress with the named
+              successor actually exercising authority, exception paths, and evidence continuity inside a named window
+              (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a
+              succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared
+              folder the departing owner walked someone through once. Transferable is not rehearsed. A firm can make
+              a practice transferable on paper and still not rehearse it (handoff pack exists, successor named, but
+              no drill under load; exception authority untested with the new owner). A firm can rehearse a thin
+              ritual and still never have made the compounding system transferable (a laminated card walkthrough that
+              never moves playbooks, tooling rights, or residual claim). A succession plan PDF alone is not
+              rehearsal. A one-time hallway briefing alone is not transferability. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Keep them apart: a succession plan PDF alone is not
+              rehearsal; a one-time hallway briefing alone is not transferability; a CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Governed is not transferable. Governed remains ownership
+              sitting inside explicit rules of engagement. Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a
+              read. Sync refuses false precision. Sync refuses to pretend transferability or rehearsal is a status
+              light. Sync does not measure transferability. Sync does not measure transferability for the customer.
+              Sync does not measure rehearsal. Sync does not measure rehearsal for the customer. Sync does not
+              measure transferability or rehearsal for the customer. Sync does not transfer ownership for the
+              customer. Sync does not rehearse the handoff for the customer. Sync must not auto-transfer ownership
+              or auto-credit Learning for an unrehearsed handoff. Sync must not auto-transfer ownership. Sync must
+              not auto-credit Learning for an unrehearsed handoff. Sync must not auto-assign owners, auto-approve
+              governed actions, or auto-transfer ownership. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners,
+              auto-approve governed actions, auto-transfer ownership, or auto-credit Learning for an unrehearsed
+              handoff.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not closure.
+              Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not
+              authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is
+              not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not
+              scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not
+              transferable. Transferable is not rehearsed. Transferable, in the prior essay, means that governed
+              owned compounding system can change hands with evidence continuity: playbooks, tooling rights,
+              exception paths, residual claim on the learning, and audit trail still hold under the new named owner
+              within a named window. Governed, there, means ownership sits inside explicit rules of engagement so
+              the compounding system stays safe and compliant under named stress. That sentence is the prior
+              refusal. The words with no rehearsal in that sentence name one way a handoff fails to be transferable:
+              a RACI update with no rehearsal is not transferability. They do not name a tabletop, a shadow-run, or
+              a live cutover drill. They do not show the named successor actually exercising authority, exception
+              paths, and evidence continuity inside a named window, with observed pass/fail and residual gaps
+              closed. This essay does not rewrite that sentence. This essay does not collapse into that split.
+              Governance versus transfer is the prior refusal. This essay separates a transferable governed owned
+              compounding system from rehearsal of that handoff. A handoff pack that names the successor is not
+              evidence the handoff was run under stress. A succession plan PDF that has never been practiced is not
+              rehearsal, and a one-time hallway briefing is not transferability.{' '}
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>{' '}
+              keeps a governed owned compounding system off evidence continuity under a new named owner. Read the
+              prior essay at /insights/governed-is-not-transferable. Owned Is Not Governed keeps a named owner of
+              the compounding system off rules of engagement. Compounded Is Not Owned keeps accumulation off a named
+              owner of the compounding system. Ownership Is Not Control keeps a residual economic claim off
+              direction power. Control Is Not Closure keeps direction power off a finished end-state. Accountability
+              Is Not Ownership keeps outcome answerability off a residual claim. Verified Is Not Authorized keeps an
+              independent evidence check off permission to act. Green Is Not Go keeps a status light off permission
+              to run. None of those refusals is this split. A succession plan PDF is not this rehearsal. A one-time
+              hallway briefing is not this transferability. This rehearsal is the named handoff run under stress,
+              with observed pass/fail and residual gaps closed. Recommend Is Not Authorize, Evidence Lineage Is Not
+              Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface a
+              transfer/handoff note or a rehearsal/drill note beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient.
+              Sync refuses to pretend transferability or rehearsal is a status light. Sync must not auto-transfer
+              ownership or auto-credit Learning for an unrehearsed handoff. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale,
+              auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer ownership, or treat
+              transferable as rehearsed as Learning credit. This essay does not rewrite Governed Is Not
+              Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not rewrite
+              Compounded Is Not Owned. This essay does not rewrite Ownership Is Not Control. This essay does not
+              rewrite Control Is Not Closure. This essay does not rewrite Accountability Is Not Ownership. This
+              essay does not rewrite Verified Is Not Authorized. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned Is
+              Not Governed. This essay does not collapse into Compounded Is Not Owned. This essay does not collapse
+              into Ownership Is Not Control. This essay does not collapse into Control Is Not Closure. This essay
+              does not collapse into Accountability Is Not Ownership. This essay does not collapse into Verified Is
+              Not Authorized. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              transferable into rehearsed. This essay does not collapse rehearsal into transferability. This essay
+              does not collapse governed into transferable.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Transferable is not rehearsed. Transferable means that governed owned compounding system can change hands (successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff) with evidence continuity: playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold under the new named owner within a named window — not a hope that someone will figure it out, not a RACI update with no rehearsal, and not a shared drive the departing owner takes in their head. Rehearsed means the named handoff has been run under stress with the named successor actually exercising authority, exception paths, and evidence continuity inside a named window (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the departing owner walked someone through once. A firm can make a practice transferable on paper and still not rehearse it, when the handoff pack exists, successor named, but no drill under load, and exception authority is untested with the new owner. A firm can rehearse a thin ritual and still never have made the compounding system transferable, when a laminated card walkthrough that never moves playbooks, tooling rights, or residual claim is the only drill on the record. A succession plan PDF alone is not rehearsal. A one-time hallway briefing alone is not transferability. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a transfer/handoff note or a rehearsal/drill note beside Evidence, Verification, and the closed outcome. This essay does not collapse rehearsal into transferability. This essay does not collapse transferable into rehearsed. This essay does not collapse into Governed Is Not Transferable. A practice record that says transferable is rehearsed is not shown rehearsal. Sync refuses to pretend transferability or rehearsal is a status light. Treating transferable as rehearsed records a handoff pack as a drill under stress that nobody has shown, under the honesty and verification boundary. A transfer note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the transfer note when the note is being used as rehearsal. Evidence from the plant beats the rehearsal note when the note is being used as transferability. Sync must not auto-transfer ownership or auto-credit Learning for an unrehearsed handoff. Sync must not treat transferable as rehearsed as Learning credit. Sync must not auto-credit Learning for an unrehearsed handoff. Sync does not measure transferability or rehearsal for the customer. Sync does not measure rehearsal for the customer. Sync does not rehearse the handoff for the customer. Sync does not transfer ownership for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The transferable practice is not the rehearsed practice
+            </h2>
+
+            <p>
+              Transferable means that governed owned compounding system can change hands (successor owner, new
+              operator, crew/site turnover, contractor exit, or organizational handoff) with evidence continuity:
+              playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold
+              under the new named owner within a named window — not a hope that someone will figure it out, not a
+              RACI update with no rehearsal, and not a shared drive the departing owner takes in their head.
+              Rehearsed means the named handoff has been run under stress with the named successor actually
+              exercising authority, exception paths, and evidence continuity inside a named window (tabletop,
+              shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession
+              PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the
+              departing owner walked someone through once. Sync may surface a transfer/handoff note or a
+              rehearsal/drill note beside Evidence, Verification, and the closed outcome. A practice record that
+              says transferable is rehearsed is not shown rehearsal. Evidence from the plant beats the transfer note
+              when the note is being used as rehearsal. Evidence from the plant beats the rehearsal note when the
+              note is being used as transferability. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              One line can hold a handoff pack. The successor owner is named. The new operator is named. The crew or
+              site turnover, the contractor exit, or the organizational handoff is named. The named window is named.
+              Playbooks are copied into a folder the successor can open. Tooling rights are listed on a form.
+              Exception paths are written. Residual claim on the learning is stated. The audit trail is exported.
+              Nobody has run the handoff under stress. There is no tabletop. There is no shadow-run. There is no
+              live cutover drill. There is no observed pass/fail. Residual gaps are unclosed because they were never
+              observed. The handoff pack exists, successor named, but no drill under load. Exception authority is
+              untested with the new owner. That record can be transferable on paper. It is not rehearsed. A firm can
+              make a practice transferable on paper and still not rehearse it. A laminated card walkthrough can
+              happen on a Tuesday. The departing owner walks someone through a card once. The walkthrough never
+              moves playbooks, tooling rights, or residual claim. The compounding system that actually runs the
+              plant stays in the departing owner&apos;s login and in that owner&apos;s head. A firm can rehearse a
+              thin ritual and still never have made the compounding system transferable. A succession plan PDF can
+              sit unread through the named window. A succession plan PDF alone is not rehearsal. A one-time hallway
+              briefing can name the successor and still leave playbooks, tooling rights, exception paths, residual
+              claim on the learning, and the audit trail unshown under the new named owner. A one-time hallway
+              briefing alone is not transferability. A RACI cell updated in a meeting is not a drill. A shared
+              folder the departing owner walked someone through once is not evidence continuity, and it is not a
+              rehearsal of the compounding system. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. A one-off clear is a single quiet interval. It is not a handoff with evidence continuity, and
+              it is not a drill under stress. The transferable practice is not the rehearsed practice. This essay
+              does not invent a customer, a price, or a return. It states no savings figure, states no price, and
+              states no OEM limit. A practice record that says transferable is rehearsed is not a customer plant
+              release, and it is not shown rehearsal. Treating transferable as rehearsed records a handoff pack the
+              plant has not shown run under stress, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/governed-is-not-transferable. Governed,
+              there, means ownership sits inside explicit rules of engagement: who may authorize, what evidence is
+              required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how
+              the owner is audited or replaced — so the compounding system stays safe and compliant under named
+              stress, not just that a name is on it and not a binder nobody practices. Transferable, there, means
+              that governed owned compounding system can change hands with evidence continuity under the new named
+              owner within a named window. A succession plan PDF alone is not transferability. A governance binder
+              alone is not transfer. That refusal stops at evidence continuity under a new named owner. It does not
+              ask whether the named handoff has been run under stress with the named successor actually exercising
+              authority. The phrase with no rehearsal, in that essay, is not this drill. Governed is not
+              transferable is a different refusal. Transferable is not rehearsed is the next refusal. Named
+              transferability is not rehearsal, and a thin drill is not transfer of the compounding system. Governed
+              Is Not Transferable separates a governed owned compounding system from transfer of that system. This
+              essay separates a transferable governed owned compounding system from rehearsal of that handoff. This
+              essay does not rewrite Governed Is Not Transferable. This essay does not collapse into Governed Is
+              Not Transferable. This essay does not collapse governed into transferable. This essay does not
+              collapse transferable into rehearsed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>{' '}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the compounding
+              system off rules of engagement. A name on the system is not a rehearsed handoff, and a rule of
+              engagement is not observed pass/fail. This essay does not rewrite Owned Is Not Governed. This essay
+              does not collapse into Owned Is Not Governed.{' '}
+              <Link
+                href="/insights/compounded-is-not-owned"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Compounded Is Not Owned
+              </Link>{' '}
+              keeps accumulation that improves unit economics off a named owner who can redirect the compounding
+              system. A multi-site improvement is not a cutover drill, and a better unit-cost chart is not residual
+              gaps closed. This essay does not rewrite Compounded Is Not Owned. This essay does not collapse into
+              Compounded Is Not Owned.{' '}
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim on an asset, equity, IP, or cash flow off the practical power to set
+              or change direction. That residual claim is a balance-sheet claim. Rehearsal here is not that claim
+              changing names on a cap table. Rehearsal here is the named successor exercising authority, exception
+              paths, and evidence continuity inside a named window. A balance-sheet residual does not show a
+              shadow-run, and direction power does not show observed pass/fail after a contractor exit. This essay
+              does not rewrite Ownership Is Not Control. This essay does not collapse into Ownership Is Not
+              Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not a live cutover drill, and a
+              finished work-state is not a named window in which the successor exercised exception paths. This essay
+              does not rewrite Control Is Not Closure. This essay does not collapse into Control Is Not Closure.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/accountability-is-not-ownership"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Ownership
+              </Link>{' '}
+              keeps named answerability for an outcome off a residual economic claim. Answering for a missed drill
+              is not evidence continuity, and a residual claim is not a tabletop. This essay does not rewrite
+              Accountability Is Not Ownership. This essay does not collapse into Accountability Is Not Ownership.{' '}
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              keeps an independent check of a pack or outcome against named evidence off a named human granting
+              permission to execute a binding move. A rehearsal note is not that independent check, and it is not
+              that grant. Recommend is not authorize. A rehearsal note does not authorize. Sync must not
+              auto-transfer ownership. This essay does not rewrite Verified Is Not Authorized. This essay does not
+              collapse into Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>{' '}
+              keeps a green tile off permission to run. A status light is not a handoff with evidence continuity,
+              and a status light is not a drill under stress. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Green Is Not Go. This essay does not collapse rehearsal into
+              transferability.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a rehearsal note is allowed to be
+            </h2>
+
+            <p>
+              Transferable means that governed owned compounding system can change hands with evidence continuity.
+              Rehearsed means the named handoff has been run under stress. The named successor actually exercises
+              authority, exception paths, and evidence continuity inside a named window. The record shows a
+              tabletop, a shadow-run, or a live cutover drill, with observed pass/fail and residual gaps closed. A
+              succession plan PDF alone is not rehearsal. A one-time hallway briefing alone is not transferability.
+              A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a
+              transfer/handoff note or a rehearsal/drill note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse transferable into rehearsed.
+            </p>
+
+            <p>
+              Evidence may cite a transfer/handoff note when the source of that note is named, and when the citation
+              names the hand (successor owner, new operator, crew/site turnover, contractor exit, or organizational
+              handoff), the new named owner, the named window, and the evidence continuity that still holds:
+              playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail. Evidence
+              may cite a rehearsal/drill note when the source of that note is named, and when the citation names the
+              stress the handoff was run under, the named successor who exercised authority, the exception paths
+              that successor exercised, the evidence continuity that still held inside the named window, and the
+              observed pass/fail with residual gaps closed — tabletop, shadow-run, or live cutover drill. If the
+              evidence records the handoff pack and does not record that drill, the case may store the note as
+              transferable and must not store the note as rehearsed. If the evidence records a thin ritual — a
+              laminated card walkthrough that never moves playbooks, tooling rights, or residual claim, a succession
+              PDF that has never been practiced, a RACI cell updated in a meeting, or a shared folder the departing
+              owner walked someone through once — and does not record evidence continuity under the new named owner,
+              the case must not store the note as transferable and must not store the note as rehearsed. What a
+              rehearsal note is allowed to be is that named drill record around a transferable system the plant can
+              still show under stress. It is not a succession PDF that has never been practiced. It is not a RACI
+              cell updated in a meeting. It is not a shared folder the departing owner walked someone through once.
+              It is not permission to execute. Recommend is not authorize. Surfacing is still a read. Sync refuses
+              false precision. Sync must not auto-transfer ownership or auto-credit Learning for an unrehearsed
+              handoff.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named transferability is not rehearsal
+            </h2>
+
+            <p>
+              Named transferability is not rehearsal. The transferable practice is not the rehearsed practice.
+              Evidence continuity answers whether playbooks, tooling rights, exception paths, residual claim on the
+              learning, and the audit trail still hold under the new named owner within a named window. It does not,
+              by itself, show that the named handoff has been run under stress. It does not, by itself, show the
+              named successor actually exercising authority. It does not, by itself, show exception paths and
+              evidence continuity exercised inside that window, with observed pass/fail and residual gaps closed. A
+              pack that says the system can change hands is still a pack. It is not a rehearsed handoff. No
+              tabletop, no shadow-run, no live cutover drill: the line can still be transferable on paper while the
+              successor has never held exception authority under load. A firm can make a practice transferable on
+              paper and still not rehearse it. A firm can rehearse a thin ritual and still never have made the
+              compounding system transferable. A succession plan PDF alone is not rehearsal. A one-time hallway
+              briefing alone is not transferability. Not a succession PDF that has never been practiced. Not a RACI
+              cell updated in a meeting. Not a shared folder the departing owner walked someone through once. Not a
+              laminated card walkthrough that never moves playbooks, tooling rights, or residual claim. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. This essay does not rewrite
+              Governed Is Not Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not
+              rewrite Compounded Is Not Owned. This essay does not rewrite Ownership Is Not Control. This essay does
+              not rewrite Control Is Not Closure. This essay does not rewrite Accountability Is Not Ownership. This
+              essay does not rewrite Verified Is Not Authorized. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned Is
+              Not Governed. This essay does not collapse into Compounded Is Not Owned. This essay does not collapse
+              into Ownership Is Not Control. This essay does not collapse into Control Is Not Closure. This essay
+              does not collapse into Accountability Is Not Ownership. This essay does not collapse into Verified Is
+              Not Authorized. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              rehearsal into transferability. This essay does not collapse transferable into rehearsed. Sync does
+              not measure transferability or rehearsal for the customer. Sync must not auto-transfer ownership or
+              auto-credit Learning for an unrehearsed handoff. Sync refuses to pretend transferability or rehearsal
+              is a status light.
+            </p>
+
+
 
             <p className="text-xl text-gray-400">
               Governed is not transferable. Governed means ownership sits inside explicit rules of
@@ -6915,18 +7237,6 @@ export default function GovernedIsNotTransferablePage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/transferable-is-not-rehearsed"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Transferable Is Not Rehearsed
-              </Link>
-              , on why transferable is still not rehearsed. Transferable means that governed owned compounding system can change hands (successor owner, new operator, crew/site turnover, contractor exit, or organizational handoff) with evidence continuity: playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold under the new named owner within a named window — not a hope that someone will figure it out, not a RACI update with no rehearsal, and not a shared drive the departing owner takes in their head. Rehearsed means the named handoff has been run under stress with the named successor actually exercising authority, exception paths, and evidence continuity inside a named window (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the departing owner walked someone through once. A firm can make a practice transferable on paper and still not rehearse it when the handoff pack exists, successor named, but no drill under load, and exception authority is untested with the new owner. A firm can rehearse a thin ritual and still never have made the compounding system transferable. A succession plan PDF alone is not rehearsal. A one-time hallway briefing alone is not transferability. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Governed remains ownership inside explicit rules of engagement. This essay separates a governed owned compounding system from transfer of that system. A succession plan PDF alone is not transferability. A governance binder alone is not transfer. Sync does not measure transferability or rehearsal for the customer. Sync does not measure rehearsal. Sync does not measure rehearsal for the customer. Sync must not auto-transfer ownership or auto-credit Learning for an unrehearsed handoff. Sync must not auto-credit Learning for an unrehearsed handoff. Sync refuses to pretend transferability or rehearsal is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -6986,7 +7296,7 @@ export default function GovernedIsNotTransferablePage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="governed-is-not-transferable" />
+          <InsightNextSteps slug="transferable-is-not-rehearsed" />
         </motion.article>
       </div>
     </main>
