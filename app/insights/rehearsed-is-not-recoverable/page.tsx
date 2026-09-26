@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('transferable-is-not-rehearsed');
+const article = getInsightArticle('rehearsed-is-not-recoverable');
 
-export default function TransferableIsNotRehearsedPage() {
+export default function RehearsedIsNotRecoverablePage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,348 @@ export default function TransferableIsNotRehearsedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Transferable Is Not Rehearsed</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Rehearsed Is Not Recoverable</h1>
+
+            <p className="text-xl text-gray-400">
+              Rehearsed is not recoverable. Rehearsed means the named handoff has been run under stress with the
+              named successor actually exercising authority, exception paths, and evidence continuity inside a named
+              window (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed)
+              — not a succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a
+              shared folder the departing owner walked someone through once. Recoverable means after a real
+              disruption (or a named recovery drill that actually breaks the live path), the named successor
+              restores the governed owned compounding system to a named service level inside a named RTO/RPO with
+              evidence continuity still holding under their authority — playbooks, tooling rights, exception paths,
+              residual claim on the learning, and audit trail intact — not a green tabletop score, not a laminated
+              recovery card, and not a hope that the old owner will pick up the phone. Rehearsed is not
+              recoverable. A firm can rehearse a handoff under load and still not be recoverable (drill passed,
+              successor signed the checklist, but no proven restore to named service level inside named RTO/RPO
+              with evidence under the new owner). A firm can chase recoverability theater and still never have
+              rehearsed the transfer (a disaster-recovery runbook that restores servers while ownership, exception
+              authority, and residual claim stay with the departed owner). A tabletop pass alone is not
+              recoverability. A backup job green light alone is not rehearsal. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Keep them apart: a tabletop pass alone is not
+              recoverability; a backup job green light alone is not rehearsal; a CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Transferable is not rehearsed. Transferable remains a
+              governed owned compounding system that can change hands with evidence continuity. Recommend is not
+              authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant
+              beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses to pretend
+              rehearsal or recoverability is a status light. Sync does not measure rehearsal. Sync does not measure
+              rehearsal for the customer. Sync does not measure recoverability. Sync does not measure
+              recoverability for the customer. Sync does not measure rehearsal or recoverability for the customer.
+              Sync does not rehearse the handoff for the customer. Sync does not restore the governed owned
+              compounding system for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, or
+              auto-credit Learning for an unrecovered handoff. Sync must not auto-transfer ownership. Sync must not
+              auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, or auto-credit Learning for an unrecovered handoff.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not closure.
+              Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not
+              authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is
+              not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not
+              scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not
+              transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Rehearsed, in the prior
+              essay, means the named handoff has been run under stress with the named successor actually exercising
+              authority, exception paths, and evidence continuity inside a named window. Transferable, there, means
+              that governed owned compounding system can change hands with evidence continuity: playbooks, tooling
+              rights, exception paths, residual claim on the learning, and audit trail still hold under the new
+              named owner within a named window. That sentence is the prior refusal. The words tabletop, shadow-run,
+              or live cutover drill in that sentence name a rehearsal of the handoff. They do not name a real
+              disruption. They do not name a recovery drill that actually breaks the live path. They do not show
+              the named successor restoring the governed owned compounding system to a named service level inside a
+              named RTO/RPO, with evidence continuity still holding under their authority. This essay does not
+              rewrite that sentence. This essay does not collapse into that split. Transfer versus rehearsal is the
+              prior refusal. This essay separates a rehearsed handoff from recoverability of that governed owned compounding system. A drill that passed is not evidence the successor restored service inside the
+              named RTO/RPO. A green tabletop score is not recoverability, and a backup job green light is not
+              rehearsal.{' '}
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>{' '}
+              keeps a transferable governed owned compounding system off a handoff run under stress. Read the prior
+              essay at /insights/transferable-is-not-rehearsed. Governed Is Not Transferable keeps a governed owned
+              compounding system off evidence continuity under a new named owner. Owned Is Not Governed keeps a
+              named owner of the compounding system off rules of engagement. Compounded Is Not Owned keeps
+              accumulation off a named owner of the compounding system. Ownership Is Not Control keeps a residual
+              economic claim off direction power. Control Is Not Closure keeps direction power off a finished
+              end-state. Accountability Is Not Ownership keeps outcome answerability off a residual claim. Verified
+              Is Not Authorized keeps an independent evidence check off permission to act. Green Is Not Go keeps a
+              status light off permission to run. None of those refusals is this split. A green tabletop score is
+              not this recoverability. A backup job green light is not this rehearsal. This recoverability is a
+              proven restore to a named service level inside a named RTO/RPO with evidence under the new owner.
+              Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay
+              beside this split. Sync may surface a rehearsal/drill note or a recovery/restore note beside
+              Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync refuses to pretend rehearsal or
+              recoverability is a status light. Sync must not auto-transfer ownership, auto-declare RTO met, or
+              auto-credit Learning for an unrecovered handoff. Sync must not auto-close, auto-authorize,
+              auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound,
+              auto-assign owners, auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or
+              treat rehearsed as recoverable as Learning credit. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not rewrite
+              Owned Is Not Governed. This essay does not rewrite Compounded Is Not Owned. This essay does not
+              rewrite Ownership Is Not Control. This essay does not rewrite Control Is Not Closure. This essay does
+              not rewrite Accountability Is Not Ownership. This essay does not rewrite Verified Is Not Authorized.
+              This essay does not rewrite Green Is Not Go. This essay does not collapse into Transferable Is Not
+              Rehearsed. This essay does not collapse into Governed Is Not Transferable. This essay does not
+              collapse into Owned Is Not Governed. This essay does not collapse into Compounded Is Not Owned. This
+              essay does not collapse into Ownership Is Not Control. This essay does not collapse into Control Is
+              Not Closure. This essay does not collapse into Accountability Is Not Ownership. This essay does not
+              collapse into Verified Is Not Authorized. This essay does not collapse into Green Is Not Go. This
+              essay does not collapse rehearsed into recoverable. This essay does not collapse recoverability into
+              rehearsal. This essay does not collapse transferable into rehearsed.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Rehearsed is not recoverable. Rehearsed means the named handoff has been run under stress with the named successor actually exercising authority, exception paths, and evidence continuity inside a named window (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the departing owner walked someone through once. Recoverable means after a real disruption (or a named recovery drill that actually breaks the live path), the named successor restores the governed owned compounding system to a named service level inside a named RTO/RPO with evidence continuity still holding under their authority — playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail intact — not a green tabletop score, not a laminated recovery card, and not a hope that the old owner will pick up the phone. A firm can rehearse a handoff under load and still not be recoverable, when the drill passed, successor signed the checklist, but no proven restore to named service level inside named RTO/RPO with evidence under the new owner is on the record. A firm can chase recoverability theater and still never have rehearsed the transfer, when a disaster-recovery runbook that restores servers while ownership, exception authority, and residual claim stay with the departed owner is the only recovery story on the record. A tabletop pass alone is not recoverability. A backup job green light alone is not rehearsal. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a rehearsal/drill note or a recovery/restore note beside Evidence, Verification, and the closed outcome. This essay does not collapse recoverability into rehearsal. This essay does not collapse rehearsed into recoverable. This essay does not collapse into Transferable Is Not Rehearsed. A practice record that says rehearsed is recoverable is not shown recoverability. Sync refuses to pretend rehearsal or recoverability is a status light. Treating rehearsed as recoverable records a passed drill as a proven restore to a named service level inside a named RTO/RPO that nobody has shown, under the honesty and verification boundary. A rehearsal note can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the rehearsal note when the note is being used as recoverability. Evidence from the plant beats the recovery note when the note is being used as rehearsal. Sync must not auto-transfer ownership, auto-declare RTO met, or auto-credit Learning for an unrecovered handoff. Sync must not treat rehearsed as recoverable as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync does not measure rehearsal or recoverability for the customer. Sync does not measure recoverability for the customer. Sync does not restore the governed owned compounding system for the customer. Sync does not rehearse the handoff for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The rehearsed practice is not the recoverable practice
+            </h2>
+
+            <p>
+              Rehearsed means the named handoff has been run under stress with the named successor actually
+              exercising authority, exception paths, and evidence continuity inside a named window (tabletop,
+              shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession
+              PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the
+              departing owner walked someone through once. Recoverable means after a real disruption (or a named
+              recovery drill that actually breaks the live path), the named successor restores the governed owned
+              compounding system to a named service level inside a named RTO/RPO with evidence continuity still
+              holding under their authority — playbooks, tooling rights, exception paths, residual claim on the
+              learning, and audit trail intact — not a green tabletop score, not a laminated recovery card, and not
+              a hope that the old owner will pick up the phone. Sync may surface a rehearsal/drill note or a
+              recovery/restore note beside Evidence, Verification, and the closed outcome. A practice record that
+              says rehearsed is recoverable is not shown recoverability. Evidence from the plant beats the
+              rehearsal note when the note is being used as recoverability. Evidence from the plant beats the
+              recovery note when the note is being used as rehearsal. Evidence from the plant beats the note.
+            </p>
+
+            <p>
+              One line can hold a passed drill. The named successor is named. The window is named. The tabletop,
+              the shadow-run, or the live cutover drill is named. Observed pass/fail is written. Residual gaps are
+              marked closed. The successor signed the checklist. Nobody has restored the governed owned compounding
+              system after a real disruption. Nobody has run a named recovery drill that actually breaks the live
+              path. There is no proven restore to a named service level inside a named RTO/RPO. Evidence continuity
+              under the new owner is unshown on the broken path. Playbooks, tooling rights, exception paths,
+              residual claim on the learning, and the audit trail were exercised in the handoff drill and were not
+              shown intact after the live path broke. The drill passed, successor signed the checklist, but no
+              proven restore to named service level inside named RTO/RPO with evidence under the new owner. That
+              record can be rehearsed. It is not recoverable. A firm can rehearse a handoff under load and still
+              not be recoverable. A disaster-recovery runbook can restore servers on a Tuesday. The runbook brings
+              machines back. Ownership, exception authority, and residual claim stay with the departed owner. The
+              named successor never held the compounding system. A firm can chase recoverability theater and still
+              never have rehearsed the transfer. A green tabletop score can sit on the wall through the named
+              window. A tabletop pass alone is not recoverability. A backup job green light can show that a copy
+              finished and still leave the named successor untested under stress. A backup job green light alone is
+              not rehearsal. A laminated recovery card is not a restore to a named service level. A hope that the
+              old owner will pick up the phone is not evidence continuity under the new owner. A CMMS checkbox,
+              ticket state, status light, or one-off clear is neither. A one-off clear is a single quiet interval.
+              It is not a handoff run under stress, and it is not a proven restore inside a named RTO/RPO. The
+              rehearsed practice is not the recoverable practice. This essay does not invent a customer, a price,
+              or a return. It states no savings figure, states no price, and states no OEM limit. A practice record
+              that says rehearsed is recoverable is not a customer plant release, and it is not shown
+              recoverability. Treating rehearsed as recoverable records a passed drill the plant has not shown as a
+              restore inside the named RTO/RPO, under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>{' '}
+              sits one step earlier. Read the prior essay at /insights/transferable-is-not-rehearsed. Transferable,
+              there, means that governed owned compounding system can change hands with evidence continuity under
+              the new named owner within a named window. Rehearsed, there, means the named handoff has been run
+              under stress with the named successor actually exercising authority, exception paths, and evidence
+              continuity inside a named window. A succession plan PDF alone is not rehearsal. A one-time hallway
+              briefing alone is not transferability. That refusal stops at a handoff run under stress with observed
+              pass/fail and residual gaps closed. It does not ask whether, after a real disruption or a named
+              recovery drill that actually breaks the live path, the named successor restores the governed owned
+              compounding system to a named service level inside a named RTO/RPO. The phrase residual gaps closed,
+              in that essay, is not this restore. Transferable is not rehearsed is a different refusal. Rehearsed
+              is not recoverable is the next refusal. Named rehearsal is not recoverability, and recoverability
+              theater is not a rehearsed transfer. Transferable Is Not Rehearsed separates a transferable governed
+              owned compounding system from rehearsal of that handoff. This essay separates a rehearsed handoff
+              from recoverability of that governed owned compounding system. This essay does not rewrite
+              Transferable Is Not Rehearsed. This essay does not collapse into Transferable Is Not Rehearsed. This
+              essay does not collapse transferable into rehearsed. This essay does not collapse rehearsed into
+              recoverable.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>{' '}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new named owner.
+              A rule of engagement is not a proven restore, and a handoff pack is not a named RTO/RPO. This essay
+              does not rewrite Governed Is Not Transferable. This essay does not collapse into Governed Is Not
+              Transferable.{' '}
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>{' '}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the compounding
+              system off rules of engagement. A name on the system is not a recovery drill that breaks the live
+              path, and a rule of engagement is not evidence continuity still holding after the break. This essay
+              does not rewrite Owned Is Not Governed. This essay does not collapse into Owned Is Not Governed.{' '}
+              <Link
+                href="/insights/compounded-is-not-owned"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Compounded Is Not Owned
+              </Link>{' '}
+              keeps accumulation that improves unit economics off a named owner who can redirect the compounding
+              system. A multi-site improvement is not a restore to a named service level, and a better unit-cost
+              chart is not an RTO. This essay does not rewrite Compounded Is Not Owned. This essay does not
+              collapse into Compounded Is Not Owned.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim on an asset, equity, IP, or cash flow off the practical power to set
+              or change direction. That residual claim is a balance-sheet claim. Recoverability here is not that
+              claim changing names on a cap table. Recoverability here is the named successor restoring the
+              governed owned compounding system to a named service level inside a named RTO/RPO with evidence
+              continuity still holding under their authority. A balance-sheet residual does not show a broken live
+              path restored, and direction power does not show an RPO held after a real disruption. This essay
+              does not rewrite Ownership Is Not Control. This essay does not collapse into Ownership Is Not
+              Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not a named recovery drill, and a
+              finished work-state is not a named service level restored inside a named RTO/RPO. This essay does
+              not rewrite Control Is Not Closure. This essay does not collapse into Control Is Not Closure.{' '}
+              <Link
+                href="/insights/accountability-is-not-ownership"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accountability Is Not Ownership
+              </Link>{' '}
+              keeps named answerability for an outcome off a residual economic claim. Answering for a missed
+              restore is not evidence continuity under the new owner, and a residual claim is not an RTO. This
+              essay does not rewrite Accountability Is Not Ownership. This essay does not collapse into
+              Accountability Is Not Ownership.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              keeps an independent check of a pack or outcome against named evidence off a named human granting
+              permission to execute a binding move. A recovery note is not that independent check, and it is not
+              that grant. Recommend is not authorize. A recovery note does not authorize. Sync must not
+              auto-declare RTO met. This essay does not rewrite Verified Is Not Authorized. This essay does not
+              collapse into Verified Is Not Authorized.{' '}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>{' '}
+              keeps a green tile off permission to run. A status light is not a proven restore inside a named
+              RTO/RPO, and a backup job green light is not a rehearsed handoff. This essay does not rewrite Green
+              Is Not Go. This essay does not collapse into Green Is Not Go. This essay does not collapse
+              recoverability into rehearsal.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a recovery note is allowed to be
+            </h2>
+
+            <p>
+              Rehearsed means the named handoff has been run under stress. Recoverable means after a real
+              disruption (or a named recovery drill that actually breaks the live path), the named successor
+              restores the governed owned compounding system to a named service level inside a named RTO/RPO with
+              evidence continuity still holding under their authority. A green tabletop score alone is not
+              recoverability. A backup job green light alone is not rehearsal. A CMMS checkbox, ticket state,
+              status light, or one-off clear is neither. Sync may surface a rehearsal/drill note or a
+              recovery/restore note beside Evidence, Verification, and the closed outcome. This essay does not
+              collapse rehearsed into recoverable.
+            </p>
+
+            <p>
+              Evidence may cite a rehearsal/drill note when the source of that note is named, and when the citation
+              names the stress the handoff was run under, the named successor who exercised authority, the
+              exception paths that successor exercised, the evidence continuity that still held inside the named
+              window, and the observed pass/fail with residual gaps closed — tabletop, shadow-run, or live cutover
+              drill. Evidence may cite a recovery/restore note when the source of that note is named, and when the
+              citation names the real disruption or the named recovery drill that actually breaks the live path,
+              the named successor who restored the governed owned compounding system, the named service level, the
+              named RTO/RPO, and the evidence continuity that still held under that successor authority: playbooks,
+              tooling rights, exception paths, residual claim on the learning, and audit trail intact. If the
+              evidence records the passed drill and does not record that restore, the case may store the note as
+              rehearsed and must not store the note as recoverable. If the evidence records recoverability theater
+              — a green tabletop score, a laminated recovery card, a hope that the old owner will pick up the
+              phone, a backup job green light, or a disaster-recovery runbook that restores servers while
+              ownership, exception authority, and residual claim stay with the departed owner — and does not record
+              a handoff run under stress with the named successor exercising authority, the case must not store the
+              note as rehearsed and must not store the note as recoverable. What a recovery note is allowed to be
+              is that named restore record around a rehearsed handoff the plant can still show after the live path
+              breaks. It is not a green tabletop score. It is not a laminated recovery card. It is not a hope that
+              the old owner will pick up the phone. It is not permission to execute. Recommend is not authorize.
+              Surfacing is still a read. Sync refuses false precision. Sync must not auto-transfer ownership,
+              auto-declare RTO met, or auto-credit Learning for an unrecovered handoff.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named rehearsal is not recoverability
+            </h2>
+
+            <p>
+              Named rehearsal is not recoverability. The rehearsed practice is not the recoverable practice.
+              Observed pass/fail answers whether the named successor exercised authority, exception paths, and
+              evidence continuity inside a named window. It does not, by itself, show a restore after a real
+              disruption. It does not, by itself, show a named recovery drill that actually breaks the live path.
+              It does not, by itself, show the named successor restoring the governed owned compounding system to a
+              named service level inside a named RTO/RPO, with evidence continuity still holding under their
+              authority. A checklist the successor signed is still a checklist. It is not a recoverable system. No
+              broken live path, no named service level, no RTO, no RPO: the line can still be rehearsed while the
+              successor has never restored the compounding system under their own authority. A firm can rehearse a
+              handoff under load and still not be recoverable. A firm can chase recoverability theater and still
+              never have rehearsed the transfer. A tabletop pass alone is not recoverability. A backup job green
+              light alone is not rehearsal. Not a green tabletop score. Not a laminated recovery card. Not a hope
+              that the old owner will pick up the phone. Not a disaster-recovery runbook that restores servers
+              while ownership, exception authority, and residual claim stay with the departed owner. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. This essay does not rewrite
+              Transferable Is Not Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay
+              does not rewrite Owned Is Not Governed. This essay does not rewrite Compounded Is Not Owned. This
+              essay does not rewrite Ownership Is Not Control. This essay does not rewrite Control Is Not Closure.
+              This essay does not rewrite Accountability Is Not Ownership. This essay does not rewrite Verified Is
+              Not Authorized. This essay does not rewrite Green Is Not Go. This essay does not collapse into
+              Transferable Is Not Rehearsed. This essay does not collapse into Governed Is Not Transferable. This
+              essay does not collapse into Owned Is Not Governed. This essay does not collapse into Compounded Is
+              Not Owned. This essay does not collapse into Ownership Is Not Control. This essay does not collapse
+              into Control Is Not Closure. This essay does not collapse into Accountability Is Not Ownership. This
+              essay does not collapse into Verified Is Not Authorized. This essay does not collapse into Green Is
+              Not Go. This essay does not collapse recoverability into rehearsal. This essay does not collapse
+              rehearsed into recoverable. Sync does not measure rehearsal or recoverability for the customer. Sync
+              must not auto-transfer ownership, auto-declare RTO met, or auto-credit Learning for an unrecovered
+              handoff. Sync refuses to pretend rehearsal or recoverability is a status light.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Transferable is not rehearsed. Transferable means that governed owned compounding system can change
@@ -7237,17 +7578,6 @@ export default function TransferableIsNotRehearsedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/rehearsed-is-not-recoverable"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Rehearsed Is Not Recoverable
-              </Link>
-              , on why rehearsed is still not recoverable. Rehearsed means the named handoff has been run under stress with the named successor actually exercising authority, exception paths, and evidence continuity inside a named window (tabletop, shadow-run, or live cutover drill with observed pass/fail and residual gaps closed) — not a succession PDF that has never been practiced, not a RACI cell updated in a meeting, and not a shared folder the departing owner walked someone through once. Recoverable means after a real disruption (or a named recovery drill that actually breaks the live path), the named successor restores the governed owned compounding system to a named service level inside a named RTO/RPO with evidence continuity still holding under their authority — playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail intact — not a green tabletop score, not a laminated recovery card, and not a hope that the old owner will pick up the phone. A firm can rehearse a handoff under load and still not be recoverable when the drill passed, successor signed the checklist, but no proven restore to named service level inside named RTO/RPO with evidence under the new owner. A firm can chase recoverability theater and still never have rehearsed the transfer. A tabletop pass alone is not recoverability. A backup job green light alone is not rehearsal. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Transferable remains a governed owned compounding system that can change hands with evidence continuity. This essay separates a transferable governed owned compounding system from rehearsal of that handoff. A succession plan PDF alone is not rehearsal. A one-time hallway briefing alone is not transferability. Sync does not measure rehearsal or recoverability for the customer. Sync does not measure recoverability. Sync does not measure recoverability for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, or auto-credit Learning for an unrecovered handoff. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync refuses to pretend rehearsal or recoverability is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -7307,7 +7637,7 @@ export default function TransferableIsNotRehearsedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="transferable-is-not-rehearsed" />
+          <InsightNextSteps slug="rehearsed-is-not-recoverable" />
         </motion.article>
       </div>
     </main>
