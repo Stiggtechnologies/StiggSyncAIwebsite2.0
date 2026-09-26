@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const recognizedIndex = slugs.indexOf('collected-is-not-recognized');
 const closedCollectedIndex = slugs.indexOf('closed-is-not-collected');
 const periodCloseIndex = slugs.indexOf('reconciled-is-not-closed');
 const reconciledIndex = slugs.indexOf('booked-is-not-reconciled');
@@ -85,7 +86,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    closedCollectedIndex >= 0 &&
+    recognizedIndex >= 0 &&
+    closedCollectedIndex > recognizedIndex &&
     periodCloseIndex > closedCollectedIndex &&
     reconciledIndex > periodCloseIndex &&
     bookedIndex > reconciledIndex &&
@@ -151,7 +153,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -12991,6 +12993,83 @@ if (
   fail('reconciled-is-not-closed must point the series forward to closed-is-not-collected');
 }
 
+
+
+const recognizedPageRequired = [
+  ...closedCollectedPageRequired,
+  "Collected Is Not Recognized",
+  "Collected is not recognized",
+  "that named amount is recognized as earned revenue (or the named contract earning event) for that named entity and period under the named acceptance / milestone / performance obligation rule, with a named controller / revenue attestation and unbroken evidence trail — not a bank deposit alone, not cash application alone, not \"invoice was issued,\" not a dashboard ARR tile, and not a CMMS checkbox",
+  "not a bank deposit alone, not cash application alone, not \"invoice was issued,\" not a dashboard ARR tile, and not a CMMS checkbox",
+  "A firm can be collected and still not recognized",
+  "cash cleared and applied while the named earning / acceptance rule is not met or attested",
+  "A firm can chase recognition theater and still not be collected",
+  "revenue booked or claimed while named cash has not cleared and applied",
+  "A bank deposit alone is not revenue recognition",
+  "A recognition journal alone is not proof the named amount is collected",
+  "The collected practice is not the recognized practice",
+  "What a recognition record is allowed to be",
+  "Named collection is not recognition",
+  "Sync does not measure recognition",
+  "Sync does not measure recognition for the customer",
+  "Sync does not measure collection or recognition for the customer",
+  "Sync may surface a collection record or a recognition attestation",
+  "does not collapse recognition into collection",
+  "does not collapse collected into recognized",
+  "does not rewrite Closed Is Not Collected",
+  "does not collapse into Closed Is Not Collected",
+  "practice record that says collected is recognized",
+  "collected as recognized",
+  "separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance / milestone / performance obligation rule",
+  "/insights/closed-is-not-collected",
+  "Evidence from the plant beats the collection record when the record is being used as recognition",
+  "Evidence from the plant beats the recognition attestation when the attestation is being used as proof the named amount is collected",
+  "treat collected as recognized as Learning credit",
+  "Sync refuses to pretend collection or recognition is a status light",
+  "Sync does not recognize revenue for the customer",
+  "Sync must not auto-recognize",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+  "Sync does not collect the named receivable for the customer",
+  "Sync must not auto-collect",
+  "Sync must not auto-close-books",
+  "under the honesty and verification boundary",
+  "work-order / incident closed",
+  "period/books close",
+];
+const recognizedPage = read('app/insights/collected-is-not-recognized/page.tsx');
+for (const required of recognizedPageRequired) {
+  if (!recognizedPage.includes(required)) {
+    fail(`collected-is-not-recognized page must include ${required}`);
+  }
+}
+
+const recognizedBlock = stepBlock('collected-is-not-recognized');
+for (const required of ['closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!recognizedBlock.includes(`'${required}'`)) {
+    fail(`collected-is-not-recognized related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(recognizedBlock)) {
+  fail('collected-is-not-recognized related reading must include the Strategic Pilot');
+}
+if (recognizedBlock.includes("next: 'strategic-pilot'")) {
+  fail('collected-is-not-recognized next step is the Field Manual');
+}
+if (!stepBlock('closed-is-not-collected').includes("'collected-is-not-recognized'")) {
+  fail('closed-is-not-collected related reading must point forward to collected-is-not-recognized');
+}
+
+if (
+  !closedCollectedPage.includes('The series continues with') ||
+  !closedCollectedPage.includes('/insights/collected-is-not-recognized')
+) {
+  fail('closed-is-not-collected must point the series forward to collected-is-not-recognized');
+}
 
 function readingSlugs(name) {
   const block = section(name);
