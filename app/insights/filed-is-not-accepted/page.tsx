@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('audited-is-not-filed');
+const article = getInsightArticle('filed-is-not-accepted');
 
-export default function AuditedIsNotFiledPage() {
+export default function FiledIsNotAcceptedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,397 @@ export default function AuditedIsNotFiledPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Audited Is Not Filed</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Filed Is Not Accepted</h1>
+
+            <p>
+              Filed is not accepted. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. Filed is not accepted. A firm can be filed and still not accepted (lodging receipt exists while no named acceptance/completeness acknowledgement for that filing). A firm can chase acceptance theater and still not be filed (an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel). A filing receipt alone is not acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized amount in the named period report pack) from Reported Is Not Audited, distinct from filed and from accepted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. Complete Is Not Accepted keeps an acceptance pack’s measured completeness off a named human sign-off of that pack. Accepted Is Not Verified keeps that named human sign-off off an independent evidence check. Neither of those refusals is this split. This split is filed versus accepted. A lodging receipt is not a named acceptance. An acceptance notice is not a lodging receipt. This essay does not collapse into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted. This essay does not collapse into Accepted Is Not Verified. This essay does not rewrite Accepted Is Not Verified. This essay does not collapse into Audited Is Not Filed. This essay does not rewrite Audited Is Not Filed. Audited Is Not Filed separates an independent named opinion or assurance conclusion from a named filing receipt. This essay separates a named filing receipt from a named acceptance or completeness acknowledgement. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend filing or acceptance is a status light. Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does not measure filing or acceptance for the customer. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not accept for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync refuses to pretend filing or acceptance is a status light. Sync may surface a filing receipt or an acceptance notice beside Evidence, Verification, and the closed outcome. Surfacing is still a read. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat filed as accepted as Learning credit. Sync must not treat audited as filed as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <p>
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not accountability. Accountability is not ownership. Ownership is not control. Control is not closure. Closure is not complete. Complete is not accepted. Accepted is not verified. Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled. Settled is not booked. Booked is not reconciled. Reconciled is not closed. Closed is not collected. Collected is not recognized. Recognized is not reported. Reported is not audited. Audited is not filed. Filed is not accepted. That last sentence is this refusal. The words accepted in Complete is not accepted, and the words accepted in Accepted is not verified, name a named human formally accepting an acceptance pack, or the case outcome it covers, under a named decision window. That is human acceptance and sign-off of plant or work acceptance. Those words do not name a regulator. They do not name a registry. They do not name a lender filing channel. They do not name a board filing channel. They do not name a board secretary. They do not name a filing receipt. They do not name a filing identifier. They do not name a completeness acknowledgement issued by the receiving authority for that channel. This essay does not rewrite that sentence. This essay does not collapse into that split. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. The words filed in the prior sentence name a lodging where that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack. They do not name an acceptance notice. They do not name a completeness acknowledgement. A named filing receipt versus a named acceptance or completeness acknowledgement is this refusal. Audited Is Not Filed keeps an independent named opinion off a lodging receipt that has not been issued. Reported Is Not Audited keeps that named recognized amount in the named period report pack off an independent opinion that has not been issued. None of those refusals is this split. This split is filed versus accepted. A firm can be filed and still not accepted (lodging receipt exists while no named acceptance/completeness acknowledgement for that filing). A firm can chase acceptance theater and still not be filed (an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel). A filing receipt alone is not acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized amount in the named period report pack) from Reported Is Not Audited, distinct from filed and from accepted. A sentence that says audit is done, a draft upload, an email saying we sent it, a dashboard green, or a CMMS checkbox is not this filing. An auto-ack that only confirms message delivery, a status that says "under review," a draft status page, a dashboard green, or a CMMS checkbox is not this acceptance. Reported, the named recognized amount in the named period report pack, is not this filing and is not this acceptance. Audited, an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox, is not this filing and is not this acceptance. This filing is that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. This acceptance means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface a filing receipt or an acceptance notice beside Evidence, Verification, and the closed outcome. Surfacing is still a read. The closed outcome in that sentence is the Decision Case outcome record. It is not a period close of the books, it is not a period report, it is not an audit opinion, it is not a filing receipt, and it is not an acceptance notice. This essay does not rewrite Audited Is Not Filed. This essay does not collapse into Audited Is Not Filed. This essay does not collapse acceptance into filing. This essay does not collapse filed into accepted. This essay does not collapse into Complete Is Not Accepted. This essay does not rewrite Complete Is Not Accepted.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Filed is not accepted. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — not an auto-ack that only confirms message delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS checkbox. A firm can be filed and still not accepted (lodging receipt exists while no named acceptance/completeness acknowledgement for that filing). A firm can chase acceptance theater and still not be filed (an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel). A filing receipt alone is not acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized amount in the named period report pack) from Reported Is Not Audited, distinct from filed and from accepted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. A firm can be filed and still not accepted, when lodging receipt exists while no named acceptance/completeness acknowledgement for that filing, is the only acceptance story on the record. A firm can chase acceptance theater and still not be filed, when an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel, is the only filing story on the record. A filing receipt alone is not acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a filing receipt or an acceptance notice beside Evidence, Verification, and the closed outcome. This essay separates a named filing receipt from a named acceptance or completeness acknowledgement. This essay does not collapse acceptance into filing. This essay does not collapse filed into accepted. This essay does not collapse into Audited Is Not Filed. This essay does not rewrite Audited Is Not Filed. This essay does not collapse into Complete Is Not Accepted. A practice record that says filed is accepted is not shown accepted. Sync refuses to pretend filing or acceptance is a status light. Treating filed as accepted records a lodging receipt as a named acceptance or completeness acknowledgement for that entity, period, channel, and filing identifier, under the honesty and verification boundary. A filing receipt can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the filing receipt when the receipt is being used as acceptance. Evidence from the plant beats the acceptance notice when the notice is being used as proof the pack was lodged under the named filing trail. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat filed as accepted as Learning credit. Sync must not treat audited as filed as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does not measure filing or acceptance for the customer. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not accept for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync refuses to pretend filing or acceptance is a status light. Sync may surface a filing receipt or an acceptance notice beside Evidence, Verification, and the closed outcome. Surfacing is still a read. The prior filing split still stands: named opinion exists while no lodging receipt for that entity/period/channel is audited and not filed, and a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line is filing theater and not audited. Audited Is Not Filed separates an independent named opinion or assurance conclusion from a named filing receipt. False confidence here is a filing receipt treated as acceptance, or an acceptance notice treated as proof the pack was lodged under the named filing trail. Field proof is the named trail, not the tile. What changes Tuesday is the refusal to let one record wear the other record’s name.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The filed practice is not the accepted practice
+            </h2>
+
+            <p>
+              Filed means that named audited period pack (statements + named opinion/assurance conclusion as
+              applicable) has been lodged with the named regulator / registry / lender / board filing channel
+              for that named entity and period, with a named filing receipt / confirmation, filing timestamp,
+              and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an
+              email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the
+              named receiving authority for that channel (regulator / registry / lender / board secretary or
+              equivalent) has issued a named acceptance / completeness acknowledgement for that specific
+              lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from
+              that acceptance notice back to the filing receipt — not an auto-ack that only confirms message
+              delivery, not "under review," not a draft status page, not a dashboard green, and not a CMMS
+              checkbox. Sync may surface a filing receipt or an acceptance notice beside Evidence,
+              Verification, and the closed outcome. A practice record that says filed is accepted is not shown
+              accepted. Evidence from the plant beats the filing receipt when the receipt is being used as
+              acceptance. Evidence from the plant beats the acceptance notice when the notice is being used as
+              proof the pack was lodged under the named filing trail. Evidence from the plant beats the note.
+              The filed practice is not the accepted practice.
+            </p>
+
+            <p>
+              One file can hold a filing. That named audited period pack (statements + named opinion/assurance
+              conclusion as applicable) has been lodged with the named regulator / registry / lender / board
+              filing channel for that named entity and period, with a named filing receipt / confirmation,
+              filing timestamp, and unbroken trail back to the audited pack. The channel is named. The receipt
+              or confirmation is named. The filing timestamp is named. The trail back to the audited pack is
+              unbroken. Then the record stops. It does not say the named receiving authority for that channel
+              has issued a named acceptance or completeness acknowledgement for that specific lodged filing.
+              It does not name the filing identifier on an acceptance notice. It does not show an unbroken
+              evidence trail from that acceptance notice back to the filing receipt. That is lodging receipt
+              exists while no named acceptance/completeness acknowledgement for that filing. That record can
+              be filed. It is not accepted. A firm can be filed and still not accepted. A filing receipt alone
+              is not acceptance. An auto-ack that only confirms message delivery is not acceptance. A status
+              that says "under review" is not acceptance. A draft status page is not acceptance. A dashboard
+              green is not acceptance. A CMMS checkbox is not acceptance. An acceptance chase can be loud and
+              still not be this filing. The file shows an acceptance claim or an under-review status while no
+              lodging receipt for that entity, period, and channel. That is acceptance theater. It is not
+              filed. A firm can chase acceptance theater and still not be filed. An acceptance claim alone is
+              not filed. An under-review status alone is not filed. A filing receipt can name an entity, a
+              period, and a channel and still have no named acceptance for that filing. An acceptance notice
+              can name an authority and a filing identifier and still fail to show that the pack was lodged
+              under the named filing trail. A filing receipt alone is not acceptance. An acceptance notice
+              alone is not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket
+              state, status light, or one-off clear is neither. A one-off clear is a single quiet interval. It
+              is not a named filing receipt with an unbroken trail back to the audited pack, and it is not a
+              named acceptance notice with an unbroken evidence trail back to that filing receipt. The filed
+              practice is not the accepted practice. This essay does not invent a customer, a price, or a
+              return. It states no savings figure, states no price, and states no OEM limit. A practice record
+              that says filed is accepted is not a customer plant release, and it is not shown accepted.
+              Treating filed as accepted records a lodging receipt nobody has had accepted as an acceptance
+              notice for that entity, period, channel, and filing identifier, under the honesty and
+              verification boundary. Keep audited (independent named opinion) from Audited Is Not Filed, and
+              reported (named recognized amount in the named period report pack) from Reported Is Not Audited,
+              distinct from filed and from accepted. Audited, an independent named auditor / assurance
+              provider has issued a named opinion or assurance conclusion on that named period’s financial
+              statements (or named scoped assertion) for that named entity, covering that named line (or the
+              statements that include it), with an unbroken evidence trail to the reported pack and
+              recognition evidence, is the audit record from Audited Is Not Filed. It is not this filing. It
+              is not this acceptance. A filed period can still lack a named acceptance, and an acceptance
+              claim can still lack a lodging receipt.
+            </p>
+
+            <p>
+              Filed, in this essay, is that named audited period pack (statements + named opinion/assurance
+              conclusion as applicable) has been lodged with the named regulator / registry / lender / board
+              filing channel for that named entity and period, with a named filing receipt / confirmation,
+              filing timestamp, and unbroken trail back to the audited pack. Accepted, in this essay, means the
+              named receiving authority for that channel (regulator / registry / lender / board secretary or
+              equivalent) has issued a named acceptance / completeness acknowledgement for that specific
+              lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from
+              that acceptance notice back to the filing receipt. This accepted is channel acceptance of a
+              lodged filing, distinct from Complete Is Not Accepted. Audited, in Audited Is Not Filed, is an
+              independent named auditor / assurance provider has issued a named opinion or assurance
+              conclusion on that named period’s financial statements (or named scoped assertion) for that
+              named entity, covering that named line (or the statements that include it), with an unbroken
+              evidence trail to the reported pack and recognition evidence. Reported, in Reported Is Not
+              Audited, is that named recognized amount in the named period report pack for the named entity,
+              with the named line, period, and preparer/attester, reconcilable to the recognition evidence.
+              Accepted, in Complete Is Not Accepted, is a named human formally accepting an acceptance pack,
+              or the case outcome it covers, under a named decision window. That accepted is plant or work
+              acceptance. It is not this accepted. Accepted, in Accepted Is Not Verified, is that same named
+              human sign-off, kept off an independent evidence check. That accepted is not this accepted.
+              Closed, in Closed Is Not Collected, is a period/books close. This closed is a period/books
+              close. It is not the work-order / incident closed in Closed Is Not Resolved. A period close
+              attestation is not a cleared plant exception, it is not a period report, it is not an
+              independent audit opinion, it is not a filing receipt, and it is not an acceptance notice from a
+              receiving authority. A closed ticket is not proof the named pack was lodged, and it is not proof
+              the named authority accepted that filing. A report line is not a work-order checkbox. An audit
+              opinion is not a lodging receipt. A filing receipt is not an acceptance notice. An acceptance
+              pack sign-off is not a regulator acknowledgement. This essay does not rewrite Closed Is Not
+              Resolved. This essay does not rewrite Audited Is Not Filed. This essay does not rewrite Reported
+              Is Not Audited. This essay does not rewrite Complete Is Not Accepted. This essay does not
+              rewrite Accepted Is Not Verified. This essay does not collapse a period/books close into a
+              work-order / incident closed. This essay does not collapse a filing receipt into an audit
+              opinion. This essay does not collapse an acceptance notice into a filing receipt. This essay
+              does not collapse channel acceptance of a lodged filing into an acceptance pack.
+            </p>
+
+            <p>
+              On Tuesday the question splits. The filing file answers whether that named audited period pack
+              (statements + named opinion/assurance conclusion as applicable) has been lodged with the named
+              regulator / registry / lender / board filing channel for that named entity and period, with a
+              named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited
+              pack. The acceptance file answers whether the named receiving authority for that channel
+              (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance /
+              completeness acknowledgement for that specific lodged filing (entity, period, channel, filing
+              identifier), with an unbroken evidence trail from that acceptance notice back to the filing
+              receipt. One file does not answer the other. A filing receipt read as if it were the acceptance
+              notice does not change the question. An acceptance notice read as if it were the lodging receipt
+              does not change the question. A sentence that says audit is done does not change the question. A
+              draft upload does not change the question. An email saying we sent it does not change the
+              question. An auto-ack that only confirms message delivery does not change the question. A status
+              that says "under review" does not change the question. A draft status page does not change the
+              question. A dashboard green does not change the question. A CMMS checkbox does not change the
+              question. An acceptance pack sign-off does not change the question. An independent check of an
+              acceptance pack does not change the question. A report pack read as if it were either filing or
+              acceptance does not change the question. An audit opinion read as if it were either filing or
+              acceptance does not change the question. What changes Tuesday is the refusal to let one record
+              wear the other record’s name.
+            </p>
+
+            <p>
+              The problem is a lodged pack treated as if the named receiving authority had accepted that
+              specific filing, or an acceptance claim treated as if the pack had been lodged. The dashboard
+              can be green. The ticket can be closed. The email can say we sent it. The portal can say under
+              review. The message system can return an auto-ack that only confirms delivery. None of those is
+              the named acceptance or completeness acknowledgement, and none of those repairs a missing
+              lodging receipt. False confidence here is a filing receipt treated as acceptance, or an
+              acceptance notice treated as proof the pack was lodged under the named filing trail. The
+              distinction is the lodging receipt on one side and the authority’s named acknowledgement on the
+              other, joined only by an unbroken trail. Field proof is the named trail, not the tile. What
+              changes Tuesday is the refusal to let one record wear the other record’s name.
+            </p>
+
+            <p>
+              An auto-ack that only confirms message delivery is not acceptance. It can name a gateway, a
+              timestamp, and a message id. It does not say the named receiving authority issued a named
+              acceptance or completeness acknowledgement for that specific lodged filing. It does not tie that
+              acknowledgement back to the filing receipt. Message delivery is not channel acceptance. A filing
+              receipt can exist beside that auto-ack and the filing can still be unaccepted.
+            </p>
+
+            <p>
+              A status that says "under review" is not acceptance. Review is an open state. It is not a named
+              acceptance or completeness acknowledgement. A firm can chase acceptance theater and still not be
+              filed when that under-review status exists while no lodging receipt for that
+              entity/period/channel. Under review does not lodge the pack. Under review does not accept the
+              filing.
+            </p>
+
+            <p>
+              A draft status page is not acceptance. A draft upload is not filing. A page that shows a draft,
+              a preview, or an unsubmitted form has not lodged the named audited period pack and has not
+              recorded a named acknowledgement from the receiving authority. A dashboard green is not filing
+              and is not acceptance. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+            </p>
+
+            <p>
+              An email saying we sent it is not a filing receipt. A sentence that says "audit is done" is not
+              a filing receipt and is not an acceptance notice. A management pack alone is not a filing. An
+              internal controller close attestation alone is not a filing. A named opinion alone is not a
+              filing. Audited Is Not Filed already refuses to treat that opinion as a lodging receipt. This
+              essay refuses to treat the lodging receipt as acceptance, and refuses to treat an acceptance
+              claim as the lodging.
+            </p>
+
+            <p>
+              A named human sign-off of an acceptance pack is not this acceptance. Complete Is Not Accepted
+              separates measured completeness of that pack from the human who formally accepts it. Accepted Is
+              Not Verified separates that human sign-off from an independent evidence check. This accepted is
+              channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. The receiving
+              authority’s completeness acknowledgement is not a plant acceptance criterion satisfied, and it
+              is not a human accepting a case pack inside Sync. Sync must not auto-accept. Sync must not treat
+              filed as accepted as Learning credit. Sync does not accept for the customer.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/audited-is-not-filed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Audited Is Not Filed
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/audited-is-not-filed. Audited Is Not
+              Filed separates an independent named opinion or assurance conclusion from a named filing
+              receipt. Audited, there, means an independent named auditor / assurance provider has issued a
+              named opinion or assurance conclusion on that named period’s financial statements (or named
+              scoped assertion) for that named entity, covering that named line (or the statements that
+              include it), with an unbroken evidence trail to the reported pack and recognition evidence — not
+              a management pack alone, not an internal controller close attestation alone, not "we’re
+              audit-ready," not a dashboard green, and not a CMMS checkbox. Filed, there, means that named
+              audited period pack (statements + named opinion/assurance conclusion as applicable) has been
+              lodged with the named regulator / registry / lender / board filing channel for that named entity
+              and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail
+              back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent
+              it, not a dashboard green, and not a CMMS checkbox. A firm can be audited and still not filed
+              (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase
+              filing theater and still not be audited (a lodging claim or draft upload exists while no
+              independent named opinion covers that period/entity/line). An audit opinion alone is not a
+              filing. A filing receipt alone is not proof an independent opinion covers the named line. That
+              refusal stops at the lodging receipt. It does not ask whether the named receiving authority for
+              that channel (regulator / registry / lender / board secretary or equivalent) has issued a named
+              acceptance / completeness acknowledgement for that specific lodged filing (entity, period,
+              channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to
+              the filing receipt. A named filing receipt can still lack a named acceptance. Keep reported
+              (named recognized amount in the named period report pack) from Reported Is Not Audited distinct
+              from audited and from filed. This essay keeps that reported amount, and that audited opinion,
+              distinct from filed and from accepted.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>
+              {" "}
+              is a different refusal. Complete, there, is every named acceptance criterion for a case
+              satisfied under a named measurement window — acceptance completeness, not a closed stamp and not
+              a human sign-off. Accepted, there, is a named human formally accepting that acceptance pack, or
+              the case outcome it covers, under a named decision window — human acceptance and sign-off, not
+              merely that the criteria measured as met. That accepted is not this accepted. This accepted is
+              channel acceptance of a lodged filing, distinct from Complete Is Not Accepted. An acceptance
+              pack sign-off does not lodge a period pack with a regulator, registry, lender, or board filing
+              channel. A completeness acknowledgement from a receiving authority does not satisfy a plant
+              acceptance criterion and does not name a human who accepted an acceptance pack inside the
+              Decision Case. This essay does not collapse into Complete Is Not Accepted. This essay does not
+              rewrite Complete Is Not Accepted. Accepted Is Not Verified is a different refusal beside that
+              one. Verified, there, is an independent check of that pack or outcome against named evidence
+              under a named measurement window. That check is not a filing receipt and it is not a regulator,
+              registry, lender, or board acknowledgement. This essay does not collapse into Accepted Is Not
+              Verified. This essay does not rewrite Accepted Is Not Verified.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an acceptance record is allowed to be
+            </h2>
+
+            <p>
+              Evidence may cite a filing record when the source of that lodging is named, and when the
+              citation names the same entity and the same period, and when the citation says that named
+              audited period pack (statements + named opinion/assurance conclusion as applicable) has been
+              lodged with the named regulator / registry / lender / board filing channel for that named entity
+              and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail
+              back to the audited pack. The filing record is about that lodging. It is not, by itself,
+              acceptance. It is not an auto-ack that only confirms message delivery. It is not "under review."
+              It is not a draft status page. It is not a dashboard green. It is not a CMMS checkbox. Evidence
+              may cite an acceptance record when the source of that acknowledgement is named, and when the
+              citation names the same entity, the same period, the same channel, and the same filing
+              identifier, and when the citation says the named receiving authority for that channel (regulator
+              / registry / lender / board secretary or equivalent) has issued a named acceptance /
+              completeness acknowledgement for that specific lodged filing (entity, period, channel, filing
+              identifier), with an unbroken evidence trail from that acceptance notice back to the filing
+              receipt. The acceptance record is about that acknowledgement. It is not, by itself, proof the
+              pack was lodged under the named filing trail if no filing receipt exists for that entity,
+              period, and channel. An acceptance notice alone is not proof the pack was lodged under the named
+              filing trail. A filing receipt alone is not acceptance. If the evidence records that the lodging
+              receipt exists while no named acceptance/completeness acknowledgement for that filing, the case
+              may store the note as filed and must not store the note as accepted. If the evidence records
+              that an acceptance claim or under-review status exists while no lodging receipt for that
+              entity/period/channel, the case may store the note as acceptance theater and must not store the
+              note as filed. What an acceptance record is allowed to be is that named acknowledgement, with
+              the named receiving authority, the named entity, the named period, the named channel, the filing
+              identifier, and an unbroken evidence trail from that acceptance notice back to the filing
+              receipt. It is not a filing receipt used as proof the authority accepted the filing. It is not
+              permission to execute. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Surfacing is still a read. Sync refuses false precision. Sync must not
+              auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync
+              must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must
+              not treat filed as accepted as Learning credit. Sync must not treat audited as filed as Learning
+              credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path. Sync does not measure acceptance. Sync does not measure
+              acceptance for the customer. Sync does not measure filing or acceptance for the customer. Sync
+              does not measure filing. Sync does not measure filing for the customer. Sync does not accept for
+              the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync
+              refuses to pretend filing or acceptance is a status light. Sync may surface a filing receipt or
+              an acceptance notice beside Evidence, Verification, and the closed outcome. Surfacing is still a
+              read. Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named
+              recognized amount in the named period report pack) from Reported Is Not Audited, distinct from
+              filed and from accepted. A report record is not stored as accepted, an audit opinion is not
+              stored as accepted, and an acceptance notice is not stored as filed. This accepted is channel
+              acceptance of a lodged filing, distinct from Complete Is Not Accepted.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named filing is not acceptance
+            </h2>
+
+            <p>
+              Named filing is not acceptance. The filed practice is not the accepted practice. A filing record
+              answers whether that named audited period pack (statements + named opinion/assurance conclusion
+              as applicable) has been lodged with the named regulator / registry / lender / board filing
+              channel for that named entity and period, with a named filing receipt / confirmation, filing
+              timestamp, and unbroken trail back to the audited pack. It does not, by itself, show that the
+              named receiving authority for that channel (regulator / registry / lender / board secretary or
+              equivalent) has issued a named acceptance / completeness acknowledgement for that specific
+              lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from
+              that acceptance notice back to the filing receipt. A record where the lodging receipt exists
+              while no named acceptance/completeness acknowledgement for that filing is still filing. It is
+              not acceptance. A firm can be filed and still not accepted. A record where an acceptance claim
+              or under-review status exists while no lodging receipt for that entity/period/channel is still
+              acceptance theater. It is not filing. A firm can chase acceptance theater and still not be
+              filed. A filing receipt alone is not acceptance. An acceptance notice alone is not proof the
+              pack was lodged under the named filing trail. Not an auto-ack that only confirms message
+              delivery. Not "under review." Not a draft status page. Not a dashboard green. Not a CMMS
+              checkbox. Not "audit is done." Not a draft upload. Not an email saying we sent it. A CMMS
+              checkbox, ticket state, status light, or one-off clear is neither. This closed is a period/books
+              close. It is not the work-order / incident closed in Closed Is Not Resolved. This essay
+              separates a named filing receipt from a named acceptance or completeness acknowledgement. Keep
+              audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized
+              amount in the named period report pack) from Reported Is Not Audited, distinct from filed and
+              from accepted. This accepted is channel acceptance of a lodged filing, distinct from Complete Is
+              Not Accepted. This essay does not collapse acceptance into filing. This essay does not collapse
+              filed into accepted.
+            </p>
+
+            <p>
+              This essay does not rewrite Audited Is Not Filed. This essay does not collapse into Audited Is
+              Not Filed. This essay does not rewrite Reported Is Not Audited. This essay does not collapse
+              into Reported Is Not Audited. This essay does not rewrite Recognized Is Not Reported. This essay
+              does not collapse into Recognized Is Not Reported. This essay does not rewrite Collected Is Not
+              Recognized. This essay does not collapse into Collected Is Not Recognized. This essay does not
+              rewrite Closed Is Not Collected. This essay does not collapse into Closed Is Not Collected. This
+              essay does not rewrite Reconciled Is Not Closed. This essay does not collapse into Reconciled Is
+              Not Closed. This essay does not rewrite Booked Is Not Reconciled. This essay does not collapse
+              into Booked Is Not Reconciled. This essay does not rewrite Settled Is Not Booked. This essay
+              does not collapse into Settled Is Not Booked. This essay does not rewrite Paid Is Not Settled.
+              This essay does not collapse into Paid Is Not Settled. This essay does not rewrite Covered Is
+              Not Paid. This essay does not collapse into Covered Is Not Paid. This essay does not rewrite
+              Insured Is Not Covered. This essay does not collapse into Insured Is Not Covered. This essay
+              does not rewrite Certified Is Not Insured. This essay does not collapse into Certified Is Not
+              Insured. This essay does not rewrite Assured Is Not Certified. This essay does not collapse into
+              Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This essay
+              does not collapse into Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not
+              Recoverable. This essay does not collapse into Rehearsed Is Not Recoverable. This essay does not
+              rewrite Transferable Is Not Rehearsed. This essay does not collapse into Transferable Is Not
+              Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not
+              collapse into Governed Is Not Transferable. This essay does not rewrite Owned Is Not Governed.
+              This essay does not collapse into Owned Is Not Governed. This essay does not rewrite Complete Is
+              Not Accepted. This essay does not collapse into Complete Is Not Accepted. This essay does not
+              rewrite Accepted Is Not Verified. This essay does not collapse into Accepted Is Not Verified.
+              This essay does not rewrite Cash Is Not Margin. This essay does not collapse into Cash Is Not
+              Margin. This essay does not rewrite Closure Is Not Cash. This essay does not collapse into
+              Closure Is Not Cash. This essay does not rewrite Closed Is Not Resolved. This essay does not
+              collapse into Closed Is Not Resolved. This essay does not rewrite Margin Is Not Profit. This
+              essay does not collapse into Margin Is Not Profit. This essay does not rewrite Assured Is Not
+              Proven. This essay does not collapse into Assured Is Not Proven. This essay does not rewrite
+              Verified Is Not Assured. This essay does not collapse into Verified Is Not Assured. This essay
+              does not rewrite Green Is Not Go. This essay does not collapse into Green Is Not Go. This essay
+              does not collapse acceptance into filing. This essay does not collapse filed into accepted. This
+              essay does not collapse filing into auditing. This essay does not collapse audited into filed.
+              Sync does not measure acceptance. Sync does not measure acceptance for the customer. Sync does
+              not measure filing or acceptance for the customer. Sync refuses to pretend filing or acceptance
+              is a status light. Sync does not accept for the customer. Sync does not file for the customer.
+              Sync does not audit for the customer. Sync does not report revenue for the customer. Sync does
+              not recognize revenue for the customer. Sync does not collect the named receivable for the
+              customer. Sync must not auto-accept. Sync must not auto-file. Sync must not auto-audit. Sync
+              must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not
+              auto-close-books. Sync must not treat filed as accepted as Learning credit. Sync must not treat
+              audited as filed as Learning credit. Direct plant execute stays off. CMMS write-back is not a
+              live product path. Billing write-back is not a live product path. Field proof is the named
+              trail, not the tile. A filing record without the named channel, the named receipt or
+              confirmation, the filing timestamp, the named entity, the named period, and an unbroken trail
+              back to the audited pack is not filed. An acceptance record without the named receiving
+              authority, the named acceptance or completeness acknowledgement, the named entity, the named
+              period, the named channel, the filing identifier, and an unbroken evidence trail from that
+              acceptance notice back to the filing receipt is not accepted. False confidence here is a filing
+              receipt treated as acceptance, or an acceptance notice treated as proof the pack was lodged
+              under the named filing trail. What changes Tuesday is the refusal to let one record wear the
+              other record’s name.
+            </p>
+
 
             <p>
               Audited is not filed. Audited means an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period’s financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — not a management pack alone, not an internal controller close attestation alone, not "we’re audit-ready," not a dashboard green, and not a CMMS checkbox. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Audited is not filed. A firm can be audited and still not filed (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase filing theater and still not be audited (a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line). An audit opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Keep reported (named recognized amount in the named period report pack) from Reported Is Not Audited distinct from audited and from filed. Keep recognized (earning attested under the named acceptance rule) from Recognized Is Not Reported distinct from reported, from audited, and from filed. Keep collected (cash cleared and applied) from Collected Is Not Recognized distinct from recognized, from reported, from audited, and from filed. Reported is not audited. Recognized is not reported. Collected is not recognized. This closed is a period/books close. It is not the work-order / incident closed in Closed Is Not Resolved. Reported Is Not Audited separates that named recognized amount in the named period report pack from an independent named opinion or assurance conclusion. This essay separates an independent named opinion or assurance conclusion from a named filing receipt. A named opinion alone is not a filing. A filing receipt alone is not proof an independent opinion covers the named line. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync refuses to pretend auditing or filing is a status light. Sync does not measure filing. Sync does not measure filing for the customer. Sync does not measure auditing or filing for the customer. Sync does not measure auditing. Sync does not measure auditing for the customer. Sync does not measure reporting or auditing for the customer. Sync does not measure reporting. Sync does not measure reporting for the customer. Sync does not measure recognition or reporting for the customer. Sync does not measure recognition. Sync does not measure recognition for the customer. Sync does not file for the customer. Sync does not audit for the customer. Sync does not report revenue for the customer. Sync does not recognize revenue for the customer. Sync does not collect the named receivable for the customer. Sync does not close books for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, auto-reconcile, auto-close-books, auto-collect, auto-recognize, auto-report, auto-audit, or auto-file. Sync must not auto-file. Sync must not auto-audit. Sync must not auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not auto-close-books. Sync must not treat audited as filed as Learning credit. Sync must not treat reported as audited as Learning credit. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
@@ -12481,47 +12871,6 @@ export default function AuditedIsNotFiledPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/filed-is-not-accepted"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Filed Is Not Accepted
-              </Link>
-              , on why filed is still not accepted. Filed is not accepted. Filed means that named audited
-              period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with
-              the named regulator / registry / lender / board filing channel for that named entity and period,
-              with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the
-              audited pack — not "audit is done," not a draft upload, not an email saying we sent it, not a
-              dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that
-              channel (regulator / registry / lender / board secretary or equivalent) has issued a named
-              acceptance / completeness acknowledgement for that specific lodged filing (entity, period,
-              channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to
-              the filing receipt — not an auto-ack that only confirms message delivery, not "under review,"
-              not a draft status page, not a dashboard green, and not a CMMS checkbox. A firm can be filed and
-              still not accepted (lodging receipt exists while no named acceptance/completeness
-              acknowledgement for that filing). A firm can chase acceptance theater and still not be filed (an
-              acceptance claim or under-review status exists while no lodging receipt for that
-              entity/period/channel). A filing receipt alone is not acceptance. An acceptance notice alone is
-              not proof the pack was lodged under the named filing trail. A CMMS checkbox, ticket state,
-              status light, or one-off clear is neither. Keep audited (independent named opinion) from Audited
-              Is Not Filed, and reported (named recognized amount in the named period report pack) from
-              Reported Is Not Audited, distinct from filed and from accepted. This accepted is channel
-              acceptance of a lodged filing, distinct from Complete Is Not Accepted. Audited remains an
-              independent named opinion or assurance conclusion on that named period. Audited Is Not Filed
-              separates that opinion from a named filing receipt. This essay separates a named filing receipt
-              from a named acceptance or completeness acknowledgement. A filing receipt alone is not
-              acceptance. An acceptance notice alone is not proof the pack was lodged under the named filing
-              trail. Sync does not measure filing or acceptance for the customer. Sync does not measure
-              acceptance. Sync does not measure acceptance for the customer. Sync must not auto-accept. Sync
-              must not treat filed as accepted as Learning credit. Sync refuses to pretend filing or
-              acceptance is a status light. Sync must not auto-file. Sync must not auto-audit. Sync must not
-              auto-report. Sync must not auto-recognize. Sync must not auto-collect. Sync must not
-              auto-close-books. Direct plant execute stays off. CMMS write-back is not a live product path.
-              Billing write-back is not a live product path.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -12581,7 +12930,7 @@ export default function AuditedIsNotFiledPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="audited-is-not-filed" />
+          <InsightNextSteps slug="filed-is-not-accepted" />
         </motion.article>
       </div>
     </main>

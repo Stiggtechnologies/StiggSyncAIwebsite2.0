@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const acceptedFilingIndex = slugs.indexOf('filed-is-not-accepted');
 const filedIndex = slugs.indexOf('audited-is-not-filed');
 const auditedIndex = slugs.indexOf('reported-is-not-audited');
 const reportedIndex = slugs.indexOf('recognized-is-not-reported');
@@ -89,7 +90,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    filedIndex >= 0 &&
+    acceptedFilingIndex >= 0 &&
+    filedIndex > acceptedFilingIndex &&
     auditedIndex > filedIndex &&
     reportedIndex > auditedIndex &&
     recognizedIndex > reportedIndex &&
@@ -159,7 +161,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -13326,6 +13328,97 @@ if (
 ) {
   fail('reported-is-not-audited must point the series forward to audited-is-not-filed');
 }
+
+
+const acceptedFilingPageRequired = [
+  ...filedPageRequired,
+  "Filed Is Not Accepted",
+  "Filed is not accepted",
+  "the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt",
+  "not an auto-ack that only confirms message delivery, not \"under review,\" not a draft status page, not a dashboard green, and not a CMMS checkbox",
+  "A firm can be filed and still not accepted",
+  "lodging receipt exists while no named acceptance/completeness acknowledgement for that filing",
+  "A firm can chase acceptance theater and still not be filed",
+  "an acceptance claim or under-review status exists while no lodging receipt for that entity/period/channel",
+  "A filing receipt alone is not acceptance",
+  "An acceptance notice alone is not proof the pack was lodged under the named filing trail",
+  "The filed practice is not the accepted practice",
+  "What an acceptance record is allowed to be",
+  "Named filing is not acceptance",
+  "Sync does not measure acceptance",
+  "Sync does not measure acceptance for the customer",
+  "Sync does not measure filing or acceptance for the customer",
+  "Sync may surface a filing receipt or an acceptance notice",
+  "does not collapse acceptance into filing",
+  "does not collapse filed into accepted",
+  "does not rewrite Audited Is Not Filed",
+  "does not collapse into Audited Is Not Filed",
+  "does not collapse into Complete Is Not Accepted",
+  "does not rewrite Complete Is Not Accepted",
+  "does not collapse into Accepted Is Not Verified",
+  "does not rewrite Accepted Is Not Verified",
+  "channel acceptance of a lodged filing",
+  "distinct from Complete Is Not Accepted",
+  "practice record that says filed is accepted",
+  "filed as accepted",
+  "separates a named filing receipt from a named acceptance or completeness acknowledgement",
+  "/insights/audited-is-not-filed",
+  "Evidence from the plant beats the filing receipt when the receipt is being used as acceptance",
+  "Evidence from the plant beats the acceptance notice when the notice is being used as proof the pack was lodged under the named filing trail",
+  "treat filed as accepted as Learning credit",
+  "Sync refuses to pretend filing or acceptance is a status light",
+  "Sync does not accept for the customer",
+  "Sync must not auto-accept",
+  "Sync must not auto-file",
+  "Sync must not auto-audit",
+  "Sync must not auto-report",
+  "Sync must not auto-recognize",
+  "Sync must not auto-collect",
+  "Sync must not auto-close-books",
+  "Keep audited (independent named opinion) from Audited Is Not Filed, and reported (named recognized amount in the named period report pack) from Reported Is Not Audited, distinct from filed and from accepted",
+  "False confidence here is a filing receipt treated as acceptance, or an acceptance notice treated as proof the pack was lodged under the named filing trail.",
+  "Field proof is the named trail, not the tile.",
+  "What changes Tuesday is the refusal to let one record wear the other record’s name.",
+  "Direct plant execute stays off",
+  "CMMS write-back is not a live product path",
+  "Billing write-back is not a live product path",
+  "Evidence lineage is not optional",
+  "Human decision is not optional",
+  "Recommend is not authorize",
+  "under the honesty and verification boundary",
+  "work-order / incident closed",
+  "period/books close",
+];
+const acceptedFilingPage = read('app/insights/filed-is-not-accepted/page.tsx');
+for (const required of acceptedFilingPageRequired) {
+  if (!acceptedFilingPage.includes(required)) {
+    fail(`filed-is-not-accepted page must include ${required}`);
+  }
+}
+
+const acceptedFilingBlock = stepBlock('filed-is-not-accepted');
+for (const required of ['audited-is-not-filed', 'reported-is-not-audited', 'recognized-is-not-reported', 'collected-is-not-recognized', 'closed-is-not-collected', 'reconciled-is-not-closed', 'booked-is-not-reconciled', 'settled-is-not-booked', 'paid-is-not-settled', 'covered-is-not-paid', 'insured-is-not-covered', 'certified-is-not-insured', 'assured-is-not-certified', 'recoverable-is-not-assured', 'rehearsed-is-not-recoverable', 'transferable-is-not-rehearsed', 'governed-is-not-transferable', 'owned-is-not-governed', 'compounded-is-not-owned', 'scaled-is-not-compounded', 'sustained-is-not-scaled', 'adopted-is-not-sustained', 'trusted-is-not-adopted', 'proven-is-not-trusted', 'resolved-is-not-proven', 'closed-is-not-resolved', 'executed-is-not-closed', 'authorized-is-not-executed', 'verified-is-not-authorized', 'accepted-is-not-verified', 'complete-is-not-accepted', 'action-is-not-execution', 'simulation-is-not-proof', ...acceptedReadingRequired]) {
+  if (!acceptedFilingBlock.includes(`'${required}'`)) {
+    fail(`filed-is-not-accepted related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(acceptedFilingBlock)) {
+  fail('filed-is-not-accepted related reading must include the Strategic Pilot');
+}
+if (acceptedFilingBlock.includes("next: 'strategic-pilot'")) {
+  fail('filed-is-not-accepted next step is the Field Manual');
+}
+if (!stepBlock('audited-is-not-filed').includes("'filed-is-not-accepted'")) {
+  fail('audited-is-not-filed related reading must point forward to filed-is-not-accepted');
+}
+
+if (
+  !filedPage.includes('The series continues with') ||
+  !filedPage.includes('/insights/filed-is-not-accepted')
+) {
+  fail('audited-is-not-filed must point the series forward to filed-is-not-accepted');
+}
+
 
 
 function readingSlugs(name) {
