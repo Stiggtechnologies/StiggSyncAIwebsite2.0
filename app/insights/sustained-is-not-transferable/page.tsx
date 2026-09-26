@@ -16110,6 +16110,18 @@ export default function SustainedIsNotTransferablePage() {
               measured result. The control note does not record closure.
             </p>
 
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/transferable-is-not-binding"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Binding
+              </Link>
+              {' '}
+              on why transferable is still not binding.
+            </p>
+
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
