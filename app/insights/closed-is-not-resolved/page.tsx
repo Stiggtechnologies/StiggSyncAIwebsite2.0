@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('executed-is-not-closed');
+const article = getInsightArticle('closed-is-not-resolved');
 
-export default function ExecutedIsNotClosedPage() {
+export default function ClosedIsNotResolvedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,68 @@ export default function ExecutedIsNotClosedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Executed Is Not Closed</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Closed Is Not Resolved</h1>
+
+            <p className="text-xl text-gray-400">
+              Closed is not resolved. Closed is a named human (or named accountable role) formally
+              closing the case, work order, or exception under a named closure window — administrative
+              closure of the record, not proof the underlying defect, risk, or exception is gone.
+              Resolved is evidence that the underlying plant, operating, or capital exception is
+              actually cleared under a named resolution window (who/what/when/where against plant or
+              operating evidence) — the problem is gone, not merely that someone closed the ticket.
+              Closed is not resolved. A firm with closure can still lack resolution. A firm with
+              resolution can still lack closure. A closure note alone proves neither. A resolution
+              note alone proves neither. A closure note is not a green. A resolution note is not a
+              green. A named closure without resolution evidence is not resolved. Plant activity that
+              clears a symptom without a named closure is not closed. A CMMS checkbox, ticket state,
+              or status light is neither. Executed is not closed. Executed remains evidence that a
+              binding plant, operating, or capital move actually ran to completion under a named
+              execution window — execution happened, not that the case is finished administratively.
+              Closure is not complete. Control is not closure. Cleared is not complete. Ready is not
+              cleared. Closure is not cash. Complete is not accepted. Accepted is not verified.
+              Recommend is not authorize. Evidence lineage is not optional. Human decision is not
+              optional. Sync does not measure closure. Sync does not measure closure for the customer.
+              Sync does not measure resolution. Sync does not measure resolution for the customer.
+              Sync does not close or resolve cases for the customer. Sync does not execute or close
+              cases for the customer. Sync must not auto-close, auto-authorize, or auto-resolve.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Executed, in the prior essay, is evidence a binding move ran to completion.
+              That essay separates completed execution from named closure. This essay does not collapse
+              into that split. This essay separates named administrative closure from resolution
+              evidence. Closure Is Not Complete separates a closure stamp from acceptance completeness.
+              Control Is Not Closure separates direction power from a finished end-state. Cleared Is
+              Not Complete keeps a clearance stamp off proof the work is finished. Ready Is Not Cleared
+              keeps a readiness label off that gate. Closure Is Not Cash keeps a closed stamp off cash
+              collected. Complete Is Not Accepted separates measured completeness from named human
+              acceptance. Accepted Is Not Verified separates named human acceptance from an independent
+              evidence check. This essay does not collapse into those refusals. It separates a named
+              human formally closing the record from evidence the underlying plant, operating, or
+              capital exception is actually gone. Recommend Is Not Authorize, Evidence Lineage Is Not
+              Optional, and Human Decision Is Not Optional stay beside this split. Sync may surface a
+              closure/end-state note or a resolution/cleared-exception note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync must not auto-close,
+              auto-authorize, or auto-resolve. Sync must not auto-close, auto-authorize, or treat
+              closed as resolved as Learning credit. This essay does not rewrite Executed Is Not
+              Closed. This essay does not rewrite Closure Is Not Complete. This essay does not rewrite
+              Control Is Not Closure. This essay does not rewrite Cleared Is Not Complete. This essay
+              does not rewrite Ready Is Not Cleared. This essay does not rewrite Closure Is Not Cash.
+              This essay does not rewrite Complete Is Not Accepted. This essay does not rewrite
+              Accepted Is Not Verified. This essay does not collapse into Executed Is Not Closed. This
+              essay does not collapse into Closure Is Not Complete. This essay does not collapse into
+              Control Is Not Closure. This essay does not collapse into Cleared Is Not Complete. This
+              essay does not collapse into Ready Is Not Cleared. This essay does not collapse into
+              Closure Is Not Cash. This essay does not collapse into Complete Is Not Accepted. This
+              essay does not collapse into Accepted Is Not Verified. This essay does not collapse
+              closed into resolved. This essay does not collapse resolution into closure. This essay
+              does not collapse executed into closed.
+            </p>
+
             <p className="text-xl text-gray-400">
               Executed is not closed. Executed is evidence that a binding plant/operating/capital move
               actually ran to completion under a named execution window (who/what/when/where against
@@ -389,6 +450,363 @@ export default function ExecutedIsNotClosedPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+
+            <p className="text-xl font-semibold text-white">
+              Closed is not resolved. Closed is a named human (or named accountable role) formally
+              closing the case, work order, or exception under a named closure window — administrative
+              closure of the record, not proof the underlying defect, risk, or exception is gone.
+              Resolved is evidence that the underlying plant, operating, or capital exception is
+              actually cleared under a named resolution window (who/what/when/where against plant or
+              operating evidence) — the problem is gone, not merely that someone closed the ticket. A
+              firm with closure can still lack resolution when that named close is on the record and
+              the firm has not shown who, what, when, and where against plant or operating evidence
+              under a named resolution window. A firm with resolution can still lack closure when that
+              evidence is on the record and the firm has not named a human, or a named accountable
+              role, who formally closed the case, the work order, or the exception under a named
+              closure window. A named closure without resolution evidence is not resolved. Plant
+              activity that clears a symptom without a named closure is not closed. A CMMS checkbox,
+              ticket state, or status light is neither. Treating closed as resolved records
+              administrative closure of the record as a claim that the underlying defect, risk, or
+              exception is gone that nobody has shown, under the honesty and verification boundary. A
+              closure note can inform a recommendation to investigate. Recommend is not authorize.
+              Evidence lineage is not optional. Human decision is not optional. Evidence from the plant
+              beats the closure note when the note is being used as resolution. Evidence from the plant
+              beats the resolution note when the note is being used as closure. Sync must not
+              auto-close, auto-authorize, or auto-resolve. Sync must not auto-close, auto-authorize, or
+              treat closed as resolved as Learning credit. Sync does not measure closure. Sync does not
+              measure closure for the customer. Sync does not measure resolution. Sync does not measure
+              resolution for the customer. Sync does not close or resolve cases for the customer.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The closed record is not the resolved exception
+            </h2>
+
+            <p>
+              Closed is a named human (or named accountable role) formally closing the case, work order, or exception under a named closure window — administrative closure of the record, not proof the underlying defect, risk, or exception is gone. Resolved is evidence that the underlying plant, operating, or capital exception is actually cleared under a named resolution window (who/what/when/where against plant or operating evidence) — the problem is gone, not merely that someone closed the ticket. Sync may surface a closure/end-state note or a resolution/cleared-exception note beside Evidence, Verification, and the closed outcome. A practice record that says closed is resolved is not shown resolution. Evidence from the plant beats the closure note when the note is being used as resolution. Evidence from the plant beats the resolution note when the note is being used as closure.
+            </p>
+
+            <p>
+              A named human, or a named accountable role, can formally close the case, the work order,
+              or the exception under a named closure window while the firm has not shown that the
+              underlying plant, operating, or capital exception is gone. That act is closed. It is not
+              resolved. Plant or operating evidence can show who, what, when, and where the underlying
+              exception was actually cleared under a named resolution window while nobody has named the
+              human, or the accountable role, who formally closed the record. That evidence is
+              resolved. It is not closed. A title on the org chart, with or without scope, is neither
+              the administrative close nor the evidence the problem is gone. A firm with closure can
+              still lack resolution. A firm with resolution can still lack closure. A closure note
+              alone proves neither. A resolution note alone proves neither. A closure note is not a
+              green. A resolution note is not a green. A named closure without resolution evidence is
+              not resolved. Plant activity that clears a symptom without a named closure is not closed.
+              A symptom that quiets is not, by itself, who, what, when, and where showing the
+              underlying exception is gone. A CMMS checkbox, ticket state, or status light is neither.
+              Named closure is not resolution evidence. The closed record is not the resolved
+              exception. This essay does not invent a customer, a price, or a return. It states no
+              savings figure, states no price, and states no OEM limit. A practice record that says
+              closed is resolved is not a customer plant release, and it is not shown resolution.
+              Treating closed as resolved records administrative closure of the record as a claim that
+              the underlying defect, risk, or exception is gone that nobody has shown, under the
+              honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/executed-is-not-closed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Executed Is Not Closed
+              </Link>{' '}
+              sits one step earlier. Executed, there, is evidence that a binding plant, operating, or
+              capital move actually ran to completion under a named execution window
+              (who/what/when/where against plant or operating evidence) — execution happened, not that
+              the case is finished administratively. Closed, there, is a named human (or named
+              accountable role) formally closing the case, the work, or the exception under a named
+              closure window — administrative/work-state closure, not merely that the move ran.
+              Execution evidence without named closure is not closed. A closed stamp without execution
+              evidence is not executed. A CMMS checkbox, ticket state, or status light is neither. That
+              refusal stops at completed execution and named closure. It does not ask whether the
+              underlying plant, operating, or capital exception is actually gone under a named
+              resolution window. Executed is not closed is a different refusal. Closed is not resolved
+              is the next refusal. Completed execution is not named closure, and named closure is not
+              resolution evidence. Executed Is Not Closed separates completed execution from named
+              closure. This essay separates named administrative closure from resolution evidence. This
+              essay does not rewrite Executed Is Not Closed. This essay does not collapse into Executed
+              Is Not Closed. This essay does not collapse executed into closed. This essay does not
+              collapse closed into resolved.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/closure-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Complete
+              </Link>{' '}
+              separates a finished work-state — a ticket, work order, investigation, or decision cycle
+              marked done with a named end condition — from acceptance completeness. Complete, there,
+              is every named acceptance criterion for that case satisfied under a named measurement
+              window. That refusal is a closure stamp versus acceptance completeness. This essay does
+              not ask whether every acceptance criterion measured as met. It asks whether a named human
+              formally closing the record is the same thing as evidence the underlying exception is
+              gone. It is not.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              separates direction power from a finished end-state. Who can steer capital allocation,
+              operating priorities, or binding plant moves in practice is not the named close, and it
+              is not who/what/when/where showing the exception is gone. This essay does not rewrite
+              Closure Is Not Complete. This essay does not rewrite Control Is Not Closure. This essay
+              does not collapse into Closure Is Not Complete. This essay does not collapse into Control
+              Is Not Closure. This essay does not collapse resolution into closure.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/cleared-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cleared Is Not Complete
+              </Link>{' '}
+              keeps a clearance stamp off proof the work is finished. Cleared, there, is a ready or
+              permission gate past a clearance check. That gate is not this essay. Resolved here is not
+              a clearance stamp. Resolved here is evidence the underlying plant, operating, or capital
+              exception is actually cleared under a named resolution window.{' '}
+              <Link
+                href="/insights/ready-is-not-cleared"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ready Is Not Cleared
+              </Link>{' '}
+              keeps a readiness label off that gate. A ready flag is not clearance, not closure, and
+              not resolution.{' '}
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>{' '}
+              keeps a closed work order, ticket, or shift off cash collected. Collected money is not
+              resolution evidence, and a closure stamp is not cash. This essay does not rewrite Cleared
+              Is Not Complete. This essay does not rewrite Ready Is Not Cleared. This essay does not
+              rewrite Closure Is Not Cash. This essay does not collapse into Cleared Is Not Complete.
+              This essay does not collapse into Ready Is Not Cleared. This essay does not collapse into
+              Closure Is Not Cash.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>{' '}
+              separates measured completeness from named human acceptance. Neither is administrative
+              closure of the record, and neither is evidence the underlying exception is gone.{' '}
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              separates named human acceptance from an independent check against named evidence.
+              Acceptance is not resolution. Verification is not resolution. A named human acceptance
+              without resolution evidence is not resolved. An independent evidence check without a
+              named closure is not closed.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not a named close,
+              and a recommendation tile is not resolution evidence.{' '}
+              <Link
+                href="/insights/evidence-lineage-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence Lineage Is Not Optional
+              </Link>
+              . Evidence lineage is not optional. A note without a named source is not who, what,
+              when, and where against plant or operating evidence, and it is not a named human closing
+              the record under a named closure window.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, the named close, and it is not, by itself,
+              evidence the underlying exception is gone. Human decision is not optional. Recommend is
+              not authorize. This essay does not rewrite Complete Is Not Accepted. This essay does not
+              rewrite Accepted Is Not Verified. This essay does not rewrite Recommend Is Not Authorize.
+              This essay does not rewrite Human Decision Is Not Optional. This essay does not collapse
+              into Complete Is Not Accepted. This essay does not collapse into Accepted Is Not
+              Verified. This essay does not collapse into Recommend Is Not Authorize. This essay does
+              not collapse into Human Decision Is Not Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a resolution note is allowed to be
+            </h2>
+
+            <p>
+              Closed is a named human (or named accountable role) formally closing the case, work
+              order, or exception under a named closure window — administrative closure of the record,
+              not proof the underlying defect, risk, or exception is gone. Resolved is evidence that
+              the underlying plant, operating, or capital exception is actually cleared under a named
+              resolution window (who/what/when/where against plant or operating evidence) — the problem
+              is gone, not merely that someone closed the ticket. A named closure without resolution
+              evidence is not resolved. Plant activity that clears a symptom without a named closure is
+              not closed. A CMMS checkbox, ticket state, or status light is neither. Sync may surface a
+              closure/end-state note or a resolution/cleared-exception note beside Evidence,
+              Verification, and the closed outcome. This essay does not collapse closed into resolved.
+            </p>
+
+            <p>
+              Evidence may cite a closure/end-state note when the source of that note is named, and
+              when the citation says which human, or which accountable role, formally closed which
+              case, work order, or exception under which closure window. Evidence may cite a
+              resolution/cleared-exception note when the source of that note is named, and when the
+              citation says who, what, when, and where against plant or operating evidence under a
+              named resolution window — the underlying exception, not a ticket state and not a symptom
+              that merely quieted. If the evidence records the named close and does not record that
+              the underlying exception is gone, the case may store the note as closure and must not
+              store the note as resolved. If the evidence records that the underlying exception is gone
+              and does not record the named close, the case may store the note as resolution and must
+              not store the note as closed. The label does not fill the gap. The closure note does not
+              paint a green. The resolution note does not paint a green. Evidence lineage is not
+              optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. None of those, by itself, names the human, or the
+              accountable role, who formally closed the case under a closure window. None of those, by
+              itself, is who, what, when, and where against plant or operating evidence under a
+              resolution window. A CMMS checkbox, ticket state, or status light is neither. Plant
+              activity that clears a symptom without a named closure is not closed. A symptom that
+              quiets is not resolution evidence. Evidence from the plant beats the closure note when
+              the note is being used as resolution. Evidence from the plant beats the resolution note
+              when the note is being used as closure. Recommend is not authorize. Human decision is not
+              optional. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
+              must not auto-close, auto-authorize, or auto-resolve. Sync must not auto-close,
+              auto-authorize, or treat closed as resolved as Learning credit. A practice record that
+              says closed is resolved is not a customer plant release, and it is not shown resolution.
+              Simulated or seeded telemetry and assets are practice records. A live connector tag pull
+              is not a claim of this edition. This essay does not invent a customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface a closure/end-state note or a
+              resolution/cleared-exception note beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Showing the note does not write a CMMS work order. Showing the
+              note does not clear equipment to run. Showing the note does not close the case for the
+              customer. Showing the note does not resolve the case for the customer. Showing the note
+              does not book revenue. Showing the note does not recognize revenue. Showing the note does
+              not measure closure. Showing the note does not measure closure for the customer. Showing
+              the note does not measure resolution. Showing the note does not measure resolution for
+              the customer. Showing the note does not measure execution. Showing the note does not
+              measure execution for the customer. Showing the note does not close or resolve cases for
+              the customer. Showing the note does not execute plant work. A named human decides. A
+              named human remains accountable after the plant move. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product
+              path. Self-guided onboarding is not claimed as a live product path. Sync does not close
+              or resolve cases for the customer. Sync does not book revenue. Sync does not recognize
+              revenue. Sync does not measure ARR for the customer. Sync does not measure cash for the
+              customer. Sync does not measure runway for the customer. Sync does not measure survival
+              for the customer. Sync does not measure solvency for the customer. Sync does not measure
+              liquidity for the customer. Sync does not measure flexibility for the customer. Sync does
+              not measure optionality for the customer. Sync does not measure strategy for the
+              customer. Sync does not measure results for the customer. Sync does not measure learning
+              for the customer. Sync does not measure judgment for the customer. Sync does not measure
+              authority for the customer. Sync does not measure accountability for the customer. Sync
+              does not measure ownership for the customer. Sync does not measure control for the
+              customer. Sync does not measure completeness for the customer. Sync does not measure
+              acceptance for the customer. Sync does not measure verification for the customer. Sync
+              does not measure authorization for the customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('evidence')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence
+              </Link>{' '}
+              chapter records what the case may cite. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. None of those chapters is, by itself, a
+              named human formally closing the record under a closure window, and none of them is, by
+              itself, evidence the underlying exception is gone under a resolution window. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating a closure note as resolved. Direct plant execute stays
+              off.
+            </p>
+
+            <p>
+              Closed is not resolved. A firm with closure can still lack resolution. A firm with
+              resolution can still lack closure. A resolution note alone proves neither. A resolution
+              note is not a green. The closed record is not the resolved exception. What a resolution
+              note is allowed to be is a named record of who, what, when, and where showing the
+              underlying plant, operating, or capital exception is gone under a named resolution
+              window. Named closure is not resolution evidence. Sync does not close or resolve cases
+              for the customer. Sync may surface a closure/end-state note or a resolution/cleared-exception
+              note beside Evidence, Verification, and the closed outcome. This essay does not collapse
+              resolution into closure. This essay does not collapse closed into resolved. This essay
+              does not rewrite Executed Is Not Closed. This essay does not rewrite Closure Is Not
+              Complete. This essay does not rewrite Control Is Not Closure. This essay does not rewrite
+              Cleared Is Not Complete. This essay does not rewrite Ready Is Not Cleared. This essay
+              does not rewrite Closure Is Not Cash. This essay does not rewrite Complete Is Not
+              Accepted. This essay does not rewrite Accepted Is Not Verified. A practice record that
+              says closed is resolved is not shown resolution. Treating closed as resolved is the
+              refusal. This essay separates named administrative closure from resolution evidence. This
+              essay does not collapse into Executed Is Not Closed. This essay does not collapse into
+              Closure Is Not Complete. This essay does not collapse into Control Is Not Closure. This
+              essay does not collapse into Cleared Is Not Complete. This essay does not collapse into
+              Ready Is Not Cleared. This essay does not collapse into Closure Is Not Cash. This essay
+              does not collapse into Complete Is Not Accepted. This essay does not collapse into
+              Accepted Is Not Verified. Evidence from the plant beats the closure note when the note is
+              being used as resolution. Evidence from the plant beats the resolution note when the note
+              is being used as closure. Surfacing is still a read. Sync refuses false precision. Sync
+              must not auto-close, auto-authorize, or auto-resolve. Sync must not auto-close,
+              auto-authorize, or treat closed as resolved as Learning credit. Direct plant execute
+              stays off. CMMS write-back is not a live product path. Billing write-back is not a live
+              product path. Recommend is not authorize. Evidence lineage is not optional. Human
+              decision is not optional. Sync does not measure resolution. Sync does not measure
+              resolution for the customer.
+            </p>
+
 
             <p className="text-xl font-semibold text-white">
               Executed is not closed. Executed is evidence that a binding plant/operating/capital move
@@ -3015,35 +3433,6 @@ export default function ExecutedIsNotClosedPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/closed-is-not-resolved"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Closed Is Not Resolved
-              </Link>
-              , on why closed is still not resolved. Closed is a named human (or named accountable
-              role) formally closing the case, work order, or exception under a named closure window —
-              administrative closure of the record, not proof the underlying defect, risk, or exception
-              is gone. Resolved is evidence that the underlying plant, operating, or capital exception
-              is actually cleared under a named resolution window (who/what/when/where against plant or
-              operating evidence) — the problem is gone, not merely that someone closed the ticket. A
-              firm with closure can still lack resolution when that named close is on the record and
-              the firm has not shown the underlying exception is gone under a named resolution window.
-              A firm with resolution can still lack closure. A named closure without resolution
-              evidence is not resolved. Plant activity that clears a symptom without a named closure is
-              not closed. A CMMS checkbox, ticket state, or status light is neither. Executed remains
-              evidence a binding move ran to completion under a named execution window. This essay
-              separates completed execution from named closure. A closure note alone proves neither. A
-              resolution note alone proves neither. A resolution note is not a green. Sync does not
-              measure resolution. Sync does not measure resolution for the customer. Sync does not
-              close or resolve cases for the customer. Sync must not auto-close, auto-authorize, or
-              auto-resolve.
-            </p>
-
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -3070,7 +3459,7 @@ export default function ExecutedIsNotClosedPage() {
                 judgment, measures judgment for the customer, measures authority, measures authority
                 for the customer, measures accountability, measures accountability for the customer,
                 measures ownership, measures ownership for the customer, measures control, measures
-                control for the customer, measures closure, measures closure for the customer,
+                control for the customer, measures closure, measures closure for the customer, measures resolution, measures resolution for the customer,
                 measures completeness, measures completeness for the customer,
                 measures acceptance, measures acceptance for the customer,
                 measures verification, measures verification for the customer,
@@ -3103,7 +3492,7 @@ export default function ExecutedIsNotClosedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="executed-is-not-closed" />
+          <InsightNextSteps slug="closed-is-not-resolved" />
         </motion.article>
       </div>
     </main>
