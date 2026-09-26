@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('settled-is-not-booked');
+const article = getInsightArticle('booked-is-not-reconciled');
 
-export default function SettledIsNotBookedPage() {
+export default function BookedIsNotReconciledPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,36 +31,30 @@ export default function SettledIsNotBookedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Settled Is Not Booked</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Booked Is Not Reconciled</h1>
 
             <p className="text-xl text-gray-400">
-              Settled is not booked. Settled means the named claim/event is finally closed with a written
-              release (or equivalent finality instrument) that ends open reserve, binds the named parties
-              on that loss window, and leaves no open adjudication path for that same named event under
-              today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero
-              without release, and not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Settled is not booked. A firm can be settled and still
-              not booked (release signed; no GL/AR recognition for that named amount/period). A firm can chase booking theater and still not be settled (accrual or estimate posted while release unsigned, reserve live, or adjudication still open). A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or
-              one-off clear is neither. Keep them apart: a settlement instrument alone is not a booked financial recognition; a ledger line alone is not proof the named claim is settled; a CMMS checkbox, ticket state, status
-              light, or one-off clear is neither. Paid is not settled. Paid remains indemnity that has
-              actually moved, or a binding written settlement with payment date and amount that is
-              executed and trackable, for that named covered event under today’s owner and window.
+              Booked is not reconciled. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. Booked is not reconciled. A firm can be booked and still
+              not reconciled (entry posted; bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide). A firm can chase reconciliation theater and still not be booked (worksheet or bank match story while no GL/AR recognition exists for that named amount/period). A ledger line alone is not a signed reconciliation. A reconciliation worksheet alone is not proof the named amount is booked. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. Keep them apart: a ledger line alone is not a signed reconciliation; a reconciliation worksheet alone is not proof the named amount is booked; a CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Settled is not booked. Settled remains the named claim/event finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner.
               Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing
-              is still a read. Sync refuses false precision. Sync refuses to pretend settlement or booking is a status light. Sync does not measure settlement. Sync does not measure settlement for the
-              customer. Sync does not measure booking. Sync does not measure booking for the customer. Sync does not measure settlement or booking for the customer. Sync does not issue
+              is still a read. Sync refuses false precision. Sync refuses to pretend booking or reconciliation is a status light. Sync does not measure booking. Sync does not measure booking for the
+              customer. Sync does not measure reconciliation. Sync does not measure reconciliation for the customer. Sync does not measure booking or reconciliation for the customer. Sync does not issue
               certificates for the customer. Sync does not issue policies for the customer. Sync does not
               adjudicate claims for the customer. Sync does not pay for the customer. Sync does not settle
-              claims for the customer. Sync does not book for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              claims for the customer. Sync does not book for the customer. Sync does not reconcile for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
               auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
-              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync
               must not auto-transfer ownership. Sync must not auto-declare RTO met. Sync must not
               auto-credit Learning for an unrecovered handoff. Sync must not auto-issue assurance. Sync
               must not auto-issue certificates. Sync must not auto-issue policies. Sync must not
-              auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not
+              auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not auto-reconcile. Sync must not
               auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
               auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
               ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
               assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
-              auto-settle, or auto-book.
+              auto-settle, auto-book, or auto-reconcile.
             </p>
 
             <p className="text-xl text-gray-400">
@@ -73,33 +67,37 @@ export default function SettledIsNotBookedPage() {
               owned. Owned is not governed. Governed is not transferable. Transferable is not rehearsed.
               Rehearsed is not recoverable. Recoverable is not assured. Assured is not certified.
               Certified is not insured. Insured is not covered. Covered is not paid. Paid is not settled.
-              Settled is not booked.
-              Paid, in the prior essay, means indemnity / loss payment / agreed settlement funds have
-              actually moved (or a binding written settlement with payment date and amount is executed and
-              trackable) for that named covered event under today’s owner and window — not a coverage
-              opinion, not an FNOL acknowledgment, not a reserve set, not "we’ll look into it," and not a
-              ticket marked covered. Settled, there, means the named claim/event is finally closed with a
-              written release (or equivalent finality instrument) that ends open reserve, binds the named
-              parties on that loss window, and leaves no open adjudication path for that same named event
-              under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to
-              zero without release, and not a CMMS checkbox. That sentence is the prior refusal. The words
-              written release in that sentence name a finality instrument that ends open reserve, binds
-              the named parties on that loss window, and leaves no open adjudication path for that same
-              named event under today’s owner. They do not name the indemnity / recovery / settlement amount recognized on the named entity’s financials for a named period and account. They do not point a controller at a GL / AR / cash ledger entry with amount, date, and counterparty trackable. They do not post the entry. This essay does not rewrite that sentence. This essay does
-              not collapse into that split. Payment versus settlement finality is the prior refusal. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. A
-              settlement instrument is not evidence the named amount is booked. A ledger line is not evidence the named claim is settled.
+              Settled is not booked. Booked is not reconciled.
+              Settled, in the prior essay, means the named claim/event is finally closed with a written
+              release (or equivalent finality instrument) that ends open reserve, binds the named parties
+              on that loss window, and leaves no open adjudication path for that same named event under
+              today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero
+              without release, and not a CMMS checkbox. Booked, there, means the indemnity / recovery /
+              settlement amount is recognized on the named entity’s financials for a named period and
+              account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and
+              counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL
+              post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. That
+              sentence is the prior refusal. The words ledger entry in that sentence name a GL / AR / cash
+              post a controller can point to, with amount, date, and counterparty trackable. They do not
+              name an unbroken reconciliation trail a controller can sign. They do not match that named
+              booked amount to supporting bank, subledger, or counterparty evidence. They do not explain or
+              clear differences. They do not date the cut-off. This essay does not rewrite that sentence.
+              This essay does not collapse into that split. Settlement finality versus ledger recognition
+              is the prior refusal. This essay separates a ledger entry that recognizes the named amount from a signed reconciliation trail that matches the supporting evidence. A
+              ledger line is not evidence the named amount is reconciled. A reconciliation worksheet is not evidence the named amount is booked.
               <Link
-                href="/insights/paid-is-not-settled"
+                href="/insights/settled-is-not-booked"
                 className="text-[#3B82F6] hover:text-white transition-colors"
               >
-                Paid Is Not Settled
+                Settled Is Not Booked
               </Link>
               {" "}
-              keeps indemnity that has actually moved off a written release that ends the named claim.
-              Read the prior essay at /insights/paid-is-not-settled. Covered Is Not Paid keeps a
-              responding grant of coverage for this event off indemnity that has actually moved. Insured
-              Is Not Covered keeps an in-force coverage instrument off a responding grant for this event.
-              Certified Is Not Insured keeps a certification stamp off a named, in-force indemnity
+              keeps a written release that ends the named claim off a ledger entry that recognizes the named amount.
+              Read the prior essay at /insights/settled-is-not-booked. Paid Is Not Settled keeps indemnity
+              that has actually moved off a written release that ends the named claim. Covered Is Not Paid
+              keeps a responding grant of coverage for this event off indemnity that has actually moved.
+              Insured Is Not Covered keeps an in-force coverage instrument off a responding grant for this
+              event. Certified Is Not Insured keeps a certification stamp off a named, in-force indemnity
               instrument. Assured Is Not Certified keeps a dated assurance record off a program stamp.
               Recoverable Is Not Assured keeps a one-time restore inside a named RTO/RPO off independent,
               recurring verification that recovery still holds. Rehearsed Is Not Recoverable keeps a
@@ -114,25 +112,27 @@ export default function SettledIsNotBookedPage() {
               keeps time-bounded confidence that an asset stays known-good under operating conditions off
               a closed evidentiary chain for a specific claim. Verified Is Not Assured keeps an
               independent check off standing assurance. Green Is Not Go keeps a status light off
-              permission to run. None of those refusals is this split. A signed release is not this
-              booking. A release PDF in a folder, a bank credit alone without a GL post, a dashboard tile,
-              or "we’ll book it at month-end" without a posted entry is not this settlement. This
-              settlement is the named claim finally closed with a written release, or an equivalent
-              finality instrument, that ends open reserve, binds the named parties on that loss window,
-              and leaves no open adjudication path for that same named event under today’s owner. This
-              booking is the indemnity / recovery / settlement amount recognized on the named entity’s
-              financials for a named period and account, a GL / AR / cash ledger entry that a controller
-              can point to, with amount, date, and counterparty trackable. Recommend Is Not Authorize,
-              Evidence Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split.
-              Sync may surface a settlement status or a ledger entry beside Evidence, Verification, and the closed outcome. Surfacing is
-              still a read. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
-              refuses to pretend settlement or booking is a status light. Sync must not auto-transfer
-              ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue
-              assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay,
-              auto-settle, or auto-book. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
-              auto-trust, auto-adopt, auto-sustain, auto-scale, auto-compound, auto-assign owners,
-              auto-approve governed actions, auto-transfer ownership, auto-declare RTO met, or treat settled as booked as Learning credit. This essay does not rewrite Paid Is Not Settled. This essay
-              does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is Not
+              permission to run. None of those refusals is this split. A posted GL line is not this
+              reconciliation. A GL line alone, a sentence that says "it’ll clear in the bank rec," a
+              dashboard green, a month-end hope, or a CMMS checkbox is not this booking. This booking is
+              the indemnity / recovery / settlement amount recognized on the named entity’s financials for
+              a named period and account, a GL / AR / cash ledger entry that a controller can point to,
+              with amount, date, and counterparty trackable. This reconciliation is that named booked
+              amount for that named period and account matching the supporting bank / subledger /
+              counterparty evidence with an unbroken reconciliation trail a controller can sign
+              (differences explained or cleared, cut-off dated). Recommend Is Not Authorize, Evidence
+              Lineage Is Not Optional, and Human Decision Is Not Optional stay beside this split. Sync may
+              surface a ledger entry or a reconciliation trail beside Evidence, Verification, and the
+              closed outcome. Surfacing is still a read. Sync refuses false precision. Sync refuses when
+              evidence is insufficient. Sync refuses to pretend booking or reconciliation is a status
+              light. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for
+              an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies,
+              auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync must not
+              auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, auto-sustain,
+              auto-scale, auto-compound, auto-assign owners, auto-approve governed actions, auto-transfer
+              ownership, auto-declare RTO met, or treat booked as reconciled as Learning credit. This essay
+              does not rewrite Settled Is Not Booked. This essay does not rewrite Paid Is Not Settled.
+              This essay does not rewrite Covered Is Not Paid. This essay does not rewrite Insured Is Not
               Covered. This essay does not rewrite Certified Is Not Insured. This essay does not rewrite
               Assured Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This
               essay does not rewrite Rehearsed Is Not Recoverable. This essay does not rewrite
@@ -141,17 +141,238 @@ export default function SettledIsNotBookedPage() {
               Margin. This essay does not rewrite Closure Is Not Cash. This essay does not rewrite Closed
               Is Not Resolved. This essay does not rewrite Margin Is Not Profit. This essay does not
               rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This
-              essay does not rewrite Green Is Not Go. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay
+              essay does not rewrite Green Is Not Go. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay
               does not collapse into Insured Is Not Covered. This essay does not collapse into Certified
               Is Not Insured. This essay does not collapse into Assured Is Not Certified. This essay does
               not collapse into Recoverable Is Not Assured. This essay does not collapse into Rehearsed
               Is Not Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This
               essay does not collapse into Governed Is Not Transferable. This essay does not collapse
-              into Owned Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse settled into booked. This essay does not collapse booking into settlement. This essay does not collapse paid into settled.
+              into Owned Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does not collapse booked into reconciled. This essay does not collapse reconciliation into booking. This essay does not collapse settled into booked.
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Settled is not booked. Settled means the named claim/event is finally closed with a written release (or equivalent finality instrument) that ends open reserve, binds the named parties on that loss window, and leaves no open adjudication path for that same named event under today’s owner — not "a check cleared," not a partial payment, not a reserve reduced to zero without release, and not a CMMS checkbox. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. A firm can be settled and still not booked, when release signed; no GL/AR recognition for that named amount/period, is the only booking story on the record. A firm can chase booking theater and still not be settled, when accrual or estimate posted while release unsigned, reserve live, or adjudication still open, is the only settlement story on the record. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a settlement status or a ledger entry beside Evidence, Verification, and the closed outcome. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. This essay does not collapse booking into settlement. This essay does not collapse settled into booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says settled is booked is not shown booking. Sync refuses to pretend settlement or booking is a status light. Treating settled as booked records a written release that ends the named claim as a ledger entry that recognizes the named amount, under the honesty and verification boundary. A settlement status can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the settlement status when the status is being used as booking. Evidence from the plant beats the ledger entry when the entry is being used as proof the named claim is settled. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, or auto-book. Sync must not treat settled as booked as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync does not measure settlement or booking for the customer. Sync does not measure booking for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+              Booked is not reconciled. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. A firm can be booked and still not reconciled, when entry posted; bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide, is the only reconciliation story on the record. A firm can chase reconciliation theater and still not be booked, when worksheet or bank match story while no GL/AR recognition exists for that named amount/period, is the only booking story on the record. A ledger line alone is not a signed reconciliation. A reconciliation worksheet alone is not proof the named amount is booked. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a ledger entry or a reconciliation trail beside Evidence, Verification, and the closed outcome. This essay separates a ledger entry that recognizes the named amount from a signed reconciliation trail that matches the supporting evidence. This essay does not collapse reconciliation into booking. This essay does not collapse booked into reconciled. This essay does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse into Cash Is Not Margin. This essay does not collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved. This essay does not collapse into Margin Is Not Profit. A practice record that says booked is reconciled is not shown reconciliation. Sync refuses to pretend booking or reconciliation is a status light. Treating booked as reconciled records a ledger entry that recognizes the named amount as a signed reconciliation trail, under the honesty and verification boundary. A ledger entry can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the ledger entry when the entry is being used as reconciliation. Evidence from the plant beats the reconciliation worksheet when the worksheet is being used as proof the named amount is booked. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync must not treat booked as reconciled as Learning credit. Sync must not treat settled as booked as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync must not auto-adjudicate claims. Sync must not auto-pay. Sync must not auto-settle. Sync must not auto-book. Sync must not auto-reconcile. Sync refuses to pretend settlement or booking is a status light. Sync does not measure booking or reconciliation for the customer. Sync does not measure reconciliation for the customer. Sync does not reconcile for the customer. Sync does not book for the customer. Sync does not settle claims for the customer. Sync does not pay for the customer. Sync does not adjudicate claims for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path. The prior booking split still stands: release signed; no GL/AR recognition for that named amount/period is settled and not booked, and accrual or estimate posted while release unsigned, reserve live, or adjudication still open is booking theater and not settled.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The booked practice is not the reconciled practice
+            </h2>
+
+            <p>
+              Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. Sync may surface a ledger entry or a reconciliation trail beside
+              Evidence, Verification, and the closed outcome. A practice record that says booked is reconciled
+              is not shown reconciliation. Evidence from the plant beats the ledger entry when the entry is being used as reconciliation. Evidence from the plant beats the reconciliation worksheet when the worksheet is being used as proof the named amount is booked. Evidence from the plant beats the note. The booked practice is not the reconciled practice.
+            </p>
+
+            <p>
+              One line can hold a booking. The indemnity, recovery, or settlement amount is recognized on
+              the named entity’s financials for a named period and account. A controller can point to a
+              GL, AR, or cash ledger entry. Amount, date, and counterparty are trackable. The entity is
+              named. The period is named. The account is named. Then the record stops. It does not say
+              that named booked amount matches the supporting bank evidence. It does not say it matches
+              the subledger. It does not say it matches the counterparty evidence. It does not say the
+              reconciliation trail is unbroken. It does not say a controller can sign it. It does not say
+              differences are explained or cleared. It does not say the cut-off is dated. Entry posted;
+              bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide.
+              That record can be booked. It is not reconciled. A firm can be booked and still not
+              reconciled. A GL line alone is not reconciliation. A sentence that says "it’ll clear in the
+              bank rec" is not reconciliation. A dashboard green is not reconciliation. A month-end hope
+              is not reconciliation. A CMMS checkbox is not reconciliation. A reconciliation worksheet can
+              be filled and still not be this booking. The file shows a worksheet or bank match story
+              while no GL/AR recognition exists for that named amount/period. That record can look like
+              reconciliation theater. It is not booked. A firm can chase reconciliation theater and still
+              not be booked. A ledger line alone is not a signed reconciliation. A reconciliation worksheet
+              alone is not proof the named amount is booked. A sentence that says the difference will
+              clear in the bank rec is not a signed trail, and it is not a posted entry. A CMMS checkbox,
+              ticket state, status light, or one-off clear is neither. A one-off clear is a single quiet
+              interval. It is not a GL post for this named amount, period, and account, and it is not an
+              unbroken reconciliation trail a controller can sign. The booked practice is not the reconciled practice. This
+              essay does not invent a customer, a price, or a return. It states no savings figure, states
+              no price, and states no OEM limit. A practice record that says booked is reconciled is not a
+              customer plant release, and it is not shown reconciliation. Treating booked as reconciled records
+              a ledger line the plant has not matched to supporting evidence a controller can sign, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/settled-is-not-booked"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Settled Is Not Booked
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/settled-is-not-booked. Settled,
+              there, means the named claim/event is finally closed with a written release (or equivalent
+              finality instrument) that ends open reserve, binds the named parties on that loss window,
+              and leaves no open adjudication path for that same named event under today’s owner — not "a
+              check cleared," not a partial payment, not a reserve reduced to zero without release, and
+              not a CMMS checkbox. Booked, there, means the indemnity / recovery / settlement amount is
+              recognized on the named entity’s financials for a named period and account (GL / AR / cash
+              ledger entry that a controller can point to), with amount, date, and counterparty
+              trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a
+              dashboard tile, and not "we’ll book it at month-end" without a posted entry. A settlement
+              instrument alone is not a booked financial recognition. A ledger line alone is not proof the
+              named claim is settled. Release signed; no GL/AR recognition for that named amount/period.
+              Accrual or estimate posted while release unsigned, reserve live, or adjudication still open.
+              That refusal stops at a ledger entry that recognizes the named amount. It does not ask
+              whether that named booked amount for that named period and account matches the supporting
+              bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller
+              can sign (differences explained or cleared, cut-off dated). The phrase ledger entry, in that
+              essay, is not this reconciliation. It is not a signed bank rec. It is not a subledger match.
+              It is not counterparty evidence tied to the same amount, period, and account. Settled is not
+              booked is a different refusal. Booked is not reconciled is this refusal. This essay does not
+              rewrite Settled Is Not Booked. This essay does not collapse into Settled Is Not Booked.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/paid-is-not-settled"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Paid Is Not Settled
+              </Link>
+              {" "}
+              keeps indemnity that has actually moved off a written release that ends the named claim.
+              <Link
+                href="/insights/covered-is-not-paid"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Covered Is Not Paid
+              </Link>
+              {" "}
+              keeps a responding grant of coverage for this event off indemnity that has actually moved.
+              <Link
+                href="/insights/cash-is-not-margin"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Cash Is Not Margin
+              </Link>
+              {" "}
+              keeps money received off a margin figure.
+              <Link
+                href="/insights/closure-is-not-cash"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Cash
+              </Link>
+              {" "}
+              keeps an administrative completion stamp off money received.
+              <Link
+                href="/insights/closed-is-not-resolved"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closed Is Not Resolved
+              </Link>
+              {" "}
+              keeps a closed ticket off a cleared plant exception.
+              <Link
+                href="/insights/margin-is-not-profit"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Margin Is Not Profit
+              </Link>
+              {" "}
+              keeps a margin figure off profit. Insured Is Not Covered, Certified Is Not Insured, Assured
+              Is Not Certified, Recoverable Is Not Assured, Rehearsed Is Not Recoverable, Transferable Is
+              Not Rehearsed, Governed Is Not Transferable, and Owned Is Not Governed stay on their own
+              splits. None of them is booked versus reconciled.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a reconciliation trail is allowed to be
+            </h2>
+
+            <p>
+              Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. A ledger line alone is not a signed reconciliation. A reconciliation worksheet alone is not proof the named amount is booked. A CMMS checkbox, ticket state, status light, or one-off
+              clear is neither. Sync may surface a ledger entry or a reconciliation trail beside Evidence,
+              Verification, and the closed outcome. This essay does not collapse booked into reconciled.
+            </p>
+
+            <p>
+              Evidence may cite a ledger entry when the source of that entry is named, and when the
+              citation names the entity, the period, and the account, and when the citation says the
+              indemnity, recovery, or settlement amount is recognized on that entity’s financials, a GL /
+              AR / cash ledger entry that a controller can point to, with amount, date, and counterparty
+              trackable. The entry is about recognition for that named amount and period. It is not, by
+              itself, a match to the bank. It is not a match to the subledger. It is not a match to the
+              counterparty. It is not an unbroken trail. It is not a signature. It is not a GL line alone
+              used as if the rec were signed. It is not "it’ll clear in the bank rec." It is not a
+              dashboard green. It is not a month-end hope. It is not a CMMS checkbox. Evidence may cite a
+              reconciliation trail when the source of that trail is named, and when the citation names the
+              same booked amount, the same period, and the same account, and when the citation says that
+              amount matches the supporting bank / subledger / counterparty evidence, differences explained
+              or cleared, cut-off dated, and a controller can sign the trail. The trail is about that
+              match. It is not, by itself, the GL post. It is not proof the named amount is booked if no
+              GL/AR recognition exists for that named amount and period. It is not a worksheet standing in
+              for recognition. If the evidence records a posted entry and the bank, subledger, or
+              counterparty evidence does not match, or the trail is unbroken only in a slide, the case may
+              store the note as booked and must not store the note as reconciled. If the evidence records
+              a worksheet or bank match story while no GL/AR recognition exists for that named
+              amount/period, the case may store the note as reconciliation theater and must not store the
+              note as booked. What a reconciliation trail is allowed to be is that signed match, with
+              differences explained or cleared and the cut-off dated, for this named booked amount,
+              period, and account. It is not a ledger line used as proof the amount is reconciled. It is
+              not permission to execute. Recommend is not authorize. Evidence lineage is not optional.
+              Human decision is not optional. Surfacing is still a read. Sync refuses false precision.
+              Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies,
+              auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync does not
+              reconcile for the customer. Sync does not book for the customer. Sync does not settle claims
+              for the customer. Sync does not measure reconciliation for the customer. Sync does not
+              measure booking for the customer. Sync does not pay for the customer. Sync does not
+              adjudicate claims for the customer. Sync does not file a claim for the customer. Sync does
+              not issue policies for the customer. Direct plant execute stays off. CMMS write-back is not
+              a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named booking is not reconciliation
+            </h2>
+
+            <p>
+              Named booking is not reconciliation. The booked practice is not the reconciled practice. A
+              ledger entry answers whether the indemnity / recovery / settlement amount is recognized on
+              the named entity’s financials for a named period and account, a GL / AR / cash ledger entry
+              that a controller can point to, with amount, date, and counterparty trackable. It does not,
+              by itself, show that named booked amount matches the supporting bank / subledger /
+              counterparty evidence. It does not, by itself, show an unbroken reconciliation trail a
+              controller can sign. It does not, by itself, show differences explained or cleared, or a
+              cut-off dated. Entry posted, while the bank, subledger, or counterparty evidence does not
+              match, or the trail is unbroken only in a slide, is still booking. It is not reconciliation.
+              A firm can be booked and still not reconciled. A worksheet or bank match story while no
+              GL/AR recognition exists for that named amount/period is still reconciliation theater. It is
+              not booking. A firm can chase reconciliation theater and still not be booked. A ledger line
+              alone is not a signed reconciliation. A reconciliation worksheet alone is not proof the named
+              amount is booked. Not a GL line alone. Not "it’ll clear in the bank rec." Not a dashboard
+              green. Not a month-end hope. Not a CMMS checkbox. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. This essay does not rewrite Settled Is Not Booked. This
+              essay does not rewrite Paid Is Not Settled. This essay does not rewrite Covered Is Not Paid.
+              This essay does not rewrite Insured Is Not Covered. This essay does not rewrite Certified
+              Is Not Insured. This essay does not rewrite Assured Is Not Certified. This essay does not
+              rewrite Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not
+              Recoverable. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not
+              rewrite Governed Is Not Transferable. This essay does not rewrite Owned Is Not Governed.
+              This essay does not rewrite Cash Is Not Margin. This essay does not rewrite Closure Is Not
+              Cash. This essay does not rewrite Closed Is Not Resolved. This essay does not rewrite Margin
+              Is Not Profit. This essay does not rewrite Assured Is Not Proven. This essay does not
+              rewrite Verified Is Not Assured. This essay does not rewrite Green Is Not Go. This essay
+              does not collapse into Settled Is Not Booked. This essay does not collapse into Paid Is Not
+              Settled. This essay does not collapse into Covered Is Not Paid. This essay does not collapse
+              into Insured Is Not Covered. This essay does not collapse into Certified Is Not Insured.
+              This essay does not collapse into Assured Is Not Certified. This essay does not collapse
+              into Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not
+              Recoverable. This essay does not collapse into Transferable Is Not Rehearsed. This essay
+              does not collapse into Governed Is Not Transferable. This essay does not collapse into Owned
+              Is Not Governed. This essay does not collapse into Cash Is Not Margin. This essay does not
+              collapse into Closure Is Not Cash. This essay does not collapse into Closed Is Not Resolved.
+              This essay does not collapse into Margin Is Not Profit. This essay does not collapse into
+              Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. This essay
+              does not collapse into Green Is Not Go. This essay does not collapse reconciliation into booking. This essay does not collapse booked into reconciled. Sync does not measure booking or reconciliation for the customer. Sync must not auto-transfer ownership, auto-declare RTO met,
+              auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue
+              certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync
+              refuses to pretend booking or reconciliation is a status light. Direct plant execute stays off.
+              CMMS write-back is not a live product path. Billing write-back is not a live product path.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -10399,17 +10620,6 @@ export default function SettledIsNotBookedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/booked-is-not-reconciled"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Booked Is Not Reconciled
-              </Link>
-              , on why booked is still not reconciled. Booked means the indemnity / recovery / settlement amount is recognized on the named entity’s financials for a named period and account (GL / AR / cash ledger entry that a controller can point to), with amount, date, and counterparty trackable — not a release PDF in a folder, not a bank credit alone without a GL post, not a dashboard tile, and not "we’ll book it at month-end" without a posted entry. Reconciled means that named booked amount for that named period and account matches the supporting bank / subledger / counterparty evidence with an unbroken reconciliation trail a controller can sign (differences explained or cleared, cut-off dated) — not a GL line alone, not "it’ll clear in the bank rec," not a dashboard green, not a month-end hope, and not a CMMS checkbox. A firm can be booked and still not reconciled when entry posted; bank/subledger/counterparty evidence does not match or the trail is unbroken only in a slide, is on the record. A firm can chase reconciliation theater and still not be booked. A ledger line alone is not a signed reconciliation. A reconciliation worksheet alone is not proof the named amount is booked. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Settled remains a written release that ends the named claim. This essay separates a written release that ends the named claim from a ledger entry that recognizes the named amount. A settlement instrument alone is not a booked financial recognition. A ledger line alone is not proof the named claim is settled. Sync does not measure booking or reconciliation for the customer. Sync does not measure reconciliation. Sync does not measure reconciliation for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, auto-issue policies, auto-adjudicate claims, auto-pay, auto-settle, auto-book, or auto-reconcile. Sync must not auto-book. Sync must not auto-reconcile. Sync must not treat booked as reconciled as Learning credit. Sync refuses to pretend booking or reconciliation is a status light. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -10469,7 +10679,7 @@ export default function SettledIsNotBookedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="settled-is-not-booked" />
+          <InsightNextSteps slug="booked-is-not-reconciled" />
         </motion.article>
       </div>
     </main>
