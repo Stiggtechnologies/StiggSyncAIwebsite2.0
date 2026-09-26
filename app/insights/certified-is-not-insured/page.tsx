@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('assured-is-not-certified');
+const article = getInsightArticle('certified-is-not-insured');
 
-export default function AssuredIsNotCertifiedPage() {
+export default function CertifiedIsNotInsuredPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,367 @@ export default function AssuredIsNotCertifiedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Assured Is Not Certified</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Certified Is Not Insured</h1>
+
+            <p className="text-xl text-gray-400">
+              Certified is not insured. Certified means a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual
+              auditor letter, laminated "certified recoverable" badge) — not the same as risk transfer
+              that pays when restore fails under today’s named owner inside the named window. Insured
+              means a named, in-force indemnity/coverage instrument (policy, binder, endorsement, named
+              insured + limits + triggers + exclusions + claims path) that actually responds when recovery
+              fails or loss lands — not a certificate PDF, not a sales claim that "we’re covered,"
+              and not a CMMS checkbox. Certified is not insured. A firm can be certified and still not
+              insured (program stamp on file, no in-force policy that responds to the named
+              restore/continuity failure). A firm can be insured and still not certified (in-force coverage
+              that would pay, no ISO/SOC/DR stamp). A certificate alone is not insurance. A policy alone is
+              not certification. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Keep them apart: a certificate alone is not insurance; a policy alone is not certification; a
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. Assured is not
+              certified. Assured remains independent, recurring verification that recovery capability still
+              holds under the current named owner. Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the note. Surfacing
+              is still a read. Sync refuses false precision. Sync refuses to pretend certification or
+              insurance is a status light. Sync does not measure certification. Sync does not measure
+              certification for the customer. Sync does not measure insurance. Sync does not measure
+              insurance for the customer. Sync does not measure certification or insurance for the
+              customer. Sync does not issue certificates for the customer. Sync does not issue policies for
+              the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit
+              Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, or
+              auto-issue policies. Sync must not auto-transfer ownership. Sync must not auto-declare RTO
+              met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue
+              assurance. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync
+              must not auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt,
+              auto-sustain, auto-scale, auto-compound, auto-assign owners, auto-approve governed actions,
+              auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered
+              handoff, auto-issue assurance, auto-issue certificates, or auto-issue policies.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is not
+              accountability. Accountability is not ownership. Ownership is not control. Control is not
+              closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is not
+              resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted. Adopted is
+              not sustained. Sustained is not scaled. Scaled is not compounded. Compounded is not owned.
+              Owned is not governed. Governed is not transferable. Transferable is not rehearsed. Rehearsed
+              is not recoverable. Recoverable is not assured. Assured is not certified. Certified is not
+              insured. Assured, in the prior essay, means independent, recurring verification that recovery
+              capability still holds under the current named owner, tooling rights, exception paths, and
+              evidence continuity. Certified, there, means a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist. That sentence is the prior
+              refusal. The words certification stamp in that sentence name an ISO/SOC/DR cert, an annual
+              auditor letter, or a laminated "certified recoverable" badge. They do not name a named,
+              in-force indemnity/coverage instrument. They do not show a policy, binder, or endorsement
+              with a named insured, limits, triggers, exclusions, and a claims path that pays when restore
+              fails under today’s named owner inside the named window. This essay does not rewrite
+              that sentence. This essay does not collapse into that split. Assurance versus certification
+              is the prior refusal. This essay separates a certification stamp from an in-force coverage instrument. A program stamp on file is not evidence an in-force policy responds to the named
+              restore/continuity failure. An in-force policy that would pay is not an ISO/SOC/DR stamp.
+              {" "}
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              keeps a dated assurance record off a program stamp that a recovery/continuity program exists
+              or once met a named checklist. Read the prior essay at /insights/assured-is-not-certified.
+              Recoverable Is Not Assured keeps a one-time restore inside a named RTO/RPO off independent,
+              recurring verification that recovery still holds. Rehearsed Is Not Recoverable keeps a
+              rehearsed handoff off a proven restore to a named service level inside a named RTO/RPO.
+              Transferable Is Not Rehearsed keeps a transferable governed owned compounding system off a
+              handoff run under stress. Governed Is Not Transferable keeps a governed owned compounding
+              system off evidence continuity under a new named owner. Owned Is Not Governed keeps a named
+              owner of the compounding system off rules of engagement. Assured Is Not Proven keeps
+              time-bounded confidence that an asset stays known-good under operating conditions off a
+              closed evidentiary chain for a specific claim. Verified Is Not Assured keeps an independent
+              check off standing assurance. Green Is Not Go keeps a status light off permission to run.
+              None of those refusals is this split. A certificate PDF is not this insurance. A policy is
+              not this certification. This certification is a program stamp that a recovery/continuity
+              program exists or once met a named checklist. This insurance is risk transfer that pays when
+              recovery fails or loss lands. Recommend Is Not Authorize, Evidence Lineage Is Not Optional,
+              and Human Decision Is Not Optional stay beside this split. Sync may surface a certification
+              stamp or an insurance instrument beside Evidence, Verification, and the closed outcome.
+              Surfacing is still a read. Sync refuses false precision. Sync refuses when evidence is
+              insufficient. Sync refuses to pretend certification or insurance is a status light. Sync
+              must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an
+              unrecovered handoff, auto-issue assurance, auto-issue certificates, or auto-issue policies.
+              Sync must not auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt,
+              auto-sustain, auto-scale, auto-compound, auto-assign owners, auto-approve governed actions,
+              auto-transfer ownership, auto-declare RTO met, or treat certified as insured as Learning
+              credit. This essay does not rewrite Assured Is Not Certified. This essay does not rewrite
+              Recoverable Is Not Assured. This essay does not rewrite Rehearsed Is Not Recoverable. This
+              essay does not rewrite Transferable Is Not Rehearsed. This essay does not rewrite Governed Is
+              Not Transferable. This essay does not rewrite Owned Is Not Governed. This essay does not
+              rewrite Assured Is Not Proven. This essay does not rewrite Verified Is Not Assured. This
+              essay does not rewrite Green Is Not Go. This essay does not collapse into Assured Is Not
+              Certified. This essay does not collapse into Recoverable Is Not Assured. This essay does not
+              collapse into Rehearsed Is Not Recoverable. This essay does not collapse into Transferable Is
+              Not Rehearsed. This essay does not collapse into Governed Is Not Transferable. This essay
+              does not collapse into Owned Is Not Governed. This essay does not collapse into Assured Is
+              Not Proven. This essay does not collapse into Verified Is Not Assured. This essay does not
+              collapse into Green Is Not Go. This essay does not collapse certified into insured. This
+              essay does not collapse insurance into certification. This essay does not collapse assured
+              into certified.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              Certified is not insured. Certified means a third-party or internal program stamp that a recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge) — not the same as risk transfer that pays when restore fails under today’s named owner inside the named window. Insured means a named, in-force indemnity/coverage instrument (policy, binder, endorsement, named insured + limits + triggers + exclusions + claims path) that actually responds when recovery fails or loss lands — not a certificate PDF, not a sales claim that "we’re covered," and not a CMMS checkbox. A firm can be certified and still not insured, when program stamp on file, no in-force policy that responds to the named restore/continuity failure, is the only insurance story on the record. A firm can be insured and still not certified, when in-force coverage that would pay, no ISO/SOC/DR stamp, is the only certification story on the record. A certificate alone is not insurance. A policy alone is not certification. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Sync may surface a certification stamp or an insurance instrument beside Evidence, Verification, and the closed outcome. This essay does not collapse insurance into certification. This essay does not collapse certified into insured. This essay does not collapse into Assured Is Not Certified. This essay does not collapse into Recoverable Is Not Assured. This essay does not collapse into Assured Is Not Proven. This essay does not collapse into Verified Is Not Assured. A practice record that says certified is insured is not shown insurance. Sync refuses to pretend certification or insurance is a status light. Treating certified as insured records a program stamp as an in-force coverage instrument that nobody has shown, under the honesty and verification boundary. A certificate can inform a recommendation to investigate. Recommend is not authorize. Evidence lineage is not optional. Human decision is not optional. Evidence from the plant beats the certificate when the certificate is being used as insurance. Evidence from the plant beats the policy when the policy is being used as certification. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, or auto-issue policies. Sync must not treat certified as insured as Learning credit. Sync must not auto-declare RTO met. Sync must not auto-credit Learning for an unrecovered handoff. Sync must not auto-issue certificates. Sync must not auto-issue policies. Sync does not measure certification or insurance for the customer. Sync does not measure insurance for the customer. Sync does not issue policies for the customer. Sync does not issue certificates for the customer. Direct plant execute stays off. CMMS write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The certified practice is not the insured practice
+            </h2>
+
+            <p>
+              Certified means a third-party or internal program stamp that a recovery/continuity program
+              exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated
+              "certified recoverable" badge) — not the same as risk transfer that pays when restore
+              fails under today’s named owner inside the named window. Insured means a named, in-force
+              indemnity/coverage instrument (policy, binder, endorsement, named insured + limits + triggers
+              + exclusions + claims path) that actually responds when recovery fails or loss lands — not
+              a certificate PDF, not a sales claim that "we’re covered," and not a CMMS checkbox. Sync
+              may surface a certification stamp or an insurance instrument beside Evidence, Verification,
+              and the closed outcome. A practice record that says certified is insured is not shown
+              insurance. Evidence from the plant beats the certificate when the certificate is being used
+              as insurance. Evidence from the plant beats the policy when the policy is being used as
+              certification. Evidence from the plant beats the note. The certified practice is not the
+              insured practice.
+            </p>
+
+            <p>
+              One line can hold a certification stamp. The third party or the internal program is named.
+              The checklist is named. The date of the stamp is named. The stamp is an ISO/SOC/DR cert, an
+              annual auditor letter, or a laminated "certified recoverable" badge. Then the record stops.
+              No policy is in force. No binder names the insured. No endorsement states limits, triggers,
+              exclusions, and a claims path. Program stamp on file, no in-force policy that responds to the
+              named restore/continuity failure. That record can be certified. It is not insured. A firm can
+              be certified and still not insured. An in-force policy can sit in the cabinet and would pay
+              when recovery fails. No ISO/SOC/DR stamp hangs beside it. In-force coverage that would pay,
+              no ISO/SOC/DR stamp. A firm can be insured and still not certified. A certificate alone is
+              not insurance. A policy alone is not certification. A certificate PDF is not a claims path. A
+              sales claim that "we’re covered" is not a named insured, and it is not limits, triggers,
+              exclusions, and a claims path. A CMMS checkbox, ticket state, status light, or one-off clear
+              is neither. A one-off clear is a single quiet interval. It is not a program stamp, and it is
+              not an indemnity instrument that responds when loss lands. The certified practice is not the
+              insured practice. This essay does not invent a customer, a price, or a return. It states no
+              savings figure, states no price, and states no OEM limit. A practice record that says
+              certified is insured is not a customer plant release, and it is not shown insurance. Treating
+              certified as insured records a program stamp the plant has not placed on an in-force policy,
+              under the honesty and verification boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-certified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Certified
+              </Link>
+              {" "}
+              sits one step earlier. Read the prior essay at /insights/assured-is-not-certified. Assured,
+              there, means independent, recurring verification that recovery capability still holds under
+              the current named owner, tooling rights, exception paths, and evidence continuity — a
+              dated assurance record that the restore path was re-proven inside the named window, with
+              residual gaps closed. Certified, there, means a third-party or internal program stamp that a
+              recovery/continuity program exists or once met a named checklist. A certificate alone is not
+              assurance. An assurance record alone is not certification. That refusal stops at a program
+              stamp. It does not ask whether a named, in-force indemnity/coverage instrument actually
+              responds when recovery fails or loss lands. The phrase certification stamp, in that essay, is
+              not this policy, binder, or endorsement. Assured is not certified is a different refusal.
+              Certified is not insured is the next refusal. Named certification is not insurance, and an
+              in-force policy is not a program stamp. Assured Is Not Certified separates a dated assurance
+              record from a certification stamp. This essay separates a certification stamp from an
+              in-force coverage instrument. This essay does not rewrite Assured Is Not Certified. This
+              essay does not collapse into Assured Is Not Certified. This essay does not collapse assured
+              into certified. This essay does not collapse certified into insured.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/recoverable-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recoverable Is Not Assured
+              </Link>
+              {" "}
+              keeps a proven restore to a named service level inside a named RTO/RPO off independent,
+              recurring verification that recovery capability still holds. A one-time restore is not an
+              in-force policy, and an assurance PDF is not a certification stamp that pays when restore
+              fails. This essay does not rewrite Recoverable Is Not Assured. This essay does not collapse
+              into Recoverable Is Not Assured.{" "}
+              <Link
+                href="/insights/rehearsed-is-not-recoverable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Rehearsed Is Not Recoverable
+              </Link>
+              {" "}
+              keeps a named handoff run under stress off a proven restore to a named service level inside
+              a named RTO/RPO. A tabletop pass is not a claims path, and a backup job green light is not a
+              named insured. This essay does not rewrite Rehearsed Is Not Recoverable. This essay does not
+              collapse into Rehearsed Is Not Recoverable.{" "}
+              <Link
+                href="/insights/transferable-is-not-rehearsed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Transferable Is Not Rehearsed
+              </Link>
+              {" "}
+              keeps a governed owned compounding system that can change hands with evidence continuity off
+              a handoff run under stress. A succession plan PDF is not a policy endorsement, and a tabletop
+              is not risk transfer that pays when restore fails under today’s named owner inside the
+              named window. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not
+              collapse into Transferable Is Not Rehearsed.{" "}
+              <Link
+                href="/insights/governed-is-not-transferable"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Governed Is Not Transferable
+              </Link>
+              {" "}
+              keeps ownership inside explicit rules of engagement off evidence continuity under a new named
+              owner. A rule of engagement is not an ISO/SOC/DR cert, and a handoff pack is not a binder
+              with limits, triggers, exclusions, and a claims path. This essay does not rewrite Governed Is
+              Not Transferable. This essay does not collapse into Governed Is Not Transferable.{" "}
+              <Link
+                href="/insights/owned-is-not-governed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Owned Is Not Governed
+              </Link>
+              {" "}
+              keeps a named accountable owner who can change, stop, transfer, audit, or withhold the
+              compounding system off rules of engagement. A name on the system is not a named insured, and
+              a rule of engagement is not an in-force indemnity instrument. This essay does not rewrite
+              Owned Is Not Governed. This essay does not collapse into Owned Is Not Governed.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/assured-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Assured Is Not Proven
+              </Link>
+              {" "}
+              keeps time-bounded confidence that an asset stays in a known-good state under operating
+              conditions, with ownership and monitoring, off a closed evidentiary chain for a specific
+              claim under named conditions. That standing claim can be probabilistic. Certification in this
+              essay is not that standing known-good claim. Certification here is a third-party or internal
+              program stamp that a recovery/continuity program exists or once met a named checklist.
+              Insurance here is not that standing known-good claim either. Insurance here is a named,
+              in-force indemnity/coverage instrument that actually responds when recovery fails or loss
+              lands. A known-good asset claim is not a policy, and a closed evidentiary chain is not a
+              claims path. This essay does not rewrite Assured Is Not Proven. This essay does not collapse
+              into Assured Is Not Proven.{" "}
+              <Link
+                href="/insights/verified-is-not-assured"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Assured
+              </Link>
+              {" "}
+              keeps an independent check of the past off standing confidence that the asset stays
+              known-good. That axis is an evidence check versus standing confidence. It is not a
+              certification stamp versus an in-force coverage instrument. An independent check is not
+              insurance, and standing confidence is not a policy that pays when restore fails under
+              today’s named owner inside the named window. This essay does not rewrite Verified Is Not
+              Assured. This essay does not collapse into Verified Is Not Assured.{" "}
+              <Link
+                href="/insights/green-is-not-go"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Green Is Not Go
+              </Link>
+              {" "}
+              keeps a green tile off permission to run. A status light is not an in-force policy, and a
+              status light is not a certification stamp. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Green Is Not Go. This essay does not collapse insurance into
+              certification.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What an insurance instrument is allowed to be
+            </h2>
+
+            <p>
+              Certified means a third-party or internal program stamp that a recovery/continuity program
+              exists or once met a named checklist. Insured means a named, in-force indemnity/coverage
+              instrument (policy, binder, endorsement, named insured + limits + triggers + exclusions +
+              claims path) that actually responds when recovery fails or loss lands. A certificate alone is
+              not insurance. A policy alone is not certification. A CMMS checkbox, ticket state, status
+              light, or one-off clear is neither. Sync may surface a certification stamp or an insurance
+              instrument beside Evidence, Verification, and the closed outcome. This essay does not
+              collapse certified into insured.
+            </p>
+
+            <p>
+              Evidence may cite a certification stamp when the source of that stamp is named, and when the
+              citation names the third party or the internal program, the named checklist, the date of the
+              stamp, and whether the stamp is an ISO/SOC/DR cert, an annual auditor letter, or a laminated
+              "certified recoverable" badge. The stamp says a recovery/continuity program exists or once
+              met that checklist. It does not, by itself, show risk transfer that pays when restore fails
+              under today’s named owner inside the named window. Evidence may cite an insurance
+              instrument when the source of that instrument is named, and when the citation names the
+              policy, binder, or endorsement, the named insured, the limits, the triggers, the exclusions,
+              and the claims path, and when the citation says the instrument is in force and responds when
+              recovery fails or loss lands. The instrument is indemnity. It is coverage. It is not a
+              certificate PDF. It is not a sales claim that "we’re covered." It is not a CMMS
+              checkbox. If the evidence records a program stamp on file and does not record an in-force
+              policy that responds to the named restore/continuity failure, the case may store the note as
+              certified and must not store the note as insured. If the evidence records in-force coverage
+              that would pay and does not record an ISO/SOC/DR stamp, the case may store the note as
+              insured and must not store the note as certified. What an insurance instrument is allowed to
+              be is that named, in-force indemnity the firm can still show. It is not a certification stamp
+              used as a policy. It is not a laminated "certified recoverable" badge. It is not an annual
+              auditor letter used as a claims path. It is not permission to execute. Recommend is not
+              authorize. Evidence lineage is not optional. Human decision is not optional. Surfacing is
+              still a read. Sync refuses false precision. Sync must not auto-transfer ownership,
+              auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance,
+              auto-issue certificates, or auto-issue policies. Sync does not issue policies for the
+              customer. Sync does not measure insurance for the customer. Sync does not bind coverage for
+              the customer. Sync does not file a claim for the customer.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Named certification is not insurance
+            </h2>
+
+            <p>
+              Named certification is not insurance. The certified practice is not the insured practice. A
+              certification stamp answers whether a third-party or internal program says a
+              recovery/continuity program exists or once met a named checklist. It does not, by itself,
+              show a named, in-force indemnity/coverage instrument. It does not, by itself, show a policy,
+              binder, or endorsement. It does not, by itself, show a named insured, limits, triggers,
+              exclusions, and a claims path that actually responds when recovery fails or loss lands. A
+              program stamp on file, with no in-force policy that responds to the named restore/continuity
+              failure, is still certification. It is not insurance. A firm can be certified and still not
+              insured. In-force coverage that would pay, with no ISO/SOC/DR stamp, is still insurance. It
+              is not certification. A firm can be insured and still not certified. A certificate alone is
+              not insurance. A policy alone is not certification. Not the same as risk transfer that pays
+              when restore fails under today’s named owner inside the named window. Not a certificate
+              PDF. Not a sales claim that "we’re covered." Not a CMMS checkbox. A CMMS checkbox,
+              ticket state, status light, or one-off clear is neither. This essay does not rewrite Assured
+              Is Not Certified. This essay does not rewrite Recoverable Is Not Assured. This essay does not
+              rewrite Rehearsed Is Not Recoverable. This essay does not rewrite Transferable Is Not
+              Rehearsed. This essay does not rewrite Governed Is Not Transferable. This essay does not
+              rewrite Owned Is Not Governed. This essay does not rewrite Assured Is Not Proven. This essay
+              does not rewrite Verified Is Not Assured. This essay does not rewrite Green Is Not Go. This
+              essay does not collapse into Assured Is Not Certified. This essay does not collapse into
+              Recoverable Is Not Assured. This essay does not collapse into Rehearsed Is Not Recoverable.
+              This essay does not collapse into Transferable Is Not Rehearsed. This essay does not collapse
+              into Governed Is Not Transferable. This essay does not collapse into Owned Is Not Governed.
+              This essay does not collapse into Assured Is Not Proven. This essay does not collapse into
+              Verified Is Not Assured. This essay does not collapse into Green Is Not Go. This essay does
+              not collapse insurance into certification. This essay does not collapse certified into
+              insured. Sync does not measure certification or insurance for the customer. Sync must not
+              auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered
+              handoff, auto-issue assurance, auto-issue certificates, or auto-issue policies. Sync refuses
+              to pretend certification or insurance is a status light. Direct plant execute stays off. CMMS
+              write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Assured is not certified. Assured means independent, recurring verification that recovery
@@ -8254,17 +8614,6 @@ export default function AssuredIsNotCertifiedPage() {
               measured result. The control note does not record closure.
             </p>
 
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/certified-is-not-insured"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Certified Is Not Insured
-              </Link>
-              , on why certified is still not insured. Certified means a third-party or internal program stamp that a recovery/continuity program exists or once met a named checklist (ISO/SOC/DR cert, annual auditor letter, laminated "certified recoverable" badge) — not the same as risk transfer that pays when restore fails under today’s named owner inside the named window. Insured means a named, in-force indemnity/coverage instrument (policy, binder, endorsement, named insured + limits + triggers + exclusions + claims path) that actually responds when recovery fails or loss lands — not a certificate PDF, not a sales claim that "we’re covered," and not a CMMS checkbox. A firm can be certified and still not insured when program stamp on file, no in-force policy that responds to the named restore/continuity failure, is on the record. A firm can be insured and still not certified. A certificate alone is not insurance. A policy alone is not certification. A CMMS checkbox, ticket state, status light, or one-off clear is neither. Assured remains a dated assurance record that the restore path was re-proven inside the named window. This essay separates a dated assurance record from a certification stamp. A certificate alone is not assurance. An assurance record alone is not certification. Sync does not measure certification or insurance for the customer. Sync does not measure insurance. Sync does not measure insurance for the customer. Sync must not auto-transfer ownership, auto-declare RTO met, auto-credit Learning for an unrecovered handoff, auto-issue assurance, auto-issue certificates, or auto-issue policies. Sync must not auto-issue policies. Sync refuses to pretend certification or insurance is a status light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -8324,7 +8673,7 @@ export default function AssuredIsNotCertifiedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="assured-is-not-certified" />
+          <InsightNextSteps slug="certified-is-not-insured" />
         </motion.article>
       </div>
     </main>
