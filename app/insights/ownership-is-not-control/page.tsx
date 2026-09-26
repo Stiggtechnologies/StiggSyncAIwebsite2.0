@@ -1059,7 +1059,31 @@ export default function OwnershipIsNotControlPage() {
                 Strategic Pilot
               </Link>{' '}
               is a governed proof around one operating decision. The verification chapter records the
-              measured result. The ownership note does not record control.
+              measured result.               The ownership note does not record control.
+            </p>
+
+            <p>
+              The series continues with{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>
+              , on why control is still not closure. Control is the practical power to set or change
+              direction of the asset or plant — who can steer capital allocation, operating
+              priorities, or binding plant moves in practice — direction power, not a residual claim
+              and not a formal authority charter alone. Closure is a finished work-state: a ticket,
+              work order, investigation, or decision cycle marked done with a named end condition —
+              administrative or operational completion, not the power to steer. A firm with control
+              can still lack closure when that direction power has no finished end-state. A firm with
+              closure can still lack control. Direction power without a finished end-state is not
+              closure. A closed ticket without practical steering power is not control. A title is
+              neither. Ownership remains the residual economic claim. Accountability remains named
+              answerability for an outcome within a defined scope and window. Cash remains money
+              received (collected). A control note alone proves neither. A closure note alone proves
+              neither. A control note is not a green. A closure note is not a green. Sync does not
+              measure closure. Sync does not measure closure for the customer.
             </p>
 
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
