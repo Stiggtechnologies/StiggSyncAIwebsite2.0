@@ -734,6 +734,22 @@ export default function SuccessorClearedIsNotClosedPage() {
             measured result. The clearance package does not close the matter.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-closed-is-not-delivered"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Closed Is Not Delivered
+            </Link>{' '}
+            on why closed is still not delivered. That next refusal is instrument-required close-out
+            that ends the cleared successor-obligation matter for that named channel / remaining
+            window after clearance versus instrument-required delivery / handoff that places the
+            closed successor-obligation outcome into the named receiving channel / operator /
+            warranty / next-party register for the remaining window. It is not the filing-spine
+            essay at /insights/closed-is-not-delivered.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
