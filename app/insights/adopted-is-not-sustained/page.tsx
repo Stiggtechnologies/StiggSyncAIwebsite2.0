@@ -8,9 +8,9 @@ import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
 import { APP_SETUP_URL } from '@/lib/site-links';
 
-const article = getInsightArticle('trusted-is-not-adopted');
+const article = getInsightArticle('adopted-is-not-sustained');
 
-export default function TrustedIsNotAdoptedPage() {
+export default function AdoptedIsNotSustainedPage() {
   return (
     <main className="min-h-screen bg-[#0B0F14]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
@@ -31,7 +31,93 @@ export default function TrustedIsNotAdoptedPage() {
             <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Trusted Is Not Adopted</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Adopted Is Not Sustained</h1>
+
+            <p className="text-xl text-gray-400">
+              Adopted is not sustained. Adopted is the plant, crew, and operating system actually use
+              a trusted claim as the default way work runs (procedures, training, CMMS job plans,
+              spare strategy, shift handoffs, and named owners who practice it) — reliance has become
+              operating practice, not a signed note. Sustained is that adopted practice continues to
+              hold under named time, load, turnover, and exception pressure (who keeps it alive, for
+              which assets/classes, measured how, until when, under what revoke or re-train
+              conditions) — the practice stays the default after the rollout spotlight ends, not only
+              during the change window. Adopted is not sustained. A firm can adopt a practice and
+              still lose it when the sponsor leaves, the audit ends, or the next outage hits. A firm
+              can sustain a thin ritual and still never have adopted the trusted claim as real
+              operating practice. An adoption roll-out note alone is not sustainment. A sustainment
+              KPI alone is not adoption. An adoption roll-out note is not a green. A sustainment KPI
+              is not a green. A named adoption without the practice holding under named time, load,
+              turnover, and exception pressure is not sustained. A thin ritual that holds without the
+              plant, crew, and operating system using a trusted claim as the default way work runs is
+              not adopted. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Keep them apart: an adoption roll-out note alone is not sustainment; a sustainment KPI
+              alone is not adoption; a CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Trusted is not adopted. Trusted remains a standing reliance decision by a named
+              accountable owner that a proven claim may be relied on for a named scope and duration
+              without re-proving every instance (who trusts what, for which assets/classes, until
+              when, under what revoke conditions). Recommend is not authorize. Evidence lineage is not
+              optional. Human decision is not optional. Evidence from the plant beats the note.
+              Surfacing is still a read. Sync refuses to pretend adoption or sustainment is a status
+              light. Sync does not measure adoption. Sync does not measure adoption for the customer.
+              Sync does not measure sustainment. Sync does not measure sustainment for the customer.
+              Sync does not measure adoption or sustainment for the customer. Sync does not adopt for
+              the customer. Sync does not sustain for the customer. Sync must not auto-adopt or
+              auto-sustain. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, or auto-sustain.
+            </p>
+            <p className="text-xl text-gray-400">
+              The chain this refusal sits on is already fixed. Judgment is not authority. Authority is
+              not accountability. Accountability is not ownership. Ownership is not control. Control is
+              not closure. Closure is not complete. Complete is not accepted. Accepted is not verified.
+              Verified is not authorized. Authorized is not executed. Executed is not closed. Closed is
+              not resolved. Resolved is not proven. Proven is not trusted. Trusted is not adopted.
+              Adopted is not sustained. Trusted, in the prior essay, is a standing reliance decision by
+              a named accountable owner that a proven claim may be relied on for a named scope and
+              duration without re-proving every instance. Adopted, there, is the plant, crew, and
+              operating system actually use that trusted claim as the default way work runs. That essay
+              separates a standing reliance decision from operating practice. This essay does not
+              collapse into that split. Trust versus adopt is the prior refusal. This essay separates
+              adopted operating practice from sustainment under named pressure. Ownership Is Not
+              Control keeps a residual claim off direction power. Control Is Not Closure keeps
+              direction power off a finished end-state. Closure Is Not Complete keeps a closure stamp
+              off acceptance completeness. Complete Is Not Accepted keeps measured completeness off
+              named human acceptance. Accepted Is Not Verified keeps named human acceptance off an
+              independent evidence check. Verified Is Not Authorized keeps that check off permission to
+              act. Authorized Is Not Executed keeps permission off a completed binding move. Executed
+              Is Not Closed keeps completed execution off named administrative closure. Closed Is Not
+              Resolved keeps named administrative closure off a cleared exception. Resolved Is Not
+              Proven keeps a cleared instance off evidence the failure mode will not recur. Proven Is
+              Not Trusted keeps that proof window off a standing reliance decision. Trusted Is Not
+              Adopted keeps that reliance decision off operating practice. None of those refusals is
+              this split. A thin ritual is not this adoption. A rollout spotlight is not this
+              sustainment. This sustainment is the adopted practice continuing to hold after the
+              rollout spotlight ends. Recommend Is Not Authorize, Evidence Lineage Is Not Optional, and
+              Human Decision Is Not Optional stay beside this split. Sync may surface an
+              adoption/operating-practice note or a sustainment/hold note beside Evidence,
+              Verification, and the closed outcome. Surfacing is still a read. Sync refuses false
+              precision. Sync refuses when evidence is insufficient. Sync refuses to pretend adoption
+              or sustainment is a status light. Sync must not auto-adopt or auto-sustain. Sync must
+              not auto-close, auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, or
+              treat adopted as sustained as Learning credit. This essay does not rewrite Trusted Is
+              Not Adopted. This essay does not rewrite Proven Is Not Trusted. This essay does not
+              rewrite Resolved Is Not Proven. This essay does not rewrite Closed Is Not Resolved. This
+              essay does not rewrite Executed Is Not Closed. This essay does not rewrite Authorized Is
+              Not Executed. This essay does not rewrite Verified Is Not Authorized. This essay does
+              not rewrite Accepted Is Not Verified. This essay does not rewrite Complete Is Not
+              Accepted. This essay does not rewrite Closure Is Not Complete. This essay does not
+              rewrite Control Is Not Closure. This essay does not rewrite Ownership Is Not Control.
+              This essay does not collapse into Trusted Is Not Adopted. This essay does not collapse
+              into Proven Is Not Trusted. This essay does not collapse into Resolved Is Not Proven.
+              This essay does not collapse into Closed Is Not Resolved. This essay does not collapse
+              into Executed Is Not Closed. This essay does not collapse into Authorized Is Not
+              Executed. This essay does not collapse into Verified Is Not Authorized. This essay does
+              not collapse into Accepted Is Not Verified. This essay does not collapse into Complete Is
+              Not Accepted. This essay does not collapse into Closure Is Not Complete. This essay does
+              not collapse into Control Is Not Closure. This essay does not collapse into Ownership Is
+              Not Control. This essay does not collapse adopted into sustained. This essay does not
+              collapse sustainment into adoption. This essay does not collapse trusted into adopted.
+            </p>
+
 
             <p className="text-xl text-gray-400">
               Trusted is not adopted. Trusted is a standing reliance decision by a named accountable
@@ -668,6 +754,498 @@ export default function TrustedIsNotAdoptedPage() {
           </header>
 
           <div className="text-gray-300 space-y-6">
+
+            <p>
+              Adopted is not sustained.
+              For this refusal, the practice stays the default after the rollout spotlight ends, not only during the change window.
+              Sustained names who keeps it alive, for which assets/classes, measured how, until when, under what revoke or re-train conditions.
+              Adopted is the plant, crew, and operating system actually use a trusted claim as the default way work runs (procedures, training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice it).
+              A firm can adopt a practice and still lose it when the sponsor leaves, the audit ends, or the next outage hits.
+              A firm can sustain a thin ritual and still never have adopted the trusted claim as real operating practice.
+              An adoption roll-out note alone is not sustainment.
+              A sustainment KPI alone is not adoption.
+              The adopted practice is not the sustained practice.
+              What a sustainment note is allowed to be is the named hold record.
+              Named adoption is not sustainment.
+              Sync does not measure adoption or sustainment for the customer.
+              Sync does not measure sustainment.
+              Sync does not measure sustainment for the customer.
+              Sync must not auto-adopt or auto-sustain.
+              Sync may surface an adoption/operating-practice note or a sustainment/hold note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse sustainment into adoption.
+              This essay does not collapse adopted into sustained.
+              This essay does not rewrite Trusted Is Not Adopted.
+              This essay does not rewrite Ownership Is Not Control.
+              A practice record that says adopted is sustained is not shown sustainment.
+              Treating adopted as sustained is the refusal.
+              This essay separates adopted operating practice from sustainment under named pressure.
+              Read the prior essay at /insights/trusted-is-not-adopted.
+              This essay does not collapse into Trusted Is Not Adopted.
+              This essay does not collapse into Ownership Is Not Control.
+              This essay does not collapse into Control Is Not Closure.
+              This essay does not collapse into Closure Is Not Complete.
+              This essay does not collapse into Complete Is Not Accepted.
+              This essay does not collapse into Accepted Is Not Verified.
+              This essay does not collapse into Verified Is Not Authorized.
+              This essay does not collapse into Authorized Is Not Executed.
+              This essay does not collapse into Executed Is Not Closed.
+              This essay does not collapse into Closed Is Not Resolved.
+              This essay does not collapse into Resolved Is Not Proven.
+              This essay does not collapse into Proven Is Not Trusted.
+              Evidence from the plant beats the adoption note when the note is being used as sustainment.
+              Evidence from the plant beats the sustainment note when the note is being used as adoption.
+              Sync does not measure adoption.
+              Sync does not measure adoption for the customer.
+              Evidence from the plant beats the note.
+              Sync must not treat adopted as sustained as Learning credit.
+              Recommend is not authorize.
+              Surfacing is still a read.
+              Sync refuses false precision.
+              Sync refuses to pretend adoption or sustainment is a status light.
+              Direct plant execute stays off.
+              CMMS write-back is not a live product path.
+              Billing write-back is not a live product path.
+              Evidence lineage is not optional.
+              Human decision is not optional.
+            </p>
+
+            <p className="text-xl font-semibold text-white">
+              Adopted is not sustained. Adopted is the plant, crew, and operating system actually use
+              a trusted claim as the default way work runs (procedures, training, CMMS job plans,
+              spare strategy, shift handoffs, and named owners who practice it) — reliance has become
+              operating practice, not a signed note. Sustained is that adopted practice continues to
+              hold under named time, load, turnover, and exception pressure (who keeps it alive, for
+              which assets/classes, measured how, until when, under what revoke or re-train
+              conditions) — the practice stays the default after the rollout spotlight ends, not only
+              during the change window. A firm can adopt a practice and still lose it when the sponsor
+              leaves, the audit ends, or the next outage hits, when that operating practice is on the
+              record and the firm has not named who keeps it alive, for which assets or classes,
+              measured how, until when, and under what revoke or re-train conditions. A firm can
+              sustain a thin ritual and still never have adopted the trusted claim as real operating
+              practice when that hold is on the record and procedures, training, CMMS job plans, spare
+              strategy, shift handoffs, and named owners who practice it are not the default way work
+              runs. An adoption roll-out note alone is not sustainment. A sustainment KPI alone is not
+              adoption. A CMMS checkbox, ticket state, status light, or one-off clear is neither.
+              Treating adopted as sustained records operating practice as a hold that nobody has shown
+              under named time, load, turnover, and exception pressure, under the honesty and
+              verification boundary. An adoption note can inform a recommendation to investigate.
+              Recommend is not authorize. Evidence lineage is not optional. Human decision is not
+              optional. Evidence from the plant beats the adoption note when the note is being used as
+              sustainment. Evidence from the plant beats the sustainment note when the note is being
+              used as adoption. Sync must not auto-adopt or auto-sustain. Sync must not auto-close,
+              auto-authorize, auto-resolve, auto-prove, auto-trust, auto-adopt, or treat adopted as
+              sustained as Learning credit. Sync does not measure adoption. Sync does not measure
+              adoption for the customer. Sync does not measure sustainment. Sync does not measure
+              sustainment for the customer. Sync does not measure adoption or sustainment for the
+              customer. Sync does not sustain for the customer. Direct plant execute stays off. CMMS
+              write-back is not a live product path. Billing write-back is not a live product path.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The adopted practice is not the sustained practice
+            </h2>
+
+            <p>
+              Adopted is the plant, crew, and operating system actually use a trusted claim as the
+              default way work runs (procedures, training, CMMS job plans, spare strategy, shift
+              handoffs, and named owners who practice it) — reliance has become operating practice,
+              not a signed note. Sustained is that adopted practice continues to hold under named
+              time, load, turnover, and exception pressure (who keeps it alive, for which
+              assets/classes, measured how, until when, under what revoke or re-train conditions) —
+              the practice stays the default after the rollout spotlight ends, not only during the
+              change window. Sync may surface an adoption/operating-practice note or a
+              sustainment/hold note beside Evidence, Verification, and the closed outcome. A practice
+              record that says adopted is sustained is not shown sustainment. Evidence from the plant
+              beats the adoption note when the note is being used as sustainment. Evidence from the
+              plant beats the sustainment note when the note is being used as adoption. Evidence from
+              the plant beats the note.
+            </p>
+
+            <p>
+              A plant, crew, and operating system can take a trusted claim as the default way work
+              runs — procedures, training, CMMS job plans, spare strategy, shift handoffs, and named
+              owners who practice it — while the rollout spotlight is still on. The sponsor is still
+              in the room. The audit has not ended. The next outage has not hit. That record is
+              adopted. It is not sustained. A thin ritual can keep a meeting, a KPI tile, or a
+              recertification date alive after the spotlight ends, while the crew still runs the prior
+              way when the sponsor leaves, the audit ends, or the next outage hits. That ritual is not
+              adopted. A sustainment KPI can name a percentage and still leave unnamed who keeps the
+              practice alive, for which assets or classes, measured how, until when, and under what
+              revoke or re-train conditions. A sustainment KPI alone is not adoption. An adoption
+              roll-out note alone is not sustainment. A title on the org chart, with or without scope,
+              is not the operating practice and is not the hold. A firm can adopt a practice and still
+              lose it when the sponsor leaves, the audit ends, or the next outage hits. A firm can
+              sustain a thin ritual and still never have adopted the trusted claim as real operating
+              practice. An adoption roll-out note is not a green. A sustainment KPI is not a green. A
+              CMMS checkbox, ticket state, status light, or one-off clear is neither. A one-off clear
+              is a single quiet interval. It is not operating practice, and it is not a hold under
+              named pressure. Named adoption is not sustainment. The adopted practice is not the
+              sustained practice. This essay does not invent a customer, a price, or a return. It
+              states no savings figure, states no price, and states no OEM limit. It states no
+              sustainment length. A practice record that says adopted is sustained is not a customer
+              plant release, and it is not shown sustainment. Treating adopted as sustained records
+              operating practice as a hold the plant has not shown, under the honesty and verification
+              boundary.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/trusted-is-not-adopted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Trusted Is Not Adopted
+              </Link>{' '}
+              sits one step earlier. Trusted, there, is a standing reliance decision by a named
+              accountable owner that a proven claim may be relied on for a named scope and duration
+              without re-proving every instance (who trusts what, for which assets/classes, until
+              when, under what revoke conditions). Adopted, there, is the plant, crew, and operating
+              system actually use that trusted claim as the default way work runs (procedures,
+              training, CMMS job plans, spare strategy, shift handoffs, and named owners who practice
+              it) — reliance has become operating practice, not a signed note. A trust note alone is
+              not adoption. An adoption roll-out note alone is not trust. That refusal stops at the
+              reliance decision and the operating practice. It does not ask whether that adopted
+              practice continues to hold under named time, load, turnover, and exception pressure
+              after the rollout spotlight ends. Trusted is not adopted is a different refusal. Adopted
+              is not sustained is the next refusal. Named trust is not adoption, and named adoption is
+              not sustainment. Trusted Is Not Adopted separates a standing reliance decision from
+              operating practice. This essay separates adopted operating practice from sustainment
+              under named pressure. This essay does not rewrite Trusted Is Not Adopted. This essay
+              does not collapse into Trusted Is Not Adopted. This essay does not collapse trusted into
+              adopted. This essay does not collapse adopted into sustained.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/ownership-is-not-control"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Ownership Is Not Control
+              </Link>{' '}
+              keeps a residual economic claim off the practical power to set or change direction.
+              Residual rights are not operating practice, and direction power is not a hold after the
+              rollout spotlight ends. This essay does not rewrite Ownership Is Not Control. This essay
+              does not collapse into Ownership Is Not Control.{' '}
+              <Link
+                href="/insights/control-is-not-closure"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Control Is Not Closure
+              </Link>{' '}
+              keeps direction power off a finished end-state. A closed ticket is not sustainment. This
+              essay does not rewrite Control Is Not Closure. This essay does not collapse into Control
+              Is Not Closure.{' '}
+              <Link
+                href="/insights/closure-is-not-complete"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closure Is Not Complete
+              </Link>{' '}
+              keeps a closure stamp off acceptance completeness. Completeness is not this hold. This
+              essay does not rewrite Closure Is Not Complete. This essay does not collapse into
+              Closure Is Not Complete.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/complete-is-not-accepted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Complete Is Not Accepted
+              </Link>{' '}
+              keeps measured completeness off named human acceptance. Neither is sustainment.{' '}
+              <Link
+                href="/insights/accepted-is-not-verified"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Accepted Is Not Verified
+              </Link>{' '}
+              keeps named human acceptance off an independent evidence check. Acceptance is not
+              adoption, and verification is not sustainment. This essay does not rewrite Complete Is
+              Not Accepted. This essay does not rewrite Accepted Is Not Verified. This essay does not
+              collapse into Complete Is Not Accepted. This essay does not collapse into Accepted Is
+              Not Verified.{' '}
+              <Link
+                href="/insights/verified-is-not-authorized"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verified Is Not Authorized
+              </Link>{' '}
+              keeps an independent evidence check off permission to act. Permission is not the default
+              way work runs, and a check is not a hold under named pressure. This essay does not
+              rewrite Verified Is Not Authorized. This essay does not collapse into Verified Is Not
+              Authorized.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/authorized-is-not-executed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Authorized Is Not Executed
+              </Link>{' '}
+              keeps named permission off a completed binding move.{' '}
+              <Link
+                href="/insights/executed-is-not-closed"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Executed Is Not Closed
+              </Link>{' '}
+              keeps completed execution off named administrative closure.{' '}
+              <Link
+                href="/insights/closed-is-not-resolved"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Closed Is Not Resolved
+              </Link>{' '}
+              keeps named administrative closure off a cleared exception. A closed case is not a
+              practice that stays the default after the rollout spotlight ends. This essay does not
+              rewrite Authorized Is Not Executed. This essay does not rewrite Executed Is Not Closed.
+              This essay does not rewrite Closed Is Not Resolved. This essay does not collapse into
+              Authorized Is Not Executed. This essay does not collapse into Executed Is Not Closed.
+              This essay does not collapse into Closed Is Not Resolved.
+            </p>
+
+            <p>
+              <Link
+                href="/insights/resolved-is-not-proven"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Resolved Is Not Proven
+              </Link>{' '}
+              keeps a cleared instance off evidence the failure mode will not recur.{' '}
+              <Link
+                href="/insights/proven-is-not-trusted"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Proven Is Not Trusted
+              </Link>{' '}
+              keeps that proof window off a standing reliance decision. Proof is not adoption, and
+              trust is not sustainment. This essay does not rewrite Resolved Is Not Proven. This essay
+              does not rewrite Proven Is Not Trusted. This essay does not collapse into Resolved Is
+              Not Proven. This essay does not collapse into Proven Is Not Trusted. This essay does not
+              collapse sustainment into adoption.{' '}
+              <Link
+                href="/insights/recommend-is-not-authorize"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Recommend Is Not Authorize
+              </Link>{' '}
+              refuses to treat a proposal as authorization. A recommendation tile is not adoption, and
+              a recommendation tile is not sustainment. Recommend is not authorize.{' '}
+              <Link
+                href="/insights/human-decision-is-not-optional"
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human Decision Is Not Optional
+              </Link>{' '}
+              refuses auto-decision: a named person must accept, reject, escalate, or return. A
+              required human decision is not, by itself, operating practice, and it is not, by itself,
+              a hold under named time, load, turnover, and exception pressure. Human decision is not
+              optional. This essay does not rewrite Recommend Is Not Authorize. This essay does not
+              rewrite Human Decision Is Not Optional. This essay does not collapse into Recommend Is
+              Not Authorize. This essay does not collapse into Human Decision Is Not Optional.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What a sustainment note is allowed to be
+            </h2>
+
+            <p>
+              Adopted is the plant, crew, and operating system actually use a trusted claim as the
+              default way work runs (procedures, training, CMMS job plans, spare strategy, shift
+              handoffs, and named owners who practice it) — reliance has become operating practice,
+              not a signed note. Sustained is that adopted practice continues to hold under named
+              time, load, turnover, and exception pressure (who keeps it alive, for which
+              assets/classes, measured how, until when, under what revoke or re-train conditions) —
+              the practice stays the default after the rollout spotlight ends, not only during the
+              change window. An adoption roll-out note alone is not sustainment. A sustainment KPI
+              alone is not adoption. A CMMS checkbox, ticket state, status light, or one-off clear is
+              neither. Sync may surface an adoption/operating-practice note or a sustainment/hold note
+              beside Evidence, Verification, and the closed outcome. This essay does not collapse
+              adopted into sustained.
+            </p>
+
+            <p>
+              Evidence may cite an adoption/operating-practice note when the source of that note is
+              named, and when the citation names the procedures, the training, the CMMS job plans, the
+              spare strategy, the shift handoffs, and the named owners who practice a trusted claim as
+              the default way work runs. Evidence may cite a sustainment/hold note when the source of
+              that note is named, and when the citation names who keeps the practice alive, for which
+              assets or classes, measured how, until when, and under what revoke or re-train
+              conditions, including time, load, turnover, and exception pressure after the rollout
+              spotlight ends. If the evidence records the operating practice and does not record that
+              hold, the case may store the note as adopted and must not store the note as sustained.
+              If the evidence records a sustainment KPI and does not record that the plant, crew, and
+              operating system use a trusted claim as the default way work runs, the case must not
+              store the note as adopted. The label does not fill the gap. The adoption note does not
+              paint a green. The sustainment note does not paint a green. Evidence lineage is not
+              optional.
+            </p>
+
+            <p>
+              A CMMS checkbox is a row someone, or something, ticked. A ticket state is a workflow
+              mark. A status light is a display. A one-off clear is a single interval in which the
+              symptom was quiet. None of those, by itself, is the plant, crew, and operating system
+              using a trusted claim as the default way work runs. None of those, by itself, is that
+              practice continuing to hold under named time, load, turnover, and exception pressure
+              after the rollout spotlight ends. A CMMS checkbox, ticket state, status light, or
+              one-off clear is neither. An adoption roll-out note alone is not sustainment. A
+              sustainment KPI alone is not adoption. Evidence from the plant beats the adoption note
+              when the note is being used as sustainment. Evidence from the plant beats the
+              sustainment note when the note is being used as adoption. Sync may surface an
+              adoption/operating-practice note or a sustainment/hold note beside Evidence,
+              Verification, and the closed outcome. Recommend is not authorize. Human decision is not
+              optional. Sync refuses false precision. Sync refuses when evidence is insufficient. Sync
+              refuses to pretend adoption or sustainment is a status light. Sync must not auto-adopt
+              or auto-sustain. Sync must not auto-close, auto-authorize, auto-resolve, auto-prove,
+              auto-trust, auto-adopt, or treat adopted as sustained as Learning credit. A practice
+              record that says adopted is sustained is not a customer plant release, and it is not
+              shown sustainment. Simulated or seeded telemetry and assets are practice records. A live
+              connector tag pull is not a claim of this edition. This essay does not invent a
+              customer.
+            </p>
+
+            <p>
+              Sync keeps the split as a read. Sync may surface an adoption/operating-practice note or
+              a sustainment/hold note beside Evidence, Verification, and the closed outcome. Surfacing
+              is still a read. Showing the note does not write a CMMS work order. Showing the note
+              does not clear equipment to run. Showing the note does not close the case for the
+              customer. Showing the note does not resolve the case for the customer. Showing the note
+              does not prove the case for the customer. Showing the note does not grant trust for the
+              customer. Showing the note does not adopt the practice for the customer. Showing the
+              note does not sustain the practice for the customer. Showing the note does not book
+              revenue. Showing the note does not recognize revenue. Showing the note does not measure
+              adoption. Showing the note does not measure adoption for the customer. Showing the note
+              does not measure sustainment. Showing the note does not measure sustainment for the
+              customer. Showing the note does not measure adoption or sustainment for the customer.
+              Showing the note does not execute plant work. A named human decides. A named human
+              remains accountable after the plant move. Direct plant execute stays off. CMMS
+              write-back is not a live product path. Billing write-back is not a live product path.
+              Self-guided onboarding is not claimed as a live product path. Sync does not measure
+              adoption or sustainment for the customer. Sync must not auto-adopt or auto-sustain.
+              Sync does not book revenue. Sync does not recognize revenue. Sync does not measure ARR.
+              Sync does not measure ARR for the customer. Sync does not measure cash. Sync does not
+              measure cash for the customer. Sync does not measure runway. Sync does not measure
+              runway for the customer. Sync does not measure survival. Sync does not measure survival
+              for the customer. Sync does not measure solvency. Sync does not measure solvency for the
+              customer. Sync does not measure liquidity. Sync does not measure liquidity for the
+              customer. Sync does not measure flexibility. Sync does not measure flexibility for the
+              customer. Sync does not measure optionality. Sync does not measure optionality for the
+              customer. Sync does not measure strategy. Sync does not measure strategy for the
+              customer. Sync does not measure execution. Sync does not measure execution for the
+              customer. Sync does not measure results. Sync does not measure results for the customer.
+              Sync does not measure learning. Sync does not measure learning for the customer. Sync
+              does not measure judgment. Sync does not measure judgment for the customer. Sync does
+              not measure authority. Sync does not measure authority for the customer. Sync does not
+              measure accountability. Sync does not measure accountability for the customer. Sync does
+              not measure ownership. Sync does not measure ownership for the customer. Sync does not
+              measure control. Sync does not measure control for the customer. Sync does not measure
+              closure. Sync does not measure closure for the customer. Sync does not measure
+              completeness. Sync does not measure completeness for the customer. Sync does not measure
+              acceptance. Sync does not measure acceptance for the customer. Sync does not measure
+              verification. Sync does not measure verification for the customer. Sync does not measure
+              authorization. Sync does not measure authorization for the customer. Sync does not
+              measure resolution. Sync does not measure resolution for the customer. Sync does not
+              measure proof. Sync does not measure proof for the customer. Sync does not measure
+              trust. Sync does not measure trust for the customer. Sync does not measure adoption.
+              Sync does not measure adoption for the customer. Sync does not measure sustainment. Sync
+              does not measure sustainment for the customer.
+            </p>
+
+            <p>
+              <Link
+                href={fieldManualPath()}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Field Manual {fieldManual.version}
+              </Link>{' '}
+              states the order and the boundaries. The{' '}
+              <Link
+                href={fieldManualPath('evidence')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Evidence
+              </Link>{' '}
+              chapter records what the case may cite. The{' '}
+              <Link
+                href={fieldManualPath('verification')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Verification
+              </Link>{' '}
+              chapter records named observation against named criteria. The{' '}
+              <Link
+                href={fieldManualPath('human-decision')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Human decision
+              </Link>{' '}
+              chapter records who accepted the consequence. The{' '}
+              <Link
+                href={fieldManualPath('learning')}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Learning
+              </Link>{' '}
+              chapter keeps the closed case so a later question can see what was believed,
+              authorized, and checked. None of those chapters is, by itself, the plant using a trusted
+              claim as the default way work runs, and none of them is, by itself, that practice
+              holding under named time, load, turnover, and exception pressure after the rollout
+              spotlight ends. The{' '}
+              <Link
+                href={fieldManualPath(honestyChapter.slug)}
+                className="text-[#3B82F6] hover:text-white transition-colors"
+              >
+                Honesty boundaries
+              </Link>{' '}
+              keep this edition from treating an adoption note as sustained. Direct plant execute
+              stays off.
+            </p>
+
+            <p>
+              Adopted is not sustained. A firm can adopt a practice and still lose it when the sponsor
+              leaves, the audit ends, or the next outage hits. A firm can sustain a thin ritual and
+              still never have adopted the trusted claim as real operating practice. An adoption
+              roll-out note alone is not sustainment. A sustainment KPI alone is not adoption. A
+              sustainment KPI is not a green. The adopted practice is not the sustained practice. What
+              a sustainment note is allowed to be is a named record that the adopted practice
+              continues to hold under named time, load, turnover, and exception pressure (who keeps it
+              alive, for which assets/classes, measured how, until when, under what revoke or re-train
+              conditions) — the practice stays the default after the rollout spotlight ends, not only
+              during the change window. Named adoption is not sustainment. Sync does not measure
+              adoption or sustainment for the customer. Sync may surface an adoption/operating-practice
+              note or a sustainment/hold note beside Evidence, Verification, and the closed outcome.
+              This essay does not collapse sustainment into adoption. This essay does not collapse
+              adopted into sustained. This essay does not rewrite Trusted Is Not Adopted. This essay
+              does not rewrite Ownership Is Not Control. This essay does not rewrite Control Is Not
+              Closure. This essay does not rewrite Closure Is Not Complete. This essay does not
+              rewrite Complete Is Not Accepted. This essay does not rewrite Accepted Is Not Verified.
+              This essay does not rewrite Verified Is Not Authorized. This essay does not rewrite
+              Authorized Is Not Executed. This essay does not rewrite Executed Is Not Closed. This
+              essay does not rewrite Closed Is Not Resolved. This essay does not rewrite Resolved Is
+              Not Proven. This essay does not rewrite Proven Is Not Trusted. A practice record that
+              says adopted is sustained is not shown sustainment. Treating adopted as sustained is the
+              refusal. This essay separates adopted operating practice from sustainment under named
+              pressure. This essay does not collapse into Trusted Is Not Adopted. This essay does not
+              collapse into Ownership Is Not Control. This essay does not collapse into Control Is Not
+              Closure. This essay does not collapse into Closure Is Not Complete. This essay does not
+              collapse into Complete Is Not Accepted. This essay does not collapse into Accepted Is
+              Not Verified. This essay does not collapse into Verified Is Not Authorized. This essay
+              does not collapse into Authorized Is Not Executed. This essay does not collapse into
+              Executed Is Not Closed. This essay does not collapse into Closed Is Not Resolved. This
+              essay does not collapse into Resolved Is Not Proven. This essay does not collapse into
+              Proven Is Not Trusted. Evidence from the plant beats the adoption note when the note is
+              being used as sustainment. Evidence from the plant beats the sustainment note when the
+              note is being used as adoption. Surfacing is still a read. Sync refuses false precision.
+              Sync refuses to pretend adoption or sustainment is a status light. Sync must not
+              auto-adopt or auto-sustain. Sync must not auto-close, auto-authorize, auto-resolve,
+              auto-prove, auto-trust, auto-adopt, or treat adopted as sustained as Learning credit.
+              Direct plant execute stays off. CMMS write-back is not a live product path. Billing
+              write-back is not a live product path. Recommend is not authorize. Evidence lineage is
+              not optional. Human decision is not optional. Sync does not measure sustainment. Sync
+              does not measure sustainment for the customer.
+            </p>
+
             <p>
               Trusted is not adopted.
               For this refusal, reliance has become operating practice, not a signed note.
@@ -4950,38 +5528,6 @@ export default function TrustedIsNotAdoptedPage() {
               measured result. The control note does not record closure.
             </p>
 
-
-            <p>
-              The series continues with{' '}
-              <Link
-                href="/insights/adopted-is-not-sustained"
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Adopted Is Not Sustained
-              </Link>
-              , on why adopted is still not sustained. Adopted is the plant, crew, and operating
-              system actually use a trusted claim as the default way work runs (procedures, training,
-              CMMS job plans, spare strategy, shift handoffs, and named owners who practice it) —
-              reliance has become operating practice, not a signed note. Sustained is that adopted
-              practice continues to hold under named time, load, turnover, and exception pressure (who
-              keeps it alive, for which assets/classes, measured how, until when, under what revoke or
-              re-train conditions) — the practice stays the default after the rollout spotlight ends,
-              not only during the change window. A firm can adopt a practice and still lose it when
-              the sponsor leaves, the audit ends, or the next outage hits when that operating practice
-              is on the record and the firm has not named who keeps it alive under that pressure. A
-              firm can sustain a thin ritual and still never have adopted the trusted claim as real
-              operating practice when that ritual is on the record and the plant, crew, and operating
-              system do not use a trusted claim as the default way work runs. An adoption roll-out
-              note alone is not sustainment. A sustainment KPI alone is not adoption. A CMMS checkbox,
-              ticket state, status light, or one-off clear is neither. Trusted remains a standing
-              reliance decision. This essay separates a standing reliance decision from operating
-              practice. A trust note alone is not adoption. An adoption roll-out note alone is not
-              trust. Sync does not measure adoption or sustainment for the customer. Sync does not
-              measure sustainment. Sync does not measure sustainment for the customer. Sync must not
-              auto-adopt or auto-sustain. Sync refuses to pretend adoption or sustainment is a status
-              light.
-            </p>
-
             <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
@@ -5041,7 +5587,7 @@ export default function TrustedIsNotAdoptedPage() {
               </div>
             </div>
           </div>
-          <InsightNextSteps slug="trusted-is-not-adopted" />
+          <InsightNextSteps slug="adopted-is-not-sustained" />
         </motion.article>
       </div>
     </main>
