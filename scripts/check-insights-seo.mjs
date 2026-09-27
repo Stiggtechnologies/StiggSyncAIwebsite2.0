@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorCertifiedInsuredIndex = slugs.indexOf('successor-certified-is-not-insured');
 const successorAssuredCertifiedIndex = slugs.indexOf('successor-assured-is-not-certified');
 const successorRehearsedRecoverableIndex = slugs.indexOf('successor-rehearsed-is-not-recoverable');
 const successorTransferableRehearsedIndex = slugs.indexOf('successor-transferable-is-not-rehearsed');
@@ -137,7 +138,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorAssuredCertifiedIndex >= 0 &&
+    successorCertifiedInsuredIndex >= 0 &&
+    successorAssuredCertifiedIndex > successorCertifiedInsuredIndex &&
     successorRehearsedRecoverableIndex > successorAssuredCertifiedIndex &&
     successorTransferableRehearsedIndex > successorRehearsedRecoverableIndex &&
     successorGovernedTransferableIndex > successorTransferableRehearsedIndex &&
@@ -255,7 +257,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-assured-is-not-certified, then successor-rehearsed-is-not-recoverable, then successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-certified-is-not-insured, then successor-assured-is-not-certified, then successor-rehearsed-is-not-recoverable, then successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -19276,12 +19278,6 @@ if (successorAssuredCertifiedPage.includes('successor-recoverable-is-not-assured
 if (successorAssuredCertifiedPage.includes('successor-rehearsed-is-not-recoverable')) {
   fail('successor-assured-is-not-certified must not claim a successor route for Rehearsed Is Not Recoverable');
 }
-if (existsSync(join(root, 'app/insights/successor-certified-is-not-insured/page.tsx'))) {
-  fail('successor-certified-is-not-insured must stay prose only in this essay');
-}
-if (slugs.includes('successor-certified-is-not-insured')) {
-  fail('successor-certified-is-not-insured must not be registered in this essay');
-}
 if (slugs.includes('successor-recoverable-is-not-assured')) {
   fail('successor-recoverable-is-not-assured must stay closed');
 }
@@ -19321,6 +19317,152 @@ for (const untouched of [
   }
 }
 
+
+const successorCertifiedInsuredPageRequired = [
+  "Certified Is Not Insured",
+  "Certified is not insured",
+  "industrial assurance spine",
+  "an external or formal certification artifact that can be independently verified",
+  "a transferred risk position with a named carrier, coverage trigger, and claim path",
+  "certification package with named certifier / artifact / verifier roles",
+  "named certification criteria met (assurance package cited, the external or formal certification artifact named, the independent verification path stated)",
+  "unbroken trail from the assurance evidence to that certification evidence",
+  "insurance package with named carrier / insured / coverage-trigger / claim-path roles",
+  "named insurance criteria met (certification package cited, the named carrier stated, the coverage trigger stated, the claim path stated)",
+  "unbroken trail from the certification evidence to that insurance evidence",
+  "not the slide from &quot;it is certified&quot; to &quot;it is insured,&quot;",
+  "not a policy PDF with no named carrier",
+  "not a broker email that says insured",
+  "not a certificate of insurance with no claim path",
+  "A firm can be certified and still not insured",
+  "certification evidence exists while the transferred risk position is missing",
+  "A certification package alone is not insurance of that certified successor outcome",
+  "Certification evidence alone is not insurance of that certified successor outcome",
+  "An insurance claim alone is not proof the named certification evidence was on the file",
+  "A certification artifact is not a transferred risk position.",
+  "Refuse the slide from &quot;it is certified&quot; to &quot;it is insured.&quot;",
+  "The certified practice is not the insured practice",
+  "What an insurance record is allowed to be",
+  "Named certified is not insured",
+  "This split is certified versus insured",
+  "Sync does not measure certification",
+  "Sync does not measure insurance",
+  "Sync does not measure certification or insurance for the customer",
+  "Sync may surface a certification record or an insurance record",
+  "does not collapse certified into insured",
+  "does not collapse insured into certified",
+  "does not collapse into Assured Is Not Certified",
+  "does not rewrite Assured Is Not Certified",
+  "does not collapse into Recoverable Is Not Assured",
+  "does not rewrite Recoverable Is Not Assured",
+  "does not open a successor route for Recoverable Is Not Assured",
+  "does not collapse into Certified Is Not Insured",
+  "does not rewrite Certified Is Not Insured",
+  "does not collapse into Insured Is Not Covered",
+  "does not rewrite Insured Is Not Covered",
+  "does not collapse into Assured Is Not Guaranteed",
+  "does not rewrite Assured Is Not Guaranteed",
+  "does not recreate the guaranteed-to-collectible-to-sustained successor loop",
+  "does not recreate the binding-to-transferable successor loop",
+  "does not recreate the sustained-to-scaled-to-rehearsed successor loop",
+  "does not claim a successor route for Rehearsed Is Not Recoverable",
+  "Keep this certified distinct from the successor-spine Assured Is Not Certified",
+  "Keep this certified distinct from the filing-spine Assured Is Not Certified",
+  "Keep this insured distinct from the filing-spine Certified Is Not Insured",
+  "This essay does not give that certified a new meaning",
+  "/insights/successor-assured-is-not-certified",
+  "/insights/assured-is-not-certified",
+  "/insights/recoverable-is-not-assured",
+  "/insights/certified-is-not-insured",
+  "/insights/insured-is-not-covered",
+  "/insights/successor-insured-is-not-covered",
+  "/insights/successor-assured-is-not-guaranteed",
+  "/insights/successor-sustained-is-not-assured",
+  "/insights/successor-guaranteed-is-not-collectible",
+  "/insights/successor-accepted-is-not-sustained",
+  "/insights/successor-binding-is-not-enforced",
+  "/insights/successor-transferable-is-not-binding",
+  "/insights/successor-sustained-is-not-scaled",
+  "/insights/successor-transferable-is-not-rehearsed",
+  "/insights/rehearsed-is-not-recoverable",
+  "/insights/guaranteed-is-not-collectible",
+  "/insights/sustained-is-not-assured",
+  "/insights/transferable-is-not-binding",
+  "/insights/binding-is-not-enforced",
+  "Evidence from the plant beats the certification record when the record is being used as insured",
+  "Evidence from the plant beats the insurance claim when the claim is being used as proof the named certification artifact was on the file",
+  "Evidence from the plant beats the note",
+  "treat certified as insured as Learning credit",
+  "Sync refuses to pretend certified or insured is a status light",
+  "Sync does not deem insured for the customer",
+  "Sync must not auto-approve certification artifacts or auto-insure the certification",
+  "Recommend is not authorize",
+  "Surfacing is still a read",
+  "A verbal &quot;it is insured&quot; alone is neither",
+  "insurance theater",
+  "practice record that says certified is insured",
+  "This essay does not rewrite that thesis",
+  "This essay does not implement that page",
+  "The successor route for Recoverable Is Not Assured is closed",
+];
+
+const successorCertifiedInsuredPage = read('app/insights/successor-certified-is-not-insured/page.tsx');
+for (const required of successorCertifiedInsuredPageRequired) {
+  if (!successorCertifiedInsuredPage.includes(required)) {
+    fail(`successor-certified-is-not-insured page must include ${required}`);
+  }
+}
+if (successorCertifiedInsuredPage.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-certified-is-not-insured must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorCertifiedInsuredPage.includes('successor-rehearsed-is-not-recoverable')) {
+  fail('successor-certified-is-not-insured must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (existsSync(join(root, 'app/insights/successor-insured-is-not-covered/page.tsx'))) {
+  fail('successor-insured-is-not-covered must stay prose only in this essay');
+}
+if (slugs.includes('successor-insured-is-not-covered')) {
+  fail('successor-insured-is-not-covered must not be registered in this essay');
+}
+if (slugs.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-recoverable-is-not-assured must stay closed');
+}
+
+const successorCertifiedInsuredBlock = stepBlock('successor-certified-is-not-insured');
+for (const required of ["successor-assured-is-not-certified", "assured-is-not-certified", "recoverable-is-not-assured", "certified-is-not-insured", "insured-is-not-covered", "successor-assured-is-not-guaranteed", "successor-sustained-is-not-assured", "successor-guaranteed-is-not-collectible", "successor-accepted-is-not-sustained", "successor-binding-is-not-enforced", "successor-transferable-is-not-binding", "successor-sustained-is-not-scaled", "successor-transferable-is-not-rehearsed", "rehearsed-is-not-recoverable", "guaranteed-is-not-collectible", "sustained-is-not-assured", "transferable-is-not-binding", "binding-is-not-enforced"]) {
+  if (!successorCertifiedInsuredBlock.includes(`'${required}'`)) {
+    fail(`successor-certified-is-not-insured related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorCertifiedInsuredBlock)) {
+  fail('successor-certified-is-not-insured related reading must include the Strategic Pilot');
+}
+if (successorCertifiedInsuredBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-certified-is-not-insured next step is the Field Manual');
+}
+if (successorCertifiedInsuredBlock.includes('successor-insured-is-not-covered')) {
+  fail('successor-certified-is-not-insured must keep the Insured Is Not Covered successor route in prose only');
+}
+if (successorCertifiedInsuredBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-certified-is-not-insured must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of [
+  'app/insights/certified-is-not-insured/page.tsx',
+  'app/insights/assured-is-not-certified/page.tsx',
+  'app/insights/insured-is-not-covered/page.tsx',
+  'app/insights/recoverable-is-not-assured/page.tsx',
+  'app/insights/assured-is-not-guaranteed/page.tsx',
+  'app/insights/successor-assured-is-not-guaranteed/page.tsx',
+  'app/insights/successor-transferable-is-not-rehearsed/page.tsx',
+  'app/insights/successor-guaranteed-is-not-collectible/page.tsx',
+  'app/insights/successor-transferable-is-not-binding/page.tsx',
+  'app/insights/successor-binding-is-not-enforced/page.tsx',
+  'app/insights/successor-sustained-is-not-scaled/page.tsx',
+]) {
+  if (read(untouched).includes('successor-certified-is-not-insured')) {
+    fail(`${untouched} must stay off successor-certified-is-not-insured`);
+  }
+}
 
 const successorRehearsedRecoverablePageRequired = [
   "Rehearsed Is Not Recoverable",
