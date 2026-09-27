@@ -983,6 +983,18 @@ export default function SuccessorAcceptedIsNotSustainedPage() {
             measured result. The acceptance package does not sustain the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-sustained-is-not-transferable"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Sustained Is Not Transferable
+            </Link>{' '}
+            on why sustained is still not transferable. That next refusal is instrument-required sustainment that holds the accepted successor-obligation outcome in evidenced continuity under real operating load across the next named sustain / remaining-obligation / warranty / control window versus instrument-required transfer that hands that sustained successor-obligation outcome across named crews, shifts, sites, or systems with the same evidence bar intact across the next named transfer / handoff / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/sustained-is-not-transferable.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
