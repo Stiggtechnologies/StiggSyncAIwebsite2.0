@@ -11,9 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-retained-is-not-expanded',
+    title: 'Retained Is Not Expanded',
+    description: "Retained is not expanded. Retained means, on the commercial spine, that monetized commercial value is kept over a named renewal or retention horizon — renewed contracted ARR, retained paid seats/sites, or evidenced repeat paid orders for the named SyncAI offer — not merely that a first invoice cleared — the retained the successor-spine Monetized Is Not Retained already names — evidenced by retention package with named counterparty / renewal-instrument / offer / horizon / renewed-ARR / seats / repeat-order roles, named retention criteria met (monetization package cited, the named counterparty stated, the named renewal or retention horizon stated, the named SyncAI offer stated, the renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid order stated, the executed renewal instrument stated), dates, and an unbroken trail from the monetization evidence to that retention evidence — not a one-time paid pilot that does not renew, not a paid proof that churns at term, not a dashboard customer health green, not a verbal \"we'll renew\" without an executed renewal instrument, and not treating a first cleared invoice as automatic renewal. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard \"customer health green,\" or a verbal \"we'll renew\" without an executed renewal instrument is not retained. Expanded means that retained commercial relationship grows beyond the retained baseline for the named SyncAI offer — added contracted ARR, added paid seats/sites, an executed upsell/cross-sell order, or a named expansion instrument with evidenced incremental value — not merely that renewal happened. Expanded requires that expansion (named counterparty, retained baseline, named SyncAI offer, named expansion instrument, and added contracted ARR, added paid seats or sites, or an executed upsell or cross-sell order with evidenced incremental value) — evidenced by expansion package with named counterparty / expansion-instrument / offer / baseline / incremental-ARR / added-seats / upsell roles, named expansion criteria met (retention package cited, the named counterparty stated, the retained baseline stated, the named SyncAI offer stated, the added contracted ARR, added paid seats or sites, or executed upsell or cross-sell order stated, the named expansion instrument with evidenced incremental value stated), dates, and an unbroken trail from the retention evidence to that expansion evidence — not a renewal at the same seat count with no incremental ARR, not a verbal \"we'll add sites later,\" not a CRM expansion stage, not a dashboard \"growth green\" without an executed expansion instrument, and not treating renewal as automatic growth. Not the slide from \"it is retained/renewed\" to \"it is expanded/grown.\" Retained is not expanded. A firm can be retained and still not expanded (renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders over a named renewal or retention horizon exist while no added contracted ARR, added paid seats or sites, executed upsell or cross-sell order, or named expansion instrument with evidenced incremental value is on the file). A firm can chase expansion theater and still not be retained (a claim that \"it is expanded/grown\" exists while no renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders over a named renewal or retention horizon for the named SyncAI offer are on the file). A retention package alone is not expanded of that retained successor outcome. Retention evidence alone is not expanded of that retained successor outcome. An expansion claim alone is not proof the named retention evidence was on the file. A renewal is not an expansion. A renewal at the same seat count with no incremental ARR, a verbal \"we'll add sites later,\" a CRM expansion stage, or a dashboard \"growth green\" without an executed expansion instrument is not expanded. Refuse the slide from \"it is retained/renewed\" to \"it is expanded/grown.\" This split is retained versus expanded. Keep monetized from Monetized Is Not Retained distinct from retained and from expanded. This retained is named commercial value kept over a named renewal or retention horizon for the named SyncAI offer. This expanded is that retained commercial relationship grown beyond the retained baseline for the named SyncAI offer. Added paid seats on this commercial spine are not the scale Sustained Is Not Scaled, Scaled Is Not Compounded, or Compounded Is Not Owned already name. This retained is the retention step after Monetized Is Not Retained. The prior essay is the retention spine. This refusal sits on the commercial spine. This is the expansion spine after that retention. Expanded Is Not Defended may be named in prose only at /insights/successor-expanded-is-not-defended. This essay does not implement that page.",
+    excerpt: "Retained is not expanded. Retained means that monetized commercial value is kept over a named renewal or retention horizon: renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders for the named SyncAI offer. Expanded means that retained commercial relationship grows beyond the retained baseline: added contracted ARR, added paid seats or sites, an executed upsell or cross-sell order, or a named expansion instrument with evidenced incremental value. A renewal at the same seat count with no incremental ARR, a verbal \"we'll add sites later,\" a CRM expansion stage, or a dashboard \"growth green\" without an executed expansion instrument is not expanded.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-monetized-is-not-retained',
     title: 'Monetized Is Not Retained',
-    description: "Monetized is not retained. Monetized means, on the commercial spine, those binding obligations convert into named, evidenced commercial value for the named SyncAI offer — contracted recurring revenue, a paid invoice, or an executed paid order — with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR — the monetized the successor-spine Binding Is Not Monetized already names — evidenced by monetization package with named counterparty / commercial instrument / offer / cash / contracted-ARR roles, named monetization criteria met (binding package cited, the named counterparty stated, the named commercial instrument stated, the named SyncAI offer stated, the contracted recurring revenue, paid invoice, or executed paid order stated, evidence of cash or contracted ARR stated), dates, and an unbroken trail from the binding evidence to that monetization evidence — not a signed NDA, not a free pilot, not a verbal yes, not a CRM opportunity stage, not a dashboard pipeline green, and not treating enforceable obligations as automatic payment. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized. Retained means that monetized commercial value is kept over a named renewal or retention horizon — renewed contracted ARR, retained paid seats/sites, or evidenced repeat paid orders for the named SyncAI offer — not merely that a first invoice cleared. Retained requires that retention (named counterparty, named renewal or retention horizon, named SyncAI offer, executed renewal instrument, and renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders) — evidenced by retention package with named counterparty / renewal-instrument / offer / horizon / renewed-ARR / seats / repeat-order roles, named retention criteria met (monetization package cited, the named counterparty stated, the named renewal or retention horizon stated, the named SyncAI offer stated, the renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid order stated, the executed renewal instrument stated), dates, and an unbroken trail from the monetization evidence to that retention evidence — not a one-time paid pilot that does not renew, not a paid proof that churns at term, not a dashboard customer health green, not a verbal \"we'll renew\" without an executed renewal instrument, and not treating a first cleared invoice as automatic renewal. Not the slide from \"it is paid/monetized\" to \"it is retained/renewed.\" Monetized is not retained. A firm can be monetized and still not retained (a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR for the named SyncAI offer exist while no renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders over a named renewal or retention horizon are on the file). A firm can chase retention theater and still not be monetized (a claim that \"it is retained/renewed\" exists while no named counterparty, named commercial instrument, and evidence of cash or contracted ARR for the named SyncAI offer are on the file). A monetization package alone is not retained of that monetized successor outcome. Monetization evidence alone is not retained of that monetized successor outcome. A retention claim alone is not proof the named monetization evidence was on the file. A first invoice is not a renewal. A one-time paid pilot that does not renew is not this retained. A paid proof that churns at term is not this retained. A dashboard customer health green is not this retained. A verbal \"we'll renew\" without an executed renewal instrument is not this retained. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard \"customer health green,\" or a verbal \"we'll renew\" without an executed renewal instrument is not retained. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized. A verbal \"it is retained/renewed\" alone is neither. Refuse the slide from \"it is paid/monetized\" to \"it is retained/renewed.\" This split is monetized versus retained. Keep binding from Binding Is Not Monetized distinct from monetized and from retained. Keep effective from Effective Is Not Binding distinct from binding and from monetized. Binding, on the industrial assurance spine and on this commercial spine, remains the effective instrument creating enforceable obligations or rights for the named parties under the named regime — not merely that an effective date passed. This binding is enforceable obligations or rights for the named parties under the named regime. This monetized is named, evidenced commercial value for the named SyncAI offer. This retained is named commercial value kept over a named renewal or retention horizon for the named SyncAI offer. This operative force is not the successor-obligation bind Binding Is Not Enforced already names. Binding Is Not Enforced is already covered as a successor. This essay does not implement a new successor route for Binding Is Not Enforced. This essay does not implement that page. This essay does not give that monetized a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse monetized into retained. This essay does not collapse retained into monetized. This essay does not collapse into Binding Is Not Monetized. This essay does not rewrite Binding Is Not Monetized. This essay does not collapse into Effective Is Not Binding. This essay does not rewrite Effective Is Not Binding. This essay does not collapse into Posted Is Not Effective. This essay does not rewrite Posted Is Not Effective. This essay does not collapse into Binding Is Not Enforced. This essay does not rewrite Binding Is Not Enforced. This essay does not collapse into Accepted Is Not Posted. This essay does not rewrite Accepted Is Not Posted. This essay does not collapse into Accepted Is Not Sustained. This essay does not rewrite Accepted Is Not Sustained. A retained paid seat is not the sustainment Accepted Is Not Sustained already names. This monetized is the monetization step after Binding Is Not Monetized. The prior essay is the monetization spine. This refusal sits on the commercial spine. This is the retention spine after that monetization. Retained Is Not Expanded may be named in prose only at /insights/successor-retained-is-not-expanded. This essay does not implement that page.",
+    description: "Monetized is not retained. Monetized means, on the commercial spine, those binding obligations convert into named, evidenced commercial value for the named SyncAI offer — contracted recurring revenue, a paid invoice, or an executed paid order — with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR — the monetized the successor-spine Binding Is Not Monetized already names — evidenced by monetization package with named counterparty / commercial instrument / offer / cash / contracted-ARR roles, named monetization criteria met (binding package cited, the named counterparty stated, the named commercial instrument stated, the named SyncAI offer stated, the contracted recurring revenue, paid invoice, or executed paid order stated, evidence of cash or contracted ARR stated), dates, and an unbroken trail from the binding evidence to that monetization evidence — not a signed NDA, not a free pilot, not a verbal yes, not a CRM opportunity stage, not a dashboard pipeline green, and not treating enforceable obligations as automatic payment. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized. Retained means that monetized commercial value is kept over a named renewal or retention horizon — renewed contracted ARR, retained paid seats/sites, or evidenced repeat paid orders for the named SyncAI offer — not merely that a first invoice cleared. Retained requires that retention (named counterparty, named renewal or retention horizon, named SyncAI offer, executed renewal instrument, and renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders) — evidenced by retention package with named counterparty / renewal-instrument / offer / horizon / renewed-ARR / seats / repeat-order roles, named retention criteria met (monetization package cited, the named counterparty stated, the named renewal or retention horizon stated, the named SyncAI offer stated, the renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid order stated, the executed renewal instrument stated), dates, and an unbroken trail from the monetization evidence to that retention evidence — not a one-time paid pilot that does not renew, not a paid proof that churns at term, not a dashboard customer health green, not a verbal \"we'll renew\" without an executed renewal instrument, and not treating a first cleared invoice as automatic renewal. Not the slide from \"it is paid/monetized\" to \"it is retained/renewed.\" Monetized is not retained. A firm can be monetized and still not retained (a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR for the named SyncAI offer exist while no renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders over a named renewal or retention horizon are on the file). A firm can chase retention theater and still not be monetized (a claim that \"it is retained/renewed\" exists while no named counterparty, named commercial instrument, and evidence of cash or contracted ARR for the named SyncAI offer are on the file). A monetization package alone is not retained of that monetized successor outcome. Monetization evidence alone is not retained of that monetized successor outcome. A retention claim alone is not proof the named monetization evidence was on the file. A first invoice is not a renewal. A one-time paid pilot that does not renew is not this retained. A paid proof that churns at term is not this retained. A dashboard customer health green is not this retained. A verbal \"we'll renew\" without an executed renewal instrument is not this retained. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard \"customer health green,\" or a verbal \"we'll renew\" without an executed renewal instrument is not retained. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized. A verbal \"it is retained/renewed\" alone is neither. Refuse the slide from \"it is paid/monetized\" to \"it is retained/renewed.\" This split is monetized versus retained. Keep binding from Binding Is Not Monetized distinct from monetized and from retained. Keep effective from Effective Is Not Binding distinct from binding and from monetized. Binding, on the industrial assurance spine and on this commercial spine, remains the effective instrument creating enforceable obligations or rights for the named parties under the named regime — not merely that an effective date passed. This binding is enforceable obligations or rights for the named parties under the named regime. This monetized is named, evidenced commercial value for the named SyncAI offer. This retained is named commercial value kept over a named renewal or retention horizon for the named SyncAI offer. This operative force is not the successor-obligation bind Binding Is Not Enforced already names. Binding Is Not Enforced is already covered as a successor. This essay does not implement a new successor route for Binding Is Not Enforced. This essay does not implement that page. This essay does not give that monetized a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse monetized into retained. This essay does not collapse retained into monetized. This essay does not collapse into Binding Is Not Monetized. This essay does not rewrite Binding Is Not Monetized. This essay does not collapse into Effective Is Not Binding. This essay does not rewrite Effective Is Not Binding. This essay does not collapse into Posted Is Not Effective. This essay does not rewrite Posted Is Not Effective. This essay does not collapse into Binding Is Not Enforced. This essay does not rewrite Binding Is Not Enforced. This essay does not collapse into Accepted Is Not Posted. This essay does not rewrite Accepted Is Not Posted. This essay does not collapse into Accepted Is Not Sustained. This essay does not rewrite Accepted Is Not Sustained. A retained paid seat is not the sustainment Accepted Is Not Sustained already names. This monetized is the monetization step after Binding Is Not Monetized. The prior essay is the monetization spine. This refusal sits on the commercial spine. This is the retention spine after that monetization. The next refusal on this commercial spine is Retained Is Not Expanded at /insights/successor-retained-is-not-expanded.",
     excerpt: "Monetized is not retained. Monetized means those binding obligations convert into named, evidenced commercial value for the named SyncAI offer: contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR. Retained means that monetized commercial value is kept over a named renewal or retention horizon: renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal \"we'll renew\" without an executed renewal instrument is not retained.",
     category: 'Decision Case',
     readTime: '8 min read',
@@ -1958,12 +1967,249 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-retained-is-not-expanded': {
+    relatedSlug: 'successor-monetized-is-not-retained',
+    relatedNote: 'Monetized is not retained. The successor-spine prior essay separates named, evidenced commercial value for the named SyncAI offer — contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR — from that value kept over a named renewal or retention horizon: renewed contracted ARR, retained paid seats or sites, or evidenced repeat paid orders, with an executed renewal instrument. This essay does not rewrite that thesis. This essay does not give that retained a new meaning. Expanded is the next refusal on this commercial spine. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal we will renew without an executed renewal instrument is not retained. A renewal at the same seat count with no incremental ARR, a verbal we will add sites later, a CRM expansion stage, or a dashboard growth green without an executed expansion instrument is not expanded.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-binding-is-not-monetized',
+        note: 'Binding is not monetized. The successor-spine prior essay separates enforceable obligations or rights for the named parties under the named regime from named, evidenced commercial value for the named SyncAI offer: contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR. This essay does not rewrite that thesis. This essay does not give that monetized a new meaning. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized.',
+      },
+      {
+        slug: 'successor-effective-is-not-binding',
+        note: 'Effective is not binding. The successor-spine prior essay separates named legal or operational effectiveness under the named instrument for that posted filing from enforceable obligations or rights for the named parties under the named regime. This essay does not rewrite that thesis. This essay does not give that binding a new meaning. Monetized is the commercial conversion that Binding Is Not Monetized already names. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'successor-posted-is-not-effective',
+        note: 'Posted is not effective. The successor-spine prior essay separates publication of an accepted filing on the named public disclosure system or registry of record, with a named posting identifier, URL, or accession and a posting timestamp, from that posted filing taking legal or operational effect for the named entity and period under the named instrument, including a named effective date, named scope, or system-of-record cutover. This essay does not rewrite that thesis. This essay does not give that effective a new meaning. Keep effective distinct from posted and from binding. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is not cash. Different spine: contracted ARR on this commercial spine is evidence the binding obligations converted into named commercial value for the named SyncAI offer. It is not a rewrite of that cash distinction. This essay does not collapse into ARR Is Not Cash. This essay does not rewrite ARR Is Not Cash.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Revenue is not ARR. Different spine. This monetized record may cite contracted ARR or cash. It does not give that revenue a new meaning. This essay does not collapse into Revenue Is Not ARR. This essay does not rewrite Revenue Is Not ARR.',
+      },
+      {
+        slug: 'successor-accepted-is-not-posted',
+        note: 'Accepted is not posted. The successor-spine prior essay separates a named acceptance or completeness acknowledgement for that specific lodged filing from publication of that accepted filing on the named public disclosure system or registry of record. This essay does not rewrite that thesis. This essay does not give that posted a new meaning. Keep posted distinct from accepted and from effective.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Forward reading on the filing spine separates named legal or operational effectiveness under the instrument for that posted filing from instrument-required bind mechanics for that effective filing. This essay does not rewrite that thesis. The filing essay stays on its own URL. The successor essay is the next refusal on this industrial assurance spine.',
+      },
+      {
+        slug: 'successor-filed-is-not-accepted',
+        note: 'Filed is not accepted. The successor-spine prior essay separates a lodging receipt for the named channel from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. Keep filed distinct from posted and from effective.',
+      },
+      {
+        slug: 'posted-is-not-effective',
+        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. That filing essay separates instrument-required restoration of the named asset, unit, or plant operating condition from instrument-required acceptance of that restored condition by the named accountable owner, operator, or beneficiary. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-restored-is-not-accepted',
+        note: 'Restored is not accepted. That successor essay separates instrument-required restoration of an applied successor-obligation outcome from instrument-required acceptance of that restored outcome for the named return-to-service bar. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-audited-is-not-filed',
+        note: 'Audited is not filed. The successor-spine prior essay separates an independent named opinion or assurance conclusion from that named audited period pack lodged with the named channel. This essay does not rewrite that thesis. This essay does not give that filed a new meaning. Keep filed from Filed Is Not Accepted distinct from accepted and from posted.',
+      },
+      {
+        slug: 'accepted-is-not-posted',
+        note: 'Accepted is not posted. Forward reading on the filing spine separates a named acceptance or completeness acknowledgement from a named public posting on the disclosure system or registry of record. This essay does not rewrite that thesis. Posted is the next refusal on the industrial assurance spine.',
+      },
+      {
+        slug: 'complete-is-not-accepted',
+        note: 'Complete is not accepted. That essay separates measured completeness of an acceptance pack from named human sign-off of that pack. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that human sign-off.',
+      },
+      {
+        slug: 'accepted-is-not-verified',
+        note: 'Accepted is not verified. That essay separates named human sign-off of an acceptance pack from an independent evidence check. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that sign-off.',
+      },
+      {
+        slug: 'successor-reported-is-not-audited',
+        note: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward from an independent or internal audit trail for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
+      {
+        slug: 'successor-recognized-is-not-reported',
+        note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recognized-is-not-reported',
+        note: 'Recognized is not reported. The filing-spine prior essay separates earned revenue recognized under the named acceptance rule from that named recognized amount appearing in the named period report pack. This essay does not rewrite that thesis. This reported is the outward report a controller can re-perform, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'successor-collected-is-not-recognized',
+        note: 'Collected is not recognized. The successor-spine prior essay separates that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove from that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy. This essay does not rewrite that thesis. This essay does not give that recognized a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. The filing-spine prior essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This recognized is formal recognition of that named cash or collection event in the books under the named recognition policy, not a rewrite of that filing earned-revenue attestation.',
+      },
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The successor-spine prior essay separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that collected a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine prior essay separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'successor-reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched and cleared against the external or control source from the named period formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This audited is an independent or internal audit trail for that same entity and period, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record from those booked facts independently matched against the external or control source. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'reported-is-not-audited',
+        note: 'Reported is not audited. The filing-spine counterpart separates a named recognized amount in the period report pack from an independent auditor opinion on that period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from audited and from filed. This audited is the named opinion on the industrial assurance spine, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'audited-is-not-filed',
+        note: 'Audited is not filed. The filing-spine counterpart keeps the same distinction: a named opinion or assurance conclusion versus a lodged filing with a named receipt. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'filed-is-not-accepted',
+        note: 'Filed is not accepted. The filing-spine counterpart keeps the same distinction: a named filing receipt versus a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance for the next named assurance window from instrument-required guarantee of that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this accepted into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this accepted into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this accepted into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this accepted into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-monetized-is-not-retained': {
     relatedSlug: 'successor-binding-is-not-monetized',
     relatedNote: 'Binding is not monetized. The successor-spine prior essay separates enforceable obligations or rights for the named parties under the named regime from named, evidenced commercial value for the named SyncAI offer: contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR. This essay does not rewrite that thesis. This essay does not give that monetized a new meaning. Retained is the next refusal on this commercial spine. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal we will renew without an executed renewal instrument is not retained.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-retained-is-not-expanded',
+        note: 'Retained is not expanded. The next refusal on this commercial spine separates named commercial value kept over a named renewal or retention horizon from that retained relationship grown beyond the retained baseline: added contracted ARR, added paid seats or sites, an executed upsell or cross-sell order, or a named expansion instrument with evidenced incremental value. This essay does not rewrite that thesis. This essay does not give that expanded a new meaning. A renewal at the same seat count with no incremental ARR, a verbal we will add sites later, a CRM expansion stage, or a dashboard growth green without an executed expansion instrument is not expanded. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal we will renew without an executed renewal instrument is not retained.',
+      },
       {
         slug: 'successor-effective-is-not-binding',
         note: 'Effective is not binding. The successor-spine prior essay separates named legal or operational effectiveness under the named instrument for that posted filing from enforceable obligations or rights for the named parties under the named regime. This essay does not rewrite that thesis. This essay does not give that binding a new meaning. Monetized is the commercial conversion that Binding Is Not Monetized already names. A calendar cutover, a posted notice, or a dashboard green is not binding.',
