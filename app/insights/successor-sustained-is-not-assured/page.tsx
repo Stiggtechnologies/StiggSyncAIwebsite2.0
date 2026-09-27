@@ -795,6 +795,23 @@ export default function SuccessorSustainedIsNotAssuredPage() {
             measured result. The sustain package does not assure the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-assured-is-not-guaranteed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Assured Is Not Guaranteed
+            </Link>{' '}
+            on why assured is still not guaranteed. That next refusal is instrument-required
+            assurance that the sustained successor-obligation outcome will continue to meet the named
+            successor conditions for the next named assurance / remaining-obligation / warranty /
+            control window versus instrument-required guarantee that undertakes the assured
+            successor-obligation outcome for the named successor conditions across the next named
+            guarantee / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/assured-is-not-guaranteed.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
