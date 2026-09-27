@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorAcceptedSustainedIndex = slugs.indexOf('successor-accepted-is-not-sustained');
 const successorRestoredAcceptedIndex = slugs.indexOf('successor-restored-is-not-accepted');
 const successorAppliedRestoredIndex = slugs.indexOf('successor-applied-is-not-restored');
 const successorCollectibleAppliedIndex = slugs.indexOf('successor-collectible-is-not-applied');
@@ -126,7 +127,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorRestoredAcceptedIndex >= 0 &&
+    successorAcceptedSustainedIndex >= 0 &&
+    successorRestoredAcceptedIndex > successorAcceptedSustainedIndex &&
     successorAppliedRestoredIndex > successorRestoredAcceptedIndex &&
     successorCollectibleAppliedIndex > successorAppliedRestoredIndex &&
     successorGuaranteedCollectibleIndex > successorCollectibleAppliedIndex &&
@@ -233,7 +235,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -17636,7 +17638,7 @@ for (const required of successorRestoredAcceptedPageRequired) {
 }
 
 const successorRestoredAcceptedBlock = stepBlock('successor-restored-is-not-accepted');
-for (const required of ['successor-applied-is-not-restored', 'successor-collectible-is-not-applied', 'successor-guaranteed-is-not-collectible', 'successor-assured-is-not-guaranteed', 'successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'collectible-is-not-applied', 'applied-is-not-restored', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+for (const required of ['successor-accepted-is-not-sustained', 'successor-applied-is-not-restored', 'successor-collectible-is-not-applied', 'successor-guaranteed-is-not-collectible', 'successor-assured-is-not-guaranteed', 'successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'collectible-is-not-applied', 'applied-is-not-restored', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
   if (!successorRestoredAcceptedBlock.includes(`'${required}'`)) {
     fail(`successor-restored-is-not-accepted related reading must cite ${required}`);
   }
@@ -17688,6 +17690,206 @@ if (!successorAppliedRestoredPage.includes('/insights/successor-restored-is-not-
   fail('successor-applied-is-not-restored must point the series forward to successor-restored-is-not-accepted');
 }
 
+
+const successorAcceptedSustainedPageRequired = [
+  "Accepted Is Not Sustained",
+  "Accepted is not sustained",
+  "instrument-required acceptance that accepts the restored successor-obligation outcome for the named successor return-to-service bar across the next named acceptance / remaining-obligation / warranty / control window",
+  "acceptance package with named stakeholder / owner / ops acceptor roles",
+  "named acceptance criteria met (restoration package cited, next acceptance window named, return-to-service bar the restoration must meet stated, residual ownership still named)",
+  "unbroken trail from the restoration evidence to that acceptance evidence",
+  "not a dashboard green tile with no acceptance authority",
+  "not a verbal \"we accepted it,\"",
+  "not extending an acceptance memo with no instrument path",
+  "not a chat note that says accepted",
+  "not \"ops will sign the release\" without instrument-required acceptance evidence",
+  "not treating restoration theater as automatic acceptance of that restored successor-obligation outcome",
+  "instrument-required sustainment that holds the accepted successor-obligation outcome in evidenced continuity under real operating load across the next named sustain / remaining-obligation / warranty / control window",
+  "sustainment package with named sustainer / owner roles",
+  "named sustainment criteria met (acceptance package cited, next sustain window named, operating-load continuity the acceptance must hold stated, residual ownership still named)",
+  "unbroken trail from the acceptance evidence to that sustainment evidence",
+  "not a dashboard green tile with no sustainment authority",
+  "not a verbal \"we sustained it,\"",
+  "not extending a sustain memo with no instrument path",
+  "not a chat note that says sustained",
+  "not \"ops will keep it running\" without instrument-required sustainment evidence",
+  "not treating acceptance theater as automatic sustainment of that accepted successor-obligation outcome",
+  "A firm can be accepted and still not sustained",
+  "acceptance evidence exists while required sustainment evidence for the next sustain window is missing",
+  "A firm can claim sustainment theater and still not be accepted",
+  "Acceptance evidence alone is not sustainment of that accepted successor-obligation outcome",
+  "A sustainment claim alone is not proof the named acceptance evidence was on the file",
+  "The accepted practice is not the sustained practice",
+  "What a sustainment record is allowed to be",
+  "Named accepted is not sustained",
+  "Sync does not measure sustained",
+  "Sync does not measure sustained for the customer",
+  "Sync does not measure accepted or sustained for the customer",
+  "Sync may surface an acceptance record or a sustainment record",
+  "does not collapse sustained into accepted",
+  "does not collapse accepted into sustained",
+  "does not collapse this sustained into that filing-spine sustainment",
+  "does not collapse this sustained into that operated-outcome sustainment",
+  "does not collapse this accepted into owner acceptance",
+  "does not collapse this accepted into the sustainment Accepted Is Not Sustained names",
+  "does not collapse into Applied Is Not Restored",
+  "does not rewrite Applied Is Not Restored",
+  "does not collapse into Restored Is Not Accepted",
+  "does not rewrite Restored Is Not Accepted",
+  "does not collapse into Accepted Is Not Sustained",
+  "does not rewrite Accepted Is Not Sustained",
+  "does not collapse into Sustained Is Not Transferable",
+  "does not rewrite Sustained Is Not Transferable",
+  "does not collapse into Collectible Is Not Applied",
+  "does not rewrite Collectible Is Not Applied",
+  "does not collapse into Guaranteed Is Not Collectible",
+  "does not rewrite Guaranteed Is Not Collectible",
+  "does not collapse into Assured Is Not Guaranteed",
+  "does not rewrite Assured Is Not Guaranteed",
+  "does not collapse into Sustained Is Not Assured",
+  "does not rewrite Sustained Is Not Assured",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Delivered Is Not Operated",
+  "does not rewrite Delivered Is Not Operated",
+  "does not collapse into Closed Is Not Delivered",
+  "does not rewrite Closed Is Not Delivered",
+  "does not collapse into Cleared Is Not Closed",
+  "does not rewrite Cleared Is Not Closed",
+  "does not collapse into Recorded Is Not Cleared",
+  "does not rewrite Recorded Is Not Cleared",
+  "does not collapse into Released Is Not Recorded",
+  "does not rewrite Released Is Not Recorded",
+  "does not collapse into Remediated Is Not Released",
+  "does not rewrite Remediated Is Not Released",
+  "does not collapse into Enforced Is Not Remediated",
+  "does not rewrite Enforced Is Not Remediated",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not collapse into Effective Is Not Binding",
+  "does not rewrite Effective Is Not Binding",
+  "does not collapse into Governed Is Not Transferable",
+  "does not rewrite Governed Is Not Transferable",
+  "does not collapse into Transferable Is Not Rehearsed",
+  "does not rewrite Transferable Is Not Rehearsed",
+  "does not collapse into Transferable Is Not Binding",
+  "does not rewrite Transferable Is Not Binding",
+  "separates instrument-required acceptance that accepts the restored successor-obligation outcome for the named successor return-to-service bar across the next named acceptance / remaining-obligation / warranty / control window from",
+  "/insights/successor-restored-is-not-accepted",
+  "/insights/successor-applied-is-not-restored",
+  "/insights/successor-collectible-is-not-applied",
+  "/insights/successor-guaranteed-is-not-collectible",
+  "/insights/successor-assured-is-not-guaranteed",
+  "/insights/successor-sustained-is-not-assured",
+  "/insights/successor-operated-is-not-sustained",
+  "/insights/successor-delivered-is-not-operated",
+  "/insights/successor-closed-is-not-delivered",
+  "/insights/successor-cleared-is-not-closed",
+  "/insights/successor-recorded-is-not-cleared",
+  "/insights/successor-released-is-not-recorded",
+  "/insights/successor-remediated-is-not-released",
+  "/insights/successor-enforced-is-not-remediated",
+  "/insights/successor-binding-is-not-enforced",
+  "/insights/transferable-is-not-binding",
+  "/insights/remediated-is-not-released",
+  "/insights/released-is-not-recorded",
+  "/insights/recorded-is-not-cleared",
+  "/insights/cleared-is-not-closed",
+  "/insights/closed-is-not-delivered",
+  "/insights/delivered-is-not-operated",
+  "/insights/operated-is-not-sustained",
+  "/insights/sustained-is-not-assured",
+  "/insights/assured-is-not-guaranteed",
+  "/insights/guaranteed-is-not-collectible",
+  "/insights/collectible-is-not-applied",
+  "/insights/applied-is-not-restored",
+  "/insights/restored-is-not-accepted",
+  "/insights/accepted-is-not-sustained",
+  "/insights/sustained-is-not-transferable",
+  "/insights/enforced-is-not-remediated",
+  "/insights/binding-is-not-enforced",
+  "/insights/effective-is-not-binding",
+  "Evidence from the plant beats the acceptance record when the record is being used as sustained",
+  "Evidence from the plant beats the sustainment claim when the claim is being used as proof the named acceptance of that successor-obligation outcome was on the file",
+  "treat accepted as sustained as Learning credit",
+  "Sync refuses to pretend accepted or sustained is a status light",
+  "Sync does not deem sustained for the customer",
+  "Sync must not auto-deem-sustained",
+  "A verbal \"we sustained it\" alone is neither",
+  "sustainment theater",
+  "next sustain window named",
+  "This split is accepted versus sustained",
+  "practice record that says accepted is sustained",
+  "Restored Is Not Accepted",
+  "Restored is not accepted",
+  "This essay does not rewrite that thesis",
+  "Operated Is Not Sustained",
+  "industrial control and transfer spine",
+  "A one-time acceptance gate is not sustained performance in service",
+];
+
+const successorAcceptedSustainedPage = read('app/insights/successor-accepted-is-not-sustained/page.tsx');
+for (const required of successorAcceptedSustainedPageRequired) {
+  if (!successorAcceptedSustainedPage.includes(required)) {
+    fail(`successor-accepted-is-not-sustained page must include ${required}`);
+  }
+}
+
+const successorAcceptedSustainedBlock = stepBlock('successor-accepted-is-not-sustained');
+for (const required of ['successor-restored-is-not-accepted', 'successor-applied-is-not-restored', 'successor-collectible-is-not-applied', 'successor-guaranteed-is-not-collectible', 'successor-assured-is-not-guaranteed', 'successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'collectible-is-not-applied', 'applied-is-not-restored', 'restored-is-not-accepted', 'accepted-is-not-sustained', 'sustained-is-not-transferable', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+  if (!successorAcceptedSustainedBlock.includes(`'${required}'`)) {
+    fail(`successor-accepted-is-not-sustained related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorAcceptedSustainedBlock)) {
+  fail('successor-accepted-is-not-sustained related reading must include the Strategic Pilot');
+}
+if (successorAcceptedSustainedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-accepted-is-not-sustained next step is the Field Manual');
+}
+
+if (read('app/insights/accepted-is-not-sustained/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine accepted-is-not-sustained must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/restored-is-not-accepted/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine restored-is-not-accepted must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/applied-is-not-restored/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine applied-is-not-restored must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/sustained-is-not-transferable/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine sustained-is-not-transferable must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/collectible-is-not-applied/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine collectible-is-not-applied must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/guaranteed-is-not-collectible/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine guaranteed-is-not-collectible must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/assured-is-not-guaranteed/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine assured-is-not-guaranteed must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/sustained-is-not-assured/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine sustained-is-not-assured must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/operated-is-not-sustained/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine operated-is-not-sustained must stay off successor-accepted-is-not-sustained');
+}
+if (read('app/insights/delivered-is-not-operated/page.tsx').includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine delivered-is-not-operated must stay off successor-accepted-is-not-sustained');
+}
+if (filingClosedDeliveredPage.includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine closed-is-not-delivered must stay off successor-accepted-is-not-sustained');
+}
+if (filingClearedClosedPage.includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine cleared-is-not-closed must stay off successor-accepted-is-not-sustained');
+}
+if (filingRecordedClearedPage.includes('successor-accepted-is-not-sustained')) {
+  fail('filing-spine recorded-is-not-cleared must stay off successor-accepted-is-not-sustained');
+}
+if (!successorRestoredAcceptedPage.includes('/insights/successor-accepted-is-not-sustained')) {
+  fail('successor-restored-is-not-accepted must point the series forward to successor-accepted-is-not-sustained');
+}
 
 function readingSlugs(name) {
   const block = section(name);
