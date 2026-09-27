@@ -1002,6 +1002,18 @@ export default function SuccessorSustainedIsNotTransferablePage() {
             measured result. The sustainment package does not transfer the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-transferable-is-not-binding"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Transferable Is Not Binding
+            </Link>{' '}
+            on why transferable is still not binding. That next refusal is instrument-required transfer that hands that sustained successor-obligation outcome across named crews, shifts, sites, or systems with the same evidence bar intact across the next named transfer / handoff / remaining-obligation / warranty / control window versus instrument-required binding that makes that transferable successor-obligation outcome an enforceable operational commitment — ownership, escalation, and consequence that survive the handoff — across the next named binding / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/transferable-is-not-binding.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
