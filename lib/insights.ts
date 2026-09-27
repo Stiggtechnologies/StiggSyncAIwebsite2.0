@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-closed-is-not-collected',
+    title: 'Closed Is Not Collected',
+    description: "Closed is not collected. Closed means, on the industrial assurance spine, the named period for that named entity and system of record is formally closed as a books close: cut-off locked, residual mismatches from that reconciliation cleared or carried with a signed exception, and a named controller or CFO close attestation exists for that period — the closed the successor-spine Reconciled Is Not Closed already names — evidenced by close package with named entity / period / cutoff / exception / attestor roles, named close criteria met (reconciliation package cited, the cut-off locked stated, residual mismatches cleared or carried with a signed exception stated, the named controller or CFO close attestation stated), dates, and an unbroken trail from the reconciliation evidence to that close evidence — not the slide from \"it is reconciled / the bank rec signed\" to \"the period is closed,\" not a reconciliation worksheet alone, not a sentence that the books will close after the bank rec, not a dashboard period-end tile, not an email saying books are closed, not a work-order or incident closed, and not treating the reconciliation as automatic close. Collected means that named receivable / billed amount for that named counterparty and period has actually converted to cash in the named bank account with an unbroken collection trail (payment received, applied, and banked) a controller can prove — evidenced by collection package with named entity / counterparty / period / receivable / bank / applicator / controller roles, named collection criteria met (close package cited, the named receivable or billed amount stated, the named counterparty stated, the named period stated, payment received stated, payment applied stated, payment banked in the named bank account stated), dates, and an unbroken trail from the close evidence to that collection evidence — not the slide from \"the period is closed / books closed\" to \"cash is collected,\" not an AR aging line, not a close attestation, not \"we expect to collect,\" not a dashboard tile that says collected, and not treating the period close as automatic collection. Closed is not collected. A firm can be closed and still not collected (the named period for that named entity and system of record is formally closed as a books close while that named receivable / billed amount for that named counterparty and period has not actually converted to cash in the named bank account with an unbroken collection trail a controller can prove). A firm can claim collection theater and still not be closed (a cash story without the named period for that named entity and system of record formally closed as a books close). A collection claim alone is not proof the named close evidence was on the file. A close package alone is not collection of that closed successor outcome. Close evidence alone is not collection of that closed successor outcome. A close attestation is not cash collected. An AR aging line is not this collected. A verbal \"cash is collected\" alone is neither. Refuse the slide from \"the period is closed / books closed\" to \"cash is collected.\" This split is closed versus collected. Keep this closed distinct from the successor-spine Reconciled Is Not Closed. Keep this closed distinct from the filing-spine Reconciled Is Not Closed and from Closed Is Not Collected. Keep this collected distinct from the filing-spine Closed Is Not Collected and from Collected Is Not Recognized. Keep this closed distinct from the work-order or incident closed in Closed Is Not Resolved. Keep reconciled distinct from closed and from collected. This essay does not give that closed a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse closed into collected. This essay does not collapse collected into closed. This closed is a period/books close.",
+    excerpt: "Closed is not collected. Closed means, on the industrial assurance spine, the named period for that named entity and system of record is formally closed as a books close: cut-off locked, residual mismatches from that reconciliation cleared or carried with a signed exception, and a named controller or CFO close attestation exists for that period — the closed the successor-spine Reconciled Is Not Closed already names — evidenced by close package with named entity / period / cutoff / exception / attestor roles, named close criteria met (reconciliation package cited, the cut-off locked stated, residual mismatches cleared or carried with a signed exception stated, the named controller or CFO close attestation stated), dates, and an unbroken trail from the reconciliation evidence to that close evidence — not the slide from \"it is reconciled / the bank rec signed\" to \"the period is closed,\" not a reconciliation worksheet alone, not a sentence that the books will close after the bank rec, not a dashboard period-end tile, not an email saying books are closed, not a work-order or incident closed, and not treating the reconciliation as automatic close. Collected means that named receivable / billed amount for that named counterparty and period has actually converted to cash in the named bank account with an unbroken collection trail (payment received, applied, and banked) a controller can prove — evidenced by collection package with named entity / counterparty / period / receivable / bank / applicator / controller roles, named collection criteria met (close package cited, the named receivable or billed amount stated, the named counterparty stated, the named period stated, payment received stated, payment applied stated, payment banked in the named bank account stated), dates, and an unbroken trail from the close evidence to that collection evidence — not the slide from \"the period is closed / books closed\" to \"cash is collected,\" not an AR aging line, not a close attestation, not \"we expect to collect,\" not a dashboard tile that says collected, and not treating the period close as automatic collection. Closed is not collected. A firm can be closed and still not collected (the named period for that named entity and system of record is formally closed as a books close while that named receivable / billed amount for that named counterparty and period has not actually converted to cash in the named bank account with an unbroken collection trail a controller can prove). A firm can claim collection theater and still not be closed (a cash story without the named period for that named entity and system of record formally closed as a books close). A collection claim alone is not proof the named close evidence was on the file. A close package alone is not collection of that closed successor outcome. Close evidence alone is not collection of that closed successor outcome. A close attestation is not cash collected. An AR aging line is not this collected. A verbal \"cash is collected\" alone is neither. Refuse the slide from \"the period is closed / books closed\" to \"cash is collected.\" This split is closed versus collected. Keep this closed distinct from the successor-spine Reconciled Is Not Closed. Keep this closed distinct from the filing-spine Reconciled Is Not Closed and from Closed Is Not Collected. Keep this collected distinct from the filing-spine Closed Is Not Collected and from Collected Is Not Recognized. Keep this closed distinct from the work-order or incident closed in Closed Is Not Resolved. Keep reconciled distinct from closed and from collected. This essay does not give that closed a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse closed into collected. This essay does not collapse collected into closed. This closed is a period/books close.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-reconciled-is-not-closed',
     title: 'Reconciled Is Not Closed',
     description: "Reconciled is not closed. Reconciled means, on the industrial assurance spine, those booked facts have been independently matched, explained, and cleared against the external or control source (bank, insurer, counterparty, inventory, or control report) so residual mismatches are identified and disposed — the reconciled the successor-spine Booked Is Not Reconciled already names — evidenced by reconciliation package with named entity / period / source / matcher / exception / disposition roles, named reconciliation criteria met (booking package cited, the external or control source stated, the independent match stated, residual mismatches identified stated, residual mismatches disposed stated), dates, and an unbroken trail from the booking evidence to that reconciliation evidence — not the slide from \"it is booked / the books say so\" to \"it is reconciled / the books agree with reality outside the ledger,\" not a ledger line treated as a match, not a GL line alone, not an unexplained difference, not a source that was never named, not a residual mismatch left open, not a dashboard tile that says reconciled, and not treating the booking as automatic reconciliation. Closed means the named period for that named entity and system of record is formally closed as a books close: cut-off locked, residual mismatches from that reconciliation cleared or carried with a signed exception, and a named controller or CFO close attestation exists for that period — evidenced by close package with named entity / period / cutoff / exception / attestor roles, named close criteria met (reconciliation package cited, the cut-off locked stated, residual mismatches cleared or carried with a signed exception stated, the named controller or CFO close attestation stated), dates, and an unbroken trail from the reconciliation evidence to that close evidence — not the slide from \"it is reconciled / the bank rec signed\" to \"the period is closed,\" not a reconciliation worksheet alone, not a sentence that the books will close after the bank rec, not a dashboard period-end tile, not an email saying books are closed, not a work-order or incident closed, and not treating the reconciliation as automatic close. Reconciled is not closed. A firm can be reconciled and still not closed (those booked facts have been independently matched, explained, and cleared against the external or control source while the named period for that named entity and system of record is not formally closed as a books close). A firm can claim close theater and still not be reconciled (a period-close story without those booked facts independently matched, explained, and cleared against the external or control source so residual mismatches are identified and disposed). A close claim alone is not proof the named reconciliation evidence was on the file. A reconciliation package alone is not a period close of that reconciled successor outcome. Reconciliation evidence alone is not a period close of that reconciled successor outcome. A bank rec signature is not a period close. A GL line alone is not this reconciled. A verbal \"the period is closed\" alone is neither. Refuse the slide from \"it is reconciled / the bank rec signed\" to \"the period is closed.\" This split is reconciled versus closed. Keep this reconciled distinct from the successor-spine Booked Is Not Reconciled. Keep this reconciled distinct from the filing-spine Booked Is Not Reconciled and from Reconciled Is Not Closed. Keep this closed distinct from the filing-spine Reconciled Is Not Closed and from Closed Is Not Collected. Keep this closed distinct from the work-order or incident closed in Closed Is Not Resolved. Keep booked distinct from reconciled and from closed. This essay does not give that reconciled a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse reconciled into closed. This essay does not collapse closed into reconciled. This closed is a period/books close.",
@@ -1859,12 +1868,152 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-closed-is-not-collected': {
+    relatedSlug: 'successor-reconciled-is-not-closed',
+    relatedNote: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched, explained, and cleared against the external or control source so residual mismatches are identified and disposed from the named period for that named entity and system of record formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. This closed is that period close. Collected is the next refusal on the industrial assurance spine.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail that matches the supporting evidence from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This closed is a period close of the named period for that named entity and system of record, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record with the right period, entity, and controls from those booked facts independently matched, explained, and cleared against the external or control source so residual mismatches are identified and disposed. This essay does not rewrite that thesis. This essay does not give that reconciled a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail that matches the supporting evidence. This essay does not rewrite that thesis. This collected is cash received, applied, and banked for that named receivable. This essay does not give that closed a new meaning.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record with the right period, entity, and controls. This essay does not rewrite that thesis. This essay does not give that booked a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials for a named period and account. This essay does not rewrite that thesis. This closed is a period close of the named period for that named entity and system of record.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved so residual liability and reopen risk are closed. This essay does not rewrite that thesis. This essay does not give that settled a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This collected is cash received, applied, and banked for that named receivable.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement for that risk and period, shown by policy language matching the loss, from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. This essay does not give that paid a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This closed is a period close of the named period for that named entity and system of record.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. This essay does not give that covered a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. This essay does not give that insured a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This closed is a period close of the named period for that named entity and system of record.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. This essay does not give that certified a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reconciled distinct from closed and from collected.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine counterpart separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This collected is that named receivable or billed amount converted to cash in the named bank account with an unbroken collection trail a controller can prove, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. Forward reading on the filing spine separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This collected is that named receivable or billed amount converted to cash in the named bank account with an unbroken collection trail a controller can prove. The next successor route for Collected Is Not Recognized stays in prose only.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This closed is a period/books close. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance window from instrument-required guarantee that undertakes that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this collection.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this collection.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this collected into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this collected into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this collected into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this collected into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-reconciled-is-not-closed': {
     relatedSlug: 'successor-booked-is-not-reconciled',
     relatedNote: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record with the right period, entity, and controls from those booked facts independently matched, explained, and cleared against the external or control source so residual mismatches are identified and disposed. This essay does not rewrite that thesis. This essay does not give that reconciled a new meaning. This reconciled is that independent match. Closed is the next refusal on the industrial assurance spine.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The next refusal on this industrial assurance spine separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reconciled distinct from closed and from collected.',
+      },
       {
         slug: 'booked-is-not-reconciled',
         note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail that matches the supporting evidence. This essay does not rewrite that thesis. This reconciled is an independent match of booked facts against the external or control source so residual mismatches are identified and disposed. This essay does not give that reconciled a new meaning.',
