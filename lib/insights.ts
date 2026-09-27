@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-paid-is-not-settled',
+    title: 'Paid Is Not Settled',
+    description: "Paid is not settled. Paid means, on the industrial assurance spine, cash or indemnity actually disbursed on an accepted claim under that coverage — the paid the successor-spine Covered Is Not Paid already names — evidenced by payment package with named carrier / claim / payee / amount / disbursement roles, named payment criteria met (coverage package cited, the accepted claim stated, the cash or indemnity disbursement stated, the payee stated), dates, and an unbroken trail from the coverage evidence to that payment evidence — not the slide from \"it is covered\" to \"it was paid / we are made whole,\" not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not \"we'll look into it,\" not a ticket marked covered, and not treating the coverage grant as automatic payment. Settled means the claim is fully and finally resolved (release, agreement, or binding disposition) so residual liability / reopen risk is closed — evidenced by settlement package with named carrier / claim / parties / release / disposition roles, named settlement criteria met (payment package cited, the release, agreement, or binding disposition stated, residual liability closed stated, reopen risk closed stated), dates, and an unbroken trail from the payment evidence to that settlement evidence — not the slide from \"we got paid\" to \"it is settled / we are done,\" not a check cleared, not a partial payment, not a reserve reduced to zero without release, agreement, or binding disposition, not a disbursement treated as finality, and not treating the payment as automatic settlement. Paid is not settled. A firm can be paid and still not settled (cash or indemnity has been disbursed on an accepted claim while residual liability or reopen risk is still open). A firm can claim settled theater and still not be paid (a finality story without cash or indemnity disbursed on an accepted claim). A settlement claim alone is not proof the named payment evidence was on the file. A payment package alone is not settlement of that paid successor outcome. Payment evidence alone is not settlement of that paid successor outcome. A disbursement is not a final disposition. A verbal \"it is settled\" alone is neither. Refuse the slide from \"we got paid\" to \"it is settled / we are done.\" This split is paid versus settled. Keep this paid distinct from the successor-spine Covered Is Not Paid. Keep this paid distinct from the filing-spine Covered Is Not Paid and from Paid Is Not Settled. Keep this settled distinct from the filing-spine Paid Is Not Settled and from Settled Is Not Booked. Keep covered distinct from paid and from settled. This essay does not give that paid a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse paid into settled. This essay does not collapse settled into paid.",
+    excerpt: "Paid is not settled. Paid means, on the industrial assurance spine, cash or indemnity actually disbursed on an accepted claim under that coverage — the paid the successor-spine Covered Is Not Paid already names — evidenced by payment package with named carrier / claim / payee / amount / disbursement roles, named payment criteria met (coverage package cited, the accepted claim stated, the cash or indemnity disbursement stated, the payee stated), dates, and an unbroken trail from the coverage evidence to that payment evidence — not the slide from \"it is covered\" to \"it was paid / we are made whole,\" not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not \"we'll look into it,\" not a ticket marked covered, and not treating the coverage grant as automatic payment. Settled means the claim is fully and finally resolved (release, agreement, or binding disposition) so residual liability / reopen risk is closed — evidenced by settlement package with named carrier / claim / parties / release / disposition roles, named settlement criteria met (payment package cited, the release, agreement, or binding disposition stated, residual liability closed stated, reopen risk closed stated), dates, and an unbroken trail from the payment evidence to that settlement evidence — not the slide from \"we got paid\" to \"it is settled / we are done,\" not a check cleared, not a partial payment, not a reserve reduced to zero without release, agreement, or binding disposition, not a disbursement treated as finality, and not treating the payment as automatic settlement. Paid is not settled. A firm can be paid and still not settled (cash or indemnity has been disbursed on an accepted claim while residual liability or reopen risk is still open). A firm can claim settled theater and still not be paid (a finality story without cash or indemnity disbursed on an accepted claim). A settlement claim alone is not proof the named payment evidence was on the file. A payment package alone is not settlement of that paid successor outcome. Payment evidence alone is not settlement of that paid successor outcome. A disbursement is not a final disposition. A verbal \"it is settled\" alone is neither. Refuse the slide from \"we got paid\" to \"it is settled / we are done.\" This split is paid versus settled. Keep this paid distinct from the successor-spine Covered Is Not Paid. Keep this paid distinct from the filing-spine Covered Is Not Paid and from Paid Is Not Settled. Keep this settled distinct from the filing-spine Paid Is Not Settled and from Settled Is Not Booked. Keep covered distinct from paid and from settled. This essay does not give that paid a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse paid into settled. This essay does not collapse settled into paid.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-covered-is-not-paid',
     title: 'Covered Is Not Paid',
     description: "Covered is not paid. Covered means, on the industrial assurance spine, the loss actually sits inside the named policy, binder, or endorsement for that risk and period — covered peril, covered property or interest, covered location, and covered cause — shown by policy language matching the loss — the covered the successor-spine Insured Is Not Covered already names — evidenced by coverage package with named carrier / insured / covered-peril / covered-property / covered-location / covered-cause roles, named coverage criteria met (insurance package cited, the policy language cited, the endorsement schedule matching the loss stated), dates, and an unbroken trail from the insurance evidence to that coverage evidence — not the slide from \"it is insured\" to \"it is covered,\" not a binder alone, not \"we bought a policy so we're covered,\" not a COI theater, not a dashboard green, and not treating the transferred risk position as automatic coverage. Paid means cash or indemnity actually disbursed on an accepted claim under that coverage — evidenced by payment package with named carrier / claim / payee / amount / disbursement roles, named payment criteria met (coverage package cited, the accepted claim stated, the cash or indemnity disbursement stated, the payee stated), dates, and an unbroken trail from the coverage evidence to that payment evidence — not the slide from \"it is covered\" to \"it was paid / we are made whole,\" not a coverage opinion, not an FNOL acknowledgment, not a reserve set, not \"we'll look into it,\" not a ticket marked covered, and not treating the coverage grant as automatic payment. Covered is not paid. A firm can be covered and still not paid (the loss sits inside the grant while cash or indemnity has not been disbursed on an accepted claim). A firm can claim paid theater and still not be covered (a disbursement story without the loss inside the granted coverage grant). A payment claim alone is not proof the named coverage evidence was on the file. A coverage package alone is not payment of that covered successor outcome. Coverage evidence alone is not payment of that covered successor outcome. A coverage grant is not a disbursement. A verbal \"it was paid\" alone is neither. Refuse the slide from \"it is covered\" to \"it was paid / we are made whole.\" This split is covered versus paid. Keep this covered distinct from the successor-spine Insured Is Not Covered. Keep this covered distinct from the filing-spine Insured Is Not Covered and from Covered Is Not Paid. Keep this paid distinct from the filing-spine Covered Is Not Paid and from Paid Is Not Settled. Keep insured distinct from covered and from paid. This essay does not give that covered a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse covered into paid. This essay does not collapse paid into covered.",
@@ -1823,12 +1832,116 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-paid-is-not-settled': {
+    relatedSlug: 'successor-covered-is-not-paid',
+    relatedNote: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement for that risk and period, shown by policy language matching the loss, from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. This essay does not give that paid a new meaning. This paid is that disbursement. Settled is the next refusal on the industrial assurance spine.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This paid is cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not give that paid a new meaning.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. This essay does not give that covered a new meaning. Keep covered distinct from paid and from settled.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep covered distinct from paid and from settled.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. This essay does not give that insured a new meaning. Keep covered distinct from paid and from settled.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This settled is the claim fully and finally resolved so residual liability and reopen risk are closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. This essay does not give that certified a new meaning. Keep covered distinct from paid and from settled.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep covered distinct from paid and from settled.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine counterpart separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This settled is the claim fully and finally resolved so residual liability and reopen risk are closed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. Forward reading on the filing spine separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials for a named period and account. This essay does not rewrite that thesis. This settled is the claim fully and finally resolved so residual liability and reopen risk are closed. The next successor route for Settled Is Not Booked stays in prose only.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance window from instrument-required guarantee that undertakes that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this settlement.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this settlement.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this settled into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this settled into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this settled into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this settled into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-covered-is-not-paid': {
     relatedSlug: 'successor-insured-is-not-covered',
     relatedNote: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. This essay does not give that covered a new meaning. This covered is that loss inside the named policy, binder, or endorsement. Paid is the next refusal on the industrial assurance spine.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The next refusal on this industrial assurance spine separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved so residual liability and reopen risk are closed. This essay does not rewrite that thesis. This essay does not give that paid a new meaning. Keep covered distinct from paid and from settled.',
+      },
       {
         slug: 'insured-is-not-covered',
         note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. This covered is the loss actually inside the named policy, binder, or endorsement for that risk and period, shown by policy language matching the loss.',
@@ -1859,7 +1972,7 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'paid-is-not-settled',
-        note: 'Paid is not settled. Forward reading on the filing spine separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This paid is cash or indemnity actually disbursed on an accepted claim. The next successor route for Paid Is Not Settled stays in prose only.',
+        note: 'Paid is not settled. Forward reading on the filing spine separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This paid is cash or indemnity actually disbursed on an accepted claim. The successor route is the next refusal on this industrial assurance spine. This essay does not give that settled a new meaning.',
       },
       {
         slug: 'successor-assured-is-not-guaranteed',
