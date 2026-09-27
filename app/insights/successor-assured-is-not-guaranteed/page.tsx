@@ -831,6 +831,23 @@ export default function SuccessorAssuredIsNotGuaranteedPage() {
             measured result. The assurance package does not guarantee the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-guaranteed-is-not-collectible"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Guaranteed Is Not Collectible
+            </Link>{' '}
+            on why guaranteed is still not collectible. That next refusal is instrument-required
+            guarantee that undertakes the assured successor-obligation outcome for the named successor
+            conditions across the next named guarantee / remaining-obligation / warranty / control
+            window versus instrument-required collectible recovery that collects the guaranteed
+            successor-obligation outcome for the named successor conditions across the next named
+            collection / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/guaranteed-is-not-collectible.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
