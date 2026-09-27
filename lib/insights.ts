@@ -11,6 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-sustained-is-not-assured',
+    title: 'Sustained Is Not Assured',
+    description:
+      'Sustained is not assured. Sustained means under that same named instrument / governing law for that channel, instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window — evidenced by sustain package with named sustainer / acceptor roles, named sustain criteria met (operate package cited, hold window kept in force, recurrence or repeat evidence on the register, residual ownership still named), dates, and an unbroken trail from the operate evidence to that sustain evidence — not a dashboard green tile with no sustain authority, not a verbal "it will keep running," not extending a feature flag with no instrument path, not a chat note that says stable, not "ops will keep babysitting" without instrument-required sustain evidence, and not treating operate theater as automatic sustainment of that operated successor-obligation outcome. Assured means under that same named instrument / governing law for that channel, instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window — evidenced by assurance package with named assurer / acceptor roles, named assurance criteria met (sustain package cited, next assurance window named, conditions the sustainment must continue to meet stated, residual ownership still named), dates, and an unbroken trail from the sustain evidence to that assurance evidence — not a dashboard green tile with no assurance authority, not a verbal "it is covered going forward," not extending a warranty letter with no instrument path, not a chat note that says assured, not "reliability will sign off" without instrument-required assurance evidence, and not treating sustain theater as automatic assurance of that sustained successor-obligation outcome. Sustained is not assured. A firm can be sustained and still not assured (sustain evidence exists while required assurance evidence for the next assurance window is missing). A firm can have instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window and still lack instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window. A firm can claim assurance theater and still not be sustained (a dashboard green tile with no assurance authority, a verbal "it is covered going forward," extending a warranty letter with no instrument path, a chat note that says assured, or a sentence that says reliability will sign off while required sustain evidence is missing). Sustain evidence alone is not assurance of that sustained successor-obligation outcome. An assurance claim alone is not proof the named sustain evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard sustained tile, verbal "it is covered going forward," dashboard green tile with no assurance authority, warranty letter extended with no instrument path, chat note that says assured, or reliability-will-sign-off note alone is neither. A verbal "it is covered going forward" alone is neither. Keep this sustained distinct from the filing-spine Operated Is Not Sustained and from Sustained Is Not Assured. Keep this assured distinct from the filing-spine Sustained Is Not Assured and from Assured Is Not Guaranteed. Keep this operated distinct from the filing-spine Delivered Is Not Operated and from Operated Is Not Sustained. This sustained is instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window, trailed from the operate evidence. This assured is instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window, trailed from the sustain evidence. This operated is instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window, trailed from the delivery evidence. Do not collapse this sustained into the duty-window sustainment Operated Is Not Sustained names. Do not collapse this sustained into the forward assurance Sustained Is Not Assured names. Do not collapse this assured into the forward assurance Sustained Is Not Assured names. Do not collapse this assured into the binding guarantee Assured Is Not Guaranteed names. Do not collapse this operated into the productive operation Delivered Is Not Operated names. Do not collapse this operated into the duty-window sustainment Operated Is Not Sustained names. This essay does not collapse this sustained into filing-spine sustainment. This essay does not collapse this sustained into forward assurance. This essay does not collapse this assured into forward assurance. This essay does not collapse this assured into a binding guarantee. This essay does not collapse this operated into productive operation. This essay does not collapse this operated into filing-spine sustainment. This essay does not collapse into Operated Is Not Sustained. This essay does not rewrite Operated Is Not Sustained. This essay does not collapse into Sustained Is Not Assured. This essay does not rewrite Sustained Is Not Assured. This essay does not collapse into Assured Is Not Guaranteed. This essay does not rewrite Assured Is Not Guaranteed. This essay does not collapse into Delivered Is Not Operated. This essay does not rewrite Delivered Is Not Operated. This essay does not collapse into Closed Is Not Delivered. This essay does not rewrite Closed Is Not Delivered. This essay does not collapse into Cleared Is Not Closed. This essay does not rewrite Cleared Is Not Closed. This essay does not collapse into Recorded Is Not Cleared. This essay does not rewrite Recorded Is Not Cleared. This essay does not collapse into Released Is Not Recorded. This essay does not rewrite Released Is Not Recorded. This essay does not collapse into Remediated Is Not Released. This essay does not rewrite Remediated Is Not Released. This essay does not collapse into Enforced Is Not Remediated. This essay does not rewrite Enforced Is Not Remediated. This essay does not collapse into Binding Is Not Enforced. This essay does not rewrite Binding Is Not Enforced. This essay does not collapse into Effective Is Not Binding. This essay does not rewrite Effective Is Not Binding. This essay does not collapse into Restored Is Not Accepted. This essay does not rewrite Restored Is Not Accepted. This essay does not collapse into Governed Is Not Transferable. This essay does not rewrite Governed Is Not Transferable. This essay does not collapse into Transferable Is Not Rehearsed. This essay does not rewrite Transferable Is Not Rehearsed. This essay does not collapse into Transferable Is Not Binding. This essay does not rewrite Transferable Is Not Binding. This essay does not collapse assured into sustained. This essay does not collapse sustained into assured. A dashboard green tile with no assurance authority, a verbal "it is covered going forward," or extending a warranty letter with no instrument path without instrument-required assurance evidence is not that assurance. A chat note that says assured, or "reliability will sign off," without instrument-required assurance evidence is not that assurance. This split is sustained versus assured. This essay separates instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window from instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window. Evidence from the plant beats the sustain record when the record is being used as assured. Evidence from the plant beats the assurance claim when the claim is being used as proof the named sustainment of that successor-obligation outcome was on the file. Sync refuses to pretend sustained or assured is a status light. Sync does not measure assured. Sync does not measure assured for the customer. Sync does not measure sustained or assured for the customer. Sync may surface a sustain record or an assurance record beside Evidence, Verification, and the closed outcome. Sync must not treat sustained as assured as Learning credit. Sync does not deem assured for the customer. Sync must not auto-deem-assured. A practice record that says sustained is assured is not shown assured.',
+    excerpt:
+      'Sustained is not assured. Sustained means under that same named instrument / governing law for that channel, instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window — evidenced by sustain package with named sustainer / acceptor roles, named sustain criteria met (operate package cited, hold window kept in force, recurrence or repeat evidence on the register, residual ownership still named), dates, and an unbroken trail from the operate evidence to that sustain evidence — not a dashboard green tile with no sustain authority, not a verbal "it will keep running," not extending a feature flag with no instrument path, not a chat note that says stable, not "ops will keep babysitting" without instrument-required sustain evidence, and not treating operate theater as automatic sustainment of that operated successor-obligation outcome. Assured means under that same named instrument / governing law for that channel, instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window — evidenced by assurance package with named assurer / acceptor roles, named assurance criteria met (sustain package cited, next assurance window named, conditions the sustainment must continue to meet stated, residual ownership still named), dates, and an unbroken trail from the sustain evidence to that assurance evidence — not a dashboard green tile with no assurance authority, not a verbal "it is covered going forward," not extending a warranty letter with no instrument path, not a chat note that says assured, not "reliability will sign off" without instrument-required assurance evidence, and not treating sustain theater as automatic assurance of that sustained successor-obligation outcome. Sustained is not assured. A firm can be sustained and still not assured (sustain evidence exists while required assurance evidence for the next assurance window is missing). A firm can have instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window and still lack instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window. A firm can claim assurance theater and still not be sustained (a dashboard green tile with no assurance authority, a verbal "it is covered going forward," extending a warranty letter with no instrument path, a chat note that says assured, or a sentence that says reliability will sign off while required sustain evidence is missing). Sustain evidence alone is not assurance of that sustained successor-obligation outcome. An assurance claim alone is not proof the named sustain evidence was on the file. A CMMS checkbox, ticket state, status light, dashboard sustained tile, verbal "it is covered going forward," dashboard green tile with no assurance authority, warranty letter extended with no instrument path, chat note that says assured, or reliability-will-sign-off note alone is neither. A verbal "it is covered going forward" alone is neither.',
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-26',
+    author: 'Orville Davis',
+  },
+  {
     slug: 'successor-operated-is-not-sustained',
     title: 'Operated Is Not Sustained',
     description:
@@ -1638,12 +1650,120 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'successor-operated-is-not-sustained': {
-    relatedSlug: 'successor-delivered-is-not-operated',
-    relatedNote: 'Delivered is not operated. The prior essay in this spine separates instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window from instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window, trailed from the delivery evidence. This essay does not rewrite that thesis.',
+  'successor-sustained-is-not-assured': {
+    relatedSlug: 'successor-operated-is-not-sustained',
+    relatedNote: 'Operated is not sustained. The prior essay in this spine separates instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window from instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window, trailed from the operate evidence. This essay does not rewrite that thesis.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-delivered-is-not-operated',
+        note: 'Delivered is not operated. The prior essay in this spine separates instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window from instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window, trailed from the delivery evidence. This essay does not rewrite that thesis.',
+      },
+      {
+        slug: 'successor-closed-is-not-delivered',
+        note: 'Closed is not delivered. The prior essay in this spine separates instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance from instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window, trailed from the close evidence. This essay does not rewrite that thesis.',
+      },
+      {
+        slug: 'successor-cleared-is-not-closed',
+        note: 'Cleared is not closed. The prior essay in this spine separates instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window from instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance, trailed from the clearance evidence. This essay does not rewrite that thesis.',
+      },
+      {
+        slug: 'successor-recorded-is-not-cleared',
+        note: 'Recorded is not cleared. Earlier essay in this spine: instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window is not instrument-required clearance that removes or retires a recorded release / recorded successor obligation from the active hold register only when the named clearance criteria are met for that remaining window.',
+      },
+      {
+        slug: 'successor-released-is-not-recorded',
+        note: 'Released is not recorded. Earlier essay in this spine: instrument-required release / close-out that returns the remediated successor obligations into the named operating / warranty / successor window as released for continued hold is not instrument-required recording of that release into the named operating / warranty / successor register / evidence ledger so the released successor obligations stay on-file for the remaining window.',
+      },
+      {
+        slug: 'successor-remediated-is-not-released',
+        note: 'Remediated is not released. Earlier essay in this spine: instrument-required remediation that restores the named successor obligations after the named breach is not instrument-required release / close-out that returns those remediated successor obligations into the named operating / warranty / successor window as released for continued hold.',
+      },
+      {
+        slug: 'successor-enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Earlier essay in this spine: instrument-required enforcement of those named successor binding obligations for the named successor window is not instrument-required remediation that restores the named successor obligations after the named breach.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Earlier essay in this spine: instrument-required binding of that named successor is not instrument-required enforcement of those named successor binding obligations for the named successor window.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Earlier essay in this spine: instrument-required transfer of the sustained accepted restored condition is not instrument-required binding of that successor to the named sustainment, accountability, and operating obligations.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Different spine: a named effective date for a posted filing is not the instrument-required bind mechanics of that filing. Do not collapse this binding into that filing bind.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement against the named parties for a filing scope. Do not collapse this enforced into that filing-spine enforcement.',
+      },
+      {
+        slug: 'enforced-is-not-remediated',
+        note: 'Enforced is not remediated. Different spine: filing-spine enforcement actions are not instrument-required cure or remedy completion for a filed default. Do not collapse this remediated into that filing-spine remedy completion.',
+      },
+      {
+        slug: 'remediated-is-not-released',
+        note: 'Remediated is not released. Different spine: filing-spine cure completion is not a release, waiver, or discharge of enforcement rights. Do not collapse this released into that filing-spine release.',
+      },
+      {
+        slug: 'released-is-not-recorded',
+        note: 'Released is not recorded. Different spine: a filing-spine release, waiver, or discharge is not registry recording of that executed release. Do not collapse this recorded into that registry recording.',
+      },
+      {
+        slug: 'recorded-is-not-cleared',
+        note: 'Recorded is not cleared. Different spine: registry recording of an executed filing release is not clearance of that encumbrance from the operating title. Do not collapse this cleared into that clearance of filing obligations.',
+      },
+      {
+        slug: 'cleared-is-not-closed',
+        note: 'Cleared is not closed. Different spine: clearance of a filing encumbrance from the operating title, search position, and counterparty books is not closing completion of that transaction. Do not collapse this closed into that closing completion.',
+      },
+      {
+        slug: 'closed-is-not-delivered',
+        note: 'Closed is not delivered. Different spine, and a different URL: closing completion of a filing transaction is not delivery of the named asset, scope, or obligation into the counterparty hands. Do not collapse this closed into that closing completion. Do not collapse this delivered into that filing-spine delivery.',
+      },
+      {
+        slug: 'delivered-is-not-operated',
+        note: 'Delivered is not operated. Different spine, and a different URL: filing-spine delivery of the named asset, scope, or obligation into the counterparty hands is not instrument-required productive operation of that delivered asset. Do not collapse this delivered into that filing-spine delivery. Do not collapse this operated into that productive operation.',
+      },
+      {
+        slug: 'operated-is-not-sustained',
+        note: 'Operated is not sustained. Different spine, and a different URL: filing-spine productive operation of the named asset, system, or scope that was delivered is not instrument-required ongoing, repeatable, in-control operation over the required duty window. Do not collapse this operated into that productive operation. Do not collapse this sustained into that filing-spine sustainment.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment of the named operated asset is not forward instrument-required assurance that the named asset or system will continue to meet those operating conditions for the next named period, load, or duty window. Do not collapse this sustained into that duty-window sustainment. Do not collapse this assured into that forward assurance.',
+      },
+      {
+        slug: 'assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. Different spine: filing-spine forward assurance that the named asset or system will continue to meet operating conditions for the next named period, load, or duty window is not a binding instrument-required guarantee, warranty, indemnity, or liquidated-performance undertaking. Do not collapse this assured into that forward assurance. Do not collapse this assured into that binding guarantee.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. Different step: restoration of the named operating condition the guarantee was written to return is not owner acceptance of that condition. Do not collapse this delivered into that operating-condition restoration.',
+      },
+      {
+        slug: 'governed-is-not-transferable',
+        note: 'Governed is not transferable. Different spine: ownership inside rules of engagement is not a governed compounding system changing hands. Do not collapse this transferable into that governance handoff.',
+      },
+      {
+        slug: 'transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. Different spine: a governed system changing hands is not a named handoff run under stress. Do not collapse this transferable into that rehearsal.',
+      },
+    ],
+  },
+  'successor-operated-is-not-sustained': {
+    relatedSlug: 'successor-sustained-is-not-assured',
+    relatedNote: 'Sustained is not assured. Sustained means under that same named instrument / governing law for that channel, instrument-required sustainment that holds the operated successor-obligation outcome in continued force under the named sustainment / remaining-duty / warranty / control register for the named hold window — evidenced by sustain package with named sustainer / acceptor roles, named sustain criteria met (operate package cited, hold window kept in force, recurrence or repeat evidence on the register, residual ownership still named), dates, and an unbroken trail from the operate evidence to that sustain evidence. Assured means under that same named instrument / governing law for that channel, instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance / remaining-obligation / warranty / control window — evidenced by assurance package with named assurer / acceptor roles, named assurance criteria met (sustain package cited, next assurance window named, conditions the sustainment must continue to meet stated, residual ownership still named), dates, and an unbroken trail from the sustain evidence to that assurance evidence. A dashboard green tile with no assurance authority, a verbal "it is covered going forward," extending a warranty letter with no instrument path, a chat note that says assured, or "reliability will sign off" without instrument-required assurance evidence is not that assurance. This assured is successor-obligation assurance in the industrial control and transfer spine. It is not the filing-spine forward assurance in Sustained Is Not Assured, and it is not the binding guarantee in Assured Is Not Guaranteed.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-delivered-is-not-operated',
+        note: 'Delivered is not operated. The prior essay in this spine separates instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window from instrument-required operation that puts the delivered successor-obligation outcome into active run under the named operator / duty / warranty / control window, trailed from the delivery evidence. This essay does not rewrite that thesis.',
+      },
       {
         slug: 'successor-closed-is-not-delivered',
         note: 'Closed is not delivered. The prior essay in this spine separates instrument-required close-out that ends the cleared successor-obligation matter for that named channel / remaining window after clearance from instrument-required delivery / handoff that places the closed successor-obligation outcome into the named receiving channel / operator / warranty / next-party register for the remaining window, trailed from the close evidence. This essay does not rewrite that thesis.',

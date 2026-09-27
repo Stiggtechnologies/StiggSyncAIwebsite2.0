@@ -756,6 +756,23 @@ export default function SuccessorOperatedIsNotSustainedPage() {
             measured result. The operate package does not sustain the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-sustained-is-not-assured"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Sustained Is Not Assured
+            </Link>{' '}
+            on why sustained is still not assured. That next refusal is instrument-required
+            sustainment that holds the operated successor-obligation outcome in continued force under
+            the named sustainment / remaining-duty / warranty / control register for the named hold
+            window versus instrument-required assurance that the sustained successor-obligation
+            outcome will continue to meet the named successor conditions for the next named assurance
+            / remaining-obligation / warranty / control window. It is not the filing-spine essay at
+            /insights/sustained-is-not-assured.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
