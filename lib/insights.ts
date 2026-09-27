@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-insured-is-not-covered',
+    title: 'Insured Is Not Covered',
+    description: "Insured is not covered. Insured means, on the industrial assurance spine, a transferred risk position with a named carrier, coverage trigger, and claim path — the insured the successor-spine Certified Is Not Insured already names — evidenced by insurance package with named carrier / insured / coverage-trigger / claim-path roles, named insurance criteria met (certification package cited, the named carrier stated, the coverage trigger stated, the claim path stated), dates, and an unbroken trail from the certification evidence to that insurance evidence — not the slide from \"it is certified\" to \"it is insured,\" not a policy PDF with no named carrier, not a broker email that says insured, not a certificate of insurance with no claim path, and not treating the certification artifact as automatic insurance. Covered means, under that named policy / binder / endorsement for that named risk and period, the loss event actually falls inside the granted coverage grant (covered peril, covered property/interest, covered location, covered cause) — evidenced by policy language + endorsement schedule matching the loss, in a coverage package with named carrier / insured / covered-peril / covered-property / covered-location / covered-cause roles, named coverage criteria met (insurance package cited, the policy language cited, the endorsement schedule matching the loss stated), dates, and an unbroken trail from the insurance evidence to that coverage evidence — not the slide from \"it is insured\" to \"it is covered,\" not a binder alone, not \"we bought a policy so we're covered,\" not a COI theater, not a dashboard green, and not treating the transferred risk position as automatic coverage. Insured is not covered. A firm can be insured and still not covered (policy exists while the loss sits outside the grant). A firm can claim covered theater and still not be insured (claims of coverage without a named transferred risk position). A coverage claim alone is not proof the named insurance evidence was on the file. An insurance package alone is not coverage of that insured successor outcome. Insurance evidence alone is not coverage of that insured successor outcome. A transferred risk position is not a coverage grant. A verbal \"it is covered\" alone is neither. Refuse the slide from \"it is insured\" to \"it is covered.\" This split is insured versus covered. Keep this insured distinct from the successor-spine Certified Is Not Insured. Keep this insured distinct from the filing-spine Certified Is Not Insured and from Insured Is Not Covered. Keep this covered distinct from the filing-spine Insured Is Not Covered and from Covered Is Not Paid. Keep certified distinct from insured and from covered. This essay does not give that insured a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse insured into covered. This essay does not collapse covered into insured.",
+    excerpt: "Insured is not covered. Insured means, on the industrial assurance spine, a transferred risk position with a named carrier, coverage trigger, and claim path — the insured the successor-spine Certified Is Not Insured already names — evidenced by insurance package with named carrier / insured / coverage-trigger / claim-path roles, named insurance criteria met (certification package cited, the named carrier stated, the coverage trigger stated, the claim path stated), dates, and an unbroken trail from the certification evidence to that insurance evidence — not the slide from \"it is certified\" to \"it is insured,\" not a policy PDF with no named carrier, not a broker email that says insured, not a certificate of insurance with no claim path, and not treating the certification artifact as automatic insurance. Covered means, under that named policy / binder / endorsement for that named risk and period, the loss event actually falls inside the granted coverage grant (covered peril, covered property/interest, covered location, covered cause) — evidenced by policy language + endorsement schedule matching the loss, in a coverage package with named carrier / insured / covered-peril / covered-property / covered-location / covered-cause roles, named coverage criteria met (insurance package cited, the policy language cited, the endorsement schedule matching the loss stated), dates, and an unbroken trail from the insurance evidence to that coverage evidence — not the slide from \"it is insured\" to \"it is covered,\" not a binder alone, not \"we bought a policy so we're covered,\" not a COI theater, not a dashboard green, and not treating the transferred risk position as automatic coverage. Insured is not covered. A firm can be insured and still not covered (policy exists while the loss sits outside the grant). A firm can claim covered theater and still not be insured (claims of coverage without a named transferred risk position). A coverage claim alone is not proof the named insurance evidence was on the file. An insurance package alone is not coverage of that insured successor outcome. Insurance evidence alone is not coverage of that insured successor outcome. A transferred risk position is not a coverage grant. A verbal \"it is covered\" alone is neither. Refuse the slide from \"it is insured\" to \"it is covered.\" This split is insured versus covered. Keep this insured distinct from the successor-spine Certified Is Not Insured. Keep this insured distinct from the filing-spine Certified Is Not Insured and from Insured Is Not Covered. Keep this covered distinct from the filing-spine Insured Is Not Covered and from Covered Is Not Paid. Keep certified distinct from insured and from covered. This essay does not give that insured a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse insured into covered. This essay does not collapse covered into insured.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-certified-is-not-insured',
     title: 'Certified Is Not Insured',
     description: "Certified is not insured. Certified means, on the industrial assurance spine, an external or formal certification artifact that can be independently verified — the certified the successor-spine Assured Is Not Certified already names — evidenced by certification package with named certifier / artifact / verifier roles, named certification criteria met (assurance package cited, the external or formal certification artifact named, the independent verification path stated), dates, and an unbroken trail from the assurance evidence to that certification evidence — not the slide from \"it is assured\" to \"it is certified,\" not a certificate PDF with no independent verification path, not a laminated badge, not a chat note that says certified, and not treating the assurance claim as automatic certification. Insured means, under that same named instrument for that channel, a transferred risk position with a named carrier, coverage trigger, and claim path — evidenced by insurance package with named carrier / insured / coverage-trigger / claim-path roles, named insurance criteria met (certification package cited, the named carrier stated, the coverage trigger stated, the claim path stated), dates, and an unbroken trail from the certification evidence to that insurance evidence — not the slide from \"it is certified\" to \"it is insured,\" not a policy PDF with no named carrier, not a broker email that says insured, not a certificate of insurance with no claim path, and not treating the certification artifact as automatic insurance. Certified is not insured. A firm can be certified and still not insured (certification evidence exists while the transferred risk position is missing). A firm can hold an external or formal certification artifact that can be independently verified and still lack a transferred risk position with a named carrier, coverage trigger, and claim path. An insurance claim alone is not proof the named certification evidence was on the file. A certification package alone is not insurance of that certified successor outcome. Certification evidence alone is not insurance of that certified successor outcome. A certification artifact is not a transferred risk position. A verbal \"it is insured\" alone is neither. Refuse the slide from \"it is certified\" to \"it is insured.\" This split is certified versus insured. Keep this certified distinct from the successor-spine Assured Is Not Certified. Keep this certified distinct from the filing-spine Assured Is Not Certified and from Certified Is Not Insured. Keep this insured distinct from the filing-spine Certified Is Not Insured and from Insured Is Not Covered. This essay does not give that certified a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse certified into insured. This essay does not collapse insured into certified.",
@@ -1805,12 +1814,100 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-insured-is-not-covered': {
+    relatedSlug: 'successor-certified-is-not-insured',
+    relatedNote: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. This essay does not give that insured a new meaning. This insured is that transferred risk position. Covered is the next refusal on the industrial assurance spine.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This insured is a transferred risk position with a named carrier, coverage trigger, and claim path.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. This essay does not give that certified a new meaning. Keep certified distinct from insured and from covered.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep certified distinct from insured and from covered.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine counterpart separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. This covered is the loss event inside the granted coverage grant, evidenced by policy language and an endorsement schedule matching the loss.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. Forward reading on the filing spine separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This covered is the loss event inside the granted coverage grant. The next successor route for Covered Is Not Paid stays in prose only.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance that the sustained successor-obligation outcome will continue to meet the named successor conditions for the next named assurance window from instrument-required guarantee that undertakes that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this coverage grant.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this coverage grant.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this covered into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this covered into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this covered into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this covered into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-certified-is-not-insured': {
     relatedSlug: 'successor-assured-is-not-certified',
     relatedNote: 'Assured is not certified. The successor-spine prior essay separates a named assurance claim with evidence boundaries (what is claimed, by whom, under what scope) from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. This essay does not give that certified a new meaning. This certified is that certification artifact. Insured is the next refusal on the industrial assurance spine.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The next refusal on this industrial assurance spine separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. This essay does not give that insured a new meaning. Keep certified distinct from insured and from covered.',
+      },
       {
         slug: 'assured-is-not-certified',
         note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. This certified is an external or formal certification artifact that can be independently verified.',
@@ -1825,7 +1922,7 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'insured-is-not-covered',
-        note: 'Insured is not covered. Forward reading on the filing spine separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. This insured is a transferred risk position with a named carrier, coverage trigger, and claim path. The next successor route for Insured Is Not Covered stays in prose only.',
+        note: 'Insured is not covered. Forward reading on the filing spine separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. This insured is a transferred risk position with a named carrier, coverage trigger, and claim path. The successor route is the next refusal on this industrial assurance spine. This essay does not give that insured a new meaning.',
       },
       {
         slug: 'successor-assured-is-not-guaranteed',
