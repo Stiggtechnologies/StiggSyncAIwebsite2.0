@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-filed-is-not-accepted',
+    title: 'Filed Is Not Accepted',
+    description: "Filed is not accepted. Filed means, on the industrial assurance spine, that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — the filed the successor-spine Audited Is Not Filed already names — evidenced by filing package with named entity / period / channel / receipt / timestamp / filer roles, named filing criteria met (audited pack cited, the named audited period pack stated, the named opinion or assurance conclusion stated as applicable, the named regulator / registry / lender / board filing channel stated, the named filing receipt or confirmation stated, the filing timestamp stated), dates, and an unbroken trail from the audit evidence to that filing evidence — not \"audit is done,\" not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — evidenced by acceptance package with named entity / period / channel / filing-identifier / authority / acknowledgement roles, named acceptance criteria met (filing package cited, the named receiving authority stated, the named acceptance or completeness acknowledgement stated, the specific lodged filing stated, the entity stated, the period stated, the channel stated, the filing identifier stated), dates, and an unbroken trail from the filing evidence to that acceptance evidence — not an auto-ack that only confirms message delivery, not \"under review,\" not a draft status page, not a dashboard green, and not a CMMS checkbox — not the slide from \"we have a filing receipt\" to \"it has been accepted by the named channel.\" Filed is not accepted. A firm can be filed and still not accepted (named filing receipt exists while no named acceptance / completeness acknowledgement for that entity/period/channel/filing identifier). A firm can chase acceptance theater and still not be filed (an acceptance claim or auto-ack exists while no lodging receipt for that entity/period/channel). An acceptance claim alone is not proof the named filing evidence was on the file. A filing package alone is not acceptance of that filed successor outcome. Filing evidence alone is not acceptance of that filed successor outcome. A filing receipt is not an acceptance acknowledgement. A draft upload is not this filed. An email saying we sent it is not this filed. An auto-ack that only confirms message delivery is not this accepted. Under review is not this accepted. A draft status page is not this accepted. A dashboard green is not this accepted. A CMMS checkbox is not this accepted. A verbal \"it has been accepted by the named channel\" alone is neither. Refuse the slide from \"we have a filing receipt\" to \"it has been accepted by the named channel.\" This split is filed versus accepted. Keep audited from Audited Is Not Filed distinct from filed and from accepted. Keep reported from Reported Is Not Audited distinct from filed and from accepted. Keep this filed distinct from the successor-spine Audited Is Not Filed. Keep this accepted distinct from Complete Is Not Accepted and from Accepted Is Not Verified. This accepted is channel acceptance of a lodged filing. Keep this filed distinct from the work-order or incident closed in Closed Is Not Resolved. This essay does not give that filed a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse filed into accepted. This essay does not collapse accepted into filed. This filed is the lodging-receipt step after Audited Is Not Filed.",
+    excerpt: "Filed is not accepted. Filed means, on the industrial assurance spine, that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — the filed the successor-spine Audited Is Not Filed already names — evidenced by filing package with named entity / period / channel / receipt / timestamp / filer roles, named filing criteria met (audited pack cited, the named audited period pack stated, the named opinion or assurance conclusion stated as applicable, the named regulator / registry / lender / board filing channel stated, the named filing receipt or confirmation stated, the filing timestamp stated), dates, and an unbroken trail from the audit evidence to that filing evidence — not \"audit is done,\" not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox. Accepted means the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — evidenced by acceptance package with named entity / period / channel / filing-identifier / authority / acknowledgement roles, named acceptance criteria met (filing package cited, the named receiving authority stated, the named acceptance or completeness acknowledgement stated, the specific lodged filing stated, the entity stated, the period stated, the channel stated, the filing identifier stated), dates, and an unbroken trail from the filing evidence to that acceptance evidence — not an auto-ack that only confirms message delivery, not \"under review,\" not a draft status page, not a dashboard green, and not a CMMS checkbox — not the slide from \"we have a filing receipt\" to \"it has been accepted by the named channel.\" Filed is not accepted. A firm can be filed and still not accepted (named filing receipt exists while no named acceptance / completeness acknowledgement for that entity/period/channel/filing identifier). A firm can chase acceptance theater and still not be filed (an acceptance claim or auto-ack exists while no lodging receipt for that entity/period/channel). An acceptance claim alone is not proof the named filing evidence was on the file. A filing package alone is not acceptance of that filed successor outcome. Filing evidence alone is not acceptance of that filed successor outcome. A filing receipt is not an acceptance acknowledgement. A draft upload is not this filed. An email saying we sent it is not this filed. An auto-ack that only confirms message delivery is not this accepted. Under review is not this accepted. A draft status page is not this accepted. A dashboard green is not this accepted. A CMMS checkbox is not this accepted. A verbal \"it has been accepted by the named channel\" alone is neither. Refuse the slide from \"we have a filing receipt\" to \"it has been accepted by the named channel.\" This split is filed versus accepted. Keep audited from Audited Is Not Filed distinct from filed and from accepted. Keep reported from Reported Is Not Audited distinct from filed and from accepted. Keep this filed distinct from the successor-spine Audited Is Not Filed. Keep this accepted distinct from Complete Is Not Accepted and from Accepted Is Not Verified. This accepted is channel acceptance of a lodged filing. Keep this filed distinct from the work-order or incident closed in Closed Is Not Resolved. This essay does not give that filed a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse filed into accepted. This essay does not collapse accepted into filed. This filed is the lodging-receipt step after Audited Is Not Filed.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-audited-is-not-filed',
     title: 'Audited Is Not Filed',
     description: "Audited is not filed. Audited means, on the industrial assurance spine, an independent named auditor / assurance provider has issued a named opinion or assurance conclusion on that named period's financial statements (or named scoped assertion) for that named entity, covering that named line (or the statements that include it), with an unbroken evidence trail to the reported pack and recognition evidence — evidenced by audit opinion package with named entity / period / line / auditor / opinion / assurance-conclusion roles, named audit criteria met (reported pack cited, recognition evidence cited, the named opinion or assurance conclusion stated, the named period's financial statements or named scoped assertion stated, the named entity stated, the named line or the statements that include it stated), dates, and an unbroken trail from the reported pack and recognition evidence to that audit evidence — not a management pack alone, not an internal controller close attestation alone, not \"we're audit-ready,\" not a dashboard green, and not a CMMS checkbox. Filed means that named audited period pack (statements + named opinion/assurance conclusion as applicable) has been lodged with the named regulator / registry / lender / board filing channel for that named entity and period, with a named filing receipt / confirmation, filing timestamp, and unbroken trail back to the audited pack — evidenced by filing package with named entity / period / channel / receipt / timestamp / filer roles, named filing criteria met (audited pack cited, the named audited period pack stated, the named opinion or assurance conclusion stated as applicable, the named regulator / registry / lender / board filing channel stated, the named filing receipt or confirmation stated, the filing timestamp stated), dates, and an unbroken trail from the audit evidence to that filing evidence — not \"audit is done,\" not a draft upload, not an email saying we sent it, not a dashboard green, and not a CMMS checkbox — not the slide from \"we have an audit opinion\" to \"it has been filed with the named channel.\" Audited is not filed. A firm can be audited and still not filed (named opinion exists while no lodging receipt for that entity/period/channel). A firm can chase filing theater and still not be audited (a lodging claim or draft upload exists while no independent named opinion covers that period/entity/line). A filing claim alone is not proof the named audit evidence was on the file. An audit opinion package alone is not a filing of that audited successor outcome. Audit evidence alone is not a filing of that audited successor outcome. A named opinion is not a filing receipt. A management pack alone is not this audited. An internal controller close attestation alone is not this audited. A sentence that says we're audit-ready is not this audited. A dashboard green is not this filed. A CMMS checkbox is not this filed. A draft upload is not this filed. An email saying we sent it is not this filed. A verbal \"it has been filed with the named channel\" alone is neither. Refuse the slide from \"we have an audit opinion\" to \"it has been filed with the named channel.\" This split is audited versus filed. Keep reported from Reported Is Not Audited distinct from audited and from filed. Keep this audited distinct from the successor-spine Reported Is Not Audited. Keep this reported distinct from the filing-spine Recognized Is Not Reported and from Reported Is Not Audited. Keep this audited distinct from the filing-spine Reported Is Not Audited and from Audited Is Not Filed. Keep this audited distinct from the work-order or incident closed in Closed Is Not Resolved. Keep reported distinct from audited and from filed. This essay does not give that reported a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse audited into filed. This essay does not collapse filed into audited. This audited is the named-opinion step after Reported Is Not Audited.",
@@ -1904,12 +1913,29 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
-  'successor-audited-is-not-filed': {
-    relatedSlug: 'successor-reported-is-not-audited',
-    relatedNote: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform from an independent or internal audit trail that can re-perform that reported figure against source documents, sampling, and control evidence for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. This essay does not give that audited a new meaning inside that essay. Filed is the next refusal on the industrial assurance spine.',
+  'successor-filed-is-not-accepted': {
+    relatedSlug: 'successor-audited-is-not-filed',
+    relatedNote: 'Audited is not filed. The successor-spine prior essay separates an independent named auditor or assurance provider named opinion or assurance conclusion on that named period financial statements, or a named scoped assertion, for that named entity, covering that named line or the statements that include it, from that named audited period pack lodged with the named regulator, registry, lender, or board filing channel with a named filing receipt or confirmation, filing timestamp, and an unbroken trail back to the audited pack. This essay does not rewrite that thesis. This essay does not give that filed a new meaning. Accepted is the next refusal on the industrial assurance spine.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'accepted-is-not-posted',
+        note: 'Accepted is not posted. Forward reading on the filing spine separates a named acceptance or completeness acknowledgement from a named public posting on the disclosure system or registry of record. This essay does not rewrite that thesis. The next successor route for Accepted Is Not Posted stays in prose only.',
+      },
+      {
+        slug: 'complete-is-not-accepted',
+        note: 'Complete is not accepted. That essay separates measured completeness of an acceptance pack from named human sign-off of that pack. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that human sign-off.',
+      },
+      {
+        slug: 'accepted-is-not-verified',
+        note: 'Accepted is not verified. That essay separates named human sign-off of an acceptance pack from an independent evidence check. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that sign-off.',
+      },
+      {
+        slug: 'successor-reported-is-not-audited',
+        note: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward from an independent or internal audit trail for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
       {
         slug: 'successor-recognized-is-not-reported',
         note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
@@ -2012,7 +2038,180 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
       },
       {
         slug: 'filed-is-not-accepted',
-        note: 'Filed is not accepted. Forward reading on the filing spine separates a lodged filing with a named receipt from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. The next successor route for Filed Is Not Accepted stays in prose only.',
+        note: 'Filed is not accepted. The filing-spine counterpart keeps the same distinction: a named filing receipt versus a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance for the next named assurance window from instrument-required guarantee of that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this accepted into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this accepted into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this accepted into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this accepted into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
+  'successor-audited-is-not-filed': {
+    relatedSlug: 'successor-reported-is-not-audited',
+    relatedNote: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform from an independent or internal audit trail that can re-perform that reported figure against source documents, sampling, and control evidence for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. This essay does not give that audited a new meaning inside that essay. Filed is the next refusal on the industrial assurance spine.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-filed-is-not-accepted',
+        note: 'Filed is not accepted. The next refusal on this industrial assurance spine separates that named audited period pack lodged with the named regulator, registry, lender, or board filing channel, with a named filing receipt or confirmation, filing timestamp, and an unbroken trail back to the audited pack, from a named acceptance or completeness acknowledgement issued by the named receiving authority for that specific lodged filing. This essay does not rewrite that thesis. This essay does not give that accepted a new meaning. Keep audited from Audited Is Not Filed and reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
+      {
+        slug: 'successor-recognized-is-not-reported',
+        note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recognized-is-not-reported',
+        note: 'Recognized is not reported. The filing-spine prior essay separates earned revenue recognized under the named acceptance rule from that named recognized amount appearing in the named period report pack. This essay does not rewrite that thesis. This reported is the outward report a controller can re-perform, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'successor-collected-is-not-recognized',
+        note: 'Collected is not recognized. The successor-spine prior essay separates that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove from that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy. This essay does not rewrite that thesis. This essay does not give that recognized a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. The filing-spine prior essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This recognized is formal recognition of that named cash or collection event in the books under the named recognition policy, not a rewrite of that filing earned-revenue attestation.',
+      },
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The successor-spine prior essay separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that collected a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine prior essay separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'successor-reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched and cleared against the external or control source from the named period formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This audited is an independent or internal audit trail for that same entity and period, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record from those booked facts independently matched against the external or control source. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'reported-is-not-audited',
+        note: 'Reported is not audited. The filing-spine counterpart separates a named recognized amount in the period report pack from an independent auditor opinion on that period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from audited and from filed. This audited is the named opinion on the industrial assurance spine, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'audited-is-not-filed',
+        note: 'Audited is not filed. The filing-spine counterpart keeps the same distinction: a named opinion or assurance conclusion versus a lodged filing with a named receipt. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'filed-is-not-accepted',
+        note: 'Filed is not accepted. Forward reading on the filing spine separates a lodged filing with a named receipt from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. The successor essay is the next refusal on this industrial assurance spine.',
       },
       {
         slug: 'closed-is-not-resolved',
