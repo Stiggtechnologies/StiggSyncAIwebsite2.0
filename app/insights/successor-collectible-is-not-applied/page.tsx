@@ -893,6 +893,23 @@ A filing counterpart is not this collectible. A filing-spine demand letter is no
             measured result. The collectibility package does not apply the outcome.
           </p>
 
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-applied-is-not-restored"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Applied Is Not Restored
+            </Link>{' '}
+            on why applied is still not restored. That next refusal is instrument-required
+            application that applies the collectible successor-obligation outcome to the named
+            successor conditions across the next named application / remaining-obligation / warranty /
+            control window versus instrument-required restoration that restores the applied
+            successor-obligation outcome to the named successor operating condition across the next
+            named restoration / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/applied-is-not-restored.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
