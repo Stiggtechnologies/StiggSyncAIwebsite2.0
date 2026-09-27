@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorGuaranteedCollectibleIndex = slugs.indexOf('successor-guaranteed-is-not-collectible');
 const successorAssuredGuaranteedIndex = slugs.indexOf('successor-assured-is-not-guaranteed');
 const successorSustainedAssuredIndex = slugs.indexOf('successor-sustained-is-not-assured');
 const successorOperatedSustainedIndex = slugs.indexOf('successor-operated-is-not-sustained');
@@ -122,7 +123,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorAssuredGuaranteedIndex >= 0 &&
+    successorGuaranteedCollectibleIndex >= 0 &&
+    successorAssuredGuaranteedIndex > successorGuaranteedCollectibleIndex &&
     successorSustainedAssuredIndex > successorAssuredGuaranteedIndex &&
     successorOperatedSustainedIndex > successorSustainedAssuredIndex &&
     successorDeliveredOperatedIndex > successorOperatedSustainedIndex &&
@@ -225,7 +227,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -16898,7 +16900,7 @@ for (const required of successorAssuredGuaranteedPageRequired) {
 }
 
 const successorAssuredGuaranteedBlock = stepBlock('successor-assured-is-not-guaranteed');
-for (const required of ['successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+for (const required of ['successor-guaranteed-is-not-collectible', 'successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
   if (!successorAssuredGuaranteedBlock.includes(`'${required}'`)) {
     fail(`successor-assured-is-not-guaranteed related reading must cite ${required}`);
   }
@@ -16933,6 +16935,184 @@ if (filingClearedClosedPage.includes('successor-assured-is-not-guaranteed')) {
 }
 if (filingRecordedClearedPage.includes('successor-assured-is-not-guaranteed')) {
   fail('filing-spine recorded-is-not-cleared must stay off successor-assured-is-not-guaranteed');
+}
+if (!successorAssuredGuaranteedPage.includes('/insights/successor-guaranteed-is-not-collectible')) {
+  fail('successor-assured-is-not-guaranteed must point the series forward to successor-guaranteed-is-not-collectible');
+}
+
+const successorGuaranteedCollectiblePageRequired = [
+  'Guaranteed Is Not Collectible',
+  'Guaranteed is not collectible',
+  'instrument-required guarantee that undertakes the assured successor-obligation outcome for the named successor conditions across the next named guarantee / remaining-obligation / warranty / control window',
+  'guarantee package with named guarantor / acceptor roles',
+  'named guarantee criteria met (assurance package cited, next guarantee window named, conditions the assurance must stand behind stated, residual ownership still named)',
+  'unbroken trail from the assurance evidence to that guarantee evidence',
+  'not a dashboard green tile with no guarantee authority',
+  'not a verbal "we stand behind it,"',
+  'not extending a successor undertaking with no instrument path',
+  'not a chat note that says guaranteed',
+  'not "the successor will own the miss" without instrument-required guarantee evidence',
+  'not treating assurance theater as automatic guarantee of that assured successor-obligation outcome',
+  'instrument-required collectible recovery that collects the guaranteed successor-obligation outcome for the named successor conditions across the next named collection / remaining-obligation / warranty / control window',
+  'collectibility package with named collector / acceptor roles',
+  'named collectibility criteria met (guarantee package cited, next collection window named, conditions the guarantee must collect stated, residual ownership still named)',
+  'unbroken trail from the guarantee evidence to that collectibility evidence',
+  'not a dashboard green tile with no collectibility authority',
+  'not a verbal "we collected it,"',
+  'not extending a claim letter with no instrument path',
+  'not a chat note that says collected',
+  'not "finance will book the draw" without instrument-required collectibility evidence',
+  'not treating guarantee theater as automatic collectible recovery of that guaranteed successor-obligation outcome',
+  'A firm can have instrument-required guarantee that undertakes the assured successor-obligation outcome for the named successor conditions across the next named guarantee / remaining-obligation / warranty / control window and still lack instrument-required collectible recovery that collects the guaranteed successor-obligation outcome for the named successor conditions across the next named collection / remaining-obligation / warranty / control window',
+  'A firm can be guaranteed and still not collectible',
+  'guarantee evidence exists while required collectibility evidence for the next collection window is missing',
+  'A firm can claim collectibility theater and still not be guaranteed',
+  'Guarantee evidence alone is not collectible recovery of that guaranteed successor-obligation outcome',
+  'A collectibility claim alone is not proof the named guarantee evidence was on the file',
+  'The guaranteed practice is not the collectible practice',
+  'What a collectibility record is allowed to be',
+  'Named guaranteed is not collectible',
+  'Sync does not measure collectible',
+  'Sync does not measure collectible for the customer',
+  'Sync does not measure guaranteed or collectible for the customer',
+  'Sync may surface a guarantee record or a collectibility record',
+  'does not collapse collectible into guaranteed',
+  'does not collapse guaranteed into collectible',
+  'does not collapse this guaranteed into a binding guarantee',
+  'does not collapse this guaranteed into collectible recovery',
+  'does not collapse this collectible into collectible recovery',
+  'does not collapse this collectible into application of recovered funds',
+  'does not collapse this assured into forward assurance',
+  'does not collapse this assured into a binding guarantee',
+  'does not collapse into Assured Is Not Guaranteed',
+  'does not rewrite Assured Is Not Guaranteed',
+  'does not collapse into Guaranteed Is Not Collectible',
+  'does not rewrite Guaranteed Is Not Collectible',
+  'does not collapse into Collectible Is Not Applied',
+  'does not rewrite Collectible Is Not Applied',
+  'does not collapse into Sustained Is Not Assured',
+  'does not rewrite Sustained Is Not Assured',
+  'does not collapse into Operated Is Not Sustained',
+  'does not rewrite Operated Is Not Sustained',
+  'does not collapse into Delivered Is Not Operated',
+  'does not rewrite Delivered Is Not Operated',
+  'does not collapse into Closed Is Not Delivered',
+  'does not rewrite Closed Is Not Delivered',
+  'does not collapse into Cleared Is Not Closed',
+  'does not rewrite Cleared Is Not Closed',
+  'does not collapse into Recorded Is Not Cleared',
+  'does not rewrite Recorded Is Not Cleared',
+  'does not collapse into Released Is Not Recorded',
+  'does not rewrite Released Is Not Recorded',
+  'does not collapse into Remediated Is Not Released',
+  'does not rewrite Remediated Is Not Released',
+  'does not collapse into Enforced Is Not Remediated',
+  'does not rewrite Enforced Is Not Remediated',
+  'does not collapse into Binding Is Not Enforced',
+  'does not rewrite Binding Is Not Enforced',
+  'does not collapse into Effective Is Not Binding',
+  'does not rewrite Effective Is Not Binding',
+  'does not collapse into Restored Is Not Accepted',
+  'does not rewrite Restored Is Not Accepted',
+  'does not collapse into Governed Is Not Transferable',
+  'does not rewrite Governed Is Not Transferable',
+  'does not collapse into Transferable Is Not Rehearsed',
+  'does not rewrite Transferable Is Not Rehearsed',
+  'does not collapse into Transferable Is Not Binding',
+  'does not rewrite Transferable Is Not Binding',
+  'instrument-required collectible recovery that collects the guaranteed successor-obligation outcome for the named successor conditions across the next named collection / remaining-obligation / warranty / control window, trailed from the guarantee evidence',
+  'separates instrument-required guarantee that undertakes the assured successor-obligation outcome for the named successor conditions across the next named guarantee / remaining-obligation / warranty / control window from',
+  '/insights/successor-assured-is-not-guaranteed',
+  '/insights/successor-sustained-is-not-assured',
+  '/insights/successor-operated-is-not-sustained',
+  '/insights/successor-delivered-is-not-operated',
+  '/insights/successor-closed-is-not-delivered',
+  '/insights/successor-cleared-is-not-closed',
+  '/insights/successor-recorded-is-not-cleared',
+  '/insights/successor-released-is-not-recorded',
+  '/insights/successor-remediated-is-not-released',
+  '/insights/successor-enforced-is-not-remediated',
+  '/insights/successor-binding-is-not-enforced',
+  '/insights/transferable-is-not-binding',
+  '/insights/remediated-is-not-released',
+  '/insights/released-is-not-recorded',
+  '/insights/recorded-is-not-cleared',
+  '/insights/cleared-is-not-closed',
+  '/insights/closed-is-not-delivered',
+  '/insights/delivered-is-not-operated',
+  '/insights/operated-is-not-sustained',
+  '/insights/sustained-is-not-assured',
+  '/insights/assured-is-not-guaranteed',
+  '/insights/guaranteed-is-not-collectible',
+  '/insights/collectible-is-not-applied',
+  '/insights/enforced-is-not-remediated',
+  '/insights/binding-is-not-enforced',
+  '/insights/effective-is-not-binding',
+  '/insights/restored-is-not-accepted',
+  'Evidence from the plant beats the guarantee record when the record is being used as collectible',
+  'Evidence from the plant beats the collectibility claim when the claim is being used as proof the named guarantee of that successor-obligation outcome was on the file',
+  'treat guaranteed as collectible as Learning credit',
+  'Sync refuses to pretend guaranteed or collectible is a status light',
+  'Sync does not deem collectible for the customer',
+  'Sync must not auto-deem-collectible',
+  'A verbal "we collected it" alone is neither',
+  'collectibility theater',
+  'next collection window named',
+  'This split is guaranteed versus collectible',
+  'practice record that says guaranteed is collectible',
+  'Assured Is Not Guaranteed',
+  'Assured is not guaranteed',
+  'This essay does not rewrite that thesis',
+  'Collectible Is Not Applied',
+  'industrial control and transfer spine',
+];
+
+const successorGuaranteedCollectiblePage = read('app/insights/successor-guaranteed-is-not-collectible/page.tsx');
+for (const required of successorGuaranteedCollectiblePageRequired) {
+  if (!successorGuaranteedCollectiblePage.includes(required)) {
+    fail(`successor-guaranteed-is-not-collectible page must include ${required}`);
+  }
+}
+
+const successorGuaranteedCollectibleBlock = stepBlock('successor-guaranteed-is-not-collectible');
+for (const required of ['successor-assured-is-not-guaranteed', 'successor-sustained-is-not-assured', 'successor-operated-is-not-sustained', 'successor-delivered-is-not-operated', 'successor-closed-is-not-delivered', 'successor-cleared-is-not-closed', 'successor-recorded-is-not-cleared', 'successor-released-is-not-recorded', 'successor-remediated-is-not-released', 'successor-enforced-is-not-remediated', 'successor-binding-is-not-enforced', 'transferable-is-not-binding', 'effective-is-not-binding', 'binding-is-not-enforced', 'enforced-is-not-remediated', 'remediated-is-not-released', 'released-is-not-recorded', 'recorded-is-not-cleared', 'cleared-is-not-closed', 'closed-is-not-delivered', 'delivered-is-not-operated', 'operated-is-not-sustained', 'sustained-is-not-assured', 'assured-is-not-guaranteed', 'guaranteed-is-not-collectible', 'collectible-is-not-applied', 'restored-is-not-accepted', 'governed-is-not-transferable', 'transferable-is-not-rehearsed']) {
+  if (!successorGuaranteedCollectibleBlock.includes(`'${required}'`)) {
+    fail(`successor-guaranteed-is-not-collectible related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorGuaranteedCollectibleBlock)) {
+  fail('successor-guaranteed-is-not-collectible related reading must include the Strategic Pilot');
+}
+if (successorGuaranteedCollectibleBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-guaranteed-is-not-collectible next step is the Field Manual');
+}
+
+if (read('app/insights/guaranteed-is-not-collectible/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine guaranteed-is-not-collectible must stay off successor-guaranteed-is-not-collectible');
+}
+if (read('app/insights/collectible-is-not-applied/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine collectible-is-not-applied must stay off successor-guaranteed-is-not-collectible');
+}
+if (read('app/insights/assured-is-not-guaranteed/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine assured-is-not-guaranteed must stay off successor-guaranteed-is-not-collectible');
+}
+if (read('app/insights/sustained-is-not-assured/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine sustained-is-not-assured must stay off successor-guaranteed-is-not-collectible');
+}
+if (read('app/insights/operated-is-not-sustained/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine operated-is-not-sustained must stay off successor-guaranteed-is-not-collectible');
+}
+if (read('app/insights/delivered-is-not-operated/page.tsx').includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine delivered-is-not-operated must stay off successor-guaranteed-is-not-collectible');
+}
+if (filingClosedDeliveredPage.includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine closed-is-not-delivered must stay off successor-guaranteed-is-not-collectible');
+}
+if (filingClearedClosedPage.includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine cleared-is-not-closed must stay off successor-guaranteed-is-not-collectible');
+}
+if (filingRecordedClearedPage.includes('successor-guaranteed-is-not-collectible')) {
+  fail('filing-spine recorded-is-not-cleared must stay off successor-guaranteed-is-not-collectible');
 }
 
 function readingSlugs(name) {
