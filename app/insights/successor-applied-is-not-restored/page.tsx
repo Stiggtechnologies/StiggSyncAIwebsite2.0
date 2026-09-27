@@ -919,6 +919,19 @@ A filing counterpart is not this applied. A filing-spine demand letter is not th
             measured result. The application package does not restore the outcome.
           </p>
 
+
+          <p>
+            The series continues with{' '}
+            <Link
+              href="/insights/successor-restored-is-not-accepted"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Restored Is Not Accepted
+            </Link>{' '}
+            on why restored is still not accepted. That next refusal is instrument-required restoration that restores the applied successor-obligation outcome to the named successor operating condition across the next named restoration / remaining-obligation / warranty / control window versus instrument-required acceptance that accepts the restored successor-obligation outcome for the named successor return-to-service bar across the next named acceptance / remaining-obligation / warranty / control window. It is not the filing-spine
+            essay at /insights/restored-is-not-accepted.
+          </p>
+
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
             <p className="text-gray-400 mb-6">
