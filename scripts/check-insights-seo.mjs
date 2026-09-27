@@ -20,6 +20,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
   (match) => match[1],
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
+const successorRehearsedRecoverableIndex = slugs.indexOf('successor-rehearsed-is-not-recoverable');
 const successorTransferableRehearsedIndex = slugs.indexOf('successor-transferable-is-not-rehearsed');
 const successorGovernedTransferableIndex = slugs.indexOf('successor-governed-is-not-transferable');
 const successorOwnedGovernedIndex = slugs.indexOf('successor-owned-is-not-governed');
@@ -135,7 +136,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
-    successorTransferableRehearsedIndex >= 0 &&
+    successorRehearsedRecoverableIndex >= 0 &&
+    successorTransferableRehearsedIndex > successorRehearsedRecoverableIndex &&
     successorGovernedTransferableIndex > successorTransferableRehearsedIndex &&
     successorOwnedGovernedIndex > successorGovernedTransferableIndex &&
     successorCompoundedOwnedIndex > successorOwnedGovernedIndex &&
@@ -251,7 +253,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-rehearsed-is-not-recoverable, then successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -19173,6 +19175,176 @@ if (read('app/insights/successor-transferable-is-not-binding/page.tsx').includes
   fail('industrial control loop successor-transferable-is-not-binding must stay off the scale successor essay');
 }
 if (read('app/insights/successor-binding-is-not-enforced/page.tsx').includes('successor-transferable-is-not-rehearsed')) {
+  fail('industrial control loop successor-binding-is-not-enforced must stay off the scale successor essay');
+}
+
+
+
+const successorRehearsedRecoverablePageRequired = [
+  "Rehearsed Is Not Recoverable",
+  "Rehearsed is not recoverable",
+  "industrial scale spine",
+  "the instrument-required rehearsal the successor-spine Transferable Is Not Rehearsed already names",
+  "the transfer has been practiced under load with evidence",
+  "dry-run, failover, and authority handoff actually exercised",
+  "rehearsal package with named rehearsal lead / transferor / transferee / dry-run / failover / authority-handoff roles",
+  "named rehearsal criteria met (transfer package cited, next rehearsal window named, the dry-run, failover, and authority handoff actually exercised under load stated, evidence the transfer was practiced under load stated)",
+  "unbroken trail from the transfer evidence to that rehearsal evidence",
+  "the operating state can be restored after disruption with named recovery evidence",
+  "recovery package with named recovery lead / rehearsal lead / restore / disruption / operating-state roles",
+  "named recovery criteria met (rehearsal package cited, next recovery window named, the operating state restored after disruption stated, named recovery evidence stated)",
+  "unbroken trail from the rehearsal evidence to that recovery evidence",
+  "not the slide from &quot;it is rehearsed&quot; to &quot;it is recoverable,&quot;",
+  "not a dry-run treated as a restore",
+  "not a failover diagram treated as recovery evidence",
+  "not a tabletop score treated as recovery",
+  "not a recovery plan nobody executed after disruption",
+  "A firm can be rehearsed and still not recoverable",
+  "rehearsal evidence exists while required recovery evidence for the next recovery window is missing",
+  "A rehearsal package alone is not recovery of that rehearsed successor outcome",
+  "Rehearsal evidence alone is not recovery of that rehearsed successor outcome",
+  "A recovery claim alone is not proof the named rehearsal evidence was on the file",
+  "A rehearsed transfer is not a recoverable operating state.",
+  "Refuse the slide from &quot;it is rehearsed&quot; to &quot;it is recoverable.&quot;",
+  "The rehearsed practice is not the recoverable practice",
+  "What a recovery record is allowed to be",
+  "Named rehearsed is not recoverable",
+  "This split is rehearsed versus recoverable",
+  "Sync does not measure rehearsal",
+  "Sync does not measure recovery",
+  "Sync does not measure rehearsal or recovery for the customer",
+  "Sync may surface a rehearsal record or a recovery record",
+  "does not collapse rehearsed into recoverable",
+  "does not collapse recoverable into rehearsed",
+  "does not collapse into Transferable Is Not Rehearsed",
+  "does not rewrite Transferable Is Not Rehearsed",
+  "does not collapse into Governed Is Not Transferable",
+  "does not rewrite Governed Is Not Transferable",
+  "does not collapse into Owned Is Not Governed",
+  "does not rewrite Owned Is Not Governed",
+  "does not collapse into Compounded Is Not Owned",
+  "does not rewrite Compounded Is Not Owned",
+  "does not collapse into Rehearsed Is Not Recoverable",
+  "does not rewrite Rehearsed Is Not Recoverable",
+  "does not claim a successor route for Recoverable Is Not Assured",
+  "does not collapse into Recoverable Is Not Assured",
+  "does not rewrite Recoverable Is Not Assured",
+  "does not collapse into Transferable Is Not Binding",
+  "does not rewrite Transferable Is Not Binding",
+  "does not recreate the industrial control and transfer successor loop",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not restate Transferable Is Not Binding or Binding Is Not Enforced as this claim",
+  "does not collapse into Scaled Is Not Compounded",
+  "does not rewrite Scaled Is Not Compounded",
+  "does not collapse into Sustained Is Not Scaled",
+  "does not rewrite Sustained Is Not Scaled",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Sustained Is Not Assured",
+  "does not rewrite Sustained Is Not Assured",
+  "does not collapse into Accepted Is Not Sustained",
+  "does not rewrite Accepted Is Not Sustained",
+  "does not collapse into Sustained Is Not Transferable",
+  "does not rewrite Sustained Is Not Transferable",
+  "Keep this rehearsed distinct from the successor-spine Transferable Is Not Rehearsed",
+  "This essay does not give that rehearsed a new meaning",
+  "/insights/successor-transferable-is-not-rehearsed",
+  "/insights/transferable-is-not-rehearsed",
+  "/insights/successor-governed-is-not-transferable",
+  "/insights/governed-is-not-transferable",
+  "/insights/successor-owned-is-not-governed",
+  "/insights/owned-is-not-governed",
+  "/insights/successor-compounded-is-not-owned",
+  "/insights/compounded-is-not-owned",
+  "/insights/rehearsed-is-not-recoverable",
+  "/insights/successor-scaled-is-not-compounded",
+  "/insights/scaled-is-not-compounded",
+  "/insights/successor-sustained-is-not-scaled",
+  "/insights/sustained-is-not-scaled",
+  "/insights/successor-operated-is-not-sustained",
+  "/insights/successor-sustained-is-not-assured",
+  "/insights/successor-accepted-is-not-sustained",
+  "/insights/successor-sustained-is-not-transferable",
+  "/insights/successor-transferable-is-not-binding",
+  "/insights/successor-binding-is-not-enforced",
+  "/insights/adopted-is-not-sustained",
+  "/insights/operated-is-not-sustained",
+  "/insights/sustained-is-not-assured",
+  "/insights/recoverable-is-not-assured",
+  "/insights/transferable-is-not-binding",
+  "/insights/binding-is-not-enforced",
+  "Evidence from the plant beats the rehearsal record when the record is being used as recoverable",
+  "Evidence from the plant beats the recovery claim when the claim is being used as proof the named rehearsal of that successor outcome was on the file",
+  "Evidence from the plant beats the note",
+  "treat rehearsed as recoverable as Learning credit",
+  "Sync refuses to pretend rehearsed or recoverable is a status light",
+  "Sync does not deem recoverable for the customer",
+  "Sync must not auto-approve rehearsed actions or auto-recover the operating state",
+  "Recommend is not authorize",
+  "Surfacing is still a read",
+  "A verbal &quot;it is recoverable&quot; alone is neither",
+  "recovery theater",
+  "next recovery window named",
+  "practice record that says rehearsed is recoverable",
+  "This essay does not rewrite that thesis",
+  "who may authorize, what evidence is required, when to escalate, how exceptions are bounded, how conflicts of interest are handled, and how the owner is audited or replaced",
+  "playbooks, tooling rights, exception paths, residual claim on the learning, and audit trail still hold under the new named owner within a named window",
+  "the named handoff has been run under stress with the named successor actually exercising authority",
+  "restores the governed owned compounding system to a named service level inside a named RTO/RPO",
+  "independent, recurring verification that recovery capability still holds under the current named owner",
+];
+
+const successorRehearsedRecoverablePage = read('app/insights/successor-rehearsed-is-not-recoverable/page.tsx');
+for (const required of successorRehearsedRecoverablePageRequired) {
+  if (!successorRehearsedRecoverablePage.includes(required)) {
+    fail(`successor-rehearsed-is-not-recoverable page must include ${required}`);
+  }
+}
+if (successorRehearsedRecoverablePage.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-rehearsed-is-not-recoverable must not claim a successor route for Recoverable Is Not Assured');
+}
+
+const successorRehearsedRecoverableBlock = stepBlock('successor-rehearsed-is-not-recoverable');
+for (const required of ["successor-transferable-is-not-rehearsed", "transferable-is-not-rehearsed", "successor-governed-is-not-transferable", "governed-is-not-transferable", "successor-owned-is-not-governed", "owned-is-not-governed", "successor-compounded-is-not-owned", "compounded-is-not-owned", "rehearsed-is-not-recoverable", "successor-scaled-is-not-compounded", "scaled-is-not-compounded", "successor-sustained-is-not-scaled", "sustained-is-not-scaled", "successor-operated-is-not-sustained", "successor-sustained-is-not-assured", "successor-accepted-is-not-sustained", "successor-sustained-is-not-transferable", "successor-transferable-is-not-binding", "successor-binding-is-not-enforced", "adopted-is-not-sustained", "operated-is-not-sustained", "sustained-is-not-assured", "recoverable-is-not-assured", "transferable-is-not-binding", "binding-is-not-enforced"]) {
+  if (!successorRehearsedRecoverableBlock.includes(`'${required}'`)) {
+    fail(`successor-rehearsed-is-not-recoverable related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorRehearsedRecoverableBlock)) {
+  fail('successor-rehearsed-is-not-recoverable related reading must include the Strategic Pilot');
+}
+if (successorRehearsedRecoverableBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-rehearsed-is-not-recoverable next step is the Field Manual');
+}
+if (successorRehearsedRecoverableBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-rehearsed-is-not-recoverable must not claim a successor route for Recoverable Is Not Assured');
+}
+if (read('app/insights/rehearsed-is-not-recoverable/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('filing-spine rehearsed-is-not-recoverable must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/recoverable-is-not-assured/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('filing-spine recoverable-is-not-assured must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/transferable-is-not-rehearsed/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('filing-spine transferable-is-not-rehearsed must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/governed-is-not-transferable/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('filing-spine governed-is-not-transferable must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/transferable-is-not-binding/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('filing-spine transferable-is-not-binding must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/successor-transferable-is-not-rehearsed/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('successor-transferable-is-not-rehearsed must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (read('app/insights/successor-governed-is-not-transferable/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('successor-governed-is-not-transferable must stay off successor-rehearsed-is-not-recoverable');
+}
+if (read('app/insights/successor-transferable-is-not-binding/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
+  fail('industrial control loop successor-transferable-is-not-binding must stay off the scale successor essay');
+}
+if (read('app/insights/successor-binding-is-not-enforced/page.tsx').includes('successor-rehearsed-is-not-recoverable')) {
   fail('industrial control loop successor-binding-is-not-enforced must stay off the scale successor essay');
 }
 
