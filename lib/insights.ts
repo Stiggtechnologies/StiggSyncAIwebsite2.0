@@ -11,9 +11,18 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-controlled-is-not-distributed',
+    title: 'Controlled Is Not Distributed',
+    description: "Controlled is not distributed. Controlled means that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control — an executed controllability instrument — not merely a compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates — the controlled the successor-spine Compounded Is Not Controlled already names. Distributed means that capital, product, and operating rights can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet — an executed distributability instrument (an allocation schedule that places named capital, product, and operating rights with a named partner or channel, a territory instrument that bounds where those rights may be exercised, a performance rule that releases or recalls the placement when named performance is met or missed, or a distribution binder that places rights only when allocation, territory, and performance rules are executed and enforceable) — not merely a controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed. Not the slide from \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control\" to \"it is distributed because capital, product, and operating rights can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet.\" Controlled is not distributed. A firm can be controlled and still not distributed. A firm can chase distributability theater and still not be controlled. Compounded Is Not Controlled already names the prior split. This essay does not rewrite that thesis. A controllability package alone is not distributed of that controlled successor outcome. A controllability is not a distributability. Refuse the slide from \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control\" to \"it is distributed because capital, product, and operating rights can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet.\" This split is controlled versus distributed. Keep this commercial distributed distinct from Solvency Is Not Liquidity, from Liquidity Is Not Flexibility, from ARR Is Not Cash, from Cash Is Not Runway, from Cash Is Not Margin, from Closure Is Not Cash, from Accountability Is Not Ownership, from Accountability Is Not Closure, from Owned Is Not Governed, from Governed Is Not Transferable, from Binding Is Not Enforced, from Compounded Is Not Owned, from Control Is Not Closure, from Ownership Is Not Control, from Expanded Is Not Defended, and from Defended Is Not Owned. This distributed is not the defense Expanded Is Not Defended already names. This distributed is not the defense Defended Is Not Owned already names. This controlled is not the control Control Is Not Closure already names. This controlled is not the control Ownership Is Not Control already names. This compounded is not the growth-loop Compounded Is Not Owned already names. This compounded is not a growth-loop filing spine. This essay does not collapse into those filing spines. This essay does not rewrite them. This essay does not create a filing spine for Controlled Is Not Distributed. This refusal sits on the commercial spine. This is the distributability spine after that controllability. Distributed Is Not Defended may be named in prose only at /insights/successor-distributed-is-not-defended. This essay does not implement that page.",
+    excerpt: "Controlled is not distributed. Controlled means that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control, by an executed controllability instrument. Distributed means that capital, product, and operating rights can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet, by an executed distributability instrument: an allocation schedule that places named capital, product, and operating rights with a named partner or channel, a territory instrument that bounds where those rights may be exercised, a performance rule that releases or recalls the placement when named performance is met or missed, or a distribution binder that places rights only when allocation, territory, and performance rules are executed and enforceable. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-compounded-is-not-controlled',
     title: 'Compounded Is Not Controlled',
-    description: "Compounded is not controlled. Compounded means that closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose — an executed compoundability instrument — not merely a one-time close, a single draw, or a static facility balance — the compounded the successor-spine Closeable Is Not Compounded already names. A one-time close, a single draw, or a static facility balance is not compounded. Controlled means that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control — an executed controllability instrument (an underwrite-standard and concentration-limit schedule operators can set before the next named draw, a draw/stop rule that halts a named redeploy when the book exceeds a named band, an audit log showing collection discipline and redeploy gates were enforced across the cycle, or a control binder that releases the next redeploy only when underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates are set, enforced, and audited) — not merely a compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. Not the slide from \"it is compounded because closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose\" to \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control.\" Compounded is not controlled. A firm can be compounded and still not controlled. A firm can chase controllability theater and still not be compounded. Closeable Is Not Compounded already names the prior split. This essay does not rewrite that thesis. A compoundability package alone is not controlled of that compounded successor outcome. A compoundability is not a controllability. Refuse the slide from \"it is compounded because closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose\" to \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control.\" This split is compounded versus controlled. Keep this commercial controlled distinct from Solvency Is Not Liquidity, from Liquidity Is Not Flexibility, from ARR Is Not Cash, from Cash Is Not Runway, from Cash Is Not Margin, from Closure Is Not Cash, from Accountability Is Not Ownership, from Accountability Is Not Closure, from Owned Is Not Governed, from Governed Is Not Transferable, from Binding Is Not Enforced, from Compounded Is Not Owned, from Control Is Not Closure, and from Ownership Is Not Control. This controlled is not the control Control Is Not Closure already names. This controlled is not the control Ownership Is Not Control already names. This compounded is not the growth-loop Compounded Is Not Owned already names. This compounded is not a growth-loop filing spine. This compounded is not the compounded Scaled Is Not Compounded or Compounded Is Not Owned already names. This essay does not collapse into those filing spines. This essay does not rewrite them. This essay does not create a filing spine for Compounded Is Not Controlled. This refusal sits on the commercial spine. This is the controllability spine after that compoundability. Controlled Is Not Distributed may be named in prose only at /insights/successor-controlled-is-not-distributed. This essay does not implement that page.",
+    description: "Compounded is not controlled. Compounded means that closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose — an executed compoundability instrument — not merely a one-time close, a single draw, or a static facility balance — the compounded the successor-spine Closeable Is Not Compounded already names. A one-time close, a single draw, or a static facility balance is not compounded. Controlled means that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control — an executed controllability instrument (an underwrite-standard and concentration-limit schedule operators can set before the next named draw, a draw/stop rule that halts a named redeploy when the book exceeds a named band, an audit log showing collection discipline and redeploy gates were enforced across the cycle, or a control binder that releases the next redeploy only when underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates are set, enforced, and audited) — not merely a compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. Not the slide from \"it is compounded because closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose\" to \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control.\" Compounded is not controlled. A firm can be compounded and still not controlled. A firm can chase controllability theater and still not be compounded. Closeable Is Not Compounded already names the prior split. This essay does not rewrite that thesis. A compoundability package alone is not controlled of that compounded successor outcome. A compoundability is not a controllability. Refuse the slide from \"it is compounded because closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose\" to \"it is controlled because operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control.\" This split is compounded versus controlled. Keep this commercial controlled distinct from Solvency Is Not Liquidity, from Liquidity Is Not Flexibility, from ARR Is Not Cash, from Cash Is Not Runway, from Cash Is Not Margin, from Closure Is Not Cash, from Accountability Is Not Ownership, from Accountability Is Not Closure, from Owned Is Not Governed, from Governed Is Not Transferable, from Binding Is Not Enforced, from Compounded Is Not Owned, from Control Is Not Closure, and from Ownership Is Not Control. This controlled is not the control Control Is Not Closure already names. This controlled is not the control Ownership Is Not Control already names. This compounded is not the growth-loop Compounded Is Not Owned already names. This compounded is not a growth-loop filing spine. This compounded is not the compounded Scaled Is Not Compounded or Compounded Is Not Owned already names. This essay does not collapse into those filing spines. This essay does not rewrite them. This essay does not create a filing spine for Compounded Is Not Controlled. This refusal sits on the commercial spine. This is the controllability spine after that compoundability. The next refusal on this commercial spine is Controlled Is Not Distributed at /insights/successor-controlled-is-not-distributed.",
     excerpt: "Compounded is not controlled. Compounded means that closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose, by an executed compoundability instrument. Controlled means that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control, by an executed controllability instrument: an underwrite-standard and concentration-limit schedule operators can set before the next named draw, a draw/stop rule that halts a named redeploy when the book exceeds a named band, an audit log showing collection discipline and redeploy gates were enforced across the cycle, or a control binder that releases the next redeploy only when those levers are set, enforced, and audited. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled.",
     category: 'Decision Case',
     readTime: '8 min read',
@@ -2084,12 +2093,326 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-controlled-is-not-distributed': {
+    relatedSlug: 'successor-compounded-is-not-controlled',
+    relatedNote: 'Compounded is not controlled. The successor-spine prior essay separates that closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose by an executed compoundability instrument from operators who can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control by an executed controllability instrument. This essay does not rewrite that thesis. This essay does not give that controlled a new meaning. Distributed is the next refusal on this commercial spine. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed. Keep this commercial distributed distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-closeable-is-not-compounded',
+        note: 'Closeable is not compounded. The successor-spine prior essay separates that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument from that closed capital re-entering a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose by an executed compoundability instrument. This essay does not rewrite that thesis. This essay does not give that compounded a new meaning. Controlled is the commercial control Compounded Is Not Controlled already names. A one-time close, a single draw, or a static facility balance is not compounded. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. Keep this commercial controlled distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-financeable-is-not-closeable',
+        note: 'Financeable is not closeable. The successor-spine prior essay separates that insurable residual-risk cover funded or underwritten for the next draw against named cash-flow evidence, covenants, and recourse by an executed financeability instrument from that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument. This essay does not rewrite that thesis. This essay does not give that closeable a new meaning. Compounded is the commercial compound Closeable Is Not Compounded already names. A term sheet with no conditions precedent satisfied, credit appetite with no executed docs, an underwriting indication that does not move capital, or a commitment letter without funding or settlement mechanics is not closeable. A one-time close, a single draw, or a static facility balance is not compounded. Keep this commercial compounded distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-insurable-is-not-financeable',
+        note: 'Insurable is not financeable. The successor-spine prior essay separates that governable spend system underwritten so residual risk after enforceable stops is transferable to a counterparty by an executed insurability instrument from that insurable residual-risk cover funded or underwritten for the next draw against named cash-flow evidence, covenants, and recourse by an executed financeability instrument. This essay does not rewrite that thesis. This essay does not give that financeable a new meaning. Closeable is the commercial close Financeable Is Not Closeable already names. An insurance certificate with no counterparty committed to fund the next draw, a cover limit with no cash-flow evidence a lender will underwrite, a binder without covenants or recourse, or a claims pack that cannot support the next draw is not financeable. A term sheet with no conditions precedent satisfied, credit appetite with no executed docs, an underwriting indication that does not move capital, or a commitment letter without funding or settlement mechanics is not closeable. Keep this commercial closeable distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-governable-is-not-insurable',
+        note: 'Governable is not insurable. The successor-spine prior essay separates that auditable spend trail steered by SyncAI leadership with enforceable rules, stops, and reallocations before the next draw by an executed governability instrument from that governable spend system underwritten so residual risk after enforceable stops is transferable to a counterparty by an executed insurability instrument. This essay does not rewrite that thesis. This essay does not give that insurable a new meaning. Financeable is the commercial funding Insurable Is Not Financeable already names. A kill-switch with no residual-risk cover, a policy threshold that stops spend but leaves uncovered catastrophic tail, a board exception register without a named indemnity, bond, or insurance attachment, or a governance dashboard that cannot produce a claims pack for a dated loss is not insurable.',
+      },
+      {
+        slug: 'successor-auditable-is-not-governable',
+        note: 'Auditable is not governable. The successor-spine prior essay separates that accountable spend independently reconstructed and verified by a third party or SyncAI board or finance from durable records without relying on the spend owner memory by an executed auditability instrument from that auditable spend trail steered by SyncAI leadership with enforceable rules, stops, and reallocations before the next draw by an executed governability instrument. This essay does not rewrite that thesis. This essay does not give that governable a new meaning. Insurable is the commercial cover Governable Is Not Insurable already names. A perfect exportable ledger that nobody can pause mid-burn, a post-hoc variance report with no policy consequence, an audit pack that only informs after cash is gone, or a dashboard without an enforceable stop is not governable. A kill-switch with no residual-risk cover, a policy threshold that stops spend but leaves uncovered catastrophic tail, a board exception register without a named indemnity, bond, or insurance attachment, or a governance dashboard that cannot produce a claims pack for a dated loss is not insurable. Keep this commercial insurable distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, Reported Is Not Audited, and Audited Is Not Filed.',
+      },
+      {
+        slug: 'successor-accountable-is-not-auditable',
+        note: 'Accountable is not auditable. The successor-spine prior essay separates that deployed spend attributable to a named SyncAI owner, budget line, and commercial outcome with evidenced residual responsibility by an executed accountability instrument from that accountable spend independently reconstructed and verified by a third party or SyncAI board or finance from durable records without relying on the spend owner memory by an executed auditability instrument. This essay does not rewrite that thesis. This essay does not give that auditable a new meaning. Governable is the commercial control Auditable Is Not Governable already names. A Slack thread saying I own marketing, a dashboard filter only the owner can recreate, a verbal cost-center assignment, a spreadsheet on one laptop, or a CRM note without an exportable evidence trail is not auditable.',
+      },
+      {
+        slug: 'successor-deployable-is-not-accountable',
+        note: 'Deployable is not accountable. The successor-spine prior essay separates that liquid cash or working capital committed into a named SyncAI growth or defense use without destroying the remaining liquid, portable, or owned position by an executed deployability instrument from that deployed spend attributable to a named SyncAI owner, budget line, and commercial outcome with evidenced residual responsibility by an executed accountability instrument. This essay does not rewrite that thesis. This essay does not give that accountable a new meaning. Auditable is the commercial reconstruction Accountable Is Not Auditable already names. Deployed cash with no owner, a vendor invoice pile without SyncAI cost attribution, a CRM campaign spend total without residual owner, a verbal marketing used it, or a dashboard burn chart without who answers for the outcome is not accountable.',
+      },
+      {
+        slug: 'successor-liquid-is-not-deployable',
+        note: 'Liquid is not deployable. The successor-spine prior essay separates that portable owned commercial asset converted into usable cash or working capital for SyncAI without destroying the remaining bookable ARR by an executed liquidity instrument from that liquid cash or working capital committed into a named SyncAI growth or defense use without destroying the remaining liquid, portable, or owned position by an executed deployability instrument. This essay does not rewrite that thesis. This essay does not give that deployable a new meaning. Accountable is the commercial attribution Deployable Is Not Accountable already names. Liquid cash trapped in a restricted reserve SyncAI cannot spend, a partner escrow SyncAI cannot draw, a CRM budget available flag, a verbal we will put it into growth, or a dashboard cash total without an executed allocation path into SyncAI commercial use is not deployable.',
+      },
+      {
+        slug: 'successor-portable-is-not-liquid',
+        note: 'Portable is not liquid. The successor-spine prior essay separates that owned commercial asset moving with SyncAI across a named transfer event without losing bookable ARR by an executed portability instrument from that portable owned asset converted into usable cash or working capital for SyncAI without destroying the remaining bookable ARR by an executed liquidity instrument. This essay does not rewrite that thesis. This essay does not give that liquid a new meaning. Deployable is the commercial commitment Liquid Is Not Deployable already names. A portable book stuck behind a non-advanceable customer payable, a partner holdback SyncAI cannot monetize, a CRM cash forecast, a verbal we could factor it, or a dashboard ARR flag without an executed conversion path into SyncAI cash is not liquid.',
+      },
+      {
+        slug: 'successor-owned-is-not-portable',
+        note: 'Owned is not portable. The successor-spine prior essay separates that defended commercial position held as a durable, bookable commercial asset of SyncAI from that owned asset moving with SyncAI across a named transfer event without losing bookable ARR by an executed portability instrument. This essay does not rewrite that thesis. This essay does not give that portable a new meaning. Liquid is the commercial conversion Portable Is Not Liquid already names. An owned book trapped in a single customer portal login, a partner-only reseller seat SyncAI cannot re-home, a verbal we can take it with us, or a dashboard portable flag without an executed assignment or novation path is not portable.',
+      },
+      {
+        slug: 'successor-defended-is-not-owned',
+        note: 'Defended is not owned. The successor-spine prior essay separates that expanded commercial position protected against named competitive, pricing, or displacement pressure by an executed defense instrument from that defended position held as a durable, bookable commercial asset of SyncAI. This essay does not rewrite that thesis. This essay does not give that owned a new meaning. Portable is the commercial movement Owned Is Not Portable already names. A defended win sitting only in the customer procurement calendar, a verbal they are ours, a CRM owner field, a partner-owned reseller book that SyncAI cannot renew, or a dashboard account owned flag without SyncAI as contracting party of record is not owned.',
+      },
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is not liquidity. Different spine: firm solvency is not this commercial conversion of portable owned ARR into usable cash or working capital. This essay does not collapse into Solvency Is Not Liquidity. This essay does not rewrite Solvency Is Not Liquidity.',
+      },
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. Different spine: balance-sheet liquidity is not this executed liquidity instrument against portable SyncAI ARR. This essay does not collapse into Liquidity Is Not Flexibility. This essay does not rewrite Liquidity Is Not Flexibility.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is not runway. Different spine: cash on hand is not this commercial liquid conversion, and runway is not this refusal. This essay does not collapse into Cash Is Not Runway. This essay does not rewrite Cash Is Not Runway.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash is not margin. Different spine. This essay does not collapse into Cash Is Not Margin. This essay does not rewrite Cash Is Not Margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closure is not cash. Different spine. This essay does not collapse into Closure Is Not Cash. This essay does not rewrite Closure Is Not Cash.',
+      },
+      {
+        slug: 'successor-expanded-is-not-defended',
+        note: 'Expanded is not defended. The successor-spine prior essay separates that retained commercial relationship grown beyond the retained baseline from that expanded position protected against named competitive, pricing, or displacement pressure by an executed defense instrument. This essay does not rewrite that thesis. This essay does not give that defended a new meaning. Owned is the commercial asset Defended Is Not Owned already names. A one-time upsell that is immediately competed away, a verbal they will not switch, a CRM competitive risk green, or a dashboard retention score without an executed defense instrument is not defended.',
+      },
+      {
+        slug: 'successor-retained-is-not-expanded',
+        note: 'Retained is not expanded. The successor-spine prior essay separates named commercial value kept over a named renewal or retention horizon from that retained relationship grown beyond the retained baseline: added contracted ARR, added paid seats or sites, an executed upsell or cross-sell order, or a named expansion instrument with evidenced incremental value. This essay does not rewrite that thesis. This essay does not give that expanded a new meaning. Defended is the commercial protection that Expanded Is Not Defended already names. A renewal at the same seat count with no incremental ARR, a verbal we will add sites later, a CRM expansion stage, or a dashboard growth green without an executed expansion instrument is not expanded.',
+      },
+
+      {
+        slug: 'successor-monetized-is-not-retained',
+        note: 'Monetized is not retained. The successor-spine prior essay separates named, evidenced commercial value for the named SyncAI offer from that value kept over a named renewal or retention horizon. This essay does not rewrite that thesis. This essay does not give that retained a new meaning. Expanded is the commercial growth that Retained Is Not Expanded already names. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal we will renew without an executed renewal instrument is not retained.',
+      },
+      {
+        slug: 'successor-binding-is-not-monetized',
+        note: 'Binding is not monetized. The successor-spine prior essay separates enforceable obligations or rights for the named parties under the named regime from named, evidenced commercial value for the named SyncAI offer: contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR. This essay does not rewrite that thesis. This essay does not give that monetized a new meaning. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized.',
+      },
+      {
+        slug: 'successor-effective-is-not-binding',
+        note: 'Effective is not binding. The successor-spine prior essay separates named legal or operational effectiveness under the named instrument for that posted filing from enforceable obligations or rights for the named parties under the named regime. This essay does not rewrite that thesis. This essay does not give that binding a new meaning. Monetized is the commercial conversion that Binding Is Not Monetized already names. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'successor-posted-is-not-effective',
+        note: 'Posted is not effective. The successor-spine prior essay separates publication of an accepted filing on the named public disclosure system or registry of record, with a named posting identifier, URL, or accession and a posting timestamp, from that posted filing taking legal or operational effect for the named entity and period under the named instrument, including a named effective date, named scope, or system-of-record cutover. This essay does not rewrite that thesis. This essay does not give that effective a new meaning. Keep effective distinct from posted and from binding. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is not cash. Different spine: contracted ARR on this commercial spine is evidence the binding obligations converted into named commercial value for the named SyncAI offer. It is not a rewrite of that cash distinction. This essay does not collapse into ARR Is Not Cash. This essay does not rewrite ARR Is Not Cash.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Revenue is not ARR. Different spine. This monetized record may cite contracted ARR or cash. It does not give that revenue a new meaning. This essay does not collapse into Revenue Is Not ARR. This essay does not rewrite Revenue Is Not ARR.',
+      },
+      {
+        slug: 'successor-accepted-is-not-posted',
+        note: 'Accepted is not posted. The successor-spine prior essay separates a named acceptance or completeness acknowledgement for that specific lodged filing from publication of that accepted filing on the named public disclosure system or registry of record. This essay does not rewrite that thesis. This essay does not give that posted a new meaning. Keep posted distinct from accepted and from effective.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Forward reading on the filing spine separates named legal or operational effectiveness under the instrument for that posted filing from instrument-required bind mechanics for that effective filing. This essay does not rewrite that thesis. The filing essay stays on its own URL. The successor essay is the next refusal on this industrial assurance spine.',
+      },
+      {
+        slug: 'successor-filed-is-not-accepted',
+        note: 'Filed is not accepted. The successor-spine prior essay separates a lodging receipt for the named channel from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. Keep filed distinct from posted and from effective.',
+      },
+      {
+        slug: 'posted-is-not-effective',
+        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. That filing essay separates instrument-required restoration of the named asset, unit, or plant operating condition from instrument-required acceptance of that restored condition by the named accountable owner, operator, or beneficiary. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-restored-is-not-accepted',
+        note: 'Restored is not accepted. That successor essay separates instrument-required restoration of an applied successor-obligation outcome from instrument-required acceptance of that restored outcome for the named return-to-service bar. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-audited-is-not-filed',
+        note: 'Audited is not filed. The successor-spine prior essay separates an independent named opinion or assurance conclusion from that named audited period pack lodged with the named channel. This essay does not rewrite that thesis. This essay does not give that filed a new meaning. Keep filed from Filed Is Not Accepted distinct from accepted and from posted.',
+      },
+      {
+        slug: 'accepted-is-not-posted',
+        note: 'Accepted is not posted. Forward reading on the filing spine separates a named acceptance or completeness acknowledgement from a named public posting on the disclosure system or registry of record. This essay does not rewrite that thesis. Posted is the next refusal on the industrial assurance spine.',
+      },
+      {
+        slug: 'complete-is-not-accepted',
+        note: 'Complete is not accepted. That essay separates measured completeness of an acceptance pack from named human sign-off of that pack. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that human sign-off.',
+      },
+      {
+        slug: 'accepted-is-not-verified',
+        note: 'Accepted is not verified. That essay separates named human sign-off of an acceptance pack from an independent evidence check. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that sign-off.',
+      },
+      {
+        slug: 'successor-reported-is-not-audited',
+        note: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward from an independent or internal audit trail for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
+      {
+        slug: 'successor-recognized-is-not-reported',
+        note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recognized-is-not-reported',
+        note: 'Recognized is not reported. The filing-spine prior essay separates earned revenue recognized under the named acceptance rule from that named recognized amount appearing in the named period report pack. This essay does not rewrite that thesis. This reported is the outward report a controller can re-perform, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'successor-collected-is-not-recognized',
+        note: 'Collected is not recognized. The successor-spine prior essay separates that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove from that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy. This essay does not rewrite that thesis. This essay does not give that recognized a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. The filing-spine prior essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This recognized is formal recognition of that named cash or collection event in the books under the named recognition policy, not a rewrite of that filing earned-revenue attestation.',
+      },
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The successor-spine prior essay separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that collected a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine prior essay separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'successor-reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched and cleared against the external or control source from the named period formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This audited is an independent or internal audit trail for that same entity and period, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record from those booked facts independently matched against the external or control source. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'reported-is-not-audited',
+        note: 'Reported is not audited. The filing-spine counterpart separates a named recognized amount in the period report pack from an independent auditor opinion on that period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from audited and from filed. This audited is the named opinion on the industrial assurance spine, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'audited-is-not-filed',
+        note: 'Audited is not filed. The filing-spine counterpart keeps the same distinction: a named opinion or assurance conclusion versus a lodged filing with a named receipt. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'filed-is-not-accepted',
+        note: 'Filed is not accepted. The filing-spine counterpart keeps the same distinction: a named filing receipt versus a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance for the next named assurance window from instrument-required guarantee of that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this accepted into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this accepted into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this accepted into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this accepted into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-compounded-is-not-controlled': {
     relatedSlug: 'successor-closeable-is-not-compounded',
     relatedNote: 'Closeable is not compounded. The successor-spine prior essay separates that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument from that closed capital re-entering a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose by an executed compoundability instrument. This essay does not rewrite that thesis. This essay does not give that compounded a new meaning. Controlled is the next refusal on this commercial spine. A one-time close, a single draw, or a static facility balance is not compounded. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. Keep this commercial controlled distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Insured Is Not Covered, and Deployable Is Not Accountable.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-controlled-is-not-distributed',
+        note: 'Controlled is not distributed. The next refusal on this commercial spine separates that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control from capital, product, and operating rights that can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet. This essay does not rewrite that thesis. This essay does not give that distributed a new meaning. This distributed is not the defense Expanded Is Not Defended already names. This distributed is not the defense Defended Is Not Owned already names. This controlled is not the control Control Is Not Closure already names. This controlled is not the control Ownership Is Not Control already names. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed.',
+      },
       {
         slug: 'successor-financeable-is-not-closeable',
         note: 'Financeable is not closeable. The successor-spine prior essay separates that insurable residual-risk cover funded or underwritten for the next draw against named cash-flow evidence, covenants, and recourse by an executed financeability instrument from that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument. This essay does not rewrite that thesis. This essay does not give that closeable a new meaning. Compounded is the commercial compound Closeable Is Not Compounded already names. A term sheet with no conditions precedent satisfied, credit appetite with no executed docs, an underwriting indication that does not move capital, or a commitment letter without funding or settlement mechanics is not closeable. A one-time close, a single draw, or a static facility balance is not compounded. Keep this commercial compounded distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
