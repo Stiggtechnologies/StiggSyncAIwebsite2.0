@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-posted-is-not-effective',
+    title: 'Posted Is Not Effective',
+    description: "Posted is not effective. Posted means, on the industrial assurance spine, that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — the posted the successor-spine Accepted Is Not Posted already names — evidenced by posting package with named entity / period / channel / filing-identifier / posting-identifier / url / accession / timestamp / poster roles, named posting criteria met (acceptance package cited, the named public disclosure system or registry of record stated, the named posting identifier or URL or accession stated, the posting timestamp stated, the same accepted filing stated), dates, and an unbroken trail from the acceptance evidence to that posting evidence — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not \"we sent it to the portal,\" not a dashboard green, and not a CMMS checkbox. Effective means the posted filing actually takes legal or operational effect for the named entity and period under the named instrument (named rule / instrument / board resolution / lender covenant / statute): a named effective date and named scope (who it binds, from when, for which entity/period/obligation), or a named system-of-record cutover, with an unbroken evidence trail from that effectiveness claim back to the posting accession and the named effectiveness rule — evidenced by effectiveness package with named entity / period / instrument / effective-date / scope / cutover / poster roles, named effectiveness criteria met (posting package cited, the named instrument stated, the named effective date stated, the named scope stated, the system-of-record cutover stated when the effect is operational, the same posted filing stated), dates, and an unbroken trail from the posting evidence to that effectiveness evidence — not the posting timestamp alone, not \"it was posted publicly,\" not \"it's on SEDAR so it counts,\" not an auto-ack, not a draft, not a dashboard green, not a CMMS checkbox, and not treating accession as automatic legal or operational effect — not the slide from \"it was posted publicly\" to \"it is now effective/operative.\" Posted is not effective. A firm can be posted and still not effective (public accession exists while the named effectiveness date/scope under the instrument has not been reached or evidenced, and no system-of-record cutover is on the file). A firm can chase effectiveness theater and still not be posted (a claim that \"we're live / in force\" or \"it is now effective/operative\" exists while no named public posting/accession for that filing). An effectiveness claim alone is not proof the named posting evidence was on the file. A posting package alone is not effectiveness of that posted successor outcome. Posting evidence alone is not effectiveness of that posted successor outcome. A posting identifier is not an effective date. An auto-ack is not this effective. A draft is not this effective. An internal share link is not this posted. A draft upload sitting in a private folder is not this posted. An email attachment is not this posted. A sentence that says we sent it to the portal is not this posted. A dashboard green is not this effective. A CMMS checkbox is not this effective. Auto-acks, drafts, dashboard greens, and CMMS checkboxes are not effectiveness. A verbal \"it is now effective/operative\" alone is neither. Refuse the slide from \"it was posted publicly\" to \"it is now effective/operative.\" This split is posted versus effective. Keep accepted from Accepted Is Not Posted distinct from posted and from effective. Keep this posted distinct from Accepted Is Not Verified, from Complete Is Not Accepted, from Restored Is Not Accepted, and from Accepted Is Not Sustained. This posted is public registry/disclosure posting of that accepted filing. This effective is named legal or operational effectiveness under the named instrument for that posted filing. This in-force effect is not the bind-mechanics distinction Effective Is Not Binding already names. Keep this accepted distinct from the successor-spine Filed Is Not Accepted. This essay does not give that posted a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse posted into effective. This essay does not collapse effective into posted. This posted is the public-posting step after Accepted Is Not Posted.",
+    excerpt: "Posted is not effective. Posted means, on the industrial assurance spine, that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — the posted the successor-spine Accepted Is Not Posted already names — evidenced by posting package with named entity / period / channel / filing-identifier / posting-identifier / url / accession / timestamp / poster roles, named posting criteria met (acceptance package cited, the named public disclosure system or registry of record stated, the named posting identifier or URL or accession stated, the posting timestamp stated, the same accepted filing stated), dates, and an unbroken trail from the acceptance evidence to that posting evidence — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not \"we sent it to the portal,\" not a dashboard green, and not a CMMS checkbox. Effective means the posted filing actually takes legal or operational effect for the named entity and period under the named instrument (named rule / instrument / board resolution / lender covenant / statute): a named effective date and named scope (who it binds, from when, for which entity/period/obligation), or a named system-of-record cutover, with an unbroken evidence trail from that effectiveness claim back to the posting accession and the named effectiveness rule — evidenced by effectiveness package with named entity / period / instrument / effective-date / scope / cutover / poster roles, named effectiveness criteria met (posting package cited, the named instrument stated, the named effective date stated, the named scope stated, the system-of-record cutover stated when the effect is operational, the same posted filing stated), dates, and an unbroken trail from the posting evidence to that effectiveness evidence — not the posting timestamp alone, not \"it was posted publicly,\" not \"it's on SEDAR so it counts,\" not an auto-ack, not a draft, not a dashboard green, not a CMMS checkbox, and not treating accession as automatic legal or operational effect — not the slide from \"it was posted publicly\" to \"it is now effective/operative.\" Posted is not effective. A firm can be posted and still not effective (public accession exists while the named effectiveness date/scope under the instrument has not been reached or evidenced, and no system-of-record cutover is on the file). A firm can chase effectiveness theater and still not be posted (a claim that \"we're live / in force\" or \"it is now effective/operative\" exists while no named public posting/accession for that filing). An effectiveness claim alone is not proof the named posting evidence was on the file. A posting package alone is not effectiveness of that posted successor outcome. Posting evidence alone is not effectiveness of that posted successor outcome. A posting identifier is not an effective date. An auto-ack is not this effective. A draft is not this effective. An internal share link is not this posted. A draft upload sitting in a private folder is not this posted. An email attachment is not this posted. A sentence that says we sent it to the portal is not this posted. A dashboard green is not this effective. A CMMS checkbox is not this effective. Auto-acks, drafts, dashboard greens, and CMMS checkboxes are not effectiveness. A verbal \"it is now effective/operative\" alone is neither. Refuse the slide from \"it was posted publicly\" to \"it is now effective/operative.\" This split is posted versus effective. Keep accepted from Accepted Is Not Posted distinct from posted and from effective. Keep this posted distinct from Accepted Is Not Verified, from Complete Is Not Accepted, from Restored Is Not Accepted, and from Accepted Is Not Sustained. This posted is public registry/disclosure posting of that accepted filing. This effective is named legal or operational effectiveness under the named instrument for that posted filing. This in-force effect is not the bind-mechanics distinction Effective Is Not Binding already names. Keep this accepted distinct from the successor-spine Filed Is Not Accepted. This essay does not give that posted a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse posted into effective. This essay does not collapse effective into posted. This posted is the public-posting step after Accepted Is Not Posted.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-27',
+  },
+  {
     slug: 'successor-accepted-is-not-posted',
     title: 'Accepted Is Not Posted',
     description: "Accepted is not posted. Accepted means, on the industrial assurance spine, the named receiving authority for that channel (regulator / registry / lender / board secretary or equivalent) has issued a named acceptance / completeness acknowledgement for that specific lodged filing (entity, period, channel, filing identifier), with an unbroken evidence trail from that acceptance notice back to the filing receipt — the accepted the successor-spine Filed Is Not Accepted already names — evidenced by acceptance package with named entity / period / channel / filing-identifier / authority / acknowledgement roles, named acceptance criteria met (filing package cited, the named receiving authority stated, the named acceptance or completeness acknowledgement stated, the specific lodged filing stated, the entity stated, the period stated, the channel stated, the filing identifier stated), dates, and an unbroken trail from the filing evidence to that acceptance evidence — not an auto-ack that only confirms message delivery, not \"under review,\" not a draft status page, not a dashboard green, and not a CMMS checkbox. Posted means that same accepted filing has been published / made available on the named public disclosure system or registry of record for that channel (e.g. SEDAR+/EDGAR/equivalent lender portal public packet / board minutes repository as applicable), with a named posting identifier / URL / accession and posting timestamp, and an unbroken trail from that public posting back to the acceptance notice and filing receipt — evidenced by posting package with named entity / period / channel / filing-identifier / posting-identifier / url / accession / timestamp / poster roles, named posting criteria met (acceptance package cited, the named public disclosure system or registry of record stated, the named posting identifier or URL or accession stated, the posting timestamp stated, the same accepted filing stated), dates, and an unbroken trail from the acceptance evidence to that posting evidence — not an internal share link, not a draft upload sitting in a private folder, not an email attachment, not \"we sent it to the portal,\" not a dashboard green, and not a CMMS checkbox — not the slide from \"the channel accepted the filing\" to \"it has been posted/published as the authoritative public or registry record.\" Accepted is not posted. A firm can be accepted and still not posted (acceptance/completeness acknowledgement exists while no named public posting/accession for that filing). A firm can chase posting theater and still not be accepted (a public-looking URL or draft portal entry exists while no named acceptance for that entity/period/channel). A posting claim alone is not proof the named acceptance evidence was on the file. An acceptance package alone is not posting of that accepted successor outcome. Acceptance evidence alone is not posting of that accepted successor outcome. An acceptance notice is not a posting identifier. An auto-ack that only confirms message delivery is not this accepted. Under review is not this accepted. A draft status page is not this accepted. An internal share link is not this posted. A draft upload sitting in a private folder is not this posted. An email attachment is not this posted. A sentence that says we sent it to the portal is not this posted. A dashboard green is not this posted. A CMMS checkbox is not this posted. A verbal \"it has been posted/published as the authoritative public or registry record\" alone is neither. Refuse the slide from \"the channel accepted the filing\" to \"it has been posted/published as the authoritative public or registry record.\" This split is accepted versus posted. Keep filed from Filed Is Not Accepted distinct from accepted and from posted. Keep this accepted distinct from Complete Is Not Accepted, from Accepted Is Not Verified, from Restored Is Not Accepted, and from Accepted Is Not Sustained. This accepted is channel acceptance of a lodged filing. This posted is public registry/disclosure posting of that accepted filing. Keep this filed distinct from the successor-spine Audited Is Not Filed. This essay does not give that accepted a new meaning. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This essay does not recreate the binding-to-transferable successor loop. This essay does not recreate the sustained-to-scaled-to-rehearsed successor loop. This essay does not collapse accepted into posted. This essay does not collapse posted into accepted. This accepted is the channel-acceptance step after Filed Is Not Accepted.",
@@ -1922,6 +1931,215 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-posted-is-not-effective': {
+    relatedSlug: 'successor-accepted-is-not-posted',
+    relatedNote: 'Accepted is not posted. The successor-spine prior essay separates a named acceptance or completeness acknowledgement for that specific lodged filing from publication of that accepted filing on the named public disclosure system or registry of record, with a named posting identifier, URL, or accession and a posting timestamp. This essay does not rewrite that thesis. This essay does not give that posted a new meaning. Effective is the next refusal on the industrial assurance spine.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Forward reading on the filing spine separates named legal or operational effectiveness under the instrument for that posted filing from instrument-required bind mechanics for that effective filing. This essay does not rewrite that thesis. The next successor route for Effective Is Not Binding stays in prose only.',
+      },
+      {
+        slug: 'successor-filed-is-not-accepted',
+        note: 'Filed is not accepted. The successor-spine prior essay separates a lodging receipt for the named channel from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. Keep filed distinct from posted and from effective.',
+      },
+      {
+        slug: 'posted-is-not-effective',
+        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. That filing essay separates instrument-required restoration of the named asset, unit, or plant operating condition from instrument-required acceptance of that restored condition by the named accountable owner, operator, or beneficiary. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-restored-is-not-accepted',
+        note: 'Restored is not accepted. That successor essay separates instrument-required restoration of an applied successor-obligation outcome from instrument-required acceptance of that restored outcome for the named return-to-service bar. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-audited-is-not-filed',
+        note: 'Audited is not filed. The successor-spine prior essay separates an independent named opinion or assurance conclusion from that named audited period pack lodged with the named channel. This essay does not rewrite that thesis. This essay does not give that filed a new meaning. Keep filed from Filed Is Not Accepted distinct from accepted and from posted.',
+      },
+      {
+        slug: 'accepted-is-not-posted',
+        note: 'Accepted is not posted. Forward reading on the filing spine separates a named acceptance or completeness acknowledgement from a named public posting on the disclosure system or registry of record. This essay does not rewrite that thesis. Posted is the next refusal on the industrial assurance spine.',
+      },
+      {
+        slug: 'complete-is-not-accepted',
+        note: 'Complete is not accepted. That essay separates measured completeness of an acceptance pack from named human sign-off of that pack. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that human sign-off.',
+      },
+      {
+        slug: 'accepted-is-not-verified',
+        note: 'Accepted is not verified. That essay separates named human sign-off of an acceptance pack from an independent evidence check. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that sign-off.',
+      },
+      {
+        slug: 'successor-reported-is-not-audited',
+        note: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward from an independent or internal audit trail for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
+      {
+        slug: 'successor-recognized-is-not-reported',
+        note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recognized-is-not-reported',
+        note: 'Recognized is not reported. The filing-spine prior essay separates earned revenue recognized under the named acceptance rule from that named recognized amount appearing in the named period report pack. This essay does not rewrite that thesis. This reported is the outward report a controller can re-perform, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'successor-collected-is-not-recognized',
+        note: 'Collected is not recognized. The successor-spine prior essay separates that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove from that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy. This essay does not rewrite that thesis. This essay does not give that recognized a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. The filing-spine prior essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This recognized is formal recognition of that named cash or collection event in the books under the named recognition policy, not a rewrite of that filing earned-revenue attestation.',
+      },
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The successor-spine prior essay separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that collected a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine prior essay separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'successor-reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched and cleared against the external or control source from the named period formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This audited is an independent or internal audit trail for that same entity and period, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record from those booked facts independently matched against the external or control source. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'reported-is-not-audited',
+        note: 'Reported is not audited. The filing-spine counterpart separates a named recognized amount in the period report pack from an independent auditor opinion on that period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from audited and from filed. This audited is the named opinion on the industrial assurance spine, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'audited-is-not-filed',
+        note: 'Audited is not filed. The filing-spine counterpart keeps the same distinction: a named opinion or assurance conclusion versus a lodged filing with a named receipt. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'filed-is-not-accepted',
+        note: 'Filed is not accepted. The filing-spine counterpart keeps the same distinction: a named filing receipt versus a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance for the next named assurance window from instrument-required guarantee of that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this accepted into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this accepted into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this accepted into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this accepted into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    ],
+  },
   'successor-accepted-is-not-posted': {
     relatedSlug: 'successor-filed-is-not-accepted',
     relatedNote: 'Filed is not accepted. The successor-spine prior essay separates that named audited period pack lodged with the named regulator, registry, lender, or board filing channel, with a named filing receipt or confirmation, filing timestamp, and an unbroken trail back to the audited pack, from a named acceptance or completeness acknowledgement issued by the named receiving authority for that specific lodged filing. This essay does not rewrite that thesis. This essay does not give that accepted a new meaning. Posted is the next refusal on the industrial assurance spine.',
@@ -1929,8 +2147,12 @@ export const insightNextSteps: Record<string, InsightNextStep> = {
     includePilot: true,
     also: [
       {
+        slug: 'successor-posted-is-not-effective',
+        note: 'Posted is not effective. The next refusal on this industrial assurance spine separates publication of an accepted filing on the named public disclosure system or registry of record, with a named posting identifier, URL, or accession and a posting timestamp, from the posted filing taking legal or operational effect for the named entity and period under the named instrument, including a named effective date, named scope, or system-of-record cutover. This essay does not rewrite that thesis. This essay does not give that effective a new meaning. Auto-acks, drafts, dashboard greens, and CMMS checkboxes are not effectiveness. Keep this posted distinct from Accepted Is Not Posted, from Accepted Is Not Verified, from Complete Is Not Accepted, from Restored Is Not Accepted, and from Accepted Is Not Sustained.',
+      },
+      {
         slug: 'posted-is-not-effective',
-        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The next successor route for Posted Is Not Effective stays in prose only.',
+        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The successor essay is the next refusal on this industrial assurance spine.',
       },
       {
         slug: 'restored-is-not-accepted',
