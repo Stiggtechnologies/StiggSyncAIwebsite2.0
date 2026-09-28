@@ -301,12 +301,17 @@ export default function SuccessorPublishedIsNotCirculatedPage() {
             presented by a named presenter for the named period, the circulated statement presented for the named
             ledger and period, or the circulated customer workflow presented for the customer and the period,
             with a named presenter, a presentation date, and a presentation recorded — not merely that a named
-            circulator recorded a circulation date and a circulation recorded for that published period.
-            Circulated Is Not Presented may be named in prose only at
-            /insights/successor-circulated-is-not-presented. This essay does not implement
-            that page. This essay does not create a successor route for Circulated Is Not Presented. This essay
-            does not create a filing spine for Published Is Not Circulated. This essay does not create a
-            filing spine at /insights/published-is-not-circulated.
+            circulator recorded a circulation date and a circulation recorded for that published period.{' '}
+            <Link
+              href="/insights/successor-circulated-is-not-presented"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Circulated Is Not Presented
+            </Link>
+            . Read it at /insights/successor-circulated-is-not-presented. This essay does not rewrite that
+            thesis. This essay does not give that presented a new meaning. This essay does not create a
+            filing spine for Published Is Not Circulated. This essay does not create a filing spine at
+            /insights/published-is-not-circulated.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
