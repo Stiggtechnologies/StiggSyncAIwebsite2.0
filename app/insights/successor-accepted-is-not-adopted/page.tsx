@@ -254,11 +254,17 @@ export default function SuccessorAcceptedIsNotAdoptedPage() {
             workflow for the customer and the period — not merely that the accepted close was taken into
             operating practice for the named period, the accepted statement was taken into the books for
             the named ledger and period, or the accepted customer pack was taken into the customer
-            workflow for the customer and the period. Adopted Is Not Operated may be named in prose only at
-            /insights/successor-adopted-is-not-operated. This essay does not implement that page. This
-            essay does not create a successor route for Adopted Is Not Operated.
-            This essay does not create a filing spine for Accepted Is Not Adopted. This essay does not
-            create a filing spine at /insights/accepted-is-not-adopted.
+            workflow for the customer and the period.{' '}
+            <Link
+              href="/insights/successor-adopted-is-not-operated"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Adopted Is Not Operated
+            </Link>
+            . Read it at /insights/successor-adopted-is-not-operated. This essay does not rewrite that
+            thesis. This essay does not give that operated a new meaning. This essay does not create a
+            filing spine for Accepted Is Not Adopted. This essay does not create a filing spine at
+            /insights/accepted-is-not-adopted.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
