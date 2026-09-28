@@ -235,11 +235,17 @@ export default function SuccessorReconciledIsNotCertifiedPage() {
             sealed on the named ledger, or the certified source-complete account sealed for the customer
             and the period — not merely that the period-close match was certified by the named close
             owner, the subledger-to-GL tie-out was certified for the named ledger, or the account proven
-            complete against source was certified for the customer and the period. Certified Is Not Sealed may be named in prose only at
-            /insights/successor-certified-is-not-sealed. This essay does not
-            implement that page. This essay does not create a successor route for Certified Is Not Sealed.
-            This essay does not create a filing spine for Reconciled Is Not Certified. This essay does not
-            create a filing spine at /insights/reconciled-is-not-certified.
+            complete against source was certified for the customer and the period.{' '}
+            <Link
+              href="/insights/successor-certified-is-not-sealed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Certified Is Not Sealed
+            </Link>
+            . Read it at /insights/successor-certified-is-not-sealed. This essay does not rewrite that
+            thesis. This essay does not give that sealed a new meaning. This essay does not create a
+            filing spine for Reconciled Is Not Certified. This essay does not create a filing spine at
+            /insights/reconciled-is-not-certified.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
