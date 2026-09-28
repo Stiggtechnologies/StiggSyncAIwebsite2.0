@@ -242,9 +242,15 @@ export default function SuccessorCertifiedIsNotSealedPage() {
             period-close certification was locked as immutable for the named period, the subledger-to-GL
             certification was locked against further amendment for the named ledger and period, or the
             account-complete certification was locked as the final attested record for the customer and the
-            period. Sealed Is Not Issued may be named in prose only at
-            /insights/successor-sealed-is-not-issued. This essay does not implement that page. This essay
-            does not create a successor route for Sealed Is Not Issued. This essay does not create a
+            period.{' '}
+            <Link
+              href="/insights/successor-sealed-is-not-issued"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Sealed Is Not Issued
+            </Link>
+            . Read it at /insights/successor-sealed-is-not-issued. This essay does not rewrite that
+            thesis. This essay does not give that issued a new meaning. This essay does not create a
             filing spine for Certified Is Not Sealed. This essay does not create a filing spine at
             /insights/certified-is-not-sealed.
           </p>
