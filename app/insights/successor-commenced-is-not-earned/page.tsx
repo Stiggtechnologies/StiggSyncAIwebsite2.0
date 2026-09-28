@@ -211,11 +211,17 @@ export default function SuccessorCommencedIsNotEarnedPage() {
             account, or the earned commitment has been billed under the renewed terms — not merely that
             the started work has earned its fee or result, the in-force coverage has earned the new
             period, the drawn capital has earned its named return, or the operating motion has earned
-            the renewed commitment. Earned Is Not Invoiced may be named in prose only at
-            /insights/successor-earned-is-not-invoiced. This essay does not implement that page. This
-            essay does not create a successor route for Earned Is Not Invoiced. This essay does not
-            create a filing spine for Commenced Is Not Earned. This essay does not create a filing spine
-            at /insights/commenced-is-not-earned.
+            the renewed commitment.{' '}
+            <Link
+              href="/insights/successor-earned-is-not-invoiced"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Earned Is Not Invoiced
+            </Link>
+            . Read it at /insights/successor-earned-is-not-invoiced. This essay does not rewrite that
+            thesis. This essay does not give that invoiced a new meaning. This essay does not create a
+            filing spine for Commenced Is Not Earned. This essay does not create a filing spine at
+            /insights/commenced-is-not-earned.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
