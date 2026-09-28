@@ -269,11 +269,17 @@ export default function SuccessorAdoptedIsNotOperatedPage() {
             period — not merely that the adopted books were run day-to-day as the operated books for that
             period, the adopted statement was run as the operated statement for that named ledger and
             period, or the adopted customer workflow was run as the operated customer workflow for the
-            customer and the period. Operated Is Not Reviewed may be named in prose only at
-            /insights/successor-operated-is-not-reviewed. This essay does not implement that page. This
-            essay does not create a successor route for Operated Is Not Reviewed. This essay does not
-            create a filing spine for Adopted Is Not Operated. This essay does not create a filing spine
-            at /insights/adopted-is-not-operated.
+            customer and the period.{' '}
+            <Link
+              href="/insights/successor-operated-is-not-reviewed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Operated Is Not Reviewed
+            </Link>
+            . Read it at /insights/successor-operated-is-not-reviewed. This essay does not rewrite that
+            thesis. This essay does not give that reviewed a new meaning. This essay does not create a
+            filing spine for Adopted Is Not Operated. This essay does not create a filing spine at
+            /insights/adopted-is-not-operated.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
