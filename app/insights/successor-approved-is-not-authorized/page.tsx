@@ -281,13 +281,18 @@ export default function SuccessorApprovedIsNotAuthorizedPage() {
             period have been instructed — the authorized operating results instructed by a named instructor
             for the named period, the authorized statement instructed for the named ledger and period, or
             the authorized customer workflow instructed for the customer and the period, with a named
-            instructor, an instruction date, and an instruction order — not merely that a named authorizer
-            recorded an authorization date and an authorization grant for that approved period.
-            Authorized Is Not Instructed may be named in prose only at
-            /insights/successor-authorized-is-not-instructed. This essay does not implement that page. This
-            essay does not create a successor route for Authorized Is Not Instructed. This essay does not
-            create a filing spine for Approved Is Not Authorized. This essay does not create a filing spine
-            at /insights/approved-is-not-authorized.
+            instructor, an instruction date, and an instruction to act — not merely that a named authorizer
+            recorded an authorization date and an authorization grant for that approved period.{' '}
+            <Link
+              href="/insights/successor-authorized-is-not-instructed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Authorized Is Not Instructed
+            </Link>
+            . Read it at /insights/successor-authorized-is-not-instructed. This essay does not rewrite that
+            thesis. This essay does not give that instructed a new meaning. This essay does not create a
+            filing spine for Approved Is Not Authorized. This essay does not create a filing spine at
+            /insights/approved-is-not-authorized.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
