@@ -290,12 +290,17 @@ export default function SuccessorPresentedIsNotReceivedPage() {
             endorsed by a named endorser for the named period, the received statement endorsed for the named
             ledger and period, or the received customer workflow endorsed for the customer and the period,
             with a named endorser, an endorsement date, and an endorsement recorded — not merely that a named
-            receiver recorded a receipt date and a receipt recorded for that presented period.
-            Received Is Not Endorsed may be named in prose only at
-            /insights/successor-received-is-not-endorsed. This essay does not implement
-            that page. This essay does not create a successor route for Received Is Not Endorsed. This essay
-            does not create a filing spine for Presented Is Not Received. This essay does not create a
-            filing spine at /insights/presented-is-not-received.
+            receiver recorded a receipt date and a receipt recorded for that presented period.{' '}
+            <Link
+              href="/insights/successor-received-is-not-endorsed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Received Is Not Endorsed
+            </Link>
+            . Read it at /insights/successor-received-is-not-endorsed. This essay does not rewrite that
+            thesis. This essay does not give that endorsed a new meaning. This essay does not create a
+            filing spine for Presented Is Not Received. This essay does not create a filing spine at
+            /insights/presented-is-not-received.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
