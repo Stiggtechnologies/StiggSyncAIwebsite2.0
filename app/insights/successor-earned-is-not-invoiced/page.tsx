@@ -208,11 +208,17 @@ export default function SuccessorEarnedIsNotInvoicedPage() {
             fee received, the premium billed for the earned period collected, the return billed or
             called as due received, or the receivable collected — not merely that the fee was billed,
             the premium was billed for the earned period, the return was billed or called as due, or
-            the earned commitment was presented as a receivable. Invoiced Is Not Collected may be named in prose only at
-            /insights/successor-invoiced-is-not-collected. This essay does not implement that page. This
-            essay does not create a successor route for Invoiced Is Not Collected. This essay does not
-            create a filing spine for Earned Is Not Invoiced. This essay does not create a filing spine
-            at /insights/earned-is-not-invoiced.
+            the earned commitment was presented as a receivable.{' '}
+            <Link
+              href="/insights/successor-invoiced-is-not-collected"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Invoiced Is Not Collected
+            </Link>
+            . Read it at /insights/successor-invoiced-is-not-collected. This essay does not rewrite that
+            thesis. This essay does not give that collected a new meaning. This essay does not create a
+            filing spine for Earned Is Not Invoiced. This essay does not create a filing spine at
+            /insights/earned-is-not-invoiced.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
