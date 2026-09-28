@@ -295,12 +295,17 @@ export default function SuccessorRatifiedIsNotEnactedPage() {
             promulgated by a named promulgator for the named period, the enacted statement promulgated for the named
             ledger and period, or the enacted customer workflow promulgated for the customer and the period,
             with a named promulgator, a promulgation date, and a promulgation recorded — not merely that a named
-            enactor recorded an enactment date and an enactment recorded for that ratified period.
-            Enacted Is Not Promulgated may be named in prose only at
-            /insights/successor-enacted-is-not-promulgated. This essay does not implement
-            that page. This essay does not create a successor route for Enacted Is Not Promulgated. This essay
-            does not create a filing spine for Ratified Is Not Enacted. This essay does not create a
-            filing spine at /insights/ratified-is-not-enacted.
+            enactor recorded an enactment date and an enactment recorded for that ratified period.{' '}
+            <Link
+              href="/insights/successor-enacted-is-not-promulgated"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Enacted Is Not Promulgated
+            </Link>
+            . Read it at /insights/successor-enacted-is-not-promulgated. This essay does not rewrite that
+            thesis. This essay does not give that promulgated a new meaning. This essay does not create a
+            filing spine for Ratified Is Not Enacted. This essay does not create a filing spine at
+            /insights/ratified-is-not-enacted.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">

@@ -21,6 +21,7 @@ const slugs = [...insightsSrc.slice(articlesStart, articlesEnd).matchAll(/slug:\
 );
 if (slugs.length === 0) fail('No Insights slugs found in lib/insights.ts');
 const successorDisbursedExtinguishedIndex = slugs.indexOf('successor-disbursed-is-not-extinguished');
+const successorEnactedPromulgatedIndex = slugs.indexOf('successor-enacted-is-not-promulgated');
 const successorRatifiedEnactedIndex = slugs.indexOf('successor-ratified-is-not-enacted');
 const successorVerifiedRatifiedIndex = slugs.indexOf('successor-verified-is-not-ratified');
 const successorConfirmedVerifiedIndex = slugs.indexOf('successor-confirmed-is-not-verified');
@@ -211,6 +212,8 @@ const statusIndex = slugs.indexOf('status-is-not-clearance');
 const greenIndex = slugs.indexOf('green-is-not-go');
 if (
   !(
+    successorEnactedPromulgatedIndex >= 0 &&
+    successorRatifiedEnactedIndex > successorEnactedPromulgatedIndex &&
     successorRatifiedEnactedIndex >= 0 &&
     successorVerifiedRatifiedIndex > successorRatifiedEnactedIndex &&
     successorVerifiedRatifiedIndex >= 0 &&
@@ -432,7 +435,7 @@ if (
   )
 ) {
   fail(
-    'Insights catalog order must list successor-ratified-is-not-enacted, then successor-verified-is-not-ratified, then successor-confirmed-is-not-verified, then successor-acted-is-not-confirmed, then successor-instructed-is-not-acted, then successor-authorized-is-not-instructed, then successor-approved-is-not-authorized, then successor-reviewed-is-not-approved, then successor-operated-is-not-reviewed, then successor-adopted-is-not-operated, then successor-accepted-is-not-adopted, then successor-acknowledged-is-not-accepted, then successor-issued-is-not-acknowledged, then successor-sealed-is-not-issued, then successor-certified-is-not-sealed, then successor-reconciled-is-not-certified, then successor-relieved-is-not-reconciled, then successor-applied-is-not-relieved, then successor-collected-is-not-applied, then successor-invoiced-is-not-collected, then successor-earned-is-not-invoiced, then successor-commenced-is-not-earned, then successor-renewed-is-not-commenced, then successor-sustained-is-not-renewed, then successor-realized-is-not-sustained, then successor-performed-is-not-realized, then successor-advanced-is-not-performed, then successor-relied-is-not-advanced, then successor-attested-is-not-relied, then successor-reconciled-is-not-attested, then successor-extinguished-is-not-reconciled, then successor-disbursed-is-not-extinguished, then successor-obligated-is-not-disbursed, then successor-spendable-is-not-obligated, then successor-available-is-not-spendable, then successor-cleared-is-not-available, then successor-remitted-is-not-cleared, then successor-captured-is-not-remitted, then successor-residual-is-not-captured, then successor-defended-is-not-residual, then successor-distributed-is-not-defended, then successor-controlled-is-not-distributed, then successor-compounded-is-not-controlled, then successor-closeable-is-not-compounded, then successor-financeable-is-not-closeable, then successor-insurable-is-not-financeable, then successor-governable-is-not-insurable, then successor-auditable-is-not-governable, then successor-accountable-is-not-auditable, then successor-deployable-is-not-accountable, then successor-liquid-is-not-deployable, then successor-portable-is-not-liquid, then successor-owned-is-not-portable, then successor-defended-is-not-owned, then successor-expanded-is-not-defended, then successor-retained-is-not-expanded, then successor-monetized-is-not-retained, then successor-binding-is-not-monetized, then successor-effective-is-not-binding, then successor-posted-is-not-effective, then successor-accepted-is-not-posted, then successor-filed-is-not-accepted, then successor-audited-is-not-filed, then successor-reported-is-not-audited, then successor-recognized-is-not-reported, then successor-collected-is-not-recognized, then successor-closed-is-not-collected, then successor-reconciled-is-not-closed, then successor-booked-is-not-reconciled, then successor-settled-is-not-booked, then successor-paid-is-not-settled, then successor-covered-is-not-paid, then successor-insured-is-not-covered, then successor-certified-is-not-insured, then successor-assured-is-not-certified, then successor-rehearsed-is-not-recoverable, then successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
+    'Insights catalog order must list successor-enacted-is-not-promulgated, then successor-ratified-is-not-enacted, then successor-verified-is-not-ratified, then successor-confirmed-is-not-verified, then successor-acted-is-not-confirmed, then successor-instructed-is-not-acted, then successor-authorized-is-not-instructed, then successor-approved-is-not-authorized, then successor-reviewed-is-not-approved, then successor-operated-is-not-reviewed, then successor-adopted-is-not-operated, then successor-accepted-is-not-adopted, then successor-acknowledged-is-not-accepted, then successor-issued-is-not-acknowledged, then successor-sealed-is-not-issued, then successor-certified-is-not-sealed, then successor-reconciled-is-not-certified, then successor-relieved-is-not-reconciled, then successor-applied-is-not-relieved, then successor-collected-is-not-applied, then successor-invoiced-is-not-collected, then successor-earned-is-not-invoiced, then successor-commenced-is-not-earned, then successor-renewed-is-not-commenced, then successor-sustained-is-not-renewed, then successor-realized-is-not-sustained, then successor-performed-is-not-realized, then successor-advanced-is-not-performed, then successor-relied-is-not-advanced, then successor-attested-is-not-relied, then successor-reconciled-is-not-attested, then successor-extinguished-is-not-reconciled, then successor-disbursed-is-not-extinguished, then successor-obligated-is-not-disbursed, then successor-spendable-is-not-obligated, then successor-available-is-not-spendable, then successor-cleared-is-not-available, then successor-remitted-is-not-cleared, then successor-captured-is-not-remitted, then successor-residual-is-not-captured, then successor-defended-is-not-residual, then successor-distributed-is-not-defended, then successor-controlled-is-not-distributed, then successor-compounded-is-not-controlled, then successor-closeable-is-not-compounded, then successor-financeable-is-not-closeable, then successor-insurable-is-not-financeable, then successor-governable-is-not-insurable, then successor-auditable-is-not-governable, then successor-accountable-is-not-auditable, then successor-deployable-is-not-accountable, then successor-liquid-is-not-deployable, then successor-portable-is-not-liquid, then successor-owned-is-not-portable, then successor-defended-is-not-owned, then successor-expanded-is-not-defended, then successor-retained-is-not-expanded, then successor-monetized-is-not-retained, then successor-binding-is-not-monetized, then successor-effective-is-not-binding, then successor-posted-is-not-effective, then successor-accepted-is-not-posted, then successor-filed-is-not-accepted, then successor-audited-is-not-filed, then successor-reported-is-not-audited, then successor-recognized-is-not-reported, then successor-collected-is-not-recognized, then successor-closed-is-not-collected, then successor-reconciled-is-not-closed, then successor-booked-is-not-reconciled, then successor-settled-is-not-booked, then successor-paid-is-not-settled, then successor-covered-is-not-paid, then successor-insured-is-not-covered, then successor-certified-is-not-insured, then successor-assured-is-not-certified, then successor-rehearsed-is-not-recoverable, then successor-transferable-is-not-rehearsed, then successor-governed-is-not-transferable, then successor-owned-is-not-governed, then successor-compounded-is-not-owned, then successor-scaled-is-not-compounded, then successor-sustained-is-not-scaled, then successor-transferable-is-not-binding, then successor-sustained-is-not-transferable, then successor-accepted-is-not-sustained, then successor-restored-is-not-accepted, then successor-applied-is-not-restored, then successor-collectible-is-not-applied, then successor-guaranteed-is-not-collectible, then successor-assured-is-not-guaranteed, then successor-sustained-is-not-assured, then successor-operated-is-not-sustained, then successor-delivered-is-not-operated, then successor-closed-is-not-delivered, then successor-cleared-is-not-closed, then successor-recorded-is-not-cleared, then successor-released-is-not-recorded, then successor-remediated-is-not-released, then successor-enforced-is-not-remediated, then successor-binding-is-not-enforced, then transferable-is-not-binding, then sustained-is-not-transferable, then accepted-is-not-sustained, then restored-is-not-accepted, then applied-is-not-restored, then collectible-is-not-applied, then guaranteed-is-not-collectible, then assured-is-not-guaranteed, then sustained-is-not-assured, then operated-is-not-sustained, then delivered-is-not-operated, then closed-is-not-delivered, then cleared-is-not-closed, then recorded-is-not-cleared, then released-is-not-recorded, then remediated-is-not-released, then enforced-is-not-remediated, then binding-is-not-enforced, then effective-is-not-binding, then posted-is-not-effective, then accepted-is-not-posted, then filed-is-not-accepted, then audited-is-not-filed, then reported-is-not-audited, then recognized-is-not-reported, then collected-is-not-recognized, then closed-is-not-collected, then reconciled-is-not-closed, then booked-is-not-reconciled, then settled-is-not-booked, then paid-is-not-settled, then covered-is-not-paid, then insured-is-not-covered, then certified-is-not-insured, then assured-is-not-certified, then recoverable-is-not-assured, then rehearsed-is-not-recoverable, then transferable-is-not-rehearsed, then governed-is-not-transferable, then owned-is-not-governed, then compounded-is-not-owned, then scaled-is-not-compounded, then sustained-is-not-scaled, then adopted-is-not-sustained, then trusted-is-not-adopted, then proven-is-not-trusted, then resolved-is-not-proven, then closed-is-not-resolved, then executed-is-not-closed, then authorized-is-not-executed, then verified-is-not-authorized, then accepted-is-not-verified, then complete-is-not-accepted, then closure-is-not-complete, then control-is-not-closure, then ownership-is-not-control, then accountability-is-not-ownership, then authority-is-not-accountability, then judgment-is-not-authority, then learning-is-not-judgment, then results-is-not-learning, then execution-is-not-results, then strategy-is-not-execution, then optionality-is-not-strategy, then flexibility-is-not-optionality, then liquidity-is-not-flexibility, then solvency-is-not-liquidity, then survival-is-not-solvency, then runway-is-not-survival, then cash-is-not-runway, then arr-is-not-cash, then revenue-is-not-arr, then impact-is-not-revenue, then outcome-is-not-impact, then value-is-not-outcome, then profit-is-not-value, then margin-is-not-profit, then cash-is-not-margin, then closure-is-not-cash, then accountability-is-not-closure, then authorization-is-not-accountability, then proof-is-not-authorization, then assured-is-not-proven, then verified-is-not-assured, then complete-is-not-verified, then cleared-is-not-complete, then ready-is-not-cleared, then status-is-not-clearance, then green-is-not-go',
   );
 }
 
@@ -30457,7 +30460,6 @@ const successorRatifiedEnactedPageRequired = [
   "What an enacted record is allowed to be",
   "Sync must not auto-deem-enacted",
   "Sync does not deem enacted for the customer",
-  "This essay does not implement that page",
   "This essay does not create a filing spine for Ratified Is Not Enacted",
   "This essay does not create a filing spine at /insights/ratified-is-not-enacted",
   "This enacted is not the collected Collected Is Not Recognized already names",
@@ -30491,9 +30493,9 @@ const successorRatifiedEnactedPageRequired = [
   "Field Manual",
   "Strategic Pilot",
   "href=\"/insights/successor-verified-is-not-ratified\"",
-  "Enacted Is Not Promulgated may be named in prose only",
   "/insights/successor-enacted-is-not-promulgated",
-  "This essay does not create a successor route for Enacted Is Not Promulgated",
+  "Read it at /insights/successor-enacted-is-not-promulgated",
+  "This essay does not give that promulgated a new meaning",
 ];
 
 const successorRatifiedEnactedPage = read('app/insights/successor-ratified-is-not-enacted/page.tsx');
@@ -30513,8 +30515,8 @@ if (successorRatifiedEnactedPage.includes("successor-rehearsed-is-not-recoverabl
 if (successorRatifiedEnactedPage.includes("href=\"/insights/successor-ratified-is-not-enacted\"")) {
   fail('successor-ratified-is-not-enacted must not link to itself as a forward route');
 }
-if (successorRatifiedEnactedPage.includes("href=\"/insights/successor-enacted-is-not-promulgated\"")) {
-  fail('successor-ratified-is-not-enacted must keep Enacted Is Not Promulgated in prose only');
+if (!successorRatifiedEnactedPage.includes("href=\"/insights/successor-enacted-is-not-promulgated\"")) {
+  fail('successor-ratified-is-not-enacted must point the series forward to successor-enacted-is-not-promulgated');
 }
 if (successorRatifiedEnactedPage.includes("href=\"/insights/ratified-is-not-enacted\"")) {
   fail('successor-ratified-is-not-enacted must not open a filing spine');
@@ -30588,17 +30590,11 @@ if (successorRatifiedEnactedPage.includes("href=\"/insights/successor-delivered-
 if (successorRatifiedEnactedPage.includes("href=\"/insights/delivered-is-not-operated\"")) {
   fail('successor-ratified-is-not-enacted must not retarget Delivered Is Not Operated');
 }
-if (!successorRatifiedEnactedPage.includes('Enacted Is Not Promulgated may be named in prose only')) {
-  fail('successor-ratified-is-not-enacted must name Enacted Is Not Promulgated in prose only');
+if (successorRatifiedEnactedPage.includes('Enacted Is Not Promulgated may be named in prose only')) {
+  fail('successor-ratified-is-not-enacted must not keep Enacted Is Not Promulgated in prose only once the route exists');
 }
 if (successorRatifiedEnactedPage.includes('Ratified Is Not Enacted may be named in prose only')) {
   fail('successor-ratified-is-not-enacted must not name itself as prose only');
-}
-if (existsSync(join(root, 'app/insights/successor-enacted-is-not-promulgated/page.tsx'))) {
-  fail('successor-enacted-is-not-promulgated must stay prose only in this essay');
-}
-if (slugs.includes('successor-enacted-is-not-promulgated')) {
-  fail('successor-enacted-is-not-promulgated must not be registered in this essay');
 }
 if (existsSync(join(root, 'app/insights/ratified-is-not-enacted/page.tsx'))) {
   fail('ratified-is-not-enacted filing spine must not be created');
@@ -30642,8 +30638,8 @@ if (!/includePilot:\s*true/.test(successorRatifiedEnactedBlock)) {
 if (successorRatifiedEnactedBlock.includes("next: 'strategic-pilot'")) {
   fail('successor-ratified-is-not-enacted next step is the Field Manual');
 }
-if (successorRatifiedEnactedBlock.includes('successor-enacted-is-not-promulgated')) {
-  fail('successor-ratified-is-not-enacted must keep Enacted Is Not Promulgated in prose only');
+if (!successorRatifiedEnactedBlock.includes('successor-enacted-is-not-promulgated')) {
+  fail('successor-ratified-is-not-enacted related reading must cite successor-enacted-is-not-promulgated');
 }
 if (successorRatifiedEnactedBlock.includes("collectible-is-not-applied")) {
   fail('successor-ratified-is-not-enacted related reading must stay off Collectible Is Not Applied');
@@ -30675,8 +30671,8 @@ if (!successorRatifiedEnactedBlock.includes("relatedSlug: 'successor-verified-is
 {
   const alsoAt = successorRatifiedEnactedBlock.indexOf('also: [');
   const firstAlso = successorRatifiedEnactedBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
-  if (!firstAlso || firstAlso[1] !== 'successor-confirmed-is-not-verified') {
-    fail('successor-ratified-is-not-enacted must list successor-confirmed-is-not-verified first among additional related reading');
+  if (!firstAlso || firstAlso[1] !== 'successor-enacted-is-not-promulgated') {
+    fail('successor-ratified-is-not-enacted must list successor-enacted-is-not-promulgated first among additional related reading');
   }
 }
 if (successorRatifiedEnactedBlock.includes('successor-recoverable-is-not-assured')) {
@@ -30685,6 +30681,268 @@ if (successorRatifiedEnactedBlock.includes('successor-recoverable-is-not-assured
 for (const untouched of ["app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
   if (read(untouched).includes('successor-ratified-is-not-enacted')) {
     fail(`${untouched} must stay off successor-ratified-is-not-enacted`);
+  }
+}
+
+const successorEnactedPromulgatedPageRequired = [
+  "Enacted Is Not Promulgated",
+  "Enacted is not promulgated",
+  "commercial spine",
+  "promulgation spine",
+  "enactment spine",
+  "the enacted the successor-spine Ratified Is Not Enacted already names",
+  "executed enactment instrument",
+  "executed promulgation instrument",
+  "named enactor enactment",
+  "ratified operating results with a named enactor, an enactment date, and an enactment recorded for that ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period",
+  "ratified statement enacted for the named ledger and period",
+  "ratified customer workflow enacted for the customer and the period",
+  "enacted statement promulgated for the named ledger and period",
+  "enacted customer workflow promulgated for the customer and the period",
+  "named promulgator, a promulgation date, and a promulgation recorded",
+  "not merely that a named enactor recorded an enactment date and an enactment recorded",
+  "Packs that have been enacted — a named enactor enactment of the ratified operating results for that named scope, ratified operating results with a named enactor, an enactment date, and an enactment recorded for that ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period, the ratified statement enacted for the named ledger and period, or the ratified customer workflow enacted for the customer and the period — are not the same as those enacted packs having been promulgated",
+  "Ratified Is Not Enacted already names the prior split",
+  "This essay does not rewrite that thesis",
+  "This essay does not give that enacted a new meaning",
+  "A firm can be enacted and still not promulgated",
+  "promulgation theater",
+  "An enactment package alone is not promulgated of that enacted successor outcome",
+  "This split is enacted versus promulgated",
+  "Enacted cash or margin is not the same as a promulgated commercial outcome",
+  "Named enacted is not promulgated",
+  "The enacted practice is not the promulgated practice",
+  "What a promulgated record is allowed to be",
+  "Sync must not auto-deem-promulgated",
+  "Sync does not deem promulgated for the customer",
+  "This essay does not implement that page",
+  "This essay does not create a filing spine for Enacted Is Not Promulgated",
+  "This essay does not create a filing spine at /insights/enacted-is-not-promulgated",
+  "This promulgated is not the collected Collected Is Not Recognized already names",
+  "This promulgated is not the disbursement Paid Is Not Settled already names",
+  "This promulgated is not the settlement Settled Is Not Booked already names",
+  "This promulgated is not the collectible Collectible Is Not Applied already names",
+  "does not collapse into Collectible Is Not Applied",
+  "does not rewrite Collectible Is Not Applied",
+  "does not collapse into Applied Is Not Restored",
+  "does not rewrite Applied Is Not Restored",
+  "does not collapse into Extinguished Is Not Reconciled",
+  "does not rewrite Extinguished Is Not Reconciled",
+  "does not collapse into Reconciled Is Not Attested",
+  "does not rewrite Reconciled Is Not Attested",
+  "does not collapse into Reconciled Is Not Closed",
+  "does not rewrite Reconciled Is Not Closed",
+  "does not collapse into Booked Is Not Reconciled",
+  "does not rewrite Booked Is Not Reconciled",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not collapse into Defended Is Not Owned",
+  "does not rewrite Defended Is Not Owned",
+  "does not collapse into Certified Is Not Insured",
+  "does not rewrite Certified Is Not Insured",
+  "does not collapse into Assured Is Not Certified",
+  "does not rewrite Assured Is Not Certified",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Delivered Is Not Operated",
+  "does not rewrite Delivered Is Not Operated",
+  "Field Manual",
+  "Strategic Pilot",
+  "href=\"/insights/successor-ratified-is-not-enacted\"",
+  "Promulgated Is Not Published may be named in prose only",
+  "/insights/successor-promulgated-is-not-published",
+  "This essay does not create a successor route for Promulgated Is Not Published",
+];
+
+const successorEnactedPromulgatedPage = read('app/insights/successor-enacted-is-not-promulgated/page.tsx');
+const successorEnactedPromulgatedPageNormalized = successorEnactedPromulgatedPage.replace(/\s+/g, ' ');
+for (const required of successorEnactedPromulgatedPageRequired) {
+  const needle = required.replace(/\\"/g, '"').replace(/\s+/g, ' ');
+  if (!successorEnactedPromulgatedPageNormalized.includes(needle)) {
+    fail(`successor-enacted-is-not-promulgated page must include ${required}`);
+  }
+}
+if (successorEnactedPromulgatedPage.includes("successor-recoverable-is-not-assured")) {
+  fail('successor-enacted-is-not-promulgated must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorEnactedPromulgatedPage.includes("successor-rehearsed-is-not-recoverable")) {
+  fail('successor-enacted-is-not-promulgated must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-enacted-is-not-promulgated\"")) {
+  fail('successor-enacted-is-not-promulgated must not link to itself as a forward route');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-promulgated-is-not-published\"")) {
+  fail('successor-enacted-is-not-promulgated must keep Promulgated Is Not Published in prose only');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/enacted-is-not-promulgated\"")) {
+  fail('successor-enacted-is-not-promulgated must not open a filing spine');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/applied-is-not-restored\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Applied Is Not Restored');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-applied-is-not-restored\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Applied Is Not Restored');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/collectible-is-not-applied\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Collectible Is Not Applied');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-collectible-is-not-applied\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Collectible Is Not Applied');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-collected-is-not-recognized\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Collected Is Not Recognized');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-defended-is-not-owned\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget the Defended Is Not Owned growth-loop route');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-reconciled-is-not-attested\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Reconciled Is Not Attested');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/reconciled-is-not-attested\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Reconciled Is Not Attested');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-extinguished-is-not-reconciled\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Extinguished Is Not Reconciled');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-reconciled-is-not-closed\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Reconciled Is Not Closed');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-booked-is-not-reconciled\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Booked Is Not Reconciled');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-certified-is-not-insured\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Certified Is Not Insured');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/certified-is-not-insured\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Certified Is Not Insured');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-assured-is-not-certified\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Assured Is Not Certified');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/assured-is-not-certified\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Assured Is Not Certified');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-accepted-is-not-posted\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Accepted Is Not Posted');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/accepted-is-not-posted\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Accepted Is Not Posted');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-restored-is-not-accepted\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Restored Is Not Accepted');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/restored-is-not-accepted\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Restored Is Not Accepted');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-operated-is-not-sustained\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Operated Is Not Sustained');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/operated-is-not-sustained\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Operated Is Not Sustained');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/successor-delivered-is-not-operated\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget successor Delivered Is Not Operated');
+}
+if (successorEnactedPromulgatedPage.includes("href=\"/insights/delivered-is-not-operated\"")) {
+  fail('successor-enacted-is-not-promulgated must not retarget Delivered Is Not Operated');
+}
+if (!successorEnactedPromulgatedPage.includes('Promulgated Is Not Published may be named in prose only')) {
+  fail('successor-enacted-is-not-promulgated must name Promulgated Is Not Published in prose only');
+}
+if (successorEnactedPromulgatedPage.includes('Enacted Is Not Promulgated may be named in prose only')) {
+  fail('successor-enacted-is-not-promulgated must not name itself as prose only');
+}
+if (existsSync(join(root, 'app/insights/successor-promulgated-is-not-published/page.tsx'))) {
+  fail('successor-promulgated-is-not-published must stay prose only in this essay');
+}
+if (slugs.includes('successor-promulgated-is-not-published')) {
+  fail('successor-promulgated-is-not-published must not be registered in this essay');
+}
+if (existsSync(join(root, 'app/insights/enacted-is-not-promulgated/page.tsx'))) {
+  fail('enacted-is-not-promulgated filing spine must not be created');
+}
+if (slugs.includes('enacted-is-not-promulgated')) {
+  fail('enacted-is-not-promulgated filing spine must not be registered');
+}
+if (existsSync(join(root, 'app/insights/enacted-is-not-promulgated/page.tsx'))) {
+  fail('enacted-is-not-promulgated filing spine must not be created');
+}
+if (slugs.includes('enacted-is-not-promulgated')) {
+  fail('enacted-is-not-promulgated filing spine must not be registered');
+}
+if (!existsSync(join(root, 'app/insights/successor-enacted-is-not-promulgated/page.tsx'))) {
+  fail('successor-enacted-is-not-promulgated page must exist');
+}
+if (!slugs.includes('successor-enacted-is-not-promulgated')) {
+  fail('successor-enacted-is-not-promulgated must be registered in the catalog');
+}
+if (!successorEnactedPromulgatedPage.includes('href="/insights/successor-ratified-is-not-enacted"')) {
+  fail('successor-enacted-is-not-promulgated must keep prior reading on successor-ratified-is-not-enacted');
+}
+if (!read('app/insights/successor-ratified-is-not-enacted/page.tsx').includes('href="/insights/successor-enacted-is-not-promulgated"')) {
+  fail('successor-ratified-is-not-enacted must point the series forward to successor-enacted-is-not-promulgated');
+}
+for (const earlier of ["app/insights/successor-verified-is-not-ratified/page.tsx","app/insights/successor-confirmed-is-not-verified/page.tsx","app/insights/successor-acted-is-not-confirmed/page.tsx","app/insights/successor-instructed-is-not-acted/page.tsx","app/insights/successor-authorized-is-not-instructed/page.tsx","app/insights/successor-approved-is-not-authorized/page.tsx","app/insights/successor-reviewed-is-not-approved/page.tsx","app/insights/successor-operated-is-not-reviewed/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-collected-is-not-applied/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-advanced-is-not-performed/page.tsx","app/insights/successor-relied-is-not-advanced/page.tsx","app/insights/successor-attested-is-not-relied/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-disbursed-is-not-extinguished/page.tsx","app/insights/successor-obligated-is-not-disbursed/page.tsx","app/insights/successor-spendable-is-not-obligated/page.tsx","app/insights/successor-available-is-not-spendable/page.tsx","app/insights/successor-cleared-is-not-available/page.tsx","app/insights/successor-remitted-is-not-cleared/page.tsx","app/insights/successor-captured-is-not-remitted/page.tsx","app/insights/successor-residual-is-not-captured/page.tsx","app/insights/successor-defended-is-not-residual/page.tsx","app/insights/successor-distributed-is-not-defended/page.tsx","app/insights/successor-controlled-is-not-distributed/page.tsx","app/insights/successor-compounded-is-not-controlled/page.tsx","app/insights/successor-closeable-is-not-compounded/page.tsx","app/insights/successor-financeable-is-not-closeable/page.tsx","app/insights/successor-insurable-is-not-financeable/page.tsx","app/insights/successor-governable-is-not-insurable/page.tsx","app/insights/successor-auditable-is-not-governable/page.tsx","app/insights/successor-accountable-is-not-auditable/page.tsx","app/insights/successor-deployable-is-not-accountable/page.tsx","app/insights/successor-liquid-is-not-deployable/page.tsx","app/insights/successor-portable-is-not-liquid/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-retained-is-not-expanded/page.tsx","app/insights/successor-monetized-is-not-retained/page.tsx","app/insights/successor-binding-is-not-monetized/page.tsx","app/insights/successor-effective-is-not-binding/page.tsx","app/insights/successor-posted-is-not-effective/page.tsx","app/insights/successor-accepted-is-not-posted/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(earlier).includes('href="/insights/successor-enacted-is-not-promulgated"')) {
+    fail(`forward link to successor-enacted-is-not-promulgated must come only from successor-ratified-is-not-enacted (${earlier})`);
+  }
+}
+
+const successorEnactedPromulgatedBlock = stepBlock('successor-enacted-is-not-promulgated');
+for (const required of ["successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
+  if (!successorEnactedPromulgatedBlock.includes(`'${required}'`)) {
+    fail(`successor-enacted-is-not-promulgated related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorEnactedPromulgatedBlock)) {
+  fail('successor-enacted-is-not-promulgated related reading must include the Strategic Pilot');
+}
+if (successorEnactedPromulgatedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-enacted-is-not-promulgated next step is the Field Manual');
+}
+if (successorEnactedPromulgatedBlock.includes('successor-promulgated-is-not-published')) {
+  fail('successor-enacted-is-not-promulgated must keep Promulgated Is Not Published in prose only');
+}
+if (successorEnactedPromulgatedBlock.includes("collectible-is-not-applied")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Collectible Is Not Applied');
+}
+if (successorEnactedPromulgatedBlock.includes("applied-is-not-restored")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Applied Is Not Restored');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-reconciled-is-not-attested")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Reconciled Is Not Attested');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-extinguished-is-not-reconciled")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Extinguished Is Not Reconciled');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-defended-is-not-owned")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Defended Is Not Owned');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-certified-is-not-insured")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Certified Is Not Insured');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-assured-is-not-certified")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Assured Is Not Certified');
+}
+if (successorEnactedPromulgatedBlock.includes("successor-operated-is-not-sustained")) {
+  fail('successor-enacted-is-not-promulgated related reading must stay off Operated Is Not Sustained');
+}
+if (!successorEnactedPromulgatedBlock.includes("relatedSlug: 'successor-ratified-is-not-enacted'")) {
+  fail('successor-enacted-is-not-promulgated related reading must start from successor-ratified-is-not-enacted');
+}
+{
+  const alsoAt = successorEnactedPromulgatedBlock.indexOf('also: [');
+  const firstAlso = successorEnactedPromulgatedBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
+  if (!firstAlso || firstAlso[1] !== 'successor-verified-is-not-ratified') {
+    fail('successor-enacted-is-not-promulgated must list successor-verified-is-not-ratified first among additional related reading');
+  }
+}
+if (successorEnactedPromulgatedBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-enacted-is-not-promulgated must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of ["app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(untouched).includes('successor-enacted-is-not-promulgated')) {
+    fail(`${untouched} must stay off successor-enacted-is-not-promulgated`);
   }
 }
 
