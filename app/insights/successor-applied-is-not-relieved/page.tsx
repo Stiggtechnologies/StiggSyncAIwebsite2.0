@@ -216,11 +216,17 @@ export default function SuccessorAppliedIsNotRelievedPage() {
             the named ledger entry, or the extinguished customer-account balance tied to the period books
             — not merely that the liability or receivable was closed out as satisfied, the claim was
             released from outstanding, or the balance was extinguished for reporting and customer account
-            purposes. Relieved Is Not Reconciled may be named in prose only at
-            /insights/successor-relieved-is-not-reconciled. This essay does not implement that page. This
-            essay does not create a successor route for Relieved Is Not Reconciled. This essay does not
-            create a filing spine for Applied Is Not Relieved. This essay does not create a filing spine
-            at /insights/applied-is-not-relieved.
+            purposes.{' '}
+            <Link
+              href="/insights/successor-relieved-is-not-reconciled"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Relieved Is Not Reconciled
+            </Link>
+            . Read it at /insights/successor-relieved-is-not-reconciled. This essay does not rewrite that
+            thesis. This essay does not give that reconciled a new meaning. This essay does not create a
+            filing spine for Applied Is Not Relieved. This essay does not create a filing spine at
+            /insights/applied-is-not-relieved.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
