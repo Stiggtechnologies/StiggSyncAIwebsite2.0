@@ -202,11 +202,17 @@ export default function SuccessorInvoicedIsNotCollectedPage() {
             item it belongs to — the received cash applied to the billed fee, the cleared remittance
             applied to the earned return, the paid-in premium applied to the earned period, or the
             payment applied to the billed commitment — not merely that cash was received, the remittance
-            cleared, the premium was paid in, or the receivable was extinguished by payment. Collected Is Not Applied may be named in prose only at
-            /insights/successor-collected-is-not-applied.
-            This essay does not implement that page. This essay does not create a successor route for
-            Collected Is Not Applied. This essay does not create a filing spine for Invoiced Is Not
-            Collected. This essay does not create a filing spine at /insights/invoiced-is-not-collected.
+            cleared, the premium was paid in, or the receivable was extinguished by payment.{' '}
+            <Link
+              href="/insights/successor-collected-is-not-applied"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Collected Is Not Applied
+            </Link>
+            . Read it at /insights/successor-collected-is-not-applied. This essay does not rewrite that
+            thesis. This essay does not give that applied a new meaning. This essay does not create a
+            filing spine for Invoiced Is Not Collected. This essay does not create a filing spine at
+            /insights/invoiced-is-not-collected.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
