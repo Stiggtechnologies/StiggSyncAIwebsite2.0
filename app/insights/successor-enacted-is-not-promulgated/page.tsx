@@ -297,12 +297,17 @@ export default function SuccessorEnactedIsNotPromulgatedPage() {
             published by a named publisher for the named period, the promulgated statement published for the named
             ledger and period, or the promulgated customer workflow published for the customer and the period,
             with a named publisher, a publication date, and a publication recorded — not merely that a named
-            promulgator recorded a promulgation date and a promulgation recorded for that enacted period.
-            Promulgated Is Not Published may be named in prose only at
-            /insights/successor-promulgated-is-not-published. This essay does not implement
-            that page. This essay does not create a successor route for Promulgated Is Not Published. This essay
-            does not create a filing spine for Enacted Is Not Promulgated. This essay does not create a
-            filing spine at /insights/enacted-is-not-promulgated.
+            promulgator recorded a promulgation date and a promulgation recorded for that enacted period.{' '}
+            <Link
+              href="/insights/successor-promulgated-is-not-published"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Promulgated Is Not Published
+            </Link>
+            . Read it at /insights/successor-promulgated-is-not-published. This essay does not rewrite that
+            thesis. This essay does not give that published a new meaning. This essay does not create a
+            filing spine for Enacted Is Not Promulgated. This essay does not create a filing spine at
+            /insights/enacted-is-not-promulgated.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
