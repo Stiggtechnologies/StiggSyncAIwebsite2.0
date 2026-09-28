@@ -278,12 +278,17 @@ export default function SuccessorReviewedIsNotApprovedPage() {
             named period, the approved statement authorized for the named ledger and period, or the
             approved customer workflow authorized for the customer and the period, with a named
             authorizer, an authorization date, and an authorization grant — not merely that a named
-            approver recorded an approval date and an approval decision for that reviewed period.
-            Approved Is Not Authorized may be named in prose only at
-            /insights/successor-approved-is-not-authorized.
-            This essay does not implement that page. This essay does not create a successor route for
-            Approved Is Not Authorized. This essay does not create a filing spine for Reviewed Is Not
-            Approved. This essay does not create a filing spine at /insights/reviewed-is-not-approved.
+            approver recorded an approval date and an approval decision for that reviewed period.{' '}
+            <Link
+              href="/insights/successor-approved-is-not-authorized"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Approved Is Not Authorized
+            </Link>
+            . Read it at /insights/successor-approved-is-not-authorized. This essay does not rewrite that
+            thesis. This essay does not give that authorized a new meaning. This essay does not create a
+            filing spine for Reviewed Is Not Approved. This essay does not create a filing spine at
+            /insights/reviewed-is-not-approved.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
