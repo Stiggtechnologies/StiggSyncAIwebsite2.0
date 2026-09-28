@@ -280,11 +280,17 @@ export default function SuccessorOperatedIsNotReviewedPage() {
             statement approved for the named ledger and period, or the reviewed customer workflow approved
             for the customer and the period, with a named approver, an approval date, and an approval
             decision — not merely that a named reviewer recorded a review date and a review conclusion for
-            that operated period. Reviewed Is Not Approved may be named in prose only at
-            /insights/successor-reviewed-is-not-approved. This essay does not implement that page. This
-            essay does not create a successor route for Reviewed Is Not Approved. This essay does not
-            create a filing spine for Operated Is Not Reviewed. This essay does not create a filing spine
-            at /insights/operated-is-not-reviewed.
+            that operated period.{' '}
+            <Link
+              href="/insights/successor-reviewed-is-not-approved"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Reviewed Is Not Approved
+            </Link>
+            . Read it at /insights/successor-reviewed-is-not-approved. This essay does not rewrite that
+            thesis. This essay does not give that approved a new meaning. This essay does not create a
+            filing spine for Operated Is Not Reviewed. This essay does not create a filing spine at
+            /insights/operated-is-not-reviewed.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
