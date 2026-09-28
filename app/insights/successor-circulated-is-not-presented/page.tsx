@@ -302,13 +302,18 @@ export default function SuccessorCirculatedIsNotPresentedPage() {
             advanced relied attested extinguished period have been received — the presented operating results
             received by a named receiver for the named period, the presented statement received for the named
             ledger and period, or the presented customer workflow received for the customer and the period,
-            with a named receiver, a reception date, and a reception recorded — not merely that a named
-            presenter recorded a presentation date and a presentation recorded for that circulated period.
-            Presented Is Not Received may be named in prose only at
-            /insights/successor-presented-is-not-received. This essay does not implement
-            that page. This essay does not create a successor route for Presented Is Not Received. This essay
-            does not create a filing spine for Circulated Is Not Presented. This essay does not create a
-            filing spine at /insights/circulated-is-not-presented.
+            with a named receiver, a receipt date, and a receipt recorded — not merely that a named
+            presenter recorded a presentation date and a presentation recorded for that circulated period.{' '}
+            <Link
+              href="/insights/successor-presented-is-not-received"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Presented Is Not Received
+            </Link>
+            . Read it at /insights/successor-presented-is-not-received. This essay does not rewrite that
+            thesis. This essay does not give that received a new meaning. This essay does not create a
+            filing spine for Circulated Is Not Presented. This essay does not create a filing spine at
+            /insights/circulated-is-not-presented.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
