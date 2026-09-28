@@ -11,6 +11,15 @@ export type InsightArticle = {
 
 export const insightArticles: InsightArticle[] = [
   {
+    slug: 'successor-spendable-is-not-obligated',
+    title: 'Spendable Is Not Obligated',
+    description: "Spendable is not obligated. Spendable means that available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing — an executed spendability instrument — not merely available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing — the spendable the successor-spine Available Is Not Spendable already names. spendable cash with no purchase order, a contract name with no commitment SyncAI has obligated, an accrued amount with no payable that binds the named commitment, or obligation talk that says the cash is spendable while an encumbrance or an approved obligation instrument is missing is not obligated. Obligated means that spendable cash or margin is bound by an executed commitment to a named SyncAI offer, owner, and budget — so funds SyncAI can spend are not mistaken for funds SyncAI has obligated when a purchase order, a contract commitment, an accrued payable, an encumbrance, or an approved obligation instrument is still missing — an executed obligability instrument (a purchase order that obligates the named spendable cash to a named commitment, a contract commitment that binds the named spendable margin to a named SyncAI offer, owner, and budget, an encumbrance that reserves the named spendable funds against a named commitment before cash leaves, or an obligability binder that releases the spendable funds as obligated only when the purchase order, the contract commitment, the accrued payable, the encumbrance, and an approved obligation instrument are on the file) — not merely spendable cash with no purchase order, a contract name with no commitment SyncAI has obligated, an accrued amount with no payable that binds the named commitment, or obligation talk that says the cash is spendable while an encumbrance or an approved obligation instrument is missing. Not the slide from \"it is spendable because available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing\" to \"it is obligated because spendable cash or margin is bound by an executed commitment to a named SyncAI offer, owner, and budget — so funds SyncAI can spend are not mistaken for funds SyncAI has obligated when a purchase order, a contract commitment, an accrued payable, an encumbrance, or an approved obligation instrument is still missing\". Spendable is not obligated. A firm can be spendable and still not obligated. A firm can chase obligability theater and still not be spendable. Available Is Not Spendable already names the prior split. This essay does not rewrite that thesis. A spendability package alone is not obligated of that spendable successor outcome. A spendability is not an obligability. Refuse the slide from \"it is spendable because available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing\" to \"it is obligated because spendable cash or margin is bound by an executed commitment to a named SyncAI offer, owner, and budget — so funds SyncAI can spend are not mistaken for funds SyncAI has obligated when a purchase order, a contract commitment, an accrued payable, an encumbrance, or an approved obligation instrument is still missing\". This split is spendable versus obligated. Available cash or margin that SyncAI can spend is not the same as funds SyncAI has obligated to a named commitment when a purchase order, contract commitment, accrued payable, encumbrance, or approved obligation instrument is still missing. Spendable cash or margin is not the same as funds SyncAI has obligated. This refusal sits on the commercial spine. This is the obligability spine after that spendability. Obligated Is Not Disbursed may be named in prose only at /insights/successor-obligated-is-not-disbursed. This essay does not implement that page. This essay does not create a successor route for Obligated Is Not Disbursed.",
+    excerpt: "Spendable is not obligated. Spendable means that available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing, by an executed spendability instrument. Obligated means that spendable cash or margin is bound by an executed commitment to a named SyncAI offer, owner, and budget — so funds SyncAI can spend are not mistaken for funds SyncAI has obligated when a purchase order, a contract commitment, an accrued payable, an encumbrance, or an approved obligation instrument is still missing, by an executed obligability instrument: a purchase order that obligates the named spendable cash to a named commitment, a contract commitment that binds the named spendable margin to a named SyncAI offer, owner, and budget, an encumbrance that reserves the named spendable funds against a named commitment before cash leaves, or an obligability binder that releases the spendable funds as obligated only when the purchase order, the contract commitment, the accrued payable, the encumbrance, and an approved obligation instrument are on the file. spendable cash with no purchase order, a contract name with no commitment SyncAI has obligated, an accrued amount with no payable that binds the named commitment, or obligation talk that says the cash is spendable while an encumbrance or an approved obligation instrument is missing is not obligated.",
+    category: 'Decision Case',
+    readTime: '8 min read',
+    published: '2026-09-28',
+  },
+  {
     slug: 'successor-available-is-not-spendable',
     title: 'Available Is Not Spendable',
     description: "Available is not spendable. Available means that cleared cash or margin in an account SyncAI owns is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them — an executed availability instrument — not merely a cleared balance that remains under a named hold, a posted credit that sits in a reserve, a cleared amount still inside a return window, or availability talk that says the cash cleared while a hold, a reserve, or a return window is still on it — the available the successor-spine Cleared Is Not Available already names. available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing is not spendable. Spendable means that available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing — an executed spendability instrument (a spend-authority grant that authorizes SyncAI to spend the named available cash, a budget allocation that assigns the named available margin to a named SyncAI budget SyncAI can spend, a payment-control release that shows the named payment controls allow SyncAI to spend the named available funds, or a spendability binder that releases the available funds as spendable only when spend authority, the budget allocation, the payment controls, and an approved spend instrument are on the file) — not merely available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing. Not the slide from \"it is available because cleared cash or margin in an account SyncAI owns is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them\" to \"it is spendable because available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing\". Available is not spendable. A firm can be available and still not spendable. A firm can chase spendability theater and still not be available. Cleared Is Not Available already names the prior split. This essay does not rewrite that thesis. An availability package alone is not spendable of that available successor outcome. An availability is not a spendability. Refuse the slide from \"it is available because cleared cash or margin in an account SyncAI owns is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them\" to \"it is spendable because available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing\". This split is available versus spendable. Cleared cash or margin that is available in an account SyncAI owns is not the same as funds SyncAI can spend when spend authority, budget allocation, payment controls, or an approved spend instrument is still missing. Available cash or margin is not the same as funds SyncAI can spend. This refusal sits on the commercial spine. This is the spendability spine after that availability. Keep this commercial spendable distinct from Solvency Is Not Liquidity, from Liquidity Is Not Flexibility, from ARR Is Not Cash, from Cash Is Not Runway, from Cash Is Not Margin, from Closure Is Not Cash, from Owned Is Not Governed, from Compounded Is Not Owned, from Accountability Is Not Ownership, from Accountability Is Not Closure, from Governed Is Not Transferable, from Binding Is Not Enforced, from Control Is Not Closure, from Ownership Is Not Control, from Expanded Is Not Defended, from Defended Is Not Owned. This spendable is not the available Cleared Is Not Available already names. This spendable is not the cleared Remitted Is Not Cleared already names. This spendable is not the collected Collected Is Not Recognized already names. This spendable is not the recognized Recognized Is Not Reported already names. This spendable is not the booked Booked Is Not Reconciled already names. This spendable is not the monetized Monetized Is Not Retained already names. This spendable is not the cash ARR Is Not Cash already names. This spendable is not the margin Cash Is Not Margin already names. This spendable is not the disbursement Paid Is Not Settled already names. This spendable is not the settlement Settled Is Not Booked already names. This spendable is not the deployable Deployable Is Not Accountable already names. This spendable is not the cleared Cleared Is Not Complete already names. This spendable is not the cleared successor Cleared Is Not Closed already names. This essay does not collapse into Cleared Is Not Available. This essay does not rewrite Cleared Is Not Available. This essay does not collapse into Cleared Is Not Complete. This essay does not rewrite Cleared Is Not Complete. This essay does not collapse into Cleared Is Not Closed. This essay does not rewrite Cleared Is Not Closed. This essay does not collapse into Paid Is Not Settled. This essay does not rewrite Paid Is Not Settled. This essay does not collapse into Settled Is Not Booked. This essay does not rewrite Settled Is Not Booked. This essay does not collapse into Remitted Is Not Cleared. This essay does not rewrite Remitted Is Not Cleared. This essay does not collapse into those filing spines. This essay does not rewrite them. This essay does not create a filing spine for Available Is Not Spendable. Spendable Is Not Obligated may be named in prose only at /insights/successor-spendable-is-not-obligated. This essay does not implement that page. This essay does not create a successor route for Spendable Is Not Obligated.",
@@ -2156,12 +2165,359 @@ export type InsightNextStep = {
  * `also` adds further essays. `includePilot` adds the Strategic Pilot beside the Field Manual.
  */
 export const insightNextSteps: Record<string, InsightNextStep> = {
+  'successor-spendable-is-not-obligated': {
+    relatedSlug: 'successor-available-is-not-spendable',
+    relatedNote: 'Available is not spendable. The successor-spine prior essay separates that cleared cash or margin in an account SyncAI owns is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them by an executed availability instrument from available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing by an executed spendability instrument. This essay does not rewrite that thesis. This essay does not give that spendable a new meaning. Obligated is the next refusal on this commercial spine. available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing is not spendable. spendable cash with no purchase order, a contract name with no commitment SyncAI has obligated, an accrued amount with no payable that binds the named commitment, or obligation talk that says the cash is spendable while an encumbrance or an approved obligation instrument is missing is not obligated. Keep this commercial obligated distinct from Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Owned Is Not Governed, Compounded Is Not Owned, Accountability Is Not Ownership, Accountability Is Not Closure, Governed Is Not Transferable, Binding Is Not Enforced, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, Deployable Is Not Accountable, Collected Is Not Recognized, Recognized Is Not Reported, Booked Is Not Reconciled, Monetized Is Not Retained, Paid Is Not Settled, and Settled Is Not Booked. Available cash or margin that SyncAI can spend is not the same as funds SyncAI has obligated to a named commitment when a purchase order, contract commitment, accrued payable, encumbrance, or approved obligation instrument is still missing.',
+    next: 'field-manual',
+    includePilot: true,
+    also: [
+      {
+        slug: 'successor-cleared-is-not-available',
+        note: 'Cleared is not available. The successor-spine prior essay separates that remitted cash or margin has cleared into an account SyncAI owns — so a transfer named or initiated is not mistaken for cleared funds by an executed clearability instrument from cleared cash or margin in an account SyncAI owns is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them by an executed availability instrument. This essay does not rewrite that thesis. This essay does not give that available a new meaning. Spendable is the commercial spendability Available Is Not Spendable already names. a cleared balance that remains under a named hold, a posted credit that sits in a reserve, a cleared amount still inside a return window, or availability talk that says the cash cleared while a hold, a reserve, or a return window is still on it is not available. available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing is not spendable.',
+      },
+      {
+        slug: 'successor-remitted-is-not-cleared',
+        note: 'Remitted is not cleared. The successor-spine prior essay separates that cash or margin from that captured residual is actually transferred to SyncAI — so capture into SyncAI economics is not mistaken for remittance by an executed remittability instrument from remitted cash or margin that has cleared into an account SyncAI owns — so a transfer named or initiated is not mistaken for cleared funds by an executed clearability instrument. This essay does not rewrite that thesis. This essay does not give that cleared a new meaning. Available is the commercial availability Cleared Is Not Available already names. a remittance instruction that names or initiates a transfer but does not clear cash or margin into an account SyncAI owns, a cash-transfer record that shows the transfer was initiated with no cleared balance in an account SyncAI owns, a margin-remittance still in transit that has not posted to an account SyncAI owns, or remittance talk that says the cash was sent with no cleared funds in an account SyncAI owns is not cleared. a cleared balance that remains under a named hold, a posted credit that sits in a reserve, a cleared amount still inside a return window, or availability talk that says the cash cleared while a hold, a reserve, or a return window is still on it is not available.',
+      },
+      {
+        slug: 'successor-captured-is-not-remitted',
+        note: 'Captured is not remitted. The successor-spine prior essay separates that the residual claim on the customer, the margin, or the channel is captured into SyncAI economics — so naming residual ownership is not mistaken for capture by an executed capturability instrument from cash or margin from that captured residual actually transferred to SyncAI — so capture into SyncAI economics is not mistaken for remittance by an executed remittability instrument. This essay does not rewrite that thesis. This essay does not give that remitted a new meaning. Cleared is the commercial clearance Remitted Is Not Cleared already names. a customer-capture schedule that books the residual into SyncAI economics but does not remit cash or margin to SyncAI, a margin-capture entry that records the residual in SyncAI economics with no cash or margin transferred, a channel-capture instrument that names the economics inside SyncAI with no remittance, or capture talk that books the residual inside SyncAI economics with no cash or margin actually transferred is not remitted. a remittance instruction that names or initiates a transfer but does not clear cash or margin into an account SyncAI owns, a cash-transfer record that shows the transfer was initiated with no cleared balance in an account SyncAI owns, a margin-remittance still in transit that has not posted to an account SyncAI owns, or remittance talk that says the cash was sent with no cleared funds in an account SyncAI owns is not cleared.',
+      },
+      {
+        slug: 'successor-residual-is-not-captured',
+        note: 'Residual is not captured. The successor-spine prior essay separates that SyncAI keeps a residual claim on the customer, the margin, or the channel after that defended placement — so defense of territory, brand, and IP is not mistaken for residual ownership of the economics by an executed residuality instrument from the residual claim on the customer, the margin, or the channel captured into SyncAI economics — so naming residual ownership is not mistaken for capture by an executed capturability instrument. This essay does not rewrite that thesis. This essay does not give that captured a new meaning. Remitted is the commercial transfer Captured Is Not Remitted already names. a residual-customer covenant that names ownership but does not capture it into SyncAI economics, a margin-residual schedule with no capture into SyncAI economics, a channel-residual instrument that leaves the economics with the partner, or residual talk that names ownership with no capture into SyncAI economics is not captured. a customer-capture schedule that books the residual into SyncAI economics but does not remit cash or margin to SyncAI, a margin-capture entry that records the residual in SyncAI economics with no cash or margin transferred, a channel-capture instrument that names the economics inside SyncAI with no remittance, or capture talk that books the residual inside SyncAI economics with no cash or margin actually transferred is not remitted.',
+      },
+      {
+        slug: 'successor-defended-is-not-residual',
+        note: 'Defended is not residual. The successor-spine prior essay separates that partner/channel placements carry enforceable territory, performance, brand, and IP protections — so distribution does not leak margin, control, or defensibility by an executed defensibility instrument from SyncAI keeping a residual claim on the customer, the margin, or the channel after that defended placement — so defense of territory, brand, and IP is not mistaken for residual ownership of the economics by an executed residuality instrument. This essay does not rewrite that thesis. This essay does not give that residual a new meaning. Captured is the commercial capture Residual Is Not Captured already names. A territory covenant with no residual customer claim, a brand lock with no margin residual, an IP schedule with no channel residual, or defense talk with no residual claim on the economics is not residual. a residual-customer covenant that names ownership but does not capture it into SyncAI economics, a margin-residual schedule with no capture into SyncAI economics, a channel-residual instrument that leaves the economics with the partner, or residual talk that names ownership with no capture into SyncAI economics is not captured.',
+      },
+      {
+        slug: 'successor-distributed-is-not-defended',
+        note: 'Distributed is not defended. The successor-spine prior essay separates that capital, product, and operating rights can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet by an executed distributability instrument from partner/channel placements that carry enforceable territory, performance, brand, and IP protections — so distribution does not leak margin, control, or defensibility by an executed defensibility instrument. This essay does not rewrite that thesis. This essay does not give that defended a new meaning. Residual is the commercial claim Defended Is Not Residual already names. A distributed placement with no brand lock, a channel map with no IP schedule, a performance rule with no margin clawback, or territory talk with no enforceable protection is not defended. a territory covenant with no residual customer claim, a brand lock with no margin residual, an IP schedule with no channel residual, or defense talk with no residual claim on the economics is not residual. Keep this commercial residual distinct from Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Owned Is Not Governed, Compounded Is Not Owned, Accountability Is Not Ownership, Accountability Is Not Closure, Governed Is Not Transferable, Binding Is Not Enforced, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-controlled-is-not-distributed',
+        note: 'Controlled is not distributed. The successor-spine prior essay separates that operators can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control by an executed controllability instrument from capital, product, and operating rights that can be placed with partners/channels under enforceable allocation, territory, and performance rules — so control does not trap growth inside one balance sheet by an executed distributability instrument. This essay does not rewrite that thesis. This essay does not give that distributed a new meaning. Defended is the commercial defense Distributed Is Not Defended already names. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed. A distributed placement with no brand lock, a channel map with no IP schedule, a performance rule with no margin clawback, or territory talk with no enforceable protection is not defended. Keep this commercial defended distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-compounded-is-not-controlled',
+        note: 'Compounded is not controlled. The successor-spine prior essay separates that closed capital re-enters a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose by an executed compoundability instrument from operators who can set, enforce, and audit the levers that govern that cycle — underwrite standards, concentration limits, draw/stop rules, collection discipline, and redeploy gates — so growth cannot outrun intentional control by an executed controllability instrument. This essay does not rewrite that thesis. This essay does not give that controlled a new meaning. Distributed is the commercial placement Controlled Is Not Distributed already names. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. A controlled book trapped on one balance sheet, a partner handshake with no allocation, a channel map with no territory rule, or performance talk with no enforceable recall is not distributed. Keep this commercial distributed distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-closeable-is-not-compounded',
+        note: 'Closeable is not compounded. The successor-spine prior essay separates that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument from that closed capital re-entering a repeat underwrite, fund, collect, and redeploy cycle that grows the book on purpose by an executed compoundability instrument. This essay does not rewrite that thesis. This essay does not give that compounded a new meaning. Controlled is the commercial control Compounded Is Not Controlled already names. A one-time close, a single draw, or a static facility balance is not compounded. A compounding cycle with no underwrite standards, a growing book with no concentration limits, a redeploy with no draw/stop rules, or collection without collection discipline and redeploy gates is not controlled. Keep this commercial controlled distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Control Is Not Closure, Ownership Is Not Control, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-financeable-is-not-closeable',
+        note: 'Financeable is not closeable. The successor-spine prior essay separates that insurable residual-risk cover funded or underwritten for the next draw against named cash-flow evidence, covenants, and recourse by an executed financeability instrument from that financeable cover or facility closed only when conditions precedent, executed docs, and funding/settlement mechanics are satisfied so capital moves by an executed closeability instrument. This essay does not rewrite that thesis. This essay does not give that closeable a new meaning. Compounded is the commercial compound Closeable Is Not Compounded already names. A term sheet with no conditions precedent satisfied, credit appetite with no executed docs, an underwriting indication that does not move capital, or a commitment letter without funding or settlement mechanics is not closeable. A one-time close, a single draw, or a static facility balance is not compounded. Keep this commercial compounded distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-insurable-is-not-financeable',
+        note: 'Insurable is not financeable. The successor-spine prior essay separates that governable spend system underwritten so residual risk after enforceable stops is transferable to a counterparty by an executed insurability instrument from that insurable residual-risk cover funded or underwritten for the next draw against named cash-flow evidence, covenants, and recourse by an executed financeability instrument. This essay does not rewrite that thesis. This essay does not give that financeable a new meaning. Closeable is the commercial close Financeable Is Not Closeable already names. An insurance certificate with no counterparty committed to fund the next draw, a cover limit with no cash-flow evidence a lender will underwrite, a binder without covenants or recourse, or a claims pack that cannot support the next draw is not financeable. A term sheet with no conditions precedent satisfied, credit appetite with no executed docs, an underwriting indication that does not move capital, or a commitment letter without funding or settlement mechanics is not closeable. Keep this commercial closeable distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, and Deployable Is Not Accountable.',
+      },
+      {
+        slug: 'successor-governable-is-not-insurable',
+        note: 'Governable is not insurable. The successor-spine prior essay separates that auditable spend trail steered by SyncAI leadership with enforceable rules, stops, and reallocations before the next draw by an executed governability instrument from that governable spend system underwritten so residual risk after enforceable stops is transferable to a counterparty by an executed insurability instrument. This essay does not rewrite that thesis. This essay does not give that insurable a new meaning. Financeable is the commercial funding Insurable Is Not Financeable already names. A kill-switch with no residual-risk cover, a policy threshold that stops spend but leaves uncovered catastrophic tail, a board exception register without a named indemnity, bond, or insurance attachment, or a governance dashboard that cannot produce a claims pack for a dated loss is not insurable.',
+      },
+      {
+        slug: 'successor-auditable-is-not-governable',
+        note: 'Auditable is not governable. The successor-spine prior essay separates that accountable spend independently reconstructed and verified by a third party or SyncAI board or finance from durable records without relying on the spend owner memory by an executed auditability instrument from that auditable spend trail steered by SyncAI leadership with enforceable rules, stops, and reallocations before the next draw by an executed governability instrument. This essay does not rewrite that thesis. This essay does not give that governable a new meaning. Insurable is the commercial cover Governable Is Not Insurable already names. A perfect exportable ledger that nobody can pause mid-burn, a post-hoc variance report with no policy consequence, an audit pack that only informs after cash is gone, or a dashboard without an enforceable stop is not governable. A kill-switch with no residual-risk cover, a policy threshold that stops spend but leaves uncovered catastrophic tail, a board exception register without a named indemnity, bond, or insurance attachment, or a governance dashboard that cannot produce a claims pack for a dated loss is not insurable. Keep this commercial insurable distinct from Owned Is Not Governed, Governed Is Not Transferable, Binding Is Not Enforced, Accountability Is Not Closure, Accountability Is Not Ownership, Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Compounded Is Not Owned, Insured Is Not Covered, Reported Is Not Audited, and Audited Is Not Filed.',
+      },
+      {
+        slug: 'successor-accountable-is-not-auditable',
+        note: 'Accountable is not auditable. The successor-spine prior essay separates that deployed spend attributable to a named SyncAI owner, budget line, and commercial outcome with evidenced residual responsibility by an executed accountability instrument from that accountable spend independently reconstructed and verified by a third party or SyncAI board or finance from durable records without relying on the spend owner memory by an executed auditability instrument. This essay does not rewrite that thesis. This essay does not give that auditable a new meaning. Governable is the commercial control Auditable Is Not Governable already names. A Slack thread saying I own marketing, a dashboard filter only the owner can recreate, a verbal cost-center assignment, a spreadsheet on one laptop, or a CRM note without an exportable evidence trail is not auditable.',
+      },
+      {
+        slug: 'successor-deployable-is-not-accountable',
+        note: 'Deployable is not accountable. The successor-spine prior essay separates that liquid cash or working capital committed into a named SyncAI growth or defense use without destroying the remaining liquid, portable, or owned position by an executed deployability instrument from that deployed spend attributable to a named SyncAI owner, budget line, and commercial outcome with evidenced residual responsibility by an executed accountability instrument. This essay does not rewrite that thesis. This essay does not give that accountable a new meaning. Auditable is the commercial reconstruction Accountable Is Not Auditable already names. Deployed cash with no owner, a vendor invoice pile without SyncAI cost attribution, a CRM campaign spend total without residual owner, a verbal marketing used it, or a dashboard burn chart without who answers for the outcome is not accountable.',
+      },
+      {
+        slug: 'successor-liquid-is-not-deployable',
+        note: 'Liquid is not deployable. The successor-spine prior essay separates that portable owned commercial asset converted into usable cash or working capital for SyncAI without destroying the remaining bookable ARR by an executed liquidity instrument from that liquid cash or working capital committed into a named SyncAI growth or defense use without destroying the remaining liquid, portable, or owned position by an executed deployability instrument. This essay does not rewrite that thesis. This essay does not give that deployable a new meaning. Accountable is the commercial attribution Deployable Is Not Accountable already names. Liquid cash trapped in a restricted reserve SyncAI cannot spend, a partner escrow SyncAI cannot draw, a CRM budget available flag, a verbal we will put it into growth, or a dashboard cash total without an executed allocation path into SyncAI commercial use is not deployable.',
+      },
+      {
+        slug: 'successor-portable-is-not-liquid',
+        note: 'Portable is not liquid. The successor-spine prior essay separates that owned commercial asset moving with SyncAI across a named transfer event without losing bookable ARR by an executed portability instrument from that portable owned asset converted into usable cash or working capital for SyncAI without destroying the remaining bookable ARR by an executed liquidity instrument. This essay does not rewrite that thesis. This essay does not give that liquid a new meaning. Deployable is the commercial commitment Liquid Is Not Deployable already names. A portable book stuck behind a non-advanceable customer payable, a partner holdback SyncAI cannot monetize, a CRM cash forecast, a verbal we could factor it, or a dashboard ARR flag without an executed conversion path into SyncAI cash is not liquid.',
+      },
+      {
+        slug: 'successor-owned-is-not-portable',
+        note: 'Owned is not portable. The successor-spine prior essay separates that defended commercial position held as a durable, bookable commercial asset of SyncAI from that owned asset moving with SyncAI across a named transfer event without losing bookable ARR by an executed portability instrument. This essay does not rewrite that thesis. This essay does not give that portable a new meaning. Liquid is the commercial conversion Portable Is Not Liquid already names. An owned book trapped in a single customer portal login, a partner-only reseller seat SyncAI cannot re-home, a verbal we can take it with us, or a dashboard portable flag without an executed assignment or novation path is not portable.',
+      },
+      {
+        slug: 'successor-defended-is-not-owned',
+        note: 'Defended is not owned. The successor-spine prior essay separates that expanded commercial position protected against named competitive, pricing, or displacement pressure by an executed defense instrument from that defended position held as a durable, bookable commercial asset of SyncAI. This essay does not rewrite that thesis. This essay does not give that owned a new meaning. Portable is the commercial movement Owned Is Not Portable already names. A defended win sitting only in the customer procurement calendar, a verbal they are ours, a CRM owner field, a partner-owned reseller book that SyncAI cannot renew, or a dashboard account owned flag without SyncAI as contracting party of record is not owned.',
+      },
+      {
+        slug: 'solvency-is-not-liquidity',
+        note: 'Solvency is not liquidity. Different spine: firm solvency is not this commercial conversion of portable owned ARR into usable cash or working capital. This essay does not collapse into Solvency Is Not Liquidity. This essay does not rewrite Solvency Is Not Liquidity.',
+      },
+      {
+        slug: 'liquidity-is-not-flexibility',
+        note: 'Liquidity is not flexibility. Different spine: balance-sheet liquidity is not this executed liquidity instrument against portable SyncAI ARR. This essay does not collapse into Liquidity Is Not Flexibility. This essay does not rewrite Liquidity Is Not Flexibility.',
+      },
+      {
+        slug: 'cash-is-not-runway',
+        note: 'Cash is not runway. Different spine: cash on hand is not this commercial liquid conversion, and runway is not this refusal. This essay does not collapse into Cash Is Not Runway. This essay does not rewrite Cash Is Not Runway.',
+      },
+      {
+        slug: 'cash-is-not-margin',
+        note: 'Cash is not margin. Different spine. This essay does not collapse into Cash Is Not Margin. This essay does not rewrite Cash Is Not Margin.',
+      },
+      {
+        slug: 'closure-is-not-cash',
+        note: 'Closure is not cash. Different spine. This essay does not collapse into Closure Is Not Cash. This essay does not rewrite Closure Is Not Cash.',
+      },
+      {
+        slug: 'successor-expanded-is-not-defended',
+        note: 'Expanded is not defended. The successor-spine prior essay separates that retained commercial relationship grown beyond the retained baseline from that expanded position protected against named competitive, pricing, or displacement pressure by an executed defense instrument. This essay does not rewrite that thesis. This essay does not give that defended a new meaning. Owned is the commercial asset Defended Is Not Owned already names. A one-time upsell that is immediately competed away, a verbal they will not switch, a CRM competitive risk green, or a dashboard retention score without an executed defense instrument is not defended.',
+      },
+      {
+        slug: 'successor-retained-is-not-expanded',
+        note: 'Retained is not expanded. The successor-spine prior essay separates named commercial value kept over a named renewal or retention horizon from that retained relationship grown beyond the retained baseline: added contracted ARR, added paid seats or sites, an executed upsell or cross-sell order, or a named expansion instrument with evidenced incremental value. This essay does not rewrite that thesis. This essay does not give that expanded a new meaning. Defended is the commercial protection that Expanded Is Not Defended already names. A renewal at the same seat count with no incremental ARR, a verbal we will add sites later, a CRM expansion stage, or a dashboard growth green without an executed expansion instrument is not expanded.',
+      },
+
+      {
+        slug: 'successor-monetized-is-not-retained',
+        note: 'Monetized is not retained. The successor-spine prior essay separates named, evidenced commercial value for the named SyncAI offer from that value kept over a named renewal or retention horizon. This essay does not rewrite that thesis. This essay does not give that retained a new meaning. Expanded is the commercial growth that Retained Is Not Expanded already names. A one-time paid pilot that does not renew, a paid proof that churns at term, a dashboard customer health green, or a verbal we will renew without an executed renewal instrument is not retained.',
+      },
+      {
+        slug: 'successor-binding-is-not-monetized',
+        note: 'Binding is not monetized. The successor-spine prior essay separates enforceable obligations or rights for the named parties under the named regime from named, evidenced commercial value for the named SyncAI offer: contracted recurring revenue, a paid invoice, or an executed paid order, with a named counterparty, a named commercial instrument, and evidence of cash or contracted ARR. This essay does not rewrite that thesis. This essay does not give that monetized a new meaning. A signed NDA, a free pilot, a verbal yes, a CRM opportunity stage, or a dashboard pipeline green is not monetized.',
+      },
+      {
+        slug: 'successor-effective-is-not-binding',
+        note: 'Effective is not binding. The successor-spine prior essay separates named legal or operational effectiveness under the named instrument for that posted filing from enforceable obligations or rights for the named parties under the named regime. This essay does not rewrite that thesis. This essay does not give that binding a new meaning. Monetized is the commercial conversion that Binding Is Not Monetized already names. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'successor-posted-is-not-effective',
+        note: 'Posted is not effective. The successor-spine prior essay separates publication of an accepted filing on the named public disclosure system or registry of record, with a named posting identifier, URL, or accession and a posting timestamp, from that posted filing taking legal or operational effect for the named entity and period under the named instrument, including a named effective date, named scope, or system-of-record cutover. This essay does not rewrite that thesis. This essay does not give that effective a new meaning. Keep effective distinct from posted and from binding. A calendar cutover, a posted notice, or a dashboard green is not binding.',
+      },
+      {
+        slug: 'arr-is-not-cash',
+        note: 'ARR is not cash. Different spine: contracted ARR on this commercial spine is evidence the binding obligations converted into named commercial value for the named SyncAI offer. It is not a rewrite of that cash distinction. This essay does not collapse into ARR Is Not Cash. This essay does not rewrite ARR Is Not Cash.',
+      },
+      {
+        slug: 'revenue-is-not-arr',
+        note: 'Revenue is not ARR. Different spine. This monetized record may cite contracted ARR or cash. It does not give that revenue a new meaning. This essay does not collapse into Revenue Is Not ARR. This essay does not rewrite Revenue Is Not ARR.',
+      },
+      {
+        slug: 'successor-accepted-is-not-posted',
+        note: 'Accepted is not posted. The successor-spine prior essay separates a named acceptance or completeness acknowledgement for that specific lodged filing from publication of that accepted filing on the named public disclosure system or registry of record. This essay does not rewrite that thesis. This essay does not give that posted a new meaning. Keep posted distinct from accepted and from effective.',
+      },
+      {
+        slug: 'effective-is-not-binding',
+        note: 'Effective is not binding. Forward reading on the filing spine separates named legal or operational effectiveness under the instrument for that posted filing from instrument-required bind mechanics for that effective filing. This essay does not rewrite that thesis. The filing essay stays on its own URL. The successor essay is the next refusal on this industrial assurance spine.',
+      },
+      {
+        slug: 'successor-filed-is-not-accepted',
+        note: 'Filed is not accepted. The successor-spine prior essay separates a lodging receipt for the named channel from a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. Keep filed distinct from posted and from effective.',
+      },
+      {
+        slug: 'posted-is-not-effective',
+        note: 'Posted is not effective. Forward reading on the filing spine separates a named public posting on the disclosure system or registry of record from named legal or operational effectiveness under the instrument for that posted filing. This essay does not rewrite that thesis. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'restored-is-not-accepted',
+        note: 'Restored is not accepted. That filing essay separates instrument-required restoration of the named asset, unit, or plant operating condition from instrument-required acceptance of that restored condition by the named accountable owner, operator, or beneficiary. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-restored-is-not-accepted',
+        note: 'Restored is not accepted. That successor essay separates instrument-required restoration of an applied successor-obligation outcome from instrument-required acceptance of that restored outcome for the named return-to-service bar. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop. This accepted is channel acceptance of a lodged filing, distinct from that restored acceptance.',
+      },
+      {
+        slug: 'successor-audited-is-not-filed',
+        note: 'Audited is not filed. The successor-spine prior essay separates an independent named opinion or assurance conclusion from that named audited period pack lodged with the named channel. This essay does not rewrite that thesis. This essay does not give that filed a new meaning. Keep filed from Filed Is Not Accepted distinct from accepted and from posted.',
+      },
+      {
+        slug: 'accepted-is-not-posted',
+        note: 'Accepted is not posted. Forward reading on the filing spine separates a named acceptance or completeness acknowledgement from a named public posting on the disclosure system or registry of record. This essay does not rewrite that thesis. Posted is the next refusal on the industrial assurance spine.',
+      },
+      {
+        slug: 'complete-is-not-accepted',
+        note: 'Complete is not accepted. That essay separates measured completeness of an acceptance pack from named human sign-off of that pack. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that human sign-off.',
+      },
+      {
+        slug: 'accepted-is-not-verified',
+        note: 'Accepted is not verified. That essay separates named human sign-off of an acceptance pack from an independent evidence check. This essay does not rewrite that thesis. This accepted is channel acceptance of a lodged filing, distinct from that sign-off.',
+      },
+      {
+        slug: 'successor-reported-is-not-audited',
+        note: 'Reported is not audited. The successor-spine prior essay separates that named recognized figure correctly reported outward from an independent or internal audit trail for that same entity and period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from filed and from accepted.',
+      },
+
+      {
+        slug: 'successor-recognized-is-not-reported',
+        note: 'Recognized is not reported. The successor-spine prior essay separates that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy from that named recognized figure correctly reported outward with the same entity, period, and cut-off a controller can re-perform. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recognized-is-not-reported',
+        note: 'Recognized is not reported. The filing-spine prior essay separates earned revenue recognized under the named acceptance rule from that named recognized amount appearing in the named period report pack. This essay does not rewrite that thesis. This reported is the outward report a controller can re-perform, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'successor-collected-is-not-recognized',
+        note: 'Collected is not recognized. The successor-spine prior essay separates that named receivable or billed amount for that named counterparty and period actually converted to cash in the named bank account with an unbroken collection trail a controller can prove from that named cash or collection event formally recognized in the books for the correct entity, period, and revenue or AR accounts under the named recognition policy. This essay does not rewrite that thesis. This essay does not give that recognized a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'collected-is-not-recognized',
+        note: 'Collected is not recognized. The filing-spine prior essay separates cash that has actually hit the named bank account for that named closed item from earned revenue recognized under the named acceptance rule. This essay does not rewrite that thesis. This recognized is formal recognition of that named cash or collection event in the books under the named recognition policy, not a rewrite of that filing earned-revenue attestation.',
+      },
+      {
+        slug: 'successor-closed-is-not-collected',
+        note: 'Closed is not collected. The successor-spine prior essay separates the named period for that named entity and system of record formally closed as a books close from that named receivable or billed amount actually converted to cash in the named bank account with an unbroken collection trail a controller can prove. This essay does not rewrite that thesis. This essay does not give that collected a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'closed-is-not-collected',
+        note: 'Closed is not collected. The filing-spine prior essay separates a formal period close from cash that has actually hit the named bank account for that named closed item. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported, not a rewrite of that filing cash hit.',
+      },
+      {
+        slug: 'successor-reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The successor-spine prior essay separates those booked facts independently matched and cleared against the external or control source from the named period formally closed as a books close. This essay does not rewrite that thesis. This essay does not give that closed a new meaning. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'reconciled-is-not-closed',
+        note: 'Reconciled is not closed. The filing-spine prior essay separates a signed reconciliation trail from a formal period close with cut-off locked and a named close attestation. This essay does not rewrite that thesis. This audited is an independent or internal audit trail for that same entity and period, not a rewrite of that filing period close.',
+      },
+      {
+        slug: 'successor-booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The successor-spine prior essay separates the economic and operational facts correctly recognized in the system of record from those booked facts independently matched against the external or control source. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'booked-is-not-reconciled',
+        note: 'Booked is not reconciled. The filing-spine prior essay separates indemnity, recovery, or settlement recognized on the named entity financials from a signed reconciliation trail. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-settled-is-not-booked',
+        note: 'Settled is not booked. The successor-spine prior essay separates the claim fully and finally resolved so residual liability and reopen risk are closed from the economic and operational facts correctly recognized in the system of record. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'settled-is-not-booked',
+        note: 'Settled is not booked. The filing-spine prior essay separates a named claim finally closed with a written release from indemnity, recovery, or settlement recognized on the named entity financials. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-paid-is-not-settled',
+        note: 'Paid is not settled. The successor-spine prior essay separates cash or indemnity actually disbursed on an accepted claim under that coverage from the claim fully and finally resolved. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'paid-is-not-settled',
+        note: 'Paid is not settled. The filing-spine prior essay separates indemnity or settlement funds that have actually moved from a named claim finally closed with a written release. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-covered-is-not-paid',
+        note: 'Covered is not paid. The successor-spine prior essay separates the loss actually inside the named policy, binder, or endorsement from cash or indemnity actually disbursed on an accepted claim under that coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'covered-is-not-paid',
+        note: 'Covered is not paid. The filing-spine prior essay separates a responding grant of coverage from indemnity or settlement funds that have actually moved. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-insured-is-not-covered',
+        note: 'Insured is not covered. The successor-spine prior essay separates a transferred risk position with a named carrier, coverage trigger, and claim path from the loss event falling inside the granted coverage grant. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'insured-is-not-covered',
+        note: 'Insured is not covered. The filing-spine prior essay separates a named in-force indemnity or coverage instrument from the named event falling inside the responding grant of coverage. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'successor-certified-is-not-insured',
+        note: 'Certified is not insured. The successor-spine prior essay separates an external or formal certification artifact that can be independently verified from a transferred risk position with a named carrier, coverage trigger, and claim path. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'certified-is-not-insured',
+        note: 'Certified is not insured. The filing-spine prior essay separates a third-party or internal program stamp from a named, in-force indemnity or coverage instrument. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported.',
+      },
+      {
+        slug: 'successor-assured-is-not-certified',
+        note: 'Assured is not certified. The successor-spine essay separates a named assurance claim with evidence boundaries from an external or formal certification artifact that can be independently verified. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'assured-is-not-certified',
+        note: 'Assured is not certified. The filing-spine prior essay separates independent, recurring verification that recovery capability still holds from a third-party or internal program stamp. This essay does not rewrite that thesis. Keep reported distinct from audited and from filed.',
+      },
+      {
+        slug: 'recoverable-is-not-assured',
+        note: 'Recoverable is not assured. The filing-spine prior essay separates a restore to a named service level inside a named RTO/RPO from independent, recurring verification that recovery capability still holds. This essay does not rewrite that thesis. This essay does not open a successor route for Recoverable Is Not Assured. That successor route is closed.',
+      },
+      {
+        slug: 'reported-is-not-audited',
+        note: 'Reported is not audited. The filing-spine counterpart separates a named recognized amount in the period report pack from an independent auditor opinion on that period. This essay does not rewrite that thesis. This essay does not give that reported a new meaning. Keep reported from Reported Is Not Audited distinct from audited and from filed. This audited is the named opinion on the industrial assurance spine, not a rewrite of that filing report pack.',
+      },
+      {
+        slug: 'audited-is-not-filed',
+        note: 'Audited is not filed. The filing-spine counterpart keeps the same distinction: a named opinion or assurance conclusion versus a lodged filing with a named receipt. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'filed-is-not-accepted',
+        note: 'Filed is not accepted. The filing-spine counterpart keeps the same distinction: a named filing receipt versus a named acceptance or completeness acknowledgement. This essay does not rewrite that thesis. This essay is the industrial assurance successor on that distinction. The filing essay stays on its own URL.',
+      },
+      {
+        slug: 'closed-is-not-resolved',
+        note: 'Closed is not resolved. That filing essay separates administrative closure of a case, work order, or exception from evidence that the underlying defect is gone. This essay does not rewrite that thesis. This reported is the outward-truth step from Recognized Is Not Reported. It is not that work-order or incident closed.',
+      },
+      {
+        slug: 'successor-assured-is-not-guaranteed',
+        note: 'Assured is not guaranteed. The successor-spine essay separates instrument-required assurance for the next named assurance window from instrument-required guarantee of that assured successor-obligation outcome. This essay does not rewrite that thesis. Guarantee evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-sustained-is-not-assured',
+        note: 'Sustained is not assured. That successor essay separates the continued-force hold of an operated successor-obligation outcome from instrument-required assurance for the next named assurance window. This essay does not rewrite that thesis. Assurance evidence on that spine is not this acceptance.',
+      },
+      {
+        slug: 'successor-guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. That successor essay opens a finished loop from guaranteed through collectible toward sustained. This essay does not rewrite that thesis. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'successor-accepted-is-not-sustained',
+        note: 'Accepted is not sustained. That successor essay closes the guaranteed-to-collectible-to-sustained successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+      {
+        slug: 'successor-transferable-is-not-binding',
+        note: 'Transferable is not binding. Different spine: the binding-to-transferable successor loop is already closed. This essay does not recreate that loop. This essay does not restate Transferable Is Not Binding as this claim.',
+      },
+      {
+        slug: 'successor-sustained-is-not-scaled',
+        note: 'Sustained is not scaled. That successor essay opens the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop.',
+      },
+      {
+        slug: 'successor-transferable-is-not-rehearsed',
+        note: 'Transferable is not rehearsed. That successor essay is the latest step on the finished sustained-to-scaled-to-rehearsed successor loop. This essay does not rewrite that thesis. This essay does not recreate that loop. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'rehearsed-is-not-recoverable',
+        note: 'Rehearsed is not recoverable. The filing-spine sentence after the scale order separates a named handoff run under stress from recoverability after a real disruption. This essay does not rewrite that thesis. This essay does not claim a successor route for Rehearsed Is Not Recoverable.',
+      },
+      {
+        slug: 'guaranteed-is-not-collectible',
+        note: 'Guaranteed is not collectible. Different spine, and a different URL: a binding filing-spine guarantee is not collectible recovery on the guarantee claim. Do not collapse this accepted into that collectible recovery. This essay does not recreate the guaranteed-to-collectible-to-sustained successor loop.',
+      },
+      {
+        slug: 'sustained-is-not-assured',
+        note: 'Sustained is not assured. Different spine, and a different URL: filing-spine duty-window sustainment is not forward assurance for the next named period, load, or duty window. Do not collapse this accepted into that forward assurance.',
+      },
+      {
+        slug: 'transferable-is-not-binding',
+        note: 'Transferable is not binding. Forward reading on the closed control loop: that loop already has its successor. Do not collapse this accepted into that filing bind. This essay does not recreate the binding-to-transferable successor loop.',
+      },
+      {
+        slug: 'binding-is-not-enforced',
+        note: 'Binding is not enforced. Different spine: filing bind mechanics are not named demand, default, remedy, or enforcement. Do not collapse this accepted into that filing-spine enforcement. This essay does not restate Binding Is Not Enforced as this claim.',
+      },
+    
+    ],
+  },
   'successor-available-is-not-spendable': {
     relatedSlug: 'successor-cleared-is-not-available',
     relatedNote: 'Cleared is not available. The successor-spine prior essay separates that remitted cash or margin has cleared into an account SyncAI owns — so a transfer named or initiated is not mistaken for cleared funds by an executed clearability instrument from cleared cash or margin in an account SyncAI owns that is available for SyncAI to use — so a cleared balance is not mistaken for funds available to use when a hold, a reserve, or a return window is still on them by an executed availability instrument. This essay does not rewrite that thesis. This essay does not give that available a new meaning. Spendable is the next refusal on this commercial spine. a cleared balance that remains under a named hold, a posted credit that sits in a reserve, a cleared amount still inside a return window, or availability talk that says the cash cleared while a hold, a reserve, or a return window is still on it is not available. available cash with no spend authority, a budget name with no allocation SyncAI can spend, payment controls that still block the spend, or spend talk that says the cash is available while an approved spend instrument is missing is not spendable. Keep this commercial spendable distinct from Solvency Is Not Liquidity, Liquidity Is Not Flexibility, ARR Is Not Cash, Cash Is Not Runway, Cash Is Not Margin, Closure Is Not Cash, Owned Is Not Governed, Compounded Is Not Owned, Accountability Is Not Ownership, Accountability Is Not Closure, Governed Is Not Transferable, Binding Is Not Enforced, Control Is Not Closure, Ownership Is Not Control, Expanded Is Not Defended, Defended Is Not Owned, Insured Is Not Covered, Deployable Is Not Accountable, Collected Is Not Recognized, Recognized Is Not Reported, Booked Is Not Reconciled, Monetized Is Not Retained, Paid Is Not Settled, and Settled Is Not Booked. Cleared cash or margin that is available in an account SyncAI owns is not the same as funds SyncAI can spend when spend authority, budget allocation, payment controls, or an approved spend instrument is still missing.',
     next: 'field-manual',
     includePilot: true,
     also: [
+      {
+        slug: 'successor-spendable-is-not-obligated',
+        note: 'Spendable is not obligated. The next refusal on this commercial spine separates that available cash or margin in an account SyncAI owns can be spent by SyncAI — so funds available to use are not mistaken for funds SyncAI can spend when spend authority, a budget allocation, payment controls, or an approved spend instrument is still missing from spendable cash or margin is bound by an executed commitment to a named SyncAI offer, owner, and budget — so funds SyncAI can spend are not mistaken for funds SyncAI has obligated when a purchase order, a contract commitment, an accrued payable, an encumbrance, or an approved obligation instrument is still missing. This essay does not rewrite that thesis. This essay does not give that obligated a new meaning. Available cash or margin that SyncAI can spend is not the same as funds SyncAI has obligated to a named commitment when a purchase order, contract commitment, accrued payable, encumbrance, or approved obligation instrument is still missing. Spendable cash with no purchase order is not obligated. This obligated is not the spendable Available Is Not Spendable already names. This obligated is not the disbursement Paid Is Not Settled already names. This obligated is not the settlement Settled Is Not Booked already names. This obligated is not the deployable Deployable Is Not Accountable already names. spendable cash with no purchase order, a contract name with no commitment SyncAI has obligated, an accrued amount with no payable that binds the named commitment, or obligation talk that says the cash is spendable while an encumbrance or an approved obligation instrument is missing is not obligated.',
+      },
       {
         slug: 'successor-remitted-is-not-cleared',
         note: 'Remitted is not cleared. The successor-spine prior essay separates that cash or margin from that captured residual is actually transferred to SyncAI — so capture into SyncAI economics is not mistaken for remittance by an executed remittability instrument from remitted cash or margin that has cleared into an account SyncAI owns — so a transfer named or initiated is not mistaken for cleared funds by an executed clearability instrument. This essay does not rewrite that thesis. This essay does not give that cleared a new meaning. Available is the commercial availability Cleared Is Not Available already names. a remittance instruction that names or initiates a transfer but does not clear cash or margin into an account SyncAI owns, a cash-transfer record that shows the transfer was initiated with no cleared balance in an account SyncAI owns, a margin-remittance still in transit that has not posted to an account SyncAI owns, or remittance talk that says the cash was sent with no cleared funds in an account SyncAI owns is not cleared. a cleared balance that remains under a named hold, a posted credit that sits in a reserve, a cleared amount still inside a return window, or availability talk that says the cash cleared while a hold, a reserve, or a return window is still on it is not available.',
