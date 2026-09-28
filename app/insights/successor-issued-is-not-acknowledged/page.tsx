@@ -242,12 +242,17 @@ export default function SuccessorIssuedIsNotAcknowledgedPage() {
             owners as the governing statement for the named ledger and period, or the issued customer pack
             accepted by the customer as the period account record — not merely that the named recipients
             confirmed receipt of the issued close pack, the named ledger owners confirmed receipt of the
-            issued statement pack, or the customer confirmed receipt of the issued customer pack.
-            Acknowledged Is Not Accepted may be named in prose only at
-            /insights/successor-acknowledged-is-not-accepted. This essay does not implement that page. This
-            essay does not create a successor route for Acknowledged Is Not Accepted. This essay does not
-            create a filing spine for Issued Is Not Acknowledged. This essay does not create a filing spine
-            at /insights/issued-is-not-acknowledged.
+            issued statement pack, or the customer confirmed receipt of the issued customer pack.{' '}
+            <Link
+              href="/insights/successor-acknowledged-is-not-accepted"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Acknowledged Is Not Accepted
+            </Link>
+            . Read it at /insights/successor-acknowledged-is-not-accepted. This essay does not rewrite that
+            thesis. This essay does not give that accepted a new meaning. This essay does not create a
+            filing spine for Issued Is Not Acknowledged. This essay does not create a filing spine at
+            /insights/issued-is-not-acknowledged.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
