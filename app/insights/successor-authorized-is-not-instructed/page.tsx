@@ -289,12 +289,17 @@ export default function SuccessorAuthorizedIsNotInstructedPage() {
             for the named period, the instructed statement acted for the named ledger and period, or the
             instructed customer workflow acted for the customer and the period, with a named actor, an
             action date, and an action taken — not merely that a named instructor recorded an instruction
-            date and an instruction to act for that authorized period.
-            Instructed Is Not Acted may be named in prose only at
-            /insights/successor-instructed-is-not-acted. This essay does not implement
-            that page. This essay does not create a successor route for Instructed Is Not Acted. This essay
-            does not create a filing spine for Authorized Is Not Instructed. This essay does not create a
-            filing spine at /insights/authorized-is-not-instructed.
+            date and an instruction to act for that authorized period.{' '}
+            <Link
+              href="/insights/successor-instructed-is-not-acted"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Instructed Is Not Acted
+            </Link>
+            . Read it at /insights/successor-instructed-is-not-acted. This essay does not rewrite that
+            thesis. This essay does not give that acted a new meaning. This essay does not create a
+            filing spine for Authorized Is Not Instructed. This essay does not create a filing spine at
+            /insights/authorized-is-not-instructed.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
