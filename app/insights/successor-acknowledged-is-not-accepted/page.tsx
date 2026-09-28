@@ -254,11 +254,17 @@ export default function SuccessorAcknowledgedIsNotAcceptedPage() {
             customer pack adopted by the customer as the standing account record for the customer and the
             period — not merely that the named recipients accepted the numbers and close for the named
             period, the named ledger owners accepted the statement for the named ledger and period, or the
-            customer accepted the customer pack for the customer and the period. Accepted Is Not Adopted may be named in prose only at
-            /insights/successor-accepted-is-not-adopted. This essay does not implement that page. This
-            essay does not create a successor route for Accepted Is Not Adopted.
-            This essay does not create a filing spine for Acknowledged Is Not Accepted. This essay does not
-            create a filing spine at /insights/acknowledged-is-not-accepted.
+            customer accepted the customer pack for the customer and the period.{' '}
+            <Link
+              href="/insights/successor-accepted-is-not-adopted"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Accepted Is Not Adopted
+            </Link>
+            . Read it at /insights/successor-accepted-is-not-adopted. This essay does not rewrite that
+            thesis. This essay does not give that adopted a new meaning. This essay does not create a
+            filing spine for Acknowledged Is Not Accepted. This essay does not create a filing spine at
+            /insights/acknowledged-is-not-accepted.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
