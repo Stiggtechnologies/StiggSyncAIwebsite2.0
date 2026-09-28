@@ -212,11 +212,17 @@ export default function SuccessorCollectedIsNotAppliedPage() {
             return relieved from the open remittance claim, the allocated premium relieved from the open
             premium balance, or the marked payment relieved from the open billed commitment — not merely
             that the collected amount was posted against the specific invoice/receivable, allocated to
-            the billed period or premium, or marked as satisfying that exact billed claim. Applied Is Not Relieved may be named in prose only at
-            /insights/successor-applied-is-not-relieved. This essay does not implement that page. This
-            essay does not create a successor route for Applied Is Not Relieved. This essay does not
-            create a filing spine for Collected Is Not Applied. This essay does not create a filing spine
-            at /insights/collected-is-not-applied.
+            the billed period or premium, or marked as satisfying that exact billed claim.{' '}
+            <Link
+              href="/insights/successor-applied-is-not-relieved"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Applied Is Not Relieved
+            </Link>
+            . Read it at /insights/successor-applied-is-not-relieved. This essay does not rewrite that
+            thesis. This essay does not give that relieved a new meaning. This essay does not create a
+            filing spine for Collected Is Not Applied. This essay does not create a filing spine at
+            /insights/collected-is-not-applied.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
