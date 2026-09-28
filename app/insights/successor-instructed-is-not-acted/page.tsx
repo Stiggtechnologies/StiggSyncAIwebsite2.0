@@ -277,12 +277,17 @@ export default function SuccessorInstructedIsNotActedPage() {
             for the named period, the acted statement confirmed for the named ledger and period, or the
             acted customer workflow confirmed for the customer and the period, with a named confirmer, a
             confirmation date, and a confirmation of the action — not merely that a named actor recorded an action
-            date and an action taken for that instructed period.
-            Acted Is Not Confirmed may be named in prose only at
-            /insights/successor-acted-is-not-confirmed. This essay does not implement
-            that page. This essay does not create a successor route for Acted Is Not Confirmed. This essay
-            does not create a filing spine for Instructed Is Not Acted. This essay does not create a
-            filing spine at /insights/instructed-is-not-acted.
+            date and an action taken for that instructed period.{' '}
+            <Link
+              href="/insights/successor-acted-is-not-confirmed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Acted Is Not Confirmed
+            </Link>
+            . Read it at /insights/successor-acted-is-not-confirmed. This essay does not rewrite that
+            thesis. This essay does not give that confirmed a new meaning. This essay does not create a
+            filing spine for Instructed Is Not Acted. This essay does not create a filing spine at
+            /insights/instructed-is-not-acted.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
