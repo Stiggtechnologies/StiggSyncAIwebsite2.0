@@ -283,11 +283,17 @@ export default function SuccessorActedIsNotConfirmedPage() {
             named verifier for the named period, the confirmed statement verified for the named ledger and
             period, or the confirmed customer workflow verified for the customer and the period, with a named
             verifier, a verification date, and a verification recorded — not merely that a named confirmer
-            recorded a confirmation date and a confirmation recorded for that acted period. Confirmed Is Not Verified may be named in prose only at
-            /insights/successor-confirmed-is-not-verified. This essay does not implement
-            that page. This essay does not create a successor route for Confirmed Is Not Verified. This essay
-            does not create a filing spine for Acted Is Not Confirmed. This essay does not create a
-            filing spine at /insights/acted-is-not-confirmed.
+            recorded a confirmation date and a confirmation recorded for that acted period.{' '}
+            <Link
+              href="/insights/successor-confirmed-is-not-verified"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Confirmed Is Not Verified
+            </Link>
+            . Read it at /insights/successor-confirmed-is-not-verified. This essay does not rewrite that
+            thesis. This essay does not give that verified a new meaning. This essay does not create a
+            filing spine for Acted Is Not Confirmed. This essay does not create a filing spine at
+            /insights/acted-is-not-confirmed.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
