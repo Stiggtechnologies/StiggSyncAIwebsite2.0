@@ -289,12 +289,17 @@ export default function SuccessorEndorsedIsNotHonoredPage() {
             discharged by a named discharger for the named period, the honored statement discharged for the named
             ledger and period, or the honored customer workflow discharged for the customer and the period,
             with a named discharger, a discharge date, and a discharge recorded — not merely that a named
-            honorer recorded an honor date and an honor recorded for that endorsed period.
-            Honored Is Not Discharged may be named in prose only at
-            /insights/successor-honored-is-not-discharged. This essay does not implement
-            that page. This essay does not create a successor route for Honored Is Not Discharged. This essay
-            does not create a filing spine for Endorsed Is Not Honored. This essay does not create a
-            filing spine at /insights/endorsed-is-not-honored.
+            honorer recorded an honor date and an honor recorded for that endorsed period.{' '}
+            <Link
+              href="/insights/successor-honored-is-not-discharged"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Honored Is Not Discharged
+            </Link>
+            . Read it at /insights/successor-honored-is-not-discharged. This essay does not rewrite that
+            thesis. This essay does not give that discharged a new meaning. This essay does not create a
+            filing spine for Endorsed Is Not Honored. This essay does not create a filing spine at
+            /insights/endorsed-is-not-honored.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
