@@ -293,12 +293,17 @@ export default function SuccessorVerifiedIsNotRatifiedPage() {
             enacted by a named enactor for the named period, the ratified statement enacted for the named
             ledger and period, or the ratified customer workflow enacted for the customer and the period,
             with a named enactor, an enactment date, and an enactment recorded — not merely that a named
-            ratifier recorded a ratification date and a ratification recorded for that verified period.
-            Ratified Is Not Enacted may be named in prose only at
-            /insights/successor-ratified-is-not-enacted. This essay does not implement
-            that page. This essay does not create a successor route for Ratified Is Not Enacted. This essay
-            does not create a filing spine for Verified Is Not Ratified. This essay does not create a
-            filing spine at /insights/verified-is-not-ratified.
+            ratifier recorded a ratification date and a ratification recorded for that verified period.{' '}
+            <Link
+              href="/insights/successor-ratified-is-not-enacted"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Ratified Is Not Enacted
+            </Link>
+            . Read it at /insights/successor-ratified-is-not-enacted. This essay does not rewrite that
+            thesis. This essay does not give that enacted a new meaning. This essay does not create a
+            filing spine for Verified Is Not Ratified. This essay does not create a filing spine at
+            /insights/verified-is-not-ratified.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
