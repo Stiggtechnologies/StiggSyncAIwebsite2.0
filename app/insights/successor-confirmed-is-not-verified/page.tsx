@@ -291,12 +291,17 @@ export default function SuccessorConfirmedIsNotVerifiedPage() {
             ratified by a named ratifier for the named period, the verified statement ratified for the named
             ledger and period, or the verified customer workflow ratified for the customer and the period,
             with a named ratifier, a ratification date, and a ratification recorded — not merely that a named
-            verifier recorded a verification date and a verification recorded for that confirmed period.
-            Verified Is Not Ratified may be named in prose only at
-            /insights/successor-verified-is-not-ratified. This essay does not implement
-            that page. This essay does not create a successor route for Verified Is Not Ratified. This essay
-            does not create a filing spine for Confirmed Is Not Verified. This essay does not create a
-            filing spine at /insights/confirmed-is-not-verified.
+            verifier recorded a verification date and a verification recorded for that confirmed period.{' '}
+            <Link
+              href="/insights/successor-verified-is-not-ratified"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Verified Is Not Ratified
+            </Link>
+            . Read it at /insights/successor-verified-is-not-ratified. This essay does not rewrite that
+            thesis. This essay does not give that ratified a new meaning. This essay does not create a
+            filing spine for Confirmed Is Not Verified. This essay does not create a filing spine at
+            /insights/confirmed-is-not-verified.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
