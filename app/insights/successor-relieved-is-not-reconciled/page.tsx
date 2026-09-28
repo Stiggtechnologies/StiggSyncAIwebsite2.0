@@ -226,12 +226,17 @@ export default function SuccessorRelievedIsNotReconciledPage() {
             — the period-close match certified by the named close owner, the subledger-to-GL tie-out
             certified for the named ledger, or the account proven complete against source certified for
             the customer and the period — not merely that the period close matched, the subledger tied
-            out to the GL, or the account was proven complete against source for that relieved balance.
-            Reconciled Is Not Certified may be named in prose only at
-            /insights/successor-reconciled-is-not-certified. This essay does not implement that page.
-            This essay does not create a successor route for Reconciled Is Not Certified. This essay does
-            not create a filing spine for Relieved Is Not Reconciled. This essay does not create a filing
-            spine at /insights/relieved-is-not-reconciled.
+            out to the GL, or the account was proven complete against source for that relieved balance.{' '}
+            <Link
+              href="/insights/successor-reconciled-is-not-certified"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Reconciled Is Not Certified
+            </Link>
+            . Read it at /insights/successor-reconciled-is-not-certified. This essay does not rewrite that
+            thesis. This essay does not give that certified a new meaning. This essay does not create a
+            filing spine for Relieved Is Not Reconciled. This essay does not create a filing spine at
+            /insights/relieved-is-not-reconciled.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
