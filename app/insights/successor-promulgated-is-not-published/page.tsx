@@ -299,12 +299,17 @@ export default function SuccessorPromulgatedIsNotPublishedPage() {
             circulated by a named circulator for the named period, the published statement circulated for the named
             ledger and period, or the published customer workflow circulated for the customer and the period,
             with a named circulator, a circulation date, and a circulation recorded — not merely that a named
-            publisher recorded a publication date and a publication recorded for that promulgated period.
-            Published Is Not Circulated may be named in prose only at
-            /insights/successor-published-is-not-circulated. This essay does not implement
-            that page. This essay does not create a successor route for Published Is Not Circulated. This essay
-            does not create a filing spine for Promulgated Is Not Published. This essay does not create a
-            filing spine at /insights/promulgated-is-not-published.
+            publisher recorded a publication date and a publication recorded for that promulgated period.{' '}
+            <Link
+              href="/insights/successor-published-is-not-circulated"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Published Is Not Circulated
+            </Link>
+            . Read it at /insights/successor-published-is-not-circulated. This essay does not rewrite that
+            thesis. This essay does not give that circulated a new meaning. This essay does not create a
+            filing spine for Promulgated Is Not Published. This essay does not create a filing spine at
+            /insights/promulgated-is-not-published.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
