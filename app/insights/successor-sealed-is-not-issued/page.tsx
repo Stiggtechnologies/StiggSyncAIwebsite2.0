@@ -245,10 +245,16 @@ export default function SuccessorSealedIsNotIssuedPage() {
             were released as the issued close pack to the named recipients, the sealed ledger
             certifications were released as the issued statement pack for the named ledger and period, or
             the sealed account certifications were released as the issued customer pack for the customer
-            and the period. Issued Is Not Acknowledged may be named in prose only at
-            /insights/successor-issued-is-not-acknowledged. This essay does not implement that page. This
-            essay does not create a successor route for Issued Is Not Acknowledged. This essay does not
-            create a filing spine for Sealed Is Not Issued. This essay does not create a filing spine at
+            and the             period.{' '}
+            <Link
+              href="/insights/successor-issued-is-not-acknowledged"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Issued Is Not Acknowledged
+            </Link>
+            . Read it at /insights/successor-issued-is-not-acknowledged. This essay does not rewrite that
+            thesis. This essay does not give that acknowledged a new meaning. This essay does not create a
+            filing spine for Sealed Is Not Issued. This essay does not create a filing spine at
             /insights/sealed-is-not-issued.
           </p>
 
