@@ -291,12 +291,17 @@ export default function SuccessorDischargedIsNotSatisfiedPage() {
             released by a named releaser for the named period, the satisfied statement released for the named
             ledger and period, or the satisfied customer workflow released for the customer and the period,
             with a named releaser, a release date, and a release recorded — not merely that a named
-            satisfier recorded a satisfaction date and a satisfaction recorded for that discharged period.
-            Satisfied Is Not Released may be named in prose only at
-            /insights/successor-satisfied-is-not-released. This essay does not implement
-            that page. This essay does not create a successor route for Satisfied Is Not Released. This essay
-            does not create a filing spine for Discharged Is Not Satisfied. This essay does not create a
-            filing spine at /insights/discharged-is-not-satisfied.
+            satisfier recorded a satisfaction date and a satisfaction recorded for that discharged period.{' '}
+            <Link
+              href="/insights/successor-satisfied-is-not-released"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Satisfied Is Not Released
+            </Link>
+            . Read it at /insights/successor-satisfied-is-not-released. This essay does not rewrite that
+            thesis. This essay does not give that released a new meaning. This essay does not create a
+            filing spine for Discharged Is Not Satisfied. This essay does not create a filing spine at
+            /insights/discharged-is-not-satisfied.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
