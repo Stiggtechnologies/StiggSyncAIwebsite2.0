@@ -295,7 +295,18 @@ export default function SuccessorRetainedIsNotDisposedPage() {
           </p>
 
           <p>
-            Forgotten would mean that the disposed operating results for that retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been forgotten — the disposed operating results forgotten by a named forgetter for the named period, the disposed statement forgotten for the named ledger and period, or the disposed customer workflow forgotten for the customer and the period, with a named forgetter, a forgetting date, and a forgetting recorded — not merely that a named disposer recorded a disposition date and a disposition recorded for that retained period. Disposed Is Not Forgotten may be named in prose only at /insights/successor-disposed-is-not-forgotten. This essay does not implement that page. This essay does not create a successor route for Disposed Is Not Forgotten. This essay does not create a filing spine for Retained Is Not Disposed. This essay does not create a filing spine at /insights/retained-is-not-disposed. This essay does not create a filing spine at /insights/archived-is-not-retained.
+            Forgotten would mean that the disposed operating results for that retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been forgotten — the disposed operating results forgotten by a named forgetter for the named period, the disposed statement forgotten for the named ledger and period, or the disposed customer workflow forgotten for the customer and the period, with a named forgetter, a forgetting date, and a forgetting recorded — not merely that a named disposer recorded a disposition date and a disposition recorded for that retained period.{' '}
+            <Link
+              href="/insights/successor-disposed-is-not-forgotten"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Disposed Is Not Forgotten
+            </Link>
+            . Read it at /insights/successor-disposed-is-not-forgotten. This essay does not rewrite that
+            thesis. This essay does not give that forgotten a new meaning. This essay does not create a
+            filing spine for Retained Is Not Disposed. This essay does not create a filing spine at
+            /insights/retained-is-not-disposed. This essay does not create a filing spine at
+            /insights/archived-is-not-retained.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
