@@ -297,7 +297,16 @@ export default function SuccessorVoidIsNotNullPage() {
           </p>
 
           <p>
-            Absent would mean that the null operating results for that void never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been absented — the null record itself withdrawn so there is no null in which a void-withdrawal could be lodged, the null operating results absented by a named absent authority for the named period, the null statement absented for the named ledger and period, or the null customer workflow absented for the customer and the period, with a named absent authority, an absent date, and an absent recorded — not merely that a named null authority recorded a null date and a null recorded for that void period. Null Is Not Absent may be named in prose only at /insights/successor-null-is-not-absent. This essay does not implement that page. This essay does not create a successor route for Null Is Not Absent. This essay does not create a filing spine for Void Is Not Null. This essay does not create a filing spine at /insights/void-is-not-null. This essay does not create a filing spine at /insights/never-is-not-void.
+            Absent would mean that the null operating results for that void never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been absented — the null record itself withdrawn so there is no null in which a void-withdrawal could be lodged, the null operating results absented by a named absent authority for the named period, the null statement absented for the named ledger and period, or the null customer workflow absented for the customer and the period, with a named absent authority, an absent date, and an absent recorded — not merely that a named null authority recorded a null date and a null recorded for that void period. {' '}
+            <Link
+              href="/insights/successor-null-is-not-absent"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Null Is Not Absent
+            </Link>
+            . Read it at /insights/successor-null-is-not-absent. This essay does not rewrite that
+            thesis. This essay does not give that absent a new meaning. This essay does not create a
+            filing spine for Void Is Not Null. This essay does not create a filing spine at /insights/void-is-not-null. This essay does not create a filing spine at /insights/never-is-not-void.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
