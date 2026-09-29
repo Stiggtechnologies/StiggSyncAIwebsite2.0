@@ -298,7 +298,16 @@ export default function SuccessorObliteratedIsNotUnmadePage() {
           </p>
 
           <p>
-            Never would mean that the unmade operating results for that obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been accounted as never having been — the unmaking record itself withdrawn so there is no accountable remainder that an unmaking occurred, the unmade operating results accounted never by a named never authority for the named period, the unmade statement accounted never for the named ledger and period, or the unmade customer workflow accounted never for the customer and the period, with a named never authority, a never date, and a never recorded — not merely that a named unmaking authority recorded an unmaking date and an unmaking recorded for that obliterated period. Unmade Is Not Never may be named in prose only at /insights/successor-unmade-is-not-never. This essay does not implement that page. This essay does not create a successor route for Unmade Is Not Never. This essay does not create a filing spine for Obliterated Is Not Unmade. This essay does not create a filing spine at /insights/obliterated-is-not-unmade. This essay does not create a filing spine at /insights/destroyed-is-not-obliterated.
+            Never would mean that the unmade operating results for that obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been accounted as never having been — the unmaking record itself withdrawn so there is no accountable remainder that an unmaking occurred, the unmade operating results accounted never by a named never authority for the named period, the unmade statement accounted never for the named ledger and period, or the unmade customer workflow accounted never for the customer and the period, with a named never authority, a never date, and a never recorded — not merely that a named unmaking authority recorded an unmaking date and an unmaking recorded for that obliterated period. {' '}
+            <Link
+              href="/insights/successor-unmade-is-not-never"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Unmade Is Not Never
+            </Link>
+            . Read it at /insights/successor-unmade-is-not-never. This essay does not rewrite that
+            thesis. This essay does not give that never a new meaning. This essay does not create a
+            filing spine for Obliterated Is Not Unmade. This essay does not create a filing spine at /insights/obliterated-is-not-unmade. This essay does not create a filing spine at /insights/destroyed-is-not-obliterated.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
