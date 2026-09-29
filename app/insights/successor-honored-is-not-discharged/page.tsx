@@ -290,12 +290,17 @@ export default function SuccessorHonoredIsNotDischargedPage() {
             satisfied by a named satisfier for the named period, the discharged statement satisfied for the named
             ledger and period, or the discharged customer workflow satisfied for the customer and the period,
             with a named satisfier, a satisfaction date, and a satisfaction recorded — not merely that a named
-            discharger recorded a discharge date and a discharge recorded for that honored period.
-            Discharged Is Not Satisfied may be named in prose only at
-            /insights/successor-discharged-is-not-satisfied. This essay does not implement
-            that page. This essay does not create a successor route for Discharged Is Not Satisfied. This essay
-            does not create a filing spine for Honored Is Not Discharged. This essay does not create a
-            filing spine at /insights/honored-is-not-discharged.
+            discharger recorded a discharge date and a discharge recorded for that honored period.{' '}
+            <Link
+              href="/insights/successor-discharged-is-not-satisfied"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Discharged Is Not Satisfied
+            </Link>
+            . Read it at /insights/successor-discharged-is-not-satisfied. This essay does not rewrite that
+            thesis. This essay does not give that satisfied a new meaning. This essay does not create a
+            filing spine for Honored Is Not Discharged. This essay does not create a filing spine at
+            /insights/honored-is-not-discharged.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
