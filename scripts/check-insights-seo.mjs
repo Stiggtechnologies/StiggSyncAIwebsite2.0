@@ -32774,7 +32774,6 @@ const successorDischargedSatisfiedPageRequired = [
   "What a satisfied record is allowed to be",
   "Sync must not auto-deem-satisfied",
   "Sync does not deem satisfied for the customer",
-  "This essay does not implement that page",
   "This essay does not create a filing spine for Discharged Is Not Satisfied",
   "This essay does not create a filing spine at /insights/discharged-is-not-satisfied",
   "This satisfied is not the collected Collected Is Not Recognized already names",
@@ -32808,9 +32807,10 @@ const successorDischargedSatisfiedPageRequired = [
   "Field Manual",
   "Strategic Pilot",
   "href=\"/insights/successor-honored-is-not-discharged\"",
-  "Satisfied Is Not Released may be named in prose only",
+  "Read it at /insights/successor-satisfied-is-not-released",
+  "This essay does not give that released a new meaning",
+  "href=\"/insights/successor-satisfied-is-not-released\"",
   "/insights/successor-satisfied-is-not-released",
-  "This essay does not create a successor route for Satisfied Is Not Released",
 ];
 
 const successorDischargedSatisfiedPage = read('app/insights/successor-discharged-is-not-satisfied/page.tsx');
@@ -32830,8 +32830,8 @@ if (successorDischargedSatisfiedPage.includes("successor-rehearsed-is-not-recove
 if (successorDischargedSatisfiedPage.includes("href=\"/insights/successor-discharged-is-not-satisfied\"")) {
   fail('successor-discharged-is-not-satisfied must not link to itself as a forward route');
 }
-if (successorDischargedSatisfiedPage.includes("href=\"/insights/successor-satisfied-is-not-released\"")) {
-  fail('successor-discharged-is-not-satisfied must keep Satisfied Is Not Released in prose only');
+if (!successorDischargedSatisfiedPage.includes("href=\"/insights/successor-satisfied-is-not-released\"")) {
+  fail('successor-discharged-is-not-satisfied must point the series forward to successor-satisfied-is-not-released');
 }
 if (successorDischargedSatisfiedPage.includes("href=\"/insights/discharged-is-not-satisfied\"")) {
   fail('successor-discharged-is-not-satisfied must not open a filing spine');
@@ -32905,17 +32905,11 @@ if (successorDischargedSatisfiedPage.includes("href=\"/insights/successor-delive
 if (successorDischargedSatisfiedPage.includes("href=\"/insights/delivered-is-not-operated\"")) {
   fail('successor-discharged-is-not-satisfied must not retarget Delivered Is Not Operated');
 }
-if (!successorDischargedSatisfiedPage.includes('Satisfied Is Not Released may be named in prose only')) {
-  fail('successor-discharged-is-not-satisfied must name Satisfied Is Not Released in prose only');
+if (successorDischargedSatisfiedPage.includes('Satisfied Is Not Released may be named in prose only')) {
+  fail('successor-discharged-is-not-satisfied must not keep Satisfied Is Not Released in prose only once the route exists');
 }
 if (successorDischargedSatisfiedPage.includes('Discharged Is Not Satisfied may be named in prose only')) {
   fail('successor-discharged-is-not-satisfied must not name itself as prose only');
-}
-if (existsSync(join(root, 'app/insights/successor-satisfied-is-not-released/page.tsx'))) {
-  fail('successor-satisfied-is-not-released must stay prose only in this essay');
-}
-if (slugs.includes('successor-satisfied-is-not-released')) {
-  fail('successor-satisfied-is-not-released must not be registered in this essay');
 }
 if (existsSync(join(root, 'app/insights/discharged-is-not-satisfied/page.tsx'))) {
   fail('discharged-is-not-satisfied filing spine must not be created');
@@ -32953,8 +32947,8 @@ if (!/includePilot:\s*true/.test(successorDischargedSatisfiedBlock)) {
 if (successorDischargedSatisfiedBlock.includes("next: 'strategic-pilot'")) {
   fail('successor-discharged-is-not-satisfied next step is the Field Manual');
 }
-if (successorDischargedSatisfiedBlock.includes('successor-satisfied-is-not-released')) {
-  fail('successor-discharged-is-not-satisfied must keep Satisfied Is Not Released in prose only');
+if (!successorDischargedSatisfiedBlock.includes('successor-satisfied-is-not-released')) {
+  fail('successor-discharged-is-not-satisfied related reading must cite successor-satisfied-is-not-released');
 }
 if (successorDischargedSatisfiedBlock.includes("collectible-is-not-applied")) {
   fail('successor-discharged-is-not-satisfied related reading must stay off Collectible Is Not Applied');
@@ -32986,8 +32980,8 @@ if (!successorDischargedSatisfiedBlock.includes("relatedSlug: 'successor-honored
 {
   const alsoAt = successorDischargedSatisfiedBlock.indexOf('also: [');
   const firstAlso = successorDischargedSatisfiedBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
-  if (!firstAlso || firstAlso[1] !== 'successor-endorsed-is-not-honored') {
-    fail('successor-discharged-is-not-satisfied must list successor-endorsed-is-not-honored first among additional related reading');
+  if (!firstAlso || firstAlso[1] !== 'successor-satisfied-is-not-released') {
+    fail('successor-discharged-is-not-satisfied must list successor-satisfied-is-not-released first among additional related reading');
   }
 }
 if (successorDischargedSatisfiedBlock.includes('successor-recoverable-is-not-assured')) {
@@ -32996,6 +32990,278 @@ if (successorDischargedSatisfiedBlock.includes('successor-recoverable-is-not-ass
 for (const untouched of ["app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
   if (read(untouched).includes('successor-discharged-is-not-satisfied')) {
     fail(`${untouched} must stay off successor-discharged-is-not-satisfied`);
+  }
+}
+
+const successorSatisfiedReleasedPageRequired = [
+  "Satisfied Is Not Released",
+  "Satisfied is not released",
+  "commercial spine",
+  "release spine",
+  "satisfaction spine",
+  "the satisfied the successor-spine Discharged Is Not Satisfied already names",
+  "executed satisfaction instrument",
+  "executed release instrument",
+  "named satisfier satisfaction",
+  "discharged operating results with a named satisfier, a satisfaction date, and a satisfaction recorded for that discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period",
+  "discharged statement satisfied for the named ledger and period",
+  "discharged customer workflow satisfied for the customer and the period",
+  "satisfied statement released for the named ledger and period",
+  "satisfied customer workflow released for the customer and the period",
+  "named releaser, a release date, and a release recorded",
+  "not merely that a named satisfier recorded a satisfaction date and a satisfaction recorded",
+  "Packs that have been satisfied — a named satisfier satisfaction of the discharged operating results for that named scope, discharged operating results with a named satisfier, a satisfaction date, and a satisfaction recorded for that discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period, the discharged statement satisfied for the named ledger and period, or the discharged customer workflow satisfied for the customer and the period — are not the same as those satisfied packs having been released",
+  "Discharged Is Not Satisfied already names the prior split",
+  "This essay does not rewrite that thesis",
+  "This essay does not give that satisfied a new meaning",
+  "A firm can be satisfied and still not released",
+  "release theater",
+  "A satisfaction package alone is not released of that satisfied successor outcome",
+  "This split is satisfied versus released",
+  "Satisfied cash or margin is not the same as a released commercial outcome",
+  "Named satisfied is not released",
+  "The satisfied practice is not the released practice",
+  "What a released record is allowed to be",
+  "Sync must not auto-deem-released",
+  "Sync does not deem released for the customer",
+  "This essay does not implement that page",
+  "This essay does not create a filing spine for Satisfied Is Not Released",
+  "This essay does not create a filing spine at /insights/satisfied-is-not-released",
+  "This released is not the collected Collected Is Not Recognized already names",
+  "This released is not the disbursement Paid Is Not Settled already names",
+  "This released is not the settlement Settled Is Not Booked already names",
+  "This released is not the collectible Collectible Is Not Applied already names",
+  "does not collapse into Collectible Is Not Applied",
+  "does not rewrite Collectible Is Not Applied",
+  "does not collapse into Applied Is Not Restored",
+  "does not rewrite Applied Is Not Restored",
+  "does not collapse into Extinguished Is Not Reconciled",
+  "does not rewrite Extinguished Is Not Reconciled",
+  "does not collapse into Reconciled Is Not Attested",
+  "does not rewrite Reconciled Is Not Attested",
+  "does not collapse into Reconciled Is Not Closed",
+  "does not rewrite Reconciled Is Not Closed",
+  "does not collapse into Booked Is Not Reconciled",
+  "does not rewrite Booked Is Not Reconciled",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not collapse into Defended Is Not Owned",
+  "does not rewrite Defended Is Not Owned",
+  "does not collapse into Certified Is Not Insured",
+  "does not rewrite Certified Is Not Insured",
+  "does not collapse into Assured Is Not Certified",
+  "does not rewrite Assured Is Not Certified",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Delivered Is Not Operated",
+  "does not rewrite Delivered Is Not Operated",
+  "does not collapse into Released Is Not Recorded",
+  "does not rewrite Released Is Not Recorded",
+  "does not collapse into Remediated Is Not Released",
+  "does not rewrite Remediated Is Not Released",
+  "Field Manual",
+  "Strategic Pilot",
+  "href=\"/insights/successor-discharged-is-not-satisfied\"",
+  "Released Is Not Archived may be named in prose only",
+  "/insights/successor-released-is-not-archived",
+  "This essay does not create a successor route for Released Is Not Archived",
+];
+
+const successorSatisfiedReleasedPage = read('app/insights/successor-satisfied-is-not-released/page.tsx');
+const successorSatisfiedReleasedPageNormalized = successorSatisfiedReleasedPage.replace(/\s+/g, ' ');
+for (const required of successorSatisfiedReleasedPageRequired) {
+  const needle = required.replace(/\\"/g, '"').replace(/\s+/g, ' ');
+  if (!successorSatisfiedReleasedPageNormalized.includes(needle)) {
+    fail(`successor-satisfied-is-not-released page must include ${required}`);
+  }
+}
+if (successorSatisfiedReleasedPage.includes("successor-recoverable-is-not-assured")) {
+  fail('successor-satisfied-is-not-released must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorSatisfiedReleasedPage.includes("successor-rehearsed-is-not-recoverable")) {
+  fail('successor-satisfied-is-not-released must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-satisfied-is-not-released\"")) {
+  fail('successor-satisfied-is-not-released must not link to itself as a forward route');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-released-is-not-archived\"")) {
+  fail('successor-satisfied-is-not-released must keep Released Is Not Archived in prose only');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-released-is-not-recorded\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Released Is Not Recorded');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/released-is-not-recorded\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Released Is Not Recorded');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-remediated-is-not-released\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Remediated Is Not Released');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/remediated-is-not-released\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Remediated Is Not Released');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/satisfied-is-not-released\"")) {
+  fail('successor-satisfied-is-not-released must not open a filing spine');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/applied-is-not-restored\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Applied Is Not Restored');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-applied-is-not-restored\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Applied Is Not Restored');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/collectible-is-not-applied\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Collectible Is Not Applied');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-collectible-is-not-applied\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Collectible Is Not Applied');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-collected-is-not-recognized\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Collected Is Not Recognized');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-defended-is-not-owned\"")) {
+  fail('successor-satisfied-is-not-released must not retarget the Defended Is Not Owned growth-loop route');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-reconciled-is-not-attested\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Reconciled Is Not Attested');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/reconciled-is-not-attested\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Reconciled Is Not Attested');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-extinguished-is-not-reconciled\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Extinguished Is Not Reconciled');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-reconciled-is-not-closed\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Reconciled Is Not Closed');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-booked-is-not-reconciled\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Booked Is Not Reconciled');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-certified-is-not-insured\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Certified Is Not Insured');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/certified-is-not-insured\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Certified Is Not Insured');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-assured-is-not-certified\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Assured Is Not Certified');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/assured-is-not-certified\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Assured Is Not Certified');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-accepted-is-not-posted\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Accepted Is Not Posted');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/accepted-is-not-posted\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Accepted Is Not Posted');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-restored-is-not-accepted\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Restored Is Not Accepted');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/restored-is-not-accepted\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Restored Is Not Accepted');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-operated-is-not-sustained\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Operated Is Not Sustained');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/operated-is-not-sustained\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Operated Is Not Sustained');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/successor-delivered-is-not-operated\"")) {
+  fail('successor-satisfied-is-not-released must not retarget successor Delivered Is Not Operated');
+}
+if (successorSatisfiedReleasedPage.includes("href=\"/insights/delivered-is-not-operated\"")) {
+  fail('successor-satisfied-is-not-released must not retarget Delivered Is Not Operated');
+}
+if (!successorSatisfiedReleasedPage.includes('Released Is Not Archived may be named in prose only')) {
+  fail('successor-satisfied-is-not-released must name Released Is Not Archived in prose only');
+}
+if (successorSatisfiedReleasedPage.includes('Satisfied Is Not Released may be named in prose only')) {
+  fail('successor-satisfied-is-not-released must not name itself as prose only');
+}
+if (existsSync(join(root, 'app/insights/successor-released-is-not-archived/page.tsx'))) {
+  fail('successor-released-is-not-archived must stay prose only in this essay');
+}
+if (slugs.includes('successor-released-is-not-archived')) {
+  fail('successor-released-is-not-archived must not be registered in this essay');
+}
+if (existsSync(join(root, 'app/insights/satisfied-is-not-released/page.tsx'))) {
+  fail('satisfied-is-not-released filing spine must not be created');
+}
+if (slugs.includes('satisfied-is-not-released')) {
+  fail('satisfied-is-not-released filing spine must not be registered');
+}
+if (!existsSync(join(root, 'app/insights/successor-satisfied-is-not-released/page.tsx'))) {
+  fail('successor-satisfied-is-not-released page must exist');
+}
+if (!slugs.includes('successor-satisfied-is-not-released')) {
+  fail('successor-satisfied-is-not-released must be registered in the catalog');
+}
+if (!successorSatisfiedReleasedPage.includes('href="/insights/successor-discharged-is-not-satisfied"')) {
+  fail('successor-satisfied-is-not-released must keep prior reading on successor-discharged-is-not-satisfied');
+}
+if (!read('app/insights/successor-discharged-is-not-satisfied/page.tsx').includes('href="/insights/successor-satisfied-is-not-released"')) {
+  fail('successor-discharged-is-not-satisfied must point the series forward to successor-satisfied-is-not-released');
+}
+for (const earlier of ["app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-promulgated-is-not-published/page.tsx","app/insights/successor-enacted-is-not-promulgated/page.tsx","app/insights/successor-ratified-is-not-enacted/page.tsx","app/insights/successor-verified-is-not-ratified/page.tsx","app/insights/successor-confirmed-is-not-verified/page.tsx","app/insights/successor-acted-is-not-confirmed/page.tsx","app/insights/successor-instructed-is-not-acted/page.tsx","app/insights/successor-authorized-is-not-instructed/page.tsx","app/insights/successor-approved-is-not-authorized/page.tsx","app/insights/successor-reviewed-is-not-approved/page.tsx","app/insights/successor-operated-is-not-reviewed/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-collected-is-not-applied/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-advanced-is-not-performed/page.tsx","app/insights/successor-relied-is-not-advanced/page.tsx","app/insights/successor-attested-is-not-relied/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-disbursed-is-not-extinguished/page.tsx","app/insights/successor-obligated-is-not-disbursed/page.tsx","app/insights/successor-spendable-is-not-obligated/page.tsx","app/insights/successor-available-is-not-spendable/page.tsx","app/insights/successor-cleared-is-not-available/page.tsx","app/insights/successor-remitted-is-not-cleared/page.tsx","app/insights/successor-captured-is-not-remitted/page.tsx","app/insights/successor-residual-is-not-captured/page.tsx","app/insights/successor-defended-is-not-residual/page.tsx","app/insights/successor-distributed-is-not-defended/page.tsx","app/insights/successor-controlled-is-not-distributed/page.tsx","app/insights/successor-compounded-is-not-controlled/page.tsx","app/insights/successor-closeable-is-not-compounded/page.tsx","app/insights/successor-financeable-is-not-closeable/page.tsx","app/insights/successor-insurable-is-not-financeable/page.tsx","app/insights/successor-governable-is-not-insurable/page.tsx","app/insights/successor-auditable-is-not-governable/page.tsx","app/insights/successor-accountable-is-not-auditable/page.tsx","app/insights/successor-deployable-is-not-accountable/page.tsx","app/insights/successor-liquid-is-not-deployable/page.tsx","app/insights/successor-portable-is-not-liquid/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-retained-is-not-expanded/page.tsx","app/insights/successor-monetized-is-not-retained/page.tsx","app/insights/successor-binding-is-not-monetized/page.tsx","app/insights/successor-effective-is-not-binding/page.tsx","app/insights/successor-posted-is-not-effective/page.tsx","app/insights/successor-accepted-is-not-posted/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(earlier).includes('href="/insights/successor-satisfied-is-not-released"')) {
+    fail(`forward link to successor-satisfied-is-not-released must come only from successor-discharged-is-not-satisfied (${earlier})`);
+  }
+}
+
+const successorSatisfiedReleasedBlock = stepBlock('successor-satisfied-is-not-released');
+for (const required of ["successor-discharged-is-not-satisfied","successor-honored-is-not-discharged","successor-endorsed-is-not-honored","successor-received-is-not-endorsed","successor-presented-is-not-received","successor-circulated-is-not-presented","successor-published-is-not-circulated","successor-promulgated-is-not-published","successor-enacted-is-not-promulgated","successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
+  if (!successorSatisfiedReleasedBlock.includes(`'${required}'`)) {
+    fail(`successor-satisfied-is-not-released related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorSatisfiedReleasedBlock)) {
+  fail('successor-satisfied-is-not-released related reading must include the Strategic Pilot');
+}
+if (successorSatisfiedReleasedBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-satisfied-is-not-released next step is the Field Manual');
+}
+if (successorSatisfiedReleasedBlock.includes('successor-released-is-not-archived')) {
+  fail('successor-satisfied-is-not-released must keep Released Is Not Archived in prose only');
+}
+if (successorSatisfiedReleasedBlock.includes("collectible-is-not-applied")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Collectible Is Not Applied');
+}
+if (successorSatisfiedReleasedBlock.includes("applied-is-not-restored")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Applied Is Not Restored');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-reconciled-is-not-attested")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Reconciled Is Not Attested');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-extinguished-is-not-reconciled")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Extinguished Is Not Reconciled');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-defended-is-not-owned")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Defended Is Not Owned');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-certified-is-not-insured")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Certified Is Not Insured');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-assured-is-not-certified")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Assured Is Not Certified');
+}
+if (successorSatisfiedReleasedBlock.includes("successor-operated-is-not-sustained")) {
+  fail('successor-satisfied-is-not-released related reading must stay off Operated Is Not Sustained');
+}
+if (!successorSatisfiedReleasedBlock.includes("relatedSlug: 'successor-discharged-is-not-satisfied'")) {
+  fail('successor-satisfied-is-not-released related reading must start from successor-discharged-is-not-satisfied');
+}
+{
+  const alsoAt = successorSatisfiedReleasedBlock.indexOf('also: [');
+  const firstAlso = successorSatisfiedReleasedBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
+  if (!firstAlso || firstAlso[1] !== 'successor-honored-is-not-discharged') {
+    fail('successor-satisfied-is-not-released must list successor-honored-is-not-discharged first among additional related reading');
+  }
+}
+if (successorSatisfiedReleasedBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-satisfied-is-not-released must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of ["app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(untouched).includes('successor-satisfied-is-not-released')) {
+    fail(`${untouched} must stay off successor-satisfied-is-not-released`);
   }
 }
 
