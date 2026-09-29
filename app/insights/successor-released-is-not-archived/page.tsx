@@ -293,12 +293,17 @@ export default function SuccessorReleasedIsNotArchivedPage() {
             retained by a named retainer for the named period, the archived statement retained for the named
             ledger and period, or the archived customer workflow retained for the customer and the period,
             with a named retainer, a retention date, and a retention recorded — not merely that a named
-            archiver recorded an archive date and an archive recorded for that released period.
-            Archived Is Not Retained may be named in prose only at
-            /insights/successor-archived-is-not-retained. This essay does not implement
-            that page. This essay does not create a successor route for Archived Is Not Retained. This essay
-            does not create a filing spine for Released Is Not Archived. This essay does not create a
-            filing spine at /insights/released-is-not-archived.
+            archiver recorded an archive date and an archive recorded for that released period.{' '}
+            <Link
+              href="/insights/successor-archived-is-not-retained"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Archived Is Not Retained
+            </Link>
+            . Read it at /insights/successor-archived-is-not-retained. This essay does not rewrite that
+            thesis. This essay does not give that retained a new meaning. This essay does not create a
+            filing spine for Released Is Not Archived. This essay does not create a filing spine at
+            /insights/released-is-not-archived.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
