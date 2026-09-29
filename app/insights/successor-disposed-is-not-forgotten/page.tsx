@@ -297,7 +297,18 @@ export default function SuccessorDisposedIsNotForgottenPage() {
           </p>
 
           <p>
-            Erased would mean that the forgotten operating results for that disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been erased — the forgotten operating results erased by a named eraser for the named period, the forgotten statement erased for the named ledger and period, or the forgotten customer workflow erased for the customer and the period, with a named eraser, an erasure date, and an erasure recorded — not merely that a named forgetter recorded a forgetting date and a forgetting recorded for that disposed period. Forgotten Is Not Erased may be named in prose only at /insights/successor-forgotten-is-not-erased. This essay does not implement that page. This essay does not create a successor route for Forgotten Is Not Erased. This essay does not create a filing spine for Disposed Is Not Forgotten. This essay does not create a filing spine at /insights/disposed-is-not-forgotten. This essay does not create a filing spine at /insights/retained-is-not-disposed.
+            Erased would mean that the forgotten operating results for that disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been erased — the forgotten operating results erased by a named eraser for the named period, the forgotten statement erased for the named ledger and period, or the forgotten customer workflow erased for the customer and the period, with a named eraser, an erasure date, and an erasure recorded — not merely that a named forgetter recorded a forgetting date and a forgetting recorded for that disposed period.{' '}
+            <Link
+              href="/insights/successor-forgotten-is-not-erased"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Forgotten Is Not Erased
+            </Link>
+            . Read it at /insights/successor-forgotten-is-not-erased. This essay does not rewrite that
+            thesis. This essay does not give that erased a new meaning. This essay does not create a
+            filing spine for Disposed Is Not Forgotten. This essay does not create a filing spine at
+            /insights/disposed-is-not-forgotten. This essay does not create a filing spine at
+            /insights/retained-is-not-disposed.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
