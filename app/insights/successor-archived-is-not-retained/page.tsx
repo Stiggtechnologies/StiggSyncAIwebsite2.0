@@ -290,7 +290,17 @@ export default function SuccessorArchivedIsNotRetainedPage() {
           </p>
 
           <p>
-            Disposed would mean that the retained operating results for that archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been disposed — the retained operating results disposed by a named disposer for the named period, the retained statement disposed for the named ledger and period, or the retained customer workflow disposed for the customer and the period, with a named disposer, a disposition date, and a disposition recorded — not merely that a named retainer recorded a retention date, a retention policy or period named, and a retention recorded for that archived period. Retained Is Not Disposed may be named in prose only at /insights/successor-retained-is-not-disposed. This essay does not implement that page. This essay does not create a successor route for Retained Is Not Disposed. This essay does not create a filing spine for Archived Is Not Retained. This essay does not create a filing spine at /insights/archived-is-not-retained.
+            Disposed would mean that the retained operating results for that archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been disposed — the retained operating results disposed by a named disposer for the named period, the retained statement disposed for the named ledger and period, or the retained customer workflow disposed for the customer and the period, with a named disposer, a disposition date, and a disposition recorded — not merely that a named retainer recorded a retention date, a retention policy or period named, and a retention recorded for that archived period.{' '}
+            <Link
+              href="/insights/successor-retained-is-not-disposed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Retained Is Not Disposed
+            </Link>
+            . Read it at /insights/successor-retained-is-not-disposed. This essay does not rewrite that
+            thesis. This essay does not give that disposed a new meaning. This essay does not create a
+            filing spine for Archived Is Not Retained. This essay does not create a filing spine at
+            /insights/archived-is-not-retained.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
