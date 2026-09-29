@@ -296,7 +296,16 @@ export default function SuccessorNeverIsNotVoidPage() {
           </p>
 
           <p>
-            Null would mean that the void operating results for that never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been nulled — the void record itself withdrawn so there is no void in which a scope-withdrawal could be lodged, the void operating results nulled by a named null authority for the named period, the void statement nulled for the named ledger and period, or the void customer workflow nulled for the customer and the period, with a named null authority, a null date, and a null recorded — not merely that a named void authority recorded a void date and a void recorded for that never period. Void Is Not Null may be named in prose only at /insights/successor-void-is-not-null. This essay does not implement that page. This essay does not create a successor route for Void Is Not Null. This essay does not create a filing spine for Never Is Not Void. This essay does not create a filing spine at /insights/never-is-not-void. This essay does not create a filing spine at /insights/unmade-is-not-never.
+            Null would mean that the void operating results for that never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been nulled — the void record itself withdrawn so there is no void in which a scope-withdrawal could be lodged, the void operating results nulled by a named null authority for the named period, the void statement nulled for the named ledger and period, or the void customer workflow nulled for the customer and the period, with a named null authority, a null date, and a null recorded — not merely that a named void authority recorded a void date and a void recorded for that never period. {' '}
+            <Link
+              href="/insights/successor-void-is-not-null"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Void Is Not Null
+            </Link>
+            . Read it at /insights/successor-void-is-not-null. This essay does not rewrite that
+            thesis. This essay does not give that null a new meaning. This essay does not create a
+            filing spine for Never Is Not Void. This essay does not create a filing spine at /insights/never-is-not-void. This essay does not create a filing spine at /insights/unmade-is-not-never.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
