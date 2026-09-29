@@ -295,9 +295,17 @@ export default function SuccessorUnmadeIsNotNeverPage() {
           </p>
 
           <p>
-            Void would mean that the never operating results for that unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been voided — the named scope itself withdrawn so there is no ledger in which a never-claim could be lodged, the never operating results voided by a named void authority for the named period, the never statement voided for the named ledger and period, or the never customer workflow voided for the customer and the period, with a named void authority, a void date, and a void recorded — not merely that a named never authority recorded a never date and a never recorded for that unmade period. Never Is Not Void may be named in prose only at /insights/successor-never-is-not-void. This essay does not implement that page. This essay does not create a successor route for Never Is Not Void. This essay does not create a filing spine for Unmade Is Not Never. This essay does not create a filing spine at /insights/unmade-is-not-never. This essay does not create a filing spine at /insights/obliterated-is-not-unmade.
+            Void would mean that the never operating results for that unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been voided — the named scope itself withdrawn so there is no ledger in which a never-claim could be lodged, the never operating results voided by a named void authority for the named period, the never statement voided for the named ledger and period, or the never customer workflow voided for the customer and the period, with a named void authority, a void date, and a void recorded — not merely that a named never authority recorded a never date and a never recorded for that unmade period. {' '}
+            <Link
+              href="/insights/successor-never-is-not-void"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Never Is Not Void
+            </Link>
+            . Read it at /insights/successor-never-is-not-void. This essay does not rewrite that
+            thesis. This essay does not give that void a new meaning. This essay does not create a
+            filing spine for Unmade Is Not Never. This essay does not create a filing spine at /insights/unmade-is-not-never. This essay does not create a filing spine at /insights/obliterated-is-not-unmade.
           </p>
-
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
             <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>

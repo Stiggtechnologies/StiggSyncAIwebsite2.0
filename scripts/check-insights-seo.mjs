@@ -35285,7 +35285,7 @@ for (const untouched of ["app/insights/successor-erased-is-not-destroyed/page.ts
   }
 }
 
-const successorUnmadeNeverPageRequired = ["Unmade Is Not Never","Unmade is not never","commercial spine","never spine","unmaking spine","the unmade the successor-spine Obliterated Is Not Unmade already names","executed unmaking instrument","executed never instrument","named unmaking authority unmaking","obliterated operating results with a named unmaking authority, an unmaking date, and an unmaking recorded for that obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period","obliterated statement unmade for the named ledger and period","obliterated customer workflow unmade for the customer and the period","unmade statement accounted never for the named ledger and period","unmade customer workflow accounted never for the customer and the period","named never authority, a never date, and a never recorded","not merely that a named unmaking authority recorded an unmaking date and an unmaking recorded","Packs that have been unmade — a named unmaking authority unmaking of the obliterated operating results for that named scope, obliterated operating results with a named unmaking authority","Obliterated Is Not Unmade already names the prior split","This essay does not rewrite that thesis","This essay does not give that unmade a new meaning","A firm can be unmade and still not never","never theater","An unmaking package alone is not never of that unmade successor outcome","This split is unmade versus never","Unmade cash or margin is not the same as a never commercial outcome","Named unmade is not never","The unmade practice is not the never practice","What a never record is allowed to be","Sync must not auto-deem-never","Sync does not deem never for the customer","This essay does not create a filing spine for Unmade Is Not Never","This essay does not create a filing spine at /insights/unmade-is-not-never","This essay does not create a filing spine at /insights/obliterated-is-not-unmade","Keep this records never distinct from the commercial expansion Retained Is Not Expanded already names","from any finished extinguishment or reconciliation theses","Refuse the slide from &quot;it is unmade&quot; to &quot;it never existed.&quot; Refuse the slide from &quot;it is unmade&quot; to &quot;it is never.&quot;","does not collapse into Retained Is Not Expanded","does not rewrite Retained Is Not Expanded","This never is not the collected Collected Is Not Recognized already names","This never is not the disbursement Paid Is Not Settled already names","This never is not the settlement Settled Is Not Booked already names","This never is not the collectible Collectible Is Not Applied already names","does not collapse into Collectible Is Not Applied","does not rewrite Collectible Is Not Applied","does not collapse into Applied Is Not Restored","does not rewrite Applied Is Not Restored","does not collapse into Extinguished Is Not Reconciled","does not rewrite Extinguished Is Not Reconciled","does not collapse into Reconciled Is Not Attested","does not rewrite Reconciled Is Not Attested","does not collapse into Reconciled Is Not Closed","does not rewrite Reconciled Is Not Closed","does not collapse into Booked Is Not Reconciled","does not rewrite Booked Is Not Reconciled","does not collapse into Binding Is Not Enforced","does not rewrite Binding Is Not Enforced","does not collapse into Defended Is Not Owned","does not rewrite Defended Is Not Owned","does not collapse into Certified Is Not Insured","does not rewrite Certified Is Not Insured","does not collapse into Assured Is Not Certified","does not rewrite Assured Is Not Certified","does not collapse into Operated Is Not Sustained","does not rewrite Operated Is Not Sustained","does not collapse into Delivered Is Not Operated","does not rewrite Delivered Is Not Operated","does not collapse into Released Is Not Recorded","does not rewrite Released Is Not Recorded","does not collapse into Remediated Is Not Released","does not rewrite Remediated Is Not Released","does not collapse into Accepted Is Not Posted","does not rewrite Accepted Is Not Posted","does not collapse into Restored Is Not Accepted","does not rewrite Restored Is Not Accepted","Field Manual","Strategic Pilot","href=\"/insights/successor-obliterated-is-not-unmade\"","An unmaking is not a never","keep this edition from treating an unmaking instrument on file as a never claim","Sync must not treat unmade as never as Learning credit","never existed for the ledger","never were a customer workflow","never were operating results for the named period","absence-from-the-start","An unmaking instrument on file (even one that withdraws every remainder of obliteration/destruction) is not a never claim","Never requires the named never authority, the never date, and the never recorded that asserts absence-from-the-start for that scope","Unmaking withdraws an accountable remainder of prior existence","does not establish that the packs never existed","not merely that an unmaking authority recorded an unmaking date","Never Is Not Void may be named in prose only","/insights/successor-never-is-not-void","This essay does not create a successor route for Never Is Not Void","This essay does not implement that page","Refuse the slide from &quot;it is unmade&quot; to &quot;it never existed.&quot;","Refuse the slide from &quot;it is unmade&quot; to &quot;it is never.&quot;","named never authority","a never date, and a never recorded"];
+const successorUnmadeNeverPageRequired = ["Unmade Is Not Never","Unmade is not never","commercial spine","never spine","unmaking spine","the unmade the successor-spine Obliterated Is Not Unmade already names","executed unmaking instrument","executed never instrument","named unmaking authority unmaking","obliterated operating results with a named unmaking authority, an unmaking date, and an unmaking recorded for that obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period","obliterated statement unmade for the named ledger and period","obliterated customer workflow unmade for the customer and the period","unmade statement accounted never for the named ledger and period","unmade customer workflow accounted never for the customer and the period","named never authority, a never date, and a never recorded","not merely that a named unmaking authority recorded an unmaking date and an unmaking recorded","Packs that have been unmade — a named unmaking authority unmaking of the obliterated operating results for that named scope, obliterated operating results with a named unmaking authority","Obliterated Is Not Unmade already names the prior split","This essay does not rewrite that thesis","This essay does not give that unmade a new meaning","A firm can be unmade and still not never","never theater","An unmaking package alone is not never of that unmade successor outcome","This split is unmade versus never","Unmade cash or margin is not the same as a never commercial outcome","Named unmade is not never","The unmade practice is not the never practice","What a never record is allowed to be","Sync must not auto-deem-never","Sync does not deem never for the customer","This essay does not create a filing spine for Unmade Is Not Never","This essay does not create a filing spine at /insights/unmade-is-not-never","This essay does not create a filing spine at /insights/obliterated-is-not-unmade","Keep this records never distinct from the commercial expansion Retained Is Not Expanded already names","from any finished extinguishment or reconciliation theses","Refuse the slide from &quot;it is unmade&quot; to &quot;it never existed.&quot; Refuse the slide from &quot;it is unmade&quot; to &quot;it is never.&quot;","does not collapse into Retained Is Not Expanded","does not rewrite Retained Is Not Expanded","This never is not the collected Collected Is Not Recognized already names","This never is not the disbursement Paid Is Not Settled already names","This never is not the settlement Settled Is Not Booked already names","This never is not the collectible Collectible Is Not Applied already names","does not collapse into Collectible Is Not Applied","does not rewrite Collectible Is Not Applied","does not collapse into Applied Is Not Restored","does not rewrite Applied Is Not Restored","does not collapse into Extinguished Is Not Reconciled","does not rewrite Extinguished Is Not Reconciled","does not collapse into Reconciled Is Not Attested","does not rewrite Reconciled Is Not Attested","does not collapse into Reconciled Is Not Closed","does not rewrite Reconciled Is Not Closed","does not collapse into Booked Is Not Reconciled","does not rewrite Booked Is Not Reconciled","does not collapse into Binding Is Not Enforced","does not rewrite Binding Is Not Enforced","does not collapse into Defended Is Not Owned","does not rewrite Defended Is Not Owned","does not collapse into Certified Is Not Insured","does not rewrite Certified Is Not Insured","does not collapse into Assured Is Not Certified","does not rewrite Assured Is Not Certified","does not collapse into Operated Is Not Sustained","does not rewrite Operated Is Not Sustained","does not collapse into Delivered Is Not Operated","does not rewrite Delivered Is Not Operated","does not collapse into Released Is Not Recorded","does not rewrite Released Is Not Recorded","does not collapse into Remediated Is Not Released","does not rewrite Remediated Is Not Released","does not collapse into Accepted Is Not Posted","does not rewrite Accepted Is Not Posted","does not collapse into Restored Is Not Accepted","does not rewrite Restored Is Not Accepted","Field Manual","Strategic Pilot","href=\"/insights/successor-obliterated-is-not-unmade\"","An unmaking is not a never","keep this edition from treating an unmaking instrument on file as a never claim","Sync must not treat unmade as never as Learning credit","never existed for the ledger","never were a customer workflow","never were operating results for the named period","absence-from-the-start","An unmaking instrument on file (even one that withdraws every remainder of obliteration/destruction) is not a never claim","Never requires the named never authority, the never date, and the never recorded that asserts absence-from-the-start for that scope","Unmaking withdraws an accountable remainder of prior existence","does not establish that the packs never existed","not merely that an unmaking authority recorded an unmaking date","/insights/successor-never-is-not-void","Refuse the slide from &quot;it is unmade&quot; to &quot;it never existed.&quot;","Refuse the slide from &quot;it is unmade&quot; to &quot;it is never.&quot;","named never authority","a never date, and a never recorded"];
 
 const successorUnmadeNeverPage = read('app/insights/successor-unmade-is-not-never/page.tsx');
 const successorUnmadeNeverPageNormalized = successorUnmadeNeverPage.replace(/\s+/g, ' ');
@@ -35304,8 +35304,8 @@ if (successorUnmadeNeverPage.includes("successor-rehearsed-is-not-recoverable"))
 if (successorUnmadeNeverPage.includes("href=\"/insights/successor-unmade-is-not-never\"")) {
   fail('successor-unmade-is-not-never must not link to itself as a forward route');
 }
-if (successorUnmadeNeverPage.includes("href=\"/insights/successor-never-is-not-void\"")) {
-  fail('successor-unmade-is-not-never must keep Never Is Not Void in prose only');
+if (!successorUnmadeNeverPage.includes("href=\"/insights/successor-never-is-not-void\"")) {
+  fail('successor-unmade-is-not-never must point the series forward to successor-never-is-not-void');
 }
 if (successorUnmadeNeverPage.includes("href=\"/insights/successor-retained-is-not-expanded\"")) {
   fail('successor-unmade-is-not-never must not retarget successor Retained Is Not Expanded');
@@ -35412,17 +35412,11 @@ if (successorUnmadeNeverPage.includes("href=\"/insights/destroyed-is-not-obliter
 if (successorUnmadeNeverPage.includes("href=\"/insights/forgotten-is-not-erased\"")) {
   fail('successor-unmade-is-not-never must not open a forgotten filing spine');
 }
-if (!successorUnmadeNeverPage.includes('Never Is Not Void may be named in prose only')) {
-  fail('successor-unmade-is-not-never must name Never Is Not Void in prose only');
+if (successorUnmadeNeverPage.includes('Never Is Not Void may be named in prose only')) {
+  fail('successor-unmade-is-not-never must not keep Never Is Not Void in prose only once the route exists');
 }
 if (successorUnmadeNeverPage.includes('Unmade Is Not Never may be named in prose only')) {
   fail('successor-unmade-is-not-never must not name itself as prose only');
-}
-if (existsSync(join(root, 'app/insights/successor-never-is-not-void/page.tsx'))) {
-  fail('successor-never-is-not-void must stay prose only in this essay');
-}
-if (slugs.includes('successor-never-is-not-void')) {
-  fail('successor-never-is-not-void must not be registered in this essay');
 }
 if (existsSync(join(root, 'app/insights/obliterated-is-not-unmade/page.tsx'))) {
   fail('obliterated-is-not-unmade filing spine must not be created');
@@ -35472,8 +35466,8 @@ if (!/includePilot:\s*true/.test(successorUnmadeNeverBlock)) {
 if (successorUnmadeNeverBlock.includes("next: 'strategic-pilot'")) {
   fail('successor-unmade-is-not-never next step is the Field Manual');
 }
-if (successorUnmadeNeverBlock.includes('successor-never-is-not-void')) {
-  fail('successor-unmade-is-not-never must keep Never Is Not Void in prose only');
+if (!successorUnmadeNeverBlock.includes('successor-never-is-not-void')) {
+  fail('successor-unmade-is-not-never related reading must cite successor-never-is-not-void');
 }
 if (successorUnmadeNeverBlock.includes("collectible-is-not-applied")) {
   fail('successor-unmade-is-not-never related reading must stay off Collectible Is Not Applied');
@@ -35508,8 +35502,8 @@ if (!successorUnmadeNeverBlock.includes("relatedSlug: 'successor-obliterated-is-
 {
   const alsoAt = successorUnmadeNeverBlock.indexOf('also: [');
   const firstAlso = successorUnmadeNeverBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
-  if (!firstAlso || firstAlso[1] !== 'successor-destroyed-is-not-obliterated') {
-    fail('successor-unmade-is-not-never must list successor-destroyed-is-not-obliterated first among additional related reading');
+  if (!firstAlso || firstAlso[1] !== 'successor-never-is-not-void') {
+    fail('successor-unmade-is-not-never must list successor-never-is-not-void first among additional related reading');
   }
 }
 if (successorUnmadeNeverBlock.includes('successor-recoverable-is-not-assured')) {
@@ -35518,6 +35512,243 @@ if (successorUnmadeNeverBlock.includes('successor-recoverable-is-not-assured')) 
 for (const untouched of ["app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
   if (read(untouched).includes('successor-unmade-is-not-never')) {
     fail(`${untouched} must stay off successor-unmade-is-not-never`);
+  }
+}
+
+const successorNeverVoidPageRequired = ["Never Is Not Void","Never is not void","commercial spine","void spine","never spine","the never the successor-spine Unmade Is Not Never already names","executed never instrument","executed void instrument","named never authority","unmade operating results with a named never authority, a never date, and a never recorded for that unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period","unmade statement accounted never for the named ledger and period","unmade customer workflow accounted never for the customer and the period","never statement voided for the named ledger and period","never customer workflow voided for the customer and the period","named void authority, a void date, and a void recorded","not merely that a named never authority recorded a never date and a never recorded","Packs that have been accounted never — a named never authority","Unmade Is Not Never already names the prior split","This essay does not rewrite that thesis","This essay does not give that never a new meaning","A firm can be never and still not void","void theater","A never package alone is not void of that never successor outcome","This split is never versus void","Never cash or margin is not the same as a void commercial outcome","Named never is not void","The never practice is not the void practice","What a void record is allowed to be","Sync must not auto-deem-void","Sync does not deem void for the customer","This essay does not create a filing spine for Never Is Not Void","This essay does not create a filing spine at /insights/never-is-not-void","This essay does not create a filing spine at /insights/unmade-is-not-never","Keep this records void distinct from the commercial expansion Retained Is Not Expanded already names","from any finished extinguishment or reconciliation theses","Refuse the slide from &quot;it is never&quot; to &quot;it is void.&quot; Refuse the slide from &quot;it never existed&quot; to &quot;the scope itself is gone.&quot;","does not collapse into Retained Is Not Expanded","does not rewrite Retained Is Not Expanded","This void is not the collected Collected Is Not Recognized already names","This void is not the disbursement Paid Is Not Settled already names","This void is not the settlement Settled Is Not Booked already names","This void is not the collectible Collectible Is Not Applied already names","does not collapse into Collectible Is Not Applied","does not rewrite Collectible Is Not Applied","does not collapse into Applied Is Not Restored","does not rewrite Applied Is Not Restored","does not collapse into Extinguished Is Not Reconciled","does not rewrite Extinguished Is Not Reconciled","does not collapse into Reconciled Is Not Attested","does not rewrite Reconciled Is Not Attested","does not collapse into Reconciled Is Not Closed","does not rewrite Reconciled Is Not Closed","does not collapse into Booked Is Not Reconciled","does not rewrite Booked Is Not Reconciled","does not collapse into Binding Is Not Enforced","does not rewrite Binding Is Not Enforced","does not collapse into Defended Is Not Owned","does not rewrite Defended Is Not Owned","does not collapse into Certified Is Not Insured","does not rewrite Certified Is Not Insured","does not collapse into Assured Is Not Certified","does not rewrite Assured Is Not Certified","does not collapse into Operated Is Not Sustained","does not rewrite Operated Is Not Sustained","does not collapse into Delivered Is Not Operated","does not rewrite Delivered Is Not Operated","does not collapse into Released Is Not Recorded","does not rewrite Released Is Not Recorded","does not collapse into Remediated Is Not Released","does not rewrite Remediated Is Not Released","does not collapse into Accepted Is Not Posted","does not rewrite Accepted Is Not Posted","does not collapse into Restored Is Not Accepted","does not rewrite Restored Is Not Accepted","Field Manual","Strategic Pilot","href=\"/insights/successor-unmade-is-not-never\"","A never is not a void","keep this edition from treating a never instrument on file as a void claim","Sync must not treat never as void as Learning credit","the named scope itself withdrawn so there is no ledger in which a never-claim could be lodged","A never instrument on file (even one that asserts absence-from-the-start) is not void","Void requires the named void authority, the void date, and the void recorded that withdraws the named scope itself","never existed for the ledger","never were a customer workflow","never were operating results for the named period","absence-from-the-start","An unmaking instrument on file is not a never claim","Unmaking withdraws an accountable remainder of prior existence","does not establish that the packs never existed","not merely that a never authority recorded a never date","Void Is Not Null may be named in prose only","/insights/successor-void-is-not-null","This essay does not create a successor route for Void Is Not Null","This essay does not implement that page","Refuse the slide from &quot;it is never&quot; to &quot;it is void.&quot;","Refuse the slide from &quot;it never existed&quot; to &quot;the scope itself is gone.&quot;","named void authority","a void date, and a void recorded"];
+
+
+const successorNeverVoidPage = read('app/insights/successor-never-is-not-void/page.tsx');
+const successorNeverVoidPageNormalized = successorNeverVoidPage.replace(/\s+/g, ' ');
+for (const required of successorNeverVoidPageRequired) {
+  const needle = required.replace(/\\"/g, '"').replace(/\s+/g, ' ');
+  if (!successorNeverVoidPageNormalized.includes(needle)) {
+    fail(`successor-never-is-not-void page must include ${required}`);
+  }
+}
+if (successorNeverVoidPage.includes("successor-recoverable-is-not-assured")) {
+  fail('successor-never-is-not-void must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorNeverVoidPage.includes("successor-rehearsed-is-not-recoverable")) {
+  fail('successor-never-is-not-void must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-never-is-not-void\"")) {
+  fail('successor-never-is-not-void must not link to itself as a forward route');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-void-is-not-null\"")) {
+  fail('successor-never-is-not-void must keep Void Is Not Null in prose only');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-retained-is-not-expanded\"")) {
+  fail('successor-never-is-not-void must not retarget successor Retained Is Not Expanded');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/retained-is-not-expanded\"")) {
+  fail('successor-never-is-not-void must not retarget Retained Is Not Expanded');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-released-is-not-recorded\"")) {
+  fail('successor-never-is-not-void must not retarget successor Released Is Not Recorded');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/released-is-not-recorded\"")) {
+  fail('successor-never-is-not-void must not retarget Released Is Not Recorded');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-remediated-is-not-released\"")) {
+  fail('successor-never-is-not-void must not retarget successor Remediated Is Not Released');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/remediated-is-not-released\"")) {
+  fail('successor-never-is-not-void must not retarget Remediated Is Not Released');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/destroyed-is-not-obliterated\"")) {
+  fail('successor-never-is-not-void must not open a filing spine');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/forgotten-is-not-erased\"")) {
+  fail('successor-never-is-not-void must not open a forgotten filing spine');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/disposed-is-not-forgotten\"")) {
+  fail('successor-never-is-not-void must not open a disposed filing spine');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/applied-is-not-restored\"")) {
+  fail('successor-never-is-not-void must not retarget Applied Is Not Restored');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-applied-is-not-restored\"")) {
+  fail('successor-never-is-not-void must not retarget successor Applied Is Not Restored');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/collectible-is-not-applied\"")) {
+  fail('successor-never-is-not-void must not retarget Collectible Is Not Applied');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-collectible-is-not-applied\"")) {
+  fail('successor-never-is-not-void must not retarget successor Collectible Is Not Applied');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-collected-is-not-recognized\"")) {
+  fail('successor-never-is-not-void must not retarget Collected Is Not Recognized');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-defended-is-not-owned\"")) {
+  fail('successor-never-is-not-void must not retarget the Defended Is Not Owned growth-loop route');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-reconciled-is-not-attested\"")) {
+  fail('successor-never-is-not-void must not retarget successor Reconciled Is Not Attested');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/reconciled-is-not-attested\"")) {
+  fail('successor-never-is-not-void must not retarget Reconciled Is Not Attested');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-extinguished-is-not-reconciled\"")) {
+  fail('successor-never-is-not-void must not retarget successor Extinguished Is Not Reconciled');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-reconciled-is-not-closed\"")) {
+  fail('successor-never-is-not-void must not retarget successor Reconciled Is Not Closed');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-booked-is-not-reconciled\"")) {
+  fail('successor-never-is-not-void must not retarget successor Booked Is Not Reconciled');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-certified-is-not-insured\"")) {
+  fail('successor-never-is-not-void must not retarget successor Certified Is Not Insured');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/certified-is-not-insured\"")) {
+  fail('successor-never-is-not-void must not retarget Certified Is Not Insured');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-assured-is-not-certified\"")) {
+  fail('successor-never-is-not-void must not retarget successor Assured Is Not Certified');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/assured-is-not-certified\"")) {
+  fail('successor-never-is-not-void must not retarget Assured Is Not Certified');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-accepted-is-not-posted\"")) {
+  fail('successor-never-is-not-void must not retarget successor Accepted Is Not Posted');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/accepted-is-not-posted\"")) {
+  fail('successor-never-is-not-void must not retarget Accepted Is Not Posted');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-restored-is-not-accepted\"")) {
+  fail('successor-never-is-not-void must not retarget successor Restored Is Not Accepted');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/restored-is-not-accepted\"")) {
+  fail('successor-never-is-not-void must not retarget Restored Is Not Accepted');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-operated-is-not-sustained\"")) {
+  fail('successor-never-is-not-void must not retarget successor Operated Is Not Sustained');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/operated-is-not-sustained\"")) {
+  fail('successor-never-is-not-void must not retarget Operated Is Not Sustained');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/successor-delivered-is-not-operated\"")) {
+  fail('successor-never-is-not-void must not retarget successor Delivered Is Not Operated');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/delivered-is-not-operated\"")) {
+  fail('successor-never-is-not-void must not retarget Delivered Is Not Operated');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/obliterated-is-not-unmade\"")) {
+  fail('successor-never-is-not-void must not open a filing spine');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/destroyed-is-not-obliterated\"")) {
+  fail('successor-never-is-not-void must not open an erased filing spine');
+}
+if (successorNeverVoidPage.includes("href=\"/insights/forgotten-is-not-erased\"")) {
+  fail('successor-never-is-not-void must not open a forgotten filing spine');
+}
+if (!successorNeverVoidPage.includes('Void Is Not Null may be named in prose only')) {
+  fail('successor-never-is-not-void must name Void Is Not Null in prose only');
+}
+if (successorNeverVoidPage.includes('Never Is Not Void may be named in prose only')) {
+  fail('successor-never-is-not-void must not name itself as prose only');
+}
+if (existsSync(join(root, 'app/insights/successor-void-is-not-null/page.tsx'))) {
+  fail('successor-void-is-not-null must stay prose only in this essay');
+}
+if (slugs.includes('successor-void-is-not-null')) {
+  fail('successor-void-is-not-null must not be registered in this essay');
+}
+if (existsSync(join(root, 'app/insights/obliterated-is-not-unmade/page.tsx'))) {
+  fail('obliterated-is-not-unmade filing spine must not be created');
+}
+if (slugs.includes('obliterated-is-not-unmade')) {
+  fail('obliterated-is-not-unmade filing spine must not be registered');
+}
+if (existsSync(join(root, 'app/insights/destroyed-is-not-obliterated/page.tsx'))) {
+  fail('destroyed-is-not-obliterated filing spine must not be created');
+}
+if (slugs.includes('destroyed-is-not-obliterated')) {
+  fail('destroyed-is-not-obliterated filing spine must not be registered');
+}
+if (existsSync(join(root, 'app/insights/forgotten-is-not-erased/page.tsx'))) {
+  fail('forgotten-is-not-erased filing spine must not be created');
+}
+if (slugs.includes('forgotten-is-not-erased')) {
+  fail('forgotten-is-not-erased filing spine must not be registered');
+}
+if (!existsSync(join(root, 'app/insights/successor-never-is-not-void/page.tsx'))) {
+  fail('successor-never-is-not-void page must exist');
+}
+if (!slugs.includes('successor-never-is-not-void')) {
+  fail('successor-never-is-not-void must be registered in the catalog');
+}
+if (!successorNeverVoidPage.includes('href="/insights/successor-unmade-is-not-never"')) {
+  fail('successor-never-is-not-void must keep prior reading on successor-unmade-is-not-never');
+}
+if (!read('app/insights/successor-unmade-is-not-never/page.tsx').includes('href="/insights/successor-never-is-not-void"')) {
+  fail('successor-unmade-is-not-never must point the series forward to successor-never-is-not-void');
+}
+for (const earlier of ["app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-promulgated-is-not-published/page.tsx","app/insights/successor-enacted-is-not-promulgated/page.tsx","app/insights/successor-ratified-is-not-enacted/page.tsx","app/insights/successor-verified-is-not-ratified/page.tsx","app/insights/successor-confirmed-is-not-verified/page.tsx","app/insights/successor-acted-is-not-confirmed/page.tsx","app/insights/successor-instructed-is-not-acted/page.tsx","app/insights/successor-authorized-is-not-instructed/page.tsx","app/insights/successor-approved-is-not-authorized/page.tsx","app/insights/successor-reviewed-is-not-approved/page.tsx","app/insights/successor-operated-is-not-reviewed/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-collected-is-not-applied/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-advanced-is-not-performed/page.tsx","app/insights/successor-relied-is-not-advanced/page.tsx","app/insights/successor-attested-is-not-relied/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-disbursed-is-not-extinguished/page.tsx","app/insights/successor-obligated-is-not-disbursed/page.tsx","app/insights/successor-spendable-is-not-obligated/page.tsx","app/insights/successor-available-is-not-spendable/page.tsx","app/insights/successor-cleared-is-not-available/page.tsx","app/insights/successor-remitted-is-not-cleared/page.tsx","app/insights/successor-captured-is-not-remitted/page.tsx","app/insights/successor-residual-is-not-captured/page.tsx","app/insights/successor-defended-is-not-residual/page.tsx","app/insights/successor-distributed-is-not-defended/page.tsx","app/insights/successor-controlled-is-not-distributed/page.tsx","app/insights/successor-compounded-is-not-controlled/page.tsx","app/insights/successor-closeable-is-not-compounded/page.tsx","app/insights/successor-financeable-is-not-closeable/page.tsx","app/insights/successor-insurable-is-not-financeable/page.tsx","app/insights/successor-governable-is-not-insurable/page.tsx","app/insights/successor-auditable-is-not-governable/page.tsx","app/insights/successor-accountable-is-not-auditable/page.tsx","app/insights/successor-deployable-is-not-accountable/page.tsx","app/insights/successor-liquid-is-not-deployable/page.tsx","app/insights/successor-portable-is-not-liquid/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-retained-is-not-expanded/page.tsx","app/insights/successor-monetized-is-not-retained/page.tsx","app/insights/successor-binding-is-not-monetized/page.tsx","app/insights/successor-effective-is-not-binding/page.tsx","app/insights/successor-posted-is-not-effective/page.tsx","app/insights/successor-accepted-is-not-posted/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(earlier).includes('href="/insights/successor-never-is-not-void"')) {
+    fail(`forward link to successor-never-is-not-void must come only from successor-unmade-is-not-never (${earlier})`);
+  }
+}
+
+const successorNeverVoidBlock = stepBlock('successor-never-is-not-void');
+for (const required of ["successor-unmade-is-not-never","successor-obliterated-is-not-unmade","successor-destroyed-is-not-obliterated","successor-erased-is-not-destroyed","successor-forgotten-is-not-erased","successor-disposed-is-not-forgotten","successor-retained-is-not-disposed","successor-archived-is-not-retained","successor-released-is-not-archived","successor-satisfied-is-not-released","successor-discharged-is-not-satisfied","successor-honored-is-not-discharged","successor-endorsed-is-not-honored","successor-received-is-not-endorsed","successor-presented-is-not-received","successor-circulated-is-not-presented","successor-published-is-not-circulated","successor-promulgated-is-not-published","successor-enacted-is-not-promulgated","successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
+  if (!successorNeverVoidBlock.includes(`'${required}'`)) {
+    fail(`successor-never-is-not-void related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorNeverVoidBlock)) {
+  fail('successor-never-is-not-void related reading must include the Strategic Pilot');
+}
+if (successorNeverVoidBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-never-is-not-void next step is the Field Manual');
+}
+if (successorNeverVoidBlock.includes('successor-void-is-not-null')) {
+  fail('successor-never-is-not-void must keep Void Is Not Null in prose only');
+}
+if (successorNeverVoidBlock.includes("collectible-is-not-applied")) {
+  fail('successor-never-is-not-void related reading must stay off Collectible Is Not Applied');
+}
+if (successorNeverVoidBlock.includes("applied-is-not-restored")) {
+  fail('successor-never-is-not-void related reading must stay off Applied Is Not Restored');
+}
+if (successorNeverVoidBlock.includes("successor-reconciled-is-not-attested")) {
+  fail('successor-never-is-not-void related reading must stay off Reconciled Is Not Attested');
+}
+if (successorNeverVoidBlock.includes("successor-extinguished-is-not-reconciled")) {
+  fail('successor-never-is-not-void related reading must stay off Extinguished Is Not Reconciled');
+}
+if (successorNeverVoidBlock.includes("successor-defended-is-not-owned")) {
+  fail('successor-never-is-not-void related reading must stay off Defended Is Not Owned');
+}
+if (successorNeverVoidBlock.includes("successor-certified-is-not-insured")) {
+  fail('successor-never-is-not-void related reading must stay off Certified Is Not Insured');
+}
+if (successorNeverVoidBlock.includes("successor-assured-is-not-certified")) {
+  fail('successor-never-is-not-void related reading must stay off Assured Is Not Certified');
+}
+if (successorNeverVoidBlock.includes("successor-operated-is-not-sustained")) {
+  fail('successor-never-is-not-void related reading must stay off Operated Is Not Sustained');
+}
+if (successorNeverVoidBlock.includes("successor-retained-is-not-expanded")) {
+  fail('successor-never-is-not-void related reading must stay off Retained Is Not Expanded');
+}
+if (!successorNeverVoidBlock.includes("relatedSlug: 'successor-unmade-is-not-never'")) {
+  fail('successor-never-is-not-void related reading must start from successor-unmade-is-not-never');
+}
+{
+  const alsoAt = successorNeverVoidBlock.indexOf('also: [');
+  const firstAlso = successorNeverVoidBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
+  if (!firstAlso || firstAlso[1] !== 'successor-obliterated-is-not-unmade') {
+    fail('successor-never-is-not-void must list successor-obliterated-is-not-unmade first among additional related reading');
+  }
+}
+if (successorNeverVoidBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-never-is-not-void must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of ["app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx"]) {
+  if (read(untouched).includes('successor-never-is-not-void')) {
+    fail(`${untouched} must stay off successor-never-is-not-void`);
   }
 }
 
