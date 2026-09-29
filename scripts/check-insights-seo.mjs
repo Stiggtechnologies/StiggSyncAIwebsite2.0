@@ -38876,7 +38876,7 @@ for (const untouched of ["app/insights/successor-binding-is-not-operative/page.t
 }
 
 
-const successorFinalUltimatePageRequired = ["commercial spine", "named final authority", "named ultimate authority", "named operative authority", "named controlling authority", "named decisive authority", "named governing authority", "named sovereign authority", "This essay does not rewrite that thesis", "does not collapse into Retained Is Not Expanded", "does not rewrite Retained Is Not Expanded", "does not collapse into Collectible Is Not Applied", "does not rewrite Collectible Is Not Applied", "does not collapse into Applied Is Not Restored", "does not rewrite Applied Is Not Restored", "does not collapse into Extinguished Is Not Reconciled", "does not rewrite Extinguished Is Not Reconciled", "does not collapse into Reconciled Is Not Attested", "does not rewrite Reconciled Is Not Attested", "does not collapse into Reconciled Is Not Closed", "does not rewrite Reconciled Is Not Closed", "does not collapse into Booked Is Not Reconciled", "does not rewrite Booked Is Not Reconciled", "does not collapse into Binding Is Not Enforced", "does not rewrite Binding Is Not Enforced", "does not collapse into Defended Is Not Owned", "does not rewrite Defended Is Not Owned", "does not collapse into Certified Is Not Insured", "does not rewrite Certified Is Not Insured", "does not collapse into Assured Is Not Certified", "does not rewrite Assured Is Not Certified", "does not collapse into Operated Is Not Sustained", "does not rewrite Operated Is Not Sustained", "does not collapse into Delivered Is Not Operated", "does not rewrite Delivered Is Not Operated", "does not collapse into Released Is Not Recorded", "does not rewrite Released Is Not Recorded", "does not collapse into Remediated Is Not Released", "does not rewrite Remediated Is Not Released", "does not collapse into Accepted Is Not Posted", "does not rewrite Accepted Is Not Posted", "does not collapse into Restored Is Not Accepted", "does not rewrite Restored Is Not Accepted", "Field Manual", "Strategic Pilot", "A void instrument on file (even one that withdraws the named scope itself) is not null", "A never instrument on file (even one that asserts absence-from-the-start) is not void", "Null requires the named null authority, the null date, and the null recorded that withdraws the void record itself. Absent requires the named absent authority, the absent date, and the absent recorded that withdraws the null record itself. Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself", "never existed for the ledger", "never were a customer workflow", "never were operating results for the named period", "absence-from-the-start", "An unmaking instrument on file is not a never claim", "Unmaking withdraws an accountable remainder of prior existence", "does not establish that the packs never existed", "not merely that a controlling authority recorded a controlling date", "not merely that a decisive authority recorded a decisive date", "not merely that a governing authority recorded a governing date", "not merely that a sovereign authority recorded a sovereign date", "named absolute authority", "A vacant instrument on file (even one that withdraws the absent record itself) is not empty", "Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself", "Vacant withdraws the absent record itself so there is no absent in which a null-withdrawal could be lodged", "Null withdraws the void record itself so there is no void in which a scope-withdrawal could be lodged", "Void withdraws the named scope itself so there is no ledger in which a never-claim could be lodged", "Cleared Is Not Closed", "Cleared Is Not Available", "does not collapse into Cleared Is Not Closed", "does not rewrite Cleared Is Not Closed", "does not collapse into Cleared Is Not Available", "does not rewrite Cleared Is Not Available", "Closure Is Not Complete", "Complete Is Not Accepted", "Closed Is Not Collected", "Closed Is Not Delivered", "Closed Is Not Resolved", "Executed Is Not Closed", "does not collapse into Closure Is Not Complete", "does not rewrite Closure Is Not Complete", "does not collapse into Complete Is Not Accepted", "does not rewrite Complete Is Not Accepted", "does not collapse into Closed Is Not Collected", "does not rewrite Closed Is Not Collected", "does not collapse into Closed Is Not Delivered", "does not rewrite Closed Is Not Delivered", "does not collapse into Closed Is Not Resolved", "does not rewrite Closed Is Not Resolved", "does not collapse into Executed Is Not Closed", "does not rewrite Executed Is Not Closed", "A finished instrument on file (even one that withdraws the closed record itself) is not complete", "A complete instrument on file (even one that withdraws the finished record itself) is not final. A final instrument on file (even one that withdraws the complete record itself) is not binding", "Complete withdraws the finished record itself so there is no finished in which a closed-withdrawal could be lodged. Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged", "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself", "Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself. Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself — not merely that an operative authority recorded an operative date. Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself", "Complete requires the named complete authority, the complete date, and the complete recorded that withdraws the finished record itself", "Transferable Is Not Binding", "does not collapse into Transferable Is Not Binding", "does not rewrite Transferable Is Not Binding", "A binding instrument on file (even one that withdraws the final record itself) is not operative", "A controlling instrument on file (even one that withdraws the operative record itself) is not decisive", "A decisive instrument on file (even one that withdraws the controlling record itself) is not governing", "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign", "A binding instrument on file, even one that withdraws the final record itself, is not operative", "An operative instrument on file, even one that withdraws the binding record itself, is not controlling", "Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged", "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself. Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself", "Sync does not measure controlling", "Sync does not measure decisive", "Sync does not measure governing", "Sync does not measure sovereign", "Sync does not measure absolute", "Binding withdraws the final record itself so there is no final in which a complete-withdrawal could be lodged", "Controlling withdraws the operative record itself so there is no operative in which a binding-withdrawal could be lodged", "Decisive withdraws the controlling record itself so there is no controlling in which an operative-withdrawal could be lodged", "Governing withdraws the decisive record itself so there is no decisive in which a controlling-withdrawal could be lodged", "Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself", "Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself", "Governing requires the named governing authority, the governing date, and the governing recorded that withdraws the decisive record itself", "Sovereign requires the named sovereign authority, the sovereign date, and the sovereign recorded that withdraws the governing record itself", "Absolute requires the named absolute authority, the absolute date, and the absolute recorded that withdraws the sovereign record itself", "A controlling instrument on file, even one that withdraws the operative record itself, is not decisive", "A decisive instrument on file, even one that withdraws the controlling record itself, is not governing", "make decisive the controlling operating results", "make governing the decisive operating results", "make sovereign the governing operating results", "make absolute the sovereign operating results", "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign.", "A governing instrument on file, even one that withdraws the decisive record itself, is not sovereign", "Absolute Is Not Final", "final spine", "executed final instrument", "Sovereign withdraws the governing record itself so there is no governing in which a decisive-withdrawal could be lodged", "A sovereign instrument on file (even one that withdraws the governing record itself) is not absolute", "An absolute instrument on file (even one that withdraws the sovereign record itself) is not final", "A sovereign instrument on file, even one that withdraws the governing record itself, is not absolute", "An absolute instrument on file, even one that withdraws the sovereign record itself, is not final", "named final authority, a final date, and a final recorded", "Sync does not measure final", "make final the absolute operating results", "Final requires the named final authority, the final date, and the final recorded that withdraws the absolute record itself", "the absolute record itself withdrawn so there is no absolute in which a sovereign-withdrawal could be lodged", "This essay does not create a filing spine at /insights/absolute-is-not-final", "Final is not ultimate", "the final the successor-spine Absolute Is Not Final already names", "absolute operating results with a named final authority, a final date, and a final recorded for that absolute sovereign governing decisive controlling operative binding final complete finished closed settled clear empty vacant absent null void never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period", "absolute statement made final for the named ledger and period", "absolute customer workflow made final for the customer and the period", "not merely that a named final authority recorded a final date and a final recorded", "Packs that have been made final — a named final authority", "Absolute Is Not Final already names the prior split", "This essay does not give that final a new meaning", "A firm can be final and still not ultimate", "ultimate theater", "A final package alone is not ultimate of that final successor outcome", "This split is final versus ultimate", "Final cash or margin is not the same as an ultimate commercial outcome", "Named final is not ultimate", "The final practice is not the ultimate practice", "What an ultimate record is allowed to be", "Sync must not auto-deem-ultimate", "Sync does not deem ultimate for the customer", "This essay does not create a filing spine for Final Is Not Ultimate", "Keep this records ultimate distinct from the commercial expansion Retained Is Not Expanded already names", "from any ultimate extinguishment or reconciliation theses", "Refuse the slide from &quot;it is final&quot; to &quot;it is ultimate.&quot; Refuse the slide from &quot;there is no absolute record either&quot; to &quot;there is no final record either.&quot;", "This ultimate is not the collected Collected Is Not Recognized already names", "This ultimate is not the disbursement Paid Is Not Settled already names", "This ultimate is not the settlement Settled Is Not Booked already names", "This ultimate is not the collectible Collectible Is Not Applied already names", "A final is not an ultimate", "keep this edition from treating a final instrument on file as an ultimate claim", "Sync must not treat final as ultimate as Learning credit", "/insights/successor-ultimate-is-not-total", "Refuse the slide from &quot;it is final&quot; to &quot;it is ultimate.&quot;", "Refuse the slide from &quot;there is no absolute record either&quot; to &quot;there is no final record either.&quot;", "a final date, and a final recorded", "This ultimate is not the filing close Cleared Is Not Closed already names", "This ultimate is not the filing clearance Cleared Is Not Available already names", "Final Is Not Ultimate", "ultimate spine", "This final is not the final Complete Is Not Final already names, and it is not the final Final Is Not Binding already names.", "Ultimate Is Not Total may be named in prose only", "This essay does not create a successor route for Ultimate Is Not Total", "A final instrument on file (even one that withdraws the absolute record itself) is not ultimate", "the final record itself withdrawn so there is no final in which an absolute-withdrawal could be lodged"];
+const successorFinalUltimatePageRequired = ["commercial spine", "named final authority", "named ultimate authority", "named operative authority", "named controlling authority", "named decisive authority", "named governing authority", "named sovereign authority", "This essay does not rewrite that thesis", "does not collapse into Retained Is Not Expanded", "does not rewrite Retained Is Not Expanded", "does not collapse into Collectible Is Not Applied", "does not rewrite Collectible Is Not Applied", "does not collapse into Applied Is Not Restored", "does not rewrite Applied Is Not Restored", "does not collapse into Extinguished Is Not Reconciled", "does not rewrite Extinguished Is Not Reconciled", "does not collapse into Reconciled Is Not Attested", "does not rewrite Reconciled Is Not Attested", "does not collapse into Reconciled Is Not Closed", "does not rewrite Reconciled Is Not Closed", "does not collapse into Booked Is Not Reconciled", "does not rewrite Booked Is Not Reconciled", "does not collapse into Binding Is Not Enforced", "does not rewrite Binding Is Not Enforced", "does not collapse into Defended Is Not Owned", "does not rewrite Defended Is Not Owned", "does not collapse into Certified Is Not Insured", "does not rewrite Certified Is Not Insured", "does not collapse into Assured Is Not Certified", "does not rewrite Assured Is Not Certified", "does not collapse into Operated Is Not Sustained", "does not rewrite Operated Is Not Sustained", "does not collapse into Delivered Is Not Operated", "does not rewrite Delivered Is Not Operated", "does not collapse into Released Is Not Recorded", "does not rewrite Released Is Not Recorded", "does not collapse into Remediated Is Not Released", "does not rewrite Remediated Is Not Released", "does not collapse into Accepted Is Not Posted", "does not rewrite Accepted Is Not Posted", "does not collapse into Restored Is Not Accepted", "does not rewrite Restored Is Not Accepted", "Field Manual", "Strategic Pilot", "A void instrument on file (even one that withdraws the named scope itself) is not null", "A never instrument on file (even one that asserts absence-from-the-start) is not void", "Null requires the named null authority, the null date, and the null recorded that withdraws the void record itself. Absent requires the named absent authority, the absent date, and the absent recorded that withdraws the null record itself. Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself", "never existed for the ledger", "never were a customer workflow", "never were operating results for the named period", "absence-from-the-start", "An unmaking instrument on file is not a never claim", "Unmaking withdraws an accountable remainder of prior existence", "does not establish that the packs never existed", "not merely that a controlling authority recorded a controlling date", "not merely that a decisive authority recorded a decisive date", "not merely that a governing authority recorded a governing date", "not merely that a sovereign authority recorded a sovereign date", "named absolute authority", "A vacant instrument on file (even one that withdraws the absent record itself) is not empty", "Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself", "Vacant withdraws the absent record itself so there is no absent in which a null-withdrawal could be lodged", "Null withdraws the void record itself so there is no void in which a scope-withdrawal could be lodged", "Void withdraws the named scope itself so there is no ledger in which a never-claim could be lodged", "Cleared Is Not Closed", "Cleared Is Not Available", "does not collapse into Cleared Is Not Closed", "does not rewrite Cleared Is Not Closed", "does not collapse into Cleared Is Not Available", "does not rewrite Cleared Is Not Available", "Closure Is Not Complete", "Complete Is Not Accepted", "Closed Is Not Collected", "Closed Is Not Delivered", "Closed Is Not Resolved", "Executed Is Not Closed", "does not collapse into Closure Is Not Complete", "does not rewrite Closure Is Not Complete", "does not collapse into Complete Is Not Accepted", "does not rewrite Complete Is Not Accepted", "does not collapse into Closed Is Not Collected", "does not rewrite Closed Is Not Collected", "does not collapse into Closed Is Not Delivered", "does not rewrite Closed Is Not Delivered", "does not collapse into Closed Is Not Resolved", "does not rewrite Closed Is Not Resolved", "does not collapse into Executed Is Not Closed", "does not rewrite Executed Is Not Closed", "A finished instrument on file (even one that withdraws the closed record itself) is not complete", "A complete instrument on file (even one that withdraws the finished record itself) is not final. A final instrument on file (even one that withdraws the complete record itself) is not binding", "Complete withdraws the finished record itself so there is no finished in which a closed-withdrawal could be lodged. Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged", "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself", "Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself. Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself — not merely that an operative authority recorded an operative date. Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself", "Complete requires the named complete authority, the complete date, and the complete recorded that withdraws the finished record itself", "Transferable Is Not Binding", "does not collapse into Transferable Is Not Binding", "does not rewrite Transferable Is Not Binding", "A binding instrument on file (even one that withdraws the final record itself) is not operative", "A controlling instrument on file (even one that withdraws the operative record itself) is not decisive", "A decisive instrument on file (even one that withdraws the controlling record itself) is not governing", "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign", "A binding instrument on file, even one that withdraws the final record itself, is not operative", "An operative instrument on file, even one that withdraws the binding record itself, is not controlling", "Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged", "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself. Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself", "Sync does not measure controlling", "Sync does not measure decisive", "Sync does not measure governing", "Sync does not measure sovereign", "Sync does not measure absolute", "Binding withdraws the final record itself so there is no final in which a complete-withdrawal could be lodged", "Controlling withdraws the operative record itself so there is no operative in which a binding-withdrawal could be lodged", "Decisive withdraws the controlling record itself so there is no controlling in which an operative-withdrawal could be lodged", "Governing withdraws the decisive record itself so there is no decisive in which a controlling-withdrawal could be lodged", "Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself", "Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself", "Governing requires the named governing authority, the governing date, and the governing recorded that withdraws the decisive record itself", "Sovereign requires the named sovereign authority, the sovereign date, and the sovereign recorded that withdraws the governing record itself", "Absolute requires the named absolute authority, the absolute date, and the absolute recorded that withdraws the sovereign record itself", "A controlling instrument on file, even one that withdraws the operative record itself, is not decisive", "A decisive instrument on file, even one that withdraws the controlling record itself, is not governing", "make decisive the controlling operating results", "make governing the decisive operating results", "make sovereign the governing operating results", "make absolute the sovereign operating results", "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign.", "A governing instrument on file, even one that withdraws the decisive record itself, is not sovereign", "Absolute Is Not Final", "final spine", "executed final instrument", "Sovereign withdraws the governing record itself so there is no governing in which a decisive-withdrawal could be lodged", "A sovereign instrument on file (even one that withdraws the governing record itself) is not absolute", "An absolute instrument on file (even one that withdraws the sovereign record itself) is not final", "A sovereign instrument on file, even one that withdraws the governing record itself, is not absolute", "An absolute instrument on file, even one that withdraws the sovereign record itself, is not final", "named final authority, a final date, and a final recorded", "Sync does not measure final", "make final the absolute operating results", "Final requires the named final authority, the final date, and the final recorded that withdraws the absolute record itself", "the absolute record itself withdrawn so there is no absolute in which a sovereign-withdrawal could be lodged", "This essay does not create a filing spine at /insights/absolute-is-not-final", "Final is not ultimate", "the final the successor-spine Absolute Is Not Final already names", "absolute operating results with a named final authority, a final date, and a final recorded for that absolute sovereign governing decisive controlling operative binding final complete finished closed settled clear empty vacant absent null void never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period", "absolute statement made final for the named ledger and period", "absolute customer workflow made final for the customer and the period", "not merely that a named final authority recorded a final date and a final recorded", "Packs that have been made final — a named final authority", "Absolute Is Not Final already names the prior split", "This essay does not give that final a new meaning", "A firm can be final and still not ultimate", "ultimate theater", "A final package alone is not ultimate of that final successor outcome", "This split is final versus ultimate", "Final cash or margin is not the same as an ultimate commercial outcome", "Named final is not ultimate", "The final practice is not the ultimate practice", "What an ultimate record is allowed to be", "Sync must not auto-deem-ultimate", "Sync does not deem ultimate for the customer", "This essay does not create a filing spine for Final Is Not Ultimate", "Keep this records ultimate distinct from the commercial expansion Retained Is Not Expanded already names", "from any ultimate extinguishment or reconciliation theses", "Refuse the slide from &quot;it is final&quot; to &quot;it is ultimate.&quot; Refuse the slide from &quot;there is no absolute record either&quot; to &quot;there is no final record either.&quot;", "This ultimate is not the collected Collected Is Not Recognized already names", "This ultimate is not the disbursement Paid Is Not Settled already names", "This ultimate is not the settlement Settled Is Not Booked already names", "This ultimate is not the collectible Collectible Is Not Applied already names", "A final is not an ultimate", "keep this edition from treating a final instrument on file as an ultimate claim", "Sync must not treat final as ultimate as Learning credit", "/insights/successor-ultimate-is-not-total", "Refuse the slide from &quot;it is final&quot; to &quot;it is ultimate.&quot;", "Refuse the slide from &quot;there is no absolute record either&quot; to &quot;there is no final record either.&quot;", "a final date, and a final recorded", "This ultimate is not the filing close Cleared Is Not Closed already names", "This ultimate is not the filing clearance Cleared Is Not Available already names", "Final Is Not Ultimate", "ultimate spine", "This final is not the final Complete Is Not Final already names, and it is not the final Final Is Not Binding already names.", "A final instrument on file (even one that withdraws the absolute record itself) is not ultimate", "the final record itself withdrawn so there is no final in which an absolute-withdrawal could be lodged"];
 const successorFinalUltimatePage = read('app/insights/successor-final-is-not-ultimate/page.tsx');
 const successorFinalUltimatePageNormalized = successorFinalUltimatePage.replace(/\s+/g, ' ');
 for (const required of successorFinalUltimatePageRequired) {
@@ -38894,8 +38894,8 @@ if (successorFinalUltimatePage.includes("successor-rehearsed-is-not-recoverable"
 if (successorFinalUltimatePage.includes("href=\"/insights/successor-final-is-not-ultimate\"")) {
   fail('successor-final-is-not-ultimate must not link to itself as a forward route');
 }
-if (successorFinalUltimatePage.includes("href=\"/insights/successor-ultimate-is-not-total\"")) {
-  fail('successor-final-is-not-ultimate must keep Ultimate Is Not Total in prose only');
+if (!successorFinalUltimatePage.includes("href=\"/insights/successor-ultimate-is-not-total\"")) {
+  fail('successor-final-is-not-ultimate must point the series forward to successor-ultimate-is-not-total');
 }
 if (successorFinalUltimatePage.includes("href=\"/insights/closure-is-not-complete\"")) {
   fail('successor-final-is-not-ultimate must not retarget Closure Is Not Complete');
@@ -38951,17 +38951,11 @@ if (successorFinalUltimatePage.includes("href=\"/insights/settled-is-not-booked\
 if (successorFinalUltimatePage.includes("href=\"/insights/successor-settled-is-not-booked\"")) {
   fail('successor-final-is-not-ultimate must not retarget successor Settled Is Not Booked');
 }
-if (!successorFinalUltimatePage.includes('Ultimate Is Not Total may be named in prose only')) {
-  fail('successor-final-is-not-ultimate must name Ultimate Is Not Total in prose only');
+if (successorFinalUltimatePage.includes('Ultimate Is Not Total may be named in prose only')) {
+  fail('successor-final-is-not-ultimate must not keep Ultimate Is Not Total in prose only once the route exists');
 }
 if (successorFinalUltimatePage.includes('Final Is Not Ultimate may be named in prose only')) {
   fail('successor-final-is-not-ultimate must not name itself as prose only');
-}
-if (existsSync(join(root, 'app/insights/successor-ultimate-is-not-total/page.tsx'))) {
-  fail('successor-ultimate-is-not-total must stay prose only in this essay');
-}
-if (slugs.includes('successor-ultimate-is-not-total')) {
-  fail('successor-ultimate-is-not-total must not be registered in this essay');
 }
 if (!existsSync(join(root, 'app/insights/successor-final-is-not-ultimate/page.tsx'))) {
   fail('successor-final-is-not-ultimate page must exist');
@@ -38982,7 +38976,7 @@ for (const earlier of ["app/insights/successor-binding-is-not-operative/page.tsx
 }
 
 const successorFinalUltimateBlock = stepBlock('successor-final-is-not-ultimate');
-for (const required of ['successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling',"successor-binding-is-not-operative","successor-final-is-not-binding","successor-complete-is-not-final","successor-finished-is-not-complete","successor-closed-is-not-finished","successor-settled-is-not-closed","successor-empty-is-not-clear","successor-clear-is-not-settled","successor-vacant-is-not-empty","successor-absent-is-not-vacant","successor-null-is-not-absent","successor-void-is-not-null","successor-never-is-not-void","successor-unmade-is-not-never","successor-obliterated-is-not-unmade","successor-destroyed-is-not-obliterated","successor-erased-is-not-destroyed","successor-forgotten-is-not-erased","successor-disposed-is-not-forgotten","successor-retained-is-not-disposed","successor-archived-is-not-retained","successor-released-is-not-archived","successor-satisfied-is-not-released","successor-discharged-is-not-satisfied","successor-honored-is-not-discharged","successor-endorsed-is-not-honored","successor-received-is-not-endorsed","successor-presented-is-not-received","successor-circulated-is-not-presented","successor-published-is-not-circulated","successor-promulgated-is-not-published","successor-enacted-is-not-promulgated","successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
+for (const required of ['successor-ultimate-is-not-total','successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling',"successor-binding-is-not-operative","successor-final-is-not-binding","successor-complete-is-not-final","successor-finished-is-not-complete","successor-closed-is-not-finished","successor-settled-is-not-closed","successor-empty-is-not-clear","successor-clear-is-not-settled","successor-vacant-is-not-empty","successor-absent-is-not-vacant","successor-null-is-not-absent","successor-void-is-not-null","successor-never-is-not-void","successor-unmade-is-not-never","successor-obliterated-is-not-unmade","successor-destroyed-is-not-obliterated","successor-erased-is-not-destroyed","successor-forgotten-is-not-erased","successor-disposed-is-not-forgotten","successor-retained-is-not-disposed","successor-archived-is-not-retained","successor-released-is-not-archived","successor-satisfied-is-not-released","successor-discharged-is-not-satisfied","successor-honored-is-not-discharged","successor-endorsed-is-not-honored","successor-received-is-not-endorsed","successor-presented-is-not-received","successor-circulated-is-not-presented","successor-published-is-not-circulated","successor-promulgated-is-not-published","successor-enacted-is-not-promulgated","successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
   if (!successorFinalUltimateBlock.includes(`'${required}'`)) {
     fail(`successor-final-is-not-ultimate related reading must cite ${required}`);
   }
@@ -38993,8 +38987,8 @@ if (!/includePilot:\s*true/.test(successorFinalUltimateBlock)) {
 if (successorFinalUltimateBlock.includes("next: 'strategic-pilot'")) {
   fail('successor-final-is-not-ultimate next step is the Field Manual');
 }
-if (successorFinalUltimateBlock.includes('successor-ultimate-is-not-total')) {
-  fail('successor-final-is-not-ultimate must keep Ultimate Is Not Total in prose only');
+if (!successorFinalUltimateBlock.includes('successor-ultimate-is-not-total')) {
+  fail('successor-final-is-not-ultimate related reading must cite successor-ultimate-is-not-total');
 }
 if (!successorFinalUltimateBlock.includes("relatedSlug: 'successor-absolute-is-not-final'")) {
   fail('successor-final-is-not-ultimate related reading must start from successor-absolute-is-not-final');
@@ -39002,8 +38996,8 @@ if (!successorFinalUltimateBlock.includes("relatedSlug: 'successor-absolute-is-n
 {
   const alsoAt = successorFinalUltimateBlock.indexOf('also: [');
   const firstAlso = successorFinalUltimateBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
-  if (!firstAlso || firstAlso[1] !== 'successor-sovereign-is-not-absolute') {
-    fail('successor-final-is-not-ultimate must list successor-sovereign-is-not-absolute first among additional related reading');
+  if (!firstAlso || firstAlso[1] !== 'successor-ultimate-is-not-total') {
+    fail('successor-final-is-not-ultimate must list successor-ultimate-is-not-total first among additional related reading');
   }
 }
 if (successorFinalUltimateBlock.includes('successor-recoverable-is-not-assured')) {
@@ -39012,6 +39006,334 @@ if (successorFinalUltimateBlock.includes('successor-recoverable-is-not-assured')
 for (const untouched of ["app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/closure-is-not-complete/page.tsx","app/insights/complete-is-not-accepted/page.tsx","app/insights/closed-is-not-collected/page.tsx","app/insights/closed-is-not-delivered/page.tsx","app/insights/closed-is-not-resolved/page.tsx","app/insights/executed-is-not-closed/page.tsx","app/insights/reconciled-is-not-closed/page.tsx","app/insights/cleared-is-not-closed/page.tsx","app/insights/successor-cleared-is-not-closed/page.tsx","app/insights/successor-closed-is-not-collected/page.tsx","app/insights/successor-closed-is-not-delivered/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx"]) {
   if (read(untouched).includes('successor-final-is-not-ultimate')) {
     fail(`${untouched} must stay off successor-final-is-not-ultimate`);
+  }
+}
+
+const successorUltimateTotalPageRequired = [
+  "commercial spine",
+  "named final authority",
+  "named ultimate authority",
+  "named operative authority",
+  "named controlling authority",
+  "named decisive authority",
+  "named governing authority",
+  "named sovereign authority",
+  "This essay does not rewrite that thesis",
+  "does not collapse into Retained Is Not Expanded",
+  "does not rewrite Retained Is Not Expanded",
+  "does not collapse into Collectible Is Not Applied",
+  "does not rewrite Collectible Is Not Applied",
+  "does not collapse into Applied Is Not Restored",
+  "does not rewrite Applied Is Not Restored",
+  "does not collapse into Extinguished Is Not Reconciled",
+  "does not rewrite Extinguished Is Not Reconciled",
+  "does not collapse into Reconciled Is Not Attested",
+  "does not rewrite Reconciled Is Not Attested",
+  "does not collapse into Reconciled Is Not Closed",
+  "does not rewrite Reconciled Is Not Closed",
+  "does not collapse into Booked Is Not Reconciled",
+  "does not rewrite Booked Is Not Reconciled",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not collapse into Defended Is Not Owned",
+  "does not rewrite Defended Is Not Owned",
+  "does not collapse into Certified Is Not Insured",
+  "does not rewrite Certified Is Not Insured",
+  "does not collapse into Assured Is Not Certified",
+  "does not rewrite Assured Is Not Certified",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Delivered Is Not Operated",
+  "does not rewrite Delivered Is Not Operated",
+  "does not collapse into Released Is Not Recorded",
+  "does not rewrite Released Is Not Recorded",
+  "does not collapse into Remediated Is Not Released",
+  "does not rewrite Remediated Is Not Released",
+  "does not collapse into Accepted Is Not Posted",
+  "does not rewrite Accepted Is Not Posted",
+  "does not collapse into Restored Is Not Accepted",
+  "does not rewrite Restored Is Not Accepted",
+  "Field Manual",
+  "Strategic Pilot",
+  "A void instrument on file (even one that withdraws the named scope itself) is not null",
+  "A never instrument on file (even one that asserts absence-from-the-start) is not void",
+  "Null requires the named null authority, the null date, and the null recorded that withdraws the void record itself. Absent requires the named absent authority, the absent date, and the absent recorded that withdraws the null record itself. Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself",
+  "never existed for the ledger",
+  "never were a customer workflow",
+  "never were operating results for the named period",
+  "absence-from-the-start",
+  "An unmaking instrument on file is not a never claim",
+  "Unmaking withdraws an accountable remainder of prior existence",
+  "does not establish that the packs never existed",
+  "not merely that a controlling authority recorded a controlling date",
+  "not merely that a decisive authority recorded a decisive date",
+  "not merely that a governing authority recorded a governing date",
+  "not merely that a sovereign authority recorded a sovereign date",
+  "named absolute authority",
+  "A vacant instrument on file (even one that withdraws the absent record itself) is not empty",
+  "Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself",
+  "Vacant withdraws the absent record itself so there is no absent in which a null-withdrawal could be lodged",
+  "Null withdraws the void record itself so there is no void in which a scope-withdrawal could be lodged",
+  "Void withdraws the named scope itself so there is no ledger in which a never-claim could be lodged",
+  "Cleared Is Not Closed",
+  "Cleared Is Not Available",
+  "does not collapse into Cleared Is Not Closed",
+  "does not rewrite Cleared Is Not Closed",
+  "does not collapse into Cleared Is Not Available",
+  "does not rewrite Cleared Is Not Available",
+  "Closure Is Not Complete",
+  "Complete Is Not Accepted",
+  "Closed Is Not Collected",
+  "Closed Is Not Delivered",
+  "Closed Is Not Resolved",
+  "Executed Is Not Closed",
+  "does not collapse into Closure Is Not Complete",
+  "does not rewrite Closure Is Not Complete",
+  "does not collapse into Complete Is Not Accepted",
+  "does not rewrite Complete Is Not Accepted",
+  "does not collapse into Closed Is Not Collected",
+  "does not rewrite Closed Is Not Collected",
+  "does not collapse into Closed Is Not Delivered",
+  "does not rewrite Closed Is Not Delivered",
+  "does not collapse into Closed Is Not Resolved",
+  "does not rewrite Closed Is Not Resolved",
+  "does not collapse into Executed Is Not Closed",
+  "does not rewrite Executed Is Not Closed",
+  "A finished instrument on file (even one that withdraws the closed record itself) is not complete",
+  "A complete instrument on file (even one that withdraws the finished record itself) is not final. A final instrument on file (even one that withdraws the complete record itself) is not binding",
+  "Complete withdraws the finished record itself so there is no finished in which a closed-withdrawal could be lodged. Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged",
+  "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself",
+  "Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself. Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself — not merely that an operative authority recorded an operative date. Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself",
+  "Complete requires the named complete authority, the complete date, and the complete recorded that withdraws the finished record itself",
+  "Transferable Is Not Binding",
+  "does not collapse into Transferable Is Not Binding",
+  "does not rewrite Transferable Is Not Binding",
+  "A binding instrument on file (even one that withdraws the final record itself) is not operative",
+  "A controlling instrument on file (even one that withdraws the operative record itself) is not decisive",
+  "A decisive instrument on file (even one that withdraws the controlling record itself) is not governing",
+  "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign",
+  "A binding instrument on file, even one that withdraws the final record itself, is not operative",
+  "An operative instrument on file, even one that withdraws the binding record itself, is not controlling",
+  "Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged",
+  "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself. Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself",
+  "Sync does not measure controlling",
+  "Sync does not measure decisive",
+  "Sync does not measure governing",
+  "Sync does not measure sovereign",
+  "Sync does not measure absolute",
+  "Binding withdraws the final record itself so there is no final in which a complete-withdrawal could be lodged",
+  "Controlling withdraws the operative record itself so there is no operative in which a binding-withdrawal could be lodged",
+  "Decisive withdraws the controlling record itself so there is no controlling in which an operative-withdrawal could be lodged",
+  "Governing withdraws the decisive record itself so there is no decisive in which a controlling-withdrawal could be lodged",
+  "Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself",
+  "Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself",
+  "Governing requires the named governing authority, the governing date, and the governing recorded that withdraws the decisive record itself",
+  "Sovereign requires the named sovereign authority, the sovereign date, and the sovereign recorded that withdraws the governing record itself",
+  "Absolute requires the named absolute authority, the absolute date, and the absolute recorded that withdraws the sovereign record itself",
+  "A controlling instrument on file, even one that withdraws the operative record itself, is not decisive",
+  "A decisive instrument on file, even one that withdraws the controlling record itself, is not governing",
+  "make decisive the controlling operating results",
+  "make governing the decisive operating results",
+  "make sovereign the governing operating results",
+  "make absolute the sovereign operating results",
+  "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign.",
+  "A governing instrument on file, even one that withdraws the decisive record itself, is not sovereign",
+  "Sovereign withdraws the governing record itself so there is no governing in which a decisive-withdrawal could be lodged",
+  "A sovereign instrument on file (even one that withdraws the governing record itself) is not absolute",
+  "An absolute instrument on file (even one that withdraws the sovereign record itself) is not final",
+  "A sovereign instrument on file, even one that withdraws the governing record itself, is not absolute",
+  "An absolute instrument on file, even one that withdraws the sovereign record itself, is not final",
+  "Sync does not measure final",
+  "make final the absolute operating results",
+  "Final requires the named final authority, the final date, and the final recorded that withdraws the absolute record itself",
+  "Final Is Not Ultimate",
+  "ultimate spine",
+  "This final is not the final Complete Is Not Final already names, and it is not the final Final Is Not Binding already names.",
+  "A final instrument on file (even one that withdraws the absolute record itself) is not ultimate",
+  "the final record itself withdrawn so there is no final in which an absolute-withdrawal could be lodged",
+  "executed ultimate instrument",
+  "named ultimate authority, an ultimate date, and an ultimate recorded",
+  "This essay does not create a filing spine at /insights/final-is-not-ultimate",
+  "Ultimate is not total",
+  "the ultimate the successor-spine Final Is Not Ultimate already names",
+  "final operating results with a named ultimate authority, an ultimate date, and an ultimate recorded for that final absolute sovereign governing decisive controlling operative binding final complete finished closed settled clear empty vacant absent null void never unmade obliterated destroyed erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period",
+  "final statement made ultimate for the named ledger and period",
+  "final customer workflow made ultimate for the customer and the period",
+  "not merely that a named ultimate authority recorded an ultimate date and an ultimate recorded",
+  "Packs that have been made ultimate — a named ultimate authority",
+  "Final Is Not Ultimate already names the prior split",
+  "This essay does not give that ultimate a new meaning",
+  "A firm can be ultimate and still not total",
+  "total theater",
+  "An ultimate package alone is not total of that ultimate successor outcome",
+  "This split is ultimate versus total",
+  "Ultimate cash or margin is not the same as a total commercial outcome",
+  "Named ultimate is not total",
+  "The ultimate practice is not the total practice",
+  "What a total record is allowed to be",
+  "Sync must not auto-deem-total",
+  "Sync does not deem total for the customer",
+  "This essay does not create a filing spine for Ultimate Is Not Total",
+  "Keep this records total distinct from the commercial expansion Retained Is Not Expanded already names",
+  "from any total extinguishment or reconciliation theses",
+  "Refuse the slide from &quot;it is ultimate&quot; to &quot;it is total.&quot; Refuse the slide from &quot;there is no final record either&quot; to &quot;there is no ultimate record either.&quot;",
+  "This total is not the collected Collected Is Not Recognized already names",
+  "This total is not the disbursement Paid Is Not Settled already names",
+  "This total is not the settlement Settled Is Not Booked already names",
+  "This total is not the collectible Collectible Is Not Applied already names",
+  "An ultimate is not a total",
+  "keep this edition from treating an ultimate instrument on file as a total claim",
+  "Sync must not treat ultimate as total as Learning credit",
+  "/insights/successor-total-is-not-universal",
+  "Refuse the slide from &quot;it is ultimate&quot; to &quot;it is total.&quot;",
+  "Refuse the slide from &quot;there is no final record either&quot; to &quot;there is no ultimate record either.&quot;",
+  "an ultimate date, and an ultimate recorded",
+  "This total is not the filing close Cleared Is Not Closed already names",
+  "This total is not the filing clearance Cleared Is Not Available already names",
+  "Total Is Not Universal may be named in prose only",
+  "This essay does not create a successor route for Total Is Not Universal",
+  "total spine",
+  "the ultimate record itself withdrawn so there is no ultimate in which a final-withdrawal could be lodged",
+  "An ultimate instrument on file (even one that withdraws the final record itself) is not total",
+  "Ultimate withdraws the final record itself so there is no final in which an absolute-withdrawal could be lodged.",
+  "Total requires the named total authority, the total date, and the total recorded that withdraws the ultimate record itself — not merely that an ultimate authority recorded an ultimate date.",
+  "executed total instrument"
+];
+const successorUltimateTotalPage = read('app/insights/successor-ultimate-is-not-total/page.tsx');
+const successorUltimateTotalPageNormalized = successorUltimateTotalPage.replace(/\s+/g, ' ');
+for (const required of successorUltimateTotalPageRequired) {
+  const needle = required.replace(/\\"/g, '"').replace(/\s+/g, ' ');
+  if (!successorUltimateTotalPageNormalized.includes(needle)) {
+    fail(`successor-ultimate-is-not-total page must include ${required}`);
+  }
+}
+if (successorUltimateTotalPage.includes("successor-recoverable-is-not-assured")) {
+  fail('successor-ultimate-is-not-total must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorUltimateTotalPage.includes("successor-rehearsed-is-not-recoverable")) {
+  fail('successor-ultimate-is-not-total must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-ultimate-is-not-total\"")) {
+  fail('successor-ultimate-is-not-total must not link to itself as a forward route');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-total-is-not-universal\"")) {
+  fail('successor-ultimate-is-not-total must keep Total Is Not Universal in prose only');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/closure-is-not-complete\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Closure Is Not Complete');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/complete-is-not-accepted\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Complete Is Not Accepted');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/closed-is-not-collected\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Closed Is Not Collected');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-closed-is-not-collected\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Closed Is Not Collected');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/closed-is-not-delivered\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Closed Is Not Delivered');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-closed-is-not-delivered\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Closed Is Not Delivered');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/closed-is-not-resolved\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Closed Is Not Resolved');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/executed-is-not-closed\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Executed Is Not Closed');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/cleared-is-not-closed\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Cleared Is Not Closed');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-cleared-is-not-closed\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Cleared Is Not Closed');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/cleared-is-not-available\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Cleared Is Not Available');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-cleared-is-not-available\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Cleared Is Not Available');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/reconciled-is-not-closed\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Reconciled Is Not Closed');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-reconciled-is-not-closed\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Reconciled Is Not Closed');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/paid-is-not-settled\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Paid Is Not Settled');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-paid-is-not-settled\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Paid Is Not Settled');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/settled-is-not-booked\"")) {
+  fail('successor-ultimate-is-not-total must not retarget Settled Is Not Booked');
+}
+if (successorUltimateTotalPage.includes("href=\"/insights/successor-settled-is-not-booked\"")) {
+  fail('successor-ultimate-is-not-total must not retarget successor Settled Is Not Booked');
+}
+if (!successorUltimateTotalPage.includes('Total Is Not Universal may be named in prose only')) {
+  fail('successor-ultimate-is-not-total must name Total Is Not Universal in prose only');
+}
+if (successorUltimateTotalPage.includes('Ultimate Is Not Total may be named in prose only')) {
+  fail('successor-ultimate-is-not-total must not name itself as prose only');
+}
+if (existsSync(join(root, 'app/insights/successor-total-is-not-universal/page.tsx'))) {
+  fail('successor-total-is-not-universal must stay prose only in this essay');
+}
+if (slugs.includes('successor-total-is-not-universal')) {
+  fail('successor-total-is-not-universal must not be registered in this essay');
+}
+if (!existsSync(join(root, 'app/insights/successor-ultimate-is-not-total/page.tsx'))) {
+  fail('successor-ultimate-is-not-total page must exist');
+}
+if (!slugs.includes('successor-ultimate-is-not-total')) {
+  fail('successor-ultimate-is-not-total must be registered in the catalog');
+}
+if (!successorUltimateTotalPage.includes('href="/insights/successor-final-is-not-ultimate"')) {
+  fail('successor-ultimate-is-not-total must keep prior reading on successor-final-is-not-ultimate');
+}
+if (!read('app/insights/successor-final-is-not-ultimate/page.tsx').includes('href="/insights/successor-ultimate-is-not-total"')) {
+  fail('successor-final-is-not-ultimate must point the series forward to successor-ultimate-is-not-total');
+}
+for (const earlier of ["app/insights/successor-absolute-is-not-final/page.tsx","app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-promulgated-is-not-published/page.tsx","app/insights/successor-enacted-is-not-promulgated/page.tsx","app/insights/successor-ratified-is-not-enacted/page.tsx","app/insights/successor-verified-is-not-ratified/page.tsx","app/insights/successor-confirmed-is-not-verified/page.tsx","app/insights/successor-acted-is-not-confirmed/page.tsx","app/insights/successor-instructed-is-not-acted/page.tsx","app/insights/successor-authorized-is-not-instructed/page.tsx","app/insights/successor-approved-is-not-authorized/page.tsx","app/insights/successor-reviewed-is-not-approved/page.tsx","app/insights/successor-operated-is-not-reviewed/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-collected-is-not-applied/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-advanced-is-not-performed/page.tsx","app/insights/successor-relied-is-not-advanced/page.tsx","app/insights/successor-attested-is-not-relied/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-disbursed-is-not-extinguished/page.tsx","app/insights/successor-obligated-is-not-disbursed/page.tsx","app/insights/successor-spendable-is-not-obligated/page.tsx","app/insights/successor-available-is-not-spendable/page.tsx","app/insights/successor-cleared-is-not-available/page.tsx","app/insights/successor-remitted-is-not-cleared/page.tsx","app/insights/successor-captured-is-not-remitted/page.tsx","app/insights/successor-residual-is-not-captured/page.tsx","app/insights/successor-defended-is-not-residual/page.tsx","app/insights/successor-distributed-is-not-defended/page.tsx","app/insights/successor-controlled-is-not-distributed/page.tsx","app/insights/successor-compounded-is-not-controlled/page.tsx","app/insights/successor-closeable-is-not-compounded/page.tsx","app/insights/successor-financeable-is-not-closeable/page.tsx","app/insights/successor-insurable-is-not-financeable/page.tsx","app/insights/successor-governable-is-not-insurable/page.tsx","app/insights/successor-auditable-is-not-governable/page.tsx","app/insights/successor-accountable-is-not-auditable/page.tsx","app/insights/successor-deployable-is-not-accountable/page.tsx","app/insights/successor-liquid-is-not-deployable/page.tsx","app/insights/successor-portable-is-not-liquid/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-retained-is-not-expanded/page.tsx","app/insights/successor-monetized-is-not-retained/page.tsx","app/insights/successor-binding-is-not-monetized/page.tsx","app/insights/successor-effective-is-not-binding/page.tsx","app/insights/successor-posted-is-not-effective/page.tsx","app/insights/successor-accepted-is-not-posted/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx"]) {
+  if (read(earlier).includes('href="/insights/successor-ultimate-is-not-total"')) {
+    fail(`forward link to successor-ultimate-is-not-total must come only from successor-final-is-not-ultimate (${earlier})`);
+  }
+}
+
+const successorUltimateTotalBlock = stepBlock('successor-ultimate-is-not-total');
+for (const required of ['successor-final-is-not-ultimate','successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling',"successor-binding-is-not-operative","successor-final-is-not-binding","successor-complete-is-not-final","successor-finished-is-not-complete","successor-closed-is-not-finished","successor-settled-is-not-closed","successor-empty-is-not-clear","successor-clear-is-not-settled","successor-vacant-is-not-empty","successor-absent-is-not-vacant","successor-null-is-not-absent","successor-void-is-not-null","successor-never-is-not-void","successor-unmade-is-not-never","successor-obliterated-is-not-unmade","successor-destroyed-is-not-obliterated","successor-erased-is-not-destroyed","successor-forgotten-is-not-erased","successor-disposed-is-not-forgotten","successor-retained-is-not-disposed","successor-archived-is-not-retained","successor-released-is-not-archived","successor-satisfied-is-not-released","successor-discharged-is-not-satisfied","successor-honored-is-not-discharged","successor-endorsed-is-not-honored","successor-received-is-not-endorsed","successor-presented-is-not-received","successor-circulated-is-not-presented","successor-published-is-not-circulated","successor-promulgated-is-not-published","successor-enacted-is-not-promulgated","successor-ratified-is-not-enacted","successor-verified-is-not-ratified","successor-confirmed-is-not-verified","successor-acted-is-not-confirmed","successor-instructed-is-not-acted","successor-authorized-is-not-instructed","successor-approved-is-not-authorized","successor-reviewed-is-not-approved","successor-operated-is-not-reviewed","successor-adopted-is-not-operated","successor-accepted-is-not-adopted","successor-acknowledged-is-not-accepted","successor-issued-is-not-acknowledged","successor-sealed-is-not-issued","successor-certified-is-not-sealed","successor-reconciled-is-not-certified","arr-is-not-cash","cash-is-not-margin","successor-collected-is-not-recognized","successor-paid-is-not-settled","successor-settled-is-not-booked","successor-recognized-is-not-reported","binding-is-not-enforced"]) {
+  if (!successorUltimateTotalBlock.includes(`'${required}'`)) {
+    fail(`successor-ultimate-is-not-total related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorUltimateTotalBlock)) {
+  fail('successor-ultimate-is-not-total related reading must include the Strategic Pilot');
+}
+if (successorUltimateTotalBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-ultimate-is-not-total next step is the Field Manual');
+}
+if (successorUltimateTotalBlock.includes('successor-total-is-not-universal')) {
+  fail('successor-ultimate-is-not-total must keep Total Is Not Universal in prose only');
+}
+if (!successorUltimateTotalBlock.includes("relatedSlug: 'successor-final-is-not-ultimate'")) {
+  fail('successor-ultimate-is-not-total related reading must start from successor-final-is-not-ultimate');
+}
+{
+  const alsoAt = successorUltimateTotalBlock.indexOf('also: [');
+  const firstAlso = successorUltimateTotalBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
+  if (!firstAlso || firstAlso[1] !== 'successor-absolute-is-not-final') {
+    fail('successor-ultimate-is-not-total must list successor-absolute-is-not-final first among additional related reading');
+  }
+}
+if (successorUltimateTotalBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-ultimate-is-not-total must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of ["app/insights/successor-absolute-is-not-final/page.tsx","app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/closure-is-not-complete/page.tsx","app/insights/complete-is-not-accepted/page.tsx","app/insights/closed-is-not-collected/page.tsx","app/insights/closed-is-not-delivered/page.tsx","app/insights/closed-is-not-resolved/page.tsx","app/insights/executed-is-not-closed/page.tsx","app/insights/reconciled-is-not-closed/page.tsx","app/insights/cleared-is-not-closed/page.tsx","app/insights/successor-cleared-is-not-closed/page.tsx","app/insights/successor-closed-is-not-collected/page.tsx","app/insights/successor-closed-is-not-delivered/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx"]) {
+  if (read(untouched).includes('successor-ultimate-is-not-total')) {
+    fail(`${untouched} must stay off successor-ultimate-is-not-total`);
   }
 }
 
