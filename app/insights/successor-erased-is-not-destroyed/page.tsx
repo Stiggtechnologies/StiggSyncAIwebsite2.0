@@ -299,7 +299,18 @@ export default function SuccessorErasedIsNotDestroyedPage() {
           </p>
 
           <p>
-            Obliterated would mean that the destroyed operating results for that erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been obliterated — residual traces, reconstructable fragments, and surviving copies of those destroyed media or objects removed so that destruction cannot be reversed, the destroyed operating results obliterated by a named obliterator for the named period, the destroyed statement obliterated for the named ledger and period, or the destroyed customer workflow obliterated for the customer and the period, with a named obliterator, an obliteration date, and an obliteration recorded — not merely that a named destroyer recorded a destruction date and a destruction recorded for that erased period. Destroyed Is Not Obliterated may be named in prose only at /insights/successor-destroyed-is-not-obliterated. This essay does not implement that page. This essay does not create a successor route for Destroyed Is Not Obliterated. This essay does not create a filing spine for Erased Is Not Destroyed. This essay does not create a filing spine at /insights/erased-is-not-destroyed. This essay does not create a filing spine at /insights/forgotten-is-not-erased.
+            Obliterated would mean that the destroyed operating results for that erased forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been obliterated — residual traces, reconstructable fragments, and surviving copies of those destroyed media or objects removed so that destruction cannot be reversed, the destroyed operating results obliterated by a named obliterator for the named period, the destroyed statement obliterated for the named ledger and period, or the destroyed customer workflow obliterated for the customer and the period, with a named obliterator, an obliteration date, and an obliteration recorded — not merely that a named destroyer recorded a destruction date and a destruction recorded for that erased period.{' '}
+            <Link
+              href="/insights/successor-destroyed-is-not-obliterated"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Destroyed Is Not Obliterated
+            </Link>
+            . Read it at /insights/successor-destroyed-is-not-obliterated. This essay does not rewrite that
+            thesis. This essay does not give that obliterated a new meaning. This essay does not create a
+            filing spine for Erased Is Not Destroyed. This essay does not create a filing spine at
+            /insights/erased-is-not-destroyed. This essay does not create a filing spine at
+            /insights/forgotten-is-not-erased.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
