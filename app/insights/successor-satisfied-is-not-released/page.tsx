@@ -292,12 +292,17 @@ export default function SuccessorSatisfiedIsNotReleasedPage() {
             archived by a named archivist for the named period, the released statement archived for the named
             ledger and period, or the released customer workflow archived for the customer and the period,
             with a named archivist, an archive date, and an archive recorded — not merely that a named
-            releaser recorded a release date and a release recorded for that satisfied period.
-            Released Is Not Archived may be named in prose only at
-            /insights/successor-released-is-not-archived. This essay does not implement
-            that page. This essay does not create a successor route for Released Is Not Archived. This essay
-            does not create a filing spine for Satisfied Is Not Released. This essay does not create a
-            filing spine at /insights/satisfied-is-not-released.
+            releaser recorded a release date and a release recorded for that satisfied period.{' '}
+            <Link
+              href="/insights/successor-released-is-not-archived"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Released Is Not Archived
+            </Link>
+            . Read it at /insights/successor-released-is-not-archived. This essay does not rewrite that
+            thesis. This essay does not give that archived a new meaning. This essay does not create a
+            filing spine for Satisfied Is Not Released. This essay does not create a filing spine at
+            /insights/satisfied-is-not-released.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
