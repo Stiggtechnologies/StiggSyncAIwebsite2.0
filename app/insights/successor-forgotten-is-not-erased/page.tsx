@@ -298,7 +298,18 @@ export default function SuccessorForgottenIsNotErasedPage() {
           </p>
 
           <p>
-            Destroyed would mean that the erased operating results for that forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been destroyed — the erased operating results destroyed by a named destroyer for the named period, the erased statement destroyed for the named ledger and period, or the erased customer workflow destroyed for the customer and the period, with a named destroyer, a destruction date, and a destruction recorded — not merely that a named eraser recorded an erasure date and an erasure recorded for that forgotten period. Erased Is Not Destroyed may be named in prose only at /insights/successor-erased-is-not-destroyed. This essay does not implement that page. This essay does not create a successor route for Erased Is Not Destroyed. This essay does not create a filing spine for Forgotten Is Not Erased. This essay does not create a filing spine at /insights/forgotten-is-not-erased. This essay does not create a filing spine at /insights/disposed-is-not-forgotten.
+            Destroyed would mean that the erased operating results for that forgotten disposed retained archived released satisfied discharged honored endorsed received presented circulated published promulgated enacted ratified verified confirmed acted instructed authorized approved reviewed operated accepted acknowledged issued sealed certified reconciled relieved applied collected invoiced earned commenced renewed sustained realized performed advanced relied attested extinguished period have been destroyed — the erased operating results destroyed by a named destroyer for the named period, the erased statement destroyed for the named ledger and period, or the erased customer workflow destroyed for the customer and the period, with a named destroyer, a destruction date, and a destruction recorded — not merely that a named eraser recorded an erasure date and an erasure recorded for that forgotten period.{' '}
+            <Link
+              href="/insights/successor-erased-is-not-destroyed"
+              className="text-[#3B82F6] hover:text-white transition-colors"
+            >
+              Erased Is Not Destroyed
+            </Link>
+            . Read it at /insights/successor-erased-is-not-destroyed. This essay does not rewrite that
+            thesis. This essay does not give that destroyed a new meaning. This essay does not create a
+            filing spine for Forgotten Is Not Erased. This essay does not create a filing spine at
+            /insights/forgotten-is-not-erased. This essay does not create a filing spine at
+            /insights/disposed-is-not-forgotten.
           </p>
 
           <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
