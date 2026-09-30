@@ -40538,8 +40538,6 @@ const successorInfiniteLimitlessPageRequired = [
   "Universal requires the named universal authority, the universal date, and the universal recorded that withdraws the total record itself — not merely that a total authority recorded a total date.",
   "Eternal requires the named eternal authority, the eternal date, and the eternal recorded that withdraws the universal record itself — not merely that a universal authority recorded a universal date.",
   "executed infinite instrument",
-  "Limitless Is Not Boundless may be named in prose only",
-  "This essay does not create a successor route for Limitless Is Not Boundless",
   "does not claim that infinite is limitless",
   "This essay does not create a filing spine at /insights/universal-is-not-eternal",
   "an infinite date",
@@ -40564,8 +40562,8 @@ if (successorInfiniteLimitlessPage.includes("successor-rehearsed-is-not-recovera
 if (successorInfiniteLimitlessPage.includes("href=\"/insights/successor-infinite-is-not-limitless\"")) {
   fail('successor-infinite-is-not-limitless must not link to itself as a forward route');
 }
-if (successorInfiniteLimitlessPage.includes("href=\"/insights/successor-limitless-is-not-boundless\"")) {
-  fail('successor-infinite-is-not-limitless must keep Limitless Is Not Boundless in prose only');
+if (!successorInfiniteLimitlessPage.includes("href=\"/insights/successor-limitless-is-not-boundless\"")) {
+  fail('successor-infinite-is-not-limitless must point the series forward to successor-limitless-is-not-boundless');
 }
 if (successorInfiniteLimitlessPage.includes("href=\"/insights/closure-is-not-complete\"")) {
   fail('successor-infinite-is-not-limitless must not retarget Closure Is Not Complete');
@@ -40621,17 +40619,11 @@ if (successorInfiniteLimitlessPage.includes("href=\"/insights/settled-is-not-boo
 if (successorInfiniteLimitlessPage.includes("href=\"/insights/successor-settled-is-not-booked\"")) {
   fail('successor-infinite-is-not-limitless must not retarget successor Settled Is Not Booked');
 }
-if (!successorInfiniteLimitlessPage.includes('Limitless Is Not Boundless may be named in prose only')) {
-  fail('successor-infinite-is-not-limitless must name Limitless Is Not Boundless in prose only');
+if (successorInfiniteLimitlessPage.includes('Limitless Is Not Boundless may be named in prose only')) {
+  fail('successor-infinite-is-not-limitless must not keep Limitless Is Not Boundless in prose only once the route exists');
 }
 if (successorInfiniteLimitlessPage.includes('Infinite Is Not Limitless may be named in prose only')) {
   fail('successor-infinite-is-not-limitless must not name itself as prose only');
-}
-if (existsSync(join(root, 'app/insights/successor-limitless-is-not-boundless/page.tsx'))) {
-  fail('successor-limitless-is-not-boundless must stay prose only in this essay');
-}
-if (slugs.includes('successor-limitless-is-not-boundless')) {
-  fail('successor-limitless-is-not-boundless must not be registered in this essay');
 }
 if (!existsSync(join(root, 'app/insights/successor-infinite-is-not-limitless/page.tsx'))) {
   fail('successor-infinite-is-not-limitless page must exist');
@@ -40652,7 +40644,7 @@ for (const earlier of ["app/insights/successor-universal-is-not-eternal/page.tsx
 }
 
 const successorInfiniteLimitlessBlock = stepBlock('successor-infinite-is-not-limitless');
-for (const required of ['successor-eternal-is-not-infinite','successor-universal-is-not-eternal','successor-final-is-not-ultimate','successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling']) {
+for (const required of ['successor-limitless-is-not-boundless','successor-eternal-is-not-infinite','successor-universal-is-not-eternal','successor-final-is-not-ultimate','successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling']) {
   if (!successorInfiniteLimitlessBlock.includes(`'${required}'`)) {
     fail(`successor-infinite-is-not-limitless related reading must cite ${required}`);
   }
@@ -40663,8 +40655,8 @@ if (!/includePilot:\s*true/.test(successorInfiniteLimitlessBlock)) {
 if (successorInfiniteLimitlessBlock.includes("next: 'strategic-pilot'")) {
   fail('successor-infinite-is-not-limitless next step is the Field Manual');
 }
-if (successorInfiniteLimitlessBlock.includes('successor-limitless-is-not-boundless')) {
-  fail('successor-infinite-is-not-limitless must keep Limitless Is Not Boundless in prose only');
+if (!successorInfiniteLimitlessBlock.includes('successor-limitless-is-not-boundless')) {
+  fail('successor-infinite-is-not-limitless related reading must cite successor-limitless-is-not-boundless');
 }
 if (!successorInfiniteLimitlessBlock.includes("relatedSlug: 'successor-eternal-is-not-infinite'")) {
   fail('successor-infinite-is-not-limitless related reading must start from successor-eternal-is-not-infinite');
@@ -40672,8 +40664,8 @@ if (!successorInfiniteLimitlessBlock.includes("relatedSlug: 'successor-eternal-i
 {
   const alsoAt = successorInfiniteLimitlessBlock.indexOf('also: [');
   const firstAlso = successorInfiniteLimitlessBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
-  if (!firstAlso || firstAlso[1] !== 'successor-universal-is-not-eternal') {
-    fail('successor-infinite-is-not-limitless must list successor-universal-is-not-eternal first among additional related reading');
+  if (!firstAlso || firstAlso[1] !== 'successor-limitless-is-not-boundless') {
+    fail('successor-infinite-is-not-limitless must list successor-limitless-is-not-boundless first among additional related reading');
   }
 }
 if (successorInfiniteLimitlessBlock.includes('successor-recoverable-is-not-assured')) {
@@ -40682,6 +40674,351 @@ if (successorInfiniteLimitlessBlock.includes('successor-recoverable-is-not-assur
 for (const untouched of ["app/insights/successor-universal-is-not-eternal/page.tsx","app/insights/successor-total-is-not-universal/page.tsx","app/insights/successor-ultimate-is-not-total/page.tsx","app/insights/successor-final-is-not-ultimate/page.tsx","app/insights/successor-absolute-is-not-final/page.tsx","app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/closure-is-not-complete/page.tsx","app/insights/complete-is-not-accepted/page.tsx","app/insights/closed-is-not-collected/page.tsx","app/insights/closed-is-not-delivered/page.tsx","app/insights/closed-is-not-resolved/page.tsx","app/insights/executed-is-not-closed/page.tsx","app/insights/reconciled-is-not-closed/page.tsx","app/insights/cleared-is-not-closed/page.tsx","app/insights/successor-cleared-is-not-closed/page.tsx","app/insights/successor-closed-is-not-collected/page.tsx","app/insights/successor-closed-is-not-delivered/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx"]) {
   if (read(untouched).includes('successor-infinite-is-not-limitless')) {
     fail(`${untouched} must stay off successor-infinite-is-not-limitless`);
+  }
+}
+
+
+const successorLimitlessBoundlessPageRequired = [
+  "commercial spine",
+  "named final authority",
+  "named ultimate authority",
+  "named total authority",
+  "named infinite authority",
+  "named eternal authority",
+  "named operative authority",
+  "named controlling authority",
+  "named decisive authority",
+  "named governing authority",
+  "named sovereign authority",
+  "This essay does not rewrite that thesis",
+  "does not collapse into Retained Is Not Expanded",
+  "does not rewrite Retained Is Not Expanded",
+  "does not collapse into Collectible Is Not Applied",
+  "does not rewrite Collectible Is Not Applied",
+  "does not collapse into Applied Is Not Restored",
+  "does not rewrite Applied Is Not Restored",
+  "does not collapse into Extinguished Is Not Reconciled",
+  "does not rewrite Extinguished Is Not Reconciled",
+  "does not collapse into Reconciled Is Not Attested",
+  "does not rewrite Reconciled Is Not Attested",
+  "does not collapse into Reconciled Is Not Closed",
+  "does not rewrite Reconciled Is Not Closed",
+  "does not collapse into Booked Is Not Reconciled",
+  "does not rewrite Booked Is Not Reconciled",
+  "does not collapse into Binding Is Not Enforced",
+  "does not rewrite Binding Is Not Enforced",
+  "does not collapse into Defended Is Not Owned",
+  "does not rewrite Defended Is Not Owned",
+  "does not collapse into Certified Is Not Insured",
+  "does not rewrite Certified Is Not Insured",
+  "does not collapse into Assured Is Not Certified",
+  "does not rewrite Assured Is Not Certified",
+  "does not collapse into Operated Is Not Sustained",
+  "does not rewrite Operated Is Not Sustained",
+  "does not collapse into Delivered Is Not Operated",
+  "does not rewrite Delivered Is Not Operated",
+  "does not collapse into Released Is Not Recorded",
+  "does not rewrite Released Is Not Recorded",
+  "does not collapse into Remediated Is Not Released",
+  "does not rewrite Remediated Is Not Released",
+  "does not collapse into Accepted Is Not Posted",
+  "does not rewrite Accepted Is Not Posted",
+  "does not collapse into Restored Is Not Accepted",
+  "does not rewrite Restored Is Not Accepted",
+  "Field Manual",
+  "Strategic Pilot",
+  "A void instrument on file (even one that withdraws the named scope itself) is not null",
+  "A never instrument on file (even one that asserts absence-from-the-start) is not void",
+  "Null requires the named null authority, the null date, and the null recorded that withdraws the void record itself. Absent requires the named absent authority, the absent date, and the absent recorded that withdraws the null record itself. Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself",
+  "never existed for the ledger",
+  "never were a customer workflow",
+  "never were operating results for the named period",
+  "absence-from-the-start",
+  "An unmaking instrument on file is not a never claim",
+  "Unmaking withdraws an accountable remainder of prior existence",
+  "does not establish that the packs never existed",
+  "not merely that a controlling authority recorded a controlling date",
+  "not merely that a decisive authority recorded a decisive date",
+  "not merely that a governing authority recorded a governing date",
+  "not merely that a sovereign authority recorded a sovereign date",
+  "named absolute authority",
+  "A vacant instrument on file (even one that withdraws the absent record itself) is not empty",
+  "Vacant requires the named vacant authority, the vacant date, and the vacant recorded that withdraws the absent record itself",
+  "Vacant withdraws the absent record itself so there is no absent in which a null-withdrawal could be lodged",
+  "Null withdraws the void record itself so there is no void in which a scope-withdrawal could be lodged",
+  "Void withdraws the named scope itself so there is no ledger in which a never-claim could be lodged",
+  "Cleared Is Not Closed",
+  "Cleared Is Not Available",
+  "does not collapse into Cleared Is Not Closed",
+  "does not rewrite Cleared Is Not Closed",
+  "does not collapse into Cleared Is Not Available",
+  "does not rewrite Cleared Is Not Available",
+  "Closure Is Not Complete",
+  "Complete Is Not Accepted",
+  "Closed Is Not Collected",
+  "Closed Is Not Delivered",
+  "Closed Is Not Resolved",
+  "Executed Is Not Closed",
+  "does not collapse into Closure Is Not Complete",
+  "does not rewrite Closure Is Not Complete",
+  "does not collapse into Complete Is Not Accepted",
+  "does not rewrite Complete Is Not Accepted",
+  "does not collapse into Closed Is Not Collected",
+  "does not rewrite Closed Is Not Collected",
+  "does not collapse into Closed Is Not Delivered",
+  "does not rewrite Closed Is Not Delivered",
+  "does not collapse into Closed Is Not Resolved",
+  "does not rewrite Closed Is Not Resolved",
+  "does not collapse into Executed Is Not Closed",
+  "does not rewrite Executed Is Not Closed",
+  "A finished instrument on file (even one that withdraws the closed record itself) is not complete",
+  "A complete instrument on file (even one that withdraws the finished record itself) is not final. A final instrument on file (even one that withdraws the complete record itself) is not binding",
+  "Complete withdraws the finished record itself so there is no finished in which a closed-withdrawal could be lodged. Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged",
+  "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself",
+  "Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself. Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself — not merely that an operative authority recorded an operative date. Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself",
+  "Complete requires the named complete authority, the complete date, and the complete recorded that withdraws the finished record itself",
+  "Transferable Is Not Binding",
+  "does not collapse into Transferable Is Not Binding",
+  "does not rewrite Transferable Is Not Binding",
+  "A binding instrument on file (even one that withdraws the final record itself) is not operative",
+  "A controlling instrument on file (even one that withdraws the operative record itself) is not decisive",
+  "A decisive instrument on file (even one that withdraws the controlling record itself) is not governing",
+  "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign",
+  "A binding instrument on file, even one that withdraws the final record itself, is not operative",
+  "An operative instrument on file, even one that withdraws the binding record itself, is not controlling",
+  "Final withdraws the complete record itself so there is no complete in which a finished-withdrawal could be lodged",
+  "Binding requires the named binding authority, the binding date, and the binding recorded that withdraws the final record itself. Operative requires the named operative authority, the operative date, and the operative recorded that withdraws the binding record itself",
+  "Sync does not measure controlling",
+  "Sync does not measure decisive",
+  "Sync does not measure governing",
+  "Sync does not measure sovereign",
+  "Sync does not measure absolute",
+  "Sync does not measure final",
+  "Sync does not measure ultimate",
+  "Binding withdraws the final record itself so there is no final in which a complete-withdrawal could be lodged",
+  "Controlling withdraws the operative record itself so there is no operative in which a binding-withdrawal could be lodged",
+  "Decisive withdraws the controlling record itself so there is no controlling in which an operative-withdrawal could be lodged",
+  "Governing withdraws the decisive record itself so there is no decisive in which a controlling-withdrawal could be lodged",
+  "Controlling requires the named controlling authority, the controlling date, and the controlling recorded that withdraws the operative record itself",
+  "Decisive requires the named decisive authority, the decisive date, and the decisive recorded that withdraws the controlling record itself",
+  "Governing requires the named governing authority, the governing date, and the governing recorded that withdraws the decisive record itself",
+  "Sovereign requires the named sovereign authority, the sovereign date, and the sovereign recorded that withdraws the governing record itself",
+  "Absolute requires the named absolute authority, the absolute date, and the absolute recorded that withdraws the sovereign record itself",
+  "A controlling instrument on file, even one that withdraws the operative record itself, is not decisive",
+  "A decisive instrument on file, even one that withdraws the controlling record itself, is not governing",
+  "make decisive the controlling operating results",
+  "make governing the decisive operating results",
+  "make sovereign the governing operating results",
+  "make absolute the sovereign operating results",
+  "A governing instrument on file (even one that withdraws the decisive record itself) is not sovereign.",
+  "A governing instrument on file, even one that withdraws the decisive record itself, is not sovereign",
+  "Sovereign withdraws the governing record itself so there is no governing in which a decisive-withdrawal could be lodged",
+  "A sovereign instrument on file (even one that withdraws the governing record itself) is not absolute",
+  "An absolute instrument on file (even one that withdraws the sovereign record itself) is not final",
+  "A sovereign instrument on file, even one that withdraws the governing record itself, is not absolute",
+  "An absolute instrument on file, even one that withdraws the sovereign record itself, is not final",
+  "Sync does not measure total",
+  "make final the absolute operating results",
+  "make ultimate the final operating results",
+  "make total the ultimate operating results",
+  "Final requires the named final authority, the final date, and the final recorded that withdraws the absolute record itself",
+  "Ultimate requires the named ultimate authority, the ultimate date, and the ultimate recorded that withdraws the final record itself",
+  "Total requires the named total authority, the total date, and the total recorded that withdraws the ultimate record itself",
+  "Infinite Is Not Limitless",
+  "limitless spine",
+  "This final is not the final Complete Is Not Final already names, and it is not the final Final Is Not Binding already names.",
+  "A final instrument on file (even one that withdraws the absolute record itself) is not ultimate",
+  "An ultimate instrument on file (even one that withdraws the final record itself) is not total",
+  "A total instrument on file (even one that withdraws the ultimate record itself) is not universal",
+  "the infinite record itself withdrawn so there is no infinite in which a universal-withdrawal could be lodged",
+  "executed limitless instrument",
+  "named limitless authority, a limitless date, and a limitless recorded",
+  "This essay does not create a filing spine at /insights/ultimate-is-not-total",
+  "This essay does not create a filing spine at /insights/total-is-not-universal",
+  "Limitless is not boundless",
+  "infinite statement made limitless for the named ledger and period",
+  "infinite customer workflow made limitless for the customer and the period",
+  "not merely that a named limitless authority recorded a limitless date and a limitless recorded",
+  "Packs that have been made limitless — a named limitless authority",
+  "Infinite Is Not Limitless already names the prior split",
+  "This essay does not give that limitless a new meaning",
+  "A firm can be limitless and still not boundless",
+  "boundless theater",
+  "A limitless package alone is not boundless of that limitless successor outcome",
+  "This split is limitless versus boundless",
+  "Limitless cash or margin is not the same as a boundless commercial outcome",
+  "Named limitless is not boundless",
+  "The limitless practice is not the boundless practice",
+  "What a boundless record is allowed to be",
+  "Sync must not auto-deem-boundless",
+  "Sync does not deem boundless for the customer",
+  "This essay does not create a filing spine for Limitless Is Not Boundless",
+  "Keep this records boundless distinct from the commercial expansion Retained Is Not Expanded already names",
+  "from any boundless extinguishment or reconciliation theses",
+  "Refuse the slide from &quot;it is limitless&quot; to &quot;it is boundless.&quot; Refuse the slide from &quot;there is no infinite record either&quot; to &quot;there is no limitless record either.&quot;",
+  "This boundless is not the collected Collected Is Not Recognized already names",
+  "This boundless is not the disbursement Paid Is Not Settled already names",
+  "This boundless is not the settlement Settled Is Not Booked already names",
+  "This boundless is not the collectible Collectible Is Not Applied already names",
+  "keep this edition from treating a limitless instrument on file as a boundless claim",
+  "Sync must not treat limitless as boundless as Learning credit",
+  "/insights/successor-boundless-is-not-endless",
+  "Refuse the slide from &quot;it is limitless&quot; to &quot;it is boundless.&quot;",
+  "Refuse the slide from &quot;there is no infinite record either&quot; to &quot;there is no limitless record either.&quot;",
+  "a limitless date, and a limitless recorded",
+  "This boundless is not the filing close Cleared Is Not Closed already names",
+  "This boundless is not the filing clearance Cleared Is Not Available already names",
+  "A universal instrument on file (even one that withdraws the total record itself) is not eternal",
+  "Ultimate withdraws the final record itself so there is no final in which an absolute-withdrawal could be lodged.",
+  "Total withdraws the ultimate record itself so there is no ultimate in which a final-withdrawal could be lodged.",
+  "Universal withdraws the total record itself so there is no total in which an ultimate-withdrawal could be lodged.",
+  "Total requires the named total authority, the total date, and the total recorded that withdraws the ultimate record itself — not merely that an ultimate authority recorded an ultimate date.",
+  "Universal requires the named universal authority, the universal date, and the universal recorded that withdraws the total record itself — not merely that a total authority recorded a total date.",
+  "Eternal requires the named eternal authority, the eternal date, and the eternal recorded that withdraws the universal record itself — not merely that a universal authority recorded a universal date.",
+  "Boundless Is Not Endless may be named in prose only",
+  "This essay does not create a successor route for Boundless Is Not Endless",
+  "does not claim that limitless is boundless",
+  "This essay does not create a filing spine at /insights/universal-is-not-eternal",
+  "a limitless date",
+  "an infinite date",
+  "a boundless date",
+  "href=\"/insights/successor-infinite-is-not-limitless\"",
+];
+const successorLimitlessBoundlessPage = read('app/insights/successor-limitless-is-not-boundless/page.tsx');
+const successorLimitlessBoundlessPageNormalized = successorLimitlessBoundlessPage.replace(/\s+/g, ' ');
+for (const required of successorLimitlessBoundlessPageRequired) {
+  const needle = required.replace(/\\"/g, '"').replace(/\s+/g, ' ');
+  if (!successorLimitlessBoundlessPageNormalized.includes(needle)) {
+    fail(`successor-limitless-is-not-boundless page must include ${required}`);
+  }
+}
+if (successorLimitlessBoundlessPage.includes("successor-recoverable-is-not-assured")) {
+  fail('successor-limitless-is-not-boundless must not open a successor route for Recoverable Is Not Assured');
+}
+if (successorLimitlessBoundlessPage.includes("successor-rehearsed-is-not-recoverable")) {
+  fail('successor-limitless-is-not-boundless must not claim a successor route for Rehearsed Is Not Recoverable');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-limitless-is-not-boundless\"")) {
+  fail('successor-limitless-is-not-boundless must not link to itself as a forward route');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-boundless-is-not-endless\"")) {
+  fail('successor-limitless-is-not-boundless must keep Boundless Is Not Endless in prose only');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/closure-is-not-complete\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Closure Is Not Complete');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/complete-is-not-accepted\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Complete Is Not Accepted');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/closed-is-not-collected\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Closed Is Not Collected');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-closed-is-not-collected\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Closed Is Not Collected');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/closed-is-not-delivered\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Closed Is Not Delivered');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-closed-is-not-delivered\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Closed Is Not Delivered');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/closed-is-not-resolved\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Closed Is Not Resolved');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/executed-is-not-closed\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Executed Is Not Closed');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/cleared-is-not-closed\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Cleared Is Not Closed');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-cleared-is-not-closed\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Cleared Is Not Closed');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/cleared-is-not-available\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Cleared Is Not Available');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-cleared-is-not-available\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Cleared Is Not Available');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/reconciled-is-not-closed\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Reconciled Is Not Closed');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-reconciled-is-not-closed\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Reconciled Is Not Closed');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/paid-is-not-settled\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Paid Is Not Settled');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-paid-is-not-settled\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Paid Is Not Settled');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/settled-is-not-booked\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget Settled Is Not Booked');
+}
+if (successorLimitlessBoundlessPage.includes("href=\"/insights/successor-settled-is-not-booked\"")) {
+  fail('successor-limitless-is-not-boundless must not retarget successor Settled Is Not Booked');
+}
+if (!successorLimitlessBoundlessPage.includes('Boundless Is Not Endless may be named in prose only')) {
+  fail('successor-limitless-is-not-boundless must name Boundless Is Not Endless in prose only');
+}
+if (successorLimitlessBoundlessPage.includes('Limitless Is Not Boundless may be named in prose only')) {
+  fail('successor-limitless-is-not-boundless must not name itself as prose only');
+}
+if (existsSync(join(root, 'app/insights/successor-boundless-is-not-endless/page.tsx'))) {
+  fail('successor-boundless-is-not-endless must stay prose only in this essay');
+}
+if (slugs.includes('successor-boundless-is-not-endless')) {
+  fail('successor-boundless-is-not-endless must not be registered in this essay');
+}
+if (!existsSync(join(root, 'app/insights/successor-limitless-is-not-boundless/page.tsx'))) {
+  fail('successor-limitless-is-not-boundless page must exist');
+}
+if (!slugs.includes('successor-limitless-is-not-boundless')) {
+  fail('successor-limitless-is-not-boundless must be registered in the catalog');
+}
+if (!successorLimitlessBoundlessPage.includes('href="/insights/successor-infinite-is-not-limitless"')) {
+  fail('successor-limitless-is-not-boundless must keep prior reading on successor-infinite-is-not-limitless');
+}
+if (!read('app/insights/successor-infinite-is-not-limitless/page.tsx').includes('href="/insights/successor-limitless-is-not-boundless"')) {
+  fail('successor-infinite-is-not-limitless must point the series forward to successor-limitless-is-not-boundless');
+}
+for (const earlier of ["app/insights/successor-eternal-is-not-infinite/page.tsx","app/insights/successor-universal-is-not-eternal/page.tsx","app/insights/successor-total-is-not-universal/page.tsx","app/insights/successor-ultimate-is-not-total/page.tsx","app/insights/successor-final-is-not-ultimate/page.tsx","app/insights/successor-absolute-is-not-final/page.tsx","app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-promulgated-is-not-published/page.tsx","app/insights/successor-enacted-is-not-promulgated/page.tsx","app/insights/successor-ratified-is-not-enacted/page.tsx","app/insights/successor-verified-is-not-ratified/page.tsx","app/insights/successor-confirmed-is-not-verified/page.tsx","app/insights/successor-acted-is-not-confirmed/page.tsx","app/insights/successor-instructed-is-not-acted/page.tsx","app/insights/successor-authorized-is-not-instructed/page.tsx","app/insights/successor-approved-is-not-authorized/page.tsx","app/insights/successor-reviewed-is-not-approved/page.tsx","app/insights/successor-operated-is-not-reviewed/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-collected-is-not-applied/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-advanced-is-not-performed/page.tsx","app/insights/successor-relied-is-not-advanced/page.tsx","app/insights/successor-attested-is-not-relied/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-disbursed-is-not-extinguished/page.tsx","app/insights/successor-obligated-is-not-disbursed/page.tsx","app/insights/successor-spendable-is-not-obligated/page.tsx","app/insights/successor-available-is-not-spendable/page.tsx","app/insights/successor-cleared-is-not-available/page.tsx","app/insights/successor-remitted-is-not-cleared/page.tsx","app/insights/successor-captured-is-not-remitted/page.tsx","app/insights/successor-residual-is-not-captured/page.tsx","app/insights/successor-defended-is-not-residual/page.tsx","app/insights/successor-distributed-is-not-defended/page.tsx","app/insights/successor-controlled-is-not-distributed/page.tsx","app/insights/successor-compounded-is-not-controlled/page.tsx","app/insights/successor-closeable-is-not-compounded/page.tsx","app/insights/successor-financeable-is-not-closeable/page.tsx","app/insights/successor-insurable-is-not-financeable/page.tsx","app/insights/successor-governable-is-not-insurable/page.tsx","app/insights/successor-auditable-is-not-governable/page.tsx","app/insights/successor-accountable-is-not-auditable/page.tsx","app/insights/successor-deployable-is-not-accountable/page.tsx","app/insights/successor-liquid-is-not-deployable/page.tsx","app/insights/successor-portable-is-not-liquid/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-retained-is-not-expanded/page.tsx","app/insights/successor-monetized-is-not-retained/page.tsx","app/insights/successor-binding-is-not-monetized/page.tsx","app/insights/successor-effective-is-not-binding/page.tsx","app/insights/successor-posted-is-not-effective/page.tsx","app/insights/successor-accepted-is-not-posted/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx"]) {
+  if (read(earlier).includes('href="/insights/successor-limitless-is-not-boundless"')) {
+    fail(`forward link to successor-limitless-is-not-boundless must come only from successor-infinite-is-not-limitless (${earlier})`);
+  }
+}
+
+const successorLimitlessBoundlessBlock = stepBlock('successor-limitless-is-not-boundless');
+for (const required of ['successor-infinite-is-not-limitless','successor-eternal-is-not-infinite','successor-final-is-not-ultimate','successor-absolute-is-not-final','successor-sovereign-is-not-absolute','successor-governing-is-not-sovereign','successor-controlling-is-not-decisive','successor-operative-is-not-controlling']) {
+  if (!successorLimitlessBoundlessBlock.includes(`'${required}'`)) {
+    fail(`successor-limitless-is-not-boundless related reading must cite ${required}`);
+  }
+}
+if (!/includePilot:\s*true/.test(successorLimitlessBoundlessBlock)) {
+  fail('successor-limitless-is-not-boundless related reading must include the Strategic Pilot');
+}
+if (successorLimitlessBoundlessBlock.includes("next: 'strategic-pilot'")) {
+  fail('successor-limitless-is-not-boundless next step is the Field Manual');
+}
+if (successorLimitlessBoundlessBlock.includes('successor-boundless-is-not-endless')) {
+  fail('successor-limitless-is-not-boundless must keep Boundless Is Not Endless in prose only');
+}
+if (!successorLimitlessBoundlessBlock.includes("relatedSlug: 'successor-infinite-is-not-limitless'")) {
+  fail('successor-limitless-is-not-boundless related reading must start from successor-infinite-is-not-limitless');
+}
+{
+  const alsoAt = successorLimitlessBoundlessBlock.indexOf('also: [');
+  const firstAlso = successorLimitlessBoundlessBlock.slice(alsoAt).match(/slug: '([a-z0-9-]+)'/);
+  if (!firstAlso || firstAlso[1] !== 'successor-eternal-is-not-infinite') {
+    fail('successor-limitless-is-not-boundless must list successor-eternal-is-not-infinite first among additional related reading');
+  }
+}
+if (successorLimitlessBoundlessBlock.includes('successor-recoverable-is-not-assured')) {
+  fail('successor-limitless-is-not-boundless must not open a successor route for Recoverable Is Not Assured');
+}
+for (const untouched of ["app/insights/successor-eternal-is-not-infinite/page.tsx","app/insights/successor-universal-is-not-eternal/page.tsx","app/insights/successor-total-is-not-universal/page.tsx","app/insights/successor-ultimate-is-not-total/page.tsx","app/insights/successor-final-is-not-ultimate/page.tsx","app/insights/successor-absolute-is-not-final/page.tsx","app/insights/successor-binding-is-not-operative/page.tsx","app/insights/successor-final-is-not-binding/page.tsx","app/insights/successor-complete-is-not-final/page.tsx","app/insights/successor-finished-is-not-complete/page.tsx","app/insights/successor-closed-is-not-finished/page.tsx","app/insights/successor-settled-is-not-closed/page.tsx","app/insights/successor-clear-is-not-settled/page.tsx","app/insights/successor-empty-is-not-clear/page.tsx","app/insights/successor-vacant-is-not-empty/page.tsx","app/insights/successor-absent-is-not-vacant/page.tsx","app/insights/successor-null-is-not-absent/page.tsx","app/insights/successor-void-is-not-null/page.tsx","app/insights/successor-never-is-not-void/page.tsx","app/insights/successor-unmade-is-not-never/page.tsx","app/insights/successor-obliterated-is-not-unmade/page.tsx","app/insights/successor-destroyed-is-not-obliterated/page.tsx","app/insights/successor-erased-is-not-destroyed/page.tsx","app/insights/successor-forgotten-is-not-erased/page.tsx","app/insights/successor-disposed-is-not-forgotten/page.tsx","app/insights/successor-retained-is-not-disposed/page.tsx","app/insights/successor-archived-is-not-retained/page.tsx","app/insights/successor-released-is-not-archived/page.tsx","app/insights/successor-satisfied-is-not-released/page.tsx","app/insights/successor-discharged-is-not-satisfied/page.tsx","app/insights/successor-honored-is-not-discharged/page.tsx","app/insights/successor-endorsed-is-not-honored/page.tsx","app/insights/successor-received-is-not-endorsed/page.tsx","app/insights/successor-presented-is-not-received/page.tsx","app/insights/successor-circulated-is-not-presented/page.tsx","app/insights/successor-adopted-is-not-operated/page.tsx","app/insights/successor-accepted-is-not-adopted/page.tsx","app/insights/successor-acknowledged-is-not-accepted/page.tsx","app/insights/successor-issued-is-not-acknowledged/page.tsx","app/insights/successor-sealed-is-not-issued/page.tsx","app/insights/successor-certified-is-not-sealed/page.tsx","app/insights/successor-invoiced-is-not-collected/page.tsx","app/insights/successor-earned-is-not-invoiced/page.tsx","app/insights/successor-commenced-is-not-earned/page.tsx","app/insights/successor-renewed-is-not-commenced/page.tsx","app/insights/successor-sustained-is-not-renewed/page.tsx","app/insights/successor-realized-is-not-sustained/page.tsx","app/insights/successor-performed-is-not-realized/page.tsx","app/insights/successor-defended-is-not-owned/page.tsx","app/insights/successor-binding-is-not-enforced/page.tsx","app/insights/binding-is-not-enforced/page.tsx","app/insights/successor-expanded-is-not-defended/page.tsx","app/insights/successor-owned-is-not-portable/page.tsx","app/insights/collectible-is-not-applied/page.tsx","app/insights/successor-collectible-is-not-applied/page.tsx","app/insights/successor-collected-is-not-recognized/page.tsx","app/insights/applied-is-not-restored/page.tsx","app/insights/successor-applied-is-not-restored/page.tsx","app/insights/successor-reconciled-is-not-attested/page.tsx","app/insights/successor-extinguished-is-not-reconciled/page.tsx","app/insights/successor-reconciled-is-not-closed/page.tsx","app/insights/successor-booked-is-not-reconciled/page.tsx","app/insights/successor-certified-is-not-insured/page.tsx","app/insights/certified-is-not-insured/page.tsx","app/insights/successor-assured-is-not-certified/page.tsx","app/insights/assured-is-not-certified/page.tsx","app/insights/successor-reconciled-is-not-certified/page.tsx","app/insights/successor-relieved-is-not-reconciled/page.tsx","app/insights/successor-applied-is-not-relieved/page.tsx","app/insights/successor-operated-is-not-sustained/page.tsx","app/insights/successor-delivered-is-not-operated/page.tsx","app/insights/closure-is-not-complete/page.tsx","app/insights/complete-is-not-accepted/page.tsx","app/insights/closed-is-not-collected/page.tsx","app/insights/closed-is-not-delivered/page.tsx","app/insights/closed-is-not-resolved/page.tsx","app/insights/executed-is-not-closed/page.tsx","app/insights/reconciled-is-not-closed/page.tsx","app/insights/cleared-is-not-closed/page.tsx","app/insights/successor-cleared-is-not-closed/page.tsx","app/insights/successor-closed-is-not-collected/page.tsx","app/insights/successor-closed-is-not-delivered/page.tsx","app/insights/successor-operative-is-not-controlling/page.tsx","app/insights/successor-controlling-is-not-decisive/page.tsx","app/insights/successor-decisive-is-not-governing/page.tsx","app/insights/successor-governing-is-not-sovereign/page.tsx","app/insights/successor-sovereign-is-not-absolute/page.tsx"]) {
+  if (read(untouched).includes('successor-limitless-is-not-boundless')) {
+    fail(`${untouched} must stay off successor-limitless-is-not-boundless`);
   }
 }
 
