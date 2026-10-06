@@ -76,8 +76,8 @@ export default function ArchitecturePage() {
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
               The last layer is the check. The case stays open until that check is recorded:{' '}
-              <Link href="/insights/verification-is-not-optional" className="font-semibold text-cyan-300 hover:text-cyan-200">
-                Verification Is Not Optional
+              <Link href="/insights/fracas-is-not-a-decision-system" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                FRACAS Is Not a Decision System
               </Link>
               .
             </p>

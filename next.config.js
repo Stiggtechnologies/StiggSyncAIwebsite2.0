@@ -1,7 +1,12 @@
+const insightRedirects = require('./lib/insight-redirects');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  async redirects() {
+    return insightRedirects;
   },
   images: { unoptimized: true },
   poweredByHeader: false,
