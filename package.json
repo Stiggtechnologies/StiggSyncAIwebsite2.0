@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit && node scripts/check-insights-seo.mjs",
-    "check:insights-seo": "node scripts/check-insights-seo.mjs"
+    "check:insights-seo": "node scripts/check-insights-seo.mjs",
+    "check:insights-publish": "node --test scripts/insights-quality.test.mjs && node scripts/check-insights-owner-approval.mjs && node scripts/check-insights-content-quality.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
