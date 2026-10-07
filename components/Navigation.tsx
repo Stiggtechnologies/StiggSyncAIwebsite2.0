@@ -8,6 +8,7 @@ import BrandWordmark from '@/components/BrandWordmark';
 
 const navItems = [
   { label: 'Assessment', href: '/reliability-assessment' },
+  { label: 'Training', href: '/training' },
   { label: 'Architecture', href: '/architecture' },
   { label: 'Industries', href: '/industries' },
   { label: 'Security', href: '/security' },

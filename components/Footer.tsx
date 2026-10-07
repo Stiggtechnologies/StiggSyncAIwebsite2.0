@@ -37,6 +37,7 @@ export default function Footer() {
               <li><Link href="/industries" className="text-sm text-slate-400 hover:text-white">Industries</Link></li>
               <li><Link href="/ai-for-mining-reliability" className="text-sm text-slate-400 hover:text-white">Mining reliability</Link></li>
               <li><Link href="/security" className="text-sm text-slate-400 hover:text-white">Security</Link></li>
+              <li><Link href="/training" className="text-sm text-slate-400 hover:text-white">Training</Link></li>
               <li><Link href="/insights" className="text-sm text-slate-400 hover:text-white">Insights</Link></li>
               <li><Link href="/manuals" className="text-sm text-slate-400 hover:text-white">Field Manual</Link></li>
             </ul>
