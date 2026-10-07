@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
 import { APP_SETUP_URL } from '@/lib/site-links';
+import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
   title: DEFAULT_TITLE,
@@ -141,69 +142,7 @@ export default function Home() {
           </div>
 
           {/* The product, shown as the record it produces */}
-          <figure aria-label="Example decision record" className="relative">
-            <div className="border border-bone/15 bg-graphite shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]">
-              <div className="flex items-start justify-between gap-4 border-b border-bone/10 px-5 py-4 sm:px-6">
-                <div>
-                  <p className="font-mono text-xs text-bone/50">Decision record · example</p>
-                  <p className="mt-1 text-base font-semibold text-white">Compressor low lube-pressure trips</p>
-                </div>
-                <p className="shrink-0 border border-signal/60 px-2.5 py-1 text-xs font-semibold text-signal">
-                  Awaiting approval
-                </p>
-              </div>
-
-              <div className="space-y-6 px-5 py-6 sm:px-6">
-                <div>
-                  <h3 className="text-sm font-semibold text-white" style={cardHeading}>
-                    The question
-                  </h3>
-                  <p className="mt-2 text-[0.95rem] leading-6 text-bone/80">
-                    Seven low-lube-pressure trips in six weeks. Five happened within 20 minutes of startup. Lower the trip setpoint, or replace the bearings?
-                  </p>
-                </div>
-
-                <div className="grid gap-6 sm:grid-cols-2 sm:gap-0 sm:divide-x sm:divide-bone/10">
-                  <div className="sm:pr-6">
-                    <h3 className="text-sm font-semibold text-cyan-300" style={cardHeading}>
-                      What the evidence shows
-                    </h3>
-                    <ul className="mt-2 space-y-1.5 text-[0.95rem] leading-6 text-bone/80">
-                      <li>Seven trips in six weeks</li>
-                      <li>Five clustered just after startup</li>
-                      <li>Historian scaling disagrees with field calibration</li>
-                    </ul>
-                  </div>
-                  <div className="sm:pl-6">
-                    <h3 className="text-sm font-semibold text-signal" style={cardHeading}>
-                      What is not proven
-                    </h3>
-                    <ul className="mt-2 space-y-1.5 text-[0.95rem] leading-6 text-bone/80">
-                      <li>That the bearings are damaged</li>
-                      <li>That pressure was truly low</li>
-                      <li>That a lower setpoint is safe</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="border-t border-bone/10 pt-5">
-                  <h3 className="text-sm font-semibold text-white" style={cardHeading}>
-                    Recommended next step
-                  </h3>
-                  <p className="mt-2 text-[0.95rem] leading-6 text-bone/80">
-                    Leave the setpoint alone and hold off condemning the bearings. Reconcile the pressure scaling, capture a controlled startup sample, and inspect after the next trip before choosing a fix.
-                  </p>
-                </div>
-              </div>
-
-              <div className="border-t border-bone/10 px-5 py-3 font-mono text-xs text-bone/45 sm:px-6">
-                Approver: Reliability Superintendent
-              </div>
-            </div>
-            <figcaption className="mt-3 text-xs text-bone/45">
-              An illustration of what SyncAI hands to the person who decides.
-            </figcaption>
-          </figure>
+          <DecisionRecord />
         </div>
       </section>
 
