@@ -190,7 +190,7 @@ export const trainingOffers: TrainingOffer[] = [
     ],
     included: 'Included: facilitator and take-home checklists. Travel for in-house sessions is billed at cost.',
     nextStep: 'A 20-minute call to confirm your crews, shifts and dates.',
-    bio: 'Orville Davis, M.Eng., MMP, started as an apprentice and heavy-duty mechanic and has more than 25 years in mining, oil sands and heavy-equipment maintenance, including as a maintenance supervisor and planner. He later led reliability engineering at Suncor\u2019s mining operations. He holds a Master\u2019s degree in Maintenance and Reliability Engineering, a postgraduate diploma in business, a Red Seal in heavy-duty equipment, an Alberta Blue Seal in business competencies, and the PEMAC Maintenance Management Professional designation.',
+    bio: 'Orville Davis, M.Eng., MMP, started as an apprentice and heavy-duty mechanic and has more than 25 years in mining, oil sands and heavy-equipment maintenance, including as a maintenance supervisor and planner. He later led reliability engineering at Suncor\u2019s mining operations. He holds a Master\u2019s degree in Maintenance and Reliability Engineering, a Red Seal in heavy-duty equipment, an Alberta Blue Seal in business competencies, and the PEMAC Maintenance Management Professional designation.',
   },
 ];
 
