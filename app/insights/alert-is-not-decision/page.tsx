@@ -12,7 +12,7 @@ const article = getInsightArticle('alert-is-not-decision');
 
 export default function AlertIsNotDecisionPage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
+    <main className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"

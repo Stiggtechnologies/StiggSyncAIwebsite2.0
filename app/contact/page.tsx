@@ -59,7 +59,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
           <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-[#0B151F] p-6 sm:p-8">
+          <div className="rounded-xl border border-white/10 bg-[#17181B] p-6 sm:p-8">
             {isSubmitted ? (
               <div className="py-10">
                 <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
@@ -150,7 +150,7 @@ export default function ContactPage() {
 }
 
 const inputClass =
-  'w-full rounded-md border border-white/10 bg-[#081018] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-700 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
+  'w-full rounded-md border border-white/10 bg-[#111214] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-700 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (

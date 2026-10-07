@@ -86,7 +86,7 @@ const whoFor = [
 
 export default function CompanyPage() {
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Company</p>
@@ -101,7 +101,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">What Sync is</p>
@@ -143,7 +143,7 @@ export default function CompanyPage() {
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
             {whoFor.map((item) => (
-              <Link key={item.name} href={item.href} className="bg-[#081018] p-7 hover:bg-[#0B151F]">
+              <Link key={item.name} href={item.href} className="bg-[#111214] p-7 hover:bg-[#17181B]">
                 <h3 className="text-xl font-semibold text-white">{item.name}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-400">{item.body}</p>
                 <p className="mt-5 text-sm font-semibold text-cyan-300">Read the industry fit →</p>
@@ -153,7 +153,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The governed loop</p>
@@ -195,7 +195,7 @@ export default function CompanyPage() {
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
             {notThis.map((item) => (
-              <article key={item.title} className="bg-[#081018] p-7 sm:p-8">
+              <article key={item.title} className="bg-[#111214] p-7 sm:p-8">
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-400">{item.body}</p>
               </article>
@@ -204,7 +204,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Who builds it</p>
           <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.03em] text-white">
@@ -230,7 +230,7 @@ export default function CompanyPage() {
 
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#17181B] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How to start</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">

@@ -20,7 +20,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0B0F14]/90 backdrop-blur-md">
+    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#101113]/90 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <BrandWordmark priority />
@@ -40,7 +40,7 @@ export default function Navigation() {
             ))}
             <Link
               href="/strategic-pilot"
-              className="inline-flex min-h-10 items-center justify-center rounded-md bg-cyan-300 px-5 py-2 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
+              className="inline-flex min-h-10 items-center justify-center rounded-sm bg-cyan-300 px-5 py-2 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
             >
               Strategic Pilot
             </Link>
@@ -59,7 +59,7 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-white/5 bg-[#0B0F14] lg:hidden">
+        <div className="border-t border-white/5 bg-[#101113] lg:hidden">
           <div className="space-y-2 px-4 py-4">
             {navItems.map((item) => (
               <Link
@@ -76,7 +76,7 @@ export default function Navigation() {
             <Link
               href="/strategic-pilot"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-3 block rounded-md bg-cyan-300 px-5 py-3 text-center text-sm font-bold text-slate-950"
+              className="mt-3 block rounded-sm bg-cyan-300 px-5 py-3 text-center text-sm font-bold text-slate-950"
             >
               Strategic Pilot
             </Link>

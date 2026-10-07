@@ -7,7 +7,7 @@ import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function GovernancePage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
+    <main className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link href="/insights" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />

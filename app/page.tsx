@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
 import { APP_SETUP_URL } from '@/lib/site-links';
+import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
   title: DEFAULT_TITLE,
@@ -10,391 +11,324 @@ export const metadata: Metadata = pageMetadata({
   path: '/',
 });
 
-const entryPaths = [
+const ways = [
   {
-    label: 'TRY',
-    title: 'Reliability Engineer',
-    body: 'Bring a real technical question and experience SyncAI’s evidence-led reasoning before committing to a project.',
-    cta: 'Open the live workspace',
+    name: 'Try it on a real question',
+    body: 'Bring a technical question from your own operation and see how SyncAI reasons about it before you commit to a project.',
+    cta: 'Open the workspace',
     href: APP_SETUP_URL,
     external: true,
   },
   {
-    label: 'ASSESS',
-    title: 'Reliability Intelligence Assessment',
+    name: 'Reliability Intelligence Assessment',
     body: RIA_LEDE,
-    cta: 'Explore the assessment',
+    cta: 'See the assessment',
     href: '/reliability-assessment',
     external: false,
   },
   {
-    label: 'DEPLOY',
-    title: 'Strategic Pilot',
-    body: 'Operationalize a bounded high-value workflow with explicit evidence, approval boundaries, and outcome verification.',
-    cta: 'Discuss a Strategic Pilot',
+    name: 'Strategic Pilot',
+    body: 'Put one high-value workflow into use, with the evidence, the approval limits and the outcome check agreed up front.',
+    cta: 'Talk about a pilot',
     href: '/strategic-pilot',
+    external: false,
+  },
+  {
+    name: 'Team training',
+    body: 'One-day working sessions for planners and supervisors, superintendents and managers, and technicians and operators.',
+    cta: 'See the sessions',
+    href: '/training',
     external: false,
   },
 ];
 
-const decisionPath = [
+const steps = [
   {
-    step: '01',
-    title: 'Ground the question',
-    body: 'Start with approved procedures, asset configuration, work history, condition evidence, and the operating context that governs the decision.',
+    title: 'Start from what you already have',
+    body: 'Approved procedures, asset records, work history and condition data. No system has to be replaced.',
   },
   {
-    step: '02',
-    title: 'Separate fact from hypothesis',
-    body: 'Keep observed evidence, assumptions, competing explanations, and missing information distinct instead of blending them into a confident answer.',
+    title: 'Separate what is known from what is guessed',
+    body: 'Observations, assumptions, competing explanations and missing information stay in separate columns. They are never blended into one confident answer.',
   },
   {
-    step: '03',
-    title: 'Build the decision case',
-    body: 'Structure the technical reasoning, identify what is blocked, and recommend the lowest-regret next action.',
+    title: 'Write the decision case',
+    body: 'The reasoning is laid out, the gaps are named, and SyncAI recommends the next step with the least regret if it turns out to be wrong.',
   },
   {
-    step: '04',
-    title: 'Route human authority',
-    body: 'Approval boundaries stay explicit. Recommendations can be reviewed, escalated, accepted, rejected, or returned for more evidence.',
+    title: 'Send it to a named person',
+    body: 'Someone with authority accepts, rejects, escalates or returns it for more evidence. SyncAI does not act on its own.',
   },
   {
-    step: '05',
-    title: 'Verify the outcome',
-    body: 'Close the loop with the evidence and KPIs that prove whether the intervention worked, then carry that learning forward.',
+    title: 'Check what happened',
+    body: 'Once the work is done, the record shows whether the numbers moved, and that result goes into the next decision.',
   },
 ];
 
-const capabilities = [
-  'Failure investigation and evidence-led diagnosis',
-  'Maintenance strategy and task optimization',
-  'Work prioritization and risk-based decision support',
-  'Reliability analysis across asset history and condition evidence',
-  'Governed recommendations with approval boundaries',
-  'Decision records, traceability, and outcome verification',
+const work = [
+  'Investigating a failure',
+  'Reviewing maintenance tasks and intervals',
+  'Deciding which work comes first',
+  'Reading asset history and condition data',
+  'Recommending actions with approval limits',
+  'Keeping a record of who decided what, and why',
 ];
 
-const enterprisePrinciples = [
+const principles = [
   {
-    title: 'Works with the systems you already run',
-    body: 'SyncAI is designed to sit across the industrial information estate rather than force a rip-and-replace of the CMMS, EAM, ERP, historian, document, and inspection systems that remain systems of record.',
+    title: 'It works beside your systems',
+    body: 'Your CMMS, EAM, ERP, historian and document systems stay the source of truth. SyncAI reads from them and does not write back.',
   },
   {
-    title: 'Human authority is part of the architecture',
-    body: 'Industrial recommendations can affect safety, production, cost, and asset life. Approval, escalation, and accountability are product primitives—not afterthoughts.',
+    title: 'A person always decides',
+    body: 'Industrial recommendations touch safety, production and cost. Approval, escalation and accountability are part of how the product works.',
   },
   {
-    title: 'Evidence before automation',
-    body: 'The platform exposes missing or conflicting evidence, preserves assumptions, and keeps the basis of a recommendation visible to the people accountable for the decision.',
+    title: 'Evidence comes first',
+    body: 'SyncAI shows where the evidence is missing or contradicts itself, keeps the assumptions visible, and lets the accountable person see the basis.',
   },
 ];
 
 const industries = [
-  'Mining & heavy equipment',
-  'Energy & utilities',
-  'Oil & gas',
-  'Manufacturing',
-  'Transportation & fleets',
-  'Infrastructure & facilities',
+  { name: 'Mining and heavy equipment', href: '/ai-for-mining-reliability' },
+  { name: 'Energy and utilities', href: '/industries' },
+  { name: 'Oil and gas', href: '/industries' },
+  { name: 'Manufacturing', href: '/industries' },
+  { name: 'Transportation and fleets', href: '/industries' },
+  { name: 'Infrastructure and facilities', href: '/industries' },
 ];
+
+const linkClass =
+  'font-medium text-cyan-300 underline decoration-cyan-300/40 underline-offset-4 transition-colors hover:text-cyan-200 hover:decoration-cyan-200';
+
+const cardHeading = { fontStretch: '100%' } as const;
 
 export default function Home() {
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
-      <section className="border-b border-white/10">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:gap-16 sm:py-24 lg:min-h-[760px] lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-28">
-          <div>
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
-              Governed industrial intelligence
-            </p>
-            <h1 className="max-w-4xl text-4xl font-semibold leading-[1.15] tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-              Better industrial decisions, grounded in the evidence your operation already has.
+    <main className="bg-ink pt-16 text-bone">
+      {/* Hero */}
+      <section className="border-b border-bone/10">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 pb-20 pt-16 sm:pt-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-20 lg:px-8 lg:pb-28">
+          <div className="lg:pt-6">
+            <h1 className="text-[2.6rem] font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-6xl lg:text-[4.4rem]">
+              Decide with the evidence your operation already has.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-[1.7] text-slate-300 sm:text-xl">
-              SyncAI connects approved knowledge, asset context, work history, and operating evidence so reliability and maintenance teams can investigate failures, prioritize work, and move recommendations through controlled human approval.{' '}
-              <Link href="/company" className="font-semibold text-cyan-300 hover:text-cyan-200">
-                What Sync is — and is not
-              </Link>
-              .
+            <p className="mt-8 max-w-[34rem] text-lg leading-[1.65] text-bone/75 sm:text-xl">
+              SyncAI reads your work orders, asset records and operating data, shows what is proven and what is not, and sends every recommendation to a named person for approval.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
                 href={APP_SETUP_URL}
-                className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
+                className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:bg-cyan-200"
               >
                 Try Reliability Engineer
               </a>
               <Link
                 href="/reliability-assessment"
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.05]"
+                className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
                 Reliability Assessment
               </Link>
             </div>
 
-            <div className="mt-12 grid max-w-2xl gap-4 border-t border-white/10 pt-6 sm:grid-cols-3">
-              <div>
-                <p className="text-sm font-semibold text-white">Evidence-led</p>
-                <p className="mt-1 text-sm text-slate-500">Facts, hypotheses, gaps</p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-white">Human-governed</p>
-                <p className="mt-1 text-sm text-slate-500">Approval stays explicit</p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-white">Operational</p>
-                <p className="mt-1 text-sm text-slate-500">Built around asset work</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl border border-white/10 bg-[#0B151F] shadow-2xl shadow-black/30">
-            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-              <div>
-                <p className="text-sm font-semibold text-white">Reliability Engineer</p>
-                <p className="text-xs text-slate-500">Decision workspace</p>
-              </div>
-              <span className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs font-semibold text-emerald-200">
-                Human approval required
-              </span>
-            </div>
-
-            <div className="space-y-5 p-5 sm:p-6">
-              <div className="rounded-lg border border-white/10 bg-white/[0.025] p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Question</p>
-                <p className="mt-2 text-sm leading-6 text-slate-200">
-                  Seven low-lube-pressure trips in six weeks. Five occurred within 20 minutes of startup. Should we lower the trip setpoint or replace the bearings?
-                </p>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                <div className="rounded-lg border border-white/10 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Established facts</p>
-                  <ul className="mt-3 space-y-2 text-sm leading-5 text-slate-300">
-                    <li>• 7 trips / 6 weeks</li>
-                    <li>• 5 clustered after startup</li>
-                    <li>• Historian scaling conflicts with field calibration</li>
-                  </ul>
-                </div>
-                <div className="rounded-lg border border-white/10 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-300">What is not proven</p>
-                  <ul className="mt-3 space-y-2 text-sm leading-5 text-slate-300">
-                    <li>• Bearing damage</li>
-                    <li>• True low-pressure condition</li>
-                    <li>• Safe basis for a lower trip setpoint</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="rounded-lg border border-cyan-300/20 bg-cyan-300/[0.045] p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-200">Lowest-regret next action</p>
-                <p className="mt-2 text-sm leading-6 text-slate-200">
-                  Do not change the protection setpoint or condemn the bearings yet. Reconcile pressure scaling, capture a controlled startup sample, and complete a governed post-trip inspection before selecting the intervention.
-                </p>
-              </div>
-
-              <div className="flex flex-col justify-between gap-3 border-t border-white/10 pt-4 text-xs text-slate-500 sm:flex-row">
-                <span>Evidence → reasoning → authority → verification</span>
-                <span>Decision basis remains reviewable</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-white/10 bg-[#0A131C]">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Three ways to start</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-              Experience it, establish the baseline, then operationalize what the evidence supports.
-            </h2>
-          </div>
-
-          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
-            {entryPaths.map((path) => (
-              <article key={path.label} className="bg-[#0A131C] p-7 sm:p-8">
-                <p className="font-mono text-xs font-semibold tracking-[0.16em] text-cyan-300">{path.label}</p>
-                <h3 className="mt-5 text-2xl font-semibold text-white">{path.title}</h3>
-                <p className="mt-4 min-h-24 text-sm leading-7 text-slate-400">{path.body}</p>
-                {path.external ? (
-                  <a href={path.href} className="mt-5 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200">
-                    {path.cta} →
-                  </a>
-                ) : (
-                  <Link href={path.href} className="mt-5 inline-flex text-sm font-semibold text-cyan-300 hover:text-cyan-200">
-                    {path.cta} →
-                  </Link>
-                )}
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The operating model</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-              One governed path from operational evidence to controlled action.
-            </h2>
-            <p className="mt-5 text-lg leading-[1.7] text-slate-400">
-              SyncAI is designed around the way high-consequence industrial decisions should be made: show the basis, expose uncertainty, keep authority clear, and verify the outcome.
+            <p className="mt-10 max-w-[34rem] text-sm leading-6 text-bone/55">
+              Not sure what SyncAI is, or isn&apos;t?{' '}
+              <Link href="/company" className={linkClass}>
+                Read what Sync is and is not
+              </Link>
+              .
             </p>
           </div>
 
-          <div className="mt-12 divide-y divide-white/10 border-y border-white/10">
-            {decisionPath.map((item) => (
-              <div key={item.step} className="grid gap-4 py-7 md:grid-cols-[90px_260px_1fr] md:items-start">
-                <span className="font-mono text-sm text-slate-600">{item.step}</span>
-                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                <p className="max-w-3xl text-sm leading-6 text-slate-400">{item.body}</p>
-              </div>
-            ))}
-          </div>
+          {/* The product, shown as the record it produces */}
+          <DecisionRecord />
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-2 lg:px-8">
+      {/* Ways to start */}
+      <section className="border-b border-bone/10 bg-graphite">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
+          <h2 className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+            Start small, and make each step earn the next one.
+          </h2>
+
+          <ul className="mt-14 border-t border-bone/20">
+            {ways.map((way) => (
+              <li
+                key={way.name}
+                className="grid gap-4 border-b border-bone/10 py-8 md:grid-cols-[minmax(0,5fr)_minmax(0,6fr)_minmax(0,2fr)] md:items-baseline md:gap-10"
+              >
+                <h3 className="text-xl font-semibold text-white sm:text-2xl">{way.name}</h3>
+                <p className="max-w-xl text-[0.95rem] leading-7 text-bone/70">{way.body}</p>
+                <p className="md:text-right">
+                  {way.external ? (
+                    <a href={way.href} className={`${linkClass} text-sm`}>
+                      {way.cta}
+                    </a>
+                  ) : (
+                    <Link href={way.href} className={`${linkClass} text-sm`}>
+                      {way.cta}
+                    </Link>
+                  )}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* How a decision moves */}
+      <section className="border-b border-bone/10">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 sm:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 lg:px-8">
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <h2 className="text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+              How a decision moves from evidence to action.
+            </h2>
+            <p className="mt-6 max-w-md text-lg leading-[1.65] text-bone/70">
+              High-stakes industrial decisions should show their basis, admit their uncertainty, keep authority clear and be checked afterwards. This is the path SyncAI follows.
+            </p>
+          </div>
+
+          <ol className="border-t border-bone/20">
+            {steps.map((step, index) => (
+              <li key={step.title} className="grid grid-cols-[2.5rem_1fr] gap-4 border-b border-bone/10 py-8 sm:grid-cols-[3.5rem_1fr]">
+                <span className="font-display text-3xl font-bold leading-none text-cyan-300/80">{index + 1}</span>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">{step.title}</h3>
+                  <p className="mt-3 max-w-xl text-[0.95rem] leading-7 text-bone/70">{step.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Where it starts */}
+      <section className="border-b border-bone/10 bg-graphite">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 sm:py-28 lg:grid-cols-2 lg:gap-24 lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The wedge</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-              Start with a Reliability Engineer that can work like an experienced technical partner.
+            <h2 className="text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+              It starts with reliability, where the hard calls are made.
             </h2>
-            <p className="mt-6 text-lg leading-[1.7] text-slate-400">
-              Reliability is where engineering knowledge, maintenance history, asset risk, work execution, and operating context collide. It is the proving ground for SyncAI’s broader industrial intelligence layer.
+            <p className="mt-6 max-w-lg text-lg leading-[1.65] text-bone/70">
+              Engineering knowledge, maintenance history, asset risk and operating conditions all meet in reliability work. That makes it the right place to prove SyncAI works before it goes any further.
             </p>
-            <a
-              href={APP_SETUP_URL}
-              className="mt-8 inline-flex items-center text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-            >
-              Open the live workspace →
-            </a>
+            <p className="mt-8">
+              <a href={APP_SETUP_URL} className={linkClass}>
+                Open the workspace
+              </a>
+            </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            {capabilities.map((capability) => (
-              <div key={capability} className="min-h-28 rounded-lg border border-white/10 bg-white/[0.02] p-5">
-                <div className="mb-4 h-px w-8 bg-cyan-300/60" />
-                <p className="text-sm font-semibold leading-6 text-slate-200">{capability}</p>
-              </div>
-            ))}
+          <div>
+            <h3 className="text-base font-semibold text-white" style={cardHeading}>
+              Where teams use it
+            </h3>
+            <ul className="mt-4 border-t border-bone/20">
+              {work.map((item) => (
+                <li key={item} className="border-b border-bone/10 py-4 text-[0.95rem] leading-6 text-bone/85">
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Enterprise design principles</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-              AI that fits the control environment of an industrial operator.
-            </h2>
-          </div>
+      {/* Principles */}
+      <section className="border-b border-bone/10">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
+          <h2 className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+            Built to fit an industrial operator&apos;s controls.
+          </h2>
 
-          <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
-            {enterprisePrinciples.map((item) => (
-              <article key={item.title} className="bg-[#081018] p-7 sm:p-8">
+          <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
+            {principles.map((item) => (
+              <article key={item.title} className="border-t border-bone/20 pt-6">
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-slate-400">{item.body}</p>
+                <p className="mt-4 text-[0.95rem] leading-7 text-bone/70">{item.body}</p>
               </article>
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            {['Role-based access', 'Approval workflows', 'Decision traceability', 'Evidence provenance', 'Outcome verification', 'Multi-tenant controls'].map((item) => (
-              <span key={item} className="rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-slate-400">
-                {item}
-              </span>
-            ))}
-          </div>
-          <p className="mt-5 max-w-3xl text-xs leading-5 text-slate-600">
-            Security and deployment capabilities are described by implemented controls and validated configuration. SyncAI does not represent third-party certifications as complete unless they have been formally achieved and are current.{' '}
-            <Link href="/security" className="font-semibold text-slate-400 hover:text-white">
+          <p className="mt-14 max-w-3xl text-sm leading-6 text-bone/50">
+            Security and deployment controls are described as implemented and validated. SyncAI does not claim a third-party certification until it has been formally achieved and is current. See{' '}
+            <Link href="/security" className={linkClass}>
               Security
             </Link>
-            {' · '}
-            <Link href="/architecture" className="font-semibold text-slate-400 hover:text-white">
+            ,{' '}
+            <Link href="/architecture" className={linkClass}>
               Architecture
             </Link>
-            {' · '}
-            <Link href="/insights" className="font-semibold text-slate-400 hover:text-white">
+            ,{' '}
+            <Link href="/insights" className={linkClass}>
               Insights
-            </Link>
-            {' · '}
-            <Link href="/manuals/field-manual" className="font-semibold text-slate-400 hover:text-white">
+            </Link>{' '}
+            and the{' '}
+            <Link href="/manuals/field-manual" className={linkClass}>
               Field Manual
             </Link>
+            .
           </p>
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Where it fits</p>
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-                Built for asset-intensive organizations.
-              </h2>
-              <p className="mt-5 text-base leading-7 text-slate-400">
-                The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions at operating speed.{' '}
-                <Link href="/industries" className="font-semibold text-cyan-300 hover:text-cyan-200">
-                  See the industry beachhead
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2">
-              {industries.map((industry) => {
-                const href =
-                  industry === 'Mining & heavy equipment'
-                    ? '/ai-for-mining-reliability'
-                    : '/industries';
-                return (
-                  <Link
-                    key={industry}
-                    href={href}
-                    className="bg-[#0A131C] px-6 py-7 text-sm font-semibold text-slate-200 hover:bg-[#0B151F]"
-                  >
-                    {industry}
-                  </Link>
-                );
-              })}
-            </div>
+      {/* Industries */}
+      <section className="border-b border-bone/10 bg-graphite">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 sm:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 lg:px-8">
+          <div>
+            <h2 className="text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white">
+              For operations that run on their assets.
+            </h2>
+            <p className="mt-6 max-w-md text-base leading-7 text-bone/70">
+              Most operations have plenty of data. What they lack is a consistent way to turn scattered technical evidence into decisions someone is accountable for.{' '}
+              <Link href="/industries" className={linkClass}>
+                See where we start
+              </Link>
+              .
+            </p>
           </div>
+
+          <ul className="grid border-t border-bone/20 sm:grid-cols-2 sm:gap-x-10">
+            {industries.map((industry) => (
+              <li key={industry.name} className="border-b border-bone/10">
+                <Link
+                  href={industry.href}
+                  className="block py-5 text-lg font-medium text-bone transition-colors hover:text-cyan-300"
+                >
+                  {industry.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
+      {/* Close */}
       <section>
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Choose the right starting point</p>
-              <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
-                Test the intelligence, establish the reliability truth, or move a qualified workflow into production.
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-                SyncAI is designed to reduce the commitment required for the first useful step while keeping evidence, authority, and verification intact.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3">
-              <Link
-                href="/reliability-assessment"
-                className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
-              >
-                Reliability Assessment
-              </Link>
-              <Link
-                href="/strategic-pilot"
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-              >
-                Strategic Pilot
-              </Link>
-            </div>
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 sm:py-32 lg:grid-cols-[1fr_auto] lg:items-end lg:px-8">
+          <div>
+            <h2 className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+              Tell us the decision that keeps coming back.
+            </h2>
+            <p className="mt-6 max-w-xl text-lg leading-[1.65] text-bone/70">
+              We will tell you whether your records can support it, and what a first step would look like.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <Link
+              href="/reliability-assessment"
+              className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:bg-cyan-200"
+            >
+              Reliability Assessment
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
+            >
+              Contact us
+            </Link>
           </div>
         </div>
       </section>

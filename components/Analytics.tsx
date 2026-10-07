@@ -170,7 +170,7 @@ export default function Analytics() {
       </Suspense>
 
       {consent === 'unknown' && (
-        <div className="fixed bottom-4 left-4 right-4 z-[100] mx-auto max-w-3xl rounded-xl border border-white/15 bg-[#0B151F] p-5 shadow-2xl shadow-black/40 sm:p-6">
+        <div className="fixed bottom-4 left-4 right-4 z-[100] mx-auto max-w-3xl rounded-xl border border-white/15 bg-[#17181B] p-5 shadow-2xl shadow-black/40 sm:p-6">
           <div className="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-center">
             <div>
               <p className="text-sm font-semibold text-white">Analytics choice</p>

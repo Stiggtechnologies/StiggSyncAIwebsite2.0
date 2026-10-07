@@ -7,7 +7,7 @@ type Props = {
 };
 
 const inputClass =
-  'w-full rounded-md border border-white/10 bg-[#081018] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-600 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
+  'w-full rounded-md border border-white/10 bg-[#111214] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-600 focus:border-cyan-300/50 focus:ring-1 focus:ring-cyan-300/30';
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (

@@ -60,7 +60,7 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#081018] pt-16 text-slate-100">
+    <main className="min-h-screen bg-[#111214] pt-16 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Privacy</p>

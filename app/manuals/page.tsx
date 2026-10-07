@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ManualsPage() {
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Manuals</p>
@@ -27,7 +27,7 @@ export default function ManualsPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
           <div className="divide-y divide-white/10 border-y border-white/10">
             {manuals.map((manual) => (
@@ -61,7 +61,7 @@ export default function ManualsPage() {
 
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#0B151F] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="grid gap-8 rounded-xl border border-white/10 bg-[#17181B] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Related reading</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white">
