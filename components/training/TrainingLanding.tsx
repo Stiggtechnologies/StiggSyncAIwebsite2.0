@@ -139,6 +139,13 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
         </div>
       </section>
 
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Your facilitator</p>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-400">{offer.bio}</p>
+        </div>
+      </section>
+
       <section id="request" className="scroll-mt-24 border-b border-white/10 bg-[#0A131C]">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>

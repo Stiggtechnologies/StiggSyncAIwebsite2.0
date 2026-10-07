@@ -36,6 +36,7 @@ export type TrainingOffer = {
   priceNote?: string;
   included: string;
   nextStep: string;
+  bio: string;
 };
 
 export const TRAINING_CONTACT_EMAIL = 'orville@syncai.ca';
@@ -97,6 +98,7 @@ export const trainingOffers: TrainingOffer[] = [
     ],
     included: 'Included: facilitator, take-home templates, and a short follow-up call 30 days later. Travel for in-house sessions is billed at cost.',
     nextStep: 'A 20-minute call to confirm your group, your CMMS and your preferred dates.',
+    bio: 'Orville Davis, MMP, has more than 25 years in mining, oil sands and heavy-equipment maintenance. He started as a heavy-duty equipment mechanic, worked as a maintenance supervisor and planner, and then moved into reliability engineering. At Suncor\u2019s mining operations he led reliability engineering, then maintenance and reliability for the autonomous haulage fleet. He holds a Postgraduate Diploma in Maintenance and Reliability Engineering Management (Monash University), a Red Seal in heavy-duty equipment, and the PEMAC Maintenance Management Professional designation. He founded SyncAI after seeing dashboards report confident numbers the data could not support.',
   },
   {
     slug: 'superintendents-managers',
@@ -142,6 +144,7 @@ export const trainingOffers: TrainingOffer[] = [
       'Site package: the planners and supervisors working session, one technicians and operators crew session and this briefing, delivered in one visit for $14,500 CAD plus travel at cost. Optional follow-on: a reliability diagnostic of your work orders (6–8 weeks).',
     included: 'Included: facilitator and take-home templates. Travel for in-house sessions is billed at cost.',
     nextStep: 'A 20-minute call to confirm your group and dates.',
+    bio: 'Orville Davis, MMP, has more than 25 years in mining, oil sands and heavy-equipment maintenance. He started as a heavy-duty equipment mechanic, worked as a maintenance supervisor and planner, and then moved into reliability engineering. At Suncor\u2019s mining operations he led reliability engineering, then maintenance and reliability for the autonomous haulage fleet. He holds a Postgraduate Diploma in Maintenance and Reliability Engineering Management (Monash University), a Red Seal in heavy-duty equipment, and the PEMAC Maintenance Management Professional designation.',
   },
   {
     slug: 'technicians-operators',
@@ -187,6 +190,7 @@ export const trainingOffers: TrainingOffer[] = [
     ],
     included: 'Included: facilitator and take-home checklists. Travel for in-house sessions is billed at cost.',
     nextStep: 'A 20-minute call to confirm your crews, shifts and dates.',
+    bio: 'Orville Davis, MMP, started as an apprentice and heavy-duty mechanic and has more than 25 years in mining, oil sands and heavy-equipment maintenance, including as a maintenance supervisor and planner. He later led reliability engineering at Suncor\u2019s mining operations. He holds a Red Seal in heavy-duty equipment and the PEMAC Maintenance Management Professional designation.',
   },
 ];
 
