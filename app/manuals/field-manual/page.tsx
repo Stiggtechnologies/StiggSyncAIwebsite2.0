@@ -10,7 +10,7 @@ const spineLabel = spineChapters.map((chapter) => chapter.spine).join(' → ');
 
 export default function FieldManualPage() {
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <FieldManualJsonLd />
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
@@ -37,7 +37,7 @@ export default function FieldManualPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Contents</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-white">Decision Case spine</h2>
@@ -62,7 +62,7 @@ export default function FieldManualPage() {
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-400">
             These rules apply to every chapter. They are part of the contents, beside the spine.
           </p>
-          <div className="mt-6 rounded-xl border border-white/10 bg-[#081018] p-6 sm:p-8">
+          <div className="mt-6 rounded-xl border border-white/10 bg-[#111214] p-6 sm:p-8">
             <Link
               href={fieldManualPath(honestyChapter.slug)}
               className="text-lg font-semibold text-white hover:text-cyan-200"

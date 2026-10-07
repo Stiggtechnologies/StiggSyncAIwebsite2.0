@@ -13,7 +13,7 @@ export default function ManualChapterPage({ slug }: { slug: string }) {
   const next = index >= 0 ? fieldManual.chapters[index + 1] : undefined;
 
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <ManualChapterJsonLd slug={slug} />
       <article className="border-b border-white/10">
         <div className="mx-auto max-w-3xl px-6 py-24 lg:px-8">
@@ -38,7 +38,7 @@ export default function ManualChapterPage({ slug }: { slug: string }) {
         </div>
       </article>
 
-      <nav className="border-b border-white/10 bg-[#0A131C]">
+      <nav className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto grid max-w-3xl gap-6 px-6 py-12 sm:grid-cols-2 lg:px-8">
           {previous ? (
             <Link href={fieldManualPath(previous.slug)} className="group">

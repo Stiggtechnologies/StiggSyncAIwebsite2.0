@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   darkMode: ['class'],
@@ -9,6 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-display)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-mono)', ...defaultTheme.fontFamily.mono],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -20,6 +26,25 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        // Warm graphite surfaces, bone text, one signal colour.
+        ink: '#111214',
+        graphite: '#17181B',
+        bone: '#ECE7DD',
+        signal: '#FF6B2C',
+        // The legacy `cyan` scale is remapped to brass so every page shares one accent.
+        cyan: {
+          50: '#FBF7EF',
+          100: '#F4ECDC',
+          200: '#E8D7B6',
+          300: '#D6B885',
+          400: '#C29B5C',
+          500: '#A9803F',
+          600: '#8A6532',
+          700: '#6C4E2A',
+          800: '#4F3A22',
+          900: '#35271A',
+          950: '#1E160F',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

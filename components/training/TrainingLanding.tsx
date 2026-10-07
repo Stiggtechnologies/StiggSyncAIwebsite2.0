@@ -12,10 +12,10 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
   const others = trainingOffers.filter((o) => o.slug !== offer.slug);
 
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{offer.audienceLabel}</p>
+          <p className="text-sm font-semibold text-cyan-300">{offer.audienceLabel}</p>
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             {offer.title}
           </h1>
@@ -38,10 +38,10 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-2 lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Who it is for</p>
+            <p className="text-sm font-semibold text-cyan-300">Who it is for</p>
             <div className="mt-5 space-y-4">
               {offer.whoFor.map((line) => (
                 <p key={line} className="text-base leading-7 text-slate-400">
@@ -51,7 +51,7 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
             </div>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{offer.formatLabel}</p>
+            <p className="text-sm font-semibold text-cyan-300">{offer.formatLabel}</p>
             <ul className="mt-5 grid gap-3">
               {offer.leaveWith.map((item) => (
                 <li key={item} className="rounded-lg border border-white/10 bg-white/[0.02] p-5 text-sm leading-6 text-slate-200">
@@ -68,7 +68,7 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
 
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{offer.agendaTitle}</p>
+          <p className="text-sm font-semibold text-cyan-300">{offer.agendaTitle}</p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
             {offer.agendaIntro}
           </h2>
@@ -95,9 +95,9 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How it works</p>
+          <p className="text-sm font-semibold text-cyan-300">How it works</p>
           <ul className="mt-6 grid gap-3 md:grid-cols-2">
             {offer.howItWorks.map((item) => (
               <li key={item} className="rounded-lg border border-white/10 bg-white/[0.02] p-5 text-sm leading-6 text-slate-300">
@@ -110,7 +110,7 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
 
       <section id="pricing" className="border-b border-white/10 scroll-mt-24">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Format and price</p>
+          <p className="text-sm font-semibold text-cyan-300">Format and price</p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-400">{FOUNDING_CLIENT_NOTE}</p>
           <div className="mt-8 overflow-x-auto rounded-xl border border-white/10">
             <table className="w-full min-w-[640px] text-left text-sm">
@@ -141,15 +141,15 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
 
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Your facilitator</p>
+          <p className="text-sm font-semibold text-cyan-300">Your facilitator</p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-400">{offer.bio}</p>
         </div>
       </section>
 
-      <section id="request" className="scroll-mt-24 border-b border-white/10 bg-[#0A131C]">
+      <section id="request" className="scroll-mt-24 border-b border-white/10 bg-[#151618]">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Next step</p>
+            <p className="text-sm font-semibold text-cyan-300">Next step</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
               {offer.nextStep}
             </h2>
@@ -161,7 +161,7 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
               .
             </p>
           </div>
-          <div className="rounded-xl border border-white/10 bg-[#0B151F] p-6 sm:p-8">
+          <div className="rounded-xl border border-white/10 bg-[#17181B] p-6 sm:p-8">
             <TrainingInquiryForm offerTitle={offer.title} />
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function TrainingLanding({ offer }: { offer: TrainingOffer }) {
 
       <section>
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Other sessions</p>
+          <p className="text-sm font-semibold text-cyan-300">Other sessions</p>
           <div className="mt-5 flex flex-wrap gap-3">
             {others.map((o) => (
               <Link

@@ -113,7 +113,7 @@ export default function AnimatedBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ background: '#0B0F14' }}
+      style={{ background: '#101113' }}
     />
   );
 }

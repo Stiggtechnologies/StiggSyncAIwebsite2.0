@@ -9,10 +9,10 @@ const startingFrom: Record<string, string> = {
 
 export default function TrainingHubPage() {
   return (
-    <main className="bg-[#081018] pt-20 text-slate-100">
+    <main className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Reliability training</p>
+          <p className="text-sm font-semibold text-cyan-300">Reliability training</p>
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             Reliability training for every role on site.
           </h1>
@@ -25,12 +25,12 @@ export default function TrainingHubPage() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0A131C]">
+      <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-3">
             {trainingOffers.map((offer) => (
-              <article key={offer.slug} className="flex flex-col rounded-xl border border-white/10 bg-[#0B151F] p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">{offer.audienceLabel}</p>
+              <article key={offer.slug} className="flex flex-col rounded-xl border border-white/10 bg-[#17181B] p-7">
+                <p className="text-xs font-semibold text-cyan-300">{offer.audienceLabel}</p>
                 <h2 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-white">{offer.title}</h2>
                 <p className="mt-4 flex-1 text-sm leading-7 text-slate-400">{offer.lede}</p>
                 <p className="mt-5 text-sm font-semibold text-slate-200">{startingFrom[offer.slug]}</p>

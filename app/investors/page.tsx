@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function InvestorsPage() {
   return (
-    <main className="min-h-screen bg-[#0B0F14]">
+    <main className="min-h-screen bg-[#101113]">
       <section className="relative pt-32 pb-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <motion.div

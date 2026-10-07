@@ -14,7 +14,7 @@ export default function OpenGraphImage() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: '#081018',
+          background: '#111214',
           padding: '72px 80px',
           fontFamily: 'Georgia, "Times New Roman", serif',
         }}

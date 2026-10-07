@@ -20,7 +20,7 @@ export default function ResultsDisplay({ assessment, score, roi }: ResultsDispla
         <p className="mt-2 text-slate-500">{assessment.company}</p>
       </div>
 
-      <section className="mb-6 rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-8">
+      <section className="mb-6 rounded-xl border border-white/10 bg-[#17181B] p-7 sm:p-8">
         <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
           <div>
             <p className="text-sm text-slate-500">Readiness score</p>
@@ -62,7 +62,7 @@ export default function ResultsDisplay({ assessment, score, roi }: ResultsDispla
         </div>
       </section>
 
-      <section className="rounded-xl border border-white/10 bg-[#0B151F] p-7 sm:p-8">
+      <section className="rounded-xl border border-white/10 bg-[#17181B] p-7 sm:p-8">
         <h2 className="text-2xl font-semibold text-white">What should happen next</h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-400">
           Do not treat the scenario range as a business case. Select one material use case, establish its real baseline, define the evidence and approval boundary, and verify the measured outcome during a controlled pilot.
@@ -99,7 +99,7 @@ function Score({ label, value, max }: { label: string; value: number; max: numbe
 
 function Scenario({ label, low, high }: { label: string; low: number; high: number }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-[#081018] p-4">
+    <div className="rounded-lg border border-white/10 bg-[#111214] p-4">
       <p className="text-xs font-medium text-slate-500">{label}</p>
       <p className="mt-2 text-sm font-semibold text-slate-200">
         {formatFullCurrency(low)} – {formatFullCurrency(high)}

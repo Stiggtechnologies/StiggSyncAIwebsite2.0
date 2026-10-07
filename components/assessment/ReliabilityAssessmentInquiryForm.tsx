@@ -67,7 +67,7 @@ export default function ReliabilityAssessmentInquiryForm() {
     );
   }
 
-  const inputClass = 'mt-2 w-full rounded-md border border-white/15 bg-[#081018] px-4 py-3 text-white outline-none transition focus:border-cyan-300';
+  const inputClass = 'mt-2 w-full rounded-md border border-white/15 bg-[#111214] px-4 py-3 text-white outline-none transition focus:border-cyan-300';
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid gap-5 sm:grid-cols-2">
