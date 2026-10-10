@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 import { buildContactEmailDraft, CONTACT_EMAIL, type ContactDraft } from '@/lib/contact-email';
 
@@ -49,9 +49,9 @@ export default function ContactPage() {
                 Strategic pilot intake
               </Link>
               <a
-                href={APP_WORKSPACE_URL}
+                href={APP_CUSTOMER_SIGN_IN_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md px-2 py-3 text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-              >Existing customers: workspace →</a>
+              >Existing customers: sign in →</a>
             </div>
           </div>
 

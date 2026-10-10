@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { APP_WORKSPACE_URL } from "@/lib/site-links";
+import { APP_PUBLIC_DEMO_URL } from "@/lib/site-links";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Public Decision Case Demo Guide",
@@ -34,7 +34,7 @@ export default function DemoResourcePage() {
           action fit together before discussing SyncAI for your team.
         </p>
         <a
-          href={APP_WORKSPACE_URL}
+          href={APP_PUBLIC_DEMO_URL}
           className="mt-9 inline-flex min-h-[48px] items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
         >
           Open the public demo →

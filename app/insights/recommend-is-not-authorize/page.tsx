@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 const article = getInsightArticle('recommend-is-not-authorize');
 
@@ -301,9 +301,9 @@ export default function RecommendIsNotAuthorizePage() {
                   Read Field Manual {fieldManual.version}
                 </Link>
                 <a
-                  href={APP_WORKSPACE_URL}
+                  href={APP_CUSTOMER_SIGN_IN_URL}
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
-                >Customer workspace</a>
+                >Customer sign-in</a>
                 <Link
                   href="/reliability-assessment"
                   className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"

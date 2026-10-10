@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { ScoreResult, ROIResult, AssessmentData } from '@/lib/assessment-types';
 import { formatFullCurrency } from '@/lib/assessment-scoring';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { ASSESSMENT_CONTACT_URL } from '@/lib/site-links';
 
 interface ResultsDisplayProps {
   assessment: AssessmentData;
@@ -75,10 +75,10 @@ export default function ResultsDisplay({ assessment, score, roi }: ResultsDispla
             Define a pilot
           </Link>
           <a
-            href={APP_SETUP_URL}
+            href={ASSESSMENT_CONTACT_URL}
             className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
           >
-            Try Reliability Engineer
+            Discuss an assessment
           </a>
         </div>
       </section>

@@ -37,6 +37,10 @@ export const metadata: Metadata = {
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
+  icons: {
+    icon: { url: '/brand/syncai-wordmark.png', type: 'image/png' },
+    shortcut: '/brand/syncai-wordmark.png',
+  },
   openGraph: {
     title: DEFAULT_TITLE,
     description:

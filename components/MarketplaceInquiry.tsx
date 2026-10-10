@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 export default function MarketplaceInquiry({ channel }: { channel: string }) {
   return <main id="main-content" tabIndex={-1} className="bg-ink pt-16 text-bone"><section className="border-b border-bone/10"><div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
     <p className="font-mono text-sm uppercase tracking-widest text-cyan-300">Procurement · {channel}</p>
     <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">Bring SyncAI into your purchasing process.</h1>
     <p className="mt-7 max-w-2xl text-lg leading-8 text-bone/75">SyncAI is available to purchase and use. Talk with us about platform access, your operating workflows, and the procurement route your organization requires.</p>
-    <div className="mt-10 flex flex-col gap-3 sm:flex-row"><Link href="/contact" className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-6 py-3 font-semibold text-ink">Discuss purchasing SyncAI</Link><a href={APP_WORKSPACE_URL} className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-6 py-3 font-semibold">Customer workspace</a></div>
+    <div className="mt-10 flex flex-col gap-3 sm:flex-row"><Link href="/contact" className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-6 py-3 font-semibold text-ink">Discuss purchasing SyncAI</Link><a href={APP_CUSTOMER_SIGN_IN_URL} className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-6 py-3 font-semibold">Customer sign-in</a></div>
   </div></section><section><div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 lg:px-8"><div><h2 className="text-3xl font-bold">Confirm the route before you buy.</h2><p className="mt-5 leading-7 text-bone/75">We will confirm current {channel} listing availability, eligible commercial terms, and any required setup before you proceed. Marketplace credits, committed-spend eligibility, packaged integrations, and installation timelines depend on the verified offer and your environment.</p></div><div><h2 className="text-3xl font-bold">Plan adoption around your team.</h2><p className="mt-5 leading-7 text-bone/75">Agree platform scope, data connections, access requirements, and onboarding with us. Optional assessments, focused pilots, and training help your team put evidence-led reliability decisions into practice.</p><Link href="/security" className="mt-6 inline-block font-semibold text-cyan-300">Review security and deployment requirements →</Link></div></div></section></main>;
 }
