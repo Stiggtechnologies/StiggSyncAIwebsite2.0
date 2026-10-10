@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from '@/lib/contact-email';
+
 /**
  * Reliability training offers. Content mirrors the offer documents; prices are CAD.
  * No savings or outcome claims: value depends on the customer's data and actions.
@@ -39,7 +41,7 @@ export type TrainingOffer = {
   bio: string;
 };
 
-export const TRAINING_CONTACT_EMAIL = 'oadavis@syncai.ca';
+export const TRAINING_CONTACT_EMAIL = CONTACT_EMAIL;
 
 export const FOUNDING_CLIENT_NOTE =
   'Prices are in Canadian dollars. The first three clients receive founding-client pricing of 25% off, in exchange for before-and-after results and a short testimonial.';
