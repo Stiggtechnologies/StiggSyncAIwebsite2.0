@@ -12,7 +12,7 @@ const navItems = [
   { label: 'Assessment', href: '/reliability-assessment' },
   { label: 'Training', href: '/training' },
   { label: 'Industries', href: '/industries' },
-  { label: 'Insights', href: '/insights' },
+  { label: 'Resources', href: '/resources' },
   { label: 'Company', href: '/company' },
 ];
 

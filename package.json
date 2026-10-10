@@ -7,12 +7,13 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npm run test:contact && next build",
+    "build": "npm run test:contact && npm run test:resources && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit && node scripts/check-insights-seo.mjs",
     "check:insights-seo": "node scripts/check-insights-seo.mjs",
-    "test:contact": "node qa/contact-regression.cjs"
+    "test:contact": "node qa/contact-regression.cjs",
+    "test:resources": "node qa/resource-regression.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
