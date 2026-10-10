@@ -16,7 +16,7 @@ const fs = require('fs');
    const data=await page.evaluate(()=>({h1:document.querySelectorAll('h1').length,overflow:document.documentElement.scrollWidth>innerWidth,canonical:document.querySelector('link[rel=canonical]')?.href,links:[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')),badButtons:[...document.querySelectorAll('a button')].length}));
    data.links.forEach(l=>{if(l.startsWith('/')&&!l.startsWith('//'))links.add(l.split('#')[0]);});
    delete data.links;results.push({width,route,status:response.status(),...data});
-   if(width===390&&['/','/platform','/contact','/industries','/microsoft','/training'].includes(route))await page.screenshot({path:`../qa-evidence/mobile-${route==='/'?'home':route.slice(1)}.png`,fullPage:true});
+   if([390,1440].includes(width)&&['/','/platform','/contact','/industries','/microsoft','/training'].includes(route))await page.screenshot({path:`../qa-evidence/${width===390?'mobile':'desktop'}-${route==='/'?'home':route.slice(1)}.png`,fullPage:true});
   }
  }
  await page.setViewport({width:390,height:844});await page.goto('http://127.0.0.1:3100');await page.click('button[aria-controls="mobile-navigation"]');const menuOpen=await page.$('#mobile-navigation')!==null;await page.keyboard.press('Escape');const menuClosed=await page.$('#mobile-navigation')===null;

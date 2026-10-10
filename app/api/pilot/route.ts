@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
     }
 
     const resendKey = process.env.RESEND_API_KEY;
-    const internalRecipient = process.env.PILOT_INTAKE_EMAIL || 'info@syncai.ca';
+    const internalRecipient = process.env.PILOT_INTAKE_EMAIL || 'oadavis@syncai.ca';
 
     if (resendKey) {
       try {

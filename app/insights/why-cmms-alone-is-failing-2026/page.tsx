@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Download } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function WhyCMMSIsFailingPage() {
@@ -31,20 +31,6 @@ export default function WhyCMMSIsFailingPage() {
             </p>
           </header>
 
-          <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 mb-12">
-            <h3 className="text-xl font-bold text-white mb-4">Download Full Analysis</h3>
-            <p className="text-gray-400 mb-6">
-              Longer-form notes on CMMS limits, downtime economics, and why a governed layer sits above the system of record. This PDF is analysis, not a customer case study.
-            </p>
-            <a
-              href="/pdfs/why-cmms-alone-is-failing-2026.pdf"
-              download
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              Download PDF
-            </a>
-          </div>
 
           <div className="text-gray-300 space-y-6">
             <p>

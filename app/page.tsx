@@ -212,7 +212,7 @@ export default function Home() {
               It starts with reliability, where the hard calls are made.
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-[1.65] text-bone/70">
-              Engineering knowledge, maintenance history, asset risk and operating conditions all meet in reliability work. SyncAI helps your team carry that context from investigation to an accountable next action.
+              SyncAI brings specialist AI workflows into a shared platform. Reliability engineers investigate failures and review strategy; planners compare work priorities; supervisors approve the next action. Optional assessments, pilots, and training help your team adopt that process.
             </p>
             <p className="mt-8">
               <a href={APP_WORKSPACE_URL} className={linkClass}>
@@ -223,7 +223,7 @@ export default function Home() {
 
           <div>
             <h3 className="text-base font-semibold text-white" style={cardHeading}>
-              Where teams use it
+              Specialist workflows for your team
             </h3>
             <ul className="mt-4 border-t border-bone/20">
               {work.map((item) => (

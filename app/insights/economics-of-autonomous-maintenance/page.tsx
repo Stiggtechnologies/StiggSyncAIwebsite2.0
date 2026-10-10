@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Download } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
 
 export default function EconomicsPage() {
@@ -31,20 +31,6 @@ export default function EconomicsPage() {
             </p>
           </header>
 
-          <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 mb-12">
-            <h3 className="text-xl font-bold text-white mb-4">Download Full Analysis</h3>
-            <p className="text-gray-400 mb-6">
-              Complete ROI framework with cost-benefit models and payback calculations.
-            </p>
-            <a
-              href="/pdfs/economics-of-autonomous-maintenance.pdf"
-              download
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              Download PDF
-            </a>
-          </div>
 
           <div className="text-gray-300 space-y-6">
             <p className="text-lg">
@@ -87,9 +73,6 @@ export default function EconomicsPage() {
               </ul>
             </div>
 
-            <p className="text-lg italic text-gray-400">
-              The full whitepaper includes detailed financial models, sensitivity analysis, and implementation cost breakdowns for organizations at different scales.
-            </p>
           </div>
           <InsightNextSteps slug="economics-of-autonomous-maintenance" />
         </motion.article>

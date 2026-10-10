@@ -7,7 +7,14 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   async redirects() {
-    return insightRedirects;
+    return [
+      ...insightRedirects,
+      ...['economics-of-autonomous-maintenance', 'governance-in-industrial-ai', 'why-cmms-alone-is-failing-2026'].map((slug) => ({
+        source: `/pdfs/${slug}.pdf`,
+        destination: `/insights/${slug}`,
+        permanent: true,
+      })),
+    ];
   },
   images: { unoptimized: true },
   poweredByHeader: false,

@@ -16,7 +16,7 @@ const layers = [
   {
     number: '03',
     title: 'Industrial intelligence',
-    body: 'Domain workflows combine deterministic analysis with AI reasoning to investigate, compare options, and build a reviewable technical recommendation.',
+    body: 'Specialist agent workflows combine deterministic analysis with AI reasoning for failure investigation, maintenance strategy, and work prioritization. Reliability engineers and planners review the recommendation; a named approver controls the next action.',
     details: ['Reliability analysis', 'Decision-case workflows', 'Domain-specific reasoning'],
   },
   {

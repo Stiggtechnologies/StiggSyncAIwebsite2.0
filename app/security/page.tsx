@@ -28,7 +28,7 @@ const implementedControls = [
   },
   {
     title: 'Role-aware access',
-    body: 'Access is scoped by role and the information boundary agreed for the workspace. Least privilege is the design intent. Enterprise SSO is a later product step, not a current capability.',
+    body: 'Access is scoped by role and the information boundary agreed for the workspace. Least privilege is the design intent. Discuss required identity-provider and access controls with us before purchasing.',
   },
   {
     title: 'Evidence before automation',
@@ -36,14 +36,14 @@ const implementedControls = [
   },
 ];
 
-const notClaimed = [
+const deploymentRequirements = [
   {
-    title: 'Enterprise SSO',
-    body: 'Identity-provider SSO is a later product step. It is not a shipping capability on this site.',
+    title: 'Identity and access',
+    body: 'Tell us which identity provider, SSO policy, and approval roles your organization requires. We confirm the supported configuration and any implementation work before you proceed.',
   },
   {
-    title: 'Packaged on-prem',
-    body: 'There is no packaged on-premise product to order from this page. Deployment and data-handling requirements are defined during security and data discovery.',
+    title: 'Hosting and data residency',
+    body: 'Agree hosting, data residency, and data-handling requirements during security discovery. Any private-cloud or on-premise requirement needs an agreed deployment scope before purchase.',
   },
   {
     title: 'Third-party certifications',
@@ -132,7 +132,7 @@ export default function SecurityPage() {
           </div>
 
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
-            {notClaimed.map((item) => (
+            {deploymentRequirements.map((item) => (
               <article key={item.title} className="bg-[#151618] p-7 sm:p-8">
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-400">{item.body}</p>
