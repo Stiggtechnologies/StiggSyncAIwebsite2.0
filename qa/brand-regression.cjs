@@ -29,9 +29,25 @@ assert.equal(light.replace("#FEFEFE", "#1E2327"), dark);
 assert(!/<text|<image|href=|<script/.test(light + dark + icon));
 const glyphs = [...light.matchAll(/<path d="([^"]+)"/g)].map((x) => x[1]);
 assert.equal(glyphs.length, 6);
+assert(
+  glyphs.slice(0, 4).every((p) => p.includes("C")),
+  "Curved lettering must have Bezier outlines",
+);
+assert(!glyphs[4].includes("C"), "A diagonals must be straight");
+assert.equal(
+  (glyphs[4].match(/[ML]/g) || []).length,
+  7,
+  "A must have seven deliberate vertices",
+);
 assert(icon.includes(glyphs[4]));
 const brass = light.match(/<path fill="#B4935D" d="([^"]+)"/)[1];
 assert(icon.includes(brass));
+assert(!brass.includes("C"));
+assert.equal(
+  (brass.match(/[MLHV]/g) || []).length,
+  4,
+  "Brass inset must be a quadrilateral",
+);
 for (const n of [16, 32, 48, 180, 192, 512]) {
   const b = fs.readFileSync(path.join(brand, `syncai-icon-${n}.png`));
   assert.equal(b.readUInt32BE(16), n);
