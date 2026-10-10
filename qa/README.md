@@ -33,3 +33,9 @@ Main and existing feature-PR commits have Vercel deployment checks for stiggsync
 ## Production hydration regression check
 
 The current browser harness fails on any page error, verifies semantic skip targets, and records the production build ID before and after the run. `node qa/journey-check.cjs` checks keyboard skip focus, a mobile platform-to-purchasing journey, necessary-only consent persistence, all three retired PDF redirects, and empty-form blocking without sending a lead. `node qa/nojs-check.cjs` verifies that the platform heading and main content remain visible with JavaScript disabled. Historical failed/interrupted candidates are documented in RELEASE-REVIEW.md; they must not be presented as passing tests.
+
+## Contact email handoff repair (2026-10-10 follow-up)
+
+The production provider key was absent, so the public contact page now uses an explicit direct-email handoff. Optional fields only prepare a local draft; Open email app opens a mailto URL and the visitor must send from their email app. Copy email draft provides a fallback. No public contact form calls /api/contact or claims sent/delivered. Pilot and assessment remain separate intake forms; their production storage and notifications are still unverified.
+
+Run `node qa/contact-regression.cjs` for missing-provider and draft encoding/error-claim regression checks, then `node qa/contact-browser-check.cjs` against the local production build. Set `QA_BASE_URL=https://syncai.ca` for hosted validation. Browser tests inspect but never click mailto links, mock clipboard writes, abort any POST, verify 20 route/viewport cases and a JavaScript-disabled usable fallback. Policy wording proposals are in POLICY-REVIEW-DRAFT.md and are not published policy changes.

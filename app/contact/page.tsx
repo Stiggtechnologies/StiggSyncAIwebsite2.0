@@ -4,57 +4,27 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
-type ContactForm = {
-  name: string;
-  email: string;
-  company: string;
-  message: string;
-};
+import { buildContactEmailDraft, CONTACT_EMAIL, type ContactDraft } from '@/lib/contact-email';
 
-const initialForm: ContactForm = {
-  name: '',
-  email: '',
-  company: '',
-  message: '',
-};
+const initialDraft: ContactDraft = { name: '', email: '', company: '', message: '' };
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState<ContactForm>(initialForm);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  const [draft, setDraft] = useState<ContactDraft>(initialDraft);
+  const [copyStatus, setCopyStatus] = useState('');
+  const emailDraft = buildContactEmailDraft(draft);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
-    setFormData((current) => ({ ...current, [name]: value }));
+    setDraft((current) => ({ ...current, [name]: value }));
+    setCopyStatus('');
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsSubmitting(true);
-    setError('');
-
+  const copyDraft = async () => {
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      const payload = await response.json().catch(() => null);
-      if (!response.ok || !payload?.success) {
-        throw new Error(payload?.error || 'We could not send your message.');
-      }
-
-      setIsSubmitted(true);
-    } catch (submissionError) {
-      setError(
-        submissionError instanceof Error
-          ? submissionError.message
-          : 'We could not send your message. Please try again.',
-      );
-    } finally {
-      setIsSubmitting(false);
+      await navigator.clipboard.writeText(emailDraft.text);
+      setCopyStatus('Draft copied. Paste it into your email app and send it to oadavis@syncai.ca.');
+    } catch {
+      setCopyStatus('Copy is unavailable. Copy your details manually and email oadavis@syncai.ca.');
     }
   };
 
@@ -68,7 +38,7 @@ export default function ContactPage() {
               Put SyncAI to work for your team.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-[1.7] text-slate-400">
-              Use this form to discuss purchasing SyncAI, arrange a product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
+              Email us to discuss purchasing SyncAI, arrange a product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
             </p>
             <p className="mt-6 text-sm leading-7 text-slate-300">You can also contact <a href="mailto:oadavis@syncai.ca" className="text-cyan-300 underline">oadavis@syncai.ca</a> or <a href="tel:+17802152887" className="text-cyan-300 underline">780-215-2887</a>.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
@@ -86,62 +56,44 @@ export default function ContactPage() {
           </div>
 
           <div className="rounded-xl border border-white/10 bg-[#17181B] p-6 sm:p-8">
-            {isSubmitted ? (
-              <div className="py-10" role="status" aria-live="polite">
-                <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
-                  ✓
-                </div>
-                <h2 className="text-2xl font-semibold text-white">Message sent</h2>
-                <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Your message was delivered to the SyncAI team using the email address you provided for reply.
+            <div className="space-y-5">
+              <div>
+                <h2 className="text-2xl font-semibold text-white">Start a conversation by email</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="break-all text-cyan-300 underline">{CONTACT_EMAIL}</a>
+                </p>
+                <p id="email-handoff-help" className="mt-3 text-sm leading-6 text-slate-400">
+                  Open your email app, review your message, and send it there. This page does not send or submit messages.
                 </p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <p className="text-sm leading-6 text-slate-400">Please include business contact details only. Do not send confidential operational data. See our <Link href="/privacy" className="text-cyan-300 underline">privacy policy</Link>.</p>
+              <noscript><p className="text-sm leading-6 text-slate-300">Draft preparation needs JavaScript. Email oadavis@syncai.ca directly and enter your message in your email app.</p></noscript>
+              <fieldset className="space-y-5" data-clarity-mask="true">
+                <legend className="mb-3 text-sm font-semibold text-slate-300">Draft details (optional)</legend>
+                <p className="text-sm leading-6 text-slate-400">These fields prepare your email locally while you edit. Please include business contact details only, without confidential operational data. See our <Link href="/privacy" className="text-cyan-300 underline">privacy policy</Link>.</p>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Name">
-                    <input className={inputClass} name="name" value={formData.name} onChange={handleChange} required />
+                    <input className={inputClass} name="name" autoComplete="name" maxLength={160} value={draft.name} onChange={handleChange} />
                   </Field>
                   <Field label="Work email">
-                    <input
-                      className={inputClass}
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
+                    <input className={inputClass} type="email" name="email" autoComplete="email" maxLength={254} value={draft.email} onChange={handleChange} />
                   </Field>
                 </div>
                 <Field label="Company">
-                  <input className={inputClass} name="company" value={formData.company} onChange={handleChange} required />
+                  <input className={inputClass} name="company" autoComplete="organization" maxLength={180} value={draft.company} onChange={handleChange} />
                 </Field>
                 <Field label="Message">
-                  <textarea
-                    className={`${inputClass} min-h-40 resize-y`}
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
+                  <textarea className={`${inputClass} min-h-40 resize-y`} name="message" maxLength={3000} value={draft.message} onChange={handleChange} />
                 </Field>
-
-                {error ? (
-                  <div role="alert" className="rounded-md border border-red-300/20 bg-red-300/10 px-4 py-3 text-sm text-red-200">
-                    {error}
-                  </div>
-                ) : null}
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  {isSubmitting ? 'Sending…' : 'Send message'}
-                </button>
-              </form>
-            )}
+              </fieldset>
+              <a
+                href={emailDraft.href}
+                aria-describedby="email-handoff-help"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
+              >Open email app</a>
+              <button type="button" onClick={copyDraft} className="inline-flex min-h-12 w-full items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Copy email draft</button>
+              <p className="text-sm leading-6 text-slate-400">No email app configured? Copy the draft and send it from your usual email service, or call <a href="tel:+17802152887" className="text-cyan-300 underline">780-215-2887</a>.</p>
+              <p role="status" aria-live="polite" className="text-sm leading-6 text-slate-300">{copyStatus}</p>
+            </div>
           </div>
         </div>
       </section>
