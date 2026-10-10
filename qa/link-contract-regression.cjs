@@ -63,26 +63,17 @@ const root = path.resolve(__dirname, "..");
     assert(source.includes("Discuss an assessment"));
   }
   const config = require("../next.config");
-  const favicon = (await config.redirects()).find(
-    (item) => item.source === "/favicon.ico",
-  );
-  assert.deepEqual(favicon, {
-    source: "/favicon.ico",
-    destination: "/brand/syncai-wordmark.png",
-    permanent: true,
-  });
-  const asset = fs.readFileSync(path.join(root, "public", favicon.destination));
-  assert.equal(asset.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
-  assert.equal(asset.readUInt32BE(16), 303);
-  assert.equal(asset.readUInt32BE(20), 144);
-  const layout = fs.readFileSync(path.join(root, "app/layout.tsx"), "utf8");
   assert(
-    layout.includes(
-      "icon: { url: '/brand/syncai-wordmark.png', type: 'image/png' }",
-    ),
+    !(await config.redirects()).some((item) => item.source === "/favicon.ico"),
   );
+  const asset = fs.readFileSync(path.join(root, "app/favicon.ico"));
+  assert.equal(asset.readUInt16LE(2), 1);
+  assert.equal(asset.readUInt16LE(4), 3);
+  const layout = fs.readFileSync(path.join(root, "app/layout.tsx"), "utf8");
+  assert(layout.includes("/brand/syncai-icon.svg"));
+  assert(layout.includes("/brand/syncai-icon-180.png"));
   console.log(
-    `Link contracts passed: ${customerConsumers} customer consumers use sign-in, sole explicit public demo preserved, evaluation/assessment contact gates, approved PNG favicon alias and metadata.`,
+    `Link contracts passed: ${customerConsumers} customer consumers use sign-in, sole explicit public demo preserved, evaluation/assessment contact gates, precision ICO/favicon metadata.`,
   );
 })().catch((error) => {
   console.error(error);

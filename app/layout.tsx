@@ -38,8 +38,12 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   icons: {
-    icon: { url: '/brand/syncai-wordmark.png', type: 'image/png' },
-    shortcut: '/brand/syncai-wordmark.png',
+    icon: [
+      { url: '/brand/syncai-icon.svg', type: 'image/svg+xml' },
+      { url: '/brand/syncai-icon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: { url: '/brand/syncai-icon-180.png', sizes: '180x180', type: 'image/png' },
   },
   openGraph: {
     title: DEFAULT_TITLE,
@@ -48,9 +52,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     type: 'website',
     locale: 'en_CA',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: DEFAULT_TITLE }],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/opengraph-image.png'],
     title: DEFAULT_TITLE,
     description:
       'Ground reliability and maintenance decisions in approved knowledge, asset context, and operating evidence.',
