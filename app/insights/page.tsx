@@ -6,7 +6,8 @@ export default function InsightsPage() {
     <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Insights</p>
+          <Link href="/resources" className="inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300">Resource Corner →</Link>
+          <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Insights</p>
           <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
             Industrial AI insights
           </h1>
