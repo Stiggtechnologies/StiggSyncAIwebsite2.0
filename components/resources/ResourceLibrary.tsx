@@ -1,38 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   filterResources,
   availableResourceFormats,
   resourceTopics,
 } from "@/lib/resources";
 
-export default function ResourceLibrary({
-  initialQuery = "",
-  initialFormat = "",
-  initialTopic = "",
-}: {
-  initialQuery?: string;
-  initialFormat?: string;
-  initialTopic?: string;
-}) {
-  const [query, setQuery] = useState(initialQuery);
-  const [format, setFormat] = useState(initialFormat);
-  const [topic, setTopic] = useState(initialTopic);
+export default function ResourceLibrary() {
+  // The URL is the sole filter state: same-route Links and browser history
+  // must restore results as well as the address bar.
+  const searchParams = useSearchParams();
+  const query = (searchParams.get("q") || "").slice(0, 200);
+  const format =
+    availableResourceFormats.find(
+      (value) => value === searchParams.get("format"),
+    ) || "";
+  const topic =
+    resourceTopics.find((value) => value === searchParams.get("topic")) || "";
   const matches = filterResources(query, format, topic);
-  useEffect(() => {
+  const updateFilter = (name: string, value: string, addHistory = false) => {
     const url = new URL(window.location.href);
-    for (const [key, value] of [
-      ["q", query],
-      ["format", format],
-      ["topic", topic],
-    ]) {
-      if (value) url.searchParams.set(key, value);
-      else url.searchParams.delete(key);
-    }
-    window.history.replaceState(window.history.state, "", url);
-  }, [query, format, topic]);
+    if (value) url.searchParams.set(name, value);
+    else url.searchParams.delete(name);
+    if (addHistory) window.history.pushState(null, "", url);
+    else window.history.replaceState(null, "", url);
+  };
   return (
     <section
       id="library"
@@ -52,7 +46,7 @@ export default function ResourceLibrary({
               Find your next useful read.
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-6 text-bone/65">
+          <p className="max-w-sm text-sm leading-6 text-bone/[0.65]">
             Browse by the question you’re working on, or choose the format that
             fits your time.
           </p>
@@ -62,7 +56,7 @@ export default function ResourceLibrary({
           method="get"
           role="search"
           aria-label="Search resources"
-          className="mt-10 grid gap-5 rounded-sm border border-bone/15 bg-ink p-5 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_auto]"
+          className="mt-10 grid gap-5 rounded-sm border border-bone/[0.15] bg-ink p-5 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_auto]"
         >
           <label className="text-sm text-bone/80">
             Search resources
@@ -71,9 +65,9 @@ export default function ResourceLibrary({
               name="q"
               maxLength={200}
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => updateFilter("q", event.target.value)}
               placeholder="Try evidence, planning or governance"
-              className="mt-2 min-h-12 w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone placeholder:text-bone/45"
+              className="mt-2 min-h-[48px] w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone placeholder:text-bone/[0.45]"
             />
           </label>
           <label className="text-sm text-bone/80">
@@ -81,8 +75,10 @@ export default function ResourceLibrary({
             <select
               name="format"
               value={format}
-              onChange={(event) => setFormat(event.target.value)}
-              className="mt-2 min-h-12 w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone"
+              onChange={(event) =>
+                updateFilter("format", event.target.value, true)
+              }
+              className="mt-2 min-h-[48px] w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone"
             >
               <option value="">All formats</option>
               {availableResourceFormats.map((value) => (
@@ -95,8 +91,10 @@ export default function ResourceLibrary({
             <select
               name="topic"
               value={topic}
-              onChange={(event) => setTopic(event.target.value)}
-              className="mt-2 min-h-12 w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone"
+              onChange={(event) =>
+                updateFilter("topic", event.target.value, true)
+              }
+              className="mt-2 min-h-[48px] w-full rounded-sm border border-bone/25 bg-graphite px-3 text-bone"
             >
               <option value="">All topics</option>
               {resourceTopics.map((value) => (
@@ -106,7 +104,7 @@ export default function ResourceLibrary({
           </label>
           <button
             type="submit"
-            className="min-h-12 self-end rounded-sm bg-cyan-300 px-5 font-semibold text-ink hover:bg-cyan-200"
+            className="min-h-[48px] self-end rounded-sm bg-cyan-300 px-5 font-semibold text-ink hover:bg-cyan-200"
           >
             Search
           </button>
@@ -116,7 +114,7 @@ export default function ResourceLibrary({
             role="status"
             aria-live="polite"
             aria-atomic="true"
-            className="text-sm text-bone/65"
+            className="text-sm text-bone/[0.65]"
           >
             {matches.length} {matches.length === 1 ? "resource" : "resources"}
             {query || format || topic
@@ -126,7 +124,8 @@ export default function ResourceLibrary({
           {(query || format || topic) && (
             <Link
               href="/resources#library"
-              className="inline-flex min-h-11 items-center text-sm font-semibold text-cyan-300"
+              data-resource-reset="clear"
+              className="inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300"
             >
               Clear filters →
             </Link>
@@ -138,7 +137,7 @@ export default function ResourceLibrary({
               <article
                 key={resource.id}
                 data-resource-id={resource.id}
-                className="flex flex-col border border-bone/15 bg-ink p-6 transition-colors hover:border-cyan-300/45 sm:p-8"
+                className="flex flex-col border border-bone/[0.15] bg-ink p-6 transition-colors hover:border-cyan-300/[0.45] sm:p-8"
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-cyan-300">
                   {resource.format}
@@ -171,7 +170,7 @@ export default function ResourceLibrary({
                 <Link
                   href={resource.href}
                   aria-label={`${resource.action}: ${resource.title}`}
-                  className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-cyan-300 hover:text-cyan-200"
+                  className="mt-5 inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300 hover:text-cyan-200"
                 >
                   {resource.action} →
                 </Link>
@@ -179,7 +178,7 @@ export default function ResourceLibrary({
             ))}
           </div>
         ) : (
-          <div className="mt-8 border border-bone/15 p-8">
+          <div className="mt-8 border border-bone/[0.15] p-8">
             <h3 className="text-xl font-semibold">
               No resources match that combination.
             </h3>
@@ -189,7 +188,8 @@ export default function ResourceLibrary({
             </p>
             <Link
               href="/resources#library"
-              className="mt-5 inline-flex min-h-11 items-center font-semibold text-cyan-300"
+              data-resource-reset="empty"
+              className="mt-5 inline-flex min-h-[44px] items-center font-semibold text-cyan-300"
             >
               Browse all resources →
             </Link>

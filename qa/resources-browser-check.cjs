@@ -21,6 +21,7 @@ const path = require("node:path");
     errors: [],
     posts: [],
     filterChecks: [],
+    touchTargets: [],
     nojs: [],
   };
   try {
@@ -61,6 +62,20 @@ const path = require("node:path");
         assert.equal(layout.nestedControls, 0);
         assert.equal(layout.main, "MAIN");
         assert.equal(layout.canonical, "https://syncai.ca" + route);
+        const targets = await page.$$eval('main [class*="min-h-["]', (nodes) =>
+          nodes.map((n) => ({
+            label: n.getAttribute("name") || n.textContent.trim(),
+            height: n.getBoundingClientRect().height,
+            minHeight: getComputedStyle(n).minHeight,
+            required: n.className.includes("min-h-[48px]") ? 48 : 44,
+          })),
+        );
+        for (const target of targets)
+          assert(
+            target.height >= target.required - 0.5,
+            `${route}@${width}: ${target.label} height ${target.height}`,
+          );
+        report.touchTargets.push({ route, width, targets });
         report.cases.push({
           route,
           width,
@@ -100,6 +115,26 @@ const path = require("node:path");
     );
     assert((await page.url()).includes("format=Training"));
     report.filterChecks.push("training:3");
+    await page.click('[data-resource-reset="clear"]');
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 14,
+    );
+    assert.equal(await page.$eval('select[name="format"]', (n) => n.value), "");
+    report.filterChecks.push("clear-restores-all:14");
+    await page.goBack({ waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 3,
+    );
+    assert.equal(
+      await page.$eval('select[name="format"]', (n) => n.value),
+      "Training",
+    );
+    await page.goForward({ waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 14,
+    );
+    report.filterChecks.push("clear-back-forward-restores-state");
+    await page.select('select[name="format"]', "Training");
     await page.select('select[name="topic"]', "Business case");
     await page.waitForFunction(
       () => document.querySelectorAll("[data-resource-id]").length === 0,
@@ -135,6 +170,43 @@ const path = require("node:path");
       () => document.querySelectorAll("[data-resource-id]").length === 0,
     );
     report.filterChecks.push("search-empty-state");
+    await page.click('[data-resource-reset="empty"]');
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 14,
+    );
+    assert.equal(await page.$eval('input[name="q"]', (n) => n.value), "");
+    report.filterChecks.push("browse-all-restores-all:14");
+    await page.goBack({ waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 0,
+    );
+    assert.equal(
+      await page.$eval('input[name="q"]', (n) => n.value),
+      "impossible-resource-zz",
+    );
+    await page.goForward({ waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      () => document.querySelectorAll("[data-resource-id]").length === 14,
+    );
+    report.filterChecks.push("empty-back-forward-restores-state");
+    await page.focus('input[name="q"]');
+    await page.keyboard.press("Tab");
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.getAttribute("name")),
+      "format",
+    );
+    await page.keyboard.press("Tab");
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.getAttribute("name")),
+      "topic",
+    );
+    await page.keyboard.press("Tab");
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.textContent),
+      "Search",
+    );
+    report.filterChecks.push("keyboard-search-format-topic-submit");
+
     await page.goto(base + "/resources", { waitUntil: "networkidle0" });
     await page.setViewport({ width: 390, height: 844 });
     await page.click('button[aria-label="Open navigation"]');

@@ -1,11 +1,9 @@
 import Link from "next/link";
 import ResourceLibrary from "@/components/resources/ResourceLibrary";
-import {
-  availableResourceFormats,
-  resourceTopics,
-  resources,
-} from "@/lib/resources";
+import { resources } from "@/lib/resources";
 import { pageMetadata } from "@/lib/seo";
+
+export const dynamic = "force-dynamic";
 
 export const metadata = pageMetadata({
   title: "Resource Corner",
@@ -37,17 +35,7 @@ const paths = [
   },
 ];
 
-export default async function ResourcesPage({
-  searchParams,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-}) {
-  const params = await searchParams;
-  const value = (key: string) =>
-    typeof params[key] === "string" ? (params[key] as string) : "";
-  const format =
-    availableResourceFormats.find((item) => item === value("format")) || "";
-  const topic = resourceTopics.find((item) => item === value("topic")) || "";
+export default function ResourcesPage() {
   return (
     <main id="main-content" tabIndex={-1} className="bg-ink pt-16 text-bone">
       <section className="relative overflow-hidden border-b border-bone/10">
@@ -73,7 +61,7 @@ export default async function ResourcesPage({
               </p>
               <a
                 href="#library"
-                className="mt-9 inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
+                className="mt-9 inline-flex min-h-[48px] items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
               >
                 Explore the library ↓
               </a>
@@ -85,7 +73,7 @@ export default async function ResourcesPage({
               <p className="mt-5 text-2xl leading-snug">
                 From understanding the evidence to deciding what happens next.
               </p>
-              <p className="mt-5 text-sm leading-7 text-bone/65">
+              <p className="mt-5 text-sm leading-7 text-bone/[0.65]">
                 {resources.length} public resources. Articles to challenge your
                 thinking, a manual to structure the work, and clear paths to
                 explore the product or learn with your team.
@@ -117,10 +105,10 @@ export default async function ResourcesPage({
                 {path.number}
               </span>
               <h3 className="mt-5 text-xl font-semibold">{path.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-bone/65">{path.body}</p>
+              <p className="mt-4 text-sm leading-7 text-bone/[0.65]">{path.body}</p>
               <Link
                 href={path.href}
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-cyan-300"
+                className="mt-5 inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300"
               >
                 {path.action} →
               </Link>
@@ -143,7 +131,7 @@ export default async function ResourcesPage({
             >
               A recommendation needs a decision.
             </h2>
-            <p className="mt-5 text-sm leading-7 text-bone/65">
+            <p className="mt-5 text-sm leading-7 text-bone/[0.65]">
               Begin with the distinction that shapes the rest of the library: a
               proposed next action still needs evidence and a person with
               authority.
@@ -167,18 +155,14 @@ export default async function ResourcesPage({
             </p>
             <Link
               href="/insights/recommend-is-not-authorize"
-              className="mt-7 inline-flex min-h-11 items-center font-semibold text-cyan-300"
+              className="mt-7 inline-flex min-h-[44px] items-center font-semibold text-cyan-300"
             >
               Read the article →
             </Link>
           </article>
         </div>
       </section>
-      <ResourceLibrary
-        initialQuery={value("q").slice(0, 200)}
-        initialFormat={format}
-        initialTopic={topic}
-      />
+      <ResourceLibrary />
       <section
         id="conversations"
         aria-labelledby="conversations-title"
@@ -195,12 +179,12 @@ export default async function ResourcesPage({
             >
               More ways to explore the conversation.
             </h2>
-            <p className="mt-5 leading-7 text-bone/65">
+            <p className="mt-5 leading-7 text-bone/[0.65]">
               The library starts with material you can use today. Webinars and
               podcasts will appear here when recordings are published.
             </p>
           </div>
-          <div className="divide-y divide-bone/15 border-y border-bone/15">
+          <div className="divide-y divide-bone/[0.15] border-y border-bone/[0.15]">
             {[
               {
                 name: "Webinars",
@@ -220,16 +204,16 @@ export default async function ResourcesPage({
               <article key={item.name} className="py-7">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold">{item.name}</h3>
-                  <span className="rounded-full border border-bone/20 px-3 py-1 text-xs text-bone/65">
+                  <span className="rounded-full border border-bone/20 px-3 py-1 text-xs text-bone/[0.65]">
                     Recordings not yet published
                   </span>
                 </div>
-                <p className="mt-4 text-sm leading-7 text-bone/65">
+                <p className="mt-4 text-sm leading-7 text-bone/[0.65]">
                   {item.detail}
                 </p>
                 <Link
                   href={item.href}
-                  className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-cyan-300"
+                  className="mt-4 inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300"
                 >
                   {item.action} →
                 </Link>
@@ -237,18 +221,18 @@ export default async function ResourcesPage({
             ))}
           </div>
         </div>
-        <div className="mt-12 border-t border-bone/15 pt-8">
+        <div className="mt-12 border-t border-bone/[0.15] pt-8">
           <h3 className="text-xl font-semibold">
             Looking for a template, checklist or event?
           </h3>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-bone/65">
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-bone/[0.65]">
             Use the online Field Manual to structure a Decision Case, or review
             the training agendas for team exercises. Standalone downloadable
             templates and public event listings are not published here yet.
           </p>
           <Link
             href="/manuals/field-manual"
-            className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-cyan-300"
+            className="mt-4 inline-flex min-h-[44px] items-center text-sm font-semibold text-cyan-300"
           >
             Use the online guide →
           </Link>
@@ -268,7 +252,7 @@ export default async function ResourcesPage({
           </div>
           <Link
             href="/contact"
-            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
+            className="inline-flex min-h-[48px] shrink-0 items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
           >
             Talk with SyncAI →
           </Link>

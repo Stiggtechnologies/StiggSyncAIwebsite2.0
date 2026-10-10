@@ -49,7 +49,7 @@ export default function Navigation() {
             ))}
             <Link
               href={EVALUATION_CONTACT_URL}
-              className="inline-flex min-h-10 items-center justify-center rounded-sm bg-cyan-300 px-5 py-2 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
+              className="inline-flex min-h-[44px] items-center justify-center rounded-sm bg-cyan-300 px-5 py-2 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
             >
               Discuss an evaluation
             </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
             aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center text-white lg:hidden"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-white lg:hidden"
             onClick={() => setMobileMenuOpen((open) => !open)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

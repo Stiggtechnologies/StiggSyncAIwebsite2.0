@@ -14,14 +14,14 @@ export default function DemoResourcePage() {
         <nav aria-label="Breadcrumb">
           <Link
             href="/resources"
-            className="inline-flex min-h-11 items-center text-sm text-cyan-300"
+            className="inline-flex min-h-[44px] items-center text-sm text-cyan-300"
           >
             Resource Corner
           </Link>
           <span aria-hidden="true" className="mx-3 text-bone/40">
             /
           </span>
-          <span className="text-sm text-bone/65">Demo guide</span>
+          <span className="text-sm text-bone/[0.65]">Demo guide</span>
         </nav>
         <p className="mt-10 font-mono text-xs uppercase tracking-widest text-cyan-300">
           Interactive demo · Browser-based
@@ -35,7 +35,7 @@ export default function DemoResourcePage() {
         </p>
         <a
           href={APP_WORKSPACE_URL}
-          className="mt-9 inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
+          className="mt-9 inline-flex min-h-[48px] items-center justify-center rounded-sm bg-cyan-300 px-6 font-semibold text-ink hover:bg-cyan-200"
         >
           Open the public demo →
         </a>
@@ -76,7 +76,7 @@ export default function DemoResourcePage() {
             ))}
           </ol>
         </section>
-        <section className="mt-14 border border-bone/15 bg-graphite p-7 sm:p-10">
+        <section className="mt-14 border border-bone/[0.15] bg-graphite p-7 sm:p-10">
           <h2 className="text-2xl font-semibold">Plan access for your team.</h2>
           <p className="mt-5 leading-7 text-bone/70">
             SyncAI is available to purchase and use. Customer access, authorized
@@ -86,7 +86,7 @@ export default function DemoResourcePage() {
           </p>
           <Link
             href="/contact"
-            className="mt-5 inline-flex min-h-11 items-center font-semibold text-cyan-300"
+            className="mt-5 inline-flex min-h-[44px] items-center font-semibold text-cyan-300"
           >
             Discuss platform access →
           </Link>
@@ -114,7 +114,7 @@ export default function DemoResourcePage() {
                 className="block border-t border-bone/20 py-6 hover:text-cyan-300"
               >
                 <h3 className="text-xl font-semibold">{item.title} →</h3>
-                <p className="mt-3 text-sm leading-7 text-bone/65">
+                <p className="mt-3 text-sm leading-7 text-bone/[0.65]">
                   {item.body}
                 </p>
               </Link>
