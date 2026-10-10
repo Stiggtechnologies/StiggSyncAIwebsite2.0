@@ -33,3 +33,15 @@ PR 286 adds exactly Training links to Navigation/Footer. PR 288 includes those l
 ## Preview evidence
 
 GitHub deployment 6974818490 is Preview for full commit 8e96c96881d910aa4b14fb1219dfc2a096ea7b36; Vercel status succeeded. Hosted in-app browser smoke verified home → mobile menu → platform → purchasing contact. No overflow at 390px; menu closes on navigation; platform explore links target `/workspace`, purchasing targets `/contact`, and explicitly labeled assessment setup targets `/setup`. The later dependency/PDF/role follow-up requires a fresh exact-head preview check before publication.
+
+## Existing customer-first walkthrough
+
+Source ownership review identified `/get-started` as the existing Ask-first evaluation flow, `/workspace` as the separate public workspace, and `/setup` as the assessment path. Live browser inspection of `/get-started` showed an empty question field, labeled examples, intent choices, and a disabled Continue button until a question is supplied. Marketing first-visit CTAs now say **Explore a decision** and reuse that route; explicitly labeled workspace links remain `/workspace` and assessment setup remains `/setup`.
+
+This is an evaluation walkthrough, not a promise of seamless signed-in onboarding or durable anonymous saving. The app owner is separately validating restart/exit/history, failed/anonymous-save behavior, and saved-case handoff. Do not publish a claim that complete signup/purchase/onboarding has been validated until the app owner's acceptance evidence and independent final rereview arrive. Commercial access and onboarding remain scoped with the team.
+
+## Final buying-journey update and release blocker
+
+The homepage and navigation now label `/get-started` as **Start an evaluation**, with **Book a demo** going to the real contact page. `/workspace` remains explicitly labeled Open the workspace; assessment setup stays `/setup`. Platform workflow cards describe the evidence input, reviewable output, and accountable next action. A final platform section explains extending scope across teams/sites/use cases based on results, without promising untested self-service purchasing.
+
+The settled production-browser sweep covered 210 page/viewport combinations: no horizontal overflow, missing/duplicate H1, nested anchor/buttons, HTTP errors, or broken internal destinations. Mobile navigation opened and closed with Escape; all three empty inquiry forms blocked submission. **The run recorded 19 intermittent React #418 hydration errors.** An isolated development sweep did not reproduce them. They remain unresolved and block publishing; no all-green browser claim is warranted. `browser-report.json` preserves the affected routes. Independent final copy review and acceptance of the customer app handoff also remain required before release.

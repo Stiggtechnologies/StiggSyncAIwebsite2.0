@@ -1,17 +1,16 @@
 const puppeteer = require('../syncai-website/node_modules/puppeteer');
 const fs = require('fs');
 (async () => {
- const browser = await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox'],userDataDir:'/tmp/syncai-launch-qa-chrome'});
+ const browser = await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox'],userDataDir:'/tmp/syncai-launch-qa-'+Date.now()});
  const page = await browser.newPage();
  await page.setCacheEnabled(false);
  const routes = Object.keys(JSON.parse(fs.readFileSync('.next/server/app-paths-manifest.json'))).filter(x=>x.endsWith('/page')).map(x=>x.replace(/\/page$/,'')||'/').filter(x=>x!='/_not-found');
  const results=[]; const links=new Set(); const errors=[];
- page.on('pageerror',e=>errors.push(e.message));
+ page.on('pageerror',e=>errors.push({route:page.url(),message:e.message}));
  for(const width of [1440,768,390,375,320]) {
   await page.setViewport({width,height:900});
   for(const route of routes) {
-   const response=await page.goto('http://127.0.0.1:3100'+route,{waitUntil:'domcontentloaded'});
-   await page.waitForNetworkIdle({idleTime:50});
+   const response=await page.goto('http://127.0.0.1:3100'+route,{waitUntil:'networkidle0'});
    await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,10));}window.scrollTo(0,0);});
    const data=await page.evaluate(()=>({h1:document.querySelectorAll('h1').length,overflow:document.documentElement.scrollWidth>innerWidth,canonical:document.querySelector('link[rel=canonical]')?.href,links:[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')),badButtons:[...document.querySelectorAll('a button')].length}));
    data.links.forEach(l=>{if(l.startsWith('/')&&!l.startsWith('//'))links.add(l.split('#')[0]);});

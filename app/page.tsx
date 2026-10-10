@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL, APP_GUIDED_URL } from '@/lib/site-links';
 import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
@@ -13,10 +13,10 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
-    name: 'Explore the SyncAI platform',
-    body: 'Explore the workspace, then talk with us about purchasing SyncAI for your team and planning onboarding.',
-    cta: 'Open the workspace',
-    href: APP_WORKSPACE_URL,
+    name: 'Explore an operating question',
+    body: 'Start with an operating question in the guided evaluation. Explore evidence, recommendations, human review, and verification. Purchasing and onboarding are scoped with your team.',
+    cta: 'Start an evaluation',
+    href: APP_GUIDED_URL,
     external: true,
   },
   {
@@ -119,16 +119,16 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
-                href={APP_WORKSPACE_URL}
+                href={APP_GUIDED_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:bg-cyan-200"
               >
-                Explore SyncAI
+                Start an evaluation
               </a>
               <Link
                 href="/contact"
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
-                Discuss platform access
+                Book a demo
               </Link>
             </div>
 

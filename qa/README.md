@@ -9,7 +9,7 @@ The script writes `browser-report.json` and representative mobile screenshots in
 - Terms sections 2–3 still describe retired AI Readiness/ROI calculators. Obtain owner/legal approval for a replacement that addresses current platform and assessment offerings; this PR only adds the confirmed operator identity and visual consistency.
 - Confirm specialized security/privacy/legal mailboxes and production form recipient configuration. The known business contact is oadavis@syncai.ca; contact fallback now uses it.
 - Confirm current SSO, encryption/isolation, hosting/residency, and model-data representations in security/privacy against the actual customer environment. Existing controls were not independently certified by this marketing review.
-- Review remaining dependency audit advisories. The direct Next.js critical advisory was addressed with patch 15.5.27; install still reports 21 high and 19 moderate advisories.
+- Review remaining dependency audit advisories. The direct Next.js critical advisory was addressed with patch 15.5.27. Compatible dependency remediation leaves 7 high and 2 moderate affected build-tool nodes; see RELEASE-REVIEW.md for root advisories and exposure.
 - App policy routes were separately reported to the app task: app.syncai.ca policy links must render the appropriate policy content or link to an approved policy destination. This marketing repository does not own that app routing.
 - SaaS is commercially available per owner confirmation. Marketplace listing availability/credits/packaged integrations are separate and need verification before marketplace purchase claims return.
 
