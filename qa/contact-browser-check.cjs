@@ -26,11 +26,13 @@ const assert = require('node:assert/strict');
         assert.equal(response.status(), 200);
         const detail = await page.evaluate(() => ({
           overflow: document.documentElement.scrollWidth > innerWidth,
+          personalPhoneExposed: [document.body.innerText, ...[...document.querySelectorAll('a[href^="tel:"]')].map(a => a.href), ...[...document.querySelectorAll('script[type="application/ld+json"]')].map(s => s.textContent)].some(text => text.replace(/\D/g, '').includes('7802152887')),
           contactLinks: [...document.querySelectorAll('a[href="/contact"]')].map(a => a.textContent.trim()),
           unsafeLinks: [...document.querySelectorAll('a[href]')].filter(a => a.href.includes('app.syncai.ca/get-started')).length,
         }));
         assert.equal(detail.overflow, false, route + ' overflow at ' + width);
         assert.equal(detail.unsafeLinks, 0);
+        assert.equal(detail.personalPhoneExposed, false, 'Personal phone exposed in visible text, telephone links or JSON-LD');
         if (route === '/' || route === '/platform') assert(detail.contactLinks.some(text => /evaluation|purchas|demo/i.test(text)), 'Buying CTA must reach usable contact page');
         cases.push({ route, width, status: response.status(), ...detail });
       }
