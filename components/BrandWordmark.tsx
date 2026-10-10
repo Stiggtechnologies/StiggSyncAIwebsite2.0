@@ -5,16 +5,16 @@ type BrandWordmarkProps = {
   priority?: boolean;
 };
 
-/** Canonical comet wordmark — white SyncAI + cyan motion mark. Used in header and footer. */
+/** Selected precision wordmark — outlined white lettering with detached brass inset. Used in header and footer. */
 export default function BrandWordmark({ priority = false }: BrandWordmarkProps) {
   return (
     <Link href="/" className="inline-flex shrink-0 items-center" aria-label="SyncAI home">
       <Image
-        src="/brand/syncai-wordmark.png"
+        src="/brand/syncai-wordmark-light.svg"
         alt="SyncAI"
-        width={303}
-        height={144}
-        className="h-10 w-auto"
+        width={843}
+        height={224}
+        className="h-8 w-auto"
         priority={priority}
       />
     </Link>

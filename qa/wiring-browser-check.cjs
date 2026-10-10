@@ -120,7 +120,7 @@ const assert = require("node:assert/strict");
         assert(
           rendered.icons.some(
             (icon) =>
-              icon.path === "/brand/syncai-wordmark.png" &&
+              icon.path === "/brand/syncai-icon-32.png" &&
               icon.type === "image/png",
           ),
         );
@@ -152,31 +152,29 @@ const assert = require("node:assert/strict");
           });
       }
     }
-    const redirect = await fetch(base + "/favicon.ico", { redirect: "manual" });
-    assert.equal(redirect.status, 308);
-    assert.equal(
-      new URL(redirect.headers.get("location"), base).pathname,
-      "/brand/syncai-wordmark.png",
-    );
-    const favicon = await fetch(base + "/favicon.ico");
+    const favicon = await fetch(base + "/favicon.ico", { redirect: "manual" });
     assert.equal(favicon.status, 200);
-    assert(favicon.headers.get("content-type").includes("image/png"));
-    const imageBytes = Buffer.from(await favicon.arrayBuffer());
-    const brandBytes = Buffer.from(
-      await (await fetch(base + "/brand/syncai-wordmark.png")).arrayBuffer(),
-    );
     assert(
-      imageBytes.equals(brandBytes),
-      "Favicon must reuse approved asset bytes exactly",
+      favicon.headers.get("content-type").includes("image/x-icon") ||
+        favicon.headers
+          .get("content-type")
+          .includes("image/vnd.microsoft.icon"),
     );
-    await page.goto(base + "/favicon.ico", { waitUntil: "networkidle0" });
-    assert.equal(await page.$eval("img", (image) => image.naturalWidth), 303);
-    assert.equal(await page.$eval("img", (image) => image.naturalHeight), 144);
+    const imageBytes = Buffer.from(await favicon.arrayBuffer());
+    assert(
+      imageBytes.equals(
+        fs.readFileSync(path.join(__dirname, "../app/favicon.ico")),
+      ),
+    );
+    await page.goto(base + "/brand/syncai-icon-32.png", {
+      waitUntil: "networkidle0",
+    });
+    assert.equal(await page.$eval("img", (image) => image.naturalWidth), 32);
+    assert.equal(await page.$eval("img", (image) => image.naturalHeight), 32);
     report.favicon = {
-      aliasStatus: redirect.status,
       resolvedStatus: favicon.status,
       mime: favicon.headers.get("content-type"),
-      dimensions: [303, 144],
+      dimensions: [32, 32],
       approvedBytesUnchanged: true,
       browserDecoded: true,
     };

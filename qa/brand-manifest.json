@@ -1,0 +1,87 @@
+{
+  "version": "precision-v1",
+  "primarySourceSHA256": "8b4e5fcc212e236bf86d63bf52a263b2562afaa4a1f19080bd72364c07c70932",
+  "geometry": "Outlined contours traced from primary refined raster, crop (344,141)-(1187,365), thresholded after 0.6px blur; 0.55px contour simplification. No font dependency. Same A and brass paths reused in icon.",
+  "tokens": {
+    "graphite": "#1E2327",
+    "brass": "#B4935D",
+    "white": "#FEFEFE"
+  },
+  "tokenAuthority": "Raster-derived approximations, not original vector tokens",
+  "wordmarkViewBox": [
+    843,
+    224
+  ],
+  "aBounds": [
+    579,
+    1,
+    784,
+    175
+  ],
+  "iconViewBox": [
+    166,
+    164
+  ],
+  "assets": {
+    "favicon.ico": {
+      "sha256": "bb7851944cde5d20941bc95db77946911c2931ecd3d161cfed0767448d4ead7a",
+      "bytes": 2529
+    },
+    "syncai-icon-32.png": {
+      "sha256": "0d0da29601fac0985d433bc43c74a35fe8e341362f9015f471ea58f0c7d640a0",
+      "bytes": 835
+    },
+    "syncai-icon-512.png": {
+      "sha256": "a6fe94d885c57d1251413d04c6976a144192da8984176a7127b3c38429eb108f",
+      "bytes": 16182
+    },
+    "syncai-wordmark-light.svg": {
+      "sha256": "dae3c78c28328e94933ddeff3aac5130fe70171ed8f56dbc5ab625393cc34b54",
+      "bytes": 14832
+    },
+    "syncai-icon-48.png": {
+      "sha256": "cf2b3f26ba0009a38f0af02fb8570b1a8a822de36b0fdd6b94618fc59ca00b0d",
+      "bytes": 1193
+    },
+    "syncai-icon-192.png": {
+      "sha256": "46b65929d7d9fff59c573f0d90a949fd57e4bad6d309181eb3113266a9f36bbc",
+      "bytes": 5084
+    },
+    "syncai-wordmark-dark.svg": {
+      "sha256": "763b563cfb2c2681a846cc9882d65c6998a980e4cd3c42b3cd556ed1a8f91429",
+      "bytes": 14832
+    },
+    "syncai-wordmark.png": {
+      "sha256": "a00f001790ad2cb4996898de80809a8fc7ea787f9b791fb26414bf1c8e1d39c1",
+      "bytes": 7878
+    },
+    "syncai-icon-180.png": {
+      "sha256": "f367867847e917ba5060e2ff3c572bc8fbb48aef0eab572d5cf8725a5cd954c1",
+      "bytes": 4521
+    },
+    "syncai-icon-16.png": {
+      "sha256": "faca6760d48a7d8fb880fc897446dacbc875b80a312c450ce4abd8d7b38213ac",
+      "bytes": 447
+    },
+    "syncai-icon.svg": {
+      "sha256": "06488aa1cbaf904ea754ef7f7f888afcd12a61a5510ccc6923956f249d851834",
+      "bytes": 6122
+    },
+    "syncai-social.png": {
+      "sha256": "c1345b7405f6e9d2b36cae949c06124bb6ae92654c415407ea8a580de3c2900c",
+      "bytes": 30038
+    }
+  },
+  "validation": {
+    "refinedAndOriginalBoardsInspected": true,
+    "whiteGlyphComponents": 6,
+    "fonts": "None: outlined paths",
+    "sharedAGeometry": true,
+    "faviconFrames": [
+      16,
+      32,
+      48
+    ],
+    "rasterTokensApproximate": true
+  }
+}

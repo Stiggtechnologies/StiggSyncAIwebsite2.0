@@ -7,14 +7,15 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npm run test:contact && npm run test:resources && npm run test:links && next build",
+    "build": "npm run test:contact && npm run test:resources && npm run test:links && npm run test:brand && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit && node scripts/check-insights-seo.mjs",
     "check:insights-seo": "node scripts/check-insights-seo.mjs",
     "test:contact": "node qa/contact-regression.cjs",
     "test:resources": "node qa/resource-regression.cjs",
-    "test:links": "node qa/link-contract-regression.cjs"
+    "test:links": "node qa/link-contract-regression.cjs",
+    "test:brand": "node qa/brand-regression.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

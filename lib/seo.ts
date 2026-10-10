@@ -7,7 +7,7 @@ export const DEFAULT_DESCRIPTION =
   'Governed industrial intelligence for reliability, maintenance, and asset-intensive operations. Ground decisions in approved knowledge, asset context, and operating evidence.';
 
 export const DEFAULT_OG_IMAGE = {
-  url: '/opengraph-image',
+  url: '/opengraph-image.png',
   width: 1200,
   height: 630,
   alt: DEFAULT_TITLE,
@@ -76,6 +76,7 @@ export const organizationSchema = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
+  logo: absoluteUrl('/brand/syncai-wordmark-dark.svg'),
   email: 'oadavis@syncai.ca',
   description: DEFAULT_DESCRIPTION,
   brand: { '@type': 'Brand', name: SITE_NAME },

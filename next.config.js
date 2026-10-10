@@ -10,7 +10,7 @@ const nextConfig = {
     return [
       ...insightRedirects,
       // Reuse approved brand bytes; no generated concept artwork or image edits.
-      { source: '/favicon.ico', destination: '/brand/syncai-wordmark.png', permanent: true },
+      { source: '/opengraph-image', destination: '/opengraph-image.png', permanent: true },
       ...['economics-of-autonomous-maintenance', 'governance-in-industrial-ai', 'why-cmms-alone-is-failing-2026'].map((slug) => ({
         source: `/pdfs/${slug}.pdf`,
         destination: `/insights/${slug}`,
