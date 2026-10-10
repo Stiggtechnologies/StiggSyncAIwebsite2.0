@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
-import { APP_WORKSPACE_URL, APP_GUIDED_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL, EVALUATION_CONTACT_URL } from '@/lib/site-links';
 import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
@@ -13,11 +13,11 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
-    name: 'Explore an operating question',
-    body: 'Start with an operating question in the guided evaluation. Explore evidence, recommendations, human review, and verification. Purchasing and onboarding are scoped with your team.',
-    cta: 'Start an evaluation',
-    href: APP_GUIDED_URL,
-    external: true,
+    name: 'Platform evaluation',
+    body: 'Discuss your operating question with SyncAI. We will agree relevant workflows, evidence needs, and an evaluation scope with your team.',
+    cta: 'Discuss an evaluation',
+    href: EVALUATION_CONTACT_URL,
+    external: false,
   },
   {
     name: 'Reliability Intelligence Assessment',
@@ -119,16 +119,16 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
-                href={APP_GUIDED_URL}
+                href={EVALUATION_CONTACT_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:bg-cyan-200"
               >
-                Start an evaluation
+                Discuss an evaluation
               </a>
               <Link
                 href="/contact"
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
-                Book a demo
+                Discuss purchasing
               </Link>
             </div>
 
@@ -215,9 +215,7 @@ export default function Home() {
               SyncAI brings specialist AI workflows into a shared platform. Reliability engineers investigate failures and review strategy; planners compare work priorities; supervisors approve the next action. Optional assessments, pilots, and training help your team adopt that process.
             </p>
             <p className="mt-8">
-              <a href={APP_WORKSPACE_URL} className={linkClass}>
-                Open the workspace
-              </a>
+              <a href={APP_WORKSPACE_URL} className={linkClass}>Customer workspace</a>
             </p>
           </div>
 

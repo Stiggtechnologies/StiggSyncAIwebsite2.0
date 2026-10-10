@@ -303,9 +303,7 @@ export default function RecommendIsNotAuthorizePage() {
                 <a
                   href={APP_WORKSPACE_URL}
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
-                >
-                  Try Reliability Engineer
-                </a>
+                >Customer workspace</a>
                 <Link
                   href="/reliability-assessment"
                   className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"

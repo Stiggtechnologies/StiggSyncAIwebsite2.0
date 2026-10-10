@@ -2,5 +2,5 @@
 export const APP_WORKSPACE_URL = 'https://app.syncai.ca/workspace';
 export const APP_SETUP_URL = 'https://app.syncai.ca/setup';
 
-/** Existing ask-first customer walkthrough; separate from workspace exploration. */
-export const APP_GUIDED_URL = 'https://app.syncai.ca/get-started';
+/** Evaluation requests stay with sales until the guided app handoff passes acceptance. */
+export const EVALUATION_CONTACT_URL = '/contact';

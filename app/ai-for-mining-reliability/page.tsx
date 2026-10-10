@@ -63,9 +63,7 @@ export default function MiningReliabilityPage() {
             <a
               href={APP_WORKSPACE_URL}
               className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-            >
-              Try Reliability Engineer
-            </a>
+            >Customer workspace</a>
           </div>
         </div>
       </section>

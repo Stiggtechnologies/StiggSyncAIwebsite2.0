@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { APP_GUIDED_URL } from '@/lib/site-links';
+import { EVALUATION_CONTACT_URL } from '@/lib/site-links';
 import { Menu, X } from 'lucide-react';
 import BrandWordmark from '@/components/BrandWordmark';
 
@@ -48,10 +48,10 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href={APP_GUIDED_URL}
+              href={EVALUATION_CONTACT_URL}
               className="inline-flex min-h-10 items-center justify-center rounded-sm bg-cyan-300 px-5 py-2 text-sm font-bold text-slate-950 transition-colors hover:bg-cyan-200"
             >
-              Start an evaluation
+              Discuss an evaluation
             </Link>
           </div>
 
@@ -85,11 +85,11 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href={APP_GUIDED_URL}
+              href={EVALUATION_CONTACT_URL}
               onClick={() => setMobileMenuOpen(false)}
               className="mt-3 block rounded-sm bg-cyan-300 px-5 py-3 text-center text-sm font-bold text-slate-950"
             >
-              Start an evaluation
+              Discuss an evaluation
             </Link>
           </div>
         </div>

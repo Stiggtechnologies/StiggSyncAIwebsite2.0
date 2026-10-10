@@ -81,9 +81,7 @@ export default function ContactPage() {
               <a
                 href={APP_WORKSPACE_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md px-2 py-3 text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-              >
-                Explore the workspace →
-              </a>
+              >Existing customers: workspace →</a>
             </div>
           </div>
 

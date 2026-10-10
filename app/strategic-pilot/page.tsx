@@ -145,9 +145,7 @@ export default function StrategicPilotPage() {
               <a
                 href={APP_WORKSPACE_URL}
                 className="font-semibold text-cyan-300 hover:text-cyan-200"
-              >
-                Open the Reliability Engineer workspace →
-              </a>
+              >Existing customers: workspace →</a>
             </div>
           </div>
 

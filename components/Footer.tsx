@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import BrandWordmark from '@/components/BrandWordmark';
-import { APP_WORKSPACE_URL, APP_GUIDED_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL, EVALUATION_CONTACT_URL } from '@/lib/site-links';
 
 export default function Footer() {
   return (
@@ -23,8 +23,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white">Start</h3>
             <ul className="mt-4 space-y-3">
-              <li><a href={APP_GUIDED_URL} className="text-sm text-slate-400 hover:text-white">Start an evaluation</a></li>
-              <li><a href={APP_WORKSPACE_URL} className="text-sm text-slate-400 hover:text-white">Open the workspace</a></li>
+              <li><a href={EVALUATION_CONTACT_URL} className="text-sm text-slate-400 hover:text-white">Discuss an evaluation</a></li>
+              <li><a href={APP_WORKSPACE_URL} className="text-sm text-slate-400 hover:text-white">Customer workspace</a></li>
               <li><Link href="/reliability-assessment" className="text-sm text-slate-400 hover:text-white">Reliability Assessment</Link></li>
               <li><Link href="/strategic-pilot" className="text-sm text-slate-400 hover:text-white">Strategic Pilot</Link></li>
               <li><Link href="/platform" className="text-sm text-slate-400 hover:text-white">Platform</Link></li>
