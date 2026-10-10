@@ -43,6 +43,9 @@ function loadSource(path, requireDependency, env = {}) {
   assert.equal([...params.keys()].length, 2, 'User data must not inject mail headers');
   assert(populated.text.includes('To: oadavis@syncai.ca'));
 
+  for (const file of ['app/contact/page.tsx', 'components/Footer.tsx', 'lib/seo.ts']) {
+    assert(!fs.readFileSync(file, 'utf8').replace(/\D/g, '').includes('7802152887'), `${file} must not expose the removed personal phone`);
+  }
   const page = fs.readFileSync('app/contact/page.tsx', 'utf8');
   assert(!/fetch\(|<form\b|type="submit"|delivered|Message sent/.test(page), 'Public contact page must not submit to the unavailable provider or claim delivery');
   assert(page.includes('Open email app') && page.includes('Copy email draft'));

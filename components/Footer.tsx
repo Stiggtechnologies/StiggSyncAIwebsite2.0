@@ -15,7 +15,6 @@ export default function Footer() {
             </p>
             <div className="mt-5 space-y-1 text-sm">
               <a href="mailto:oadavis@syncai.ca" className="block text-slate-500 hover:text-white">oadavis@syncai.ca</a>
-              <a href="tel:+17802152887" className="block text-slate-400 hover:text-white">780-215-2887</a>
               <p className="text-slate-400">200 Parent Way, Fort McMurray, AB T9H5E6</p>
             </div>
           </div>

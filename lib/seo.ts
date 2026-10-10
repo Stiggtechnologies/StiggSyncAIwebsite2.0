@@ -81,7 +81,6 @@ export const organizationSchema = {
   brand: { '@type': 'Brand', name: SITE_NAME },
   legalName: 'Stigg Security Inc.',
   alternateName: 'Stigg Security Inc. DBA SyncAI',
-  telephone: '+1-780-215-2887',
   sameAs: [SITE_URL],
 };
 

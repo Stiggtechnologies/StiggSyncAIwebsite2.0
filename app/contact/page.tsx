@@ -40,7 +40,7 @@ export default function ContactPage() {
             <p className="mt-6 max-w-xl text-lg leading-[1.7] text-slate-400">
               Email us to discuss purchasing SyncAI, arrange a product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
             </p>
-            <p className="mt-6 text-sm leading-7 text-slate-300">You can also contact <a href="mailto:oadavis@syncai.ca" className="text-cyan-300 underline">oadavis@syncai.ca</a> or <a href="tel:+17802152887" className="text-cyan-300 underline">780-215-2887</a>.</p>
+            <p className="mt-6 text-sm leading-7 text-slate-300">You can contact <a href="mailto:oadavis@syncai.ca" className="text-cyan-300 underline">oadavis@syncai.ca</a>.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
               <Link
                 href="/strategic-pilot"
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"
               >Open email app</a>
               <button type="button" onClick={copyDraft} className="inline-flex min-h-12 w-full items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Copy email draft</button>
-              <p className="text-sm leading-6 text-slate-400">No email app configured? Copy the draft and send it from your usual email service, or call <a href="tel:+17802152887" className="text-cyan-300 underline">780-215-2887</a>.</p>
+              <p className="text-sm leading-6 text-slate-400">No email app configured? Copy the draft and send it from your usual email service.</p>
               <p role="status" aria-live="polite" className="text-sm leading-6 text-slate-300">{copyStatus}</p>
             </div>
           </div>
