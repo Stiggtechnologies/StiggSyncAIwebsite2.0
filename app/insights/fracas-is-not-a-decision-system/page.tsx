@@ -8,7 +8,7 @@ import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export default function FracasIsNotADecisionSystemPage() {
   return (
-    <main className="min-h-screen bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"

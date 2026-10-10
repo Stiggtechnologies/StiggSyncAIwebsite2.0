@@ -12,7 +12,7 @@ const article = getInsightArticle('recommend-is-not-authorize');
 
 export default function RecommendIsNotAuthorizePage() {
   return (
-    <main className="min-h-screen bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"

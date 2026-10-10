@@ -105,7 +105,7 @@ const cardHeading = { fontStretch: '100%' } as const;
 
 export default function Home() {
   return (
-    <main className="bg-ink pt-16 text-bone">
+    <main id="main-content" tabIndex={-1} className="bg-ink pt-16 text-bone">
       {/* Hero */}
       <section className="border-b border-bone/10">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 pb-20 pt-16 sm:pt-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-20 lg:px-8 lg:pb-28">

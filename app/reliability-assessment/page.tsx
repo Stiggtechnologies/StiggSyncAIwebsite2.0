@@ -36,7 +36,7 @@ const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEn
 
 export default function ReliabilityAssessmentPage() {
   return (
-    <main className="min-h-screen bg-[#111214] pt-16 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#111214] pt-16 text-slate-100">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section className="border-b border-white/10">

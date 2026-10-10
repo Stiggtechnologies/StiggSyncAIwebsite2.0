@@ -21,7 +21,7 @@ Main and existing feature-PR commits have Vercel deployment checks for stiggsync
 
 ## Results recorded on 2026-10-10
 
-- `npm run build`: passed on Next.js 15.5.27 (52 generated static pages). Build emits an existing outdated Browserslist-data notice.
+- `npm run build`: passed on Next.js 15.5.27 (52 generated static pages). The dependency follow-up also refreshed browser support data.
 - `npm run lint`: passed without warnings/errors after fixing the existing observer cleanup warning.
 - `npm run typecheck`: passed TypeScript and Insights SEO (7 catalog slugs, 263 redirects); one intermediate rerun failed when generated QA JSON was placed in the source tree. Evidence was moved outside the repo and the check rerun.
 - Browser audit: 42 route destinations × 5 widths = 210 renders; no horizontal overflow, missing/duplicate H1, nested anchor/button controls, or JavaScript page errors. 42 internal link destinations had no 4xx/5xx. Cached responses returned 304 and are successful revalidations, not broken routes.
@@ -29,3 +29,7 @@ Main and existing feature-PR commits have Vercel deployment checks for stiggsync
 - Final investor follow-up: 200 responses and no overflow at all 5 widths; unsupported ROI numbers removed. Social image returns 200. Home platform-access CTA routes to contact; explore/workspace CTAs route to app.syncai.ca/workspace.
 - Representative home and contact screenshots visually inspected; existing branding and premium palette retained.
 - No production lead submission, real AI question, upload, completed purchase, email-delivery test, authenticated customer onboarding, or production deployment was performed.
+
+## Production hydration regression check
+
+The current browser harness fails on any page error, verifies semantic skip targets, and records the production build ID before and after the run. `node qa/journey-check.cjs` checks keyboard skip focus, a mobile platform-to-purchasing journey, necessary-only consent persistence, all three retired PDF redirects, and empty-form blocking without sending a lead. `node qa/nojs-check.cjs` verifies that the platform heading and main content remain visible with JavaScript disabled. Historical failed/interrupted candidates are documented in RELEASE-REVIEW.md; they must not be presented as passing tests.

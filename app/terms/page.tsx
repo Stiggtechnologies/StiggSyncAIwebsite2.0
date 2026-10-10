@@ -5,7 +5,7 @@ import { FileText, Mail } from 'lucide-react';
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#101113]">
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#D6B885]/5 via-transparent to-transparent" />
 

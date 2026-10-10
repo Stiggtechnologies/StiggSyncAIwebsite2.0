@@ -9,7 +9,7 @@ const startingFrom: Record<string, string> = {
 
 export default function TrainingHubPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold text-cyan-300">Reliability training</p>

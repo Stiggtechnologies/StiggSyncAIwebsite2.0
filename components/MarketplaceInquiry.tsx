@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export default function MarketplaceInquiry({ channel }: { channel: string }) {
-  return <main className="bg-ink pt-16 text-bone"><section className="border-b border-bone/10"><div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
+  return <main id="main-content" tabIndex={-1} className="bg-ink pt-16 text-bone"><section className="border-b border-bone/10"><div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
     <p className="font-mono text-sm uppercase tracking-widest text-cyan-300">Procurement · {channel}</p>
     <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">Bring SyncAI into your purchasing process.</h1>
     <p className="mt-7 max-w-2xl text-lg leading-8 text-bone/75">SyncAI is available to purchase and use. Talk with us about platform access, your operating workflows, and the procurement route your organization requires.</p>
