@@ -5,9 +5,9 @@ import { FileText, Mail } from 'lucide-react';
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#101113]">
       <section className="relative pt-32 pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#D6B885]/5 via-transparent to-transparent" />
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -16,12 +16,13 @@ export default function TermsPage() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-6">
-              <FileText className="w-4 h-4 text-[#3B82F6]" />
-              <span className="text-sm text-[#3B82F6] font-medium">Legal</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D6B885]/10 border border-[#D6B885]/30 rounded-full mb-6">
+              <FileText className="w-4 h-4 text-[#D6B885]" />
+              <span className="text-sm text-[#D6B885] font-medium">Legal</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Terms of Service</h1>
+            <p className="mt-4 text-sm text-slate-300">SyncAI is operated by Stigg Security Inc., doing business as SyncAI.</p>
             <p className="text-gray-400 mb-4">Last updated: February 2026</p>
 
             <div className="prose prose-invert max-w-none">
@@ -52,7 +53,7 @@ export default function TermsPage() {
                     educational purposes only. The results generated are estimates based on industry
                     benchmarks and the information you provide.
                   </p>
-                  <div className="bg-[#1E293B]/50 border border-[#F59E0B]/30 rounded-xl p-4 mt-4">
+                  <div className="bg-[#17181B]/50 border border-[#F59E0B]/30 rounded-xl p-4 mt-4">
                     <p className="text-[#F59E0B] font-medium mb-2">Important Notice:</p>
                     <p className="text-gray-400">
                       We do not guarantee any specific ROI, cost savings, or operational improvements.
@@ -151,8 +152,8 @@ export default function TermsPage() {
                   <p className="mb-4">
                     For questions about these Terms of Service, contact us at:
                   </p>
-                  <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-6">
-                    <div className="flex items-center gap-3 text-[#3B82F6]">
+                  <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-6">
+                    <div className="flex items-center gap-3 text-[#D6B885]">
                       <Mail className="w-5 h-5" />
                       <a href="mailto:legal@syncai.ca" className="hover:underline">
                         legal@syncai.ca
@@ -171,7 +172,7 @@ export default function TermsPage() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="pb-6 border-b border-[#1E293B] last:border-0">
+    <div className="pb-6 border-b border-[#17181B] last:border-0">
       <h2 className="text-xl font-semibold text-white mb-4">{title}</h2>
       {children}
     </div>

@@ -13,7 +13,7 @@ export default function ManualChapterPage({ slug }: { slug: string }) {
   const next = index >= 0 ? fieldManual.chapters[index + 1] : undefined;
 
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <ManualChapterJsonLd slug={slug} />
       <article className="border-b border-white/10">
         <div className="mx-auto max-w-3xl px-6 py-24 lg:px-8">

@@ -4,15 +4,15 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export default function FracasIsNotADecisionSystemPage() {
   return (
-    <main className="min-h-screen bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"
-          className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#D6B885] hover:text-white transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Insights
@@ -24,7 +24,7 @@ export default function FracasIsNotADecisionSystemPage() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <header className="mb-12">
-            <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
+            <span className="inline-block px-3 py-1 bg-[#D6B885]/10 text-[#D6B885] text-sm font-medium rounded-full mb-4">
               Reliability Engineering
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -74,7 +74,7 @@ export default function FracasIsNotADecisionSystemPage() {
                 href="https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=207200"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 ident_number 207200
               </a>
@@ -260,33 +260,33 @@ export default function FracasIsNotADecisionSystemPage() {
               without calling the original engineer.
             </p>
 
-            <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
+            <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">
                 If the record cannot answer these, the loop is still open
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">1</span>
+                  <span className="text-[#D6B885] font-bold">1</span>
                   <span>What failure was reported, and on which asset configuration?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">2</span>
+                  <span className="text-[#D6B885] font-bold">2</span>
                   <span>What evidence was observed, versus hypothesized?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">3</span>
+                  <span className="text-[#D6B885] font-bold">3</span>
                   <span>What competing causes remain unproven?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">4</span>
+                  <span className="text-[#D6B885] font-bold">4</span>
                   <span>What action was recommended, and what was actually authorized?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">5</span>
+                  <span className="text-[#D6B885] font-bold">5</span>
                   <span>Who approved it, and under what boundary?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">6</span>
+                  <span className="text-[#D6B885] font-bold">6</span>
                   <span>What verification would show the action worked — and was it checked?</span>
                 </li>
               </ul>
@@ -326,7 +326,7 @@ export default function FracasIsNotADecisionSystemPage() {
               They are cited as reliability-program context, not as SyncAI certifications.
             </p>
 
-            <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
+            <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">
                 Bring a real reliability question
               </h3>
@@ -338,11 +338,9 @@ export default function FracasIsNotADecisionSystemPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={APP_SETUP_URL}
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
-                >
-                  Try Reliability Engineer
-                </a>
+                  href={APP_WORKSPACE_URL}
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
+                >Customer workspace</a>
                 <Link
                   href="/reliability-assessment"
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
@@ -351,7 +349,7 @@ export default function FracasIsNotADecisionSystemPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 text-[#3B82F6] font-semibold hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"
                 >
                   Contact
                 </Link>

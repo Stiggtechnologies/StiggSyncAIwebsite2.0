@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 type ContactForm = {
   name: string;
@@ -59,17 +59,18 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Contact</p>
             <h1 className="mt-5 text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
-              Talk to the people building SyncAI.
+              Put SyncAI to work for your team.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-[1.7] text-slate-400">
-              Use this form for product, partnership, security, or enterprise deployment questions. For a defined operating use case, the strategic-pilot intake gives us more technical context.
+              Use this form to discuss purchasing SyncAI, arrange a product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
             </p>
+            <p className="mt-6 text-sm leading-7 text-slate-300">You can also contact <a href="mailto:oadavis@syncai.ca" className="text-cyan-300 underline">oadavis@syncai.ca</a> or <a href="tel:+17802152887" className="text-cyan-300 underline">780-215-2887</a>.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
               <Link
                 href="/strategic-pilot"
@@ -78,17 +79,15 @@ export default function ContactPage() {
                 Strategic pilot intake
               </Link>
               <a
-                href={APP_SETUP_URL}
+                href={APP_WORKSPACE_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md px-2 py-3 text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-              >
-                Try Reliability Engineer →
-              </a>
+              >Existing customers: workspace →</a>
             </div>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-[#17181B] p-6 sm:p-8">
             {isSubmitted ? (
-              <div className="py-10">
+              <div className="py-10" role="status" aria-live="polite">
                 <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
                   ✓
                 </div>
@@ -99,6 +98,7 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <p className="text-sm leading-6 text-slate-400">Please include business contact details only. Do not send confidential operational data. See our <Link href="/privacy" className="text-cyan-300 underline">privacy policy</Link>.</p>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Name">
                     <input className={inputClass} name="name" value={formData.name} onChange={handleChange} required />

@@ -6,7 +6,7 @@ import { Home, ArrowLeft, Search } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#101113]">
+    <main id="main-content" tabIndex={-1} className="min-h-screen flex items-center justify-center bg-[#101113]">
       <div className="text-center px-4 max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,7 +14,7 @@ export default function NotFound() {
           transition={{ duration: 0.6 }}
         >
           <div className="mb-8">
-            <span className="text-8xl md:text-9xl font-bold text-[#3B82F6]">404</span>
+            <span className="text-8xl md:text-9xl font-bold text-[#D6B885]">404</span>
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -28,7 +28,7 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors shadow-lg shadow-[#3B82F6]/30"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors shadow-lg shadow-[#D6B885]/30"
             >
               <Home className="w-4 h-4" />
               Back to Home

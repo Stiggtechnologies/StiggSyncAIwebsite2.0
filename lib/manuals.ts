@@ -30,9 +30,9 @@ export const fieldManual: FieldManual = {
   version: 'v0',
   title: 'Sync Field Manual',
   description:
-    'Field Manual v0 by Orville Davis. The Decision Case runs question, evidence, recommendation, human decision, action, verification, and learning. Recommend is not authorize. Evidence is required. Stage-1 readiness is the signed-in case.',
+    'Field Manual v0 by Orville Davis. The Decision Case runs question, evidence, recommendation, human decision, action, verification, and learning. Recommend is not authorize. Evidence is required. Your team retains authority over execution.',
   excerpt:
-    'The public contents of the Decision Case: question, evidence, recommendation, human decision, action, verification, and learning — with the Stage-1 boundaries held in view.',
+    'The public contents of the Decision Case: question, evidence, recommendation, human decision, action, verification, and learning — with human approval and evidence kept explicit.',
   published: '2026-09-25',
   author: FIELD_MANUAL_AUTHOR,
   chapters: [
@@ -54,10 +54,10 @@ export const fieldManual: FieldManual = {
       spine: 'Evidence',
       title: 'Evidence',
       description:
-        'Evidence is the inspectable record on the case: observed fact, assumption, and what is still missing. Stage-1 does not claim a live connector tag pull.',
+        'Evidence is the inspectable record on the case: observed fact, assumption, and what is still missing. Data connections are agreed for the customer scope.',
       paragraphs: [
         'Evidence is the part of the case a later reader can inspect: approved knowledge, asset context, work history, condition information, and a visible split between observed fact, assumption, and what is still missing. The recommendation waits on that record. A proposal with no basis is not ready for a human decision.',
-        'Stage-1 evidence is the record held on the case. A live connector that pulls historian or control-system tags sits outside this edition.',
+        'Evidence is the record held on the case. Data connection requirements are agreed separately.',
       ],
     },
     {
@@ -90,10 +90,10 @@ export const fieldManual: FieldManual = {
       spine: 'Action',
       title: 'Action',
       description:
-        'Action records the work the human decision authorized. Plant execute is outside Stage-1. Work continues through the customer’s systems of record.',
+        'Action records the work the human decision authorized. Your team controls plant execution. Work continues through the customer’s systems of record.',
       paragraphs: [
         'Action is the record of the work the human decision authorized. It states what was approved to happen next and keeps that statement on the case, beside the question and the evidence. The signed-in loop includes this step so the decision and the intended work stay in one record.',
-        'Plant execute is outside Stage-1. The product does not dispatch unsupervised work to equipment. Work that follows the decision moves through the customer’s systems of record and the people who already hold operating authority.',
+        'Your team controls plant execution. The product does not dispatch unsupervised work to equipment. Work that follows the decision moves through the customer’s systems of record and the people who already hold operating authority.',
       ],
     },
     {
@@ -102,10 +102,10 @@ export const fieldManual: FieldManual = {
       spine: 'Verification',
       title: 'Verification',
       description:
-        'Verification records whether the authorized action did what it was supposed to do. Stage-1 does not treat a live tag pull as that proof.',
+        'Verification records whether the authorized action did what it was supposed to do. The outcome requires reviewable evidence.',
       paragraphs: [
         'Verification records whether the authorized action did what it was supposed to do, and which evidence would show that. The Decision Case keeps the check on the same record as the question, the recommendation, and the human decision.',
-        'Stage-1 verification is that recorded check. A live pull of control-system tags is not the proof this edition describes.',
+        'Verification is that recorded check, using the outcome evidence your team can inspect.',
       ],
     },
     {
@@ -126,10 +126,10 @@ export const fieldManual: FieldManual = {
       spine: 'Boundaries',
       title: 'Honesty boundaries',
       description:
-        'Recommend is not authorize. Evidence is required. Stage-1 readiness is the signed-in Decision Case. Plant execute, live tag pull, SMTP invites, and auto-revoke on expiry are not described as live.',
+        'Recommend is not authorize. Evidence is required. The Decision Case keeps evidence, approval, and verification explicit. Your team retains authority over execution.',
       paragraphs: [
-        'Three boundaries govern every chapter in this edition. Recommend is not authorize: a drafted proposal does not permit the work. Evidence is required: a recommendation that cannot show its basis is not treated as a decision. Stage-1 readiness means a signed-in user can complete the Decision Case — question, evidence, recommendation, human decision, action, verification, and learning — and this manual describes that journey.',
-        'Stage-1 is the limit of the claim. This edition does not describe plant execute, a live connector tag pull, SMTP invite delivery, or automatic revocation of access on expiry as live. It contains no customer case study.',
+        'Three boundaries govern every chapter in this edition. Recommend is not authorize: a drafted proposal does not permit the work. Evidence is required: a recommendation that cannot show its basis is not treated as a decision. The Decision Case workflow means a signed-in user can complete the Decision Case — question, evidence, recommendation, human decision, action, verification, and learning — and this manual describes that journey.',
+        'This manual explains the decision workflow. Data connections, access requirements, and onboarding are confirmed for each engagement. Illustrative examples do not represent customer results.',
       ],
     },
   ],

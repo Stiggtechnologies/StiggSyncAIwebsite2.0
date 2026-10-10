@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 const challenges = [
   {
@@ -41,7 +41,7 @@ const equipment = [
 
 export default function MiningReliabilityPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Mining & heavy equipment</p>
@@ -61,11 +61,9 @@ export default function MiningReliabilityPage() {
               Reliability Assessment
             </Link>
             <a
-              href={APP_SETUP_URL}
+              href={APP_WORKSPACE_URL}
               className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-            >
-              Try Reliability Engineer
-            </a>
+            >Customer workspace</a>
           </div>
         </div>
       </section>
@@ -108,9 +106,7 @@ export default function MiningReliabilityPage() {
               Evidence-led recommendations for a bounded mining domain.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              This page does not claim predicted failures on a clock, downtime percentages, or
-              customer savings. Those numbers are not published here because SyncAI does not
-              manufacture results the records cannot support.
+              Investigate repeat failures, compare work priorities, and review maintenance strategy using the records your operation already has. Keep the evidence, uncertainty, and human decision visible.
             </p>
           </div>
           <div className="grid gap-3">

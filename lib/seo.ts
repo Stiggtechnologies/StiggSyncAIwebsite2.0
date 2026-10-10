@@ -76,10 +76,12 @@ export const organizationSchema = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  email: 'info@syncai.ca',
+  email: 'oadavis@syncai.ca',
   description: DEFAULT_DESCRIPTION,
   brand: { '@type': 'Brand', name: SITE_NAME },
-  parentOrganization: { '@type': 'Organization', name: 'Stigg' },
+  legalName: 'Stigg Security Inc.',
+  alternateName: 'Stigg Security Inc. DBA SyncAI',
+  telephone: '+1-780-215-2887',
   sameAs: [SITE_URL],
 };
 

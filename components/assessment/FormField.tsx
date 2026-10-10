@@ -41,7 +41,7 @@ export function SelectField({ value, onChange, options, placeholder }: SelectFie
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="w-full px-4 py-3 bg-[#0F172A] border border-[#334155] rounded-lg text-white focus:outline-none focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 transition-all appearance-none cursor-pointer"
+      className="w-full px-4 py-3 bg-[#111214] border border-[#3A3B3E] rounded-lg text-white focus:outline-none focus:border-[#D6B885] focus:ring-2 focus:ring-[#D6B885]/20 transition-all appearance-none cursor-pointer"
       style={{
         backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`,
         backgroundPosition: 'right 0.75rem center',
@@ -90,7 +90,7 @@ export function SliderField({ value, onChange, min, max, step = 1, suffix = '' }
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full h-2 rounded-full appearance-none cursor-pointer"
         style={{
-          background: `linear-gradient(to right, #3B82F6 0%, #3B82F6 ${percentage}%, #1E293B ${percentage}%, #1E293B 100%)`,
+          background: `linear-gradient(to right, #D6B885 0%, #D6B885 ${percentage}%, #17181B ${percentage}%, #17181B 100%)`,
         }}
       />
       <div className="flex justify-between text-xs text-gray-500">
@@ -126,7 +126,7 @@ export function CurrencyInput({ value, onChange, placeholder }: CurrencyInputPro
         value={formatDisplayValue(value)}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full pl-8 pr-4 py-3 bg-[#0F172A] border border-[#334155] rounded-lg text-white focus:outline-none focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 transition-all"
+        className="w-full pl-8 pr-4 py-3 bg-[#111214] border border-[#3A3B3E] rounded-lg text-white focus:outline-none focus:border-[#D6B885] focus:ring-2 focus:ring-[#D6B885]/20 transition-all"
       />
     </div>
   );
@@ -157,7 +157,7 @@ export function NumberInput({ value, onChange, placeholder, suffix }: NumberInpu
         value={formatDisplayValue(value)}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full px-4 py-3 bg-[#0F172A] border border-[#334155] rounded-lg text-white focus:outline-none focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 transition-all"
+        className="w-full px-4 py-3 bg-[#111214] border border-[#3A3B3E] rounded-lg text-white focus:outline-none focus:border-[#D6B885] focus:ring-2 focus:ring-[#D6B885]/20 transition-all"
       />
       {suffix && (
         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">{suffix}</span>
@@ -180,7 +180,7 @@ export function TextInput({ value, onChange, placeholder, type = 'text' }: TextI
       value={value}
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
-      className="w-full px-4 py-3 bg-[#0F172A] border border-[#334155] rounded-lg text-white focus:outline-none focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 transition-all"
+      className="w-full px-4 py-3 bg-[#111214] border border-[#3A3B3E] rounded-lg text-white focus:outline-none focus:border-[#D6B885] focus:ring-2 focus:ring-[#D6B885]/20 transition-all"
     />
   );
 }

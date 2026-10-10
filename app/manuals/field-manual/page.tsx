@@ -10,7 +10,7 @@ const spineLabel = spineChapters.map((chapter) => chapter.spine).join(' → ');
 
 export default function FieldManualPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <FieldManualJsonLd />
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
@@ -73,9 +73,7 @@ export default function FieldManualPage() {
               <li>Recommend is not authorize.</li>
               <li>Evidence is required before a recommendation is treated as a decision.</li>
               <li>
-                Stage-1 readiness is the signed-in Decision Case. Plant execute, live connector tag
-                pull, SMTP invite delivery, and automatic revocation of access on expiry are outside
-                this edition.
+                The Decision Case carries evidence through recommendation, human approval, action, and verification. Your team retains authority over plant execution.
               </li>
             </ul>
           </div>

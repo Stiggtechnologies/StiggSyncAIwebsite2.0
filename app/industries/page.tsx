@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { pageMetadata } from '@/lib/seo';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = pageMetadata({
   title: 'Industries',
   description:
-    'SyncAI’s beachhead is mining, energy, and oil and gas. Governed industrial intelligence: recommend, evidence, named human approval, work, and verify. Other industries are later, not live templates.',
+    'Industrial AI for mining, energy, oil and gas, and asset-intensive teams. Investigate failures, prioritize maintenance work, and track outcomes with human approval.',
   path: '/industries',
 });
 
@@ -63,15 +63,15 @@ const laterIndustries = [
 
 export default function IndustriesPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Where it fits</p>
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
-            Mining, energy, and oil and gas first.
+            Clear decisions for asset-intensive operations.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
-            SyncAI is governed industrial intelligence: recommend → evidence → named human approval → work → verify. The beachhead is reliability and maintenance work in mining, energy, and oil and gas — not a catalog of live industry templates.
+            Turn maintenance records into clear, reviewable decisions. Use SyncAI to investigate failures, prioritize work, and track outcomes, with your team in control of approvals.
           </p>
         </div>
       </section>
@@ -81,10 +81,10 @@ export default function IndustriesPage() {
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The operating model</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              The same governed path in every beachhead operation.
+              One accountable path from evidence to action.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              SyncAI does not autonomously coordinate the plant. It does not file regulatory submittals. It does not provision a vertical tenant in 60 seconds. Recommendations stay reviewable, and a{' '}
+              Recommendations retain their supporting evidence and uncertainty, and a{' '}
               <Link href="/insights/recommend-is-not-authorize" className="font-semibold text-cyan-300 hover:text-cyan-200">
                 named human remains the approver
               </Link>
@@ -107,9 +107,9 @@ export default function IndustriesPage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Beachhead</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Operating environments</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-              Three operating environments we will take first.
+              Built around real maintenance questions.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
               The common problem is not a shortage of data. It is converting fragmented technical evidence into consistent, accountable decisions — with approval still explicit. A closed failure report is still short of that approval:{' '}
@@ -143,12 +143,12 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Later, not live</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Broader industry fit</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-                Other asset-intensive industries can wait.
+                Bring us your operating context.
               </h2>
               <p className="mt-5 text-base leading-7 text-slate-400">
-                These environments share the same class of reliability problem. They are not live industry templates, and this page does not offer a deploy button for them.
+                Manufacturing, fleets, infrastructure and facilities share many of these reliability challenges. We can discuss your assets, records and workflows to establish a practical fit.
               </p>
             </div>
             <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-1">
@@ -160,7 +160,7 @@ export default function IndustriesPage() {
             </div>
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-500">
-            SyncAI is not production-certified. There are no live production CMMS, historian, or ERP connectors on this path. There are no named customer savings on this page. Assessment and pilot work starts from customer-provided records and a bounded operating question.
+            Assessments use customer-provided exports. We confirm data connections, deployment requirements, and scope with your team before implementation.
           </p>
         </div>
       </section>
@@ -171,7 +171,7 @@ export default function IndustriesPage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How to start</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
-                One bounded entry product.
+                Choose the platform, an assessment, or a focused pilot.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
                 {RIA_LEDE}
@@ -179,11 +179,9 @@ export default function IndustriesPage() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href={APP_SETUP_URL}
+                href={APP_WORKSPACE_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-              >
-                Try Reliability Engineer
-              </a>
+              >Customer workspace</a>
               <Link
                 href="/reliability-assessment"
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"

@@ -5,13 +5,13 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata: Metadata = pageMetadata({
   title: 'Security',
   description:
-    'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Third-party certifications are claimed only when current. Enterprise SSO is a later product step.',
+    'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Review security controls, identity requirements, and deployment scope with SyncAI before purchase.',
   path: '/security',
 });
 
 const implementedControls = [
   {
-    title: 'Human approval is a primitive',
+    title: 'Named human approval',
     body: 'SyncAI recommends. A named human accepts, rejects, escalates, or returns the recommendation. Direct plant execute is disabled. Approval, escalation, and accountability are product architecture — not a policy overlay.',
   },
   {
@@ -28,7 +28,7 @@ const implementedControls = [
   },
   {
     title: 'Role-aware access',
-    body: 'Access is scoped by role and the information boundary agreed for the workspace. Least privilege is the design intent. Enterprise SSO is a later product step, not a current capability.',
+    body: 'Access is scoped by role and the information boundary agreed for the workspace. Least privilege is the design intent. Discuss required identity-provider and access controls with us before purchasing.',
   },
   {
     title: 'Evidence before automation',
@@ -36,14 +36,14 @@ const implementedControls = [
   },
 ];
 
-const notClaimed = [
+const deploymentRequirements = [
   {
-    title: 'Enterprise SSO',
-    body: 'Identity-provider SSO is a later product step. It is not a shipping capability on this site.',
+    title: 'Identity and access',
+    body: 'Tell us which identity provider, SSO policy, and approval roles your organization requires. We confirm the supported configuration and any implementation work before you proceed.',
   },
   {
-    title: 'Packaged on-prem',
-    body: 'There is no packaged on-premise product to order from this page. Deployment and data-handling requirements are defined during security and data discovery.',
+    title: 'Hosting and data residency',
+    body: 'Agree hosting, data residency, and data-handling requirements during security discovery. Any private-cloud or on-premise requirement needs an agreed deployment scope before purchase.',
   },
   {
     title: 'Third-party certifications',
@@ -53,15 +53,15 @@ const notClaimed = [
 
 export default function SecurityPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Security & governance</p>
           <h1 className="mt-5 max-w-5xl text-5xl font-semibold tracking-[-0.045em] text-white sm:text-6xl">
-            Describe the controls that exist. Keep human approval in the architecture.
+            Protect operating evidence. Keep authority clear.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
-            SyncAI is governed industrial intelligence. Security and deployment capabilities are described by implemented controls and validated configuration — not by a certification badge or a packaged on-prem SKU.
+            SyncAI combines evidence-led recommendations with access controls, reviewable decision records, and named human approval. We review your security and deployment requirements against the environment agreed for your team.
           </p>
         </div>
       </section>
@@ -122,9 +122,9 @@ export default function SecurityPage() {
       <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">What we do not claim</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Deployment requirements</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              Later product steps are not current capabilities.
+              Confirm the controls your operation requires.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
               SyncAI does not represent third-party certifications as complete unless they have been formally achieved and are current.
@@ -132,7 +132,7 @@ export default function SecurityPage() {
           </div>
 
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
-            {notClaimed.map((item) => (
+            {deploymentRequirements.map((item) => (
               <article key={item.title} className="bg-[#151618] p-7 sm:p-8">
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-400">{item.body}</p>
@@ -150,7 +150,7 @@ export default function SecurityPage() {
               Work from the customer-approved information boundary.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              SyncAI is designed to use the records and systems the customer authorizes. Assessment work starts from customer-provided exports. Integration requirements for a later deployment are defined during security and data discovery — not assumed as live production connectors today.
+              SyncAI is designed to use the records and systems the customer authorizes. Assessment work starts from customer-provided exports. Data connections and deployment requirements are confirmed during security and data discovery.
             </p>
             <p className="mt-5 text-base leading-7 text-slate-400">
               We do not train foundation models on customer operational data without explicit consent. Competitive and operating information stays the customer’s.

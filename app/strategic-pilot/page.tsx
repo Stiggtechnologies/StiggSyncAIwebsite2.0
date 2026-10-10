@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FurtherReading } from '@/components/insights/InsightReading';
 import { strategicPilotFurtherReading } from '@/lib/insights';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 const phases = [
   {
@@ -97,7 +97,7 @@ export default function StrategicPilotPage() {
   };
 
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Strategic pilot</p>
@@ -143,11 +143,9 @@ export default function StrategicPilotPage() {
             <div className="mt-6 text-sm text-slate-500">
               Want to see the product first?{' '}
               <a
-                href={APP_SETUP_URL}
+                href={APP_WORKSPACE_URL}
                 className="font-semibold text-cyan-300 hover:text-cyan-200"
-              >
-                Open the Reliability Engineer workspace →
-              </a>
+              >Existing customers: workspace →</a>
             </div>
           </div>
 

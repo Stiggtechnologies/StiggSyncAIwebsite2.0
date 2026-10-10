@@ -2,11 +2,19 @@ const insightRedirects = require('./lib/insight-redirects');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: __dirname,
   eslint: {
     ignoreDuringBuilds: true,
   },
   async redirects() {
-    return insightRedirects;
+    return [
+      ...insightRedirects,
+      ...['economics-of-autonomous-maintenance', 'governance-in-industrial-ai', 'why-cmms-alone-is-failing-2026'].map((slug) => ({
+        source: `/pdfs/${slug}.pdf`,
+        destination: `/insights/${slug}`,
+        permanent: true,
+      })),
+    ];
   },
   images: { unoptimized: true },
   poweredByHeader: false,

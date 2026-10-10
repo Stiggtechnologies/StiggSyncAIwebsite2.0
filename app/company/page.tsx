@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
   title: 'Company',
   description:
-    'SyncAI is governed industrial intelligence for mining, energy, and oil and gas reliability. Ask, evidence, recommend, a named human decides, then verify. Not plant execute. Not generic chat.',
+    'SyncAI is governed industrial intelligence for mining, energy, and oil and gas reliability. Ask, evidence, recommend, a named human decides, then verify. Human approval. A shared decision workspace.',
   path: '/company',
 });
 
@@ -41,15 +41,15 @@ const loop = [
 
 const notThis = [
   {
-    title: 'Not plant execute',
+    title: 'Human approval',
     body: 'SyncAI does not dispatch unsupervised work to the plant. Direct plant execute is disabled. Authorized work proceeds through the customer’s existing systems of record and operating authority.',
   },
   {
-    title: 'Not generic chat',
+    title: 'A shared decision workspace',
     body: 'This is not an open-ended chatbot on industrial data. The product is a decision workspace: evidence grades, competing explanations, and a lowest-regret next action a human can review.',
   },
   {
-    title: 'Not a CMMS replacement',
+    title: 'Works beside your systems',
     body: (
       <>
         CMMS, EAM, ERP, historian, and inspection systems remain systems of record. SyncAI is designed to sit across that estate, not rip and replace it. The longer argument is{' '}
@@ -61,8 +61,8 @@ const notThis = [
     ),
   },
   {
-    title: 'Not self-serve onboarding as a product',
-    body: 'There is a live Reliability Engineer workspace for a technical question. Commercial entry is a bounded Reliability Intelligence Assessment or a Strategic Pilot — not a claim that seamless self-guided onboarding is live.',
+    title: 'Platform and services',
+    body: 'Purchase SyncAI for your team, with onboarding scoped to your operation. A Reliability Intelligence Assessment, focused pilot, or team training can support adoption when useful.',
   },
 ];
 
@@ -86,7 +86,7 @@ const whoFor = [
 
 export default function CompanyPage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Company</p>
@@ -94,7 +94,7 @@ export default function CompanyPage() {
             Governed intelligence for mining, energy, and oil and gas reliability.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
-            SyncAI is a product of Stigg. It helps reliability and maintenance teams investigate
+            SyncAI is offered by Stigg Security Inc., doing business as SyncAI. It helps reliability and maintenance teams investigate
             failures, prioritize work, and move recommendations through controlled human approval —
             using the evidence the operation already has.
           </p>
@@ -104,7 +104,7 @@ export default function CompanyPage() {
       <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">What Sync is</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">The platform</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
               An industrial intelligence layer above the systems you already run.
             </h2>
@@ -123,7 +123,7 @@ export default function CompanyPage() {
               <Link href="/insights/recommend-is-not-authorize" className="text-cyan-300 hover:text-cyan-200">
                 Recommend is not authorize
               </Link>
-              . Plant execute is not a marketed capability.
+              . Your team controls approval and execution.
             </p>
           </div>
         </div>
@@ -134,11 +134,10 @@ export default function CompanyPage() {
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Who it is for</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              Reliability teams in asset-intensive operations. Beachhead first.
+              Reliability teams in asset-intensive operations.
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-400">
-              The first commercial motion is mining, energy, and oil and gas. Other asset-intensive
-              industries are later — not live tenant templates.
+              We focus on mining, energy, and oil and gas, and work with teams to establish the fit for their asset-intensive operations.
             </p>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 lg:grid-cols-3">
@@ -188,9 +187,9 @@ export default function CompanyPage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">What it is not</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">How it works</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              Keep the product boundary honest.
+              Designed for accountable operating decisions.
             </h2>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
@@ -208,21 +207,18 @@ export default function CompanyPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Who builds it</p>
           <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.03em] text-white">
-            SyncAI is a product of Stigg.
+            SyncAI is offered by Stigg Security Inc., doing business as SyncAI.
           </h2>
           <div className="mt-8 max-w-3xl space-y-5 text-base leading-7 text-slate-400">
             <p>
-              The company page does not list a fabricated team, advisor bench, or headcount. Contact
-              is{' '}
-              <a href="mailto:info@syncai.ca" className="font-semibold text-cyan-300 hover:text-cyan-200">
-                info@syncai.ca
+              For product, purchasing, and implementation questions, contact{' '}
+              <a href="mailto:oadavis@syncai.ca" className="font-semibold text-cyan-300 hover:text-cyan-200">
+                oadavis@syncai.ca
               </a>
               .
             </p>
             <p>
-              Commercial work today is a bounded Reliability Intelligence Assessment and, where the
-              evidence supports it, a Strategic Pilot. There are no customer case studies or savings
-              claims published on this site.
+              SyncAI is available to purchase and use. Assessments, pilots, and training provide additional support for teams building an evidence-led reliability practice.
             </p>
           </div>
         </div>
@@ -240,11 +236,9 @@ export default function CompanyPage() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href={APP_SETUP_URL}
+                href={APP_WORKSPACE_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-              >
-                Try Reliability Engineer
-              </a>
+              >Customer workspace</a>
               <Link
                 href="/reliability-assessment"
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"

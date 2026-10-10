@@ -16,7 +16,7 @@ const layers = [
   {
     number: '03',
     title: 'Industrial intelligence',
-    body: 'Domain workflows combine deterministic analysis with AI reasoning to investigate, compare options, and build a reviewable technical recommendation.',
+    body: 'Specialist agent workflows combine deterministic analysis with AI reasoning for failure investigation, maintenance strategy, and work prioritization. Reliability engineers and planners review the recommendation; a named approver controls the next action.',
     details: ['Reliability analysis', 'Decision-case workflows', 'Domain-specific reasoning'],
   },
   {
@@ -54,7 +54,7 @@ const securityControls = [
 
 export default function ArchitecturePage() {
   return (
-    <main className="bg-[#111214] pt-20 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Architecture</p>
@@ -142,7 +142,7 @@ export default function ArchitecturePage() {
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Security posture</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              Describe the controls that exist. Do not overstate the ones still being validated.
+              Access, traceability, and data boundaries built into the workflow.
             </h2>
           </div>
 

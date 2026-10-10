@@ -60,11 +60,12 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#111214] pt-16 text-slate-100">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#111214] pt-16 text-slate-100">
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Privacy</p>
           <h1 className="mt-4 text-5xl font-semibold tracking-[-0.04em] text-white">Privacy Policy</h1>
+            <p className="mt-4 text-sm text-slate-300">SyncAI is operated by Stigg Security Inc., doing business as SyncAI.</p>
           <p className="mt-5 text-sm text-slate-500">Last updated: August 2026</p>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-300">
             This policy explains how SyncAI handles information submitted through the public website and how optional website analytics are controlled.
