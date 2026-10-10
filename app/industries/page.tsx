@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { pageMetadata } from '@/lib/seo';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = pageMetadata({
   title: 'Industries',
@@ -179,9 +179,9 @@ export default function IndustriesPage() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href={APP_WORKSPACE_URL}
+                href={APP_CUSTOMER_SIGN_IN_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]"
-              >Customer workspace</a>
+              >Customer sign-in</a>
               <Link
                 href="/reliability-assessment"
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200"

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FurtherReading } from '@/components/insights/InsightReading';
 import { strategicPilotFurtherReading } from '@/lib/insights';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 const phases = [
   {
@@ -143,9 +143,9 @@ export default function StrategicPilotPage() {
             <div className="mt-6 text-sm text-slate-500">
               Want to see the product first?{' '}
               <a
-                href={APP_WORKSPACE_URL}
+                href={APP_CUSTOMER_SIGN_IN_URL}
                 className="font-semibold text-cyan-300 hover:text-cyan-200"
-              >Existing customers: workspace →</a>
+              >Existing customers: sign in →</a>
             </div>
           </div>
 

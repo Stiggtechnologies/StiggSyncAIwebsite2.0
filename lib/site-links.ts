@@ -1,6 +1,9 @@
-/** Customer app handoffs: exploration and onboarding are separate journeys. */
-export const APP_WORKSPACE_URL = 'https://app.syncai.ca/workspace';
-export const APP_SETUP_URL = 'https://app.syncai.ca/setup';
+/** Public exploration never grants customer workspace access. */
+export const APP_PUBLIC_DEMO_URL = 'https://app.syncai.ca/workspace';
 
-/** Evaluation requests stay with sales until the guided app handoff passes acceptance. */
+/** / and /overview both resolve through the app's authenticated RoleLanding. */
+export const APP_CUSTOMER_SIGN_IN_URL = 'https://app.syncai.ca/signin?returnTo=%2F';
+
+/** Sales-assisted handoffs stay here until the guided app journey is accepted. */
 export const EVALUATION_CONTACT_URL = '/contact';
+export const ASSESSMENT_CONTACT_URL = '/contact';

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
-import { APP_WORKSPACE_URL, EVALUATION_CONTACT_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL, EVALUATION_CONTACT_URL } from '@/lib/site-links';
 import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
@@ -215,7 +215,7 @@ export default function Home() {
               SyncAI brings specialist AI workflows into a shared platform. Reliability engineers investigate failures and review strategy; planners compare work priorities; supervisors approve the next action. Optional assessments, pilots, and training help your team adopt that process.
             </p>
             <p className="mt-8">
-              <a href={APP_WORKSPACE_URL} className={linkClass}>Customer workspace</a>
+              <a href={APP_CUSTOMER_SIGN_IN_URL} className={linkClass}>Customer sign-in</a>
             </p>
           </div>
 

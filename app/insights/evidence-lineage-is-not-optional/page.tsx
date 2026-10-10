@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
-import { APP_WORKSPACE_URL } from '@/lib/site-links';
+import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 
 export default function EvidenceLineageIsNotOptionalPage() {
   return (
@@ -328,9 +328,9 @@ export default function EvidenceLineageIsNotOptionalPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={APP_WORKSPACE_URL}
+                  href={APP_CUSTOMER_SIGN_IN_URL}
                   className="inline-flex items-center justify-center px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
-                >Customer workspace</a>
+                >Customer sign-in</a>
                 <Link
                   href="/reliability-assessment"
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
