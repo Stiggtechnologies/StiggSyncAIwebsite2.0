@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { CONTACT_EMAIL } from '@/lib/contact-email';
+import { buildTrainingEmailDraft, type TrainingDraft } from '@/lib/training-email';
 
 type Props = {
   offerTitle: string;
@@ -19,7 +21,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 }
 
 export default function TrainingInquiryForm({ offerTitle }: Props) {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<TrainingDraft>({
     name: '',
     email: '',
     company: '',
@@ -28,84 +30,44 @@ export default function TrainingInquiryForm({ offerTitle }: Props) {
     timing: '',
     notes: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  const [copyStatus, setCopyStatus] = useState('');
+  const emailDraft = buildTrainingEmailDraft(offerTitle, form);
 
   const onChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
+    setCopyStatus('');
   };
 
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsSubmitting(true);
-    setError('');
-
-    const message = [
-      `TRAINING INQUIRY: ${offerTitle}`,
-      `Preferred format: ${form.format}`,
-      `Approx. group size: ${form.groupSize || 'not given'}`,
-      `Preferred timing: ${form.timing || 'not given'}`,
-      '',
-      form.notes || '(no additional notes)',
-    ].join('\n');
-
+  const copyDraft = async () => {
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          company: form.company,
-          message,
-        }),
-      });
-      const payload = await response.json().catch(() => null);
-      if (!response.ok || !payload?.success) {
-        throw new Error(payload?.error || 'We could not send your request.');
-      }
-      setIsSubmitted(true);
-    } catch (submissionError) {
-      setError(
-        submissionError instanceof Error
-          ? submissionError.message
-          : 'We could not send your request. Please try again.',
-      );
-    } finally {
-      setIsSubmitting(false);
+      await navigator.clipboard.writeText(emailDraft.text);
+      setCopyStatus(`Draft copied. Paste it into your email app and send it to ${CONTACT_EMAIL}.`);
+    } catch {
+      setCopyStatus(`Copy is unavailable. Copy your details manually and email ${CONTACT_EMAIL}.`);
     }
   };
 
-  if (isSubmitted) {
-    return (
-      <div className="py-8">
-        <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-300/10 text-emerald-200">
-          ✓
-        </div>
-        <h3 className="text-2xl font-semibold text-white">Request received</h3>
-        <p className="mt-3 text-sm leading-6 text-slate-400">
-          Thanks. We will reply to the email address you provided to set up a 20-minute call.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form onSubmit={onSubmit} className="space-y-5">
+    <div className="space-y-5" data-training-inquiry="true">
+      <h3 className="text-xl font-semibold text-white">Prepare your training inquiry</h3>
+      <p id="training-email-help" className="text-sm leading-6 text-slate-400">Open your email app, review your message, and send it there. This page does not send or submit requests.</p>
+      <p className="text-sm leading-6 text-slate-400">The course and optional details below prepare an email locally. Include business contact details only, without confidential operational data.</p>
+      <noscript><p className="text-sm leading-6 text-slate-300">Draft preparation needs JavaScript. Open your email app and enter your details there; the selected course is already included.</p></noscript>
+      <fieldset className="space-y-5" data-clarity-mask="true">
+      <legend className="mb-3 text-sm font-semibold text-slate-300">Inquiry details (optional)</legend>
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label="Name">
-          <input className={inputClass} name="name" value={form.name} onChange={onChange} required />
+          <input className={inputClass} name="name" value={form.name} onChange={onChange} autoComplete="name" maxLength={160} />
         </Field>
         <Field label="Work email">
-          <input className={inputClass} type="email" name="email" value={form.email} onChange={onChange} required />
+          <input className={inputClass} type="email" name="email" value={form.email} onChange={onChange} autoComplete="email" maxLength={254} />
         </Field>
       </div>
       <Field label="Company or site">
-        <input className={inputClass} name="company" value={form.company} onChange={onChange} required />
+        <input className={inputClass} name="company" value={form.company} onChange={onChange} autoComplete="organization" maxLength={180} />
       </Field>
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label="Preferred format">
@@ -116,35 +78,28 @@ export default function TrainingInquiryForm({ offerTitle }: Props) {
           </select>
         </Field>
         <Field label="Approx. group size">
-          <input className={inputClass} name="groupSize" value={form.groupSize} onChange={onChange} placeholder="e.g. 15" />
+          <input className={inputClass} name="groupSize" value={form.groupSize} onChange={onChange} maxLength={80} placeholder="e.g. 15" />
         </Field>
       </div>
       <Field label="Preferred timing">
-        <input className={inputClass} name="timing" value={form.timing} onChange={onChange} placeholder="e.g. November, around a shutdown" />
+        <input className={inputClass} name="timing" value={form.timing} onChange={onChange} maxLength={180} placeholder="e.g. November, around a shutdown" />
       </Field>
       <Field label="Anything we should know (optional)">
         <textarea
           className={`${inputClass} min-h-28 resize-y`}
           name="notes"
+          maxLength={2500}
           value={form.notes}
           onChange={onChange}
           placeholder="Your CMMS, crews or shifts, sites"
         />
       </Field>
 
-      {error ? (
-        <div role="alert" className="rounded-md border border-red-300/20 bg-red-300/10 px-4 py-3 text-sm text-red-200">
-          {error}
-        </div>
-      ) : null}
-
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-60"
-      >
-        {isSubmitting ? 'Sending…' : 'Request a 20-minute call'}
-      </button>
-    </form>
+      </fieldset>
+      <a href={emailDraft.href} aria-describedby="training-email-help" className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200">Open email app</a>
+      <button type="button" onClick={copyDraft} className="inline-flex min-h-12 w-full items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Copy email draft</button>
+      <p className="text-sm leading-6 text-slate-400">No email app configured? Copy the draft and send it from your usual email service to <a href={`mailto:${CONTACT_EMAIL}`} className="text-cyan-300 underline">{CONTACT_EMAIL}</a>.</p>
+      <p role="status" aria-live="polite" className="text-sm leading-6 text-slate-300">{copyStatus}</p>
+    </div>
   );
 }
