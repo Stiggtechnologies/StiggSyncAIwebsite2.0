@@ -85,7 +85,7 @@ export default function WhyCMMSIsFailingPage() {
 
             <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <p className="text-lg italic text-gray-300">
-                “The full whitepaper includes detailed analysis of downtime economics, governance requirements, and migration strategies for enterprise deployments.”
+                Review your maintenance decision process alongside downtime evidence, governance requirements, and the systems your team already uses.
               </p>
             </div>
           </div>

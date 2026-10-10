@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata: Metadata = pageMetadata({
   title: 'Security',
   description:
-    'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Third-party certifications are claimed only when current. Enterprise SSO is a later product step.',
+    'SyncAI security is described by implemented controls: encryption, row-level security, audit logging, and named human approval. Review security controls, identity requirements, and deployment scope with SyncAI before purchase.',
   path: '/security',
 });
 
