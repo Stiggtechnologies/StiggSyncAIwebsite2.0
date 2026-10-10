@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 const article = getInsightArticle('alert-is-not-decision');
 
@@ -16,7 +16,7 @@ export default function AlertIsNotDecisionPage() {
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"
-          className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#D6B885] hover:text-white transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Insights
@@ -28,7 +28,7 @@ export default function AlertIsNotDecisionPage() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <header className="mb-12">
-            <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
+            <span className="inline-block px-3 py-1 bg-[#D6B885]/10 text-[#D6B885] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Alert Is Not Decision</h1>
@@ -75,26 +75,26 @@ export default function AlertIsNotDecisionPage() {
               Verification, and Learning. {fieldManual.author} states that order in{' '}
               <Link
                 href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Field Manual {fieldManual.version}
               </Link>
               . The manuals index lives at{' '}
-              <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
+              <Link href="/manuals" className="text-[#D6B885] hover:text-white transition-colors">
                 /manuals
               </Link>
               . This essay is why an alert cannot be read as the human decision or as verification.
               The manual is the public contents. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
               chapter and the{' '}
               <Link
                 href={fieldManualPath('verification')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification
               </Link>{' '}
@@ -118,7 +118,7 @@ export default function AlertIsNotDecisionPage() {
             <p>
               <Link
                 href="/insights/dashboard-is-not-decision"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Dashboard Is Not Decision
               </Link>{' '}
@@ -150,7 +150,7 @@ export default function AlertIsNotDecisionPage() {
               decide. The question is recorded before evidence or recommendation.{' '}
               <Link
                 href="/insights/question-is-not-decision"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Question Is Not Decision
               </Link>{' '}
@@ -189,7 +189,7 @@ export default function AlertIsNotDecisionPage() {
               view. Drafting that proposal leaves authority where it already sits.{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Recommend Is Not Authorize
               </Link>{' '}
@@ -205,7 +205,7 @@ export default function AlertIsNotDecisionPage() {
               citation. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
@@ -233,14 +233,14 @@ export default function AlertIsNotDecisionPage() {
               question, the proposal, and the person who decided. The{' '}
               <Link
                 href={fieldManualPath('verification')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification
               </Link>{' '}
               chapter publishes that step.{' '}
               <Link
                 href="/insights/verification-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification Is Not Optional
               </Link>{' '}
@@ -263,7 +263,7 @@ export default function AlertIsNotDecisionPage() {
             </p>
 
             <p>
-              Stage-1 verification is the check written on the case. This edition does not treat a
+              Decision Case verification is the check written on the case. This edition does not treat a
               live pull of historian or control-system tags as that check. An alert fed by those
               tags, or by simulated or seeded practice records, is still a signal. It is not the
               verification step. Learning that follows verification inherits the closed case. It
@@ -290,7 +290,7 @@ export default function AlertIsNotDecisionPage() {
               The same signal does not execute the work.{' '}
               <Link
                 href="/insights/action-is-not-execution"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Action Is Not Execution
               </Link>{' '}
@@ -316,13 +316,13 @@ export default function AlertIsNotDecisionPage() {
 
             <p>
               Field Manual {fieldManual.version} is the public contents of this loop. Start at the{' '}
-              <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
+              <Link href="/manuals" className="text-[#D6B885] hover:text-white transition-colors">
                 manuals index
               </Link>{' '}
               or open{' '}
               <Link
                 href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 {fieldManual.title}
               </Link>{' '}
@@ -332,15 +332,15 @@ export default function AlertIsNotDecisionPage() {
               this order.
             </p>
 
-            <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
+            <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Decision Case spine</h3>
               <ol className="space-y-3">
                 {spineChapters.map((chapter) => (
                   <li key={chapter.slug} className="flex items-start gap-3">
-                    <span className="font-mono text-sm text-[#3B82F6]">{chapter.number}</span>
+                    <span className="font-mono text-sm text-[#D6B885]">{chapter.number}</span>
                     <Link
                       href={fieldManualPath(chapter.slug)}
-                      className="text-[#3B82F6] hover:text-white transition-colors"
+                      className="text-[#D6B885] hover:text-white transition-colors"
                     >
                       {chapter.spine}
                     </Link>
@@ -351,7 +351,7 @@ export default function AlertIsNotDecisionPage() {
                 The standing rule sits beside the spine:{' '}
                 <Link
                   href={fieldManualPath(honestyChapter.slug)}
-                  className="text-[#3B82F6] hover:text-white transition-colors"
+                  className="text-[#D6B885] hover:text-white transition-colors"
                 >
                   {honestyChapter.title}
                 </Link>
@@ -370,27 +370,13 @@ export default function AlertIsNotDecisionPage() {
               verifies an outcome, executes a work order, or controls a plant.
             </p>
 
-            <p>
-              Stage-1 readiness means a signed-in user can complete the Decision Case — question,
-              evidence, recommendation, human decision, action, verification, and learning — and{' '}
-              <Link
-                href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Field Manual {fieldManual.version}
-              </Link>{' '}
-              describes that journey. This edition does not describe plant execute, a live connector
-              tag pull, SMTP invite delivery, or automatic revocation of access on expiry as live.
-              It does not describe Sync writing work orders, isolating equipment, or controlling the
-              plant. Simulated or seeded telemetry and assets are practice records. They are not
-              live plant results. Self-guided onboarding is not claimed as a live product path.
-            </p>
+            <p>The Decision Case carries a question through evidence, recommendation, human decision, action, verification, and learning. Customer-specific connections and deployment requirements are agreed separately. Illustrative telemetry and assets are practice records.</p>
 
             <p>
               The series continues with{' '}
               <Link
                 href="/insights/honesty-boundary-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Honesty Boundary Is Not Optional
               </Link>
@@ -399,7 +385,7 @@ export default function AlertIsNotDecisionPage() {
               Companion reading:{' '}
               <Link
                 href="/insights/dashboard-is-not-decision"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Dashboard Is Not Decision
               </Link>{' '}
@@ -407,63 +393,63 @@ export default function AlertIsNotDecisionPage() {
               decision,{' '}
               <Link
                 href="/insights/question-is-not-decision"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Question Is Not Decision
               </Link>{' '}
               on why recording a reliability or maintenance question is not the human decision,{' '}
               <Link
                 href="/insights/recommend-is-not-authorize"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Recommend Is Not Authorize
               </Link>{' '}
               on why a drafted proposal is not permission,{' '}
               <Link
                 href="/insights/verification-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification Is Not Optional
               </Link>{' '}
               on why the case stays open until the check is recorded, and{' '}
               <Link
                 href="/insights/action-is-not-execution"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Action Is Not Execution
               </Link>{' '}
               on why a recorded ACTION disposition is not plant execution. A{' '}
               <Link
                 href="/reliability-assessment"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Reliability Assessment
               </Link>{' '}
               asks whether the records can support a conclusion. A{' '}
               <Link
                 href="/strategic-pilot"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Strategic Pilot
               </Link>{' '}
               is a governed proof around one operating decision. The{' '}
               <Link
                 href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Human decision
               </Link>{' '}
               chapter is the named act. The{' '}
               <Link
                 href={fieldManualPath('verification')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification
               </Link>{' '}
               chapter is the check. An alert is neither.
             </p>
 
-            <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
+            <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
                 Field Manual {fieldManual.version} states the order and the boundaries, including
@@ -475,19 +461,19 @@ export default function AlertIsNotDecisionPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href={fieldManualPath()}
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
                 >
                   Read Field Manual {fieldManual.version}
                 </Link>
                 <a
-                  href={APP_SETUP_URL}
+                  href={APP_WORKSPACE_URL}
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
                 >
                   Try Reliability Engineer
                 </a>
                 <Link
                   href="/reliability-assessment"
-                  className="inline-flex items-center justify-center px-6 py-3 text-[#3B82F6] font-semibold hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"
                 >
                   Reliability Assessment
                 </Link>

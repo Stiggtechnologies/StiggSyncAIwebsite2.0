@@ -5,7 +5,7 @@ import { FurtherReading } from '@/components/insights/InsightReading';
 import { riaFurtherReading } from '@/lib/insights';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { pageMetadata } from '@/lib/seo';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export const metadata: Metadata = pageMetadata({
   title: 'Reliability Intelligence Assessment',
@@ -46,7 +46,7 @@ export default function ReliabilityAssessmentPage() {
             <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.15] tracking-[-0.045em] text-white sm:text-5xl">Know what your maintenance data actually proves.</h1>
             <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-300">{RIA_LEDE}</p>
             <div className="mt-9 flex flex-wrap gap-3 text-sm">{['6–8 weeks','Customer-provided exports','One bounded operating domain'].map((item) => <span key={item} className="rounded-full border border-white/15 px-4 py-2 text-slate-200">{item}</span>)}</div>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#assessment-call" className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200">Request a 30-minute assessment call</a><a href={APP_SETUP_URL} className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Try Reliability Engineer</a></div>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#assessment-call" className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-200">Request a 30-minute assessment call</a><a href={APP_WORKSPACE_URL} className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">Try Reliability Engineer</a></div>
           </div>
           <div className="rounded-xl border border-white/10 bg-[#17181B] p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Standard assessment scope</p>

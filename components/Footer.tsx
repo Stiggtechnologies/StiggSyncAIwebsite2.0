@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import BrandWordmark from '@/components/BrandWordmark';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export default function Footer() {
   return (
@@ -9,22 +9,25 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <BrandWordmark />
-            <p className="mt-3 text-xs text-slate-600">SyncAI is a product of Stigg.</p>
+            <p className="mt-3 text-xs text-slate-400">Stigg Security Inc. DBA SyncAI.</p>
             <p className="mt-4 max-w-md text-sm leading-[1.7] text-slate-400">
               Governed industrial intelligence for reliability, maintenance, and asset-intensive operations.
             </p>
             <div className="mt-5 space-y-1 text-sm">
-              <a href="mailto:info@syncai.ca" className="block text-slate-500 hover:text-white">info@syncai.ca</a>
-              <a href="mailto:security@syncai.ca" className="block text-slate-500 hover:text-white">security@syncai.ca</a>
+              <a href="mailto:oadavis@syncai.ca" className="block text-slate-500 hover:text-white">oadavis@syncai.ca</a>
+              <a href="tel:+17802152887" className="block text-slate-400 hover:text-white">780-215-2887</a>
+              <p className="text-slate-400">200 Parent Way, Fort McMurray, AB T9H5E6</p>
             </div>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold text-white">Start</h3>
             <ul className="mt-4 space-y-3">
-              <li><a href={APP_SETUP_URL} className="text-sm text-slate-400 hover:text-white">Reliability Engineer</a></li>
+              <li><a href={APP_WORKSPACE_URL} className="text-sm text-slate-400 hover:text-white">Explore SyncAI</a></li>
               <li><Link href="/reliability-assessment" className="text-sm text-slate-400 hover:text-white">Reliability Assessment</Link></li>
               <li><Link href="/strategic-pilot" className="text-sm text-slate-400 hover:text-white">Strategic Pilot</Link></li>
+              <li><Link href="/platform" className="text-sm text-slate-400 hover:text-white">Platform</Link></li>
+              <li><Link href="/training" className="text-sm text-slate-400 hover:text-white">Training</Link></li>
               <li><Link href="/contact" className="text-sm text-slate-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
@@ -43,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-7 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-7 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>&copy; {new Date().getFullYear()} SyncAI. All rights reserved.</p>
           <div className="flex flex-wrap gap-5">
             <Link href="/privacy" className="hover:text-white">Privacy</Link>

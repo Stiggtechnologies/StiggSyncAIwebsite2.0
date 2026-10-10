@@ -6,7 +6,7 @@ import {
 } from '@/lib/insights';
 import { fieldManual, fieldManualPath } from '@/lib/manuals';
 
-const linkClass = 'font-semibold text-[#3B82F6] transition-colors hover:text-white';
+const linkClass = 'font-semibold text-[#D6B885] transition-colors hover:text-white';
 
 export function InsightNextSteps({ slug }: { slug: string }) {
   const step = insightNextSteps[slug];
@@ -87,8 +87,7 @@ export function FurtherReading({ items }: { items: readonly FurtherReadingItem[]
     <div>
       <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Further reading</p>
       <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
-        Essays on the same boundary. Arguments about evidence, approval, and verification. No customer
-        results are cited here.
+        Explore related arguments about evidence, approval, and verification.
       </p>
       <ul className="mt-6 divide-y divide-white/10 border-y border-white/10">
         {items.map((item) => {

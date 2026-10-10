@@ -37,7 +37,7 @@ export default function StepContainer({
         transition={{ duration: 0.3 }}
         className="w-full max-w-2xl mx-auto"
       >
-        <div className="bg-gradient-to-b from-[#1E293B]/50 to-[#0F172A]/50 border border-[#334155] rounded-2xl p-8 backdrop-blur-sm">
+        <div className="bg-gradient-to-b from-[#17181B]/50 to-[#111214]/50 border border-[#3A3B3E] rounded-2xl p-8 backdrop-blur-sm">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
             <p className="text-gray-400">{description}</p>
@@ -45,7 +45,7 @@ export default function StepContainer({
 
           <div className="space-y-6">{children}</div>
 
-          <div className="flex justify-between mt-10 pt-6 border-t border-[#334155]">
+          <div className="flex justify-between mt-10 pt-6 border-t border-[#3A3B3E]">
             {!isFirstStep && onBack ? (
               <button
                 onClick={onBack}
@@ -66,8 +66,8 @@ export default function StepContainer({
               disabled={!canProceed || isSubmitting}
               className={`flex items-center gap-2 px-8 py-3 rounded-lg font-semibold transition-all ${
                 canProceed && !isSubmitting
-                  ? 'bg-[#3B82F6] text-white hover:bg-[#3B82F6]/90 shadow-lg shadow-[#3B82F6]/30'
-                  : 'bg-[#334155] text-gray-500 cursor-not-allowed'
+                  ? 'bg-[#D6B885] text-ink hover:bg-[#D6B885]/90 shadow-lg shadow-[#D6B885]/30'
+                  : 'bg-[#3A3B3E] text-gray-500 cursor-not-allowed'
               }`}
             >
               {isSubmitting ? (

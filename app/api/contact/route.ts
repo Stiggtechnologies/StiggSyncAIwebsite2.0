@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     }
 
     const resend = new Resend(resendKey);
-    const recipient = process.env.CONTACT_EMAIL || 'info@syncai.ca';
+    const recipient = process.env.CONTACT_EMAIL || 'oadavis@syncai.ca';
 
     const { error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'SyncAI <reports@syncai.ca>',

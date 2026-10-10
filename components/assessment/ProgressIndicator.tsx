@@ -24,17 +24,17 @@ export default function ProgressIndicator({ steps, currentStep }: ProgressIndica
                   animate={{
                     scale: isCurrent ? 1.1 : 1,
                     backgroundColor: isCompleted
-                      ? '#3B82F6'
+                      ? '#D6B885'
                       : isCurrent
                       ? '#1E3A8A'
-                      : '#1E293B',
+                      : '#17181B',
                   }}
                   className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-colors ${
                     isCompleted
-                      ? 'border-[#3B82F6]'
+                      ? 'border-[#D6B885]'
                       : isCurrent
-                      ? 'border-[#3B82F6] shadow-lg shadow-[#3B82F6]/30'
-                      : 'border-[#334155]'
+                      ? 'border-[#D6B885] shadow-lg shadow-[#D6B885]/30'
+                      : 'border-[#3A3B3E]'
                   }`}
                 >
                   {isCompleted ? (
@@ -59,12 +59,12 @@ export default function ProgressIndicator({ steps, currentStep }: ProgressIndica
               </div>
               {index < steps.length - 1 && (
                 <div className="flex-1 h-0.5 mx-2 mt-[-20px]">
-                  <div className="h-full bg-[#1E293B] rounded-full overflow-hidden">
+                  <div className="h-full bg-[#17181B] rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: isCompleted ? '100%' : '0%' }}
                       transition={{ duration: 0.3 }}
-                      className="h-full bg-[#3B82F6]"
+                      className="h-full bg-[#D6B885]"
                     />
                   </div>
                 </div>

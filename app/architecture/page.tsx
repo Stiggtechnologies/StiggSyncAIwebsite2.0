@@ -142,7 +142,7 @@ export default function ArchitecturePage() {
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Security posture</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-              Describe the controls that exist. Do not overstate the ones still being validated.
+              Access, traceability, and data boundaries built into the workflow.
             </h2>
           </div>
 

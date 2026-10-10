@@ -16,14 +16,14 @@ export default function OpenGraphImage() {
           justifyContent: 'space-between',
           background: '#111214',
           padding: '72px 80px',
-          fontFamily: 'Georgia, "Times New Roman", serif',
+          fontFamily: 'Arial, sans-serif',
         }}
       >
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            color: '#67e8f9',
+            color: '#D6B885',
             fontSize: 22,
             fontFamily: 'system-ui, sans-serif',
             letterSpacing: '0.28em',
@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
               fontFamily: 'system-ui, sans-serif',
             }}
           >
-            Recommend from evidence. A named human decides. Plant execute is not a marketed capability.
+            Investigate failures. Prioritize work. Decide with evidence.
           </div>
         </div>
       </div>

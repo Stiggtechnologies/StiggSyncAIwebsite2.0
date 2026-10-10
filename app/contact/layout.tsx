@@ -4,7 +4,7 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata: Metadata = pageMetadata({
   title: 'Contact',
   description:
-    'Contact SyncAI about a Reliability Intelligence Assessment, Strategic Pilot, or a reliability question. Email info@syncai.ca.',
+    'Contact SyncAI about a Reliability Intelligence Assessment, Strategic Pilot, or a reliability question. Email oadavis@syncai.ca.',
   path: '/contact',
 });
 

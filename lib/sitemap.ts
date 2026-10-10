@@ -27,6 +27,7 @@ export const SITEMAP_EXCLUDE = new Set([
 /** Always present even if filesystem discovery is unavailable at runtime. */
 export const REQUIRED_SITEMAP_PATHS = [
   '/',
+  '/platform',
   '/reliability-assessment',
   '/strategic-pilot',
   '/architecture',

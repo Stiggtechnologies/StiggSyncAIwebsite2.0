@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RIA_LEDE } from '@/lib/ria-copy';
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from '@/lib/seo';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 import DecisionRecord from '@/components/home/DecisionRecord';
 
 export const metadata: Metadata = pageMetadata({
@@ -13,10 +13,10 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
-    name: 'Try it on a real question',
-    body: 'Bring a technical question from your own operation and see how SyncAI reasons about it before you commit to a project.',
+    name: 'Explore the SyncAI platform',
+    body: 'Explore the workspace, then talk with us about purchasing SyncAI for your team and planning onboarding.',
     cta: 'Open the workspace',
-    href: APP_SETUP_URL,
+    href: APP_WORKSPACE_URL,
     external: true,
   },
   {
@@ -35,7 +35,7 @@ const ways = [
   },
   {
     name: 'Team training',
-    body: 'One-day working sessions for planners and supervisors, superintendents and managers, and technicians and operators.',
+    body: 'Practical sessions for planners and supervisors, superintendents and managers, and technicians and operators.',
     cta: 'See the sessions',
     href: '/training',
     external: false,
@@ -77,7 +77,7 @@ const work = [
 const principles = [
   {
     title: 'It works beside your systems',
-    body: 'Your CMMS, EAM, ERP, historian and document systems stay the source of truth. SyncAI reads from them and does not write back.',
+    body: 'Your CMMS, EAM, ERP, historian and document systems stay the source of truth. Start with authorized records; data connections and deployment requirements are confirmed for your scope.',
   },
   {
     title: 'A person always decides',
@@ -114,28 +114,28 @@ export default function Home() {
               Decide with the evidence your operation already has.
             </h1>
             <p className="mt-8 max-w-[34rem] text-lg leading-[1.65] text-bone/75 sm:text-xl">
-              SyncAI reads your work orders, asset records and operating data, shows what is proven and what is not, and sends every recommendation to a named person for approval.
+              SyncAI is an industrial AI platform available for your team to purchase and use. Bring together approved knowledge, asset records and operating evidence to investigate failures, prioritize work and review recommendations with clear human approval.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
-                href={APP_SETUP_URL}
+                href={APP_WORKSPACE_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-sm bg-cyan-300 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:bg-cyan-200"
               >
-                Try Reliability Engineer
+                Explore SyncAI
               </a>
               <Link
-                href="/reliability-assessment"
+                href="/contact"
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
-                Reliability Assessment
+                Discuss platform access
               </Link>
             </div>
 
             <p className="mt-10 max-w-[34rem] text-sm leading-6 text-bone/55">
-              Not sure what SyncAI is, or isn&apos;t?{' '}
+              Meet the platform and the team behind it.{' '}
               <Link href="/company" className={linkClass}>
-                Read what Sync is and is not
+                About SyncAI
               </Link>
               .
             </p>
@@ -150,7 +150,7 @@ export default function Home() {
       <section className="border-b border-bone/10 bg-graphite">
         <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
           <h2 className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
-            Start small, and make each step earn the next one.
+            Choose the right way to start.
           </h2>
 
           <ul className="mt-14 border-t border-bone/20">
@@ -212,10 +212,10 @@ export default function Home() {
               It starts with reliability, where the hard calls are made.
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-[1.65] text-bone/70">
-              Engineering knowledge, maintenance history, asset risk and operating conditions all meet in reliability work. That makes it the right place to prove SyncAI works before it goes any further.
+              Engineering knowledge, maintenance history, asset risk and operating conditions all meet in reliability work. SyncAI helps your team carry that context from investigation to an accountable next action.
             </p>
             <p className="mt-8">
-              <a href={APP_SETUP_URL} className={linkClass}>
+              <a href={APP_WORKSPACE_URL} className={linkClass}>
                 Open the workspace
               </a>
             </p>

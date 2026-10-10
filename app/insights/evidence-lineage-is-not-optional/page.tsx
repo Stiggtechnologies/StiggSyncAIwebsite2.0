@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 export default function EvidenceLineageIsNotOptionalPage() {
   return (
@@ -12,7 +12,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"
-          className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#D6B885] hover:text-white transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Insights
@@ -24,7 +24,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <header className="mb-12">
-            <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
+            <span className="inline-block px-3 py-1 bg-[#D6B885]/10 text-[#D6B885] text-sm font-medium rounded-full mb-4">
               Reliability Engineering
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -96,7 +96,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
                 href="https://doi.org/10.4271/JA1011_202411"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 10.4271/JA1011_202411
               </a>
@@ -236,36 +236,36 @@ export default function EvidenceLineageIsNotOptionalPage() {
               reconstruct the recommendation without calling the original engineer.
             </p>
 
-            <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
+            <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">
                 If the record cannot answer these, lineage is still missing
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">1</span>
+                  <span className="text-[#D6B885] font-bold">1</span>
                   <span>Which equipment unit, taxonomy level, and boundary was this about?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">2</span>
+                  <span className="text-[#D6B885] font-bold">2</span>
                   <span>
                     Which failure and maintenance records were used — cause, mechanism, mode,
                     detection method, and downtime kept distinct?
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">3</span>
+                  <span className="text-[#D6B885] font-bold">3</span>
                   <span>What was observed versus hypothesized, and what was missing?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">4</span>
+                  <span className="text-[#D6B885] font-bold">4</span>
                   <span>What action was recommended, and what was actually authorized?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">5</span>
+                  <span className="text-[#D6B885] font-bold">5</span>
                   <span>Who approved it, and under what operating boundary?</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#3B82F6] font-bold">6</span>
+                  <span className="text-[#D6B885] font-bold">6</span>
                   <span>What verification would show the action worked — and was it checked?</span>
                 </li>
               </ul>
@@ -284,12 +284,12 @@ export default function EvidenceLineageIsNotOptionalPage() {
               become the authorized work, not the argument. A{' '}
               <Link
                 href="/reliability-assessment"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Reliability Assessment
               </Link>{' '}
               that cannot support a conclusion says so, instead of decorating a gap. How{' '}
-              <Link href="/company" className="text-[#3B82F6] hover:text-white transition-colors">
+              <Link href="/company" className="text-[#D6B885] hover:text-white transition-colors">
                 SyncAI
               </Link>{' '}
               treats that difference is a product choice: recommend from approved evidence; a named
@@ -304,8 +304,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
               This is an educational argument about common reliability-data practice, not a customer
               case study. It does not report named plants, testimonials, or savings percentages. It
               does not treat a recommendation engine as live plant execution. Direct plant execute
-              is not a capability being marketed here. Self-guided onboarding is not claimed as a
-              live product path.
+              is not a capability being marketed here. Onboarding and data requirements are agreed for each customer scope.
             </p>
 
             <p>
@@ -317,7 +316,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
               context, not as SyncAI certifications.
             </p>
 
-            <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
+            <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">
                 Bring a real reliability question
               </h3>
@@ -329,8 +328,8 @@ export default function EvidenceLineageIsNotOptionalPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={APP_SETUP_URL}
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
+                  href={APP_WORKSPACE_URL}
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
                 >
                   Try Reliability Engineer
                 </a>
@@ -342,7 +341,7 @@ export default function EvidenceLineageIsNotOptionalPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 text-[#3B82F6] font-semibold hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"
                 >
                   Contact
                 </Link>

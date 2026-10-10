@@ -81,8 +81,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
         />
         <Analytics />
+        <a href="#main-content" className="sr-only fixed left-4 top-4 z-[100] rounded-sm bg-cyan-300 px-5 py-3 text-ink focus:not-sr-only">Skip to content</a>
         <Navigation />
-        <div>{children}</div>
+        <div id="main-content" tabIndex={-1}>{children}</div>
         <Footer />
       </body>
     </html>

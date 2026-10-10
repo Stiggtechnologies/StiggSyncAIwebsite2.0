@@ -9,7 +9,7 @@ export default function WhyCMMSIsFailingPage() {
   return (
     <main className="min-h-screen bg-[#101113]">
       <div className="container mx-auto px-4 py-32 max-w-4xl">
-        <Link href="/insights" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8">
+        <Link href="/insights" className="inline-flex items-center gap-2 text-[#D6B885] hover:text-white transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
           Back to Insights
         </Link>
@@ -20,7 +20,7 @@ export default function WhyCMMSIsFailingPage() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <header className="mb-12">
-            <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
+            <span className="inline-block px-3 py-1 bg-[#D6B885]/10 text-[#D6B885] text-sm font-medium rounded-full mb-4">
               Industry Analysis
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -31,7 +31,7 @@ export default function WhyCMMSIsFailingPage() {
             </p>
           </header>
 
-          <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 mb-12">
+          <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Download Full Analysis</h3>
             <p className="text-gray-400 mb-6">
               Longer-form notes on CMMS limits, downtime economics, and why a governed layer sits above the system of record. This PDF is analysis, not a customer case study.
@@ -39,7 +39,7 @@ export default function WhyCMMSIsFailingPage() {
             <a
               href="/pdfs/why-cmms-alone-is-failing-2026.pdf"
               download
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
             >
               <Download className="w-4 h-4" />
               Download PDF
@@ -97,7 +97,7 @@ export default function WhyCMMSIsFailingPage() {
               CMMS captures history. It does not model future probability.
             </p>
 
-            <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
+            <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <p className="text-lg italic text-gray-300">
                 “The full whitepaper includes detailed analysis of downtime economics, governance requirements, and migration strategies for enterprise deployments.”
               </p>

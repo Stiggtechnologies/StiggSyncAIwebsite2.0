@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata: Metadata = pageMetadata({
   title: 'Manuals',
   description:
-    'Public Sync field manuals. Field Manual v0, by Orville Davis, states the Decision Case and the Stage-1 boundaries around it.',
+    'Public Sync field manuals. Field Manual v0, by Orville Davis, states the Decision Case and the evidence and human approval that support it.',
   path: '/manuals',
 });
 

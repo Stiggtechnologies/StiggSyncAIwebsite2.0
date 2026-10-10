@@ -73,9 +73,7 @@ export default function FieldManualPage() {
               <li>Recommend is not authorize.</li>
               <li>Evidence is required before a recommendation is treated as a decision.</li>
               <li>
-                Stage-1 readiness is the signed-in Decision Case. Plant execute, live connector tag
-                pull, SMTP invite delivery, and automatic revocation of access on expiry are outside
-                this edition.
+                The Decision Case carries evidence through recommendation, human approval, action, and verification. Your team retains authority over plant execution.
               </li>
             </ul>
           </div>

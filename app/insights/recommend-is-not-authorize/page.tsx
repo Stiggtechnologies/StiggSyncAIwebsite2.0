@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 import { InsightNextSteps } from '@/components/insights/InsightReading';
 import { getInsightArticle } from '@/lib/insights';
 import { fieldManual, fieldManualPath, honestyChapter, spineChapters } from '@/lib/manuals';
-import { APP_SETUP_URL } from '@/lib/site-links';
+import { APP_WORKSPACE_URL } from '@/lib/site-links';
 
 const article = getInsightArticle('recommend-is-not-authorize');
 
@@ -16,7 +16,7 @@ export default function RecommendIsNotAuthorizePage() {
       <div className="container mx-auto px-4 py-32 max-w-4xl">
         <Link
           href="/insights"
-          className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#D6B885] hover:text-white transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Insights
@@ -28,7 +28,7 @@ export default function RecommendIsNotAuthorizePage() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <header className="mb-12">
-            <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium rounded-full mb-4">
+            <span className="inline-block px-3 py-1 bg-[#D6B885]/10 text-[#D6B885] text-sm font-medium rounded-full mb-4">
               {article?.category ?? 'Decision Case'}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -66,12 +66,12 @@ export default function RecommendIsNotAuthorizePage() {
               Verification, and Learning. {fieldManual.author} states that order in{' '}
               <Link
                 href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Field Manual {fieldManual.version}
               </Link>
               . The manuals index lives at{' '}
-              <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
+              <Link href="/manuals" className="text-[#D6B885] hover:text-white transition-colors">
                 /manuals
               </Link>
               . This essay is why the order refuses to collapse. The manual is the public contents.
@@ -92,7 +92,7 @@ export default function RecommendIsNotAuthorizePage() {
               That first step is the{' '}
               <Link
                 href={fieldManualPath('question')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Question
               </Link>{' '}
@@ -124,11 +124,11 @@ export default function RecommendIsNotAuthorizePage() {
               The{' '}
               <Link
                 href={fieldManualPath('evidence')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Evidence
               </Link>{' '}
-              chapter states that gate. Stage-1 evidence is the record held on the case. A live
+              chapter states that gate. Decision Case evidence is the record held on the case. A live
               connector that pulls historian or control-system tags sits outside this edition.
             </p>
 
@@ -154,14 +154,14 @@ export default function RecommendIsNotAuthorizePage() {
               Read those two steps as separate chapters:{' '}
               <Link
                 href={fieldManualPath('recommendation')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Recommendation
               </Link>{' '}
               and{' '}
               <Link
                 href={fieldManualPath('human-decision')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Human decision
               </Link>
@@ -195,21 +195,21 @@ export default function RecommendIsNotAuthorizePage() {
               Those chapters are{' '}
               <Link
                 href={fieldManualPath('action')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Action
               </Link>
               ,{' '}
               <Link
                 href={fieldManualPath('verification')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Verification
               </Link>
               , and{' '}
               <Link
                 href={fieldManualPath('learning')}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Learning
               </Link>
@@ -222,13 +222,13 @@ export default function RecommendIsNotAuthorizePage() {
 
             <p>
               Field Manual {fieldManual.version} is the public contents of this loop. Start at the{' '}
-              <Link href="/manuals" className="text-[#3B82F6] hover:text-white transition-colors">
+              <Link href="/manuals" className="text-[#D6B885] hover:text-white transition-colors">
                 manuals index
               </Link>{' '}
               or open{' '}
               <Link
                 href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 {fieldManual.title}
               </Link>{' '}
@@ -236,15 +236,15 @@ export default function RecommendIsNotAuthorizePage() {
               spine stays in this order.
             </p>
 
-            <div className="bg-[#1E293B]/50 border border-[#334155] rounded-xl p-8 my-12">
+            <div className="bg-[#17181B]/50 border border-[#3A3B3E] rounded-xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Decision Case spine</h3>
               <ol className="space-y-3">
                 {spineChapters.map((chapter) => (
                   <li key={chapter.slug} className="flex items-start gap-3">
-                    <span className="font-mono text-sm text-[#3B82F6]">{chapter.number}</span>
+                    <span className="font-mono text-sm text-[#D6B885]">{chapter.number}</span>
                     <Link
                       href={fieldManualPath(chapter.slug)}
-                      className="text-[#3B82F6] hover:text-white transition-colors"
+                      className="text-[#D6B885] hover:text-white transition-colors"
                     >
                       {chapter.spine}
                     </Link>
@@ -255,7 +255,7 @@ export default function RecommendIsNotAuthorizePage() {
                 The standing rule sits beside the spine:{' '}
                 <Link
                   href={fieldManualPath(honestyChapter.slug)}
-                  className="text-[#3B82F6] hover:text-white transition-colors"
+                  className="text-[#D6B885] hover:text-white transition-colors"
                 >
                   {honestyChapter.title}
                 </Link>
@@ -272,31 +272,20 @@ export default function RecommendIsNotAuthorizePage() {
               no plant, states no savings figure, and claims no prevented failure.
             </p>
 
-            <p>
-              Stage-1 readiness means a signed-in user can complete the Decision Case — question,
-              evidence, recommendation, human decision, action, verification, and learning — and{' '}
-              <Link
-                href={fieldManualPath()}
-                className="text-[#3B82F6] hover:text-white transition-colors"
-              >
-                Field Manual {fieldManual.version}
-              </Link>{' '}
-              describes that journey. This edition does not describe plant execute, a live connector
-              tag pull, SMTP invite delivery, or automatic revocation of access on expiry as live.
-            </p>
+            <p>The Decision Case carries a question through evidence, recommendation, human decision, action, verification, and learning. Customer-specific connections and deployment requirements are agreed separately. Illustrative telemetry and assets are practice records.</p>
 
             <p>
               Companion reading on why a recommendation still needs a reconstructable record:{' '}
               <Link
                 href="/insights/evidence-lineage-is-not-optional"
-                className="text-[#3B82F6] hover:text-white transition-colors"
+                className="text-[#D6B885] hover:text-white transition-colors"
               >
                 Evidence Lineage Is Not Optional
               </Link>
               .
             </p>
 
-            <div className="bg-gradient-to-b from-[#3B82F6]/10 to-transparent border border-[#3B82F6]/30 rounded-2xl p-8 my-12">
+            <div className="bg-gradient-to-b from-[#D6B885]/10 to-transparent border border-[#D6B885]/30 rounded-2xl p-8 my-12">
               <h3 className="text-xl font-bold text-white mb-4">Read the case, then bring a question</h3>
               <p className="text-gray-400 mb-6">
                 Field Manual {fieldManual.version} states the order and the boundaries. The
@@ -307,19 +296,19 @@ export default function RecommendIsNotAuthorizePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href={fieldManualPath()}
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold hover:bg-[#3B82F6]/90 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#D6B885] text-ink rounded-lg font-semibold hover:bg-[#D6B885]/90 transition-colors"
                 >
                   Read Field Manual {fieldManual.version}
                 </Link>
                 <a
-                  href={APP_SETUP_URL}
+                  href={APP_WORKSPACE_URL}
                   className="inline-flex items-center justify-center px-6 py-3 bg-white/5 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
                 >
                   Try Reliability Engineer
                 </a>
                 <Link
                   href="/reliability-assessment"
-                  className="inline-flex items-center justify-center px-6 py-3 text-[#3B82F6] font-semibold hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 text-[#D6B885] font-semibold hover:text-white transition-colors"
                 >
                   Reliability Assessment
                 </Link>
