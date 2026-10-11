@@ -115,6 +115,8 @@ function load(path,dependency,context={}) {
    throw Error(name);
  }).default;
  const html=require('react-dom/server').renderToStaticMarkup(require('react').createElement(ServerForm));
+ assert(html.includes('The checklist is available to download on this page without email or marketing permission. The recording is not available yet.'),'Server/no-JS copy separates available checklist from unavailable recording');
+ for(const path of ['components/WebinarInterestForm.tsx','app/webinars/maintenance-decisions/page.tsx','app/webinars/maintenance-decisions/watch/page.tsx'])assert(!/recording and checklist are not available|checklist is unavailable|checklist is not available|reviewed download will be linked/i.test(fs.readFileSync(path,'utf8')),'No stale unavailable-checklist claim: '+path);
  assert(html.includes('<fieldset disabled=""'),'SSR disables native form submission before hydration');
  assert(html.includes('name="email"')&&html.includes('<noscript>'));
  const ui=fs.readFileSync('components/WebinarInterestForm.tsx','utf8');

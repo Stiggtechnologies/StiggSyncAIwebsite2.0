@@ -43,7 +43,7 @@ export default function WebinarInterestForm() {
   return <section aria-label="Webinar interest" className="min-w-0 rounded-xl border border-white/15 bg-graphite p-6 sm:p-8" data-clarity-mask="true">
     {!draft ? <>
       <h2 className="text-2xl font-semibold">Send me the replay and checklist</h2>
-      <p id="interest-help" className="mt-3 leading-7 text-slate-400">The recording and checklist are not available yet. This draft prepares your link request locally; you choose whether to send it. Nothing is submitted, delivered or subscribed here.</p>
+      <p id="interest-help" className="mt-3 leading-7 text-slate-400">The checklist is available to download on this page without email or marketing permission. The recording is not available yet. This draft prepares your link request locally; you choose whether to send it. Nothing is submitted, delivered or subscribed here.</p>
       <form onSubmit={submit} noValidate aria-describedby="interest-help" className="mt-6 space-y-5">
         <fieldset disabled={!ready} className="space-y-5">
         {(['email', 'name', 'company', 'role'] as const).map(key => <div key={key}>
