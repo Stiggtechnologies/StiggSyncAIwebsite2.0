@@ -74,6 +74,8 @@ function load(path,dependency,context={}) {
  assert(find('p',p=>p.role==='status').props.children.includes('copy it manually'));
  assert(find('textarea').props.readOnly);assert(find('a',p=>p.href?.startsWith('mailto:')));
  find('button',p=>p.children==='Edit this request').props.onClick();assert(find('form'));
+ const landing=fs.readFileSync('app/webinars/maintenance-decisions/page.tsx','utf8');
+ assert(landing.includes('<span className="shrink-0 whitespace-nowrap font-mono tabular-nums text-cyan-300">0{index + 1}</span>'),'Chapter numbers keep both digits on one line without flex shrinking');
  const watch=fs.readFileSync('app/webinars/maintenance-decisions/watch/page.tsx','utf8');
  assert(!/<video|<iframe|autoplay|fake viewers/.test(watch));assert(watch.includes('Not recorded')&&watch.includes('Product version shown'));
  assert(watch.includes('without registration or marketing permission'));
