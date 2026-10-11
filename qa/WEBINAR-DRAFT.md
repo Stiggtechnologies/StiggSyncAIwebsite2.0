@@ -1,0 +1,30 @@
+# Evergreen webinar draft — not launched
+Branch: feat/webinar-draft; base production 3bf2013. Created through GitHub connector because the local disk refuses file/directory writes (ENOSPC), even after task-owned 12 MiB generated build cleanup. Local checkout holds only an earlier three-file scaffold and is not synchronized to this remote proposal. Preserve unrelated supabase/.temp.
+
+## Review locally after disk recovery
+Run WEBINAR_DRAFT_ENABLED=true npm run dev. Review /webinars/maintenance-decisions and /webinars/maintenance-decisions/watch. Draft layout is dynamic, noindex/nofollow and returns 404 outside explicitly opted-in development, including production. No navigation/catalog entries added. Existing sitemap discovers layouts and excludes noindex layouts; verify that contract in a full build before approval. vercel.json disables automatic Git deployment ONLY for feat/webinar-draft using documented git.deploymentEnabled. Do not manually deploy, merge, enable production exposure, or change account settings.
+
+## Journey and content
+Working title: From Asset Alert to Maintenance Review: An Evidence-Backed AI Workflow for Reliability Teams. Planned 35-minute human presentation by Orville Davis. Monthly Q&A/demo planned for initial 90-day validation; no dates confirmed. Draft title/outline require content review. Primary CTA: 30-minute reliability workflow consultation, a scoping conversation distinct from the paid 6–8 week Reliability Intelligence Assessment. Secondary pilot-readiness checklist is honestly unavailable until supplied/reviewed.
+
+Interest form validates required name/email/organization locally; optional one-recording update request is unchecked and separate from inquiry. Preparing a draft is not registration, sending, consent storage, subscription or confirmed access. No fetch/provider/CRM call or personal data in URLs/storage/analytics. Mailto handoff only occurs on explicit visitor click; copy failure preserves manually selectable draft. Rapid duplicate preparations guarded by ref; editing restarts same local request. Actual emailed requests are manual correspondence and may duplicate if a person deliberately sends multiple emails; no server idempotency claim.
+
+Watch structure has unavailable-video state, pending recorded-date/product-version disclosures, planned chapters without invented timestamps, captions/transcript requirements, current Field Manual/demo resource links and consultation route. No playable placeholder, embed, urgency or fake attendance.
+
+## Existing infrastructure evidence
+Public contact page uses existing lib/contact-email.ts, oadavis@syncai.ca and a local email handoff. Its legacy /api/contact handler uses Resend and returns503 if RESEND_API_KEY absent; email success is provider acceptance, not CRM persistence. Pilot/RIA handlers use Supabase RPC submit_pilot_intake_request, with different purpose/schema, and optional Resend staff notifications; these have no verified webinar-consent/idempotency/withdrawal contract. They are intentionally not reused or tested with real records. Existing analytics support consent-gated Google/LinkedIn/Clarity plus separate PostHog helpers; this change installs none. No verified current booking link or usable CRM account; do not use Sunset/AIM accounts, uncertain HighLevel, or guessed Calendly.
+
+## Measurement/follow-up, disabled
+NEXT_PUBLIC_WEBINAR_MEASUREMENT_ENABLED must remain unset/false. Adapter also requires existing analytics consent, an already present gtag function and a whitelisted draft event; payload contains only stable webinar_id, no personal details or URL parameters. No loader, integration or ads conversion added. Future lifecycle taxonomy separately names accepted registration, playback milestones, resource/assessment CTA clicks, booked meeting, held qualified meeting and opportunity. Those events must come from verified state/provider receipts, never draft preparation or opening a booking link. Draft does not emit these lifecycle events. Final implementation needs consent-aware provider callbacks and dedupe before activation.
+
+No external follow-up sequence activated. Proposed optional one-recording-update wording is a draft for review, not a legally approved marketing subscription. No customer list or shared CRM created.
+
+## Launch gates and missing inputs
+1. Writable disk/build environment (local currently ~73 MiB available but ordinary writes fail). Run npm run test:webinar, lint, typecheck, full build and default404/noindex/sitemap tests; inspect desktop1440/tablet768/mobile390/320, keyboard focus/errors/copy failure/noJS, no egress and duplicate clicks. Current in-memory syntax/callback tests do not replace these.
+2. Approved title/script/CTA and final consent/privacy/retention/withdrawal wording.
+3. Approved recording, hosting/provider destination, reviewed captions/transcript, recorded date/product version, actual chapters/timestamps, reviewed checklist URL.
+4. Verified scheduling route for 30-minute consultation (or keep explicit email scheduling), authorized dedicated SyncAI account if automation desired.
+5. Verified single lead system with access/registration, dedupe/idempotency, lawful consent receipts, suppression/unsubscribe, transactional vs marketing split and failure handling. Existing accounts are unverified; no live access request or credential inspection performed.
+6. Approve completed preview and then separately authorize launch/measurement/email activation. Draft PR alone is not release authority.
+
+Checkpoint validation: exact proposed files passed in-memory TypeScript program check with zero diagnostics. Syntax and actual component-callback regressions passed, including rapid duplicate preparations and denied clipboard fallback. Lint initially caught a test helper naming violation; helper renamed and lint rerun. These are memory-backed tests of the proposed sources, not npm build/browser passes. Full build and rendered accessibility/mobile checks remain unrun until a writable execution environment is available.
