@@ -10,7 +10,7 @@ export const webinar = {
   recordedDate: null,
   productVersion: null,
   bookingUrl: null,
-  checklistUrl: null,
+  checklistUrl: '/webinars/maintenance-decisions/checklist',
   primaryCta: 'Discuss a 30-minute reliability workflow consultation',
   consentVersion: 'webinar-interest-draft-v3',
   chapters: [

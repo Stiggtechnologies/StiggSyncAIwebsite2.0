@@ -38,7 +38,7 @@ function load(path,dependency,context={}) {
  assert(qa.draft.text.includes('No permission for marketing follow-ups'));
  assert.equal(w.webinar.title,'From Maintenance Evidence to a Defensible Next Action');
  assert.equal(w.webinar.primaryCta,'Discuss a 30-minute reliability workflow consultation');
- for(const key of ['bookingUrl','checklistUrl','recordedDate','productVersion'])assert.equal(w.webinar[key],null);
+ for(const key of ['bookingUrl','recordedDate','productVersion'])assert.equal(w.webinar[key],null);
  // Existing measurement adapter is inert by default; enable + consent required; no user properties.
  let sent=[];
  for(const [enabled,consent,throws,expected] of [['false','granted',false,0],['true','denied',false,0],['true','granted',true,0],['true','granted',false,1]]) {
@@ -76,6 +76,31 @@ function load(path,dependency,context={}) {
  find('button',p=>p.children==='Edit this request').props.onClick();assert(find('form'));
  const landing=fs.readFileSync('app/webinars/maintenance-decisions/page.tsx','utf8');
  assert(landing.includes('<span className="shrink-0 whitespace-nowrap font-mono tabular-nums text-cyan-300">0{index + 1}</span>'),'Chapter numbers keep both digits on one line without flex shrinking');
+ assert.equal(w.webinar.checklistUrl,'/webinars/maintenance-decisions/checklist');
+ const pdf=fs.readFileSync('assets/webinars/SyncAI-Pilot-Readiness-Checklist-v1.pdf');
+ assert.equal(pdf.length,66493);
+ assert.equal(require('node:crypto').createHash('sha256').update(pdf).digest('hex'),'54fb3744561d5db12e8d929a57e84c34f315359636a751e6ff689ed26c15e6db','Approved Library PDF bytes are preserved');
+ const route=load('app/webinars/maintenance-decisions/checklist/route.ts',name=>{
+   if(name==='node:fs/promises')return {readFile:async()=>pdf};
+   if(name==='node:path')return require(name);
+   if(name==='@/lib/webinar')return w;
+   throw Error(name);
+ },{process:{env:{NODE_ENV:'production',WEBINAR_DRAFT_ENABLED:'true'},cwd:()=>process.cwd()},Response});
+ assert.equal((await route.GET()).status,404,'Production asset is gated even with draft flag');
+ const allowed=load('app/webinars/maintenance-decisions/checklist/route.ts',name=>{
+   if(name==='node:fs/promises')return {readFile:async()=>pdf};
+   if(name==='node:path')return require(name);
+   if(name==='@/lib/webinar')return w;
+   throw Error(name);
+ },{process:{env:{NODE_ENV:'development',WEBINAR_DRAFT_ENABLED:'true'},cwd:()=>process.cwd()},Response,Uint8Array});
+ const download=await allowed.GET();assert.equal(download.status,200);assert.equal(download.headers.get('Content-Type'),'application/pdf');assert.equal(download.headers.get('Cache-Control'),'no-store');assert(Buffer.from(await download.arrayBuffer()).equals(pdf));
+ const missing=load('app/webinars/maintenance-decisions/checklist/route.ts',name=>{
+   if(name==='node:fs/promises')return {readFile:async()=>{throw Error('Controlled missing PDF');}};
+   if(name==='node:path')return require(name);
+   if(name==='@/lib/webinar')return w;
+   throw Error(name);
+ },{process:{env:{NODE_ENV:'development',WEBINAR_DRAFT_ENABLED:'true'},cwd:()=>process.cwd()},Response});
+ assert.equal((await missing.GET()).status,503,'Missing PDF never claims a successful download');
  const watch=fs.readFileSync('app/webinars/maintenance-decisions/watch/page.tsx','utf8');
  assert(!/<video|<iframe|autoplay|fake viewers/.test(watch));assert(watch.includes('Not recorded')&&watch.includes('Product version shown'));
  assert(watch.includes('without registration or marketing permission'));
