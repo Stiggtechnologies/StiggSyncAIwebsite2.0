@@ -2,7 +2,7 @@ import { buildContactEmailDraft, type ContactDraft } from '@/lib/contact-email';
 
 export const webinar = {
   slug: 'maintenance-decisions',
-  title: 'From Asset Alert to Maintenance Review: An Evidence-Backed AI Workflow for Reliability Teams',
+  title: 'From Maintenance Evidence to a Defensible Next Action',
   presenter: 'Orville Davis',
   format: 'On-demand webinar',
   recordingStatus: 'Recording in preparation',
@@ -12,7 +12,7 @@ export const webinar = {
   bookingUrl: null,
   checklistUrl: null,
   primaryCta: 'Discuss a 30-minute reliability workflow consultation',
-  consentVersion: 'webinar-interest-draft-v1',
+  consentVersion: 'webinar-interest-draft-v3',
   chapters: [
     ['Frame the operating question', 'Define the asset, decision and person accountable.'],
     ['Examine the records', 'Separate observations, assumptions and missing evidence.'],
@@ -27,13 +27,14 @@ export function webinarDraftEnabled(env: Record<string, string | undefined>) {
   return env.NODE_ENV === 'development' && env.WEBINAR_DRAFT_ENABLED === 'true';
 }
 
-export type WebinarInterest = Omit<ContactDraft, 'message'> & { recordingUpdate: boolean };
+export type WebinarInterest = Omit<ContactDraft, 'message'> & { recordingUpdate: boolean; marketingFollowup?: boolean; qaInvitations?: boolean; role?: string };
 
 export function validateWebinarInterest(value: WebinarInterest) {
-  const errors: Partial<Record<'name' | 'email' | 'company', string>> = {};
-  if (value.name.trim().length < 2 || value.name.length > 160) errors.name = 'Enter your name (2–160 characters).';
+  const errors: Partial<Record<'name' | 'email' | 'company' | 'role', string>> = {};
+  if (value.name.length > 160) errors.name = 'Keep your first name within 160 characters.';
   if (value.email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.email.trim())) errors.email = 'Enter a valid work email.';
-  if (value.company.trim().length < 2 || value.company.length > 180) errors.company = 'Enter your organization (2–180 characters).';
+  if (value.company.length > 180) errors.company = 'Keep your organization within 180 characters.';
+  if ((value.role?.length || 0) > 160) errors.role = 'Keep your role within 160 characters.';
   return errors;
 }
 
@@ -42,11 +43,14 @@ export function prepareWebinarInterest(value: WebinarInterest) {
   const errors = validateWebinarInterest(value);
   if (Object.keys(errors).length) return { ok: false as const, errors };
   const draft = buildContactEmailDraft({ ...value, message: [
+    value.role?.trim() ? `Role: ${value.role.trim()}` : '',
     `I am interested in the ${webinar.format.toLowerCase()}: ${webinar.title}.`,
     'I understand the recording is in preparation and this is an interest request, not confirmed registration.',
     value.recordingUpdate
-      ? 'Please send me one email update about this recording when it is available. I am not subscribing to other marketing.'
-      : 'No recording-update permission requested. Please respond only to this interest inquiry.',
+      ? 'Send the replay link and pilot readiness checklist to this email address when the approved assets are available. Requested delivery is separate from marketing permissions.'
+      : 'No requested-link email delivery. Please respond only to this interest inquiry.',
+    value.marketingFollowup ? 'I also agree to receive three follow-up emails from Stigg Security Inc. DBA SyncAI about this webinar, pilot readiness and a reliability workflow consultation. I can unsubscribe at any time.' : 'No permission for marketing follow-ups.',
+    value.qaInvitations ? 'Send me invitations to future SyncAI live Q&A sessions. I can unsubscribe at any time.' : 'No permission for future Q&A invitations.',
     `Interest wording: ${webinar.consentVersion}`,
   ].join('\n\n') });
   return { ok: true as const, draft };
@@ -65,4 +69,10 @@ export function measureWebinar(event: WebinarEvent) {
     if (!WEBINAR_EVENTS.includes(event)) return;
     window.gtag?.('event', `webinar_${event}`, { webinar_id: webinar.slug });
   } catch { /* Blocked browser storage must never block the customer journey. */ }
+}
+
+/** Future send policy: check immediately before every optional send, including queued/retried messages. No sender is activated here. */
+export function maySendWebinarFollowup(permission: { marketingFollowup: boolean; qaInvitations: boolean; unsubscribed: boolean }, purpose: 'marketing' | 'qa') {
+  if (permission.unsubscribed) return false;
+  return purpose === 'marketing' ? permission.marketingFollowup === true : permission.qaInvitations === true;
 }
