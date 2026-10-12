@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 const faqs = [
-  ['Can our team purchase and use SyncAI?', 'Yes. SyncAI is available as an industrial AI platform. Contact us to discuss platform access, commercial scope, and onboarding for your team.'],
-  ['Do we need an assessment first?', 'An assessment is an optional service. You can explore the platform or discuss purchasing directly. An assessment helps establish a reliability baseline from customer-provided exports when that is useful.'],
+  ['How can our team get started?', 'The Reliability Engineer is live today. It ranks bad actors from your work orders, runs failure investigations with a named owner, and prepares RCM, FMEA and improvement cases for a named person to approve. Contact us for team access, or start with an evaluation on one workflow. Scope, terms and onboarding are agreed with you; wider platform scope can follow.'],
+  ['Do we need an assessment first?', 'No. An assessment is an optional service. You can ask about team access or an evaluation directly. An assessment helps establish a reliability baseline from customer-provided exports when that is useful.'],
   ['Does SyncAI replace our maintenance systems?', 'Your systems remain the source of truth. SyncAI helps teams investigate failures, prioritize work, and retain the evidence behind decisions. Data connections and implementation requirements are confirmed for your scope.'],
   ['Who approves recommendations?', 'A named human reviews and approves operational recommendations. Your team retains authority over work and plant execution.'],
   ['How are integrations and security agreed?', 'We review your required systems, data access, hosting, and security controls before implementation. Ask for the current controls and configuration relevant to your engagement.'],

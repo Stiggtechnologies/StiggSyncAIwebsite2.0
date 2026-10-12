@@ -13,6 +13,13 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
+    name: 'Reliability Engineer',
+    body: 'Rank bad actors from your own work orders, run failure investigations with a named owner, and prepare RCM, FMEA and improvement cases for a named person to approve.',
+    cta: 'Ask about team access',
+    href: EVALUATION_CONTACT_URL,
+    external: false,
+  },
+  {
     name: 'Platform evaluation',
     body: 'Discuss your operating question with SyncAI. We will agree relevant workflows, evidence needs, and an evaluation scope with your team.',
     cta: 'Discuss an evaluation',

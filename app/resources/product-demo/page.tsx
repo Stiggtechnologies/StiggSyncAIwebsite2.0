@@ -79,7 +79,7 @@ export default function DemoResourcePage() {
         <section className="mt-14 border border-bone/[0.15] bg-graphite p-7 sm:p-10">
           <h2 className="text-2xl font-semibold">Plan access for your team.</h2>
           <p className="mt-5 leading-7 text-bone/70">
-            SyncAI is available to purchase and use. Customer access, authorized
+            SyncAI is live, and team access is agreed with you. Customer access, authorized
             data sources, connection requirements and onboarding are agreed for
             your scope. The public demo is an exploration path; it does not
             provision your organization or connect your production systems.
