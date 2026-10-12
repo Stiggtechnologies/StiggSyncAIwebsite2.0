@@ -62,7 +62,7 @@ const notThis = [
   },
   {
     title: 'Platform and services',
-    body: 'Start with team access to the Reliability Engineer or a focused evaluation, then extend across teams and sites with onboarding scoped to your operation. A Reliability Intelligence Assessment, focused pilot, or team training can support adoption when useful.',
+    body: 'Start with one agent, the full platform or a focused evaluation, then extend across teams and sites with onboarding scoped to your operation. A Reliability Intelligence Assessment, focused pilot, or team training can support adoption when useful.',
   },
 ];
 
@@ -218,7 +218,7 @@ export default function CompanyPage() {
               .
             </p>
             <p>
-              The Reliability Engineer is live today. It ranks bad actors from your work orders, runs failure investigations with a named owner, and prepares RCM, FMEA and improvement cases for a named person to approve. Access, scope and terms are agreed with your team. Assessments, pilots, and training are optional support.
+              SyncAI is live today: governed specialist agents for reliability, planning, scheduling, condition monitoring, failure investigation, materials, turnarounds and asset strategy, each working from your evidence with a named person approving every decision. Access, scope and terms are agreed with your team. Assessments, pilots, and training are optional support.
             </p>
           </div>
         </div>

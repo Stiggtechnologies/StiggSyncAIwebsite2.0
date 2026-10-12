@@ -38,7 +38,7 @@ export default function ContactPage() {
               Put SyncAI to work for your team.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-[1.7] text-slate-400">
-              Email us to ask about team access to the Reliability Engineer, arrange an evaluation or product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
+              Email us to ask about team access to the platform or a single agent, arrange an evaluation or product walkthrough, or plan onboarding. Tell us about your team and the operating question you want to address.
             </p>
             <p className="mt-6 text-sm leading-7 text-slate-300">You can contact <a href="mailto:oadavis@syncai.ca" className="text-cyan-300 underline">oadavis@syncai.ca</a>.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">

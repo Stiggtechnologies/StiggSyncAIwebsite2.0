@@ -13,8 +13,8 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
-    name: 'Reliability Engineer',
-    body: 'Rank bad actors from your own work orders, run failure investigations with a named owner, and prepare RCM, FMEA and improvement cases for a named person to approve.',
+    name: 'Platform and specialist agents',
+    body: 'Put governed agents to work on reliability, planning, scheduling, condition monitoring, failure investigation, materials and turnarounds. Start with one agent or the full platform; a named person approves every decision.',
     cta: 'Ask about team access',
     href: EVALUATION_CONTACT_URL,
     external: false,

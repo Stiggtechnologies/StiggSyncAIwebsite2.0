@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 const faqs = [
-  ['How can our team get started?', 'The Reliability Engineer is live today. It ranks bad actors from your work orders, runs failure investigations with a named owner, and prepares RCM, FMEA and improvement cases for a named person to approve. Contact us for team access, or start with an evaluation on one workflow. Scope, terms and onboarding are agreed with you; wider platform scope can follow.'],
+  ['How can our team get started?', 'SyncAI is live today: governed specialist agents for reliability, planning, scheduling, condition monitoring, failure investigation, materials, turnarounds and asset strategy, each working from your evidence with a named person approving every decision. Contact us for team access to the platform or a single agent, or start with an evaluation on one workflow. Scope, terms and onboarding are agreed with you.'],
   ['Do we need an assessment first?', 'No. An assessment is an optional service. You can ask about team access or an evaluation directly. An assessment helps establish a reliability baseline from customer-provided exports when that is useful.'],
   ['Does SyncAI replace our maintenance systems?', 'Your systems remain the source of truth. SyncAI helps teams investigate failures, prioritize work, and retain the evidence behind decisions. Data connections and implementation requirements are confirmed for your scope.'],
   ['Who approves recommendations?', 'A named human reviews and approves operational recommendations. Your team retains authority over work and plant execution.'],
