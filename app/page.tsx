@@ -114,7 +114,7 @@ export default function Home() {
               Decide with the evidence your operation already has.
             </h1>
             <p className="mt-8 max-w-[34rem] text-lg leading-[1.65] text-bone/75 sm:text-xl">
-              SyncAI is an industrial AI platform available for your team to purchase and use. Bring together approved knowledge, asset records and operating evidence to investigate failures, prioritize work and review recommendations with clear human approval.
+              SyncAI brings approved knowledge, asset records and operating evidence together so your team can investigate failures, prioritize work and review recommendations, with a named person approving each decision. Start with a focused evaluation or pilot on one workflow.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -125,10 +125,10 @@ export default function Home() {
                 Discuss an evaluation
               </a>
               <Link
-                href="/contact"
+                href="/platform"
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
-                Discuss purchasing
+                See the platform
               </Link>
             </div>
 
