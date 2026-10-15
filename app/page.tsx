@@ -13,6 +13,13 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
+    name: 'Platform and specialist agents',
+    body: 'Put governed agents to work on reliability, planning, scheduling, condition monitoring, failure investigation, materials and turnarounds. Start with one agent or the full platform; a named person approves every decision.',
+    cta: 'Ask about team access',
+    href: EVALUATION_CONTACT_URL,
+    external: false,
+  },
+  {
     name: 'Platform evaluation',
     body: 'Discuss your operating question with SyncAI. We will agree relevant workflows, evidence needs, and an evaluation scope with your team.',
     cta: 'Discuss an evaluation',
