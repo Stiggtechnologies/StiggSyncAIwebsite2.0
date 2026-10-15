@@ -9,6 +9,17 @@ const nextConfig = {
   async redirects() {
     return [
       ...insightRedirects,
+      // Permanent move for syncai.ca/get-started and www.syncai.ca/get-started.
+      {
+        source: '/get-started',
+        destination: 'https://app.syncai.ca/get-started',
+        statusCode: 301,
+      },
+      {
+        source: '/get-started/',
+        destination: 'https://app.syncai.ca/get-started',
+        statusCode: 301,
+      },
       // Reuse approved brand bytes; no generated concept artwork or image edits.
       { source: '/opengraph-image', destination: '/opengraph-image.png', permanent: true },
       ...['economics-of-autonomous-maintenance', 'governance-in-industrial-ai', 'why-cmms-alone-is-failing-2026'].map((slug) => ({
