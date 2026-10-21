@@ -21,6 +21,14 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => { setMobileMenuOpen(false); }, [pathname]);
+  // While the mobile sheet is open it owns the screen: lock page scroll so the
+  // page behind it cannot show through or scroll under the menu.
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previous; };
+  }, [mobileMenuOpen]);
   useEffect(() => {
     const close = (event: KeyboardEvent) => { if (event.key === 'Escape') setMobileMenuOpen(false); };
     window.addEventListener('keydown', close);
@@ -69,7 +77,7 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-white/5 bg-ink lg:hidden">
+        <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto overscroll-contain border-t border-white/5 bg-ink lg:hidden">
           <div className="space-y-2 px-4 py-4">
             {navItems.map((item) => (
               <Link
