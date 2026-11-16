@@ -9,6 +9,7 @@ import BrandWordmark from '@/components/BrandWordmark';
 
 const navItems = [
   { label: 'Platform', href: '/platform' },
+  { label: 'Capabilities', href: '/capabilities' },
   { label: 'Assessment', href: '/reliability-assessment' },
   { label: 'Training', href: '/training' },
   { label: 'Industries', href: '/industries' },
@@ -33,7 +34,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <BrandWordmark priority />
 
-          <div className="hidden items-center gap-5 lg:flex">
+          <div className="hidden items-center gap-4 xl:gap-5 lg:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}

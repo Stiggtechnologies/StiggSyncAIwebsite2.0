@@ -114,7 +114,7 @@ export default function Home() {
               Decide with the evidence your operation already has.
             </h1>
             <p className="mt-8 max-w-[34rem] text-lg leading-[1.65] text-bone/75 sm:text-xl">
-              SyncAI is an industrial AI platform available for your team to purchase and use. Bring together approved knowledge, asset records and operating evidence to investigate failures, prioritize work and review recommendations with clear human approval.
+              SyncAI is governed industrial AI infrastructure for asset-intensive operations. Bring together approved knowledge, asset records, operational data, specialist workflows and human authority to investigate failures, prioritize work and verify outcomes.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -175,6 +175,36 @@ export default function Home() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="border-b border-bone/10 bg-ink">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 sm:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 lg:px-8">
+          <div>
+            <p className="font-mono text-sm uppercase tracking-widest text-cyan-300">Beyond the wedge</p>
+            <h2 className="mt-5 text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
+              Reliability is where we start. The platform is built for the whole operating system.
+            </h2>
+            <p className="mt-6 max-w-md text-lg leading-[1.65] text-bone/70">
+              Connect engineering context, asset intelligence, operational evidence and specialist agents into one governed path from question to verified outcome.
+            </p>
+            <Link href="/capabilities" className={`mt-8 inline-block ${linkClass}`}>
+              Explore the capability map →
+            </Link>
+          </div>
+          <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2">
+            {[
+              ['Industrial context', 'Asset relationships, configuration history, approved documents and source-aware retrieval.'],
+              ['Specialist workflows', 'Reliability, planning, scheduling, condition monitoring, materials and turnaround questions.'],
+              ['Decision governance', 'Evidence, uncertainty, role-aware review, approvals, escalation and accountable records.'],
+              ['Operational value', 'Prioritization, downtime economics, KPI verification and learning from what happened.'],
+            ].map(([title, body]) => (
+              <article key={title} className="border-t border-bone/20 pt-5">
+                <h3 className="text-lg font-semibold text-white">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-bone/65">{body}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

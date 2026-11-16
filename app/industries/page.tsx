@@ -56,9 +56,10 @@ const beachhead = [
 ];
 
 const laterIndustries = [
-  'Manufacturing',
-  'Transportation & fleets',
-  'Infrastructure & facilities',
+  { name: 'Manufacturing & processing', status: 'Fit to assess', body: 'Production performance, quality, OEE, maintenance and process-improvement workflows.' },
+  { name: 'Transportation & logistics', status: 'Fit to assess', body: 'Rail, aviation, marine, commercial fleets and distribution assets.' },
+  { name: 'Infrastructure & facilities', status: 'Fit to assess', body: 'Buildings, bridges, water systems, municipal infrastructure and facilities.' },
+  { name: 'Construction & industrial services', status: 'Planned expansion', body: 'Project equipment, field service, contractor evidence and handover decisions as scope is validated.' },
 ];
 
 export default function IndustriesPage() {
@@ -147,14 +148,16 @@ export default function IndustriesPage() {
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
                 Bring us your operating context.
               </h2>
-              <p className="mt-5 text-base leading-7 text-slate-400">
-                Manufacturing, fleets, infrastructure and facilities share many of these reliability challenges. We can discuss your assets, records and workflows to establish a practical fit.
+            <p className="mt-5 text-base leading-7 text-slate-400">
+              SyncAI is intended for asset-intensive environments beyond the initial reliability beachhead. The cards below describe where the operating model is a fit to assess or a planned expansion—not proof of a deployed customer outcome.
               </p>
             </div>
-            <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-1">
+            <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2">
               {laterIndustries.map((industry) => (
-                <div key={industry} className="bg-[#151618] px-6 py-7 text-sm font-semibold text-slate-200">
-                  {industry}
+                <div key={industry.name} className="bg-[#151618] px-6 py-7">
+                  <p className="text-sm font-semibold text-slate-200">{industry.name}</p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">{industry.status}</p>
+                  <p className="mt-3 text-sm leading-6 text-slate-400">{industry.body}</p>
                 </div>
               ))}
             </div>
