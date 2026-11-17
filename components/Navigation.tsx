@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { EVALUATION_CONTACT_URL } from '@/lib/site-links';
 import { Menu, X } from 'lucide-react';
 import BrandWordmark from '@/components/BrandWordmark';
@@ -20,8 +20,14 @@ const navItems = [
 export default function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const firstMenuLinkRef = useRef<HTMLAnchorElement>(null);
 
-  useEffect(() => { setMobileMenuOpen(false); }, [pathname]);
+  useEffect(() => { setMobileMenuOpen(false); menuButtonRef.current?.focus(); }, [pathname]);
+  useEffect(() => {
+    if (mobileMenuOpen) firstMenuLinkRef.current?.focus();
+    else menuButtonRef.current?.focus();
+  }, [mobileMenuOpen]);
   // While the mobile sheet is open it owns the screen: lock page scroll so the
   // page behind it cannot show through or scroll under the menu.
   useEffect(() => {
@@ -42,7 +48,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <BrandWordmark priority />
 
-          <div className="hidden items-center gap-4 xl:gap-5 lg:flex">
+          <div className="hidden items-center gap-5 xl:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -65,11 +71,12 @@ export default function Navigation() {
           </div>
 
           <button
+            ref={menuButtonRef}
             type="button"
             aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"
-            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-white lg:hidden"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-white xl:hidden"
             onClick={() => setMobileMenuOpen((open) => !open)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,11 +85,12 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto overscroll-contain border-t border-white/5 bg-ink lg:hidden">
+        <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto overscroll-contain border-t border-white/5 bg-ink xl:hidden">
           <div className="space-y-2 px-4 py-4">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Link
                 key={item.href}
+                ref={index === 0 ? firstMenuLinkRef : undefined}
                 href={item.href}
                 aria-current={pathname === item.href ? 'page' : undefined}
                 onClick={() => setMobileMenuOpen(false)}
