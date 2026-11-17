@@ -14,7 +14,7 @@ export default function Footer() {
               Governed industrial intelligence for reliability, maintenance, and asset-intensive operations.
             </p>
             <div className="mt-5 space-y-1 text-sm">
-              <a href="mailto:oadavis@syncai.ca" className="block text-slate-500 hover:text-white">oadavis@syncai.ca</a>
+              <a href="mailto:oadavis@syncai.ca" className="block text-slate-400 hover:text-white">oadavis@syncai.ca</a>
               <p className="text-slate-400">200 Parent Way, Fort McMurray, AB T9H5E6</p>
             </div>
           </div>
@@ -37,6 +37,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li><Link href="/company" className="text-sm text-slate-400 hover:text-white">Company</Link></li>
               <li><Link href="/architecture" className="text-sm text-slate-400 hover:text-white">Architecture</Link></li>
+              <li><Link href="/capabilities" className="text-sm text-slate-400 hover:text-white">Capabilities</Link></li>
               <li><Link href="/industries" className="text-sm text-slate-400 hover:text-white">Industries</Link></li>
               <li><Link href="/ai-for-mining-reliability" className="text-sm text-slate-400 hover:text-white">Mining reliability</Link></li>
               <li><Link href="/security" className="text-sm text-slate-400 hover:text-white">Security</Link></li>

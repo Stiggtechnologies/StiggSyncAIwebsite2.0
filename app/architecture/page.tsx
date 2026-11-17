@@ -52,6 +52,13 @@ const securityControls = [
   },
 ];
 
+const agentWorkflow = [
+  ['Bring an operating question to Sync', 'The signed-in workspace can attach permitted asset context, operating measures and open recommendations to the question.'],
+  ['Route to specialist analysis', 'Where specialist routing is enabled, Sync can select a reliability specialist. The analysis uses approved sources and can combine engineering methods with model reasoning.'],
+  ['Review the specialist response', 'Sync can save the response and evidence references in the conversation. Teams can separately use the Decision Case workflow to document assumptions, evidence gaps and a recommendation for review.'],
+  ['Confirm a supported notification', 'Where enabled, Sync can propose a maintenance notification. A person must explicitly confirm it. The application checks the caller’s authority and records the action result.'],
+];
+
 export default function ArchitecturePage() {
   return (
     <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
@@ -64,6 +71,24 @@ export default function ArchitecturePage() {
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             SyncAI is designed to sit across the existing operating information estate, help teams build technically defensible decisions, and preserve the governance required to act on them.
           </p>
+        </div>
+      </section>
+
+      <section id="sync-agent-workflow" className="scroll-mt-20 border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <h2 className="text-4xl font-semibold tracking-[-0.03em] text-white">How Sync routes and governs work</h2>
+          <p className="mt-5 max-w-3xl leading-7 text-slate-400">
+            Sync is the shared interface for questions and specialist analysis. The workspace also provides a separate Decision Case workflow for formal review and outcome verification.
+          </p>
+          <ol className="mt-9 grid list-decimal gap-6 pl-6 marker:font-semibold marker:text-cyan-300 md:grid-cols-2 md:gap-x-12">
+            {agentWorkflow.map(([title, body]) => (
+              <li key={title} className="pl-2">
+                <h3 className="text-lg font-semibold text-white">{title}</h3>
+                <p className="mt-2 leading-7 text-slate-400">{body}</p>
+              </li>
+            ))}
+          </ol>
+          <Link href="/capabilities" className="mt-8 inline-block font-semibold text-cyan-300 underline underline-offset-4">See capability maturity and availability</Link>
         </div>
       </section>
 
@@ -86,13 +111,13 @@ export default function ArchitecturePage() {
           <div className="divide-y divide-white/10 border-y border-white/10">
             {layers.map((layer) => (
               <article key={layer.number} className="grid gap-5 py-8 lg:grid-cols-[90px_280px_1fr]">
-                <span className="font-mono text-sm text-slate-600">{layer.number}</span>
+                <span className="font-mono text-sm text-slate-400">{layer.number}</span>
                 <h3 className="text-xl font-semibold text-white">{layer.title}</h3>
                 <div>
                   <p className="max-w-3xl text-sm leading-7 text-slate-400">{layer.body}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {layer.details.map((detail) => (
-                      <span key={detail} className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-500">
+                      <span key={detail} className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-400">
                         {detail}
                       </span>
                     ))}
@@ -124,12 +149,12 @@ export default function ArchitecturePage() {
               <div className="grid gap-4 sm:grid-cols-4">
                 {['Recommendation', 'Technical review', 'Authorized decision', 'Controlled action'].map((item, index) => (
                   <div key={item} className="rounded-lg border border-white/10 p-4">
-                    <p className="font-mono text-xs text-slate-600">0{index + 1}</p>
+                    <p className="font-mono text-xs text-slate-400">0{index + 1}</p>
                     <p className="mt-5 text-sm font-semibold text-slate-200">{item}</p>
                   </div>
                 ))}
               </div>
-              <p className="mt-6 text-sm leading-6 text-slate-500">
+              <p className="mt-6 text-sm leading-6 text-slate-400">
                 Exact approval paths are configured for the customer’s operating model, roles, risk boundaries, and systems of record.
               </p>
             </div>
