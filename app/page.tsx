@@ -13,6 +13,13 @@ export const metadata: Metadata = pageMetadata({
 
 const ways = [
   {
+    name: 'Platform and specialist agents',
+    body: 'Put governed agents to work on reliability, planning, scheduling, condition monitoring, failure investigation, materials and turnarounds. Start with one agent or the full platform; a named person approves every decision.',
+    cta: 'Ask about team access',
+    href: EVALUATION_CONTACT_URL,
+    external: false,
+  },
+  {
     name: 'Platform evaluation',
     body: 'Discuss your operating question with SyncAI. We will agree relevant workflows, evidence needs, and an evaluation scope with your team.',
     cta: 'Discuss an evaluation',
@@ -114,7 +121,7 @@ export default function Home() {
               Decide with the evidence your operation already has.
             </h1>
             <p className="mt-8 max-w-[34rem] text-lg leading-[1.65] text-bone/75 sm:text-xl">
-              SyncAI is governed industrial AI infrastructure for asset-intensive operations. Bring together approved knowledge, asset records, operational data, specialist workflows and human authority to investigate failures, prioritize work and verify outcomes.
+              SyncAI is governed industrial AI infrastructure for asset-intensive operations. Bring together approved knowledge, asset records, operational data and specialist workflows so your team can investigate failures, prioritize work and verify outcomes—with a named person approving each decision. Start with a focused evaluation or pilot on one workflow.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -125,10 +132,10 @@ export default function Home() {
                 Discuss an evaluation
               </a>
               <Link
-                href="/contact"
+                href="/platform"
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-bone/25 px-7 py-3 text-sm font-semibold text-bone transition-colors hover:border-bone/60 hover:bg-bone/5"
               >
-                Discuss purchasing
+                See the platform
               </Link>
             </div>
 
