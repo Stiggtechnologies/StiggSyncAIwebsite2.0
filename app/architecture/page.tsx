@@ -55,8 +55,8 @@ const securityControls = [
 const agentWorkflow = [
   ['Bring an operating question to Sync', 'The signed-in workspace can attach permitted asset context, operating measures and open recommendations to the question.'],
   ['Route to specialist analysis', 'Where specialist routing is enabled, Sync can select a reliability specialist. The analysis uses approved sources and can combine engineering methods with model reasoning.'],
-  ['Build a reviewable decision', 'The decision case keeps source references, assumptions, evidence gaps and the proposed next step visible to the reviewer.'],
-  ['Confirm and verify', 'A named person reviews the recommendation. Where a supported action is enabled, the application checks the caller’s authority before execution and records the result for follow-up.'],
+  ['Review the specialist response', 'Sync can save the response and evidence references in the conversation. Teams can separately use the Decision Case workflow to document assumptions, evidence gaps and a recommendation for review.'],
+  ['Confirm a supported notification', 'Where enabled, Sync can propose a maintenance notification. A person must explicitly confirm it. The application checks the caller’s authority and records the action result.'],
 ];
 
 export default function ArchitecturePage() {
@@ -78,7 +78,7 @@ export default function ArchitecturePage() {
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <h2 className="text-4xl font-semibold tracking-[-0.03em] text-white">How Sync routes and governs work</h2>
           <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-            Sync is the shared interface for questions and specialist analysis. Enabled workflows use the same evidence and approval records as the workspace.
+            Sync is the shared interface for questions and specialist analysis. The workspace also provides a separate Decision Case workflow for formal review and outcome verification.
           </p>
           <ol className="mt-9 grid list-decimal gap-6 pl-6 marker:font-semibold marker:text-cyan-300 md:grid-cols-2 md:gap-x-12">
             {agentWorkflow.map(([title, body]) => (
@@ -111,13 +111,13 @@ export default function ArchitecturePage() {
           <div className="divide-y divide-white/10 border-y border-white/10">
             {layers.map((layer) => (
               <article key={layer.number} className="grid gap-5 py-8 lg:grid-cols-[90px_280px_1fr]">
-                <span className="font-mono text-sm text-slate-600">{layer.number}</span>
+                <span className="font-mono text-sm text-slate-400">{layer.number}</span>
                 <h3 className="text-xl font-semibold text-white">{layer.title}</h3>
                 <div>
                   <p className="max-w-3xl text-sm leading-7 text-slate-400">{layer.body}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {layer.details.map((detail) => (
-                      <span key={detail} className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-500">
+                      <span key={detail} className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-400">
                         {detail}
                       </span>
                     ))}
@@ -149,12 +149,12 @@ export default function ArchitecturePage() {
               <div className="grid gap-4 sm:grid-cols-4">
                 {['Recommendation', 'Technical review', 'Authorized decision', 'Controlled action'].map((item, index) => (
                   <div key={item} className="rounded-lg border border-white/10 p-4">
-                    <p className="font-mono text-xs text-slate-600">0{index + 1}</p>
+                    <p className="font-mono text-xs text-slate-400">0{index + 1}</p>
                     <p className="mt-5 text-sm font-semibold text-slate-200">{item}</p>
                   </div>
                 ))}
               </div>
-              <p className="mt-6 text-sm leading-6 text-slate-500">
+              <p className="mt-6 text-sm leading-6 text-slate-400">
                 Exact approval paths are configured for the customer’s operating model, roles, risk boundaries, and systems of record.
               </p>
             </div>

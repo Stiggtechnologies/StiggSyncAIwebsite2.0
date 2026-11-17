@@ -14,7 +14,7 @@ export default function Footer() {
               Governed industrial intelligence for reliability, maintenance, and asset-intensive operations.
             </p>
             <div className="mt-5 space-y-1 text-sm">
-              <a href="mailto:oadavis@syncai.ca" className="block text-slate-500 hover:text-white">oadavis@syncai.ca</a>
+              <a href="mailto:oadavis@syncai.ca" className="block text-slate-400 hover:text-white">oadavis@syncai.ca</a>
               <p className="text-slate-400">200 Parent Way, Fort McMurray, AB T9H5E6</p>
             </div>
           </div>

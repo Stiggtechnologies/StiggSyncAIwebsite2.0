@@ -109,7 +109,7 @@ export default function IndustriesPage() {
           <div className="mt-12 divide-y divide-white/10 border-y border-white/10">
             {operatingLoop.map((item) => (
               <div key={item.step} className="grid gap-4 py-7 md:grid-cols-[90px_260px_1fr] md:items-start">
-                <span className="font-mono text-sm text-slate-600">{item.step}</span>
+                <span className="font-mono text-sm text-slate-400">{item.step}</span>
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                 <p className="max-w-3xl text-sm leading-6 text-slate-400">{item.body}</p>
               </div>
@@ -175,7 +175,7 @@ export default function IndustriesPage() {
               ))}
             </div>
           </div>
-          <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-500">
+          <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-400">
             Bring an operating question from your sector. Assessments use customer-provided exports, and any pilot scope depends on the evidence, deployment requirements and review authority. Explore the <Link href="/capabilities" className="font-semibold text-cyan-300 underline underline-offset-4">capability map</Link> to see which workflows can be evaluated.
           </p>
         </div>

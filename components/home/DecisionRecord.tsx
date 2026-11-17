@@ -45,7 +45,7 @@ export default function DecisionRecord() {
         <div className="flex items-start justify-between gap-4 border-b border-bone/10 px-5 py-4 sm:px-6">
           <div>
             <p className="font-mono text-xs text-bone/50">Decision record · example</p>
-            <p className="mt-1 text-base font-semibold text-white">Compressor low lube-pressure trips</p>
+            <h2 className="mt-1 text-base font-semibold text-white" style={headingStyle}>Compressor low lube-pressure trips</h2>
           </div>
           <p
             aria-live="polite"
