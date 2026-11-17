@@ -7,7 +7,7 @@ import { APP_CUSTOMER_SIGN_IN_URL } from '@/lib/site-links';
 export const metadata: Metadata = pageMetadata({
   title: 'Industries',
   description:
-    'Industrial AI for mining, energy, oil and gas, and asset-intensive teams. Investigate failures, prioritize maintenance work, and track outcomes with human approval.',
+    'Explore SyncAI use cases for mining, energy, manufacturing, transport, infrastructure and other asset-intensive industries, from scoped pilots to draft templates.',
   path: '/industries',
 });
 
@@ -43,7 +43,7 @@ const beachhead = [
     ],
   },
   {
-    name: 'Oil & gas',
+    name: 'Oil & gas, oil sands, and midstream',
     problem:
       'Critical rotating and static equipment, fragmented work history, and backlog-driven prioritization make it hard to convert technical evidence into an accountable next action.',
     fit: [
@@ -56,10 +56,23 @@ const beachhead = [
 ];
 
 const laterIndustries = [
-  { name: 'Manufacturing & processing', status: 'Fit to assess', body: 'Production performance, quality, OEE, maintenance and process-improvement workflows.' },
-  { name: 'Transportation & logistics', status: 'Fit to assess', body: 'Rail, aviation, marine, commercial fleets and distribution assets.' },
-  { name: 'Infrastructure & facilities', status: 'Fit to assess', body: 'Buildings, bridges, water systems, municipal infrastructure and facilities.' },
-  { name: 'Construction & industrial services', status: 'Planned expansion', body: 'Project equipment, field service, contractor evidence and handover decisions as scope is validated.' },
+  { name: 'Heavy manufacturing & processing', status: 'Draft template', body: 'Investigate recurring line losses using work history, downtime events and quality records.' },
+  { name: 'Chemicals & petrochemicals', status: 'Draft template', body: 'Bring inspection and maintenance records together for a process-equipment integrity review.' },
+  { name: 'Battery & energy storage', status: 'Draft template', body: 'Review thermal events, degradation evidence and inspection history with the asset owner.' },
+  { name: 'Food & beverage', status: 'Draft template', body: 'Review refrigeration failures and cold-chain excursions alongside work and condition records.' },
+  { name: 'Pharmaceuticals & life sciences', status: 'Draft template', body: 'Trace equipment maintenance and change history for a quality-team review.' },
+  { name: 'Healthcare facilities & equipment', status: 'Draft template', body: 'Review equipment availability, criticality and calibration history with facilities and biomedical teams.' },
+  { name: 'Transportation, rail & logistics', status: 'Draft template', body: 'Compare recurring fleet failures and work backlog by route, duty cycle or depot.' },
+  { name: 'Aviation maintenance & MRO', status: 'Draft template', body: 'Organize configuration, inspection and maintenance evidence for an authorized reviewer.' },
+  { name: 'Marine shipping & ports', status: 'Draft template', body: 'Investigate repeat propulsion or terminal-equipment failures using service and inspection records.' },
+  { name: 'Buildings & facilities', status: 'Draft template', body: 'Review recurring HVAC, electrical and building-system failures across sites.' },
+  { name: 'Civil infrastructure & water', status: 'Draft template', body: 'Prioritize inspection follow-up for bridges, pumps and public-works assets.' },
+  { name: 'Data centers & critical digital infrastructure', status: 'Draft template', body: 'Compare cooling and backup-power maintenance issues using incident and condition records.' },
+  { name: 'Aerospace, launch & defence support', status: 'Draft templates', body: 'Organize equipment maintenance, configuration and inspection records for authorized technical review.' },
+  { name: 'Pulp, paper & packaging', status: 'Fit to assess', body: 'Investigate repeat failures on mills, converting lines and packaging equipment.' },
+  { name: 'Equipment rental & multi-site operators', status: 'Fit to assess', body: 'Compare maintenance backlog, repeat failures and availability across branches and fleets.' },
+  { name: 'Construction & industrial services', status: 'Exploratory', body: 'Review project equipment history, field-service evidence and handover records.' },
+  { name: 'Agriculture & agricultural equipment', status: 'Exploratory', body: 'Assess whether service and inspection records can support seasonal equipment-readiness decisions.' },
 ];
 
 export default function IndustriesPage() {
@@ -72,7 +85,7 @@ export default function IndustriesPage() {
             Clear decisions for asset-intensive operations.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
-            Turn maintenance records into clear, reviewable decisions. Use SyncAI to investigate failures, prioritize work, and track outcomes, with your team in control of approvals.
+            SyncAI brings asset records, operating evidence and engineering knowledge into one reviewable decision. Start with a reliability workflow or explore how the same approach could fit your industry.
           </p>
         </div>
       </section>
@@ -142,28 +155,28 @@ export default function IndustriesPage() {
 
       <section className="border-b border-white/10 bg-[#151618]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
-            <div>
+          <div id="industry-coverage" className="scroll-mt-24">
+            <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Broader industry fit</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-white">
-                Bring us your operating context.
+                Explore use cases by industry.
               </h2>
-            <p className="mt-5 text-base leading-7 text-slate-400">
-              SyncAI is intended for asset-intensive environments beyond the initial reliability beachhead. The cards below describe where the operating model is a fit to assess or a planned expansion—not proof of a deployed customer outcome.
+              <p className="mt-5 text-base leading-7 text-slate-400">
+                Draft templates contain industry-specific methods that still need domain and customer review. Fit-to-assess use cases can be discussed using your records. Exploratory use cases need further discovery before a pilot can be scoped.
               </p>
             </div>
-            <div className="grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2">
+            <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
               {laterIndustries.map((industry) => (
-                <div key={industry.name} className="bg-[#151618] px-6 py-7">
-                  <p className="text-sm font-semibold text-slate-200">{industry.name}</p>
+                <article key={industry.name} className="bg-[#151618] px-6 py-7">
+                  <h3 className="text-lg font-semibold text-slate-200">{industry.name}</h3>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">{industry.status}</p>
                   <p className="mt-3 text-sm leading-6 text-slate-400">{industry.body}</p>
-                </div>
+                </article>
               ))}
             </div>
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-500">
-            Assessments use customer-provided exports. We confirm data connections, deployment requirements, and scope with your team before implementation.
+            Bring an operating question from your sector. Assessments use customer-provided exports, and any pilot scope depends on the evidence, deployment requirements and review authority. Explore the <Link href="/capabilities" className="font-semibold text-cyan-300 underline underline-offset-4">capability map</Link> to see which workflows can be evaluated.
           </p>
         </div>
       </section>

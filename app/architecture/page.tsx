@@ -52,6 +52,13 @@ const securityControls = [
   },
 ];
 
+const agentWorkflow = [
+  ['Bring an operating question to Sync', 'The signed-in workspace can attach permitted asset context, operating measures and open recommendations to the question.'],
+  ['Route to specialist analysis', 'Where specialist routing is enabled, Sync can select a reliability specialist. The analysis uses approved sources and can combine engineering methods with model reasoning.'],
+  ['Build a reviewable decision', 'The decision case keeps source references, assumptions, evidence gaps and the proposed next step visible to the reviewer.'],
+  ['Confirm and verify', 'A named person reviews the recommendation. Where a supported action is enabled, the application checks the caller’s authority before execution and records the result for follow-up.'],
+];
+
 export default function ArchitecturePage() {
   return (
     <main id="main-content" tabIndex={-1} className="bg-[#111214] pt-20 text-slate-100">
@@ -64,6 +71,24 @@ export default function ArchitecturePage() {
           <p className="mt-7 max-w-3xl text-lg leading-[1.7] text-slate-400">
             SyncAI is designed to sit across the existing operating information estate, help teams build technically defensible decisions, and preserve the governance required to act on them.
           </p>
+        </div>
+      </section>
+
+      <section id="sync-agent-workflow" className="scroll-mt-20 border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <h2 className="text-4xl font-semibold tracking-[-0.03em] text-white">How Sync routes and governs work</h2>
+          <p className="mt-5 max-w-3xl leading-7 text-slate-400">
+            Sync is the shared interface for questions and specialist analysis. Enabled workflows use the same evidence and approval records as the workspace.
+          </p>
+          <ol className="mt-9 grid list-decimal gap-6 pl-6 marker:font-semibold marker:text-cyan-300 md:grid-cols-2 md:gap-x-12">
+            {agentWorkflow.map(([title, body]) => (
+              <li key={title} className="pl-2">
+                <h3 className="text-lg font-semibold text-white">{title}</h3>
+                <p className="mt-2 leading-7 text-slate-400">{body}</p>
+              </li>
+            ))}
+          </ol>
+          <Link href="/capabilities" className="mt-8 inline-block font-semibold text-cyan-300 underline underline-offset-4">See capability maturity and availability</Link>
         </div>
       </section>
 

@@ -20,27 +20,30 @@ const navItems = [
 export default function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
-  const firstMenuLinkRef = useRef<HTMLAnchorElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
-  useEffect(() => { setMobileMenuOpen(false); menuButtonRef.current?.focus(); }, [pathname]);
-  useEffect(() => {
-    if (mobileMenuOpen) firstMenuLinkRef.current?.focus();
-    else menuButtonRef.current?.focus();
-  }, [mobileMenuOpen]);
-  // While the mobile sheet is open it owns the screen: lock page scroll so the
-  // page behind it cannot show through or scroll under the menu.
+  function closeMobileMenu() {
+    dialogRef.current?.close();
+    setMobileMenuOpen(false);
+  }
+
+  useEffect(() => { setMobileMenuOpen(false); }, [pathname]);
   useEffect(() => {
     if (!mobileMenuOpen) return;
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    dialog.showModal();
     const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = previous; };
+    const wideScreen = window.matchMedia('(min-width: 1280px)');
+    const closeOnDesktop = () => { if (wideScreen.matches) setMobileMenuOpen(false); };
+    wideScreen.addEventListener('change', closeOnDesktop);
+    return () => {
+      dialog.close();
+      document.body.style.overflow = previous;
+      wideScreen.removeEventListener('change', closeOnDesktop);
+    };
   }, [mobileMenuOpen]);
-  useEffect(() => {
-    const close = (event: KeyboardEvent) => { if (event.key === 'Escape') setMobileMenuOpen(false); };
-    window.addEventListener('keydown', close);
-    return () => window.removeEventListener('keydown', close);
-  }, []);
 
   return (
     <nav aria-label="Main navigation" className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#101113]/90 backdrop-blur-md">
@@ -71,10 +74,10 @@ export default function Navigation() {
           </div>
 
           <button
-            ref={menuButtonRef}
             type="button"
             aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'}
             aria-expanded={mobileMenuOpen}
+            aria-haspopup="dialog"
             aria-controls="mobile-navigation"
             className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-white xl:hidden"
             onClick={() => setMobileMenuOpen((open) => !open)}
@@ -85,15 +88,29 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto overscroll-contain border-t border-white/5 bg-ink xl:hidden">
+        <dialog
+          id="mobile-navigation"
+          ref={dialogRef}
+          aria-labelledby="mobile-navigation-label"
+          onCancel={(event) => {
+            event.preventDefault();
+            closeMobileMenu();
+          }}
+          className="fixed inset-0 m-0 h-[100dvh] max-h-none w-full max-w-none overflow-y-auto overscroll-contain bg-ink text-white"
+        >
+          <div className="flex h-16 items-center justify-between border-b border-white/10 px-4">
+            <h2 id="mobile-navigation-label" className="text-base font-semibold">SyncAI navigation</h2>
+            <button type="button" aria-label="Close navigation" className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center" onClick={closeMobileMenu}>
+              <X size={24} aria-hidden="true" />
+            </button>
+          </div>
           <div className="space-y-2 px-4 py-4">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
-                ref={index === 0 ? firstMenuLinkRef : undefined}
                 href={item.href}
                 aria-current={pathname === item.href ? 'page' : undefined}
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={closeMobileMenu}
                 className={`block rounded-md px-3 py-2 text-sm font-medium transition-colors ${
                   pathname === item.href ? 'bg-white/[0.05] text-white' : 'text-slate-400 hover:text-white'
                 }`}
@@ -103,13 +120,13 @@ export default function Navigation() {
             ))}
             <Link
               href={EVALUATION_CONTACT_URL}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={closeMobileMenu}
               className="mt-3 block rounded-sm bg-cyan-300 px-5 py-3 text-center text-sm font-bold text-slate-950"
             >
               Discuss an evaluation
             </Link>
           </div>
-        </div>
+        </dialog>
       )}
     </nav>
   );

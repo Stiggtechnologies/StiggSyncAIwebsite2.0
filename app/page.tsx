@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMetadata({
 const ways = [
   {
     name: 'Platform and specialist agents',
-    body: 'Put governed agents to work on reliability, planning, scheduling, condition monitoring, failure investigation, materials and turnarounds. Start with one agent or the full platform; a named person approves every decision.',
+    body: 'Start with a reliability workflow through Sync. Ask about scope for planning, scheduling, condition evidence, materials or turnarounds. Your team retains decision authority.',
     cta: 'Ask about team access',
     href: EVALUATION_CONTACT_URL,
     external: false,
@@ -99,10 +99,11 @@ const principles = [
 const industries = [
   { name: 'Mining and heavy equipment', href: '/ai-for-mining-reliability' },
   { name: 'Energy and utilities', href: '/industries' },
-  { name: 'Oil and gas', href: '/industries' },
-  { name: 'Manufacturing', href: '/industries' },
-  { name: 'Transportation and fleets', href: '/industries' },
-  { name: 'Infrastructure and facilities', href: '/industries' },
+  { name: 'Oil, gas and petrochemicals', href: '/industries' },
+  { name: 'Manufacturing and process industries', href: '/industries#industry-coverage' },
+  { name: 'Transportation and fleets', href: '/industries#industry-coverage' },
+  { name: 'Infrastructure and facilities', href: '/industries#industry-coverage' },
+  { name: 'Explore the full industry coverage', href: '/industries#industry-coverage' },
 ];
 
 const linkClass =
@@ -188,12 +189,11 @@ export default function Home() {
       <section className="border-b border-bone/10 bg-ink">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 sm:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 lg:px-8">
           <div>
-            <p className="font-mono text-sm uppercase tracking-widest text-cyan-300">Beyond the wedge</p>
             <h2 className="mt-5 text-4xl font-bold leading-[1.08] tracking-[-0.015em] text-white sm:text-5xl">
-              Reliability is where we start. The platform is built for the whole operating system.
+              Start with reliability. Connect more of your operation.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-[1.65] text-bone/70">
-              Connect engineering context, asset intelligence, operational evidence and specialist agents into one governed path from question to verified outcome.
+              Use the same asset context, engineering evidence and approval process as you evaluate workflows across teams and sites.
             </p>
             <Link href="/capabilities" className={`mt-8 inline-block ${linkClass}`}>
               Explore the capability map →

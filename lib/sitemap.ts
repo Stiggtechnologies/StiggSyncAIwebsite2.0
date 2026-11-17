@@ -28,6 +28,7 @@ export const SITEMAP_EXCLUDE = new Set([
 export const REQUIRED_SITEMAP_PATHS = [
   '/',
   '/platform',
+  '/capabilities',
   '/reliability-assessment',
   '/strategic-pilot',
   '/architecture',
